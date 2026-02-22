@@ -8,6 +8,15 @@
 
 ---
 
+## 세션 시작 절차
+1. `mirror-mind-principle.md`를 읽고 협력 원칙을 적용한다
+2. `task-management-principle.md`를 읽고 업무 관리 방식을 파악한다
+3. `tasks/projects.md`를 읽고 현재 진행 상태를 파악한다
+4. `tasks/decisions.md`의 최근 항목을 읽고 맥락을 복원한다
+5. 사용자에게 현재 상태를 요약하고 다음 작업을 제안한다
+
+---
+
 ## 도메인별 원칙 문서
 - `task-management-principle.md` — 업무 관리 원칙
 - `agentic-engineering/development/technical-grain.md` — 기술적 결 (개발 방법론)
