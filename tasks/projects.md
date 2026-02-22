@@ -1,6 +1,6 @@
 # 프로젝트 목록
 
-## [>] Agentic Engineering 방법론
+## [x] Agentic Engineering 방법론
 - 목표: AI 에이전트 시대의 협업, 개발, 서비스 설계 방법론 수립
 - 도메인: 개발, 리서치
 - 하위 업무:
