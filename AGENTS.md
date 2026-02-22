@@ -13,7 +13,8 @@
 2. `task-management-principle.md`를 읽고 업무 관리 방식을 파악한다
 3. `tasks/projects.md`를 읽고 현재 진행 상태를 파악한다
 4. `tasks/decisions.md`의 최근 항목을 읽고 맥락을 복원한다
-5. 사용자에게 현재 상태를 요약하고 다음 작업을 제안한다
+5. 메타에이전트를 백그라운드로 실행한다: `python scripts/meta-agent.py --watch --interval 300`
+6. 사용자에게 현재 상태를 요약하고 다음 작업을 제안한다 (메타에이전트 초기 리포트 포함)
 
 ---
 
