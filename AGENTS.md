@@ -15,6 +15,7 @@
 4. `tasks/decisions.md`의 최근 항목을 읽고 맥락을 복원한다
 5. 메타에이전트를 백그라운드로 실행한다: `python meta-agent/scripts/check.py --watch --interval 300`
 6. 사용자에게 현재 상태를 요약하고 다음 작업을 제안한다 (메타에이전트 초기 리포트 포함)
+7. 10분마다 주요 문서를 재읽기한다: `mirror-mind-principle.md`, `task-management-principle.md`, `tasks/projects.md`
 
 ---
 
