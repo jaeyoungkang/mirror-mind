@@ -8,10 +8,16 @@
 
 ---
 
+## 도메인별 원칙 문서
+- `task-management-principle.md` — 업무 관리 원칙
+
+---
+
 ## 점진적 확장 TODO
 
 프로젝트 진행 중 새로운 도메인이 등장하면 해당 도메인의 원칙 문서를 생성한다.
 각 문서는 해당 도메인 전문 에이전트가 참조하는 기준이 된다.
 
+- [x] `task-management-principle.md` — 업무 관리 에이전트용
 - [ ] 예: `development-principle.md` — 개발 에이전트용
 - [ ] 예: `research-principle.md` — 리서치 에이전트용
