@@ -19,9 +19,16 @@ from pathlib import Path
 from datetime import datetime
 
 CLAUDE_PROJECTS_DIR = Path.home() / ".claude" / "projects"
+PROJECT_RAW_DIR = Path(__file__).resolve().parent.parent / "tasks" / "conversations" / "raw"
 
 
 def find_session_file(session_id: str) -> Path | None:
+    # 1) 프로젝트 내 경량 JSONL 우선
+    if PROJECT_RAW_DIR.exists():
+        for jsonl in PROJECT_RAW_DIR.glob("*.jsonl"):
+            if session_id in jsonl.stem or session_id in jsonl.name:
+                return jsonl
+    # 2) 로컬 Claude 원본
     for jsonl in CLAUDE_PROJECTS_DIR.rglob("*.jsonl"):
         if session_id in jsonl.stem:
             return jsonl
@@ -53,35 +60,39 @@ def filter_messages(filepath: Path, args) -> list[dict]:
                 if dt > parse_time(args.to_time, date_str).replace(tzinfo=dt.tzinfo):
                     continue
 
-            # 메시지가 아닌 레코드 제외 (file-history-snapshot, progress 등)
+            # 두 가지 포맷 지원: 원본(message 래핑) / 경량(플랫)
             rec_type = record.get("type")
-            if rec_type not in ("user", "assistant"):
+            if rec_type not in ("user", "assistant", "system"):
                 continue
 
             # 메타 메시지 제외
             if record.get("isMeta"):
                 continue
 
-            # role 필터
-            msg = record.get("message", {})
-            role = msg.get("role", rec_type)
+            # 경량 포맷: role/content가 최상위에 바로 있음
+            if "message" in record:
+                msg = record["message"]
+                role = msg.get("role", rec_type)
+                content = msg.get("content", "")
+            else:
+                role = record.get("role", rec_type)
+                content = record.get("content", "")
+
             if args.role and role != args.role:
                 continue
 
             # 도구 호출 제외 옵션
-            if args.no_tools:
-                content = msg.get("content", "")
-                if isinstance(content, list):
-                    has_text = any(
-                        c.get("type") == "text" for c in content if isinstance(c, dict)
-                    )
-                    if not has_text:
-                        continue
+            if args.no_tools and isinstance(content, list):
+                has_text = any(
+                    c.get("type") == "text" for c in content if isinstance(c, dict)
+                )
+                if not has_text:
+                    continue
 
             results.append({
                 "timestamp": ts,
                 "role": role,
-                "content": msg.get("content", ""),
+                "content": content,
             })
 
     return results
