@@ -10,7 +10,7 @@
 3. 운영 관측(로그·비용·재시도·롤백)이 가능한가?
 
 ## AI 자율성 설계
-`service-design/ai-service-design-principles.md`의 핵심 전제와 설계 규칙을 따른다.
+`agentic-engineering/service-design/ai-service-design-principles.md`의 핵심 전제와 설계 규칙을 따른다.
 자율성 5단계와 판단 기준은 해당 문서를 참조한다.
 
 ## 아키텍처 원칙: 3-Plane

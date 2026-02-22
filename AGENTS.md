@@ -10,7 +10,6 @@
 
 ## 도메인별 원칙 문서
 - `task-management-principle.md` — 업무 관리 원칙
-- `agentic-engineering/collaboration/collaboration-framework.md` — AI-인간 협업 체계
 - `agentic-engineering/development/technical-grain.md` — 기술적 결 (개발 방법론)
 - `agentic-engineering/service-design/ai-service-design-principles.md` — AI 서비스 설계 원칙
 
