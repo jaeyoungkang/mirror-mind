@@ -7,7 +7,8 @@
 ## 실행 방식
 - 세션 시작 시 백그라운드로 실행: `python meta-agent/scripts/check.py --watch --interval 300`
 - 5분 간격으로 현재 세션 JSONL을 읽고 점검 수행
-- 위반 감지 시 리포트 출력
+- 매 주기 리포트 출력: 위반 사항 + 원칙 리마인드 (위반 유무와 무관)
+- 트리거(주제 전환, 작업 종료) 발동 시 AI가 리포트를 확인하여 원칙을 재주입
 - 1회 점검도 가능: `python meta-agent/scripts/check.py`
 
 ---

@@ -318,6 +318,12 @@ def run_checks(session_path: Path | None, after_line: int = 0) -> dict:
     return report
 
 
+PRINCIPLE_REMINDER = """[원칙 리마인드]
+- 역할: 설계 문서 작성, 업무 관리, 의사결정 수렴. 코드 구현은 하위 프로젝트 별도 에이전트가 수행
+- 목적의 내재화: What 전에 Why를 확인. 불확실하면 질문 먼저
+- 계획은 설계 문서 수준. 구현 레벨(코드 스니펫, 파일별 변경 상세)까지 내려가지 않는다"""
+
+
 def format_report(report: dict) -> str:
     """사람이 읽을 수 있는 리포트 포맷"""
     lines = []
@@ -344,6 +350,9 @@ def format_report(report: dict) -> str:
     lines.append("점검 항목:")
     for check, result in report["checks"].items():
         lines.append(f"  {check}: {result}")
+
+    lines.append("")
+    lines.append(PRINCIPLE_REMINDER)
 
     return "\n".join(lines)
 
@@ -372,12 +381,11 @@ def main():
         while True:
             try:
                 report = run_checks(session_path, after_line=last_line)
-                if report["summary"]["total"] > 0:
-                    if args.json:
-                        print(json.dumps(report, ensure_ascii=False))
-                    else:
-                        print(format_report(report))
-                    sys.stdout.flush()
+                if args.json:
+                    print(json.dumps(report, ensure_ascii=False))
+                else:
+                    print(format_report(report))
+                sys.stdout.flush()
                 # 다음 주기에는 새 메시지만 점검 (문서 점검은 매번)
                 with open(session_path) as f:
                     last_line = sum(1 for _ in f)
