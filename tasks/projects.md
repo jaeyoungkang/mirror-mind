@@ -14,6 +14,19 @@
   - [ ] 모니터링·디버깅 시스템 구현 가이드라인 실전 적용
   - [ ] 도메인별 원칙 문서 확장 (development-principle.md, research-principle.md)
 
+## [>] Light House — 연구 동료 에이전트 서비스
+- 목표: 학술 논문 검색 + AI 분석 연구 탐색 도구. mirror-mind 철학을 서비스에 적용
+- 도메인: 서비스 설계, 개발
+- 저장소: `/Users/jaeyoungkang/corca/lighthouse/`
+- 원칙 원본: `projects/lighthouse/service-principles.md`
+- 하위 업무:
+  - [x] 문서 얼라인 — 대원칙 수립 + 하위 문서 정렬
+    - [x] 대원칙 초안 작성 (service-principles.md)
+    - [x] lighthouse docs/ 문서 정렬 (ai-design-framework 리네이밍, 대원칙 참조 추가, 3-Plane/관측 보강)
+    - [x] mirror-mind 방법론 역수입 (체크리스트, FSM 패턴, 정합성 문서 패턴, 문서 계층 패턴)
+  - [ ] 관측 체계 설계 문서 작성
+  - [ ] 실전 운영 후 방법론 검증 및 개선
+
 ## [>] 메타에이전트 — 원칙 준수 감시
 - 목표: 대화 중 mirror-mind-principle.md, task-management-principle.md 등의 원칙이 지켜지고 있는지 상시 점검
 - 도메인: 운영
