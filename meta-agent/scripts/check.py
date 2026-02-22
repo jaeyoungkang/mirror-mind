@@ -5,7 +5,7 @@
 프로그램적 점검(톤, 참조 무결성 등)을 수행하고 결과를 리포트 파일에 기록한다.
 
 사용법:
-  python scripts/meta-agent.py [--watch] [--interval 30] [--session SESSION_ID]
+  python meta-agent/scripts/check.py [--watch] [--interval 300] [--session SESSION_ID]
 
 모드:
   기본: 현재 세션을 1회 점검
@@ -24,7 +24,7 @@ from pathlib import Path
 from datetime import datetime
 
 CLAUDE_PROJECTS_DIR = Path.home() / ".claude" / "projects"
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 # === 톤 점검 규칙 ===
 

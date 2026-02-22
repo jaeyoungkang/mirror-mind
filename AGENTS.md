@@ -13,7 +13,7 @@
 2. `task-management-principle.md`를 읽고 업무 관리 방식을 파악한다
 3. `tasks/projects.md`를 읽고 현재 진행 상태를 파악한다
 4. `tasks/decisions.md`의 최근 항목을 읽고 맥락을 복원한다
-5. 메타에이전트를 백그라운드로 실행한다: `python scripts/meta-agent.py --watch --interval 300`
+5. 메타에이전트를 백그라운드로 실행한다: `python meta-agent/scripts/check.py --watch --interval 300`
 6. 사용자에게 현재 상태를 요약하고 다음 작업을 제안한다 (메타에이전트 초기 리포트 포함)
 
 ---
@@ -22,6 +22,7 @@
 - `task-management-principle.md` — 업무 관리 원칙
 - `agentic-engineering/development/technical-grain.md` — 기술적 결 (개발 방법론)
 - `agentic-engineering/service-design/ai-service-design-principles.md` — AI 서비스 설계 원칙
+- `meta-agent/meta-agent-principle.md` — 메타에이전트 (원칙 준수 감시)
 
 ---
 
