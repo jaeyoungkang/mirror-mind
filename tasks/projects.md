@@ -19,6 +19,12 @@
 - 도메인: 서비스 설계, 개발
 - 저장소: `/Users/jaeyoungkang/corca/lighthouse/`
 - 원칙 원본: `projects/lighthouse/service-principles.md`
+- 일정:
+  - 2/24(월) 17:00 — 1차 팀 공유 (설계 철학 + 시연 + 의견 수렴)
+    - must-have: Phase 1~6 완료, 핵심 시연 시나리오 동작 (대화→검색→분석→아티팩트→경험 기억)
+  - 2/26(목) — 후속 공유
+  - 3/2(월) — 후속 공유
+  - 3월 1주 — 비공개 알파 테스트 (소수 테스터 모집)
 - 하위 업무:
   - [x] 1차 구현 (프로토타입)
     - [x] 문서 얼라인 — 대원칙 수립 + 하위 문서 정렬
@@ -34,7 +40,13 @@
     - [x] design-state-alignment.md 재작성 — 새 원칙-상태 매핑, 4개 흐름 예시, 5개 실패 사례
     - [x] observability.md 부분 재작성 — 상위 에이전트 관측 계층 추가, Phase 참조 제거
     - [x] conventions.md 업데이트 — 서버사이드 코드, 대화 프로토콜 타입, 아티팩트 타입 규칙 추가
-    - 계획 파일: `~/.claude/plans/nested-exploring-turtle.md`
+  - [>] 2차 구현 (대화형 연구 동료)
+    - [x] Phase 1: 기반 구축 — 패키지, DB 스키마, Supabase 클라이언트, 도메인 타입, 디렉토리 구조
+    - [x] Phase 2: 대화 코어 — 시스템 프롬프트, Chat API, Repository, 대화 캔버스, 기존 Phase 코드 정리
+    - [x] Phase 3: 도구 통합 — 기존 API 로직 추출 → AI SDK 도구 6개 등록, 아티팩트 저장, 레거시 route 삭제
+    - [x] Phase 4: 아티팩트 시스템 — 인라인 아티팩트 렌더러 6종, Thinking HUD, 도구 결과 영속화
+    - [x] Phase 5: 제안 카드 + 자율성 — ProposalCard, propose 도구, agentStore(FSM), 주도권 신호
+    - [x] Phase 6: 경험 기억 — 기억 추출/주입, 세션 간 연구 맥락 유지
 
 ## [>] 메타에이전트 — 원칙 준수 감시
 - 목표: 대화 중 mirror-mind-principle.md, task-management-principle.md 등의 원칙이 지켜지고 있는지 상시 점검
