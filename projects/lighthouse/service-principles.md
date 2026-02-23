@@ -1,7 +1,7 @@
 # Light House — 서비스 대원칙
 
 > 상위 참조: [mirror-mind-principle.md](../../mirror-mind-principle.md)
-> 하위 참조: lighthouse 저장소의 `docs/ai-design-framework.md` (자율성 프레임워크, 설계 규칙)
+> 이 문서가 원본이며, lighthouse 저장소의 `docs/service-principles.md`에 동기화된다.
 
 ---
 
@@ -36,7 +36,7 @@ mirror-mind의 4대 원칙이 서비스 수준에서 적용된다:
 
 ### 4. 맥락 안에서의 자율성
 동료는 상황에 따라 역할을 전환한다. 때로는 도구로, 때로는 자문가로, 때로는 주도적으로.
-- 자율성 수준(L1~L5)은 맥락에 의해 결정된다 (ai-design-framework 프레임워크)
+- 자율성 수준(L1~L5)은 맥락에 의해 결정된다
 - 맥락은 분리하지 않고 쌓는다 — 탐색의 깊이가 곧 이해의 깊이
 
 ---
@@ -64,7 +64,7 @@ mirror-mind의 4대 원칙이 서비스 수준에서 적용된다:
 - **검증 통합**: 하위 에이전트의 결과를 통합하고, 사용자에게 일관된 검증 장치를 제공
 
 ### 하위 에이전트의 원칙
-- 각 에이전트의 자율성 수준은 ai-design-framework 체크리스트에 따라 설계 시점에 확정
+- 각 에이전트의 자율성 수준은 체크리스트에 따라 설계 시점에 확정
 - 하위 에이전트를 추가할 때는 체크리스트(되돌림 비용, 판단의 개인성, 맥락 전환 비용)를 거친다
 - 상위 에이전트와 사용자가 함께 하위 에이전트의 결과를 관리한다
 
@@ -72,14 +72,16 @@ mirror-mind의 4대 원칙이 서비스 수준에서 적용된다:
 
 ## 문서 계층
 
-이 문서가 lighthouse 서비스의 최상위 원칙이다. 하위 문서는 이 원칙을 구체화한다:
+이 문서가 lighthouse 서비스의 최상위 원칙이다. lighthouse 저장소의 하위 문서가 이 원칙을 구체화한다:
 
 ```
-service-principles.md (대원칙 — 이 문서, mirror-mind 원본)
-  → ai-design-framework.md (자율성 프레임워크, 설계 규칙, 안전망)
-    → SPEC.md (Phase별 설계, 에이전트별 자율성 적용)
-      → architecture.md (기술 아키텍처, 3-Plane, 관측)
-        → state-management.md (상태 구조, FSM)
-          → design-state-alignment.md (원칙-구현 정합성)
-    → conventions.md (코딩 규칙)
+service-principles.md (WHY — 이 문서, mirror-mind 원본)
+├── SPEC.md (WHAT — 제품이 무엇을 하는가)
+├── architecture.md (HOW — 어떻게 만드는가)
+│   └── state-management.md (HOW 상세 — 상태 구조)
+├── design-state-alignment.md (CHECK — 원칙→코드 검증)
+├── observability.md (WATCH — 관측)
+└── conventions.md (RULES — 코딩 규칙)
 ```
+
+**변경 이력**: ai-design-framework.md(구 DESIGN_PRINCIPLES.md)를 service-principles.md에 흡수하여 계층 역전 해소. lighthouse 저장소의 service-principles.md에 자율성 프레임워크, 설계 규칙, 안전망, 제어감, 체크리스트가 통합되어 있다.
