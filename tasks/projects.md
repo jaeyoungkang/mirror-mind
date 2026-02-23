@@ -20,22 +20,14 @@
 - 저장소: `/Users/jaeyoungkang/corca/lighthouse/`
 - 원칙 원본: `projects/lighthouse/service-principles.md`
 - 하위 업무:
-  - [x] 문서 얼라인 — 대원칙 수립 + 하위 문서 정렬
-    - [x] 대원칙 초안 작성 (service-principles.md)
-    - [x] lighthouse docs/ 문서 정렬 (ai-design-framework 리네이밍, 대원칙 참조 추가, 3-Plane/관측 보강)
-    - [x] mirror-mind 방법론 역수입 (체크리스트, FSM 패턴, 정합성 문서 패턴, 문서 계층 패턴)
-  - [x] 관측 체계 설계 문서 작성
-    - lighthouse `docs/observability.md` — 프로토타입 최소 관측 (AI 호출·API·오케스트레이션·워크플로·비즈니스 로직)
-    - 호출 빈도 모니터링 포함. 과다 호출 방지(안전장치)는 별도 주제
-  - [x] 대원칙 기반 코드 재설계 (Phase A: 오케스트레이터 추출)
-  - [!] 에이전트 인터페이스 통합 (Phase B) — 보류. 교체 가능한 에이전트가 필요해지면 도입
-  - [x] 관측 UI 모듈 추가
-    - 설계 문서: lighthouse `docs/observability-ui.md`
-    - 구현은 lighthouse 저장소에서 별도 에이전트가 진행
-  - [ ] 연구 의도 모델 프롬프트 실험 (Phase C 사전 검증)
-    - 클러스터링 API에 축적된 분석 요약을 추가하여 결과 비교
-    - 효과 확인 시 ResearchIntent 모델링, 미확인 시 폐기
-  - [ ] 실전 운영 후 방법론 검증 및 개선
+  - [x] 1차 구현 (프로토타입)
+    - [x] 문서 얼라인 — 대원칙 수립 + 하위 문서 정렬
+    - [x] 관측 체계 설계 문서 작성
+    - [x] 대원칙 기반 코드 재설계 (Phase A: 오케스트레이터 추출)
+    - [x] 관측 UI 모듈 추가
+  - [>] 서비스 방향 재검토 + 재설계
+    - [x] 설계 문서 재구성 (계층 역전 해소, 중복 제거, 자체 완결)
+    - [>] 재설계 진행 중 — lighthouse 저장소에서 별도 에이전트가 수행
 
 ## [>] 메타에이전트 — 원칙 준수 감시
 - 목표: 대화 중 mirror-mind-principle.md, task-management-principle.md 등의 원칙이 지켜지고 있는지 상시 점검
