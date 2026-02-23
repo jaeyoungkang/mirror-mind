@@ -194,3 +194,19 @@
 - 세션이 길어지면 컨텍스트 압축으로 초기 지시가 약화됨
 - 메타에이전트는 유일한 정기적 메커니즘. 리마인드를 매 주기 출력하면 트리거 시점에 원칙을 재주입할 수 있음
 - 새 규칙을 추가하는 것이 아니라 기존 원칙(목적의 내재화)에 대한 감시를 작동시키는 것
+
+## 2026-02-23 | Light House 서비스 설계 문서 재구성
+> 원본: `conversations/2026-02-23-세션6.md`
+
+### 결정 사항
+1. ai-design-framework.md를 service-principles.md에 흡수 후 삭제 — 계층 역전 해소
+2. 문서 역할을 WHY/WHAT/HOW/CHECK/WATCH/RULES로 명확히 분리
+3. SPEC.md에서 기술 구현 내용(기술 스택, 기능 모듈, 컴포넌트, 성능)을 architecture.md로 이관
+4. lighthouse 문서는 자체 완결 — mirror-mind 외부 참조(technical-grain.md 등) 제거
+5. 10분 주기 주요 문서 재읽기를 세션 운영 절차에 추가
+
+### 근거
+- ai-design-framework.md는 대원칙 확립 이전에 작성되어 핵심 정의를 하위 문서가 소유하는 계층 역전 발생
+- 문서 분리/통합 기준 적용: ai-design-framework는 lighthouse 없이 독립적 의미 없음, 추상화로 상위 흡수 가능 → 통합이 기본값
+- SPEC(WHAT)과 architecture(HOW)의 관심사 분리로 중복 제거 (511줄 삭제, 343줄 추가)
+- lighthouse는 mirror-mind의 클론+변형이므로 프로젝트 내부 정합성만 확보하면 됨
