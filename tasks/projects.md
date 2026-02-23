@@ -27,7 +27,14 @@
     - [x] 관측 UI 모듈 추가
   - [>] 서비스 방향 재검토 + 재설계
     - [x] 설계 문서 재구성 (계층 역전 해소, 중복 제거, 자체 완결)
-    - [>] 재설계 진행 중 — lighthouse 저장소에서 별도 에이전트가 수행
+    - [x] 대원칙 재정의 — 상위 에이전트를 대화형 연구 동료로
+    - [x] SPEC.md 완전 재작성 — 대화 캔버스, 제안 카드, 아티팩트, 경험 기억, 주도권 신호
+    - [ ] architecture.md 재작성 — 상위 에이전트 아키텍처, 대화 프로토콜, 기억 시스템
+    - [ ] state-management.md 재작성 — Conversation=SSOT, 서버/클라이언트 분리
+    - [ ] design-state-alignment.md 재작성 — 새 원칙-상태 매핑
+    - [ ] observability.md 부분 재작성 — 상위 에이전트 관측 추가
+    - [ ] conventions.md 업데이트
+    - 계획 파일: `~/.claude/plans/nested-exploring-turtle.md`
 
 ## [>] 메타에이전트 — 원칙 준수 감시
 - 목표: 대화 중 mirror-mind-principle.md, task-management-principle.md 등의 원칙이 지켜지고 있는지 상시 점검
