@@ -40,13 +40,24 @@
     - [x] design-state-alignment.md 재작성 — 새 원칙-상태 매핑, 4개 흐름 예시, 5개 실패 사례
     - [x] observability.md 부분 재작성 — 상위 에이전트 관측 계층 추가, Phase 참조 제거
     - [x] conventions.md 업데이트 — 서버사이드 코드, 대화 프로토콜 타입, 아티팩트 타입 규칙 추가
-  - [>] 2차 구현 (대화형 연구 동료)
+  - [x] 2차 구현 (대화형 연구 동료)
     - [x] Phase 1: 기반 구축 — 패키지, DB 스키마, Supabase 클라이언트, 도메인 타입, 디렉토리 구조
     - [x] Phase 2: 대화 코어 — 시스템 프롬프트, Chat API, Repository, 대화 캔버스, 기존 Phase 코드 정리
     - [x] Phase 3: 도구 통합 — 기존 API 로직 추출 → AI SDK 도구 6개 등록, 아티팩트 저장, 레거시 route 삭제
     - [x] Phase 4: 아티팩트 시스템 — 인라인 아티팩트 렌더러 6종, Thinking HUD, 도구 결과 영속화
     - [x] Phase 5: 제안 카드 + 자율성 — ProposalCard, propose 도구, agentStore(FSM), 주도권 신호
     - [x] Phase 6: 경험 기억 — 기억 추출/주입, 세션 간 연구 맥락 유지
+    - [x] 안정화 — 버그 4건 수정(제안 카드 후 응답 중단, 해시값 표시, 도구 연쇄 호출, 마크다운 렌더링) + 기억 주입 프롬프트 개선
+  - [ ] 1차 팀 공유 준비 (2/24 17:00)
+  - [x] 후속 개선 1차
+    - [x] 대화 톤 존대말 전환 — system-prompt.ts
+    - [x] 온보딩 — corca 이름 도입, 첫 방문 판단(research_journeys 0건), 자동 대화 생성 + 인사 메시지, 첫 탐색 가이드
+    - [x] 페이퍼 리스트 UI — 우측 캔버스 패널(PaperPanel/PaperList), ChatShell 래퍼, /api/papers 엔드포인트
+    - [x] 주기적 중간 정리 — propose 활용, LLM 자율 판단
+    - [x] propose 카드 표시 버그 수정 — 입력 필드 섹션 제거(Gemini JSON 텍스트 출력 원인), function calling 명시
+    - [x] search_papers 에러 UX — throw→에러 객체 반환, ErrorCard 한국어 라벨
+    - [x] "동료"→"코르카" 전환 — UI 텍스트·주석·프롬프트 전체
+    - [x] Semantic Scholar 출처 표시 — ThinkingHUD, SearchPapersResult
 
 ## [>] 메타에이전트 — 원칙 준수 감시
 - 목표: 대화 중 mirror-mind-principle.md, task-management-principle.md 등의 원칙이 지켜지고 있는지 상시 점검
