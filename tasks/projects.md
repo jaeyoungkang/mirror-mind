@@ -58,6 +58,13 @@
     - [x] search_papers 에러 UX — throw→에러 객체 반환, ErrorCard 한국어 라벨
     - [x] "동료"→"코르카" 전환 — UI 텍스트·주석·프롬프트 전체
     - [x] Semantic Scholar 출처 표시 — ThinkingHUD, SearchPapersResult
+  - [x] UI 패러다임 전환 — Living Notebook
+    - [x] UI 리서치 — 8가지 방향 탐색, 5개 조합 도출
+    - [x] 설계 결정 — Living Notebook + 3단 분할(Board+Graph) + 상단 내비게이션
+    - [x] 노트북 코어 구현 — 채팅 버블 제거, 블록 기반 문서 렌더링, PDF-like 타이포그래피
+    - [x] 레거시 코드 대규모 리팩토링
+    - [>] Board + Graph 패널 — 설계 완료, 구현 대기
+  - [ ] 안정화 (다음 작업)
 
 ## [>] 메타에이전트 — 원칙 준수 감시
 - 목표: 대화 중 mirror-mind-principle.md, task-management-principle.md 등의 원칙이 지켜지고 있는지 상시 점검
