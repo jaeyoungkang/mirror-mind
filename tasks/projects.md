@@ -63,8 +63,15 @@
     - [x] 설계 결정 — Living Notebook + 3단 분할(Board+Graph) + 상단 내비게이션
     - [x] 노트북 코어 구현 — 채팅 버블 제거, 블록 기반 문서 렌더링, PDF-like 타이포그래피
     - [x] 레거시 코드 대규모 리팩토링
-    - [>] Board + Graph 패널 — 설계 완료, 구현 대기
-  - [ ] 안정화 (다음 작업)
+    - [x] Board + Graph 패널 — 제거 결정, 코드 삭제 완료
+  - [>] 연구 시나리오 기반 고도화
+    - [x] 연구자 행동 시나리오 수집 — Ellis 모델, Kuhlthau ISP, Berry Picking 등 학술 리서치
+    - [x] 시나리오 문서화 — `projects/lighthouse/research-scenarios.md`
+    - [x] 서비스 설계 원칙 반영 — ai-service-design-principles.md + service-principles.md에 시나리오 기반 설계 원칙 추가
+    - [>] 시나리오 1(새 분야 진입) + 시나리오 2(제안서 준비) 구현 — 시스템 프롬프트 + 탐색 흐름 고도화
+    - [ ] Research Library UI 설계 + 구현
+    - [ ] 시나리오 3~5 점진적 확장
+  - [ ] 안정화
 
 ## [>] 메타에이전트 — 원칙 준수 감시
 - 목표: 대화 중 mirror-mind-principle.md, task-management-principle.md 등의 원칙이 지켜지고 있는지 상시 점검
