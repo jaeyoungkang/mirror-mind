@@ -235,5 +235,29 @@
 - 분석 구조 고정 제거: 연구 동료라면 맥락에 따라 다른 분석을 제안해야 함
 
 ### 미완료 (다음 세션)
-- architecture.md, state-management.md, design-state-alignment.md, observability.md, conventions.md 재작성
-- 계획 파일: `~/.claude/plans/nested-exploring-turtle.md`에 각 문서별 목차와 핵심 내용 정리됨
+- ~~architecture.md, state-management.md, design-state-alignment.md, observability.md, conventions.md 재작성~~ → 세션 8에서 완료
+
+## 2026-02-23 | Light House 하위 문서 완전 재작성 + 기술 결정
+> 원본: `conversations/2026-02-23-세션8.md`
+
+### 결정 사항
+
+#### 문서 재작성 (5개)
+1. **architecture.md** 완전 재작성 — 도메인 결 3가지(이벤트 스트림+리소스+워크플로), LLM 상위 에이전트 아키텍처(function calling 오케스트레이션), 대화 프로토콜(5개 메시지 타입), 3계층 기억 시스템, 4개 데이터 모델, 3-Plane 코드 매핑
+2. **state-management.md** 완전 재작성 — Conversation=SSOT, 서버/클라이언트 상태 분리, 4개 Zustand 스토어(conversation/artifact/agent/ui), 에이전트 실행 FSM(자율성 수준별 경로), 아티팩트 관계 유형(parent-child/reference)
+3. **design-state-alignment.md** 완전 재작성 — 핵심 명제 5개, 원칙-상태 매핑 7개, 상세 흐름 예시 4개(대화→검색, 클러스터링 제안→승인, 경험 기억 활용, 주도권 전환), 실패 사례 5개, 코드 리뷰 체크리스트 7개
+4. **observability.md** 부분 재작성 — 상위 에이전트 관측 계층 신설(대화 턴, 도구 호출, 자율성 판단, 제안 카드 수락률, 주도권 전환, 기억 활용), Phase 참조 전면 제거, 카테고리 5개로 재편
+5. **conventions.md** 업데이트 — 서버사이드 코드 규칙(agent/tools/repository 구조), 대화 프로토콜 타입 규칙(판별 유니온, 아티팩트 참조 마커), 아티팩트 타입 정의 규칙 추가
+
+#### 기술 결정 (열린 질문 5개 해소)
+1. **상위 에이전트 LLM**: Gemini 3 Flash Preview — tool calling + 대용량 컨텍스트
+2. **스트리밍 구현**: Vercel AI SDK (`ai` + `@ai-sdk/google`) — tool calling + SSE 통합, 보일러플레이트 최소화
+3. **서버사이드 저장**: Supabase (Postgres + Auth + RLS) — 인증 내장, Row Level Security로 사용자별 데이터 격리, 무료 티어 500MB
+4. **경험 기억 범위**: 세션 간 포함 — 세션 종료 시 LLM이 핵심 기억 추출, 새 세션 시 최근 N개 세션의 전체 기억을 시스템 프롬프트에 주입. 기억 선별(유사도 기반)은 프로토타입에서 스킵
+5. **기존 코드 재활용**: 핵심 로직(프롬프트, Zod 스키마, 응답 파싱) 추출하여 tool 함수로 재사용. API route 껍데기는 버림 (function calling으로 대체)
+
+### 근거
+- 보일러플레이트 최소화가 기술 선택의 일관된 기준 — AI SDK(tool calling 루프 자동화), Supabase(인증+DB 통합), 핵심 로직 재사용(프롬프트 재검증 불필요)
+- 경험 기억은 Light House의 차별점 — "동료는 연구 여정 전체를 기억한다"를 프로토타입에서 빼면 챗봇과 구분 불가
+- Supabase 채택: 경험 기억이 사용자별이므로 인증이 필수. Supabase Auth + RLS가 이를 DB 레벨에서 해결
+- 파일 기반 저장 기각: Vercel 서버리스는 읽기 전용 파일시스템, 영속 불가

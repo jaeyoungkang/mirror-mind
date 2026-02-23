@@ -25,15 +25,15 @@
     - [x] 관측 체계 설계 문서 작성
     - [x] 대원칙 기반 코드 재설계 (Phase A: 오케스트레이터 추출)
     - [x] 관측 UI 모듈 추가
-  - [>] 서비스 방향 재검토 + 재설계
+  - [x] 서비스 방향 재검토 + 재설계
     - [x] 설계 문서 재구성 (계층 역전 해소, 중복 제거, 자체 완결)
     - [x] 대원칙 재정의 — 상위 에이전트를 대화형 연구 동료로
     - [x] SPEC.md 완전 재작성 — 대화 캔버스, 제안 카드, 아티팩트, 경험 기억, 주도권 신호
-    - [ ] architecture.md 재작성 — 상위 에이전트 아키텍처, 대화 프로토콜, 기억 시스템
-    - [ ] state-management.md 재작성 — Conversation=SSOT, 서버/클라이언트 분리
-    - [ ] design-state-alignment.md 재작성 — 새 원칙-상태 매핑
-    - [ ] observability.md 부분 재작성 — 상위 에이전트 관측 추가
-    - [ ] conventions.md 업데이트
+    - [x] architecture.md 재작성 — 도메인 결 3가지, 상위 에이전트 아키텍처, 대화 프로토콜, 기억 시스템, 데이터 모델
+    - [x] state-management.md 재작성 — Conversation=SSOT, 서버/클라이언트 분리, 4개 Zustand 스토어, 에이전트 FSM
+    - [x] design-state-alignment.md 재작성 — 새 원칙-상태 매핑, 4개 흐름 예시, 5개 실패 사례
+    - [x] observability.md 부분 재작성 — 상위 에이전트 관측 계층 추가, Phase 참조 제거
+    - [x] conventions.md 업데이트 — 서버사이드 코드, 대화 프로토콜 타입, 아티팩트 타입 규칙 추가
     - 계획 파일: `~/.claude/plans/nested-exploring-turtle.md`
 
 ## [>] 메타에이전트 — 원칙 준수 감시
