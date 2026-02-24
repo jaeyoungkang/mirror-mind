@@ -13,12 +13,16 @@
   python3 memory/scripts/query.py --milestone               # 마일스톤만
   python3 memory/scripts/query.py --relationship            # 관계 변화 에피소드만
   python3 memory/scripts/query.py --stats                   # 통계 요약
+  python3 memory/scripts/query.py --context "메타에이전트 codex 연동"  # 맥락 기반 자동 조회
 
 필터는 조합 가능:
   python3 memory/scripts/query.py --project lighthouse --emotion excitement --recent 3
 """
 
 import json
+import re
+import subprocess
+import tempfile
 import argparse
 from pathlib import Path
 from collections import Counter
@@ -32,6 +36,125 @@ def load_episodes() -> list[dict]:
         return []
     with open(EPISODES_FILE, encoding="utf-8") as f:
         return json.load(f)
+
+
+# === codex 연동: 맥락 기반 자동 조회 ===
+
+def call_codex(prompt: str, timeout: int = 60) -> str:
+    """codex exec (read-only) 로 LLM 호출"""
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as f:
+        output_path = f.name
+
+    cmd = [
+        "codex", "exec",
+        "--sandbox", "read-only",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "-o", output_path,
+        "-",
+    ]
+    try:
+        subprocess.run(
+            cmd, input=prompt,
+            capture_output=True, text=True, timeout=timeout,
+            cwd=str(PROJECT_ROOT),
+        )
+        result_path = Path(output_path)
+        if result_path.exists():
+            return result_path.read_text().strip()
+        return ""
+    except (subprocess.TimeoutExpired, Exception):
+        return ""
+    finally:
+        Path(output_path).unlink(missing_ok=True)
+
+
+def build_schema_summary(episodes: list[dict]) -> str:
+    """에피소드 DB의 필터 가능 필드와 값 목록을 생성"""
+    projects = sorted(set(e.get("project", "") for e in episodes if e.get("project")))
+    types = sorted(set(e.get("activity_type", "") for e in episodes if e.get("activity_type")))
+    emotions = sorted(set(e.get("emotion", "") for e in episodes if e.get("emotion")))
+    scopes = sorted(set(e.get("scope", "") for e in episodes if e.get("scope")))
+    rels = sorted(set(e.get("relationship_type", "") for e in episodes if e.get("relationship_type")))
+    outcomes = sorted(set(e.get("outcome", "") for e in episodes if e.get("outcome")))
+
+    return f"""에피소드 DB ({len(episodes)}건) 필터 필드:
+- project: {projects}
+- activity_type: {types}
+- emotion: {emotions}
+- scope: {scopes}
+- relationship_type: {rels}
+- outcome: {outcomes}
+- keyword: topic/summary/outcome_detail 텍스트 검색
+- milestone: true/false (마일스톤 에피소드만)
+- recent: 숫자 (최근 N건 제한)"""
+
+
+CONTEXT_QUERY_PROMPT = """너는 기억 시스템의 쿼리 생성기다.
+현재 작업 맥락을 보고, 관련 기억을 찾기 위한 쿼리 파라미터를 결정하라.
+
+## 에피소드 스키마
+{schema}
+
+## 현재 맥락
+{context}
+
+## 규칙
+- 관련 기억을 넓게 포착하기 위해 3~5개의 쿼리를 생성하라
+- 각 쿼리는 필터 1~2개만 사용하라 (너무 좁히지 마라)
+- keyword는 반드시 한국어 단일 단어 1개 (예: "관측", "속도", "스크립트")
+- 관련 작업이 다른 프로젝트에 있을 수 있다 — project를 고정하지 마라
+- 직접 관련 + 간접 관련(유사 패턴, 과거 시행착오) 모두 포착하라
+
+## 출력
+JSON 배열만 출력. 다른 텍스트 없이.
+[{{"project": null, "type": null, "keyword": "단어", "scope": null, "milestone": false, "recent": null}}]
+불필요한 필드는 null로."""
+
+
+def context_query(context: str, episodes: list[dict]) -> list[dict]:
+    """현재 맥락에 적합한 에피소드를 codex가 판단하여 조회"""
+    schema = build_schema_summary(episodes)
+    prompt = CONTEXT_QUERY_PROMPT.format(schema=schema, context=context)
+
+    raw = call_codex(prompt, timeout=60)
+    if not raw:
+        return []
+
+    # JSON 파싱
+    try:
+        match = re.search(r'\[.*\]', raw, re.DOTALL)
+        if not match:
+            return []
+        queries = json.loads(match.group())
+    except (json.JSONDecodeError, Exception):
+        return []
+
+    # 각 쿼리 실행 후 합집합 (중복 제거)
+    seen_ids = set()
+    results = []
+    for q in queries:
+        if not isinstance(q, dict):
+            continue
+        ns = argparse.Namespace(
+            project=q.get("project"),
+            type=q.get("type"),
+            emotion=q.get("emotion"),
+            scope=q.get("scope"),
+            session=q.get("session"),
+            keyword=q.get("keyword"),
+            recent=q.get("recent"),
+            milestone=q.get("milestone") is True,
+            relationship=q.get("relationship") is True,
+        )
+        filtered = filter_episodes(episodes, ns)
+        for ep in filtered:
+            ep_id = ep.get("id", "")
+            if ep_id not in seen_ids:
+                seen_ids.add(ep_id)
+                results.append(ep)
+
+    return results
 
 
 def filter_episodes(episodes: list[dict], args) -> list[dict]:
@@ -59,12 +182,15 @@ def filter_episodes(episodes: list[dict], args) -> list[dict]:
         result = [e for e in result if e.get("relationship_type")]
 
     if args.keyword:
-        kw = args.keyword.lower()
+        words = args.keyword.lower().split()
         result = [
             e for e in result
-            if kw in e.get("topic", "").lower()
-            or kw in e.get("summary", "").lower()
-            or kw in e.get("outcome_detail", "").lower()
+            if any(
+                w in e.get("topic", "").lower()
+                or w in e.get("summary", "").lower()
+                or w in e.get("outcome_detail", "").lower()
+                for w in words
+            )
         ]
 
     if args.recent:
@@ -182,11 +308,27 @@ def main():
     parser.add_argument("--milestone", action="store_true", help="마일스톤만")
     parser.add_argument("--relationship", action="store_true", help="관계 변화 에피소드만")
     parser.add_argument("--stats", action="store_true", help="통계 요약")
+    parser.add_argument("--context", help="맥락 기반 자동 조회 (codex가 적절한 쿼리 결정)")
     parser.add_argument("--verbose", "-v", action="store_true", help="상세 출력")
     parser.add_argument("--json", action="store_true", help="JSON 출력")
     args = parser.parse_args()
 
     episodes = load_episodes()
+
+    # 맥락 기반 조회
+    if args.context:
+        results = context_query(args.context, episodes)
+        if not results:
+            print("맥락에 관련된 기억 없음")
+            return
+        if args.json:
+            print(json.dumps(results, ensure_ascii=False, indent=2))
+            return
+        print(f"--- 맥락 조회: {len(results)}건 ---\n")
+        for ep in results:
+            print(format_episode(ep, verbose=args.verbose))
+            print()
+        return
 
     if args.stats:
         filtered = filter_episodes(episodes, args) if any([

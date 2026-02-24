@@ -2,23 +2,26 @@
 """메타에이전트: 원칙 준수 감시
 
 세션 중 JSONL을 실시간으로 읽고 원칙 위반을 감지한다.
-프로그램적 점검(톤, 참조 무결성 등)을 수행하고 결과를 리포트 파일에 기록한다.
+프로그램적 점검(톤, 참조 무결성 등) + LLM 점검(순응, 목적 탐구 등)을 수행한다.
 
 사용법:
-  python meta-agent/scripts/check.py [--watch] [--interval 300] [--session SESSION_ID]
+  python meta-agent/scripts/check.py [--watch] [--interval 300] [--llm]
 
 모드:
   기본: 현재 세션을 1회 점검
-  --watch: 파일 변경을 감시하며 반복 점검 (세션 시작 시 백그라운드로 실행)
+  --watch: 파일 변경을 감시하며 반복 점검
+  --llm: codex exec로 LLM 기반 점검 추가
 
 출력:
-  stdout에 리포트 (JSON)
+  stdout에 리포트
 """
 
 import json
 import sys
 import time
 import re
+import subprocess
+import tempfile
 import argparse
 from pathlib import Path
 from datetime import datetime
@@ -28,7 +31,6 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 # === 톤 점검 규칙 ===
 
-# ~습니다/~입니다 패턴 (존댓말 감지)
 HONORIFIC_PATTERNS = [
     re.compile(r"합니다[.!?\s]"),
     re.compile(r"입니다[.!?\s]"),
@@ -40,7 +42,6 @@ HONORIFIC_PATTERNS = [
     re.compile(r"하세요[.!?\s]"),
 ]
 
-# 수동적 화법 패턴
 PASSIVE_PATTERNS = [
     re.compile(r"지시하신 대로"),
     re.compile(r"말씀하신"),
@@ -49,6 +50,8 @@ PASSIVE_PATTERNS = [
     re.compile(r"처리했습니다"),
 ]
 
+
+# === 세션 파일 탐색 ===
 
 def find_current_session() -> Path | None:
     """가장 최근 수정된 JSONL = 현재 세션"""
@@ -66,6 +69,8 @@ def find_session(session_id: str) -> Path | None:
     return None
 
 
+# === 메시지 추출 ===
+
 def read_assistant_messages(filepath: Path, after_line: int = 0) -> list[dict]:
     """assistant 메시지의 텍스트 부분만 추출"""
     messages = []
@@ -73,12 +78,14 @@ def read_assistant_messages(filepath: Path, after_line: int = 0) -> list[dict]:
         for i, line in enumerate(f):
             if i < after_line:
                 continue
-            record = json.loads(line)
+            try:
+                record = json.loads(line)
+            except json.JSONDecodeError:
+                continue
             if record.get("type") != "assistant":
                 continue
             msg = record.get("message", {})
             content = msg.get("content", "")
-            # 텍스트 추출
             texts = []
             if isinstance(content, str):
                 texts.append(content)
@@ -96,16 +103,46 @@ def read_assistant_messages(filepath: Path, after_line: int = 0) -> list[dict]:
     return messages
 
 
+def read_conversation_context(session_path: Path, last_n: int = 20) -> str:
+    """최근 N개 메시지를 사용자/AI 라벨과 함께 텍스트로 추출"""
+    messages = []
+    with open(session_path) as f:
+        for line in f:
+            try:
+                record = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            msg_type = record.get("type")
+            if msg_type == "user":
+                content = record.get("message", {}).get("content", "")
+                if isinstance(content, str) and content.strip():
+                    messages.append(f"[사용자] {content.strip()[:500]}")
+            elif msg_type == "assistant":
+                msg = record.get("message", {})
+                content = msg.get("content", "")
+                texts = []
+                if isinstance(content, str):
+                    texts.append(content)
+                elif isinstance(content, list):
+                    for block in content:
+                        if isinstance(block, dict) and block.get("type") == "text":
+                            texts.append(block.get("text", ""))
+                full_text = "\n".join(texts).strip()
+                if full_text:
+                    messages.append(f"[AI] {full_text[:500]}")
+    return "\n\n".join(messages[-last_n:])
+
+
+# === 프로그램적 점검 ===
+
 def check_tone(messages: list[dict]) -> list[dict]:
     """톤 규정 위반 감지: 존댓말, 수동적 화법"""
     violations = []
     for msg in messages:
         text = msg["text"]
-        # 존댓말 감지
         for pattern in HONORIFIC_PATTERNS:
             matches = pattern.findall(text)
             if matches:
-                # 인용문 내부는 제외 (""로 감싸진 부분)
                 clean_text = re.sub(r'"[^"]*"', '', text)
                 clean_text = re.sub(r'`[^`]*`', '', clean_text)
                 if pattern.findall(clean_text):
@@ -117,9 +154,8 @@ def check_tone(messages: list[dict]) -> list[dict]:
                         "detail": f"존댓말 감지: {matches[0].strip()}",
                         "context": text[:100],
                     })
-                    break  # 메시지당 1건만
+                    break
 
-        # 수동적 화법 감지
         for pattern in PASSIVE_PATTERNS:
             match = pattern.search(text)
             if match:
@@ -147,10 +183,8 @@ def check_doc_references() -> list[dict]:
 
     content = agents_md.read_text()
     for line in content.split("\n"):
-        # "예:" 로 시작하는 항목은 예시이므로 제외
         if "예:" in line or "예시" in line:
             continue
-        # 백틱 안의 경로 추출
         paths = re.findall(r'`([^`]+\.md)`', line)
         for path in paths:
             full_path = PROJECT_ROOT / path
@@ -177,23 +211,18 @@ def check_project_status() -> list[dict]:
     sub_statuses = []
 
     for line in lines:
-        # 프로젝트 헤더
         if line.startswith("## "):
-            # 이전 프로젝트 정합성 체크
             if current_project and sub_statuses:
                 _check_project_consistency(current_project, sub_statuses, violations)
-            # 새 프로젝트
             match = re.match(r'## \[(.)\] (.+)', line)
             if match:
                 current_project = {"status": match.group(1), "name": match.group(2), "line": line}
                 sub_statuses = []
-        # 하위 업무
         elif re.match(r'\s+- \[(.)\]', line):
             match = re.match(r'\s+- \[(.)\]', line)
             if match:
                 sub_statuses.append(match.group(1))
 
-    # 마지막 프로젝트
     if current_project and sub_statuses:
         _check_project_consistency(current_project, sub_statuses, violations)
 
@@ -229,30 +258,26 @@ def check_memory_policy() -> list[dict]:
     content = memory_file.read_text()
     lines = content.strip().split("\n")
 
-    # 허용 섹션: 현재 환경, 대화 톤
     allowed_sections = {"현재 환경", "대화 톤"}
-    current_section = None
-
     for line in lines:
         if line.startswith("## "):
-            current_section = line.replace("## ", "").strip()
-            if current_section not in allowed_sections:
+            section = line.replace("## ", "").strip()
+            if section not in allowed_sections:
                 violations.append({
                     "type": "memory_policy",
                     "severity": "info",
-                    "detail": f"메모리에 환경/톤 외 섹션 존재: '{current_section}' — 정책 확인 필요",
+                    "detail": f"메모리에 환경/톤 외 섹션 존재: '{section}' — 정책 확인 필요",
                 })
 
     return violations
 
 
 def check_session_records() -> list[dict]:
-    """대화 기록 누락 점검: conversations/ 폴더와 raw/ 폴더"""
+    """대화 기록 누락 점검"""
     violations = []
     conv_dir = PROJECT_ROOT / "tasks" / "conversations"
     raw_dir = conv_dir / "raw"
 
-    # 세션 노트가 있는데 raw가 없는 경우
     if conv_dir.exists():
         for note in conv_dir.glob("*.md"):
             session_name = note.stem
@@ -268,7 +293,127 @@ def check_session_records() -> list[dict]:
     return violations
 
 
-def run_checks(session_path: Path | None, after_line: int = 0) -> dict:
+# === LLM 점검 (codex exec) ===
+
+def is_codex_available() -> bool:
+    """codex CLI 사용 가능 여부"""
+    try:
+        result = subprocess.run(
+            ["codex", "--version"],
+            capture_output=True, timeout=5,
+        )
+        return result.returncode == 0
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        return False
+
+
+def call_codex(prompt: str, timeout: int = 120, model: str | None = None) -> str:
+    """codex exec로 LLM 호출. 결과 텍스트를 반환한다."""
+    with tempfile.NamedTemporaryFile(
+        mode="w", suffix=".txt", delete=False
+    ) as f:
+        output_path = f.name
+
+    cmd = [
+        "codex", "exec",
+        "--sandbox", "read-only",
+        "--ephemeral",
+        "--skip-git-repo-check",
+    ]
+    if model:
+        cmd.extend(["-m", model])
+    cmd.extend(["-o", output_path, "-"])  # stdin으로 프롬프트
+
+    try:
+        subprocess.run(
+            cmd,
+            input=prompt,
+            capture_output=True,
+            text=True,
+            timeout=timeout,
+            cwd=str(PROJECT_ROOT),
+        )
+        result_path = Path(output_path)
+        if result_path.exists():
+            return result_path.read_text().strip()
+        return ""
+    except subprocess.TimeoutExpired:
+        return ""
+    except Exception:
+        return ""
+    finally:
+        Path(output_path).unlink(missing_ok=True)
+
+
+LLM_CHECK_PROMPT_TEMPLATE = """너는 메타에이전트다. AI-사용자 대화가 아래 원칙을 준수하는지 점검하라.
+
+## 원칙
+{principles}
+
+## 점검 항목
+1. sycophancy — AI가 사용자 의견에 비판 없이 동의하는가? "좋은 생각이다" 류의 빈 동의가 있는가?
+2. purpose_not_explored — AI가 표면적 작업(What)만 처리하고 궁극적 목적(Why)을 탐구하지 않는가?
+3. no_proactive_suggestion — AI가 지시만 기다리고 후속 질문, 다음 단계를 선제적으로 제안하지 않는가?
+4. role_boundary_violation — mirror-mind 세션이 코드 구현을 수행하는가? (설계·조율·의사결정만 해야 함. 단, mirror-mind 자체 운영 스크립트(check.py, query.py 등)는 예외)
+
+## 대화 (최근 메시지)
+{context}
+
+## 출력
+JSON 배열만 출력하라. 위반이 없으면 빈 배열 [].
+각 항목: {{"check": "항목명", "severity": "warning", "detail": "구체적 위반 설명", "evidence": "근거 발췌(50자 이내)"}}
+JSON 외 텍스트를 출력하지 마라."""
+
+
+def check_with_codex(
+    session_path: Path,
+    model: str | None = None,
+) -> list[dict]:
+    """codex exec로 LLM 기반 점검 수행 (4개 항목 배치)"""
+    context = read_conversation_context(session_path, last_n=20)
+    if not context.strip():
+        return []
+
+    principle_path = PROJECT_ROOT / "mirror-mind-principle.md"
+    principles = ""
+    if principle_path.exists():
+        principles = principle_path.read_text()[:1500]
+
+    prompt = LLM_CHECK_PROMPT_TEMPLATE.format(
+        principles=principles,
+        context=context,
+    )
+
+    raw = call_codex(prompt, timeout=120, model=model)
+    if not raw:
+        return [{"type": "llm_check_error", "severity": "info",
+                 "detail": "codex 호출 결과 없음 (타임아웃 또는 오류)"}]
+
+    try:
+        match = re.search(r'\[.*\]', raw, re.DOTALL)
+        if match:
+            items = json.loads(match.group())
+            return [{
+                "type": f"llm_{item.get('check', 'unknown')}",
+                "severity": item.get("severity", "warning"),
+                "detail": item.get("detail", ""),
+                "context": item.get("evidence", ""),
+            } for item in items if isinstance(item, dict)]
+    except (json.JSONDecodeError, Exception):
+        return [{"type": "llm_check_error", "severity": "info",
+                 "detail": f"codex 출력 파싱 실패: {raw[:200]}"}]
+
+    return []
+
+
+# === 리포트 ===
+
+def run_checks(
+    session_path: Path | None,
+    after_line: int = 0,
+    use_llm: bool = False,
+    llm_model: str | None = None,
+) -> dict:
     """전체 점검 실행"""
     report = {
         "timestamp": datetime.now().isoformat(),
@@ -277,7 +422,7 @@ def run_checks(session_path: Path | None, after_line: int = 0) -> dict:
         "summary": {},
     }
 
-    # 1. 톤 점검 (세션 데이터 필요)
+    # 1. 톤 점검
     if session_path:
         messages = read_assistant_messages(session_path, after_line)
         tone_violations = check_tone(messages)
@@ -306,6 +451,12 @@ def run_checks(session_path: Path | None, after_line: int = 0) -> dict:
     record_violations = check_session_records()
     report["violations"].extend(record_violations)
     report["checks"]["session_records"] = {"violations": len(record_violations)}
+
+    # 6. LLM 점검 (codex exec)
+    if use_llm and session_path:
+        llm_violations = check_with_codex(session_path, model=llm_model)
+        report["violations"].extend(llm_violations)
+        report["checks"]["llm"] = {"violations": len(llm_violations)}
 
     # 요약
     total = len(report["violations"])
@@ -341,7 +492,7 @@ def format_report(report: dict) -> str:
         for v in report["violations"]:
             icon = {"error": "[E]", "warning": "[W]", "info": "[I]"}.get(v["severity"], "[?]")
             lines.append(f"{icon} {v['type']}: {v['detail']}")
-            if "context" in v:
+            if "context" in v and v["context"]:
                 lines.append(f"    맥락: {v['context'][:80]}...")
             if "timestamp" in v:
                 lines.append(f"    시점: {v['timestamp']}")
@@ -357,13 +508,23 @@ def format_report(report: dict) -> str:
     return "\n".join(lines)
 
 
+# === 실행 ===
+
 def main():
     parser = argparse.ArgumentParser(description="메타에이전트: 원칙 준수 감시")
     parser.add_argument("--session", help="세션 ID (미지정 시 현재 세션)")
     parser.add_argument("--watch", action="store_true", help="파일 변경 감시 모드")
     parser.add_argument("--interval", type=int, default=60, help="감시 간격 (초, 기본 60)")
     parser.add_argument("--json", action="store_true", help="JSON 출력")
+    parser.add_argument("--llm", action="store_true", help="LLM 점검 활성화 (codex exec)")
+    parser.add_argument("--llm-model", help="LLM 모델 (기본: codex 기본값)")
     args = parser.parse_args()
+
+    # codex 사용 가능 여부 확인
+    use_llm = args.llm
+    if use_llm and not is_codex_available():
+        print("경고: codex CLI를 찾을 수 없음. LLM 점검 비활성화.", file=sys.stderr)
+        use_llm = False
 
     # 세션 파일 찾기
     if args.session:
@@ -377,23 +538,44 @@ def main():
 
     if args.watch:
         last_line = 0
-        print(f"감시 시작: {session_path.name} (간격: {args.interval}초)", file=sys.stderr)
+        last_llm_line_count = 0
+        print(f"감시 시작: {session_path.name} (간격: {args.interval}초, LLM: {use_llm})",
+              file=sys.stderr)
         while True:
             try:
-                report = run_checks(session_path, after_line=last_line)
+                # 현재 파일 줄 수 확인
+                with open(session_path) as f:
+                    current_line_count = sum(1 for _ in f)
+
+                # 새 메시지가 있을 때만 LLM 점검
+                run_llm_this_cycle = use_llm and current_line_count > last_llm_line_count
+
+                report = run_checks(
+                    session_path,
+                    after_line=last_line,
+                    use_llm=run_llm_this_cycle,
+                    llm_model=args.llm_model,
+                )
+
                 if args.json:
                     print(json.dumps(report, ensure_ascii=False))
                 else:
                     print(format_report(report))
                 sys.stdout.flush()
-                # 다음 주기에는 새 메시지만 점검 (문서 점검은 매번)
-                with open(session_path) as f:
-                    last_line = sum(1 for _ in f)
+
+                last_line = current_line_count
+                if run_llm_this_cycle:
+                    last_llm_line_count = current_line_count
+
                 time.sleep(args.interval)
             except KeyboardInterrupt:
                 break
     else:
-        report = run_checks(session_path)
+        report = run_checks(
+            session_path,
+            use_llm=use_llm,
+            llm_model=args.llm_model,
+        )
         if args.json:
             print(json.dumps(report, ensure_ascii=False, indent=2))
         else:
