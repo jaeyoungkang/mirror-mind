@@ -68,8 +68,11 @@
     - [x] 연구자 행동 시나리오 수집 — Ellis 모델, Kuhlthau ISP, Berry Picking 등 학술 리서치
     - [x] 시나리오 문서화 — `projects/lighthouse/research-scenarios.md`
     - [x] 서비스 설계 원칙 반영 — ai-service-design-principles.md + service-principles.md에 시나리오 기반 설계 원칙 추가
-    - [>] 시나리오 1(새 분야 진입) + 시나리오 2(제안서 준비) 구현 — 시스템 프롬프트 + 탐색 흐름 고도화
-    - [ ] Research Library UI 설계 + 구현
+    - [>] 시나리오 1(새 분야 진입) + 시나리오 2(제안서 준비) 구현
+      - [x] 시스템 프롬프트 시나리오 인지 섹션 반영 (system-prompt.ts)
+      - [x] 대화 플로우 시나리오 연동 — snowballing 도구, 연쇄 규칙 분기, 메모리 규칙 연동, year 필터, 클러스터 기준 유연화
+      - [>] 사이드 패널 UI — Landscape View + Triage View (구현 에이전트 작업 중)
+      - [ ] 시나리오 1,2 실제 시연 검증
     - [ ] 시나리오 3~5 점진적 확장
   - [ ] 안정화
 
