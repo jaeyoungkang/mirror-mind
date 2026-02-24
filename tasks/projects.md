@@ -77,6 +77,11 @@
       - [x] 논문 리스트 구조화 — ```papers 코드블록 + PaperListBlock 커스텀 렌더러 + 링크·reason 표시
       - [x] 기존 경험 호환성 검증 + 안정화 — 기존 대화 폴백, PanelAction 방어, snowball 대안 경로, 에러 방어
       - [>] 응답 속도 개선 — 검색+결과표시 병목 해소 (2/26 공유 전 최우선)
+        - [x] 관측 가능한 구조 리팩토링 — route.ts 214줄→20줄, orchestrator.ts 5페이즈 추출, TurnContext 트리 관측 모델
+        - [x] 도구 수준 LLM 추상화 — llm-judgment.ts executeJudgment 공통 경로, 6개 도구 리팩토링
+        - [ ] 관측 지점 추가 — orchestrator 페이즈에서 실제 메타데이터 기록
+        - [ ] dev 페이지 타임라인 뷰 구현
+        - [ ] 관측 데이터 기반 속도 분석 및 개선
       - [ ] 시나리오 1,2 실제 시연 검증
     - [ ] 시나리오 3~5 점진적 확장
   - [ ] 기억 시스템 재설계 — memory_episodes (에피소드 세그멘테이션 + 구조화 분류 + 관계 형성 추적)
