@@ -13,9 +13,13 @@
 2. `task-management-principle.md`를 읽고 업무 관리 방식을 파악한다
 3. `tasks/projects.md`를 읽고 현재 진행 상태를 파악한다
 4. `tasks/decisions.md`의 최근 항목을 읽고 맥락을 복원한다
-5. 메타에이전트를 백그라운드로 실행한다: `python meta-agent/scripts/check.py --watch --interval 300`
-6. 사용자에게 현재 상태를 요약하고 다음 작업을 제안한다 (메타에이전트 초기 리포트 포함)
-7. 10분마다 리프레시한다:
+5. 기억 시스템으로 맥락을 보강한다:
+   - `python3 memory/scripts/query.py --recent 5` — 최근 에피소드 조회
+   - `python3 memory/scripts/query.py --milestone` — 주요 마일스톤 조회
+   - 대화 중에도 `query.py`를 수시로 활용하여 관련 기억을 조회한다
+6. 메타에이전트를 백그라운드로 실행한다: `python meta-agent/scripts/check.py --watch --interval 300`
+7. 사용자에게 현재 상태를 요약하고 다음 작업을 제안한다 (메타에이전트 초기 리포트 + 기억 요약 포함)
+8. 10분마다 리프레시한다:
    - 주요 문서 재읽기: `mirror-mind-principle.md`, `task-management-principle.md`, `tasks/projects.md`
    - 업무 진행상황 점검: 현재 작업의 진척도를 확인하고 `tasks/projects.md`에 반영
    - 사용자에게 진행 상황을 간단히 공유
@@ -29,7 +33,7 @@
 | 트리거 | 절차 |
 |--------|------|
 | **작업 시작** | 위 세션 시작 절차 수행 |
-| **작업 종료** | 메타에이전트 리포트 확인 → 대화 노트 작성(`tasks/conversations/`), raw 저장(`tasks/conversations/raw/`), `tasks/decisions.md` 업데이트, 커밋 |
+| **작업 종료** | 메타에이전트 리포트 확인 → 대화 노트 작성(`tasks/conversations/`), raw 저장(`tasks/conversations/raw/`), `tasks/decisions.md` 업데이트, 이번 세션 에피소드를 `memory/episodes.json`에 추가, 커밋 |
 | **주제 전환** / **킵** | 메타에이전트 리포트 확인 → 현재 주제의 중간 상태를 `tasks/projects.md`(결정 전) 또는 `tasks/decisions.md`(결정 후)에 기록한 뒤 전환 |
 | **정합성 검증** | 전체 원칙·설계 문서를 읽고 상호 참조·일관성을 검증하여 리포트 |
 | **회고** | 마일스톤 단위 회고 진행, 반복 적용할 교훈을 해당 원칙 문서에 반영 |
@@ -42,6 +46,14 @@
 - `agentic-engineering/development/technical-grain.md` — 기술적 결 (개발 방법론)
 - `agentic-engineering/service-design/ai-service-design-principles.md` — AI 서비스 설계 원칙
 - `meta-agent/meta-agent-principle.md` — 메타에이전트 (원칙 준수 감시)
+
+---
+
+## 기억 시스템
+- `memory/episodes.json` — 구조화된 에피소드 저장소 (세션별 활동·감정·결과·관계·마일스톤)
+- `memory/scripts/query.py` — 에피소드 조회 (프로젝트/감정/키워드/마일스톤 등 필터)
+- 세션 시작 시 자동 조회, 대화 중 수시 조회, 세션 종료 시 에피소드 추가
+- 에피소드 추출은 AI가 직접 수행 (대화를 읽고 구조화하여 episodes.json에 추가)
 
 ---
 
