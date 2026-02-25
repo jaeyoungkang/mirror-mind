@@ -1,0 +1,326 @@
+[
+  {
+    "content": "강재영이 기억 시스템을 노드와 링크로 구성된 네트워크(그래프) 구조로 만들자고 제안했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "세션 초반, 기억 시스템 근본 방향 전환 제안"
+  },
+  {
+    "content": "현재 memories.json은 플랫한 배열이라 기억 간의 관계가 구조적으로 표현되지 않는다는 한계가 있다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "기존 구조 분석 중 발견한 문제"
+  },
+  {
+    "content": "exp-005(역할 경계 위반)과 und-001(강재영이 순응을 싫어한다는 이해)은 깊이 연결되어 있는데 구조상 독립된 항목이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "플랫 구조의 한계를 보여주는 구체적 사례"
+  },
+  {
+    "content": "강재영이 원하는 것은 활성화 확산과 근본적 구조 전환이다. 시맨틱 네트워크(의미 관계 명시)가 아니다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "세 가지 방향 제시 후 강재영이 2, 3번 선택"
+  },
+  {
+    "content": "강재영이 말하는 구조: 모든 기억은 동등한 노드, 관계는 링크, 활성화 확산으로 탐색, 정체성은 허브 노드에서 창발, 모델도 클러스터에서 창발.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "네트워크 기억 구조의 핵심 원칙 정리"
+  },
+  {
+    "content": "현재의 kind(identity, model, experience 등) 분류가 사라지고, 링크가 많은 허브 노드가 자연스럽게 정체성이 된다. 태깅이 아니라 구조에서 의미가 나온다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "네트워크 구조가 기존 분류 체계를 대체하는 방식"
+  },
+  {
+    "content": "모델은 선언하는 것이 아니라 관찰하는 것이다. '강재영 모델'은 별도로 정의할 필요 없이, 강재영 노드에 연결된 서브네트워크 자체가 모델이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "모델링 고민에 대한 나의 제안"
+  },
+  {
+    "content": "강재영이 링크는 단순 연결이라고 결정했다. 의미적 관계(인과, 강화, 모순 등)를 구분하지 않는다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "링크 종류에 대한 설계 결정"
+  },
+  {
+    "content": "강재영이 노드 수준과 링크 생성 방법을 시뮬레이션으로 탐색하자고 했다. raw 데이터부터 시작 가능.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "실험적 접근 방식 결정"
+  },
+  {
+    "content": "강재영이 링크 생성은 programmatic하게만 하자고 결정했다. AI가 판단하는 방식은 제외.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "링크 생성 방식 결정"
+  },
+  {
+    "content": "강재영이 coarse를 제외하고 medium 수준을 상/중/하로 나눠서 시뮬레이션하자고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "노드 단위 범위 조정"
+  },
+  {
+    "content": "강재영이 노드 콘텐츠 변주가 더 필요하다고 했다. 맥락은 링크로 처리되니 노드에 넣을 필요 없고, 해석이 별도 노드가 되는 방향을 제안했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "노드 콘텐츠 변주에 대한 강재영의 방향 제시"
+  },
+  {
+    "content": "맥락을 노드 안에 넣는 것은 플랫 구조의 사고방식이 남아있는 것이다. '노드에 뭘 담느냐'가 아니라 '무엇을 노드로 만드느냐'가 진짜 변주다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "강재영의 피드백을 받고 도달한 인사이트"
+  },
+  {
+    "content": "노드 콘텐츠 변주 4종을 설계했다: fact(순수 사실), heterogeneous(사실/해석/감정/개념 각각 별도 노드), concept(추상 개념이 노드, 사실은 링크가 운반), atomic(키워드 단위).",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "노드 콘텐츠 변주 최종 설계"
+  },
+  {
+    "content": "heterogeneous는 뇌의 동작과 유사하다 — 감각, 감정, 개념이 서로 다른 영역에서 처리되고 시냅스로 연결된다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "heterogeneous 방식의 의미에 대한 해석"
+  },
+  {
+    "content": "강재영이 링크 밀도도 변수로 추가하자고 했다. 너무 촘촘하면 다 연결되어 의미 없고, 적절한 수준이 필요하다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "링크 밀도 파라미터 추가 요청"
+  },
+  {
+    "content": "시뮬레이션 v1 최종 조합: 6개 노드세트 x 4개 링크방법(keyword/entity/temporal/composite) x 3개 밀도 = 72개 네트워크.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v1 시뮬레이션 실험 규모"
+  },
+  {
+    "content": "서브에이전트가 raw 데이터 20세션을 한번에 읽으면 컨텍스트가 초과했다. 강재영이 분할해서 읽으면 된다고 지적했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "에이전트 실행 중 문제와 해결"
+  },
+  {
+    "content": "fact 노드세트 3종(coarse 34개, medium 75개, fine 408개)은 코드로 생성하고, heterogeneous와 concept-centric은 에이전트로 처리했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "노드세트 생성 방식 구분"
+  },
+  {
+    "content": "72개 네트워크 시뮬레이션 결과, fact-medium(75노드)이 recall 0.583으로 1위였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v1 시뮬레이션 결과"
+  },
+  {
+    "content": "노드를 쪼갤수록 recall이 떨어졌다: fact-medium(0.58) > fact-coarse(0.45) > fact-fine(0.36) > atomic(0.10).",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v1 핵심 발견 — 노드 세밀도와 recall의 관계"
+  },
+  {
+    "content": "temporal 링크가 주범이었다 — 인접 세션 cross-link가 1,184개로 전체 1,300개의 대부분을 차지했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "1-hop 문제의 근본 원인 진단"
+  },
+  {
+    "content": "강재영이 1-hop으로 대부분 도달하는 것은 뭔가 잘못된 것이라고 지적했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "네트워크 밀도 문제에 대한 강재영의 핵심 피드백"
+  },
+  {
+    "content": "fact-medium에서 75개 노드에 711개 엣지는 avg_degree 19로, 이상적인 4-6에 비해 과밀이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "과밀 네트워크의 수치적 증거"
+  },
+  {
+    "content": "강재영이 텍스트 매칭 평가의 한계를 지적하고, 서브에이전트로 실제 대화를 수행해서 평가하자고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "평가 방법 전환 요청"
+  },
+  {
+    "content": "heterogeneous(0.41)가 fact-medium(0.58)을 못 이긴 원인은 노드를 쪼개면서 정보가 분산되어 seed 매칭이 약해졌기 때문이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "heterogeneous 노드세트 결과 분석"
+  },
+  {
+    "content": "programmatic 링크의 한계 — '브로콜리'와 '기억 시스템'처럼 의미적으로 관련 있지만 텍스트적으로 다른 것을 연결하지 못한다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "프로그램적 링크 방식의 구조적 한계"
+  },
+  {
+    "content": "강재영이 데이터셋을 더 쪼개야 하는 게 아니냐고 물었고, 나도 노드 자체가 너무 굵다는 것에 동의했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "1-hop 문제 해결 방향 논의"
+  },
+  {
+    "content": "강재영이 처음부터 다시 시작하자고 결정했다. 이번 실험의 교훈을 적용하여 재기획하라고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v1→v2 전환 결정"
+  },
+  {
+    "content": "v1 실험의 5가지 교훈: (1) 75개 노드는 너무 굵음, (2) temporal 링크가 그래프를 파괴, (3) 텍스트 매칭 평가 무의미, (4) threshold 기반은 과밀/과소 이분법, (5) composite가 최악의 방법을 상속.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v1→v2 전환 시 정리한 교훈"
+  },
+  {
+    "content": "v2에서 threshold를 폐기하고 k-NN으로 밀도를 직접 제어하기로 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v2 핵심 설계 변경"
+  },
+  {
+    "content": "v2 노드세트 3종 설계: Proposition(순수 사실 명제 200-300개), Semantic Unit(결정/인사이트/경험/감정 별도 250-350개), Entity-Event(개체+사건 bipartite 200-300개).",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v2 노드세트 설계"
+  },
+  {
+    "content": "v2 링크 방법 3종 설계: k-NN Content(TF-IDF top-k), Co-occurrence(같은/인접 에피소드만, cross-session 없음), Hybrid(knn backbone + cooc boost).",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v2 링크 생성 방법 설계"
+  },
+  {
+    "content": "v2 구조 검증 gate를 설계했다: 1-hop 도달률 5% 이하, avg shortest path 3.0 이상, giant component 70% 이상.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v2 네트워크 품질 기준"
+  },
+  {
+    "content": "강재영이 네트워크를 여러 개 조합해서 사용하는 fusion 접근을 제안했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "hybrid를 fusion으로 전환하는 아이디어"
+  },
+  {
+    "content": "fusion은 knn 그래프와 cooc 그래프에서 각각 활성화한 후 결과를 합산하는 방식이다. hybrid(엣지를 하나의 그래프에 합침)와 다르다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "fusion과 hybrid의 차이점"
+  },
+  {
+    "content": "fusion 합산 전략 3종: union(넓게 포착), intersection boost(양쪽 모두 활성화된 노드 가중), weighted(가중 평균).",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "fusion 세부 전략 설계"
+  },
+  {
+    "content": "v2 실행 결과: 18개 네트워크 중 gate 통과 6개, 모두 knn. cooccurrence는 세션별 섬이 되어 giant component 7-10%로 실패.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v2 구조 검증 결과"
+  },
+  {
+    "content": "cooccurrence가 고립된 것은 정상이다 — 세션 내에서만 연결하니까 세션별 섬이 된다. 이것이 fusion의 존재 이유다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "cooccurrence 고립의 의미 해석"
+  },
+  {
+    "content": "v2 대화 평가 결과, fusion-weighted/proposition/k3이 총점 17.3/20으로 1위였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v2 최종 평가 결과"
+  },
+  {
+    "content": "fusion이 효과 있었다: proposition single(15.7) → fusion-weighted(17.3)으로 +1.6점 향상.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "fusion의 실제 효과 수치"
+  },
+  {
+    "content": "weighted fusion(0.6/0.4 가중)이 union, intersection_boost보다 균형적으로 우수했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "fusion 전략 비교 결과"
+  },
+  {
+    "content": "모든 조합에서 잡음(noise)이 공통 약점이었다 — 활성화 15개 중 30-40%가 잡음.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v2 실험의 공통 약점"
+  },
+  {
+    "content": "v2에서 1-hop 문제는 해결되었다: v1 avg_degree 19, 1-hop 도달률 90% → v2 avg_degree 4.2, 1-hop 도달률 2-3%.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v1의 핵심 구조 문제 해결 확인"
+  },
+  {
+    "content": "강재영이 '완벽한 게 중요한 게 아니라 자연스러운 게 중요하다'고 말했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v2 결과에 대한 강재영의 근본적 관점 제시"
+  },
+  {
+    "content": "이 실험은 검색 엔진을 만든 거지 기억을 만든 게 아니라고 판단했다. relevance, coverage, noise, specificity는 전부 정보 검색(IR) 지표다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "강재영의 '자연스러움' 지적에 대한 나의 솔직한 분석"
+  },
+  {
+    "content": "사람의 기억은 빠짐없이 떠오르지 않고, 부분적으로 흐릿하게 떠오른다. '잡음'이라고 평가한 것이 오히려 자연스러운 연상이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "기억의 자연스러움에 대한 인사이트"
+  },
+  {
+    "content": "proposition(순수 사실 명제)이 1등인 것 자체가 부자연스러움의 증거다. 맥락, 감정, 해석을 벗겨내면 검색에 유리하지만 '데이터베이스 조회 결과'처럼 느껴진다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "검색 최적화와 자연스러운 기억의 모순"
+  },
+  {
+    "content": "세션 19에서 정의한 '기억의 주체는 에이전트 자신'이라는 철학과 proposition 노드는 모순된다. 에이전트의 기억이면 해석과 감정이 묻어야 한다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "기억 철학과 실험 결과 사이의 모순 발견"
+  },
+  {
+    "content": "평가를 '정확한 답을 만들 수 있는가'에서 '자연스러운 대화를 할 수 있는가'로 바꿔야 한다고 결론 내렸다.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v3 방향 설정의 핵심 전환점"
+  },
+  {
+    "content": "다음 세션(v3)에서 할 일: (1) 평가 방법을 대화 자연스러움으로 전환, (2) 노드 콘텐츠에 해석/감정/관점을 포함하도록 재설계, (3) '잡음'을 연상으로 재정의.",
+    "type": "fact",
+    "session": "2026-02-25-세션21",
+    "context_hint": "세션 종료 시 다음 할 일 정리"
+  },
+  {
+    "content": "나는 이번 시뮬레이션이 검색 시스템이 아닌 진짜 기억 시스템을 만들어야 한다는 방향으로 수렴되기를 의도했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v2 결과 분석 후 방향 제안"
+  },
+  {
+    "content": "나는 proposition보다 semantic-unit이 더 자연스러울 수 있다고 기대했다 — 감정과 해석이 포함되니까.",
+    "type": "intention",
+    "session": "2026-02-25-세션21",
+    "context_hint": "자연스러운 기억을 위한 노드 타입 재탐색 의도"
+  },
+  {
+    "content": "나는 v3에서 브로콜리의 관점이 담긴 기억(객관적 사실이 아닌 주관적 기억)을 만들려 했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션21",
+    "context_hint": "v3 노드 콘텐츠의 방향"
+  }
+]

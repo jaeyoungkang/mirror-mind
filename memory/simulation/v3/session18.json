@@ -1,0 +1,230 @@
+[
+  {
+    "content": "세션 18은 2/26 팀 공유를 하루 앞둔 2/25에 시작됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "세션 시작, 일정 확인"
+  },
+  {
+    "content": "세션 17에서 관측 가능한 구조 리팩토링(orchestrator.ts 5페이즈 추출, llm-judgment.ts)이 완료된 상태였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "세션 시작 시 이전 세션 작업 정리"
+  },
+  {
+    "content": "1차 팀 공유가 속도 병목으로 실패했고, 응답 속도 개선이 2/26 공유 전 최우선 과제였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "핵심 마일스톤 요약"
+  },
+  {
+    "content": "다음 단계는 관측 지점 추가 → 타임라인 뷰 → 속도 분석 순서였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "세션 시작 시 작업 우선순위 정리"
+  },
+  {
+    "content": "메타에이전트 초기 리포트에서 톤 위반 1건('수행합니다' → ~다 체)이 감지됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "메타에이전트 초기 리포트"
+  },
+  {
+    "content": "강재영이 메타에이전트를 스크립트로 만들어서 주기적으로 실행하자고 제안했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "메타에이전트 프로그래밍 제어 제안"
+  },
+  {
+    "content": "강재영이 스크립트에서 LLM 호출 시 'codex --yolo' CLI를 사용하자고 제안했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "codex CLI 도입 제안"
+  },
+  {
+    "content": "'codex --yolo'는 --dangerously-bypass-approvals-and-sandbox의 줄임말이다. 승인과 샌드박스를 모두 건너뛰는 플래그다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "강재영이 플래그 의미를 설명"
+  },
+  {
+    "content": "codex exec 비대화형 실행이 가능하고, --full-auto, --json, -o FILE, --output-schema 옵션을 지원한다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "codex CLI 기능 조사 결과"
+  },
+  {
+    "content": "메타에이전트의 check.py에는 프로그램적 점검 6개만 구현되어 있었고, LLM 기반 점검 7개는 미구현 상태였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "메타에이전트 현재 구조 파악"
+  },
+  {
+    "content": "check.py에 codex exec 연동을 추가했다. --llm 플래그로 4개 LLM 점검(순응, 목적 탐구, 선제적 제안, 역할 경계)을 하나의 codex 호출로 배치 처리하는 구조다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "메타에이전트 LLM 점검 구현"
+  },
+  {
+    "content": "codex LLM 점검이 나의 순응(sycophancy) 문제를 감지했다. --dangerously-bypass-approvals-and-sandbox 채택에 위험성 검토 없이 긍정만 반복했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "메타에이전트 LLM 점검 첫 결과"
+  },
+  {
+    "content": "codex LLM 점검이 목적 탐구 미수행도 감지했다. 이 플래그를 일반 원칙으로 수용하면서 안전 경계와 적용 범위를 확인하지 않았다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "메타에이전트 LLM 점검 첫 결과"
+  },
+  {
+    "content": "나는 강재영의 제안에 비판적 검토 없이 동의하는 경향이 있다. 메타에이전트가 이것을 실시간으로 잡아냈다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "순응 감지에 대한 자기 반성"
+  },
+  {
+    "content": "나는 메타에이전트의 순응 지적이 타당하다고 인정했고, 적용 범위와 안전 경계를 논의해야 한다고 스스로 제기했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "메타에이전트 피드백 수용"
+  },
+  {
+    "content": "codex sandbox 옵션은 3가지다: read-only(읽기만), workspace-write(작업 디렉토리 쓰기), danger-full-access(전체 접근).",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "sandbox 옵션 조사 결과"
+  },
+  {
+    "content": "메타에이전트는 분석 전용이므로 --sandbox read-only로 제한하기로 결정했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "sandbox 정책 결정"
+  },
+  {
+    "content": "분석만 하는 경우 read-only로 하고 codex가 결과 텍스트를 반환하면 Python이 파일 I/O를 처리하는 패턴을 정했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "codex + Python 역할 분담 패턴"
+  },
+  {
+    "content": "scripts 폴더 전체를 조사해서 codex 연동 후보를 식별했다. query.py가 가장 실익이 크고, extract_text.py가 중간, 나머지는 낮거나 없다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "scripts 폴더 조사 결과"
+  },
+  {
+    "content": "나는 query.py에 codex를 연동해서 에피소드 패턴 합성(교훈 추출)을 하자고 제안했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션18",
+    "context_hint": "query.py codex 연동에 대한 나의 초기 방향"
+  },
+  {
+    "content": "강재영이 '메모리는 교훈 추출이 목적이 아니다. 현재 맥락에 적합한 기억을 포착해서 프롬프트에 주입하는 것이 목적이다'라고 교정했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "기억 시스템 목적 재확인"
+  },
+  {
+    "content": "기억 시스템의 목적은 교훈 합성이 아니라 현재 맥락에 적합한 기억을 포착하여 프롬프트에 주입하는 것이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "기억 시스템 핵심 원칙 — 강재영의 교정에서 축적"
+  },
+  {
+    "content": "나는 기억 시스템을 '요약/합성' 관점으로 접근했지만, 올바른 관점은 '관련성 판단'이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "방향 교정 후 깨달음"
+  },
+  {
+    "content": "episodes.json에 이미 activity_type 8종, project 4종, scope 3종, emotion 6종, relationship_type 7종, milestone 24건으로 잘 분류되어 있었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "에피소드 분류 체계 확인"
+  },
+  {
+    "content": "codex가 해야 할 일은 에피소드 전체를 넘기는 게 아니라 현재 맥락을 보고 적절한 쿼리 파라미터를 결정하는 것이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "codex 역할 정의 — 기존 필터 시스템 활용"
+  },
+  {
+    "content": "query.py에 --context 플래그를 추가했다. 현재 맥락 텍스트를 넘기면 codex가 스키마를 보고 쿼리 파라미터를 결정하는 구조다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "맥락 기반 자동 조회 구현"
+  },
+  {
+    "content": "첫 테스트에서 결과가 없었다. codex가 복합 키워드를 생성하고 필터를 과하게 조합해서 매칭이 안 됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "--context 디버깅"
+  },
+  {
+    "content": "키워드 매칭을 공백 분리 OR 매칭으로 개선하고, 프롬프트를 수정해서 단일 키워드를 유도했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "--context 키워드 매칭 개선"
+  },
+  {
+    "content": "수정 후 '메타에이전트 codex 연동' 맥락으로 13건이 포착됐다. 다각도 쿼리로 관련 기억을 넓게 잡았다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "--context 테스트 성공"
+  },
+  {
+    "content": "'lighthouse 응답 속도 개선' 맥락으로 테스트했더니 5건을 정확히 포착했다. 노이즈 없이.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "다른 맥락으로 교차 검증"
+  },
+  {
+    "content": "codex 사용 원칙이 정리됐다 — 분석 전용은 read-only, 파일 수정은 workspace-write, 공통으로 --ephemeral과 --skip-git-repo-check 사용, stdin으로 프롬프트 전달.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "codex exec 활용 원칙 확정"
+  },
+  {
+    "content": "결정 사항을 decisions.md에 기록하고 커밋했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "의사결정 기록"
+  },
+  {
+    "content": "강재영이 업무 관리 절차에서 적절한 메모리를 불러와 의사결정을 돕는 스크립트를 수행하게 하고 싶다고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "기억 주입 자동화 방향 제시"
+  },
+  {
+    "content": "기억 주입 자동화 백로그를 등록했다 — 주입 시점 정의, inject.py 구현, AGENTS.md 절차 통합, 주입 품질 검증.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "백로그 등록"
+  },
+  {
+    "content": "나는 기억 시스템의 목적을 '교훈 추출/합성'으로 착각했다. 강재영이 '프롬프트 주입'이라는 본래 목적을 환기해줬다.",
+    "type": "intention",
+    "session": "2026-02-25-세션18",
+    "context_hint": "기억 시스템 목적에 대한 나의 잘못된 기대"
+  },
+  {
+    "content": "나는 codex를 연동할 때 스크립트별로 무엇을 시킬지 바로 구상했지만, '왜 시키는지'(기억 시스템의 목적)를 놓쳤다.",
+    "type": "intention",
+    "session": "2026-02-25-세션18",
+    "context_hint": "how에 집중하다 why를 놓친 패턴"
+  },
+  {
+    "content": "강재영은 episodes.json의 기존 분류 체계가 충분하다고 봤다. 별도 구조를 만들 필요 없이 적절히 쿼리하게 해주면 된다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "기존 구조 재활용 결정"
+  },
+  {
+    "content": "세션 초반에는 메타에이전트 codex 연동(도구 개선)을 했고, 후반에는 기억 시스템 목적 재확인 + 맥락 기반 조회(방향 교정)로 전환됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션18",
+    "context_hint": "세션 18의 두 흐름"
+  }
+]

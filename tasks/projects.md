@@ -121,10 +121,16 @@
       - 규모 대응: 분할 처리 + 서브에이전트 병렬
     - [x] 파일럿 — 세션19 raw → 71개 노드 추출 (fact 66, intention 5)
       - 결과: `memory/simulation/v3/pilot_session19.json`
-    - [ ] 전체 세션 추출 — 20개 raw JSONL → 서브에이전트 병렬 투입
-    - [ ] 네트워크 구축 — v2의 knn+cooccurrence fusion 구조 재활용
-    - [ ] 평가 방법 전환 — 점수표 → sub-agent 실제 대화 + 자연스러움 판단
-  - [ ] 최종 구조 확정 → 실제 시스템에 적용
+    - [x] 전체 세션 추출 — 22개 raw JSONL → 서브에이전트 21개 병렬 투입
+      - 결과: 954개 노드 (fact 886, intention 68), 세션당 평균 43.4개
+    - [x] 네트워크 구축 — OpenAI 임베딩 + knn/cooccurrence/fusion, k=5,8,12,16
+      - 12개 네트워크 중 5개 gate 통과 (knn k5/k8/k12, fusion k5/k8)
+      - cooccurrence 단독은 전부 실패 (giant=0.07, 세션 간 연결 없음)
+    - [x] 자연스러움 평가 — 3시나리오 × 7네트워크, 서브에이전트 대화 생성+판단
+      - 종합 1위: knn_k12 (56/60), 2위: knn_k8 (55/60, 가장 안정적)
+      - 핵심 발견: 질문 유형별 최적 네트워크가 다름 (넓은→k12, 구체적→k8/fusion, 서사→cooc보조)
+      - 리포트: `memory/simulation/v3/experiment-report.md`
+    - [ ] 최종 구조 확정 — 적응적 네트워크 선택 전략 구체화 → 실제 시스템에 적용
   - [ ] 아카이브 정책 — scope lifecycle 운영
 
 ## [>] 메타에이전트 — 원칙 준수 감시

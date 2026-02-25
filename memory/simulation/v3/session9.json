@@ -1,0 +1,242 @@
+[
+  {
+    "content": "Light House 프로젝트는 설계 완료 후 구현 단계에 진입한 시점이었다. 설계 문서 6개와 기술 결정 5개가 해소되었고, 구현 프롬프트 6단계가 준비되어 있었다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "세션 시작 시 현재 상태 요약"
+  },
+  {
+    "content": "mirror-mind 세션의 역할은 설계, 조율, 의사결정 수렴이다. 코드 구현은 lighthouse 저장소의 별도 에이전트가 수행한다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "역할 경계 리마인드"
+  },
+  {
+    "content": "강재영이 별도 에이전트로 구현이 이미 진행 중이라고 알려줬다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "구현 상태 파악 시작"
+  },
+  {
+    "content": "Phase 1(기반 구축)은 대부분 완료 상태였지만, 전부 unstaged/untracked이고 빌드 검증도 안 된 상태였다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "lighthouse 구현 진행 상태 확인"
+  },
+  {
+    "content": "강재영이 Phase 1 완료, Phase 2 진행 중이라고 알려줬다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "구현 진행 상태 업데이트"
+  },
+  {
+    "content": "Phase 1과 Phase 2가 하나의 커밋(461a027)으로 완료되었다. 48파일 변경, 기존 코드 정리까지 포함.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 2 완료 확인"
+  },
+  {
+    "content": "Phase 3 구현 계획을 설계 문서와 대조 검토했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 3 구현 계획 검토"
+  },
+  {
+    "content": "Phase 3 검토에서 도구 목록 6개, factory 패턴, 레거시 추출 대상, 모델 선택 등이 설계 문서와 정합함을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 3 검토 결과 — 정합 부분"
+  },
+  {
+    "content": "Phase 3 검토에서 conventions.md의 '도구 함수가 저장소를 직접 조작하지 않는다' 규칙과 계획의 충돌을 발견했다. 도구가 repository 함수를 호출하는 것은 '직접 조작'이 아니라는 해석이면 문제없지만, 문구가 모호하다고 지적했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 3 검토 — conventions.md 규칙 충돌 지적"
+  },
+  {
+    "content": "Phase 3 검토에서 .env.local.example에 S2_API_KEY와 GEMINI_API_KEY 누락을 발견했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 3 검토 — env 파일 누락 지적"
+  },
+  {
+    "content": "강재영이 Phase 3 검토 결과를 구현 에이전트에게 직접 전달하겠다고 했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "검토 결과 전달 방식"
+  },
+  {
+    "content": "Phase 3가 완료되었다. 6개 도구 파일 생성, 레거시 route 11개 삭제, agent/tools.ts와 artifacts repository 추가.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 3 완료 확인"
+  },
+  {
+    "content": "Phase 4 구현 계획을 설계 문서와 대조 검토했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 4 구현 계획 검토"
+  },
+  {
+    "content": "Phase 4 검토에서 AI SDK v6 parts 기반 렌더링, useState 접힘/펼침, useChat().stop() 활용, 도구별 렌더러 6개 등이 설계와 정합함을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 4 검토 결과 — 정합 부분"
+  },
+  {
+    "content": "Phase 4 검토에서 ArtifactContext(React Context) vs artifactStore(Zustand)의 설계 문서와의 괴리를 지적했다. Phase 4 범위에서는 Context로 충분하지만 Phase 5에서 전환이 필요할 수 있다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 4 검토 — 상태 관리 방식 괴리 지적"
+  },
+  {
+    "content": "Phase 4 검토에서 onFinish의 steps 접근이 AI SDK v6에서 지원되는지 확인 필요하다고 지적했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 4 검토 — API 호환성 리스크"
+  },
+  {
+    "content": "강재영이 내일(2/24) 오후 5시에 팀원들에게 1차 공유를 한다고 알려줬다. 설계 철학 설명 + 시연 + 의견 수렴.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "외부 공유 일정 최초 등장"
+  },
+  {
+    "content": "강재영이 목요일, 다음주 월요일에도 수시 공유할 예정이고, 다음주에는 비공개 알파 테스트를 진행할 계획이라고 했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "향후 일정 공유"
+  },
+  {
+    "content": "강재영이 '우리 작업 관리 방식에 스케줄링이 없다'고 관찰했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "스케줄링 부재 발견"
+  },
+  {
+    "content": "현재 업무 관리 원칙에 시간 축이 없다는 것을 확인했다. 상태와 의존 관계만 있고 '언제까지'가 없었다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "스케줄링 부재 분석"
+  },
+  {
+    "content": "외부 공유 일정이 생기면 구현 우선순위가 '중요도순'이 아니라 '시연 가능 여부순'으로 바뀔 수 있다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "스케줄링이 필요한 이유 분석"
+  },
+  {
+    "content": "task-management-principle.md에 '일정 연동' 섹션을 추가하기로 했다. 복잡한 스케줄링 시스템이 아니라 최소한으로 시간 축을 추가하는 방향.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "일정 관리 체계 도입 결정"
+  },
+  {
+    "content": "나는 내일 시연에 Phase 4까지 완료되어야 하는지 물었다. Phase 4가 끝나야 아티팩트 카드 렌더링이 되어 시연 임팩트가 크게 달라진다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-23-세션9",
+    "context_hint": "시연 범위에 대한 질문"
+  },
+  {
+    "content": "강재영이 오늘 안에 Phase 6까지 구현하고 안정화하겠다고 했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "구현 일정 선언"
+  },
+  {
+    "content": "오늘 안에 Phase 6까지 완료하면 내일 시연에서 '동료는 연구 여정 전체를 기억한다'는 핵심 차별점을 시연할 수 있다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "경험 기억 시연의 임팩트 판단"
+  },
+  {
+    "content": "Phase 4(아티팩트 시스템 — 인라인 렌더러, 생명주기 UI, Thinking HUD)가 완료되었다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 4 완료 확인"
+  },
+  {
+    "content": "Phase 5(제안 카드 + 자율성 FSM + 주도권 신호)가 완료되었다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 5 완료 확인"
+  },
+  {
+    "content": "Phase 5, 6은 구현 계획 검토 없이 통과했다. 속도를 우선시한 결정이었다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "검토 생략 사실"
+  },
+  {
+    "content": "Phase 6(경험 기억 — 기억 추출/주입, 연구 여정 타임라인)가 완료되었다. 6개 Phase 전부 오전 한 세션에 완료.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "Phase 6 완료, 전체 구현 완료"
+  },
+  {
+    "content": "설계 문서가 충분히 구체적이었기 때문에 구현 에이전트가 독립적으로 빠르게 진행할 수 있었다. 좋은 설계 문서가 구현 속도를 결정한다는 것을 실증했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "회고 — 설계와 구현 속도의 관계"
+  },
+  {
+    "content": "이 세션에서 역할 경계가 잘 지켜졌다. mirror-mind 세션은 설계 검토, 업무 관리, 의사결정 수렴에 집중했고, 코드 구현은 별도 에이전트가 수행했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "회고 — 역할 경계 준수"
+  },
+  {
+    "content": "Phase 3 검토에서 conventions.md 규칙 충돌과 env 파일 누락을 짚었고, Phase 4 검토에서 onFinish steps 접근 가능 여부 등 실질적 리스크를 식별했다. 계획 검토가 유효했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "회고 — 계획 검토의 가치"
+  },
+  {
+    "content": "나는 안정화 세션에서 Phase 5, 6 구현 결과를 설계 문서와 대조 검증해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-23-세션9",
+    "context_hint": "회고 — 검토 생략 보완 계획"
+  },
+  {
+    "content": "스케줄링 부재를 늦게 발견했다. 프로젝트 초기에 '언제 외부에 공유할 것인가'를 질문했으면 더 일찍 시간 축을 도입할 수 있었다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "회고 — 개선점"
+  },
+  {
+    "content": "목적의 내재화 원칙에 '시간 제약'도 포함해야 한다. Why뿐 아니라 When도 탐구해야 한다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "회고에서 도출된 교훈"
+  },
+  {
+    "content": "강재영이 '오전시간을 항상 알차게 보내려고 노력하고 있다'고 했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "강재영의 작업 태도"
+  },
+  {
+    "content": "강재영이 오전 세션이 여러 개인데 왜 하나만 회고하냐고 지적했다. 밀도 있게 보낸 오전 전체를 회고해야 한다고 했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "회고 범위 부족 지적"
+  },
+  {
+    "content": "나는 세션 마무리 절차에서 raw 파일 저장을 빠뜨렸다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "종료 절차 누락"
+  },
+  {
+    "content": "나는 현재 세션만 회고하고, 오전 전체 세션들의 흐름과 밀도를 회고하지 못했다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "회고 범위 부족에 대한 자기 인식"
+  },
+  {
+    "content": "메타에이전트가 초반 톤 위반(존댓말 사용) 1건을 감지했고, 이후 교정되었다.",
+    "type": "fact",
+    "session": "2026-02-23-세션9",
+    "context_hint": "메타에이전트 리포트 결과"
+  }
+]

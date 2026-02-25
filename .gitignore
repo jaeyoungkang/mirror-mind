@@ -1,1 +1,7 @@
 prompt-memo.txt
+
+# v3 simulation - 재생성 가능한 대용량 파일
+memory/simulation/v3/embeddings_cache.json
+memory/simulation/v3/networks/
+memory/simulation/v3/__pycache__/
+memory/simulation/v3/extracted_text/

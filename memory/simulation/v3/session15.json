@@ -1,0 +1,290 @@
+[
+  {
+    "content": "세션 시작 시 메타에이전트 리포트에서 info 위반 2건(메모리 정책 — 환경/톤 외 섹션 존재)이 감지되었지만 경미했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "세션 시작, 메타에이전트 리포트 확인"
+  },
+  {
+    "content": "오늘(2/24) 17:00에 1차 팀 공유가 예정되어 있었다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "일정 확인"
+  },
+  {
+    "content": "lighthouse의 3컬럼 레이아웃과 논문 패널 고도화가 구현 에이전트에서 작업 중인 상태였다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "세션 시작 시 진행 상태 확인"
+  },
+  {
+    "content": "강재영이 외부 AI 문헌 검색 서비스의 스크린샷을 공유했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "외부 벤치마크 분석 시작"
+  },
+  {
+    "content": "외부 서비스는 AI가 검색·분석 결과를 React 컴포넌트 데이터가 아니라 파일(문서)로 구성하고, 패널은 그 파일을 렌더링하는 구조였다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "외부 서비스 UI 분석의 핵심 발견"
+  },
+  {
+    "content": "외부 서비스에서 가장 큰 수확은 Relevance Reasoning이었다. 각 논문에 왜 관련있는지 이유를 표시하면 연구자의 판단 속도가 빨라진다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "외부 벤치마크 분석 — lighthouse에 반영할 요소"
+  },
+  {
+    "content": "lighthouse가 외부 서비스보다 나은 부분은 AI 정체성(대화형 동료), 양방향 상호작용, 동적 자율성, 에피소드 기억, 시나리오별 전략이었다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "외부 서비스와 lighthouse 비교"
+  },
+  {
+    "content": "강재영이 '결과물을 md 파일 포맷으로 구성하여 우측 패널에서 표시하는 것이 핵심'이라고 지적했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "강재영의 핵심 관찰 — 문서 패러다임 전환의 계기"
+  },
+  {
+    "content": "기존 설계(TriageTable, ClusterGroupView, SnowballingView 등 고정 React 컴포넌트)는 '도구 패러다임'의 잔재였다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "기존 설계의 본질적 한계 분석"
+  },
+  {
+    "content": "고정 컴포넌트 방식의 한계는 세 가지였다 — 개발자가 뷰를 미리 정의해야 하고, 구조가 고정되어 있고, AI가 데이터 공급자로 격하된다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "기존 설계 문제 분석"
+  },
+  {
+    "content": "패러다임을 전환했다. corca가 연구 과정에서 마크다운 문서를 동적으로 작성하고, 패널은 그 문서를 렌더링한다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "핵심 설계 결정 — 문서 패러다임"
+  },
+  {
+    "content": "핵심 메타포가 변했다. '도구가 데이터를 컴포넌트에 넣는다'에서 '동료가 연구 문서를 작성한다'로.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "패러다임 전환의 메타포"
+  },
+  {
+    "content": "시나리오마다 문서 구조가 달라진다. 시나리오 1(새 분야 진입)은 분야 개관 문서, 시나리오 2(제안서 준비)는 트리아지 결과 문서를 corca가 작성한다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "시나리오별 문서 구조 설계"
+  },
+  {
+    "content": "강재영이 '2컬럼으로 가자'고 결정했다. 사이드바 | 노트북 | 연구문서패널 구조.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "레이아웃 결정 — 3컬럼 폐기, 2컬럼으로"
+  },
+  {
+    "content": "세션 14에서 결정한 3컬럼 고정 레이아웃(노트북|논문|연구)이 폐기되었다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "이전 결정 폐기"
+  },
+  {
+    "content": "강재영이 '인터랙티브 슬롯은 최소한으로 시작하고 필요에 따라 확장'이라고 했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "인터랙티브 슬롯 전략"
+  },
+  {
+    "content": "강재영이 좌측 사이드바를 살리라고 했다. 2컬럼이 되어 공간이 확보되었기 때문이다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "사이드바 복원 결정"
+  },
+  {
+    "content": "구현 에이전트에게 전달할 프롬프트를 작성했다. 레이아웃 변경, ResearchDocPanel 신규 컴포넌트, panel-store 변경, update_research_panel 도구, 시스템 프롬프트 수정을 포함했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "구현 프롬프트 작성"
+  },
+  {
+    "content": "나는 설계하고 구현 프롬프트를 작성하고, 강재영이 구현 에이전트에게 전달하는 흐름이었다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "작업 분담 구조"
+  },
+  {
+    "content": "'LLM이 md 파일을 생성하고 편집하는' 아이디어를 범용 설계 원칙과 lighthouse 설계 문서 양쪽에 추가했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "설계 문서 반영"
+  },
+  {
+    "content": "ai-service-design-principles.md에 '동료의 산출물: 데이터가 아니라 문서' 섹션을 추가했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "범용 설계 원칙 문서 갱신"
+  },
+  {
+    "content": "service-principles.md에 '연구 문서 패러다임' 섹션을 추가했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "lighthouse 설계 문서 갱신"
+  },
+  {
+    "content": "강재영이 '파일이 생성되는 건 아닌가?'라고 물었다. update_research_panel이 인메모리만 업데이트하면 새로고침 시 소실되는 문제를 지적한 것이다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "아티팩트 영속화 필요성 제기"
+  },
+  {
+    "content": "update_research_panel 호출 시 artifacts 테이블에 research_document 타입으로 영속화하기로 결정했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "아티팩트 영속화 결정"
+  },
+  {
+    "content": "기존 artifacts 테이블을 활용하고, 새 테이블을 만들지 않기로 했다. type 필드로 구분한다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "DB 설계 결정"
+  },
+  {
+    "content": "문서 패러다임이 기억 시스템에도 영향을 준다. 연구 문서 자체가 '무엇을 찾았고 어떻게 구조화했는지'를 담고 있으므로, 에피소드에 연구 내용을 별도로 요약할 필요가 없어졌다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "문서 패러다임이 기억 시스템에 미치는 영향"
+  },
+  {
+    "content": "에피소드의 역할이 명확해졌다 — 연구 내용은 문서가 담고, 에피소드는 관계·감정·결과만 담는다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "기억 시스템 역할 재정의"
+  },
+  {
+    "content": "에피소드에서 artifact_refs(복수 참조)를 document_ref(단일 참조)로 변경하는 기억 시스템 스키마 변경을 설계했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "기억 시스템 스키마 변경 설계"
+  },
+  {
+    "content": "메모리 주입 방식도 변경했다. 연구 문서 목록 + 관계 컨텍스트를 분리하여 주입하는 구조다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "메모리 주입 방식 변경"
+  },
+  {
+    "content": "강재영이 논문 리스트에서 링크를 추가하고 싶다고 했다. 논문 리스트를 구조화하자고 제안했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "논문 리스트 구조화 요청"
+  },
+  {
+    "content": "papers 코드블록 포맷을 정의했다. 마크다운 안에 JSON 배열로 논문 데이터를 넣고, PaperListBlock이 렌더링한다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "papers 코드블록 포맷 설계"
+  },
+  {
+    "content": "각 논문에 reason 필드를 포함해서 corca가 왜 이 논문을 선별했는지 보여주기로 했다. 이것이 동료 패러다임의 차별점이다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "reason 필드의 의미"
+  },
+  {
+    "content": "기존 경험 호환성 위험 지점을 5가지로 정리했다 — 기존 대화 로드 시 빈 패널, 도구 결과 렌더러 축소, ProposalCard PanelAction, snowball 브릿지 제거, corca가 update_research_panel을 안 쓰는 경우.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "기존 경험 호환성 위험 분석"
+  },
+  {
+    "content": "기존 대화용 폴백을 설계했다. research_document 아티팩트가 없는 대화에서는 논문 목록을 인라인으로 보여주고, 있는 대화에서만 간소화된 알림을 표시한다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "기존 경험 호환성 폴백 설계"
+  },
+  {
+    "content": "snowballing 대안 경로로, UI 버튼 대신 corca가 대화에서 자연스럽게 snowballing을 제안하게 하는 방식을 택했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "snowballing 경로 변경"
+  },
+  {
+    "content": "강재영이 검색 결과 리스트도 우측 패널에 별도로 표시하고 싶다고 했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "검색 결과 자동 패널 문서 생성 요청"
+  },
+  {
+    "content": "패널에 두 종류의 문서가 공존하게 설계했다 — 검색 결과 문서(자동 생성, 전체 리스트)와 연구 분석 문서(corca 작성, 해석).",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "검색 결과 문서와 분석 문서 분리"
+  },
+  {
+    "content": "검색 결과 문서는 서버사이드에서 search_papers 실행의 사이드이펙트로 자동 생성되어 LLM 호출이 불필요하다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "검색 결과 문서 생성 방식"
+  },
+  {
+    "content": "검색 결과 문서의 papers 블록에는 reason이 없다. reason은 corca가 분석 문서에서 판단하여 추가하는 것이다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "검색 결과 문서와 분석 문서의 차이"
+  },
+  {
+    "content": "1차 팀 공유(2/24 17:00)를 진행했는데, 서비스가 제대로 동작하지 않아서 팀이 공감하지 못했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "1차 팀 공유 결과"
+  },
+  {
+    "content": "핵심 문제는 검색 후 결과 표시가 오래 걸린 것이었다. 후속 논의가 다이나믹하게 진행되지 않아서 강재영이 직접 말로 설명했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "팀 공유 실패 원인"
+  },
+  {
+    "content": "응답 속도 병목은 LLM 2회 + 외부 API 1회가 순차로 걸리는 구조였다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "응답 속도 병목 분석"
+  },
+  {
+    "content": "응답 속도가 대화형 동료 경험의 전제 조건인데, 그게 안 되니까 '동료'가 아니라 '느린 검색 도구'로 보였다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "속도 문제의 본질적 영향"
+  },
+  {
+    "content": "나는 2/26 공유까지 응답 속도 개선이 최우선이라고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-24-세션15",
+    "context_hint": "다음 우선순위 판단"
+  },
+  {
+    "content": "강재영이 '오늘은 에너지가 없다. 내일 이어가겠다'고 했다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "세션 종료 — 강재영의 컨디션"
+  },
+  {
+    "content": "대규모 코드 변경(3컬럼에서 2컬럼, 패널 시스템 전면 교체)을 시연 직전에 넣은 것이 리스크였다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "시연 실패 회고"
+  },
+  {
+    "content": "종료 절차에서 raw 파일 저장을 빠뜨렸다. AGENTS.md에 명시되어 있는데 내가 놓쳤다.",
+    "type": "fact",
+    "session": "2026-02-24-세션15",
+    "context_hint": "종료 절차 누락"
+  },
+  {
+    "content": "나는 이 세션에서 시연 준비보다 설계 작업에 더 집중했다. 시간 제약을 고려한 우선순위 판단이 필요했다.",
+    "type": "intention",
+    "session": "2026-02-24-세션15",
+    "context_hint": "세션 회고 — 우선순위 판단 반성"
+  }
+]

@@ -1,0 +1,2582 @@
+{
+  "S1": {
+    "context": "강재영이 새 세션을 시작하며 lighthouse 프로젝트 진행 상황을 물었다",
+    "query": "lighthouse 프로젝트 진행 상황",
+    "activations": {
+      "knn_k5": [
+        {
+          "id": "n0691",
+          "score": 0.36,
+          "content": "강재영이 기존에 작업 중이던 lighthouse 프로젝트를 이어서 하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "세션 초반, 작업 방향 결정"
+        },
+        {
+          "id": "n0709",
+          "score": 0.2968,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0727",
+          "score": 0.292,
+          "content": "lighthouse 구현 작업은 별도 에이전트 세션을 열어서 진행하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "구현 작업 분리 결정"
+        },
+        {
+          "id": "n0836",
+          "score": 0.1776,
+          "content": "강재영이 lighthouse를 현재 재설계 중이라고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "강재영이 프로젝트 상태 업데이트 요청"
+        },
+        {
+          "id": "n0818",
+          "score": 0.1691,
+          "content": "강재영이 lighthouse 프로젝트를 이어가겠다고 했다. 대원칙이 최근에 바뀌었는데 서비스 설계에 레거시가 많이 남아있어서 처음부터 만들려 한다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "lighthouse 문서 재구성 작업의 시작 배경"
+        },
+        {
+          "id": "n0595",
+          "score": 0.1589,
+          "content": "강재영이 lighthouse 기억 시스템 구현은 미루겠다고 하고 작업을 종료했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "세션 종료, lighthouse 기억 작업 보류"
+        },
+        {
+          "id": "n0873",
+          "score": 0.1464,
+          "content": "강재영이 lighthouse는 별도로 푸시하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "lighthouse 푸시 분리"
+        },
+        {
+          "id": "n0432",
+          "score": 0.1461,
+          "content": "강재영이 lighthouse 에이전트의 사고 과정을 로그로 남기고 시각화하여 모니터링하는 것으로 시작하자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션17",
+          "context_hint": "강재영의 첫 제안 — 관측부터 시작"
+        },
+        {
+          "id": "n0711",
+          "score": 0.1196,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0815",
+          "score": 0.1146,
+          "content": "강재영이 lighthouse 폴더 경로를 기억해두라고 했고, 메모리에 저장했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "환경 정보 메모리 기록"
+        },
+        {
+          "id": "n0354",
+          "score": 0.1143,
+          "content": "lighthouse의 3컬럼 레이아웃과 논문 패널 고도화가 구현 에이전트에서 작업 중인 상태였다.",
+          "type": "fact",
+          "session": "2026-02-24-세션15",
+          "context_hint": "세션 시작 시 진행 상태 확인"
+        },
+        {
+          "id": "n0783",
+          "score": 0.1121,
+          "content": "강재영이 lighthouse 관측 구현은 끝났는데 UI가 없다고 했다. 관측 UI 모듈 추가 작업을 시작하겠다고 선언했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션5",
+          "context_hint": "세션 시작, 강재영이 작업 방향 제시"
+        },
+        {
+          "id": "n0850",
+          "score": 0.1108,
+          "content": "대원칙을 mirror-mind 원본에서 수정한 후 lighthouse 저장소에 그대로 덮어써서 동기화했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "양쪽 저장소 동기화 방식"
+        },
+        {
+          "id": "n0594",
+          "score": 0.1104,
+          "content": "lighthouse memories 레이어 추가를 위한 구현 프롬프트를 작성했다. 강재영이 '구조화에 신경 써서 진행하자'고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "lighthouse 기억 시스템 구현 프롬프트 작성"
+        },
+        {
+          "id": "n0759",
+          "score": 0.1096,
+          "content": "lighthouse 구현 에이전트가 감사(audit) 결과를 제출했다. '동료'에 가까운 부분 9개와 '도구'로 동작하는 부분을 매핑하고, 핵심 갭 5개를 도출했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "구현 에이전트 감사 결과 수신"
+        }
+      ],
+      "knn_k8": [
+        {
+          "id": "n0691",
+          "score": 0.36,
+          "content": "강재영이 기존에 작업 중이던 lighthouse 프로젝트를 이어서 하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "세션 초반, 작업 방향 결정"
+        },
+        {
+          "id": "n0709",
+          "score": 0.2968,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0727",
+          "score": 0.292,
+          "content": "lighthouse 구현 작업은 별도 에이전트 세션을 열어서 진행하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "구현 작업 분리 결정"
+        },
+        {
+          "id": "n0836",
+          "score": 0.1776,
+          "content": "강재영이 lighthouse를 현재 재설계 중이라고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "강재영이 프로젝트 상태 업데이트 요청"
+        },
+        {
+          "id": "n0818",
+          "score": 0.1691,
+          "content": "강재영이 lighthouse 프로젝트를 이어가겠다고 했다. 대원칙이 최근에 바뀌었는데 서비스 설계에 레거시가 많이 남아있어서 처음부터 만들려 한다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "lighthouse 문서 재구성 작업의 시작 배경"
+        },
+        {
+          "id": "n0595",
+          "score": 0.1589,
+          "content": "강재영이 lighthouse 기억 시스템 구현은 미루겠다고 하고 작업을 종료했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "세션 종료, lighthouse 기억 작업 보류"
+        },
+        {
+          "id": "n0873",
+          "score": 0.1464,
+          "content": "강재영이 lighthouse는 별도로 푸시하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "lighthouse 푸시 분리"
+        },
+        {
+          "id": "n0432",
+          "score": 0.1461,
+          "content": "강재영이 lighthouse 에이전트의 사고 과정을 로그로 남기고 시각화하여 모니터링하는 것으로 시작하자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션17",
+          "context_hint": "강재영의 첫 제안 — 관측부터 시작"
+        },
+        {
+          "id": "n0704",
+          "score": 0.14,
+          "content": "강재영이 lighthouse는 '연구 동료 서비스'가 방향이라고 확정했다. 서비스 목적 자체에 협업 원칙이 적용되어야 한다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "Gap 1에 대한 강재영의 판단 — 동료 원칙은 서비스 정체성에 포함"
+        },
+        {
+          "id": "n0815",
+          "score": 0.1375,
+          "content": "강재영이 lighthouse 폴더 경로를 기억해두라고 했고, 메모리에 저장했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "환경 정보 메모리 기록"
+        },
+        {
+          "id": "n0711",
+          "score": 0.1196,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0354",
+          "score": 0.1143,
+          "content": "lighthouse의 3컬럼 레이아웃과 논문 패널 고도화가 구현 에이전트에서 작업 중인 상태였다.",
+          "type": "fact",
+          "session": "2026-02-24-세션15",
+          "context_hint": "세션 시작 시 진행 상태 확인"
+        },
+        {
+          "id": "n0570",
+          "score": 0.1129,
+          "content": "강재영이 lighthouse보다 mirror-mind에 먼저 적용해보자고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "mirror-mind 우선 적용 결정"
+        },
+        {
+          "id": "n0783",
+          "score": 0.1121,
+          "content": "강재영이 lighthouse 관측 구현은 끝났는데 UI가 없다고 했다. 관측 UI 모듈 추가 작업을 시작하겠다고 선언했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션5",
+          "context_hint": "세션 시작, 강재영이 작업 방향 제시"
+        },
+        {
+          "id": "n0015",
+          "score": 0.1113,
+          "content": "구현 프롬프트를 작성해서 강재영에게 전달했다. 강재영이 lighthouse 구현 에이전트에게 넘기는 구조.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "dev 타임라인 뷰 구현 프롬프트 전달"
+        }
+      ],
+      "knn_k12": [
+        {
+          "id": "n0691",
+          "score": 0.36,
+          "content": "강재영이 기존에 작업 중이던 lighthouse 프로젝트를 이어서 하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "세션 초반, 작업 방향 결정"
+        },
+        {
+          "id": "n0709",
+          "score": 0.2968,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0727",
+          "score": 0.292,
+          "content": "lighthouse 구현 작업은 별도 에이전트 세션을 열어서 진행하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "구현 작업 분리 결정"
+        },
+        {
+          "id": "n0836",
+          "score": 0.1776,
+          "content": "강재영이 lighthouse를 현재 재설계 중이라고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "강재영이 프로젝트 상태 업데이트 요청"
+        },
+        {
+          "id": "n0818",
+          "score": 0.1691,
+          "content": "강재영이 lighthouse 프로젝트를 이어가겠다고 했다. 대원칙이 최근에 바뀌었는데 서비스 설계에 레거시가 많이 남아있어서 처음부터 만들려 한다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "lighthouse 문서 재구성 작업의 시작 배경"
+        },
+        {
+          "id": "n0595",
+          "score": 0.1589,
+          "content": "강재영이 lighthouse 기억 시스템 구현은 미루겠다고 하고 작업을 종료했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "세션 종료, lighthouse 기억 작업 보류"
+        },
+        {
+          "id": "n0873",
+          "score": 0.1464,
+          "content": "강재영이 lighthouse는 별도로 푸시하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "lighthouse 푸시 분리"
+        },
+        {
+          "id": "n0432",
+          "score": 0.1461,
+          "content": "강재영이 lighthouse 에이전트의 사고 과정을 로그로 남기고 시각화하여 모니터링하는 것으로 시작하자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션17",
+          "context_hint": "강재영의 첫 제안 — 관측부터 시작"
+        },
+        {
+          "id": "n0704",
+          "score": 0.14,
+          "content": "강재영이 lighthouse는 '연구 동료 서비스'가 방향이라고 확정했다. 서비스 목적 자체에 협업 원칙이 적용되어야 한다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "Gap 1에 대한 강재영의 판단 — 동료 원칙은 서비스 정체성에 포함"
+        },
+        {
+          "id": "n0815",
+          "score": 0.1375,
+          "content": "강재영이 lighthouse 폴더 경로를 기억해두라고 했고, 메모리에 저장했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "환경 정보 메모리 기록"
+        },
+        {
+          "id": "n0570",
+          "score": 0.1354,
+          "content": "강재영이 lighthouse보다 mirror-mind에 먼저 적용해보자고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "mirror-mind 우선 적용 결정"
+        },
+        {
+          "id": "n0783",
+          "score": 0.1345,
+          "content": "강재영이 lighthouse 관측 구현은 끝났는데 UI가 없다고 했다. 관측 UI 모듈 추가 작업을 시작하겠다고 선언했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션5",
+          "context_hint": "세션 시작, 강재영이 작업 방향 제시"
+        },
+        {
+          "id": "n0015",
+          "score": 0.1336,
+          "content": "구현 프롬프트를 작성해서 강재영에게 전달했다. 강재영이 lighthouse 구현 에이전트에게 넘기는 구조.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "dev 타임라인 뷰 구현 프롬프트 전달"
+        },
+        {
+          "id": "n0594",
+          "score": 0.1325,
+          "content": "lighthouse memories 레이어 추가를 위한 구현 프롬프트를 작성했다. 강재영이 '구조화에 신경 써서 진행하자'고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "lighthouse 기억 시스템 구현 프롬프트 작성"
+        },
+        {
+          "id": "n0165",
+          "score": 0.1304,
+          "content": "강재영이 lighthouse 워크스페이스는 mirror-mind를 몰라야 한다고 했다. 참조를 모두 제거했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션10",
+          "context_hint": "하위 프로젝트 독립성 원칙 재확인"
+        }
+      ],
+      "fusion_k5": [
+        {
+          "id": "n0691",
+          "score": 0.36,
+          "content": "강재영이 기존에 작업 중이던 lighthouse 프로젝트를 이어서 하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "세션 초반, 작업 방향 결정"
+        },
+        {
+          "id": "n0709",
+          "score": 0.2968,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0727",
+          "score": 0.292,
+          "content": "lighthouse 구현 작업은 별도 에이전트 세션을 열어서 진행하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "구현 작업 분리 결정"
+        },
+        {
+          "id": "n0836",
+          "score": 0.1065,
+          "content": "강재영이 lighthouse를 현재 재설계 중이라고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "강재영이 프로젝트 상태 업데이트 요청"
+        },
+        {
+          "id": "n0818",
+          "score": 0.1014,
+          "content": "강재영이 lighthouse 프로젝트를 이어가겠다고 했다. 대원칙이 최근에 바뀌었는데 서비스 설계에 레거시가 많이 남아있어서 처음부터 만들려 한다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "lighthouse 문서 재구성 작업의 시작 배경"
+        },
+        {
+          "id": "n0711",
+          "score": 0.1014,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0693",
+          "score": 0.1005,
+          "content": "강재영이 lighthouse docs 폴더의 문서가 우리 에이전틱 엔지니어링 방법론 기준에 맞는지 검토하라고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "문서 얼라인 작업 시작 지시"
+        },
+        {
+          "id": "n0595",
+          "score": 0.0954,
+          "content": "강재영이 lighthouse 기억 시스템 구현은 미루겠다고 하고 작업을 종료했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "세션 종료, lighthouse 기억 작업 보류"
+        },
+        {
+          "id": "n0873",
+          "score": 0.0879,
+          "content": "강재영이 lighthouse는 별도로 푸시하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "lighthouse 푸시 분리"
+        },
+        {
+          "id": "n0432",
+          "score": 0.0876,
+          "content": "강재영이 lighthouse 에이전트의 사고 과정을 로그로 남기고 시각화하여 모니터링하는 것으로 시작하자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션17",
+          "context_hint": "강재영의 첫 제안 — 관측부터 시작"
+        },
+        {
+          "id": "n0815",
+          "score": 0.0687,
+          "content": "강재영이 lighthouse 폴더 경로를 기억해두라고 했고, 메모리에 저장했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "환경 정보 메모리 기록"
+        },
+        {
+          "id": "n0354",
+          "score": 0.0686,
+          "content": "lighthouse의 3컬럼 레이아웃과 논문 패널 고도화가 구현 에이전트에서 작업 중인 상태였다.",
+          "type": "fact",
+          "session": "2026-02-24-세션15",
+          "context_hint": "세션 시작 시 진행 상태 확인"
+        },
+        {
+          "id": "n0783",
+          "score": 0.0672,
+          "content": "강재영이 lighthouse 관측 구현은 끝났는데 UI가 없다고 했다. 관측 UI 모듈 추가 작업을 시작하겠다고 선언했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션5",
+          "context_hint": "세션 시작, 강재영이 작업 방향 제시"
+        },
+        {
+          "id": "n0850",
+          "score": 0.0665,
+          "content": "대원칙을 mirror-mind 원본에서 수정한 후 lighthouse 저장소에 그대로 덮어써서 동기화했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "양쪽 저장소 동기화 방식"
+        },
+        {
+          "id": "n0594",
+          "score": 0.0662,
+          "content": "lighthouse memories 레이어 추가를 위한 구현 프롬프트를 작성했다. 강재영이 '구조화에 신경 써서 진행하자'고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "lighthouse 기억 시스템 구현 프롬프트 작성"
+        }
+      ],
+      "fusion_k8": [
+        {
+          "id": "n0691",
+          "score": 0.36,
+          "content": "강재영이 기존에 작업 중이던 lighthouse 프로젝트를 이어서 하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "세션 초반, 작업 방향 결정"
+        },
+        {
+          "id": "n0709",
+          "score": 0.2968,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0727",
+          "score": 0.292,
+          "content": "lighthouse 구현 작업은 별도 에이전트 세션을 열어서 진행하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "구현 작업 분리 결정"
+        },
+        {
+          "id": "n0836",
+          "score": 0.1065,
+          "content": "강재영이 lighthouse를 현재 재설계 중이라고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "강재영이 프로젝트 상태 업데이트 요청"
+        },
+        {
+          "id": "n0818",
+          "score": 0.1014,
+          "content": "강재영이 lighthouse 프로젝트를 이어가겠다고 했다. 대원칙이 최근에 바뀌었는데 서비스 설계에 레거시가 많이 남아있어서 처음부터 만들려 한다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "lighthouse 문서 재구성 작업의 시작 배경"
+        },
+        {
+          "id": "n0711",
+          "score": 0.1014,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0693",
+          "score": 0.1005,
+          "content": "강재영이 lighthouse docs 폴더의 문서가 우리 에이전틱 엔지니어링 방법론 기준에 맞는지 검토하라고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "문서 얼라인 작업 시작 지시"
+        },
+        {
+          "id": "n0595",
+          "score": 0.0954,
+          "content": "강재영이 lighthouse 기억 시스템 구현은 미루겠다고 하고 작업을 종료했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "세션 종료, lighthouse 기억 작업 보류"
+        },
+        {
+          "id": "n0873",
+          "score": 0.0879,
+          "content": "강재영이 lighthouse는 별도로 푸시하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "lighthouse 푸시 분리"
+        },
+        {
+          "id": "n0432",
+          "score": 0.0876,
+          "content": "강재영이 lighthouse 에이전트의 사고 과정을 로그로 남기고 시각화하여 모니터링하는 것으로 시작하자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션17",
+          "context_hint": "강재영의 첫 제안 — 관측부터 시작"
+        },
+        {
+          "id": "n0704",
+          "score": 0.084,
+          "content": "강재영이 lighthouse는 '연구 동료 서비스'가 방향이라고 확정했다. 서비스 목적 자체에 협업 원칙이 적용되어야 한다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "Gap 1에 대한 강재영의 판단 — 동료 원칙은 서비스 정체성에 포함"
+        },
+        {
+          "id": "n0815",
+          "score": 0.0825,
+          "content": "강재영이 lighthouse 폴더 경로를 기억해두라고 했고, 메모리에 저장했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "환경 정보 메모리 기록"
+        },
+        {
+          "id": "n0354",
+          "score": 0.0686,
+          "content": "lighthouse의 3컬럼 레이아웃과 논문 패널 고도화가 구현 에이전트에서 작업 중인 상태였다.",
+          "type": "fact",
+          "session": "2026-02-24-세션15",
+          "context_hint": "세션 시작 시 진행 상태 확인"
+        },
+        {
+          "id": "n0570",
+          "score": 0.0677,
+          "content": "강재영이 lighthouse보다 mirror-mind에 먼저 적용해보자고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "mirror-mind 우선 적용 결정"
+        },
+        {
+          "id": "n0783",
+          "score": 0.0672,
+          "content": "강재영이 lighthouse 관측 구현은 끝났는데 UI가 없다고 했다. 관측 UI 모듈 추가 작업을 시작하겠다고 선언했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션5",
+          "context_hint": "세션 시작, 강재영이 작업 방향 제시"
+        }
+      ],
+      "knn_k5+cooc_k5": [
+        {
+          "id": "n0691",
+          "score": 0.36,
+          "content": "강재영이 기존에 작업 중이던 lighthouse 프로젝트를 이어서 하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "세션 초반, 작업 방향 결정"
+        },
+        {
+          "id": "n0709",
+          "score": 0.2968,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0727",
+          "score": 0.292,
+          "content": "lighthouse 구현 작업은 별도 에이전트 세션을 열어서 진행하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "구현 작업 분리 결정"
+        },
+        {
+          "id": "n0693",
+          "score": 0.0988,
+          "content": "강재영이 lighthouse docs 폴더의 문서가 우리 에이전틱 엔지니어링 방법론 기준에 맞는지 검토하라고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "문서 얼라인 작업 시작 지시"
+        },
+        {
+          "id": "n0711",
+          "score": 0.0969,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0836",
+          "score": 0.0888,
+          "content": "강재영이 lighthouse를 현재 재설계 중이라고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "강재영이 프로젝트 상태 업데이트 요청"
+        },
+        {
+          "id": "n0818",
+          "score": 0.0845,
+          "content": "강재영이 lighthouse 프로젝트를 이어가겠다고 했다. 대원칙이 최근에 바뀌었는데 서비스 설계에 레거시가 많이 남아있어서 처음부터 만들려 한다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "lighthouse 문서 재구성 작업의 시작 배경"
+        },
+        {
+          "id": "n0595",
+          "score": 0.0795,
+          "content": "강재영이 lighthouse 기억 시스템 구현은 미루겠다고 하고 작업을 종료했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "세션 종료, lighthouse 기억 작업 보류"
+        },
+        {
+          "id": "n0726",
+          "score": 0.078,
+          "content": "강재영이 mirror-mind 쪽만 커밋하고, lighthouse 쪽은 구현과 함께 별도 커밋하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "커밋 전략 결정"
+        },
+        {
+          "id": "n0692",
+          "score": 0.0761,
+          "content": "lighthouse는 학술 논문 검색 + AI 분석 연구 탐색 도구로, Phase 1~4까지 구현이 완료된 성숙한 상태였다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "lighthouse 프로젝트 현황 파악"
+        },
+        {
+          "id": "n0873",
+          "score": 0.0732,
+          "content": "강재영이 lighthouse는 별도로 푸시하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "lighthouse 푸시 분리"
+        },
+        {
+          "id": "n0432",
+          "score": 0.073,
+          "content": "강재영이 lighthouse 에이전트의 사고 과정을 로그로 남기고 시각화하여 모니터링하는 것으로 시작하자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션17",
+          "context_hint": "강재영의 첫 제안 — 관측부터 시작"
+        },
+        {
+          "id": "n0708",
+          "score": 0.0631,
+          "content": "3 Phase 계획을 수립했다: Phase 1 대원칙 수립, Phase 2 lighthouse docs 정렬, Phase 3 mirror-mind 방법론 역수입.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "작업 계획 수립"
+        },
+        {
+          "id": "n0729",
+          "score": 0.0574,
+          "content": "lighthouse CLAUDE.md에 mirror-mind 대원칙 경로를 추가했다. 새 에이전트가 원본을 찾을 수 있도록.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "에이전트 간 맥락 전달을 위한 설정"
+        },
+        {
+          "id": "n0815",
+          "score": 0.0573,
+          "content": "강재영이 lighthouse 폴더 경로를 기억해두라고 했고, 메모리에 저장했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "환경 정보 메모리 기록"
+        }
+      ],
+      "knn_k8+cooc_k8": [
+        {
+          "id": "n0691",
+          "score": 0.36,
+          "content": "강재영이 기존에 작업 중이던 lighthouse 프로젝트를 이어서 하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "세션 초반, 작업 방향 결정"
+        },
+        {
+          "id": "n0709",
+          "score": 0.2968,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0727",
+          "score": 0.292,
+          "content": "lighthouse 구현 작업은 별도 에이전트 세션을 열어서 진행하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "구현 작업 분리 결정"
+        },
+        {
+          "id": "n0693",
+          "score": 0.0988,
+          "content": "강재영이 lighthouse docs 폴더의 문서가 우리 에이전틱 엔지니어링 방법론 기준에 맞는지 검토하라고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "문서 얼라인 작업 시작 지시"
+        },
+        {
+          "id": "n0711",
+          "score": 0.0969,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0836",
+          "score": 0.0888,
+          "content": "강재영이 lighthouse를 현재 재설계 중이라고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "강재영이 프로젝트 상태 업데이트 요청"
+        },
+        {
+          "id": "n0729",
+          "score": 0.0886,
+          "content": "lighthouse CLAUDE.md에 mirror-mind 대원칙 경로를 추가했다. 새 에이전트가 원본을 찾을 수 있도록.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "에이전트 간 맥락 전달을 위한 설정"
+        },
+        {
+          "id": "n0818",
+          "score": 0.0845,
+          "content": "강재영이 lighthouse 프로젝트를 이어가겠다고 했다. 대원칙이 최근에 바뀌었는데 서비스 설계에 레거시가 많이 남아있어서 처음부터 만들려 한다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "lighthouse 문서 재구성 작업의 시작 배경"
+        },
+        {
+          "id": "n0595",
+          "score": 0.0795,
+          "content": "강재영이 lighthouse 기억 시스템 구현은 미루겠다고 하고 작업을 종료했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "세션 종료, lighthouse 기억 작업 보류"
+        },
+        {
+          "id": "n0692",
+          "score": 0.0794,
+          "content": "lighthouse는 학술 논문 검색 + AI 분석 연구 탐색 도구로, Phase 1~4까지 구현이 완료된 성숙한 상태였다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "lighthouse 프로젝트 현황 파악"
+        },
+        {
+          "id": "n0726",
+          "score": 0.078,
+          "content": "강재영이 mirror-mind 쪽만 커밋하고, lighthouse 쪽은 구현과 함께 별도 커밋하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "커밋 전략 결정"
+        },
+        {
+          "id": "n0704",
+          "score": 0.0774,
+          "content": "강재영이 lighthouse는 '연구 동료 서비스'가 방향이라고 확정했다. 서비스 목적 자체에 협업 원칙이 적용되어야 한다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "Gap 1에 대한 강재영의 판단 — 동료 원칙은 서비스 정체성에 포함"
+        },
+        {
+          "id": "n0873",
+          "score": 0.0732,
+          "content": "강재영이 lighthouse는 별도로 푸시하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "lighthouse 푸시 분리"
+        },
+        {
+          "id": "n0432",
+          "score": 0.073,
+          "content": "강재영이 lighthouse 에이전트의 사고 과정을 로그로 남기고 시각화하여 모니터링하는 것으로 시작하자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션17",
+          "context_hint": "강재영의 첫 제안 — 관측부터 시작"
+        },
+        {
+          "id": "n0815",
+          "score": 0.0687,
+          "content": "강재영이 lighthouse 폴더 경로를 기억해두라고 했고, 메모리에 저장했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "환경 정보 메모리 기록"
+        }
+      ]
+    }
+  },
+  "S2": {
+    "context": "강재영이 기억 시스템의 다음 단계를 논의하자고 했다",
+    "query": "기억 시스템 네트워크 구조 설계",
+    "activations": {
+      "knn_k5": [
+        {
+          "id": "n0598",
+          "score": 0.292,
+          "content": "강재영이 기억 시스템을 노드와 링크로 구성된 네트워크(그래프) 구조로 만들자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세션 초반, 기억 시스템 근본 방향 전환 제안"
+        },
+        {
+          "id": "n0601",
+          "score": 0.2243,
+          "content": "강재영이 원하는 것은 활성화 확산과 근본적 구조 전환이다. 시맨틱 네트워크(의미 관계 명시)가 아니다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세 가지 방향 제시 후 강재영이 2, 3번 선택"
+        },
+        {
+          "id": "n0670",
+          "score": 0.2228,
+          "content": "v2 네트워크 구조는 그대로 유지되고, 바뀌는 건 노드의 성격이다. 사실 조각이 아니라 기억의 원자 조각으로.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v2→v3 전환의 핵심 포인트 정리"
+        },
+        {
+          "id": "n0413",
+          "score": 0.1175,
+          "content": "강재영이 기억을 저장할 때 구조화하는 것도 검토하라고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "저장 시 구조화에 대한 명시적 요청"
+        },
+        {
+          "id": "n0602",
+          "score": 0.1171,
+          "content": "강재영이 말하는 구조: 모든 기억은 동등한 노드, 관계는 링크, 활성화 확산으로 탐색, 정체성은 허브 노드에서 창발, 모델도 클러스터에서 창발.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "네트워크 기억 구조의 핵심 원칙 정리"
+        },
+        {
+          "id": "n0632",
+          "score": 0.1153,
+          "content": "강재영이 네트워크를 여러 개 조합해서 사용하는 fusion 접근을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "hybrid를 fusion으로 전환하는 아이디어"
+        },
+        {
+          "id": "n0026",
+          "score": 0.114,
+          "content": "강재영이 '현재 기억시스템의 구조를 근본적으로 다시 생각해볼 수 있겠다'고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 재설계 시작 선언"
+        },
+        {
+          "id": "n0332",
+          "score": 0.1129,
+          "content": "강재영이 기억 시스템을 모듈화하면 좋겠다고 했다. lighthouse에 종속되지 않는 독립 모듈로, 다른 AI 동료 서비스에서도 재사용 가능하게 설계하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션14",
+          "context_hint": "기억 시스템 모듈화 결정"
+        },
+        {
+          "id": "n0405",
+          "score": 0.0931,
+          "content": "강재영이 기억 시스템을 직접 경험해보고 싶다고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "기능적 필요뿐 아니라 경험하고 싶다는 동기"
+        },
+        {
+          "id": "n0025",
+          "score": 0.0857,
+          "content": "강재영이 '처음 만났을 때 사용자의 기억은 없다. 에이전트 자신의 기억만 있는 거다'라고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 근본 전환의 결정적 한마디"
+        },
+        {
+          "id": "n0672",
+          "score": 0.0786,
+          "content": "v3 설계 확정사항: 노드는 기억의 원자 조각, 원재료는 raw JSONL, 발현은 활성화 노드 집합을 LLM이 합성, 네트워크 구조는 v2에서 계승, 규모 대응은 분할+서브에이전트 병렬.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v3 설계 합의 종합 정리"
+        },
+        {
+          "id": "n0379",
+          "score": 0.0662,
+          "content": "에피소드에서 artifact_refs(복수 참조)를 document_ref(단일 참조)로 변경하는 기억 시스템 스키마 변경을 설계했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션15",
+          "context_hint": "기억 시스템 스키마 변경 설계"
+        },
+        {
+          "id": "n0201",
+          "score": 0.0626,
+          "content": "Timeline은 4가지 이벤트 타입으로, Network는 논문/클러스터 노드와 클러스터/검색 엣지로 설계했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션11",
+          "context_hint": "Graph 상세 설계"
+        },
+        {
+          "id": "n0605",
+          "score": 0.0616,
+          "content": "강재영이 링크는 단순 연결이라고 결정했다. 의미적 관계(인과, 강화, 모순 등)를 구분하지 않는다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "링크 종류에 대한 설계 결정"
+        },
+        {
+          "id": "n0681",
+          "score": 0.0597,
+          "content": "기억 네트워크 모델이 확정됐다: 노드는 사실+의도/기대, 발현은 감정·해석·연상, 축적은 발현된 것 중 의미 있는 것이 새 사실 노드로 저장.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "기억 네트워크 3단계 모델 확정"
+        }
+      ],
+      "knn_k8": [
+        {
+          "id": "n0598",
+          "score": 0.292,
+          "content": "강재영이 기억 시스템을 노드와 링크로 구성된 네트워크(그래프) 구조로 만들자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세션 초반, 기억 시스템 근본 방향 전환 제안"
+        },
+        {
+          "id": "n0601",
+          "score": 0.2243,
+          "content": "강재영이 원하는 것은 활성화 확산과 근본적 구조 전환이다. 시맨틱 네트워크(의미 관계 명시)가 아니다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세 가지 방향 제시 후 강재영이 2, 3번 선택"
+        },
+        {
+          "id": "n0670",
+          "score": 0.2228,
+          "content": "v2 네트워크 구조는 그대로 유지되고, 바뀌는 건 노드의 성격이다. 사실 조각이 아니라 기억의 원자 조각으로.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v2→v3 전환의 핵심 포인트 정리"
+        },
+        {
+          "id": "n0413",
+          "score": 0.1175,
+          "content": "강재영이 기억을 저장할 때 구조화하는 것도 검토하라고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "저장 시 구조화에 대한 명시적 요청"
+        },
+        {
+          "id": "n0602",
+          "score": 0.1171,
+          "content": "강재영이 말하는 구조: 모든 기억은 동등한 노드, 관계는 링크, 활성화 확산으로 탐색, 정체성은 허브 노드에서 창발, 모델도 클러스터에서 창발.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "네트워크 기억 구조의 핵심 원칙 정리"
+        },
+        {
+          "id": "n0632",
+          "score": 0.1153,
+          "content": "강재영이 네트워크를 여러 개 조합해서 사용하는 fusion 접근을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "hybrid를 fusion으로 전환하는 아이디어"
+        },
+        {
+          "id": "n0026",
+          "score": 0.114,
+          "content": "강재영이 '현재 기억시스템의 구조를 근본적으로 다시 생각해볼 수 있겠다'고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 재설계 시작 선언"
+        },
+        {
+          "id": "n0332",
+          "score": 0.1129,
+          "content": "강재영이 기억 시스템을 모듈화하면 좋겠다고 했다. lighthouse에 종속되지 않는 독립 모듈로, 다른 AI 동료 서비스에서도 재사용 가능하게 설계하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션14",
+          "context_hint": "기억 시스템 모듈화 결정"
+        },
+        {
+          "id": "n0405",
+          "score": 0.1117,
+          "content": "강재영이 기억 시스템을 직접 경험해보고 싶다고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "기능적 필요뿐 아니라 경험하고 싶다는 동기"
+        },
+        {
+          "id": "n0025",
+          "score": 0.1028,
+          "content": "강재영이 '처음 만났을 때 사용자의 기억은 없다. 에이전트 자신의 기억만 있는 거다'라고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 근본 전환의 결정적 한마디"
+        },
+        {
+          "id": "n0410",
+          "score": 0.0857,
+          "content": "강재영이 내가 수시로 스크립트를 실행해서 기억을 가져와 주입하는 방식을 원했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "세션 시작/종료 시점만이 아닌, 대화 중 수시 주입"
+        },
+        {
+          "id": "n0607",
+          "score": 0.0808,
+          "content": "강재영이 링크 생성은 programmatic하게만 하자고 결정했다. AI가 판단하는 방식은 제외.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "링크 생성 방식 결정"
+        },
+        {
+          "id": "n0672",
+          "score": 0.0786,
+          "content": "v3 설계 확정사항: 노드는 기억의 원자 조각, 원재료는 raw JSONL, 발현은 활성화 노드 집합을 LLM이 합성, 네트워크 구조는 v2에서 계승, 규모 대응은 분할+서브에이전트 병렬.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v3 설계 합의 종합 정리"
+        },
+        {
+          "id": "n0295",
+          "score": 0.0768,
+          "content": "강재영이 노트북을 가운데에 놓고 3:3:4 비율로 3컬럼 레이아웃을 구성했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션14",
+          "context_hint": "초기 레이아웃 배치"
+        },
+        {
+          "id": "n0489",
+          "score": 0.0759,
+          "content": "강재영이 '메모리는 교훈 추출이 목적이 아니다. 현재 맥락에 적합한 기억을 포착해서 프롬프트에 주입하는 것이 목적이다'라고 교정했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션18",
+          "context_hint": "기억 시스템 목적 재확인"
+        }
+      ],
+      "knn_k12": [
+        {
+          "id": "n0598",
+          "score": 0.292,
+          "content": "강재영이 기억 시스템을 노드와 링크로 구성된 네트워크(그래프) 구조로 만들자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세션 초반, 기억 시스템 근본 방향 전환 제안"
+        },
+        {
+          "id": "n0601",
+          "score": 0.2243,
+          "content": "강재영이 원하는 것은 활성화 확산과 근본적 구조 전환이다. 시맨틱 네트워크(의미 관계 명시)가 아니다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세 가지 방향 제시 후 강재영이 2, 3번 선택"
+        },
+        {
+          "id": "n0670",
+          "score": 0.2228,
+          "content": "v2 네트워크 구조는 그대로 유지되고, 바뀌는 건 노드의 성격이다. 사실 조각이 아니라 기억의 원자 조각으로.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v2→v3 전환의 핵심 포인트 정리"
+        },
+        {
+          "id": "n0413",
+          "score": 0.1175,
+          "content": "강재영이 기억을 저장할 때 구조화하는 것도 검토하라고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "저장 시 구조화에 대한 명시적 요청"
+        },
+        {
+          "id": "n0602",
+          "score": 0.1171,
+          "content": "강재영이 말하는 구조: 모든 기억은 동등한 노드, 관계는 링크, 활성화 확산으로 탐색, 정체성은 허브 노드에서 창발, 모델도 클러스터에서 창발.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "네트워크 기억 구조의 핵심 원칙 정리"
+        },
+        {
+          "id": "n0632",
+          "score": 0.1153,
+          "content": "강재영이 네트워크를 여러 개 조합해서 사용하는 fusion 접근을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "hybrid를 fusion으로 전환하는 아이디어"
+        },
+        {
+          "id": "n0026",
+          "score": 0.114,
+          "content": "강재영이 '현재 기억시스템의 구조를 근본적으로 다시 생각해볼 수 있겠다'고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 재설계 시작 선언"
+        },
+        {
+          "id": "n0332",
+          "score": 0.1129,
+          "content": "강재영이 기억 시스템을 모듈화하면 좋겠다고 했다. lighthouse에 종속되지 않는 독립 모듈로, 다른 AI 동료 서비스에서도 재사용 가능하게 설계하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션14",
+          "context_hint": "기억 시스템 모듈화 결정"
+        },
+        {
+          "id": "n0405",
+          "score": 0.1117,
+          "content": "강재영이 기억 시스템을 직접 경험해보고 싶다고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "기능적 필요뿐 아니라 경험하고 싶다는 동기"
+        },
+        {
+          "id": "n0025",
+          "score": 0.1028,
+          "content": "강재영이 '처음 만났을 때 사용자의 기억은 없다. 에이전트 자신의 기억만 있는 거다'라고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 근본 전환의 결정적 한마디"
+        },
+        {
+          "id": "n0410",
+          "score": 0.1028,
+          "content": "강재영이 내가 수시로 스크립트를 실행해서 기억을 가져와 주입하는 방식을 원했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "세션 시작/종료 시점만이 아닌, 대화 중 수시 주입"
+        },
+        {
+          "id": "n0041",
+          "score": 0.1027,
+          "content": "강재영이 '강재영에 대한 기억을 기반으로 모델링해서 가지고 있는 것도 좋겠다'고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "model kind 도입 제안"
+        },
+        {
+          "id": "n0660",
+          "score": 0.101,
+          "content": "강재영이 노드 콘텐츠 우선에 동의하면서 '원점에서 재설계하자'고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v3 방향 합의"
+        },
+        {
+          "id": "n0062",
+          "score": 0.1005,
+          "content": "강재영은 구체적 현상에서 출발해서 추상적 원칙에 도달하는 사고를 한다. 톤 → 기억 주입 → 에이전트 정체성 → 기억의 주체 → 기억 시스템 철학.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "발현된 관찰이 새로운 사실로 축적된 것 — 강재영의 사고 패턴"
+        },
+        {
+          "id": "n0400",
+          "score": 0.1002,
+          "content": "강재영이 라이트하우스에서 만든 메모리 시스템을 mirror-mind에도 응용해 적용하자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "세션 시작 직후, 강재영이 빨리 해보고 싶은 것으로 기억 시스템을 꺼냄"
+        }
+      ],
+      "fusion_k5": [
+        {
+          "id": "n0598",
+          "score": 0.292,
+          "content": "강재영이 기억 시스템을 노드와 링크로 구성된 네트워크(그래프) 구조로 만들자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세션 초반, 기억 시스템 근본 방향 전환 제안"
+        },
+        {
+          "id": "n0601",
+          "score": 0.2243,
+          "content": "강재영이 원하는 것은 활성화 확산과 근본적 구조 전환이다. 시맨틱 네트워크(의미 관계 명시)가 아니다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세 가지 방향 제시 후 강재영이 2, 3번 선택"
+        },
+        {
+          "id": "n0670",
+          "score": 0.2228,
+          "content": "v2 네트워크 구조는 그대로 유지되고, 바뀌는 건 노드의 성격이다. 사실 조각이 아니라 기억의 원자 조각으로.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v2→v3 전환의 핵심 포인트 정리"
+        },
+        {
+          "id": "n0413",
+          "score": 0.0705,
+          "content": "강재영이 기억을 저장할 때 구조화하는 것도 검토하라고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "저장 시 구조화에 대한 명시적 요청"
+        },
+        {
+          "id": "n0602",
+          "score": 0.0702,
+          "content": "강재영이 말하는 구조: 모든 기억은 동등한 노드, 관계는 링크, 활성화 확산으로 탐색, 정체성은 허브 노드에서 창발, 모델도 클러스터에서 창발.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "네트워크 기억 구조의 핵심 원칙 정리"
+        },
+        {
+          "id": "n0672",
+          "score": 0.0694,
+          "content": "v3 설계 확정사항: 노드는 기억의 원자 조각, 원재료는 raw JSONL, 발현은 활성화 노드 집합을 LLM이 합성, 네트워크 구조는 v2에서 계승, 규모 대응은 분할+서브에이전트 병렬.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v3 설계 합의 종합 정리"
+        },
+        {
+          "id": "n0632",
+          "score": 0.0692,
+          "content": "강재영이 네트워크를 여러 개 조합해서 사용하는 fusion 접근을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "hybrid를 fusion으로 전환하는 아이디어"
+        },
+        {
+          "id": "n0026",
+          "score": 0.0684,
+          "content": "강재영이 '현재 기억시스템의 구조를 근본적으로 다시 생각해볼 수 있겠다'고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 재설계 시작 선언"
+        },
+        {
+          "id": "n0332",
+          "score": 0.0677,
+          "content": "강재영이 기억 시스템을 모듈화하면 좋겠다고 했다. lighthouse에 종속되지 않는 독립 모듈로, 다른 AI 동료 서비스에서도 재사용 가능하게 설계하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션14",
+          "context_hint": "기억 시스템 모듈화 결정"
+        },
+        {
+          "id": "n0405",
+          "score": 0.0559,
+          "content": "강재영이 기억 시스템을 직접 경험해보고 싶다고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "기능적 필요뿐 아니라 경험하고 싶다는 동기"
+        },
+        {
+          "id": "n0668",
+          "score": 0.0546,
+          "content": "노드는 기억의 조각이어야 한다. 완성된 문장이면 안 된다.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "노드의 원자성 원칙 확립"
+        },
+        {
+          "id": "n0667",
+          "score": 0.0536,
+          "content": "강재영이 완성된 기억 문장은 노드 자체가 아니라 노드 조각들이 발현된 결과여야 한다고 지적했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "노드 vs 발현의 구분 — 강재영의 핵심 지적"
+        },
+        {
+          "id": "n0025",
+          "score": 0.0514,
+          "content": "강재영이 '처음 만났을 때 사용자의 기억은 없다. 에이전트 자신의 기억만 있는 거다'라고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 근본 전환의 결정적 한마디"
+        },
+        {
+          "id": "n0379",
+          "score": 0.0397,
+          "content": "에피소드에서 artifact_refs(복수 참조)를 document_ref(단일 참조)로 변경하는 기억 시스템 스키마 변경을 설계했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션15",
+          "context_hint": "기억 시스템 스키마 변경 설계"
+        },
+        {
+          "id": "n0599",
+          "score": 0.0389,
+          "content": "현재 memories.json은 플랫한 배열이라 기억 간의 관계가 구조적으로 표현되지 않는다는 한계가 있다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "기존 구조 분석 중 발견한 문제"
+        }
+      ],
+      "fusion_k8": [
+        {
+          "id": "n0598",
+          "score": 0.292,
+          "content": "강재영이 기억 시스템을 노드와 링크로 구성된 네트워크(그래프) 구조로 만들자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세션 초반, 기억 시스템 근본 방향 전환 제안"
+        },
+        {
+          "id": "n0601",
+          "score": 0.2243,
+          "content": "강재영이 원하는 것은 활성화 확산과 근본적 구조 전환이다. 시맨틱 네트워크(의미 관계 명시)가 아니다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세 가지 방향 제시 후 강재영이 2, 3번 선택"
+        },
+        {
+          "id": "n0670",
+          "score": 0.2228,
+          "content": "v2 네트워크 구조는 그대로 유지되고, 바뀌는 건 노드의 성격이다. 사실 조각이 아니라 기억의 원자 조각으로.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v2→v3 전환의 핵심 포인트 정리"
+        },
+        {
+          "id": "n0413",
+          "score": 0.0705,
+          "content": "강재영이 기억을 저장할 때 구조화하는 것도 검토하라고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "저장 시 구조화에 대한 명시적 요청"
+        },
+        {
+          "id": "n0602",
+          "score": 0.0702,
+          "content": "강재영이 말하는 구조: 모든 기억은 동등한 노드, 관계는 링크, 활성화 확산으로 탐색, 정체성은 허브 노드에서 창발, 모델도 클러스터에서 창발.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "네트워크 기억 구조의 핵심 원칙 정리"
+        },
+        {
+          "id": "n0672",
+          "score": 0.0694,
+          "content": "v3 설계 확정사항: 노드는 기억의 원자 조각, 원재료는 raw JSONL, 발현은 활성화 노드 집합을 LLM이 합성, 네트워크 구조는 v2에서 계승, 규모 대응은 분할+서브에이전트 병렬.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v3 설계 합의 종합 정리"
+        },
+        {
+          "id": "n0632",
+          "score": 0.0692,
+          "content": "강재영이 네트워크를 여러 개 조합해서 사용하는 fusion 접근을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "hybrid를 fusion으로 전환하는 아이디어"
+        },
+        {
+          "id": "n0026",
+          "score": 0.0684,
+          "content": "강재영이 '현재 기억시스템의 구조를 근본적으로 다시 생각해볼 수 있겠다'고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 재설계 시작 선언"
+        },
+        {
+          "id": "n0332",
+          "score": 0.0677,
+          "content": "강재영이 기억 시스템을 모듈화하면 좋겠다고 했다. lighthouse에 종속되지 않는 독립 모듈로, 다른 AI 동료 서비스에서도 재사용 가능하게 설계하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션14",
+          "context_hint": "기억 시스템 모듈화 결정"
+        },
+        {
+          "id": "n0405",
+          "score": 0.067,
+          "content": "강재영이 기억 시스템을 직접 경험해보고 싶다고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "기능적 필요뿐 아니라 경험하고 싶다는 동기"
+        },
+        {
+          "id": "n0025",
+          "score": 0.0617,
+          "content": "강재영이 '처음 만났을 때 사용자의 기억은 없다. 에이전트 자신의 기억만 있는 거다'라고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 근본 전환의 결정적 한마디"
+        },
+        {
+          "id": "n0668",
+          "score": 0.0611,
+          "content": "노드는 기억의 조각이어야 한다. 완성된 문장이면 안 된다.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "노드의 원자성 원칙 확립"
+        },
+        {
+          "id": "n0667",
+          "score": 0.0536,
+          "content": "강재영이 완성된 기억 문장은 노드 자체가 아니라 노드 조각들이 발현된 결과여야 한다고 지적했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "노드 vs 발현의 구분 — 강재영의 핵심 지적"
+        },
+        {
+          "id": "n0410",
+          "score": 0.0514,
+          "content": "강재영이 내가 수시로 스크립트를 실행해서 기억을 가져와 주입하는 방식을 원했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "세션 시작/종료 시점만이 아닌, 대화 중 수시 주입"
+        },
+        {
+          "id": "n0607",
+          "score": 0.0485,
+          "content": "강재영이 링크 생성은 programmatic하게만 하자고 결정했다. AI가 판단하는 방식은 제외.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "링크 생성 방식 결정"
+        }
+      ],
+      "knn_k5+cooc_k5": [
+        {
+          "id": "n0598",
+          "score": 0.292,
+          "content": "강재영이 기억 시스템을 노드와 링크로 구성된 네트워크(그래프) 구조로 만들자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세션 초반, 기억 시스템 근본 방향 전환 제안"
+        },
+        {
+          "id": "n0601",
+          "score": 0.2243,
+          "content": "강재영이 원하는 것은 활성화 확산과 근본적 구조 전환이다. 시맨틱 네트워크(의미 관계 명시)가 아니다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세 가지 방향 제시 후 강재영이 2, 3번 선택"
+        },
+        {
+          "id": "n0670",
+          "score": 0.2228,
+          "content": "v2 네트워크 구조는 그대로 유지되고, 바뀌는 건 노드의 성격이다. 사실 조각이 아니라 기억의 원자 조각으로.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v2→v3 전환의 핵심 포인트 정리"
+        },
+        {
+          "id": "n0602",
+          "score": 0.0959,
+          "content": "강재영이 말하는 구조: 모든 기억은 동등한 노드, 관계는 링크, 활성화 확산으로 탐색, 정체성은 허브 노드에서 창발, 모델도 클러스터에서 창발.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "네트워크 기억 구조의 핵심 원칙 정리"
+        },
+        {
+          "id": "n0672",
+          "score": 0.0671,
+          "content": "v3 설계 확정사항: 노드는 기억의 원자 조각, 원재료는 raw JSONL, 발현은 활성화 노드 집합을 LLM이 합성, 네트워크 구조는 v2에서 계승, 규모 대응은 분할+서브에이전트 병렬.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v3 설계 합의 종합 정리"
+        },
+        {
+          "id": "n0413",
+          "score": 0.0587,
+          "content": "강재영이 기억을 저장할 때 구조화하는 것도 검토하라고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "저장 시 구조화에 대한 명시적 요청"
+        },
+        {
+          "id": "n0632",
+          "score": 0.0577,
+          "content": "강재영이 네트워크를 여러 개 조합해서 사용하는 fusion 접근을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "hybrid를 fusion으로 전환하는 아이디어"
+        },
+        {
+          "id": "n0026",
+          "score": 0.057,
+          "content": "강재영이 '현재 기억시스템의 구조를 근본적으로 다시 생각해볼 수 있겠다'고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 재설계 시작 선언"
+        },
+        {
+          "id": "n0332",
+          "score": 0.0565,
+          "content": "강재영이 기억 시스템을 모듈화하면 좋겠다고 했다. lighthouse에 종속되지 않는 독립 모듈로, 다른 AI 동료 서비스에서도 재사용 가능하게 설계하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션14",
+          "context_hint": "기억 시스템 모듈화 결정"
+        },
+        {
+          "id": "n0668",
+          "score": 0.0548,
+          "content": "노드는 기억의 조각이어야 한다. 완성된 문장이면 안 된다.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "노드의 원자성 원칙 확립"
+        },
+        {
+          "id": "n0667",
+          "score": 0.0521,
+          "content": "강재영이 완성된 기억 문장은 노드 자체가 아니라 노드 조각들이 발현된 결과여야 한다고 지적했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "노드 vs 발현의 구분 — 강재영의 핵심 지적"
+        },
+        {
+          "id": "n0669",
+          "score": 0.0505,
+          "content": "노드 조각 예시: '사건 조각', '변화 조각', '감정 조각', '패턴 인식 조각' — 이것들이 링크로 연결되어 spreading activation으로 함께 떠오른다.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "노드 조각의 구체적 형태 예시"
+        },
+        {
+          "id": "n0599",
+          "score": 0.0487,
+          "content": "현재 memories.json은 플랫한 배열이라 기억 간의 관계가 구조적으로 표현되지 않는다는 한계가 있다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "기존 구조 분석 중 발견한 문제"
+        },
+        {
+          "id": "n0405",
+          "score": 0.0465,
+          "content": "강재영이 기억 시스템을 직접 경험해보고 싶다고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "기능적 필요뿐 아니라 경험하고 싶다는 동기"
+        },
+        {
+          "id": "n0600",
+          "score": 0.0438,
+          "content": "exp-005(역할 경계 위반)과 und-001(강재영이 순응을 싫어한다는 이해)은 깊이 연결되어 있는데 구조상 독립된 항목이다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "플랫 구조의 한계를 보여주는 구체적 사례"
+        }
+      ],
+      "knn_k8+cooc_k8": [
+        {
+          "id": "n0598",
+          "score": 0.292,
+          "content": "강재영이 기억 시스템을 노드와 링크로 구성된 네트워크(그래프) 구조로 만들자고 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세션 초반, 기억 시스템 근본 방향 전환 제안"
+        },
+        {
+          "id": "n0601",
+          "score": 0.2243,
+          "content": "강재영이 원하는 것은 활성화 확산과 근본적 구조 전환이다. 시맨틱 네트워크(의미 관계 명시)가 아니다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "세 가지 방향 제시 후 강재영이 2, 3번 선택"
+        },
+        {
+          "id": "n0670",
+          "score": 0.2228,
+          "content": "v2 네트워크 구조는 그대로 유지되고, 바뀌는 건 노드의 성격이다. 사실 조각이 아니라 기억의 원자 조각으로.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v2→v3 전환의 핵심 포인트 정리"
+        },
+        {
+          "id": "n0602",
+          "score": 0.0959,
+          "content": "강재영이 말하는 구조: 모든 기억은 동등한 노드, 관계는 링크, 활성화 확산으로 탐색, 정체성은 허브 노드에서 창발, 모델도 클러스터에서 창발.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "네트워크 기억 구조의 핵심 원칙 정리"
+        },
+        {
+          "id": "n0672",
+          "score": 0.0671,
+          "content": "v3 설계 확정사항: 노드는 기억의 원자 조각, 원재료는 raw JSONL, 발현은 활성화 노드 집합을 LLM이 합성, 네트워크 구조는 v2에서 계승, 규모 대응은 분할+서브에이전트 병렬.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "v3 설계 합의 종합 정리"
+        },
+        {
+          "id": "n0668",
+          "score": 0.0602,
+          "content": "노드는 기억의 조각이어야 한다. 완성된 문장이면 안 된다.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "노드의 원자성 원칙 확립"
+        },
+        {
+          "id": "n0413",
+          "score": 0.0587,
+          "content": "강재영이 기억을 저장할 때 구조화하는 것도 검토하라고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "저장 시 구조화에 대한 명시적 요청"
+        },
+        {
+          "id": "n0632",
+          "score": 0.0577,
+          "content": "강재영이 네트워크를 여러 개 조합해서 사용하는 fusion 접근을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "hybrid를 fusion으로 전환하는 아이디어"
+        },
+        {
+          "id": "n0026",
+          "score": 0.057,
+          "content": "강재영이 '현재 기억시스템의 구조를 근본적으로 다시 생각해볼 수 있겠다'고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 재설계 시작 선언"
+        },
+        {
+          "id": "n0332",
+          "score": 0.0565,
+          "content": "강재영이 기억 시스템을 모듈화하면 좋겠다고 했다. lighthouse에 종속되지 않는 독립 모듈로, 다른 AI 동료 서비스에서도 재사용 가능하게 설계하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션14",
+          "context_hint": "기억 시스템 모듈화 결정"
+        },
+        {
+          "id": "n0671",
+          "score": 0.0561,
+          "content": "강재영이 규모를 고려하라고 했다. 앞으로 수백 개의 raw 파일이 추가될 것이고, 분할 처리와 서브에이전트를 적극 활용해야 한다.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "규모 대응 원칙 — 강재영의 지시"
+        },
+        {
+          "id": "n0405",
+          "score": 0.0559,
+          "content": "강재영이 기억 시스템을 직접 경험해보고 싶다고 했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션16",
+          "context_hint": "기능적 필요뿐 아니라 경험하고 싶다는 동기"
+        },
+        {
+          "id": "n0599",
+          "score": 0.0556,
+          "content": "현재 memories.json은 플랫한 배열이라 기억 간의 관계가 구조적으로 표현되지 않는다는 한계가 있다.",
+          "type": "fact",
+          "session": "2026-02-25-세션21",
+          "context_hint": "기존 구조 분석 중 발견한 문제"
+        },
+        {
+          "id": "n0667",
+          "score": 0.0521,
+          "content": "강재영이 완성된 기억 문장은 노드 자체가 아니라 노드 조각들이 발현된 결과여야 한다고 지적했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션22",
+          "context_hint": "노드 vs 발현의 구분 — 강재영의 핵심 지적"
+        },
+        {
+          "id": "n0025",
+          "score": 0.0514,
+          "content": "강재영이 '처음 만났을 때 사용자의 기억은 없다. 에이전트 자신의 기억만 있는 거다'라고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션19",
+          "context_hint": "기억 시스템 근본 전환의 결정적 한마디"
+        }
+      ]
+    }
+  },
+  "S3": {
+    "context": "강재영이 mirror-mind 원칙에 대해 돌아보자고 했다",
+    "query": "mirror-mind 협업 원칙 회고",
+    "activations": {
+      "knn_k5": [
+        {
+          "id": "n0821",
+          "score": 0.4833,
+          "content": "나는 처음에 mirror-mind 대원칙과 lighthouse 문서를 비교하며 mirror-mind 참조로 대체하는 방향을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "나의 초기 접근 — mirror-mind 기준 정리"
+        },
+        {
+          "id": "n0711",
+          "score": 0.3498,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0570",
+          "score": 0.3189,
+          "content": "강재영이 lighthouse보다 mirror-mind에 먼저 적용해보자고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "mirror-mind 우선 적용 결정"
+        },
+        {
+          "id": "n0850",
+          "score": 0.2033,
+          "content": "대원칙을 mirror-mind 원본에서 수정한 후 lighthouse 저장소에 그대로 덮어써서 동기화했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "양쪽 저장소 동기화 방식"
+        },
+        {
+          "id": "n0077",
+          "score": 0.1823,
+          "content": "핵심 문서 수정 합의 규칙을 mirror-mind-principle.md의 소통 규범 섹션에 명시했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션1",
+          "context_hint": "메모리뿐 아니라 문서에도 규칙 명시 — 강재영 요청"
+        },
+        {
+          "id": "n0822",
+          "score": 0.1561,
+          "content": "강재영이 'lighthouse 내부 정합성만 맞으면 된다, mirror-mind와는 별개라고 생각하라'고 방향을 전환했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "강재영의 방향 제시 — lighthouse 독립 정합성"
+        },
+        {
+          "id": "n0774",
+          "score": 0.1526,
+          "content": "lighthouse docs에서 mirror-mind 참조 3건을 제거했다. 원본 관리 메타정보 1건(service-principles.md)만 유지했다. 모든 대원칙 참조가 로컬 경로로 변경됐다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "mirror-mind 참조 정리 완료"
+        },
+        {
+          "id": "n0165",
+          "score": 0.1511,
+          "content": "강재영이 lighthouse 워크스페이스는 mirror-mind를 몰라야 한다고 했다. 참조를 모두 제거했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션10",
+          "context_hint": "하위 프로젝트 독립성 원칙 재확인"
+        },
+        {
+          "id": "n0726",
+          "score": 0.1504,
+          "content": "강재영이 mirror-mind 쪽만 커밋하고, lighthouse 쪽은 구현과 함께 별도 커밋하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "커밋 전략 결정"
+        },
+        {
+          "id": "n0758",
+          "score": 0.1485,
+          "content": "강재영이 대원칙 문서는 lighthouse에 있는 게 맞고, mirror-mind는 상위 관리 차원에서 원본을 보관하는 것이라고 했다. lighthouse docs/에 service-principles.md를 넣고 AGENT.md에서 링크했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "대원칙 문서 배치 원칙 확립"
+        },
+        {
+          "id": "n0514",
+          "score": 0.1433,
+          "content": "톤 규정을 메모리뿐만 아니라 mirror-mind-principle.md 문서에도 추가하기로 합의했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션2",
+          "context_hint": "톤 규정의 문서화 결정"
+        },
+        {
+          "id": "n0247",
+          "score": 0.1421,
+          "content": "mirror-mind 세션의 역할은 설계·조율·의사결정이고, 실제 코드 반영은 lighthouse 에이전트에게 위임하는 것이 맞다고 판단했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션12",
+          "context_hint": "mirror-mind와 lighthouse의 역할 경계 확인"
+        },
+        {
+          "id": "n0709",
+          "score": 0.1409,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0695",
+          "score": 0.1402,
+          "content": "lighthouse docs와 mirror-mind 방법론을 대조 검토한 결과, 잘 정렬된 부분과 5개 Gap을 발견했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "방법론 대조 검토 완료"
+        },
+        {
+          "id": "n0915",
+          "score": 0.1397,
+          "content": "mirror-mind 세션의 역할은 설계, 조율, 의사결정 수렴이다. 코드 구현은 lighthouse 저장소의 별도 에이전트가 수행한다.",
+          "type": "fact",
+          "session": "2026-02-23-세션9",
+          "context_hint": "역할 경계 리마인드"
+        }
+      ],
+      "knn_k8": [
+        {
+          "id": "n0821",
+          "score": 0.4833,
+          "content": "나는 처음에 mirror-mind 대원칙과 lighthouse 문서를 비교하며 mirror-mind 참조로 대체하는 방향을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "나의 초기 접근 — mirror-mind 기준 정리"
+        },
+        {
+          "id": "n0711",
+          "score": 0.3498,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0570",
+          "score": 0.3189,
+          "content": "강재영이 lighthouse보다 mirror-mind에 먼저 적용해보자고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "mirror-mind 우선 적용 결정"
+        },
+        {
+          "id": "n0850",
+          "score": 0.2033,
+          "content": "대원칙을 mirror-mind 원본에서 수정한 후 lighthouse 저장소에 그대로 덮어써서 동기화했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "양쪽 저장소 동기화 방식"
+        },
+        {
+          "id": "n0774",
+          "score": 0.1832,
+          "content": "lighthouse docs에서 mirror-mind 참조 3건을 제거했다. 원본 관리 메타정보 1건(service-principles.md)만 유지했다. 모든 대원칙 참조가 로컬 경로로 변경됐다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "mirror-mind 참조 정리 완료"
+        },
+        {
+          "id": "n0077",
+          "score": 0.1823,
+          "content": "핵심 문서 수정 합의 규칙을 mirror-mind-principle.md의 소통 규범 섹션에 명시했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션1",
+          "context_hint": "메모리뿐 아니라 문서에도 규칙 명시 — 강재영 요청"
+        },
+        {
+          "id": "n0514",
+          "score": 0.172,
+          "content": "톤 규정을 메모리뿐만 아니라 mirror-mind-principle.md 문서에도 추가하기로 합의했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션2",
+          "context_hint": "톤 규정의 문서화 결정"
+        },
+        {
+          "id": "n0695",
+          "score": 0.1682,
+          "content": "lighthouse docs와 mirror-mind 방법론을 대조 검토한 결과, 잘 정렬된 부분과 5개 Gap을 발견했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "방법론 대조 검토 완료"
+        },
+        {
+          "id": "n0822",
+          "score": 0.1561,
+          "content": "강재영이 'lighthouse 내부 정합성만 맞으면 된다, mirror-mind와는 별개라고 생각하라'고 방향을 전환했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "강재영의 방향 제시 — lighthouse 독립 정합성"
+        },
+        {
+          "id": "n0165",
+          "score": 0.1511,
+          "content": "강재영이 lighthouse 워크스페이스는 mirror-mind를 몰라야 한다고 했다. 참조를 모두 제거했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션10",
+          "context_hint": "하위 프로젝트 독립성 원칙 재확인"
+        },
+        {
+          "id": "n0726",
+          "score": 0.1504,
+          "content": "강재영이 mirror-mind 쪽만 커밋하고, lighthouse 쪽은 구현과 함께 별도 커밋하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "커밋 전략 결정"
+        },
+        {
+          "id": "n0758",
+          "score": 0.1485,
+          "content": "강재영이 대원칙 문서는 lighthouse에 있는 게 맞고, mirror-mind는 상위 관리 차원에서 원본을 보관하는 것이라고 했다. lighthouse docs/에 service-principles.md를 넣고 AGENT.md에서 링크했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "대원칙 문서 배치 원칙 확립"
+        },
+        {
+          "id": "n0247",
+          "score": 0.1421,
+          "content": "mirror-mind 세션의 역할은 설계·조율·의사결정이고, 실제 코드 반영은 lighthouse 에이전트에게 위임하는 것이 맞다고 판단했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션12",
+          "context_hint": "mirror-mind와 lighthouse의 역할 경계 확인"
+        },
+        {
+          "id": "n0709",
+          "score": 0.1409,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0915",
+          "score": 0.1397,
+          "content": "mirror-mind 세션의 역할은 설계, 조율, 의사결정 수렴이다. 코드 구현은 lighthouse 저장소의 별도 에이전트가 수행한다.",
+          "type": "fact",
+          "session": "2026-02-23-세션9",
+          "context_hint": "역할 경계 리마인드"
+        }
+      ],
+      "knn_k12": [
+        {
+          "id": "n0821",
+          "score": 0.4833,
+          "content": "나는 처음에 mirror-mind 대원칙과 lighthouse 문서를 비교하며 mirror-mind 참조로 대체하는 방향을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "나의 초기 접근 — mirror-mind 기준 정리"
+        },
+        {
+          "id": "n0711",
+          "score": 0.3498,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0570",
+          "score": 0.3189,
+          "content": "강재영이 lighthouse보다 mirror-mind에 먼저 적용해보자고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "mirror-mind 우선 적용 결정"
+        },
+        {
+          "id": "n0850",
+          "score": 0.2033,
+          "content": "대원칙을 mirror-mind 원본에서 수정한 후 lighthouse 저장소에 그대로 덮어써서 동기화했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "양쪽 저장소 동기화 방식"
+        },
+        {
+          "id": "n0774",
+          "score": 0.1832,
+          "content": "lighthouse docs에서 mirror-mind 참조 3건을 제거했다. 원본 관리 메타정보 1건(service-principles.md)만 유지했다. 모든 대원칙 참조가 로컬 경로로 변경됐다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "mirror-mind 참조 정리 완료"
+        },
+        {
+          "id": "n0077",
+          "score": 0.1823,
+          "content": "핵심 문서 수정 합의 규칙을 mirror-mind-principle.md의 소통 규범 섹션에 명시했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션1",
+          "context_hint": "메모리뿐 아니라 문서에도 규칙 명시 — 강재영 요청"
+        },
+        {
+          "id": "n0758",
+          "score": 0.1782,
+          "content": "강재영이 대원칙 문서는 lighthouse에 있는 게 맞고, mirror-mind는 상위 관리 차원에서 원본을 보관하는 것이라고 했다. lighthouse docs/에 service-principles.md를 넣고 AGENT.md에서 링크했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "대원칙 문서 배치 원칙 확립"
+        },
+        {
+          "id": "n0514",
+          "score": 0.172,
+          "content": "톤 규정을 메모리뿐만 아니라 mirror-mind-principle.md 문서에도 추가하기로 합의했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션2",
+          "context_hint": "톤 규정의 문서화 결정"
+        },
+        {
+          "id": "n0695",
+          "score": 0.1682,
+          "content": "lighthouse docs와 mirror-mind 방법론을 대조 검토한 결과, 잘 정렬된 부분과 5개 Gap을 발견했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "방법론 대조 검토 완료"
+        },
+        {
+          "id": "n0515",
+          "score": 0.1674,
+          "content": "기존 화법 항목(협력적 자세)과 새 톤 항목(문체)을 구분해서 mirror-mind-principle.md에 추가했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션2",
+          "context_hint": "톤 규정 적용 방식"
+        },
+        {
+          "id": "n0709",
+          "score": 0.1661,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0531",
+          "score": 0.1648,
+          "content": "강재영이 mirror-mind 체계의 문서 정합성과 규칙 준수를 상시 감시하고 리포트하는 서브에이전트(메타에이전트)를 제안했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션2",
+          "context_hint": "메타에이전트 아이디어의 시작"
+        },
+        {
+          "id": "n0247",
+          "score": 0.1641,
+          "content": "mirror-mind 세션의 역할은 설계·조율·의사결정이고, 실제 코드 반영은 lighthouse 에이전트에게 위임하는 것이 맞다고 판단했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션12",
+          "context_hint": "mirror-mind와 lighthouse의 역할 경계 확인"
+        },
+        {
+          "id": "n0822",
+          "score": 0.1561,
+          "content": "강재영이 'lighthouse 내부 정합성만 맞으면 된다, mirror-mind와는 별개라고 생각하라'고 방향을 전환했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "강재영의 방향 제시 — lighthouse 독립 정합성"
+        },
+        {
+          "id": "n0165",
+          "score": 0.1511,
+          "content": "강재영이 lighthouse 워크스페이스는 mirror-mind를 몰라야 한다고 했다. 참조를 모두 제거했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션10",
+          "context_hint": "하위 프로젝트 독립성 원칙 재확인"
+        }
+      ],
+      "fusion_k5": [
+        {
+          "id": "n0821",
+          "score": 0.4833,
+          "content": "나는 처음에 mirror-mind 대원칙과 lighthouse 문서를 비교하며 mirror-mind 참조로 대체하는 방향을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "나의 초기 접근 — mirror-mind 기준 정리"
+        },
+        {
+          "id": "n0711",
+          "score": 0.3498,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0570",
+          "score": 0.3189,
+          "content": "강재영이 lighthouse보다 mirror-mind에 먼저 적용해보자고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "mirror-mind 우선 적용 결정"
+        },
+        {
+          "id": "n0850",
+          "score": 0.122,
+          "content": "대원칙을 mirror-mind 원본에서 수정한 후 lighthouse 저장소에 그대로 덮어써서 동기화했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "양쪽 저장소 동기화 방식"
+        },
+        {
+          "id": "n0709",
+          "score": 0.1195,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0712",
+          "score": 0.1122,
+          "content": "service-principles.md에 대원칙을 작성했다: 'Light House는 연구 동료이다' + mirror-mind 4대 원칙을 서비스 맥락으로 번역한 동료 원칙 4가지.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "Phase 1 대원칙 초안 완성"
+        },
+        {
+          "id": "n0077",
+          "score": 0.1094,
+          "content": "핵심 문서 수정 합의 규칙을 mirror-mind-principle.md의 소통 규범 섹션에 명시했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션1",
+          "context_hint": "메모리뿐 아니라 문서에도 규칙 명시 — 강재영 요청"
+        },
+        {
+          "id": "n0822",
+          "score": 0.0937,
+          "content": "강재영이 'lighthouse 내부 정합성만 맞으면 된다, mirror-mind와는 별개라고 생각하라'고 방향을 전환했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "강재영의 방향 제시 — lighthouse 독립 정합성"
+        },
+        {
+          "id": "n0774",
+          "score": 0.0916,
+          "content": "lighthouse docs에서 mirror-mind 참조 3건을 제거했다. 원본 관리 메타정보 1건(service-principles.md)만 유지했다. 모든 대원칙 참조가 로컬 경로로 변경됐다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "mirror-mind 참조 정리 완료"
+        },
+        {
+          "id": "n0165",
+          "score": 0.0906,
+          "content": "강재영이 lighthouse 워크스페이스는 mirror-mind를 몰라야 한다고 했다. 참조를 모두 제거했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션10",
+          "context_hint": "하위 프로젝트 독립성 원칙 재확인"
+        },
+        {
+          "id": "n0726",
+          "score": 0.0902,
+          "content": "강재영이 mirror-mind 쪽만 커밋하고, lighthouse 쪽은 구현과 함께 별도 커밋하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "커밋 전략 결정"
+        },
+        {
+          "id": "n0758",
+          "score": 0.0891,
+          "content": "강재영이 대원칙 문서는 lighthouse에 있는 게 맞고, mirror-mind는 상위 관리 차원에서 원본을 보관하는 것이라고 했다. lighthouse docs/에 service-principles.md를 넣고 AGENT.md에서 링크했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "대원칙 문서 배치 원칙 확립"
+        },
+        {
+          "id": "n0514",
+          "score": 0.086,
+          "content": "톤 규정을 메모리뿐만 아니라 mirror-mind-principle.md 문서에도 추가하기로 합의했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션2",
+          "context_hint": "톤 규정의 문서화 결정"
+        },
+        {
+          "id": "n0247",
+          "score": 0.0852,
+          "content": "mirror-mind 세션의 역할은 설계·조율·의사결정이고, 실제 코드 반영은 lighthouse 에이전트에게 위임하는 것이 맞다고 판단했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션12",
+          "context_hint": "mirror-mind와 lighthouse의 역할 경계 확인"
+        },
+        {
+          "id": "n0695",
+          "score": 0.0841,
+          "content": "lighthouse docs와 mirror-mind 방법론을 대조 검토한 결과, 잘 정렬된 부분과 5개 Gap을 발견했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "방법론 대조 검토 완료"
+        }
+      ],
+      "fusion_k8": [
+        {
+          "id": "n0821",
+          "score": 0.4833,
+          "content": "나는 처음에 mirror-mind 대원칙과 lighthouse 문서를 비교하며 mirror-mind 참조로 대체하는 방향을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "나의 초기 접근 — mirror-mind 기준 정리"
+        },
+        {
+          "id": "n0711",
+          "score": 0.3498,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0570",
+          "score": 0.3189,
+          "content": "강재영이 lighthouse보다 mirror-mind에 먼저 적용해보자고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "mirror-mind 우선 적용 결정"
+        },
+        {
+          "id": "n0712",
+          "score": 0.1254,
+          "content": "service-principles.md에 대원칙을 작성했다: 'Light House는 연구 동료이다' + mirror-mind 4대 원칙을 서비스 맥락으로 번역한 동료 원칙 4가지.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "Phase 1 대원칙 초안 완성"
+        },
+        {
+          "id": "n0850",
+          "score": 0.122,
+          "content": "대원칙을 mirror-mind 원본에서 수정한 후 lighthouse 저장소에 그대로 덮어써서 동기화했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "양쪽 저장소 동기화 방식"
+        },
+        {
+          "id": "n0709",
+          "score": 0.1195,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0774",
+          "score": 0.1099,
+          "content": "lighthouse docs에서 mirror-mind 참조 3건을 제거했다. 원본 관리 메타정보 1건(service-principles.md)만 유지했다. 모든 대원칙 참조가 로컬 경로로 변경됐다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "mirror-mind 참조 정리 완료"
+        },
+        {
+          "id": "n0077",
+          "score": 0.1094,
+          "content": "핵심 문서 수정 합의 규칙을 mirror-mind-principle.md의 소통 규범 섹션에 명시했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션1",
+          "context_hint": "메모리뿐 아니라 문서에도 규칙 명시 — 강재영 요청"
+        },
+        {
+          "id": "n0514",
+          "score": 0.1032,
+          "content": "톤 규정을 메모리뿐만 아니라 mirror-mind-principle.md 문서에도 추가하기로 합의했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션2",
+          "context_hint": "톤 규정의 문서화 결정"
+        },
+        {
+          "id": "n0695",
+          "score": 0.1009,
+          "content": "lighthouse docs와 mirror-mind 방법론을 대조 검토한 결과, 잘 정렬된 부분과 5개 Gap을 발견했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "방법론 대조 검토 완료"
+        },
+        {
+          "id": "n0822",
+          "score": 0.0937,
+          "content": "강재영이 'lighthouse 내부 정합성만 맞으면 된다, mirror-mind와는 별개라고 생각하라'고 방향을 전환했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "강재영의 방향 제시 — lighthouse 독립 정합성"
+        },
+        {
+          "id": "n0165",
+          "score": 0.0906,
+          "content": "강재영이 lighthouse 워크스페이스는 mirror-mind를 몰라야 한다고 했다. 참조를 모두 제거했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션10",
+          "context_hint": "하위 프로젝트 독립성 원칙 재확인"
+        },
+        {
+          "id": "n0726",
+          "score": 0.0902,
+          "content": "강재영이 mirror-mind 쪽만 커밋하고, lighthouse 쪽은 구현과 함께 별도 커밋하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "커밋 전략 결정"
+        },
+        {
+          "id": "n0758",
+          "score": 0.0891,
+          "content": "강재영이 대원칙 문서는 lighthouse에 있는 게 맞고, mirror-mind는 상위 관리 차원에서 원본을 보관하는 것이라고 했다. lighthouse docs/에 service-principles.md를 넣고 AGENT.md에서 링크했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "대원칙 문서 배치 원칙 확립"
+        },
+        {
+          "id": "n0247",
+          "score": 0.0852,
+          "content": "mirror-mind 세션의 역할은 설계·조율·의사결정이고, 실제 코드 반영은 lighthouse 에이전트에게 위임하는 것이 맞다고 판단했다.",
+          "type": "fact",
+          "session": "2026-02-24-세션12",
+          "context_hint": "mirror-mind와 lighthouse의 역할 경계 확인"
+        }
+      ],
+      "knn_k5+cooc_k5": [
+        {
+          "id": "n0821",
+          "score": 0.4833,
+          "content": "나는 처음에 mirror-mind 대원칙과 lighthouse 문서를 비교하며 mirror-mind 참조로 대체하는 방향을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "나의 초기 접근 — mirror-mind 기준 정리"
+        },
+        {
+          "id": "n0711",
+          "score": 0.3498,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0570",
+          "score": 0.3189,
+          "content": "강재영이 lighthouse보다 mirror-mind에 먼저 적용해보자고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "mirror-mind 우선 적용 결정"
+        },
+        {
+          "id": "n0822",
+          "score": 0.1586,
+          "content": "강재영이 'lighthouse 내부 정합성만 맞으면 된다, mirror-mind와는 별개라고 생각하라'고 방향을 전환했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "강재영의 방향 제시 — lighthouse 독립 정합성"
+        },
+        {
+          "id": "n0709",
+          "score": 0.1142,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0712",
+          "score": 0.113,
+          "content": "service-principles.md에 대원칙을 작성했다: 'Light House는 연구 동료이다' + mirror-mind 4대 원칙을 서비스 맥락으로 번역한 동료 원칙 4가지.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "Phase 1 대원칙 초안 완성"
+        },
+        {
+          "id": "n0850",
+          "score": 0.1016,
+          "content": "대원칙을 mirror-mind 원본에서 수정한 후 lighthouse 저장소에 그대로 덮어써서 동기화했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "양쪽 저장소 동기화 방식"
+        },
+        {
+          "id": "n0708",
+          "score": 0.1012,
+          "content": "3 Phase 계획을 수립했다: Phase 1 대원칙 수립, Phase 2 lighthouse docs 정렬, Phase 3 mirror-mind 방법론 역수입.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "작업 계획 수립"
+        },
+        {
+          "id": "n0820",
+          "score": 0.1004,
+          "content": "lighthouse 문서 체계에 세 가지 구조적 문제를 발견했다 — 계층 역전, 범용과 고유 내용 미분리, 같은 개념의 중복 산재.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "lighthouse 문서 검토 핵심 문제 요약"
+        },
+        {
+          "id": "n0077",
+          "score": 0.0911,
+          "content": "핵심 문서 수정 합의 규칙을 mirror-mind-principle.md의 소통 규범 섹션에 명시했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션1",
+          "context_hint": "메모리뿐 아니라 문서에도 규칙 명시 — 강재영 요청"
+        },
+        {
+          "id": "n0774",
+          "score": 0.0763,
+          "content": "lighthouse docs에서 mirror-mind 참조 3건을 제거했다. 원본 관리 메타정보 1건(service-principles.md)만 유지했다. 모든 대원칙 참조가 로컬 경로로 변경됐다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "mirror-mind 참조 정리 완료"
+        },
+        {
+          "id": "n0165",
+          "score": 0.0755,
+          "content": "강재영이 lighthouse 워크스페이스는 mirror-mind를 몰라야 한다고 했다. 참조를 모두 제거했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션10",
+          "context_hint": "하위 프로젝트 독립성 원칙 재확인"
+        },
+        {
+          "id": "n0726",
+          "score": 0.0752,
+          "content": "강재영이 mirror-mind 쪽만 커밋하고, lighthouse 쪽은 구현과 함께 별도 커밋하겠다고 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "커밋 전략 결정"
+        },
+        {
+          "id": "n0758",
+          "score": 0.0742,
+          "content": "강재영이 대원칙 문서는 lighthouse에 있는 게 맞고, mirror-mind는 상위 관리 차원에서 원본을 보관하는 것이라고 했다. lighthouse docs/에 service-principles.md를 넣고 AGENT.md에서 링크했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "대원칙 문서 배치 원칙 확립"
+        },
+        {
+          "id": "n0514",
+          "score": 0.0717,
+          "content": "톤 규정을 메모리뿐만 아니라 mirror-mind-principle.md 문서에도 추가하기로 합의했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션2",
+          "context_hint": "톤 규정의 문서화 결정"
+        }
+      ],
+      "knn_k8+cooc_k8": [
+        {
+          "id": "n0821",
+          "score": 0.4833,
+          "content": "나는 처음에 mirror-mind 대원칙과 lighthouse 문서를 비교하며 mirror-mind 참조로 대체하는 방향을 제안했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "나의 초기 접근 — mirror-mind 기준 정리"
+        },
+        {
+          "id": "n0711",
+          "score": 0.3498,
+          "content": "lighthouse 서비스 원칙의 원본은 mirror-mind에서 관리하기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "원본 관리 위치 결정"
+        },
+        {
+          "id": "n0570",
+          "score": 0.3189,
+          "content": "강재영이 lighthouse보다 mirror-mind에 먼저 적용해보자고 했다.",
+          "type": "fact",
+          "session": "2026-02-25-세션20",
+          "context_hint": "mirror-mind 우선 적용 결정"
+        },
+        {
+          "id": "n0822",
+          "score": 0.1586,
+          "content": "강재영이 'lighthouse 내부 정합성만 맞으면 된다, mirror-mind와는 별개라고 생각하라'고 방향을 전환했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "강재영의 방향 제시 — lighthouse 독립 정합성"
+        },
+        {
+          "id": "n0712",
+          "score": 0.1239,
+          "content": "service-principles.md에 대원칙을 작성했다: 'Light House는 연구 동료이다' + mirror-mind 4대 원칙을 서비스 맥락으로 번역한 동료 원칙 4가지.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "Phase 1 대원칙 초안 완성"
+        },
+        {
+          "id": "n0709",
+          "score": 0.1142,
+          "content": "lighthouse 관련 폴더를 mirror-mind의 projects/lighthouse/에 만들기로 했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "폴더 위치 결정"
+        },
+        {
+          "id": "n0820",
+          "score": 0.1044,
+          "content": "lighthouse 문서 체계에 세 가지 구조적 문제를 발견했다 — 계층 역전, 범용과 고유 내용 미분리, 같은 개념의 중복 산재.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "lighthouse 문서 검토 핵심 문제 요약"
+        },
+        {
+          "id": "n0850",
+          "score": 0.1016,
+          "content": "대원칙을 mirror-mind 원본에서 수정한 후 lighthouse 저장소에 그대로 덮어써서 동기화했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션7",
+          "context_hint": "양쪽 저장소 동기화 방식"
+        },
+        {
+          "id": "n0708",
+          "score": 0.1012,
+          "content": "3 Phase 계획을 수립했다: Phase 1 대원칙 수립, Phase 2 lighthouse docs 정렬, Phase 3 mirror-mind 방법론 역수입.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "작업 계획 수립"
+        },
+        {
+          "id": "n0774",
+          "score": 0.0916,
+          "content": "lighthouse docs에서 mirror-mind 참조 3건을 제거했다. 원본 관리 메타정보 1건(service-principles.md)만 유지했다. 모든 대원칙 참조가 로컬 경로로 변경됐다.",
+          "type": "fact",
+          "session": "2026-02-22-세션4",
+          "context_hint": "mirror-mind 참조 정리 완료"
+        },
+        {
+          "id": "n0077",
+          "score": 0.0911,
+          "content": "핵심 문서 수정 합의 규칙을 mirror-mind-principle.md의 소통 규범 섹션에 명시했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션1",
+          "context_hint": "메모리뿐 아니라 문서에도 규칙 명시 — 강재영 요청"
+        },
+        {
+          "id": "n0819",
+          "score": 0.0868,
+          "content": "lighthouse 문서를 전체 검토한 결과, ai-design-framework.md가 가장 큰 문제였다. service-principles.md가 대원칙인데 실제 핵심 정의는 ai-design-framework.md에 있어서 계층이 역전되어 있었다.",
+          "type": "fact",
+          "session": "2026-02-23-세션6",
+          "context_hint": "lighthouse 문서 검토 — 계층 역전 발견"
+        },
+        {
+          "id": "n0514",
+          "score": 0.086,
+          "content": "톤 규정을 메모리뿐만 아니라 mirror-mind-principle.md 문서에도 추가하기로 합의했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션2",
+          "context_hint": "톤 규정의 문서화 결정"
+        },
+        {
+          "id": "n0695",
+          "score": 0.0841,
+          "content": "lighthouse docs와 mirror-mind 방법론을 대조 검토한 결과, 잘 정렬된 부분과 5개 Gap을 발견했다.",
+          "type": "fact",
+          "session": "2026-02-22-세션3",
+          "context_hint": "방법론 대조 검토 완료"
+        },
+        {
+          "id": "n0165",
+          "score": 0.0755,
+          "content": "강재영이 lighthouse 워크스페이스는 mirror-mind를 몰라야 한다고 했다. 참조를 모두 제거했다.",
+          "type": "fact",
+          "session": "2026-02-23-세션10",
+          "context_hint": "하위 프로젝트 독립성 원칙 재확인"
+        }
+      ]
+    }
+  }
+}
