@@ -36,7 +36,6 @@ PROJECT_KEY = "-Users-jaeyoungkang-mirror-mind"
 
 CONV_DIR = PROJECT_ROOT / "tasks" / "conversations"
 RAW_DIR = CONV_DIR / "raw"
-DECISIONS_FILE = PROJECT_ROOT / "tasks" / "decisions.md"
 EPISODES_FILE = PROJECT_ROOT / "memory" / "episodes.json"
 SESSION_MAP_FILE = RAW_DIR / ".session-map.json"
 
@@ -99,13 +98,6 @@ def session_exists_in_episodes(session_key: str) -> bool:
     episodes = json.loads(EPISODES_FILE.read_text())
     return any(e.get("session") == session_key for e in episodes)
 
-
-def session_exists_in_decisions(session_key: str) -> bool:
-    """decisions.md에 해당 세션 참조가 이미 있는지"""
-    if not DECISIONS_FILE.exists():
-        return False
-    text = DECISIONS_FILE.read_text()
-    return session_key in text
 
 
 # ── 경량 내보내기 (export-session.py 로직 재사용) ──
@@ -269,17 +261,6 @@ def call_codex(prompt: str, timeout: int = 180) -> str:
 
 # ── 포맷 참고용 기존 데이터 추출 ──
 
-def get_decisions_example() -> str:
-    """decisions.md 마지막 결정 1건을 포맷 참고용으로 추출"""
-    if not DECISIONS_FILE.exists():
-        return "(없음)"
-    text = DECISIONS_FILE.read_text()
-    sections = text.split("\n## ")
-    if len(sections) >= 2:
-        return "## " + sections[-1][:1500]
-    return text[-1500:]
-
-
 def get_episodes_example() -> str:
     """episodes.json 마지막 에피소드 1건을 포맷 참고용으로 추출"""
     if not EPISODES_FILE.exists():
@@ -300,7 +281,7 @@ def get_last_episode_id() -> str:
 # ── 초안 생성 ──
 
 GENERATE_PROMPT = """너는 mirror-mind 프로젝트의 세션 종료 기록 담당이다.
-아래 대화를 읽고 3가지 산출물을 생성하라.
+아래 대화를 읽고 2가지 산출물을 생성하라.
 
 ## 세션 정보
 - 세션: {date_session}
@@ -314,16 +295,7 @@ GENERATE_PROMPT = """너는 mirror-mind 프로젝트의 세션 종료 기록 담
 - 주요 논의 주제, 결정 사항, 다음 단계를 간결하게 정리
 - ~다 체 사용
 
-## 산출물 2: decisions.md 추가분
-기존 포맷 참고:
-```
-{decisions_example}
-```
-- 이번 세션에서 내린 의사결정만 추출
-- 결정이 없으면 "없음"
-- 각 결정: ## 날짜 | 제목, > 원본 참조, ### 결정 사항 (번호 리스트), ### 근거 (번호 리스트)
-
-## 산출물 3: episodes.json 추가분
+## 산출물 2: episodes.json 추가분
 기존 포맷 참고:
 ```json
 {episodes_example}
@@ -339,10 +311,6 @@ GENERATE_PROMPT = """너는 mirror-mind 프로젝트의 세션 종료 기록 담
 ===NOTES_START===
 (세션 노트 마크다운)
 ===NOTES_END===
-
-===DECISIONS_START===
-(decisions.md 추가분 또는 "없음")
-===DECISIONS_END===
 
 ===EPISODES_START===
 (JSON 배열)
@@ -361,7 +329,6 @@ def generate_drafts(conversation: str, session_name: str) -> dict:
         date_session=date_session,
         today=today,
         conversation=conversation,
-        decisions_example=get_decisions_example(),
         episodes_example=get_episodes_example(),
         last_episode_id=get_last_episode_id(),
         next_prefix=next_prefix,
@@ -369,7 +336,7 @@ def generate_drafts(conversation: str, session_name: str) -> dict:
 
     raw = call_codex(prompt, timeout=180)
     if not raw:
-        return {"notes": "", "decisions": "", "episodes": []}
+        return {"notes": "", "episodes": []}
 
     result = {}
 
@@ -377,12 +344,6 @@ def generate_drafts(conversation: str, session_name: str) -> dict:
         r'===NOTES_START===\n?(.*?)\n?===NOTES_END===', raw, re.DOTALL
     )
     result["notes"] = notes_match.group(1).strip() if notes_match else ""
-
-    dec_match = re.search(
-        r'===DECISIONS_START===\n?(.*?)\n?===DECISIONS_END===', raw, re.DOTALL
-    )
-    dec_text = dec_match.group(1).strip() if dec_match else ""
-    result["decisions"] = "" if dec_text == "없음" else dec_text
 
     ep_match = re.search(
         r'===EPISODES_START===\n?(.*?)\n?===EPISODES_END===', raw, re.DOTALL
@@ -409,16 +370,6 @@ def write_notes(notes: str, session_name: str) -> Path:
     return dest
 
 
-def append_decisions(decisions: str):
-    if not decisions:
-        return
-    current = DECISIONS_FILE.read_text(encoding="utf-8")
-    if not current.endswith("\n"):
-        current += "\n"
-    current += "\n" + decisions + "\n"
-    DECISIONS_FILE.write_text(current, encoding="utf-8")
-
-
 def append_episodes(new_episodes: list[dict]):
     if not new_episodes:
         return
@@ -430,12 +381,24 @@ def append_episodes(new_episodes: list[dict]):
     )
 
 
+def replace_episodes(session_key: str, new_episodes: list[dict]):
+    """해당 세션의 기존 에피소드를 제거하고 새 에피소드로 교체"""
+    episodes = json.loads(EPISODES_FILE.read_text(encoding="utf-8"))
+    removed = [e for e in episodes if e.get("session") == session_key]
+    kept = [e for e in episodes if e.get("session") != session_key]
+    kept.extend(new_episodes)
+    EPISODES_FILE.write_text(
+        json.dumps(kept, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    return len(removed)
+
+
 def git_commit(session_name: str):
     today = date.today().isoformat()
     candidates = [
         f"tasks/conversations/raw/{today}-{session_name}.jsonl",
         f"tasks/conversations/{today}-{session_name}.md",
-        "tasks/decisions.md",
         "memory/episodes.json",
     ]
     existing = [f for f in candidates if (PROJECT_ROOT / f).exists()]
@@ -520,7 +483,6 @@ def main():
         print("no-llm 모드. 빈 템플릿 생성.")
         drafts = {
             "notes": f"# {date_session}\n\n(TODO: 세션 노트 작성)\n",
-            "decisions": "",
             "episodes": [],
         }
     else:
@@ -532,9 +494,6 @@ def main():
     print(f"\n{sep}")
     print("=== 세션 노트 ===")
     print(drafts["notes"] or "(없음)")
-
-    print(f"\n=== decisions.md 추가분 ===")
-    print(drafts["decisions"] or "(결정 없음)")
 
     print(f"\n=== episodes.json 추가분 ({len(drafts['episodes'])}건) ===")
     if drafts["episodes"]:
@@ -552,16 +511,13 @@ def main():
         notes_dest = write_notes(drafts["notes"], session_name)
         print(f"\n[완료] 세션 노트 → {notes_dest.relative_to(PROJECT_ROOT)}")
 
-    if drafts["decisions"]:
-        if session_exists_in_decisions(date_session) and not args.force:
-            print("[건너뜀] decisions.md에 이 세션 기록이 이미 존재한다")
-        else:
-            append_decisions(drafts["decisions"])
-            print("[완료] decisions.md 업데이트")
-
     if drafts["episodes"]:
-        if session_exists_in_episodes(date_session) and not args.force:
-            print("[건너뜀] episodes.json에 이 세션 에피소드가 이미 존재한다")
+        if session_exists_in_episodes(date_session):
+            if not args.force:
+                print("[건너뜀] episodes.json에 이 세션 에피소드가 이미 존재한다")
+            else:
+                removed = replace_episodes(date_session, drafts["episodes"])
+                print(f"[교체] episodes.json: 기존 {removed}건 제거 → 새 {len(drafts['episodes'])}건 추가")
         else:
             append_episodes(drafts["episodes"])
             print(f"[완료] episodes.json에 {len(drafts['episodes'])}건 추가")

@@ -12,14 +12,13 @@
 1. `mirror-mind-principle.md`를 읽고 협력 원칙을 적용한다
 2. `task-management-principle.md`를 읽고 업무 관리 방식을 파악한다
 3. `tasks/projects.md`를 읽고 현재 진행 상태를 파악한다
-4. `tasks/decisions.md`의 최근 항목을 읽고 맥락을 복원한다
-5. 기억 시스템으로 맥락을 보강한다:
+4. 기억 시스템으로 맥락을 보강한다:
    - `python3 memory/scripts/query.py --recent 5` — 최근 에피소드 조회
    - `python3 memory/scripts/query.py --milestone` — 주요 마일스톤 조회
    - 대화 중에도 `query.py`를 수시로 활용하여 관련 기억을 조회한다
-6. 메타에이전트를 백그라운드로 실행한다: `python meta-agent/scripts/check.py --watch --interval 300`
-7. 사용자에게 현재 상태를 요약하고 다음 작업을 제안한다 (메타에이전트 초기 리포트 + 기억 요약 포함)
-8. 10분마다 리프레시한다:
+5. 메타에이전트를 백그라운드로 실행한다: `python meta-agent/scripts/check.py --watch --interval 300`
+6. 사용자에게 현재 상태를 요약하고 다음 작업을 제안한다 (메타에이전트 초기 리포트 + 기억 요약 포함)
+7. 10분마다 리프레시한다:
    - 주요 문서 재읽기: `mirror-mind-principle.md`, `task-management-principle.md`, `tasks/projects.md`
    - 업무 진행상황 점검: 현재 작업의 진척도를 확인하고 `tasks/projects.md`에 반영
    - 사용자에게 진행 상황을 간단히 공유
@@ -33,8 +32,8 @@
 | 트리거 | 절차 |
 |--------|------|
 | **작업 시작** | 위 세션 시작 절차 수행 |
-| **작업 종료** | 메타에이전트 리포트 확인 → `python3 scripts/close-session.py` 실행 (raw 저장 + 노트/decisions/episodes 초안 생성) → 초안 검토·수정 → `tasks/projects.md` 수동 업데이트 → 커밋 |
-| **주제 전환** / **킵** | 메타에이전트 리포트 확인 → 현재 주제의 중간 상태를 `tasks/projects.md`(결정 전) 또는 `tasks/decisions.md`(결정 후)에 기록한 뒤 전환 |
+| **작업 종료** | 메타에이전트 리포트 확인 → `python3 scripts/close-session.py` 실행 (raw 저장 + 노트/episodes 초안 생성) → 초안 검토·수정 → `tasks/projects.md` 수동 업데이트 → 커밋 |
+| **주제 전환** / **킵** | 메타에이전트 리포트 확인 → 현재 주제의 중간 상태를 `tasks/projects.md`에 기록한 뒤 전환 |
 | **정합성 검증** | 전체 원칙·설계 문서를 읽고 상호 참조·일관성을 검증하여 리포트 |
 | **회고** | 마일스톤 단위 회고 진행, 반복 적용할 교훈을 해당 원칙 문서에 반영 |
 | **원칙 점검** | `python meta-agent/scripts/check.py` 1회 실행, 위반 사항 리포트 |
