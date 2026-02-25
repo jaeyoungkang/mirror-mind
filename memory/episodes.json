@@ -1545,5 +1545,87 @@
       "2026-02-25 | v3에서 평가를 실제 대화 기반으로 전환, 해석·감정 포함 노드 재탐색"
     ],
     "created_at": "2026-02-26T00:50:00Z"
+  },
+  {
+    "id": "s22-01",
+    "session": "2026-02-25-세션22",
+    "episode_index": 1,
+    "activity_type": "planning",
+    "project": "memory",
+    "topic": "세션 시작 정렬 및 우선순위 확정",
+    "summary": "메타에이전트 백그라운드 실행 결과를 확인하고 memory_policy 경고 3건이 규칙 미업데이트로 인한 비실질 경고임을 정리했다. 이후 오늘의 진행 축을 재확인한 뒤, 사용자가 불필요 파일 정리 후 기억 v3 착수를 우선하겠다고 결정했다.",
+    "emotion": "focused",
+    "outcome": "success",
+    "outcome_detail": "세션 초반 잡음을 정리하고 기억 v3 중심의 실행 흐름으로 정렬",
+    "relationship_type": "alignment",
+    "milestone_key": "session22_priority_alignment",
+    "scope": "session",
+    "decision_refs": [
+      "2026-02-25 | 메타에이전트 memory_policy 경고는 규칙 미업데이트로 인한 정보성 경고로 처리",
+      "2026-02-25 | 불필요 시뮬레이션 정리 후 기억 v3 착수"
+    ],
+    "created_at": "2026-02-25T23:40:00Z"
+  },
+  {
+    "id": "s22-02",
+    "session": "2026-02-25-세션22",
+    "episode_index": 2,
+    "activity_type": "maintenance",
+    "project": "memory",
+    "topic": "v1 시뮬레이션 자산 정리",
+    "summary": "시뮬레이션 디렉토리를 점검해 v1 루트 스크립트, nodesets, networks, extracted, __pycache__가 전부 untracked이며 v2 이후 불필요하다는 점을 확인했다. 사용자 승인 후 해당 v1 산출물을 삭제해 저장소를 55MB에서 3.6MB(v2만 유지) 수준으로 정리했다.",
+    "emotion": "clean",
+    "outcome": "success",
+    "outcome_detail": "약 52MB 정리, 이후 v3 실험 기반을 단순화",
+    "relationship_type": "execution",
+    "milestone_key": "simulation_v1_cleanup",
+    "scope": "project",
+    "decision_refs": [
+      "2026-02-25 | v1 untracked 시뮬레이션 산출물 전량 삭제, v2는 유지",
+      "2026-02-25 | v3 전환 전 실험 환경을 최소 구성으로 정리"
+    ],
+    "created_at": "2026-02-25T23:55:00Z"
+  },
+  {
+    "id": "s22-03",
+    "session": "2026-02-25-세션22",
+    "episode_index": 3,
+    "activity_type": "discussion",
+    "project": "memory",
+    "topic": "v3 기억 모델 원점 재설계",
+    "summary": "사용자가 원재료를 episodes/memories가 아닌 raw JSONL로 직접 보자고 교정했고, 대규모 확장(향후 수백 raw 파일)을 전제로 분할 처리와 서브에이전트 적극 활용 원칙을 명시했다. 또한 감정·연상은 노드 자체가 아니라 사실과 의도/기대의 조합에서 발현되는 결과라는 핵심 구분을 합의했다.",
+    "emotion": "insight",
+    "outcome": "success",
+    "outcome_detail": "노드/발현 구분과 확장성 제약을 포함한 v3 설계 기준 확립",
+    "relationship_type": "breakthrough",
+    "milestone_key": "v3_raw_first_emergence_model",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | v3 원재료는 raw JSONL 직접 사용, 중간산물 의존 제거",
+      "2026-02-25 | 감정·연상은 노드가 아니라 fact + intention 조합의 발현으로 정의",
+      "2026-02-25 | 대규모 처리를 위해 분할 처리와 서브에이전트 병렬 사용을 기본 전략으로 채택"
+    ],
+    "created_at": "2026-02-26T00:20:00Z"
+  },
+  {
+    "id": "s22-04",
+    "session": "2026-02-25-세션22",
+    "episode_index": 4,
+    "activity_type": "experiment",
+    "project": "memory",
+    "topic": "세션19 파일럿 재추출 및 노드 타입 확정",
+    "summary": "raw 세션19(76턴, 38,650자)를 파일럿으로 추출해 초기 61개 조각 결과를 검토한 뒤, 사용자 피드백을 반영해 타입 체계를 fact/intention 2종으로 재정의했다. 재추출 결과 71개(fact 66, intention 5)로 정리되었고, 발현 결과를 다시 fact로 축적하는 기억 누적 모델을 합의했다. 다음 세션에서 20개 raw 전체를 서브에이전트 병렬로 본격 처리하기로 결정했다.",
+    "emotion": "confident",
+    "outcome": "success",
+    "outcome_detail": "v3 노드 스키마와 대규모 실행 계획을 세션 종료 전 확정",
+    "relationship_type": "execution",
+    "milestone_key": "v3_fact_intention_schema",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | 노드 타입을 fact와 intention 두 가지로 단순화",
+      "2026-02-25 | 발현(감정/해석/연상) 결과 중 의미 있는 항목은 새로운 fact로 저장",
+      "2026-02-25 | 다음 세션에서 20개 raw를 서브에이전트 병렬 처리로 확장"
+    ],
+    "created_at": "2026-02-26T00:45:00Z"
   }
 ]

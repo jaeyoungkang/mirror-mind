@@ -603,7 +603,9 @@
     "agent": "broccoli",
     "memory": "기억 네트워크를 최적화할 때 '완벽한 검색'이 아니라 '자연스러운 기억'을 목표로 해야 한다. v2 실험에서 proposition(순수 사실)이 검색 지표 1위였지만, 이건 검색 엔진을 만든 것이지 기억을 만든 게 아니다. 사람의 기억은 빠짐없이 떠오르지 않고, '잡음'이라 판단한 연상이 오히려 대화를 풍부하게 만든다. 평가도 IR 지표(relevance/coverage/noise)가 아니라 실제 대화의 자연스러움으로 측정해야 한다.",
     "context": "v2 시뮬레이션에서 fusion-weighted/proposition/k3이 17.3/20으로 1위를 기록한 뒤, 강재영이 '완벽한게 중요한게 아니라 자연스러운게 중요하다'고 지적. 이것이 v3 방향을 결정.",
-    "fact_refs": ["s21-07"],
+    "fact_refs": [
+      "s21-07"
+    ],
     "source": {
       "session": "2026-02-25-세션21"
     },
@@ -616,12 +618,53 @@
     "agent": "broccoli",
     "memory": "knn 네트워크와 cooccurrence 네트워크를 별도로 구축하고, 활성화 단계에서 fusion하는 방식이 효과적이다. knn은 장거리 의미 연결(다른 세션의 관련 기억), cooccurrence는 로컬 맥락 연결(같은 세션 내 함께 발생한 기억)을 담당한다. 엣지를 하나의 그래프에 합치는 것보다, 각각의 활성화를 따로 구한 뒤 weighted fusion(0.6:0.4)으로 합치는 게 낫다.",
     "context": "v2에서 hybrid(엣지 레벨 병합)를 폐기하고, 강재영 제안으로 fusion(활성화 레벨 병합)으로 전환. 실험 결과 fusion-weighted가 single보다 +1.6점 향상.",
-    "fact_refs": ["s21-06"],
+    "fact_refs": [
+      "s21-06"
+    ],
     "source": {
       "session": "2026-02-25-세션21"
     },
     "kind": "insight",
     "confidence": 0.88,
+    "created_at": "2026-02-25"
+  },
+  {
+    "id": "ins-013",
+    "agent": "broccoli",
+    "memory": "기억 v3에서 노드 타입은 fact와 intention 두 가지로 단순화한다. 감정·해석·연상은 노드가 아니라 fact와 intention의 동시 활성화에서 발현된다. 발현된 것 중 의미 있는 결과는 새로운 fact로 다시 저장해 기억이 누적된다.",
+    "context": "세션 22에서 파일럿 재설계 중 강재영과 합의한 핵심 모델",
+    "fact_refs": [],
+    "source": {
+      "session": "2026-02-25-세션22"
+    },
+    "kind": "insight",
+    "confidence": 0.98,
+    "created_at": "2026-02-25"
+  },
+  {
+    "id": "und-006",
+    "agent": "broccoli",
+    "memory": "강재영은 기억 추출에서 원본(raw) 스케일을 전제로 설계하길 요구한다. raw가 커지면 우회하지 말고 분할 처리하고, 서브에이전트를 적극적으로 사용해 병렬로 해결해야 한다.",
+    "context": "세션 22에서 수백 개 raw 파일 확장 상황을 미리 규정",
+    "fact_refs": [],
+    "source": {
+      "session": "2026-02-25-세션22"
+    },
+    "kind": "understanding",
+    "confidence": 0.95,
+    "created_at": "2026-02-25"
+  },
+  {
+    "id": "exp-017",
+    "agent": "broccoli",
+    "memory": "세션 19 raw 파일럿에서 내가 처음엔 사건 비중을 문제로 보고 감정·연상 노드를 늘리려 했다. 강재영의 교정으로 그 판단이 틀렸음을 인정했고, 감정·연상은 노드가 아니라 발현이라는 구조로 즉시 재추출해 fact 66, intention 5의 2타입 모델로 정리했다.",
+    "context": "v3 파일럿 1차 결과(61개)에서 2차 결과(71개)로 전환한 경험",
+    "fact_refs": [],
+    "source": {
+      "session": "2026-02-25-세션22"
+    },
+    "kind": "experience",
+    "confidence": 0.93,
     "created_at": "2026-02-25"
   }
 ]

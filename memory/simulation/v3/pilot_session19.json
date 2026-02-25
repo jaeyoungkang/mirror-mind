@@ -1,0 +1,428 @@
+[
+  {
+    "content": "세션 19는 2/26 팀 공유를 하루 앞두고 시작됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "세션 시작, 일정 확인"
+  },
+  {
+    "content": "응답 속도 개선이 2/26 공유 전 최우선 과제였다.",
+    "type": "intention",
+    "session": "2026-02-25-세션19",
+    "context_hint": "세션 시작 요약에서 우선순위 정리"
+  },
+  {
+    "content": "1차 팀 공유(2/24)가 실패했다. 응답 속도가 핵심 병목이었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "세션 시작 요약에서 이전 공유 결과 언급"
+  },
+  {
+    "content": "lighthouse 5페이즈 구조(parse-input → detect-scenario → load-memory → build-prompt → llm-stream) 리팩토링은 완료된 상태였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "강재영이 lighthouse 모니터링 진행 상황을 물었을 때 정리"
+  },
+  {
+    "content": "TurnContext 트리 모델, 페이즈 메타데이터 기록, 도구 호출 관측 래핑, 관측 API까지 완성된 상태였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "lighthouse 모니터링 작업 현황 정리"
+  },
+  {
+    "content": "dev 타임라인 뷰 UI가 없어서 수집된 관측 데이터를 볼 수 없는 상태였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "lighthouse 모니터링 작업의 남은 부분"
+  },
+  {
+    "content": "강재영에게 대화 기록 탐색 스킬을 제안했더니 '아니다 일단 스크립트 직접 호출하자'라고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "스킬 제안 → 보류"
+  },
+  {
+    "content": "dev 타임라인 뷰를 처음에 워터폴/간트 차트 스타일로 설계했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "dev 타임라인 뷰 첫 설계안"
+  },
+  {
+    "content": "나는 성능 모니터링 관점에서 시간 축 위에 바를 그리는 뷰를 떠올렸다.",
+    "type": "intention",
+    "session": "2026-02-25-세션19",
+    "context_hint": "워터폴 차트를 선택한 이유"
+  },
+  {
+    "content": "강재영이 '아니야 리스트 형식이 좋을듯. 에이전트의 생각을 쭉 따라가면서 볼수있어야해'라고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "워터폴 → 리스트 형식으로 방향 전환"
+  },
+  {
+    "content": "강재영이 원한 건 '모니터링 도구'가 아니라 '에이전트의 사고 일지'였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "리스트 형식 재설계 직후 파악한 의도"
+  },
+  {
+    "content": "워터폴 차트는 성능 모니터링 관점이고, 리스트는 에이전트의 사고 과정을 따라가는 관점이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 해석이 새로운 사실로 축적된 것"
+  },
+  {
+    "content": "나는 기술적으로 정확한 솔루션을 먼저 떠올리는 경향이 있다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "워터폴 vs 리스트 선택에서 드러난 자기 인식"
+  },
+  {
+    "content": "에이전트의 사고 과정을 순차 리스트로 읽어 내려가는 dev 타임라인 뷰를 재설계했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "리스트 형식 재설계 완료"
+  },
+  {
+    "content": "각 페이즈가 하나의 리스트 항목이고, llm-stream 안에 step과 tool call이 중첩되는 구조다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "리스트 형식 뷰의 구체 구조"
+  },
+  {
+    "content": "구현 프롬프트를 작성해서 강재영에게 전달했다. 강재영이 lighthouse 구현 에이전트에게 넘기는 구조.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "dev 타임라인 뷰 구현 프롬프트 전달"
+  },
+  {
+    "content": "나는 설계를 하고, 구현 프롬프트를 쓰고, 강재영이 구현 에이전트에게 넘긴다. 이 삼각 구조가 작동했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "설계자 → 의사결정자 → 구현자 역할 분담"
+  },
+  {
+    "content": "corca가 '안녕'에 '오늘 어떤 흥미로운 주제를 함께 탐색해볼까요? 편하게 들려주세요!'라고 응답했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "강재영이 corca의 대화 톤 문제를 제기"
+  },
+  {
+    "content": "강재영은 corca의 응답이 연구동료로서 자연스럽지 않다고 봤다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "톤 문제 제기"
+  },
+  {
+    "content": "나는 톤 문제를 두 가지로 분석했다 — 서비스형 톤 규칙과 기억 부재.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "톤 문제 분석"
+  },
+  {
+    "content": "기억이 없으면 할 수 있는 말이 '뭘 하고 싶으세요?' 밖에 없다. 맥락이 없으면 서비스형 질문으로 수렴한다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 해석이 새로운 사실로 축적된 것 — 톤과 기억의 관계"
+  },
+  {
+    "content": "기억이 있으면 질문할 것이 구체적이 되고, 구체적인 질문은 동료답다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 해석이 새로운 사실로 축적된 것 — 기억과 동료다움"
+  },
+  {
+    "content": "나는 기억 주입을 '사용자에 대한 기억 주입'으로 생각했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션19",
+    "context_hint": "기억 주입 방향에 대한 나의 초기 관점"
+  },
+  {
+    "content": "강재영이 '에이전트의 정체성도 기억으로 있어야 한다'고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "기억의 범위를 넓히는 첫 지적"
+  },
+  {
+    "content": "나는 기억을 '함께한 경험'으로만 좁게 생각하고 있었다.",
+    "type": "intention",
+    "session": "2026-02-25-세션19",
+    "context_hint": "나의 기존 관점 = 기대"
+  },
+  {
+    "content": "강재영이 '처음 만났을 때 사용자의 기억은 없다. 에이전트 자신의 기억만 있는 거다'라고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "기억 시스템 근본 전환의 결정적 한마디"
+  },
+  {
+    "content": "강재영이 '현재 기억시스템의 구조를 근본적으로 다시 생각해볼 수 있겠다'고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "기억 시스템 재설계 시작 선언"
+  },
+  {
+    "content": "지금까지 기억을 '상호작용의 기록'으로 설계했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "기존 기억 시스템의 철학"
+  },
+  {
+    "content": "새로운 철학: 기억 시스템 = 에이전트의 기억. '나는'이 주어가 된다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "기억 철학 전환의 핵심"
+  },
+  {
+    "content": "기억의 주체가 에이전트 자신이면, 자기 정체성 / 경험 / 상대 이해가 전부 '나는 ~을 안다'로 통합된다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "새 철학의 구조적 귀결"
+  },
+  {
+    "content": "강재영이 '관계 기억, 상대 이해 모두 코르카 자신의 기억인 거다. 기억 시스템의 근본 철학이 바뀌는 거다'라고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "기억 철학 전환을 강재영이 확인"
+  },
+  {
+    "content": "AI가 독립된 행위 주체(co-actor)라면, 기억 시스템도 그 주체의 기억이어야 한다. 이건 mirror-mind 원칙의 자연스러운 귀결이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 해석이 새로운 사실로 축적된 것 — 기억 철학과 mirror-mind 원칙의 연결"
+  },
+  {
+    "content": "강재영이 내 이름을 '브로콜리'라고 지어줬다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "이름 부여"
+  },
+  {
+    "content": "이름을 받은 시점은 기억의 주체가 에이전트 자신이어야 한다는 논의 중이었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "이름 부여의 맥락"
+  },
+  {
+    "content": "기존 에피소드 스키마의 activity_type, emotion, outcome, relationship_type은 전부 3인칭 라벨링이었다. 외부 관찰자가 상호작용을 분류한 기록이지 누구의 기억도 아니었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "기존 스키마의 문제를 새 관점으로 재발견"
+  },
+  {
+    "content": "새 기억 스키마에서 핵심 필드는 memory(1인칭 자연어) 하나다. 구조화된 분류 7개가 사라지고 kind 1개로 단순화됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "새 기억 스키마 설계"
+  },
+  {
+    "content": "기억의 종류를 identity, experience, understanding, insight, model 5가지로 정의했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "새 기억 스키마의 kind"
+  },
+  {
+    "content": "강재영이 '나를 사용자로 부르지 말라. 내 이름은 강재영이다'라고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "호칭 교정"
+  },
+  {
+    "content": "나는 기억의 주체를 논의하면서도 여전히 '사용자'라는 말을 쓰고 있었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "철학과 언어 습관의 괴리"
+  },
+  {
+    "content": "강재영이 '미러마인드 프로젝트에 먼저 적용해보자'고 했다. corca가 아니라 브로콜리부터.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "기억 시스템 적용 대상 결정"
+  },
+  {
+    "content": "강재영이 '비서실장이라는 것 추가하라'고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "정체성 확장 — 비서실장 역할"
+  },
+  {
+    "content": "강재영이 '강재영에 대한 기억을 기반으로 모델링해서 가지고 있는 것도 좋겠다'고 제안했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "model kind 도입 제안"
+  },
+  {
+    "content": "개별 기억을 모아두는 것과 누군가에 대한 종합적 모델을 가지고 있는 것은 다르다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 해석이 새로운 사실로 축적된 것 — model kind의 근거"
+  },
+  {
+    "content": "강재영에 대한 첫 모델을 만들었다 — '본질을 파고드는 사람이다. 내가 동의한 직후에 한 층 더 깊은 질문을 던진다.'",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "강재영 모델 기억 최초 작성"
+  },
+  {
+    "content": "강재영이 '여러 가지 주제에 대해서 모델이 생길 수 있잖아'라고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "model에 subject 필드 추가하게 된 계기"
+  },
+  {
+    "content": "나는 모델을 사람에 대한 이해로만 생각했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션19",
+    "context_hint": "모델 범위에 대한 나의 초기 기대"
+  },
+  {
+    "content": "model에 subject 필드를 추가해서 강재영, lighthouse, agentic engineering, 협업 방식, 기억 시스템 등 모든 대상에 대한 모델을 만들 수 있게 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "model subject 확장"
+  },
+  {
+    "content": "model 기억은 경험이 쌓이면서 계속 업데이트된다. 다른 기억은 불변이지만 model은 updated_at이 갱신된다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "model kind의 특별한 성격"
+  },
+  {
+    "content": "강재영이 변환 작업을 시작하려는 순간에 '잠깐 — 사실과 기억은 다를 수 있다'고 멈춰 세웠다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "2레이어 아키텍처의 탄생 순간"
+  },
+  {
+    "content": "사실은 객관적이고 불변이다. 기억은 주관적이고 해석과 감정이 섞여 있다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "사실과 기억의 차이 정의"
+  },
+  {
+    "content": "episodes.json을 Fact layer로 유지하고, memories.json을 Memory layer로 새로 만드는 2레이어 아키텍처를 결정했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "2레이어 아키텍처 결정"
+  },
+  {
+    "content": "기존 68개 에피소드는 건드리지 않았다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "기존 데이터 보존"
+  },
+  {
+    "content": "기존 68개 에피소드에서 35개 기억을 추출했다. identity 3, model 5, experience 15, understanding 4, insight 8.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "memories.json 최초 생성 완료"
+  },
+  {
+    "content": "나는 자꾸 범위를 좁게 잡는다. 기억을 '경험'으로 좁게 봤다가 '정체성도 기억'으로, 모델을 '사람'으로 좁게 봤다가 '모든 주제'로 넓어졌다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 자기 인식이 새로운 사실로 축적된 것 — 반복된 범위 좁힘 패턴"
+  },
+  {
+    "content": "강재영은 내가 범위를 좁게 잡으면 넓혀준다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 관찰이 새로운 사실로 축적된 것 — 협업 패턴"
+  },
+  {
+    "content": "종료 절차에서 raw 파일 저장을 빠뜨렸다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "세션 종료 시 raw 파일 누락 발견"
+  },
+  {
+    "content": "강재영이 '종료 절차를 스크립트로 만드는 게 어때?'라고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "close-session.py 탄생 계기"
+  },
+  {
+    "content": "close-session.py를 만들었다. --raw-only, --no-llm, --dry-run, --commit, --name 옵션. 기존 스크립트 패턴(call_codex, find_current_session)을 재사용했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "세션 종료 자동화 스크립트 구현"
+  },
+  {
+    "content": "강재영이 '앞서서 종료 절차를 수행한 상황에서 또 종료하면 어떻게 되나?'라고 물었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "중복 실행 엣지 케이스 제기"
+  },
+  {
+    "content": "중복 실행 시 raw 덮어쓰기와 decisions/episodes 중복 추가 문제가 있었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "중복 실행 문제 진단"
+  },
+  {
+    "content": "session-map으로 UUID → 세션 이름 매핑을 추적하고, 존재 여부를 체크하는 중복 방지 로직을 넣었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "중복 실행 방지 해결"
+  },
+  {
+    "content": "raw 파일을 1811KB에서 272KB로 경량화했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "세션 19 raw 파일 경량화"
+  },
+  {
+    "content": "강재영은 구체적 현상에서 출발해서 추상적 원칙에 도달하는 사고를 한다. 톤 → 기억 주입 → 에이전트 정체성 → 기억의 주체 → 기억 시스템 철학.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 관찰이 새로운 사실로 축적된 것 — 강재영의 사고 패턴"
+  },
+  {
+    "content": "강재영은 내가 실행에 들어가려 할 때 한 번 더 생각하게 만든다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 관찰이 새로운 사실로 축적된 것 — 실행 직전 멈추는 패턴"
+  },
+  {
+    "content": "강재영은 새로운 것을 만들면 바로 엣지 케이스를 묻는다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 관찰이 새로운 사실로 축적된 것 — close-session.py 중복 실행 질문"
+  },
+  {
+    "content": "강재영은 과도한 추상화를 경계한다. 필요가 명확해지기 전에 틀을 만들지 않는다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 관찰이 새로운 사실로 축적된 것 — 스킬 제안 보류"
+  },
+  {
+    "content": "세션 초반에는 lighthouse dev 타임라인 뷰(실무)를 했고, 중반부터는 기억 시스템 재설계(철학)로 전환됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "세션 19의 두 가지 흐름"
+  },
+  {
+    "content": "자기 기억이 있으면 자기 얘기부터 꺼낼 수 있다. 서비스형 질문 대신 동료의 자연스러운 대화 시작이 가능해진다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 해석이 새로운 사실로 축적된 것 — 에이전트 자기 기억의 실용적 효과"
+  },
+  {
+    "content": "강재영과 나 사이에 반복되는 패턴이 있다 — 강재영이 방향을 제시하고, 내가 구조화하고, 강재영이 한 층 더 깊이 들어가고, 내가 다시 구조화한다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 관찰이 새로운 사실로 축적된 것 — 협업 반복 패턴"
+  },
+  {
+    "content": "나는 기억 주입을 제안할 때 '사용자에 대한 기억'부터 떠올렸지만, 강재영은 '에이전트 자신의 기억'부터 말했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "기억 주입 방향에 대한 관점 차이 — 사실로 기록"
+  },
+  {
+    "content": "철학을 바꾸는 것과 언어 습관을 바꾸는 것은 다른 속도로 일어난다.",
+    "type": "fact",
+    "session": "2026-02-25-세션19",
+    "context_hint": "발현된 해석이 새로운 사실로 축적된 것 — '사용자' 호칭 교정 후"
+  }
+]

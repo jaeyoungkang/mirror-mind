@@ -105,7 +105,7 @@
   - [x] decisions.md 폐기 — episodes.json + memories.json이 역할 흡수
   - [x] 세션 종료 자동화 — close-session.py
   - [x] 세션 노트 MD 폐기
-  - [x] 네트워크 구조 시뮬레이션 v1 — 노드세트 6종, 링크방법 4종, 밀도 3단계 (72개 네트워크)
+  - [x] 네트워크 구조 시뮬레이션 v1 — 삭제 완료 (v2에서 완전 재설계)
     - 교훈: 75개 노드 과소 → 1-hop 문제, temporal cross-session 독성, 텍스트 매칭 평가 무의미
   - [x] 네트워크 시뮬레이션 v2 — 교훈 반영
     - 노드세트 3종(proposition 218, semantic-unit 220, entity-event 177)
@@ -113,10 +113,17 @@
     - gate 통과: knn k3/k5 (1-hop 2-3%, avg_path 3.3-5.2)
     - 대화 평가: fusion-weighted/proposition__k3 = 17.3/20 1위
   - [>] **v3: 자연스러운 기억 설계** — 검색 최적화가 아닌 대화 자연스러움 최적화
+    - 핵심 원칙:
+      - 노드 타입은 **fact + intention** 두 가지뿐
+      - 감정·해석·연상은 노드가 아니라 사실+의도가 함께 활성화되면 **발현**되는 것
+      - 발현된 것 중 의미 있는 것은 새로운 fact 노드로 저장 (기억의 축적)
+      - 원재료는 raw JSONL에서 직접 추출 (중간산물 우회 금지)
+      - 규모 대응: 분할 처리 + 서브에이전트 병렬
+    - [x] 파일럿 — 세션19 raw → 71개 노드 추출 (fact 66, intention 5)
+      - 결과: `memory/simulation/v3/pilot_session19.json`
+    - [ ] 전체 세션 추출 — 20개 raw JSONL → 서브에이전트 병렬 투입
+    - [ ] 네트워크 구축 — v2의 knn+cooccurrence fusion 구조 재활용
     - [ ] 평가 방법 전환 — 점수표 → sub-agent 실제 대화 + 자연스러움 판단
-    - [ ] 노드 콘텐츠 재설계 — 사실만이 아니라 해석·감정·연상 포함
-    - [ ] "잡음"을 "연상"으로 재정의 — 관련 없는 기억이 대화를 풍부하게 하는지 평가
-    - [ ] 기억의 주관성 반영 — 에이전트(브로콜리)의 관점이 담긴 기억
   - [ ] 최종 구조 확정 → 실제 시스템에 적용
   - [ ] 아카이브 정책 — scope lifecycle 운영
 
