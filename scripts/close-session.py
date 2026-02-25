@@ -38,12 +38,13 @@ CONV_DIR = PROJECT_ROOT / "tasks" / "conversations"
 RAW_DIR = CONV_DIR / "raw"
 DECISIONS_FILE = PROJECT_ROOT / "tasks" / "decisions.md"
 EPISODES_FILE = PROJECT_ROOT / "memory" / "episodes.json"
+SESSION_MAP_FILE = RAW_DIR / ".session-map.json"
 
 TRUNCATE_INPUT = 300
 TRUNCATE_RESULT = 200
 
 
-# ── 세션 탐색 ──
+# ── 세션 탐색 + 중복 방지 ──
 
 def find_current_session() -> Path | None:
     """가장 최근 수정된 JSONL = 현재 세션"""
@@ -52,6 +53,25 @@ def find_current_session() -> Path | None:
     if not jsonls:
         return None
     return max(jsonls, key=lambda p: p.stat().st_mtime)
+
+
+def load_session_map() -> dict:
+    """UUID → 세션 이름 매핑 로드"""
+    if SESSION_MAP_FILE.exists():
+        return json.loads(SESSION_MAP_FILE.read_text())
+    return {}
+
+
+def save_session_map(mapping: dict):
+    SESSION_MAP_FILE.parent.mkdir(parents=True, exist_ok=True)
+    SESSION_MAP_FILE.write_text(
+        json.dumps(mapping, ensure_ascii=False, indent=2) + "\n"
+    )
+
+
+def get_session_uuid(session_jsonl: Path) -> str:
+    """JSONL 파일명에서 UUID 추출"""
+    return session_jsonl.stem
 
 
 def determine_session_name() -> str:
@@ -63,6 +83,29 @@ def determine_session_name() -> str:
         if m:
             max_num = max(max_num, int(m.group(1)))
     return f"세션{max_num + 1}"
+
+
+def check_already_closed(session_jsonl: Path) -> str | None:
+    """이 JSONL이 이미 종료 처리됐으면 세션 이름을 반환, 아니면 None"""
+    uuid = get_session_uuid(session_jsonl)
+    mapping = load_session_map()
+    return mapping.get(uuid)
+
+
+def session_exists_in_episodes(session_key: str) -> bool:
+    """episodes.json에 해당 세션의 에피소드가 이미 있는지"""
+    if not EPISODES_FILE.exists():
+        return False
+    episodes = json.loads(EPISODES_FILE.read_text())
+    return any(e.get("session") == session_key for e in episodes)
+
+
+def session_exists_in_decisions(session_key: str) -> bool:
+    """decisions.md에 해당 세션 참조가 이미 있는지"""
+    if not DECISIONS_FILE.exists():
+        return False
+    text = DECISIONS_FILE.read_text()
+    return session_key in text
 
 
 # ── 경량 내보내기 (export-session.py 로직 재사용) ──
@@ -416,6 +459,7 @@ def main():
     parser.add_argument("--no-llm", action="store_true", help="codex 없이 raw 저장 + 빈 템플릿")
     parser.add_argument("--commit", action="store_true", help="완료 후 자동 커밋")
     parser.add_argument("--dry-run", action="store_true", help="파일 미수정, stdout 출력만")
+    parser.add_argument("--force", action="store_true", help="이미 종료된 세션도 강제 재실행")
     args = parser.parse_args()
 
     # 1. 세션 찾기
@@ -424,24 +468,46 @@ def main():
         print("현재 세션 JSONL을 찾을 수 없다", file=sys.stderr)
         sys.exit(1)
 
-    session_name = args.name or determine_session_name()
     today = date.today().isoformat()
-    print(f"세션: {today}-{session_name}")
     print(f"원본: {session_jsonl.name} ({session_jsonl.stat().st_size / 1024:.0f}KB)")
 
-    # 2. raw 경량 내보내기
+    # 2. 중복 체크
+    already_closed_as = check_already_closed(session_jsonl)
+    if already_closed_as and not args.force:
+        print(f"\n이 세션은 이미 '{already_closed_as}'로 종료 처리됐다.", file=sys.stderr)
+        print(f"  raw: tasks/conversations/raw/{already_closed_as}.jsonl", file=sys.stderr)
+        print(f"재실행하려면 --force를 사용하라.", file=sys.stderr)
+        sys.exit(1)
+
+    if already_closed_as and args.force:
+        # --force: 같은 세션 이름으로 재실행 (raw 덮어쓰기)
+        session_name = args.name or already_closed_as.split("-")[-1]  # "세션19" 부분 추출
+        # 날짜 부분도 기존 것에서 가져온다
+        print(f"[force] 이미 종료된 세션 '{already_closed_as}'을 재실행한다")
+    else:
+        session_name = args.name or determine_session_name()
+
+    date_session = f"{today}-{session_name}"
+    print(f"세션: {date_session}")
+
+    # 3. raw 경량 내보내기
     if not args.dry_run:
         raw_dest, count = export_raw(session_jsonl, session_name)
         size_kb = raw_dest.stat().st_size / 1024
         print(f"[완료] raw 저장 → {raw_dest.relative_to(PROJECT_ROOT)} ({count}건, {size_kb:.0f}KB)")
+
+        # 세션 맵 업데이트
+        mapping = load_session_map()
+        mapping[get_session_uuid(session_jsonl)] = date_session
+        save_session_map(mapping)
     else:
-        print(f"[dry-run] raw 저장 → tasks/conversations/raw/{today}-{session_name}.jsonl")
+        print(f"[dry-run] raw 저장 → tasks/conversations/raw/{date_session}.jsonl")
 
     if args.raw_only:
         print("raw-only 모드 종료.")
         return
 
-    # 3. 대화 추출
+    # 4. 대화 추출
     print("\n대화 추출 중...")
     conversation = extract_conversation(session_jsonl, max_chars=15000)
     if not conversation.strip():
@@ -449,11 +515,11 @@ def main():
         sys.exit(1)
     print(f"  추출: {len(conversation)}자")
 
-    # 4. 초안 생성
+    # 5. 초안 생성
     if args.no_llm:
         print("no-llm 모드. 빈 템플릿 생성.")
         drafts = {
-            "notes": f"# {today}-{session_name}\n\n(TODO: 세션 노트 작성)\n",
+            "notes": f"# {date_session}\n\n(TODO: 세션 노트 작성)\n",
             "decisions": "",
             "episodes": [],
         }
@@ -461,7 +527,7 @@ def main():
         print("codex로 초안 생성 중... (최대 3분)")
         drafts = generate_drafts(conversation, session_name)
 
-    # 5. 결과 출력
+    # 6. 결과 출력
     sep = "=" * 50
     print(f"\n{sep}")
     print("=== 세션 노트 ===")
@@ -477,7 +543,7 @@ def main():
         print("(에피소드 없음)")
     print(sep)
 
-    # 6. 파일 쓰기
+    # 7. 파일 쓰기 (중복 체크 포함)
     if args.dry_run:
         print("\n[dry-run] 파일 미수정. 위 내용을 확인 후 --dry-run 없이 재실행.")
         return
@@ -487,17 +553,23 @@ def main():
         print(f"\n[완료] 세션 노트 → {notes_dest.relative_to(PROJECT_ROOT)}")
 
     if drafts["decisions"]:
-        append_decisions(drafts["decisions"])
-        print("[완료] decisions.md 업데이트")
+        if session_exists_in_decisions(date_session) and not args.force:
+            print("[건너뜀] decisions.md에 이 세션 기록이 이미 존재한다")
+        else:
+            append_decisions(drafts["decisions"])
+            print("[완료] decisions.md 업데이트")
 
     if drafts["episodes"]:
-        append_episodes(drafts["episodes"])
-        print(f"[완료] episodes.json에 {len(drafts['episodes'])}건 추가")
+        if session_exists_in_episodes(date_session) and not args.force:
+            print("[건너뜀] episodes.json에 이 세션 에피소드가 이미 존재한다")
+        else:
+            append_episodes(drafts["episodes"])
+            print(f"[완료] episodes.json에 {len(drafts['episodes'])}건 추가")
 
-    # 7. 알림
+    # 8. 알림
     print("\n[수동] projects.md 업데이트 필요 여부 확인하라")
 
-    # 8. 커밋
+    # 9. 커밋
     if args.commit:
         git_commit(session_name)
         print("[완료] git commit")
