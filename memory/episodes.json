@@ -1424,5 +1424,60 @@
       "2026-02-25 | memories.json 업데이트도 종료 절차에 포함"
     ],
     "created_at": "2026-02-25T21:45:00Z"
+  },
+  {
+    "id": "s21-01",
+    "session": "2026-02-25-세션21",
+    "episode_index": 0,
+    "activity_type": "decision",
+    "project": "mirror-mind-ops",
+    "topic": "세션 노트 MD 폐기 — episodes.json + projects.md가 역할 흡수",
+    "summary": "decisions.md 폐기와 같은 논리로 세션 노트 MD도 중복임을 확인했다. 주요 작업은 episodes.json, 결정은 episodes+memories, 다음 단계는 projects.md가 이미 담고 있었다. close-session.py에서 노트 생성 코드를 제거하고, 기존 세션 노트 20개를 git rm으로 삭제했다.",
+    "emotion": "clarity",
+    "outcome": "success",
+    "outcome_detail": "세션 노트 20개 삭제, close-session.py에서 노트 관련 코드 제거",
+    "relationship_type": "agreement",
+    "milestone_key": "session_notes_deprecated",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | 세션 노트 MD 폐기 — episodes.json + projects.md가 역할 흡수"
+    ],
+    "created_at": "2026-02-25T22:00:00Z"
+  },
+  {
+    "id": "s21-02",
+    "session": "2026-02-25-세션21",
+    "episode_index": 1,
+    "activity_type": "decision",
+    "project": "mirror-mind-ops",
+    "topic": "projects.md 기억 시스템 항목 정리 — lighthouse에서 분리",
+    "summary": "기억 시스템 재설계 항목이 lighthouse 프로젝트 하위에 잘못 들어가 있었다. mirror-mind 운영 작업이므로 기존 기억 시스템 프로젝트로 통합하고, 상태를 [x]→[>]로 변경했다. lighthouse에는 관계 형성/안정화 항목만 남겼다.",
+    "emotion": "focused",
+    "outcome": "success",
+    "outcome_detail": "projects.md 기억 시스템 항목을 lighthouse에서 분리, 기존 프로젝트로 통합",
+    "relationship_type": null,
+    "milestone_key": null,
+    "scope": "permanent",
+    "decision_refs": [],
+    "created_at": "2026-02-25T22:10:00Z"
+  },
+  {
+    "id": "s21-03",
+    "session": "2026-02-25-세션21",
+    "episode_index": 2,
+    "activity_type": "design",
+    "project": "lighthouse",
+    "topic": "lighthouse memories 레이어 설계 — mirror-mind 2레이어 철학 적용",
+    "summary": "mirror-mind의 2레이어 기억 철학(사실+기억)을 lighthouse에 적용하는 설계를 수행했다. lighthouse 기억 시스템 전체를 탐색하여 갭을 분석하고, agent_memories 테이블 스키마, 4가지 memory kind(identity/researcher_profile/interaction_pattern/research_insight), 추출-저장-주입 파이프라인, 기존 코드 8개 파일 수정 계획을 포함한 구현 프롬프트를 작성했다. 구현은 다음 세션으로 미뤘다.",
+    "emotion": "satisfaction",
+    "outcome": "success",
+    "outcome_detail": "구현 프롬프트 완성 — DB 스키마, 타입, 저장소, 추출, 주입, 통합 8개 항목",
+    "relationship_type": "agreement",
+    "milestone_key": "lighthouse_memories_layer_designed",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | lighthouse에 memories 레이어 추가 — 4 kind (identity, researcher_profile, interaction_pattern, research_insight)"
+    ],
+    "created_at": "2026-02-25T22:30:00Z"
   }
 ]
