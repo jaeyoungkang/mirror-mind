@@ -33,7 +33,7 @@
 | 트리거 | 절차 |
 |--------|------|
 | **작업 시작** | 위 세션 시작 절차 수행 |
-| **작업 종료** | 메타에이전트 리포트 확인 → 대화 노트 작성(`tasks/conversations/`), raw 저장(`tasks/conversations/raw/`), `tasks/decisions.md` 업데이트, 이번 세션 에피소드를 `memory/episodes.json`에 추가, 커밋 |
+| **작업 종료** | 메타에이전트 리포트 확인 → `python3 scripts/close-session.py` 실행 (raw 저장 + 노트/decisions/episodes 초안 생성) → 초안 검토·수정 → `tasks/projects.md` 수동 업데이트 → 커밋 |
 | **주제 전환** / **킵** | 메타에이전트 리포트 확인 → 현재 주제의 중간 상태를 `tasks/projects.md`(결정 전) 또는 `tasks/decisions.md`(결정 후)에 기록한 뒤 전환 |
 | **정합성 검증** | 전체 원칙·설계 문서를 읽고 상호 참조·일관성을 검증하여 리포트 |
 | **회고** | 마일스톤 단위 회고 진행, 반복 적용할 교훈을 해당 원칙 문서에 반영 |
