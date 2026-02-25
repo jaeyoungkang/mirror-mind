@@ -1355,80 +1355,6 @@
     "id": "s20-01",
     "session": "2026-02-25-세션20",
     "episode_index": 0,
-    "activity_type": "implementation",
-    "project": "mirror-mind-ops",
-    "topic": "세션 종료 자동화 스크립트 close-session.py 작성",
-    "summary": "세션 19 raw 저장 누락을 계기로 종료 절차를 스크립트로 자동화했다. 기존 스크립트 패턴(codex exec, export-session.py 경량 내보내기)을 재사용하여 close-session.py를 작성. raw 경량 내보내기 + codex로 세션 노트/episodes 초안 생성 + 파일 적용까지 한 번에 수행한다.",
-    "emotion": "focused",
-    "outcome": "success",
-    "outcome_detail": "close-session.py 작성 완료, raw 저장 1811KB→272KB 경량화",
-    "relationship_type": null,
-    "milestone_key": "close_session_script_created",
-    "scope": "permanent",
-    "decision_refs": [],
-    "created_at": "2026-02-25T21:00:00Z"
-  },
-  {
-    "id": "s20-02",
-    "session": "2026-02-25-세션20",
-    "episode_index": 1,
-    "activity_type": "implementation",
-    "project": "mirror-mind-ops",
-    "topic": "중복 실행 방지 메커니즘 추가",
-    "summary": "종료 스크립트를 같은 세션에서 두 번 실행하면 에피소드가 중복되는 문제를 발견했다. UUID→세션명 매핑(.session-map.json)과 존재 체크를 추가하고, --force 플래그로 재실행 시 에피소드를 교체(기존 제거 → 새로 추가)하는 replace_episodes()를 구현했다.",
-    "emotion": "focused",
-    "outcome": "success",
-    "outcome_detail": "중복 방지 + --force 재생성 메커니즘 완성",
-    "relationship_type": null,
-    "milestone_key": null,
-    "scope": "permanent",
-    "decision_refs": [
-      "2026-02-25 | --force 재실행 시 episodes는 교체(기존 제거 → 새로 추가), memories는 upsert"
-    ],
-    "created_at": "2026-02-25T21:15:00Z"
-  },
-  {
-    "id": "s20-03",
-    "session": "2026-02-25-세션20",
-    "episode_index": 2,
-    "activity_type": "decision",
-    "project": "mirror-mind-ops",
-    "topic": "decisions.md 폐기 — 2레이어 기억 시스템이 역할 흡수",
-    "summary": "decisions.md의 존재 의의를 재검토했다. episodes.json(activity_type: decision)과 memories.json(kind: understanding/insight)이 이미 의사결정 기록 역할을 수행하고 있었다. 또한 단일 파일 형태는 세션 단위 교체가 불가능해 자동화의 장애물이었다. 폐기에 합의하고 git rm으로 삭제, close-session.py에서도 관련 코드를 모두 제거했다.",
-    "emotion": "clarity",
-    "outcome": "success",
-    "outcome_detail": "decisions.md 삭제, close-session.py에서 decisions 관련 코드 제거",
-    "relationship_type": "agreement",
-    "milestone_key": "decisions_md_deprecated",
-    "scope": "permanent",
-    "decision_refs": [
-      "2026-02-25 | decisions.md 폐기 — episodes.json + memories.json이 역할 흡수"
-    ],
-    "created_at": "2026-02-25T21:30:00Z"
-  },
-  {
-    "id": "s20-04",
-    "session": "2026-02-25-세션20",
-    "episode_index": 3,
-    "activity_type": "implementation",
-    "project": "mirror-mind-ops",
-    "topic": "memories.json 업데이트를 종료 절차에 추가",
-    "summary": "세션 종료 시 memories.json도 업데이트해야 한다는 의견에 따라 close-session.py에 별도 codex 호출을 추가했다. 기존 memories를 프롬프트에 포함시키고 add/update 오퍼레이션을 생성하는 구조로, upsert 패턴이라 --force 재실행에도 자연스럽게 멱등성을 유지한다.",
-    "emotion": "satisfaction",
-    "outcome": "success",
-    "outcome_detail": "generate_memory_updates() + apply_memory_updates() 구현 완료",
-    "relationship_type": null,
-    "milestone_key": null,
-    "scope": "permanent",
-    "decision_refs": [
-      "2026-02-25 | memories.json 업데이트도 종료 절차에 포함"
-    ],
-    "created_at": "2026-02-25T21:45:00Z"
-  },
-  {
-    "id": "s21-01",
-    "session": "2026-02-25-세션21",
-    "episode_index": 0,
     "activity_type": "decision",
     "project": "mirror-mind-ops",
     "topic": "세션 노트 MD 폐기 — episodes.json + projects.md가 역할 흡수",
@@ -1445,8 +1371,8 @@
     "created_at": "2026-02-25T22:00:00Z"
   },
   {
-    "id": "s21-02",
-    "session": "2026-02-25-세션21",
+    "id": "s20-02",
+    "session": "2026-02-25-세션20",
     "episode_index": 1,
     "activity_type": "decision",
     "project": "mirror-mind-ops",
@@ -1462,8 +1388,8 @@
     "created_at": "2026-02-25T22:10:00Z"
   },
   {
-    "id": "s21-03",
-    "session": "2026-02-25-세션21",
+    "id": "s20-03",
+    "session": "2026-02-25-세션20",
     "episode_index": 2,
     "activity_type": "design",
     "project": "lighthouse",
