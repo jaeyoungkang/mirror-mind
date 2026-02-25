@@ -87,6 +87,8 @@
   - [>] 기억 시스템 재설계 — memory_episodes (에피소드 세그멘테이션 + 구조화 분류 + 관계 형성 추적)
     - [x] 기억 철학 재정의 — 기억의 주체는 에이전트 자신, 사실(episodes.json)과 기억(memories.json) 2레이어
     - [x] memories.json 1차 작성 — 5개 kind, 35개 기억
+    - [x] decisions.md 폐기 — episodes.json + memories.json이 역할 흡수
+    - [x] 세션 종료 자동화 — close-session.py (raw 저장 + codex 초안 생성 + memories upsert)
     - [ ] query.py를 memories.json에 맞게 확장
     - [ ] 기억 내용 검토 및 보완
   - [ ] 관계 형성 고도화 — 상호 맥락 파악, 경험 기반 점진적 설명, 관계 깊이별 행동 변화
