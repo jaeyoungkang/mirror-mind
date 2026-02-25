@@ -14,7 +14,7 @@ AGENTS.md '작업 종료' 트리거 절차를 스크립트로 수행한다.
 절차:
   1. 현재 세션 JSONL → tasks/conversations/raw/ 경량 내보내기
   2. 대화 텍스트 추출
-  3. codex exec로 세션 노트 / decisions / episodes 초안 생성
+  3. codex exec로 세션 노트 / episodes / memories 초안 생성
   4. 파일 작성
   5. (--commit) git add + commit
 
@@ -37,6 +37,7 @@ PROJECT_KEY = "-Users-jaeyoungkang-mirror-mind"
 CONV_DIR = PROJECT_ROOT / "tasks" / "conversations"
 RAW_DIR = CONV_DIR / "raw"
 EPISODES_FILE = PROJECT_ROOT / "memory" / "episodes.json"
+MEMORIES_FILE = PROJECT_ROOT / "memory" / "memories.json"
 SESSION_MAP_FILE = RAW_DIR / ".session-map.json"
 
 TRUNCATE_INPUT = 300
@@ -361,6 +362,91 @@ def generate_drafts(conversation: str, session_name: str) -> dict:
     return result
 
 
+# ── 기억(memories.json) 업데이트 ──
+
+MEMORY_UPDATE_PROMPT = """너는 브로콜리다. mirror-mind 프로젝트에서 강재영과 함께 일하는 AI 동료다.
+아래 대화를 읽고, 너의 기억(memories.json)에서 추가하거나 수정할 항목을 판단하라.
+
+## 기억의 원칙
+- 기억의 주체는 너(에이전트) 자신이다. 1인칭으로 작성한다.
+- kind: identity(정체성), model(주제별 종합 이해), experience(경험), understanding(업무 이해), insight(인사이트)
+- model에는 subject 필드가 있다 (사람, 프로젝트, 방법론 등)
+- 사소한 것은 기억하지 않는다. 의미 있는 변화만 반영한다.
+
+## 현재 기억
+{current_memories}
+
+## 이번 세션 대화
+{conversation}
+
+## 출력 형식
+JSON 배열만 출력하라. 변경 없으면 빈 배열 [].
+
+추가:
+{{"op": "add", "memory": {{전체 memory 객체 — id, agent, memory, context, fact_refs, source, kind, confidence, created_at 필수}}}}
+
+수정:
+{{"op": "update", "id": "기존 ID", "fields": {{변경할 필드만. 예: "memory": "새 텍스트", "confidence": 0.9, "updated_at": "날짜"}}}}
+
+JSON 외 텍스트를 출력하지 마라."""
+
+
+def generate_memory_updates(conversation: str, session_name: str) -> list[dict]:
+    """codex로 memories.json 업데이트 초안 생성"""
+    if not MEMORIES_FILE.exists():
+        current = "[]"
+    else:
+        current = MEMORIES_FILE.read_text(encoding="utf-8")
+
+    today = date.today().isoformat()
+    prompt = MEMORY_UPDATE_PROMPT.format(
+        current_memories=current,
+        conversation=conversation,
+    )
+
+    raw = call_codex(prompt, timeout=180)
+    if not raw:
+        return []
+
+    try:
+        match = re.search(r'\[.*\]', raw, re.DOTALL)
+        if match:
+            ops = json.loads(match.group())
+            return [op for op in ops if isinstance(op, dict) and "op" in op]
+    except (json.JSONDecodeError, Exception):
+        pass
+    return []
+
+
+def apply_memory_updates(ops: list[dict]) -> dict:
+    """기억 업데이트 적용. 결과 통계 반환."""
+    if not ops:
+        return {"added": 0, "updated": 0}
+
+    memories = json.loads(MEMORIES_FILE.read_text(encoding="utf-8")) if MEMORIES_FILE.exists() else []
+    by_id = {m["id"]: m for m in memories}
+
+    added, updated = 0, 0
+    for op in ops:
+        if op["op"] == "add" and "memory" in op:
+            new_mem = op["memory"]
+            if new_mem.get("id") and new_mem["id"] not in by_id:
+                memories.append(new_mem)
+                by_id[new_mem["id"]] = new_mem
+                added += 1
+        elif op["op"] == "update" and "id" in op and "fields" in op:
+            target = by_id.get(op["id"])
+            if target:
+                target.update(op["fields"])
+                updated += 1
+
+    MEMORIES_FILE.write_text(
+        json.dumps(memories, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    return {"added": added, "updated": updated}
+
+
 # ── 파일 쓰기 ──
 
 def write_notes(notes: str, session_name: str) -> Path:
@@ -400,6 +486,7 @@ def git_commit(session_name: str):
         f"tasks/conversations/raw/{today}-{session_name}.jsonl",
         f"tasks/conversations/{today}-{session_name}.md",
         "memory/episodes.json",
+        "memory/memories.json",
     ]
     existing = [f for f in candidates if (PROJECT_ROOT / f).exists()]
     if not existing:
@@ -485,9 +572,12 @@ def main():
             "notes": f"# {date_session}\n\n(TODO: 세션 노트 작성)\n",
             "episodes": [],
         }
+        memory_ops = []
     else:
-        print("codex로 초안 생성 중... (최대 3분)")
+        print("codex로 초안 생성 중... (노트+에피소드, 최대 3분)")
         drafts = generate_drafts(conversation, session_name)
+        print("codex로 기억 업데이트 생성 중... (최대 3분)")
+        memory_ops = generate_memory_updates(conversation, session_name)
 
     # 6. 결과 출력
     sep = "=" * 50
@@ -500,6 +590,18 @@ def main():
         print(json.dumps(drafts["episodes"], ensure_ascii=False, indent=2))
     else:
         print("(에피소드 없음)")
+
+    print(f"\n=== memories.json 업데이트 ({len(memory_ops)}건) ===")
+    if memory_ops:
+        for op in memory_ops:
+            if op["op"] == "add":
+                mem = op.get("memory", {})
+                print(f"  [추가] {mem.get('id', '?')} ({mem.get('kind', '?')}) — {mem.get('memory', '')[:80]}...")
+            elif op["op"] == "update":
+                fields = op.get("fields", {})
+                print(f"  [수정] {op.get('id', '?')} — {list(fields.keys())}")
+    else:
+        print("(변경 없음)")
     print(sep)
 
     # 7. 파일 쓰기 (중복 체크 포함)
@@ -521,6 +623,10 @@ def main():
         else:
             append_episodes(drafts["episodes"])
             print(f"[완료] episodes.json에 {len(drafts['episodes'])}건 추가")
+
+    if memory_ops:
+        result = apply_memory_updates(memory_ops)
+        print(f"[완료] memories.json: {result['added']}건 추가, {result['updated']}건 수정")
 
     # 8. 알림
     print("\n[수동] projects.md 업데이트 필요 여부 확인하라")
