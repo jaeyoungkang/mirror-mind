@@ -84,10 +84,13 @@
         - [ ] 관측 데이터 기반 속도 분석 및 개선
       - [ ] 시나리오 1,2 실제 시연 검증
     - [ ] 시나리오 3~5 점진적 확장
-  - [>] 기억 시스템 2레이어 적용 — mirror-mind 기억 철학을 lighthouse에 적용
-    - [x] 갭 분석 — 현행 에피소드 1레이어 vs 2레이어(사실+기억) 비교
-    - [x] 구현 프롬프트 작성 — agent_memories 테이블, 4 kind, 추출-저장-주입 파이프라인 설계
-    - [ ] 구현 — 구현 에이전트에 위임 (프롬프트: `.claude/plans/eager-jingling-popcorn.md`)
+  - [x] 기억 시스템 v3 네트워크 적용 — memory_episodes를 fact/intention 네트워크로 완전 대체
+    - [x] 갭 분석 — 현행 에피소드 1레이어 vs 2레이어 비교 (구 설계, 폐기)
+    - [x] 구현 프롬프트 작성 — v3 네트워크 구조 기반 재설계 (프롬프트: `.claude/plans/enchanted-wibbling-riddle.md`)
+      - memory_nodes(fact/intention) + memory_edges(knn_k12) + spreading activation
+      - pgvector 임베딩 저장/검색, 증분 네트워크 업데이트
+      - 사전 기억 4범주: 리서치 전문성, 코르카 정체성, 관계 형성 스타일, 서비스 지식
+    - [x] 구현 — 구현 에이전트에 위임 완료
   - [ ] 관계 형성 고도화 — 상호 맥락 파악, 경험 기반 점진적 설명, 관계 깊이별 행동 변화
   - [ ] 안정화
 
