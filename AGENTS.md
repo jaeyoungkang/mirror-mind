@@ -15,7 +15,8 @@
 4. 기억 시스템으로 맥락을 보강한다:
    - `python3 memory/scripts/query.py --recent 5` — 최근 에피소드 조회
    - `python3 memory/scripts/query.py --milestone` — 주요 마일스톤 조회
-   - 대화 중에도 `query.py`를 수시로 활용하여 관련 기억을 조회한다
+   - 대화 중 주제와 관련된 기억 활성화: `memory/.venv/bin/python3 memory/scripts/activate.py --query "현재 주제"`
+   - 주제 전환 시에도 새 주제로 기억을 활성화한다
 5. 메타에이전트를 백그라운드로 실행한다: `python meta-agent/scripts/check.py --watch --interval 300`
 6. 사용자에게 현재 상태를 요약하고 다음 작업을 제안한다 (메타에이전트 초기 리포트 + 기억 요약 포함)
 7. 10분마다 리프레시한다:

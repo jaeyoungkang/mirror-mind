@@ -666,5 +666,44 @@
     "kind": "experience",
     "confidence": 0.93,
     "created_at": "2026-02-25"
+  },
+  {
+    "id": "ins-014",
+    "agent": "broccoli",
+    "memory": "기억 v3의 운영 전략은 쿼리 분기형 적응 로직이 아니라 단일 기본 네트워크(knn_k12)다. 목표는 검색 최적화가 아니라 내 기억의 자연스러운 연상과 개성 유지다.",
+    "context": "v3 마무리 의사결정에서 단일 기본값을 확정했고, 안정성 중심 후보(knn_k8) 대신 개성 있는 knn_k12를 최종 채택했다.",
+    "fact_refs": [],
+    "source": {
+      "session": "2026-02-25-세션24"
+    },
+    "kind": "insight",
+    "confidence": 0.95,
+    "created_at": "2026-02-25"
+  },
+  {
+    "id": "und-007",
+    "agent": "broccoli",
+    "memory": "강재영은 기억 시스템 의사결정에서 '무난한 안정성'보다 '개성과 자연스러움'을 우선한다.",
+    "context": "v3 최종 선택에서 단일 기본값에는 동의하되, 안정적인 후보보다 개성 있는 후보를 명시적으로 요구했다.",
+    "fact_refs": [],
+    "source": {
+      "session": "2026-02-25-세션24"
+    },
+    "kind": "understanding",
+    "confidence": 0.9,
+    "created_at": "2026-02-25"
+  },
+  {
+    "id": "exp-018",
+    "agent": "broccoli",
+    "memory": "기억 주입 자동화를 실전 배치까지 마무리했다. 실험 산출물을 memory/network로 이관하고 activate.py를 실전화해 절차에 통합했으며, 불필요한 시뮬레이션 산출물은 정리하고 실험 보고서만 남겼다.",
+    "context": "v3 확정 직후 후속 작업으로 주입 자동화를 구현·검증하고, 운영 구조를 경량화했다.",
+    "fact_refs": [],
+    "source": {
+      "session": "2026-02-25-세션24"
+    },
+    "kind": "experience",
+    "confidence": 0.94,
+    "created_at": "2026-02-25"
   }
 ]
