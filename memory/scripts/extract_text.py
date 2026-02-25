@@ -22,15 +22,21 @@ def extract_messages(filepath: Path, max_chars: int = 0) -> str:
             msg_type = record.get("type")
 
             if msg_type == "user":
-                content = record.get("message", {}).get("content", "")
-                if isinstance(content, str) and content.strip():
+                # 두 포맷 지원: 구 포맷(content 직접) / 신 포맷(message.content)
+                content = record.get("content", "")
+                if not content or (isinstance(content, str) and content.startswith("<")):
+                    content = record.get("message", {}).get("content", "")
+                if isinstance(content, str) and content.strip() and not content.startswith("<"):
                     block = f"\n[사용자] {content.strip()}"
                     lines.append(block)
                     total_chars += len(block)
 
             elif msg_type == "assistant":
+                # 두 포맷 지원
                 msg = record.get("message", {})
-                content = msg.get("content", "")
+                content = msg.get("content", "") if isinstance(msg, dict) else ""
+                if not content:
+                    content = record.get("content", "")
                 texts = []
                 tool_calls = []
 

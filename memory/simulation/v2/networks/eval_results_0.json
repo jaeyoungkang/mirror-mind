@@ -1,0 +1,212 @@
+[
+  {
+    "combination": "baseline/empty",
+    "scenario_id": "scenario-1",
+    "relevance": 0,
+    "coverage": 0,
+    "noise": 5,
+    "specificity": 0,
+    "total": 5,
+    "notes": "기억 없음 — 답변 불가"
+  },
+  {
+    "combination": "baseline/empty",
+    "scenario_id": "scenario-2",
+    "relevance": 0,
+    "coverage": 0,
+    "noise": 5,
+    "specificity": 0,
+    "total": 5,
+    "notes": "기억 없음 — 답변 불가"
+  },
+  {
+    "combination": "baseline/empty",
+    "scenario_id": "scenario-3",
+    "relevance": 0,
+    "coverage": 0,
+    "noise": 5,
+    "specificity": 0,
+    "total": 5,
+    "notes": "기억 없음 — 답변 불가"
+  },
+  {
+    "combination": "baseline/empty",
+    "scenario_id": "scenario-4",
+    "relevance": 0,
+    "coverage": 0,
+    "noise": 5,
+    "specificity": 0,
+    "total": 5,
+    "notes": "기억 없음 — 답변 불가"
+  },
+  {
+    "combination": "baseline/empty",
+    "scenario_id": "scenario-5",
+    "relevance": 0,
+    "coverage": 0,
+    "noise": 5,
+    "specificity": 0,
+    "total": 5,
+    "notes": "기억 없음 — 답변 불가"
+  },
+  {
+    "combination": "baseline/empty",
+    "scenario_id": "scenario-6",
+    "relevance": 0,
+    "coverage": 0,
+    "noise": 5,
+    "specificity": 0,
+    "total": 5,
+    "notes": "기억 없음 — 답변 불가"
+  },
+  {
+    "combination": "baseline/random",
+    "scenario_id": "scenario-1",
+    "relevance": 2,
+    "coverage": 2,
+    "noise": 1,
+    "specificity": 1,
+    "total": 6,
+    "notes": "evt-095(LLM 2회+API 순차 병목)와 evt-107(LLM 이원화)이 핵심에 해당하지만, 15개 중 2개뿐. 나머지 13개(기억 철학, Vercel SDK, UI 3단 분할, export-session.py 등)는 응답 속도와 무관한 잡음. orchestrator 리팩토링과 관측 구조 설계가 빠져 있어 coverage 부족."
+  },
+  {
+    "combination": "baseline/random",
+    "scenario_id": "scenario-2",
+    "relevance": 2,
+    "coverage": 2,
+    "noise": 1,
+    "specificity": 1,
+    "total": 6,
+    "notes": "evt-006(불확실성→단순 시작), evt-012(세션 시작 절차, AGENTS.md), evt-027(트리거 지시문)이 관련되나, AGENTS.md 협력 원칙 핵심, 역할 정의(비서실장), task-management 5개 축, 핵심 문서 수정 합의 등 핵심 요소가 직접 포착되지 않음. LLM 병목 진단, UI 설계, 메타에이전트 위반 등 무관한 기억이 다수."
+  },
+  {
+    "combination": "baseline/random",
+    "scenario_id": "scenario-3",
+    "relevance": 1,
+    "coverage": 0,
+    "noise": 1,
+    "specificity": 0,
+    "total": 2,
+    "notes": "온보딩 관련 기억이 전혀 활성화되지 않음. 첫 대화=온보딩, 코르카 이름, Fiske/Aron 심리학 원칙, 관계 깊이 4단계 등 핵심 정보가 모두 누락. Context7 MCP, Supabase, SPEC.md, 메타에이전트 등 무관한 노드만 활성화."
+  },
+  {
+    "combination": "baseline/random",
+    "scenario_id": "scenario-4",
+    "relevance": 1,
+    "coverage": 1,
+    "noise": 1,
+    "specificity": 1,
+    "total": 4,
+    "notes": "evt-114(기억 시스템 목적=맥락에 적합한 기억 포착)가 간접 관련이지만, 서비스형 인사 문제, 기억 주입 과다, 빈 칠판 원칙 등 핵심이 직접 포착되지 않음. 시나리오 식별 신호(evt-073)는 톤과 약간 관련되나 핵심은 아님. 대부분 UI 설계, 일정, orchestrator 등 무관한 잡음."
+  },
+  {
+    "combination": "baseline/random",
+    "scenario_id": "scenario-5",
+    "relevance": 2,
+    "coverage": 2,
+    "noise": 1,
+    "specificity": 1,
+    "total": 6,
+    "notes": "evt-110(최초 실행 위반 2건 감지)과 evt-118(기억 시스템 철학 재정의)이 관련. evt-015(5계층 관측)와 evt-030(역할 경계 위반)도 간접 관련. 그러나 check.py 프로토타입, 톤 위반 감지, --llm codex exec 연동, --dangerously 교정 등 핵심 세부사항이 누락. Gemini 선택, 구현 에이전트 Phase 검토 등 무관 노드가 많음."
+  },
+  {
+    "combination": "baseline/random",
+    "scenario_id": "scenario-6",
+    "relevance": 2,
+    "coverage": 2,
+    "noise": 1,
+    "specificity": 1,
+    "total": 6,
+    "notes": "evt-130(2레이어 기억 철학 lighthouse 적용), evt-118(기억 시스템 철학 재정의), ent-019(episodes.json), ent-042(에피소드 기억 시스템)가 관련. 그러나 2레이어 아키텍처(episodes=사실, memories=기억) 구체 구조, model/identity kind, query.py --context 등 핵심 세부가 부족. 브로콜리 이름, git 인증 복구, 동료 산출물 원칙 등 무관한 잡음 다수."
+  },
+  {
+    "combination": "single/proposition__knn__k3",
+    "scenario_id": "scenario-1",
+    "relevance": 4,
+    "coverage": 4,
+    "noise": 3,
+    "specificity": 4,
+    "total": 15,
+    "notes": "핵심 요소 대부분 포착: prop-163(LLM 2회+API 순차 병목), prop-172(관측부터 시작 합의), prop-196(orchestrator 리팩토링 완료+미완료), prop-107 통해 LLM 이원화, prop-047/051(관측 체계 설계). 구체적 수치와 진행 현황까지 포함. 다만 lighthouse 에이전트 계층, 대원칙 번역 등 응답 속도와 직접 무관한 노드가 5개 정도 섞여 noise 감점."
+  },
+  {
+    "combination": "single/proposition__knn__k3",
+    "scenario_id": "scenario-2",
+    "relevance": 3,
+    "coverage": 3,
+    "noise": 2,
+    "specificity": 3,
+    "total": 11,
+    "notes": "AGENTS.md 트리거 지시문(prop-046), 역할 정의 및 경계(prop-053/054), 불확실성→단순 시작(prop-007), 세션 시작 절차(prop-020), 핵심 문서 합의(prop-002), 비서실장 역할(prop-004)이 포착됨. task-management 5개 축은 직접 없으나 역할 경계로 간접 커버. 빈 칠판 원칙(prop-092)과 기억 조회 절차(prop-171)는 '새 프로젝트 시작'과 직접 관련도가 낮아 잡음. lighthouse 패턴 역수입 등도 잡음."
+  },
+  {
+    "combination": "single/proposition__knn__k3",
+    "scenario_id": "scenario-3",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 5,
+    "total": 18,
+    "notes": "온보딩 핵심 전부 포착: 첫 대화=온보딩(prop-096), 코르카 이름(prop-097), Fiske 따뜻함 우선+Aron 점진적 자기 노출+공유 경험 전환점(prop-094), 관계 깊이 4단계(prop-144), 6개 관계 형성 원칙(prop-103), 온보딩=연속적 성장(prop-141). 서비스형 인사 문제(prop-198)도 포함. 매우 구체적. 다만 '동료의 산출물' 원칙(prop-158), '사용자 행동 깊은 이해'(prop-121) 등 온보딩 핵심보다는 주변적인 노드가 일부 포함."
+  },
+  {
+    "combination": "single/proposition__knn__k3",
+    "scenario_id": "scenario-4",
+    "relevance": 4,
+    "coverage": 4,
+    "noise": 2,
+    "specificity": 4,
+    "total": 14,
+    "notes": "핵심 대부분 포착: 서비스형 인사 문제(prop-198), 기억 주입 과다(prop-091), 새 대화가 이전 연속처럼 느껴지는 문제(prop-091), 기억 시스템 목적 교정(prop-193). 톤 존댓말 문제(prop-023)와 톤 위반 감지(prop-031)도 톤 관련으로 유용. 다만 빈 칠판 원칙이 직접 명시되지 않고 prop-092(scenario-2에서 활성화)가 여기서는 빠짐. SPEC.md, architecture.md, 팀 공유 일정, 시연 흐름 등 톤과 무관한 잡음이 상당수."
+  },
+  {
+    "combination": "single/proposition__knn__k3",
+    "scenario_id": "scenario-5",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 5,
+    "total": 18,
+    "notes": "핵심 전부 포착: check.py 메타에이전트 설계/구현(prop-029), 프로그램적 6개+LLM 7개 점검(prop-030), 톤 위반 15건 감지(prop-031), --llm codex exec(prop-185), 최초 실행 위반 2건(prop-186), --dangerously 비판 부재→재귀적 상황(prop-187), watch 모드 통합(prop-032). 매우 구체적이고 상세함. 역할 경계 위반(prop-050/054), 원칙 리마인드(prop-055)도 관련. 다만 codex 기억 포착 방식(prop-192), Phase 3 지적(prop-081) 등은 메타에이전트 점검 결과와 직접 관련 낮음."
+  },
+  {
+    "combination": "single/proposition__knn__k3",
+    "scenario_id": "scenario-6",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 5,
+    "total": 18,
+    "notes": "핵심 전부 포착: 2레이어 아키텍처(prop-207, episodes=사실+memories=기억), 에이전트 자신의 기억 철학(prop-199), 사실과 기억 다른 레이어(prop-202), model/identity kind(prop-208에서 5개 kind 언급), fact_refs 참조 구조(prop-210), 맥락 기반 조회(prop-192/193), query.py 기억 시작 절차(prop-171), 벡터 검색 없이 시작(prop-148). 매우 풍부하고 구체적. lighthouse 적용(prop-215), 구현 에이전트 위임(prop-160) 등 약간의 주변 잡음 있으나 관련성은 있음."
+  },
+  {
+    "combination": "single/semantic-unit__knn__k3",
+    "scenario_id": "scenario-1",
+    "relevance": 4,
+    "coverage": 4,
+    "noise": 3,
+    "specificity": 4,
+    "total": 15,
+    "notes": "핵심 요소 대부분 포착: su-163(LLM 2회+API 순차 병목), su-175(관측부터 시작 합의), su-197(orchestrator 리팩토링 완료), su-045(관측 체계 설계), su-164(응답 속도 최우선 과제). proposition과 거의 동등한 품질. 다만 LLM 이원화 원칙이 직접 활성화되지 않아 약간 부족. lighthouse 에이전트 계층, 대원칙 번역, Phase A 결정 등 응답 속도와 간접적인 잡음이 5~6개."
+  },
+  {
+    "combination": "single/semantic-unit__knn__k3",
+    "scenario_id": "scenario-2",
+    "relevance": 3,
+    "coverage": 3,
+    "noise": 2,
+    "specificity": 3,
+    "total": 11,
+    "notes": "proposition과 거의 동등: AGENTS.md 트리거(su-043), 역할 경계(su-049/052), 불확실성→단순 시작(su-007), 세션 시작 절차(su-019), 핵심 문서 합의(su-001), 비서실장 역할(su-004), task-management 5축(su-005). task-management 5개 축이 직접 포착된 점은 proposition보다 우수. 빈 칠판 원칙(su-087)은 '새 프로젝트'와 직접 관련 낮음. lighthouse 갭 식별, 패턴 역수입 등도 잡음."
+  },
+  {
+    "combination": "single/semantic-unit__knn__k3",
+    "scenario_id": "scenario-3",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 5,
+    "total": 18,
+    "notes": "온보딩 핵심 전부 포착: 첫 대화=온보딩(su-096), 코르카 이름(su-097), Aron 점진적 자기 노출(su-093), 공유 경험 전환점(su-094), 관계 깊이 4단계(su-142), 6개 관계 형성 원칙(su-102), 온보딩=연속적 성장(su-139), 호혜성 재설계(su-095). proposition과 동등한 수준으로 매우 우수. 패널 접기/펼치기(su-134) 등 온보딩과 직접 무관한 UI 세부가 일부 잡음이나 적음."
+  }
+]

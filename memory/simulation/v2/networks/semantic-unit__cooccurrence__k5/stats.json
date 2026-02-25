@@ -1,0 +1,43 @@
+{
+  "nodeset": "semantic-unit",
+  "method": "cooccurrence",
+  "k_label": "k5",
+  "k": 5,
+  "num_nodes": 220,
+  "num_edges": 540,
+  "avg_degree": 4.91,
+  "num_components": 20,
+  "giant_ratio": 0.0909,
+  "avg_hop1_ratio": 0.0247,
+  "avg_path_length": -1,
+  "clustering_coeff": 0.7333,
+  "density": 0.0224,
+  "hub_nodes": [
+    {
+      "id": "su-004",
+      "degree": 6,
+      "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다"
+    },
+    {
+      "id": "su-005",
+      "degree": 6,
+      "content": "수집, 구조화, 진행, 대화, 회고 5개 축을 업무 관리 체계로 순차 합의했다"
+    },
+    {
+      "id": "su-006",
+      "degree": 6,
+      "content": "도메인과 프로젝트 2축 분류, 플랫 구조로 시작하기로 했다"
+    },
+    {
+      "id": "su-007",
+      "degree": 6,
+      "content": "불확실성이 클 때 단순하게 시작한다는 운영 원칙을 채택했다"
+    },
+    {
+      "id": "su-008",
+      "degree": 6,
+      "content": "하위 프로젝트는 별도 저장소이나 같은 PC에서 접근 가능한 구조로 설계했다"
+    }
+  ],
+  "gate_pass": false
+}

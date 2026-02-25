@@ -1,0 +1,43 @@
+{
+  "nodeset": "proposition",
+  "method": "knn",
+  "k_label": "k5",
+  "k": 5,
+  "num_nodes": 218,
+  "num_edges": 757,
+  "avg_degree": 6.94,
+  "num_components": 1,
+  "giant_ratio": 1.0,
+  "avg_hop1_ratio": 0.0323,
+  "avg_path_length": 3.36,
+  "clustering_coeff": 0.2944,
+  "density": 0.032,
+  "hub_nodes": [
+    {
+      "id": "prop-043",
+      "degree": 23,
+      "content": "lighthouse 구현 에이전트에게 대원칙 기반 코드 재설계를 지시했다"
+    },
+    {
+      "id": "prop-037",
+      "degree": 20,
+      "content": "lighthouse 에이전트 계층(상위 2개 + 하위 6개)을 확정했다"
+    },
+    {
+      "id": "prop-036",
+      "degree": 16,
+      "content": "mirror-mind 4대 원칙을 lighthouse 서비스 맥락으로 번역했다"
+    },
+    {
+      "id": "prop-001",
+      "degree": 14,
+      "content": "AGENTS.md와 mirror-mind-principle.md를 검토했다"
+    },
+    {
+      "id": "prop-035",
+      "degree": 14,
+      "content": "강재영이 'lighthouse는 연구 동료 서비스가 방향이다'라고 지시했다"
+    }
+  ],
+  "gate_pass": true
+}

@@ -1,0 +1,6819 @@
+{
+  "nodes": [
+    {
+      "id": "su-001",
+      "content": "AI가 합의 없이 AGENTS.md를 수정한 사건에서 '핵심 문서 수정 시 반드시 사용자 합의 필요' 규칙이 도출되었다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "AGENTS.md",
+        "합의",
+        "핵심 문서"
+      ]
+    },
+    {
+      "id": "su-002",
+      "content": "AI 메모리는 환경 정보만 보관하는 정책으로 확정했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "AI 메모리",
+        "환경 정보",
+        "정책"
+      ]
+    },
+    {
+      "id": "su-003",
+      "content": "도메인별 원칙 문서를 점진적으로 생성해 나가는 확장 방향을 구체화했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "도메인별 원칙 문서",
+        "점진적 확장"
+      ]
+    },
+    {
+      "id": "su-004",
+      "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "비서실장",
+        "동료 레벨",
+        "업무 관리"
+      ]
+    },
+    {
+      "id": "su-005",
+      "content": "수집, 구조화, 진행, 대화, 회고 5개 축을 업무 관리 체계로 순차 합의했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "업무 관리 체계",
+        "5개 축",
+        "task-management-principle.md"
+      ]
+    },
+    {
+      "id": "su-006",
+      "content": "도메인과 프로젝트 2축 분류, 플랫 구조로 시작하기로 했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "2축 분류",
+        "플랫 구조"
+      ]
+    },
+    {
+      "id": "su-007",
+      "content": "불확실성이 클 때 단순하게 시작한다는 운영 원칙을 채택했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "불확실성",
+        "단순하게 시작"
+      ]
+    },
+    {
+      "id": "su-008",
+      "content": "하위 프로젝트는 별도 저장소이나 같은 PC에서 접근 가능한 구조로 설계했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "하위 프로젝트",
+        "별도 저장소",
+        "로컬 접근"
+      ]
+    },
+    {
+      "id": "su-009",
+      "content": "Agentic Engineering을 collaboration, development, service-design 3축 구조로 세팅했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "Agentic Engineering",
+        "3축 구조",
+        "collaboration",
+        "development",
+        "service-design"
+      ]
+    },
+    {
+      "id": "su-010",
+      "content": "기존 Next.js 가이드에서 범용 원칙만 추출하여 기술적 결(technical grain)을 정리했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "Next.js",
+        "기술적 결",
+        "technical-grain.md"
+      ]
+    },
+    {
+      "id": "su-011",
+      "content": "웹 기본 계약 7가지를 비판적 검토 후 계약(5)과 검증(2)으로 재구성했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "웹 기본 계약",
+        "비판적 검토"
+      ]
+    },
+    {
+      "id": "su-012",
+      "content": "AI 서비스 설계 핵심 전제 2축을 확립했다: 자율성은 디자인 선택이다, AI는 동료 수준의 주체이다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "자율성",
+        "디자인 선택",
+        "AI 동료"
+      ]
+    },
+    {
+      "id": "su-013",
+      "content": "강재영의 핵심 비전: 앞으로 AI 서비스에는 동료 레벨의 에이전트가 존재해야 한다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "AI 서비스",
+        "동료 레벨 에이전트",
+        "강재영"
+      ]
+    },
+    {
+      "id": "su-014",
+      "content": "inbox를 한 번도 사용하지 않은 것을 발견하고, AI 협업에서는 수집과 구조화가 동시 발생하므로 inbox를 제거했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "inbox",
+        "수집",
+        "구조화"
+      ]
+    },
+    {
+      "id": "su-015",
+      "content": "하위 문서 생성 후 통합으로 돌아오는 패턴이 반복됨을 발견했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "하위 문서",
+        "통합 패턴"
+      ]
+    },
+    {
+      "id": "su-016",
+      "content": "통합의 두 조건을 도출했다: 독립적 의미 부재, 추상화 흡수",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "통합 조건",
+        "독립적 의미",
+        "추상화 흡수"
+      ]
+    },
+    {
+      "id": "su-017",
+      "content": "비판적 검토 -> 추상화 -> 통합 흐름을 운영 원칙으로 채택했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "비판적 검토",
+        "추상화",
+        "통합"
+      ]
+    },
+    {
+      "id": "su-018",
+      "content": "전체 9개 문서 정합성 검증을 수행하여 5건을 발견하고 해결했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "정합성 검증",
+        "9개 문서"
+      ]
+    },
+    {
+      "id": "su-019",
+      "content": "세션 시작 절차를 AGENTS.md에 명시하기로 합의했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "세션 시작 절차",
+        "AGENTS.md"
+      ]
+    },
+    {
+      "id": "su-020",
+      "content": "decisions.md를 인덱스로, conversations/ 폴더에 원시 대화를 저장하는 체계를 만들었다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "decisions.md",
+        "conversations",
+        "대화 저장"
+      ]
+    },
+    {
+      "id": "su-021",
+      "content": "세션 원시 데이터를 깃으로 공유하기 위해 export-session.py를 작성했다 (원본에서 경량 JSONL 변환)",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "export-session.py",
+        "JSONL",
+        "깃"
+      ]
+    },
+    {
+      "id": "su-022",
+      "content": "컨텍스트 압축 후 톤이 존댓말로 바뀐 것을 강재영이 발견하여, ~다 체 규정을 mirror-mind-principle.md에 명시했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "톤 규정",
+        "~다 체",
+        "mirror-mind-principle.md"
+      ]
+    },
+    {
+      "id": "su-023",
+      "content": "경미한 변경은 AI가 자율 커밋하는 규칙을 추가했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "자율 커밋",
+        "경미한 변경"
+      ]
+    },
+    {
+      "id": "su-024",
+      "content": "Agent Plane 안전장치를 코드 레벨(샌드박싱, 린트/SAST)과 비즈니스 레벨(승인 워크플로, 60초 롤백, 비용 상한)로 나눠 정의했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "Agent Plane",
+        "안전장치",
+        "샌드박싱",
+        "롤백"
+      ]
+    },
+    {
+      "id": "su-025",
+      "content": "Context7 MCP 지식 공급 체계를 technical-grain.md에 추가했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "Context7",
+        "MCP",
+        "지식 공급"
+      ]
+    },
+    {
+      "id": "su-026",
+      "content": "5계층 관측 체계를 technical-grain.md에 추가했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "5계층 관측",
+        "technical-grain.md"
+      ]
+    },
+    {
+      "id": "su-027",
+      "content": "projects.md의 존재 이유를 '지금 뭘 해야 하는가를 판단하는 미래 지향 인덱스'로 명확화했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "projects.md",
+        "미래 지향 인덱스"
+      ]
+    },
+    {
+      "id": "su-028",
+      "content": "원칙 준수를 상시 감시하는 메타에이전트를 설계하고 구현했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "메타에이전트",
+        "원칙 준수",
+        "감시"
+      ]
+    },
+    {
+      "id": "su-029",
+      "content": "메타에이전트에 프로그램적 점검 6개(톤, 참조 무결성, 상태 정합성, 메모리 정책, 기록 누락)를 넣었다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "메타에이전트",
+        "프로그램적 점검",
+        "톤 위반"
+      ]
+    },
+    {
+      "id": "su-030",
+      "content": "메타에이전트에 LLM 기반 점검 7개(순응, 목적 내재화, 선제적 제안 등)를 넣었다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "메타에이전트",
+        "LLM 점검",
+        "순응"
+      ]
+    },
+    {
+      "id": "su-031",
+      "content": "check.py 프로토타입이 톤 위반 15건을 정확히 감지했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "check.py",
+        "톤 위반",
+        "15건"
+      ]
+    },
+    {
+      "id": "su-032",
+      "content": "메타에이전트를 세션 시작 절차에 5분 간격 watch 모드로 통합했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "메타에이전트",
+        "watch 모드",
+        "5분 간격"
+      ]
+    },
+    {
+      "id": "su-033",
+      "content": "lighthouse 프로젝트의 docs 문서를 mirror-mind 방법론(기술적 결 + AI 서비스 설계 원칙)과 대조 검토하여 갭 4건과 역수입 대상 4건을 식별했다",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "lighthouse",
+        "docs",
+        "갭 분석",
+        "역수입"
+      ]
+    },
+    {
+      "id": "su-034",
+      "content": "lighthouse의 방향을 '연구 동료 서비스'로 정했다 — 서비스 목적에 협업 원칙이 적용되어야 한다",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "lighthouse",
+        "연구 동료",
+        "서비스 목적"
+      ]
+    },
+    {
+      "id": "su-035",
+      "content": "mirror-mind 4대 원칙을 서비스 맥락으로 번역했다: 연구 의도의 내재화, 상호 보완적 시너지, 검증은 신뢰의 기반, 맥락 안에서의 자율성",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "4대 원칙",
+        "서비스 맥락",
+        "lighthouse"
+      ]
+    },
+    {
+      "id": "su-036",
+      "content": "lighthouse 에이전트 계층을 상위 2개 + 하위 6개로 확정했다",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "에이전트 계층",
+        "lighthouse"
+      ]
+    },
+    {
+      "id": "su-037",
+      "content": "원칙 원본은 mirror-mind에서 관리하고, lighthouse에는 복사본을 두는 구조로 했다",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "원칙 원본",
+        "mirror-mind",
+        "lighthouse"
+      ]
+    },
+    {
+      "id": "su-038",
+      "content": "DESIGN_PRINCIPLES.md를 ai-design-framework.md로 리네이밍했다",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "DESIGN_PRINCIPLES.md",
+        "ai-design-framework.md"
+      ]
+    },
+    {
+      "id": "su-039",
+      "content": "lighthouse에서 검증된 4가지 패턴(AI 기능 설계 체크리스트, FSM 게이트 패턴, 원칙-구현 정합성 문서, 프로젝트 문서 계층)을 mirror-mind 방법론에 역수입했다",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "역수입",
+        "FSM 게이트",
+        "체크리스트",
+        "lighthouse"
+      ]
+    },
+    {
+      "id": "su-040",
+      "content": "역수입 패턴 자체가 하나의 방법론으로 자리잡았다 — 하위 프로젝트에서 검증된 구체 패턴을 상위 방법론으로 승격시키는 흐름",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "역수입 패턴",
+        "방법론 승격"
+      ]
+    },
+    {
+      "id": "su-041",
+      "content": "Phase B, C에 대해 과잉 추상화와 시기상조 우려를 제기하여 Phase A만 진행하기로 결정했다",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "Phase A",
+        "과잉 추상화",
+        "시기상조",
+        "lighthouse"
+      ]
+    },
+    {
+      "id": "su-042",
+      "content": "세션 중 주제 전환 시 맥락이 휘발되는 문제를 해결하기 위해 체크포인트 원칙을 추가했다 — 결정 전은 projects.md, 결정 후는 decisions.md",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "주제 전환",
+        "맥락 휘발",
+        "체크포인트"
+      ]
+    },
+    {
+      "id": "su-043",
+      "content": "6개 트리거 지시문(작업 시작/종료, 주제 전환/킵, 정합성 검증, 회고, 원칙 점검)을 AGENTS.md에 명시했다",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "트리거 지시문",
+        "AGENTS.md",
+        "6개"
+      ]
+    },
+    {
+      "id": "su-044",
+      "content": "암묵적 행동을 명시적 트리거로 정의하여 일관성을 보장하는 패턴을 확립했다",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "암묵적 행동",
+        "명시적 트리거",
+        "일관성"
+      ]
+    },
+    {
+      "id": "su-045",
+      "content": "lighthouse 관측 체계 설계 문서(observability.md)를 작성했다 — 프로토타입 최소 관측, 5개 관측 대상, observe.ts 단일 파일",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "observability.md",
+        "관측 체계",
+        "observe.ts",
+        "lighthouse"
+      ]
+    },
+    {
+      "id": "su-046",
+      "content": "감지(관측)와 방지(안전장치)를 다른 관심사로 분리해야 한다는 원칙을 세웠다",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "감지",
+        "방지",
+        "관심사 분리"
+      ]
+    },
+    {
+      "id": "su-047",
+      "content": "Phase B는 실익이 불분명하여 보류하고, Phase C는 프롬프트 실험으로 사전 검증하기로 결정했다",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "Phase B",
+        "Phase C",
+        "프롬프트 실험"
+      ]
+    },
+    {
+      "id": "su-048",
+      "content": "AI가 구현 레벨 계획(코드 스니펫, 파일별 변경 상세)을 작성하여 강재영으로부터 '이런 일이 재발하면 안 된다'는 피드백을 받았다",
+      "session": "2026-02-22-세션5",
+      "keywords": [
+        "구현 레벨 계획",
+        "역할 경계 위반",
+        "강재영"
+      ]
+    },
+    {
+      "id": "su-049",
+      "content": "mirror-mind 세션은 설계 문서 작성, 업무 관리, 의사결정 수렴을 담당하고, 코드 구현은 하위 프로젝트 에이전트가 수행한다고 역할 경계를 명시했다",
+      "session": "2026-02-22-세션5",
+      "keywords": [
+        "역할 경계",
+        "설계 문서",
+        "하위 프로젝트 에이전트"
+      ]
+    },
+    {
+      "id": "su-050",
+      "content": "강재영이 '비서실장이라는 표현 빼라'고 지시했다",
+      "session": "2026-02-22-세션5",
+      "keywords": [
+        "비서실장",
+        "표현 제거",
+        "강재영"
+      ]
+    },
+    {
+      "id": "su-051",
+      "content": "역할 경계를 별도 문서가 아니라 기존 task-management-principle.md에 통합하여 중복을 방지했다",
+      "session": "2026-02-22-세션5",
+      "keywords": [
+        "역할 경계",
+        "task-management-principle.md",
+        "중복 방지"
+      ]
+    },
+    {
+      "id": "su-052",
+      "content": "역할 경계 위반의 근본 원인은 기존 원칙(목적의 내재화)을 내재화하지 못한 것이었다 — 커밋 히스토리(전부 docs:)와 세션 역할(조율 활동뿐)에서 추론 가능했다",
+      "session": "2026-02-22-세션5",
+      "keywords": [
+        "목적 내재화",
+        "커밋 히스토리",
+        "역할 경계 위반"
+      ]
+    },
+    {
+      "id": "su-053",
+      "content": "메타에이전트 매 주기마다 원칙 리마인드를 출력하고, 트리거 시 리포트 확인을 선행하도록 강화했다",
+      "session": "2026-02-22-세션5",
+      "keywords": [
+        "메타에이전트",
+        "원칙 리마인드",
+        "트리거"
+      ]
+    },
+    {
+      "id": "su-054",
+      "content": "lighthouse docs 8개 문서에서 3가지 구조적 문제를 발견했다: 계층 역전, SPEC과 architecture의 대규모 중복, 범용 원칙 산재",
+      "session": "2026-02-23-세션6",
+      "keywords": [
+        "lighthouse",
+        "계층 역전",
+        "SPEC",
+        "architecture"
+      ]
+    },
+    {
+      "id": "su-055",
+      "content": "문서 역할을 WHY/WHAT/HOW/CHECK/WATCH/RULES로 분리하는 계획을 수립했다",
+      "session": "2026-02-23-세션6",
+      "keywords": [
+        "문서 역할 분리",
+        "WHY",
+        "WHAT",
+        "HOW"
+      ]
+    },
+    {
+      "id": "su-056",
+      "content": "ai-design-framework.md를 service-principles.md에 흡수 후 삭제하여 계층 역전을 해소했다",
+      "session": "2026-02-23-세션6",
+      "keywords": [
+        "ai-design-framework.md",
+        "service-principles.md",
+        "계층 역전 해소"
+      ]
+    },
+    {
+      "id": "su-057",
+      "content": "SPEC에서 기술 구현 내용을 architecture로 이관하고, 하위 문서 참조를 통일했다 (511줄 삭제, 343줄 추가)",
+      "session": "2026-02-23-세션6",
+      "keywords": [
+        "SPEC",
+        "architecture",
+        "이관"
+      ]
+    },
+    {
+      "id": "su-058",
+      "content": "5가지 기준(범위 준수, 중복 없음, 참조 유효, 외부 참조 제거, 계층 일치)으로 교차 검증하여 모두 통과했다",
+      "session": "2026-02-23-세션6",
+      "keywords": [
+        "교차 검증",
+        "5가지 기준",
+        "정합성"
+      ]
+    },
+    {
+      "id": "su-059",
+      "content": "AGENTS.md에 10분마다 주요 문서 재읽기 절차를 추가했다 — 세션이 길어질 때 컨텍스트 압축으로 초기 맥락이 약화되는 것을 방지",
+      "session": "2026-02-23-세션6",
+      "keywords": [
+        "10분 주기",
+        "문서 재읽기",
+        "컨텍스트 압축"
+      ]
+    },
+    {
+      "id": "su-060",
+      "content": "상위 에이전트의 정체성을 오케스트레이터에서 '대화형 연구 동료'로 전환했다",
+      "session": "2026-02-23-세션7",
+      "keywords": [
+        "오케스트레이터",
+        "대화형 연구 동료",
+        "정체성 전환"
+      ]
+    },
+    {
+      "id": "su-061",
+      "content": "대화형 연구 동료의 4가지 역할을 정의했다: 경험 기억, 연구 논의, 주도권 제안, 하위 에이전트 활용",
+      "session": "2026-02-23-세션7",
+      "keywords": [
+        "대화형 연구 동료",
+        "4가지 역할",
+        "경험 기억"
+      ]
+    },
+    {
+      "id": "su-062",
+      "content": "오케스트레이션도 맥락을 가장 잘 아는 동료가 담당하는 것이 자연스럽다는 합의에 도달했다",
+      "session": "2026-02-23-세션7",
+      "keywords": [
+        "오케스트레이션",
+        "맥락",
+        "동료"
+      ]
+    },
+    {
+      "id": "su-063",
+      "content": "강재영이 선언했다: 처음부터 다시 만든다, 레거시 고려 불필요, 기존 문서는 재료 수준, AI 관계 재설정 UI/UX에 창의적 접근 필요",
+      "session": "2026-02-23-세션7",
+      "keywords": [
+        "레거시 무시",
+        "창의적 접근",
+        "처음부터",
+        "강재영"
+      ]
+    },
+    {
+      "id": "su-064",
+      "content": "6개 하위 문서 재작성 계획을 수립하고 의존성 순서를 정의했다",
+      "session": "2026-02-23-세션7",
+      "keywords": [
+        "6개 하위 문서",
+        "재작성",
+        "의존성 순서"
+      ]
+    },
+    {
+      "id": "su-065",
+      "content": "SPEC.md를 처음부터 재작성하여 대화 캔버스, 제안 카드, 연구 아티팩트, 경험 기억, 주도권 신호 등 5개 새 UI/UX 개념을 도입했다",
+      "session": "2026-02-23-세션7",
+      "keywords": [
+        "SPEC.md",
+        "대화 캔버스",
+        "제안 카드",
+        "연구 아티팩트",
+        "주도권 신호"
+      ]
+    },
+    {
+      "id": "su-066",
+      "content": "동적 자율성을 도입했다 — 맥락에 따라 동료가 조절해서 제안하는 방식으로, Phase 구조를 완전히 제거했다",
+      "session": "2026-02-23-세션7",
+      "keywords": [
+        "동적 자율성",
+        "Phase 제거",
+        "맥락"
+      ]
+    },
+    {
+      "id": "su-067",
+      "content": "architecture.md를 재작성했다: 도메인 결 3가지, LLM 상위 에이전트, 대화 프로토콜, 3계층 기억, 3-Plane 매핑",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "architecture.md",
+        "도메인 결",
+        "3계층 기억",
+        "3-Plane"
+      ]
+    },
+    {
+      "id": "su-068",
+      "content": "state-management.md를 재작성했다: Conversation을 SSOT로, 4개 Zustand 스토어, 에이전트 실행 FSM",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "state-management.md",
+        "SSOT",
+        "Zustand",
+        "FSM"
+      ]
+    },
+    {
+      "id": "su-069",
+      "content": "design-state-alignment.md를 재작성했다: 핵심 명제 5개, 흐름 예시 4개, 실패 사례 5개",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "design-state-alignment.md",
+        "핵심 명제",
+        "실패 사례"
+      ]
+    },
+    {
+      "id": "su-070",
+      "content": "상위 에이전트 LLM으로 Gemini 3 Flash Preview를 선택했다 — tool calling과 대용량 컨텍스트가 결정적 근거",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "Gemini 3 Flash Preview",
+        "tool calling",
+        "컨텍스트"
+      ]
+    },
+    {
+      "id": "su-071",
+      "content": "스트리밍에 Vercel AI SDK를 선택했다 — 보일러플레이트 최소화가 이유",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "Vercel AI SDK",
+        "스트리밍",
+        "보일러플레이트"
+      ]
+    },
+    {
+      "id": "su-072",
+      "content": "서버사이드 저장소로 Supabase를 선택했다 — 인증+RLS가 결정적 근거, 파일 기반은 Vercel 서버리스 제약으로 기각",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "Supabase",
+        "RLS",
+        "Vercel 서버리스"
+      ]
+    },
+    {
+      "id": "su-073",
+      "content": "경험 기억은 세션 간 포함하기로 결정했다 — lighthouse의 차별점",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "경험 기억",
+        "세션 간",
+        "차별점"
+      ]
+    },
+    {
+      "id": "su-074",
+      "content": "기존 코드는 핵심 로직을 추출하여 tool 함수로 재사용하기로 했다",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "핵심 로직 추출",
+        "tool 함수",
+        "재사용"
+      ]
+    },
+    {
+      "id": "su-075",
+      "content": "구현 에이전트를 위한 6단계 프롬프트를 작성했다: 기반 구축 -> 대화 코어 -> 도구 통합 -> 아티팩트 -> 제안 카드+자율성 -> 경험 기억",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "6단계 프롬프트",
+        "implementation-prompts.md",
+        "구현 에이전트"
+      ]
+    },
+    {
+      "id": "su-076",
+      "content": "Phase 3 구현 계획에서 conventions 위반, 환경변수 누락 등 6개 지적사항을 도출했다",
+      "session": "2026-02-23-세션9",
+      "keywords": [
+        "Phase 3",
+        "conventions 위반",
+        "환경변수"
+      ]
+    },
+    {
+      "id": "su-077",
+      "content": "Phase 4 구현 계획에서 ArtifactContext vs artifactStore 괴리 등 6개 지적사항을 도출했다",
+      "session": "2026-02-23-세션9",
+      "keywords": [
+        "Phase 4",
+        "ArtifactContext",
+        "artifactStore"
+      ]
+    },
+    {
+      "id": "su-078",
+      "content": "외부 공유 일정이 생기면서 우선순위가 '중요도순'에서 '시연 가능 여부순'으로 전환됨을 인식했다",
+      "session": "2026-02-23-세션9",
+      "keywords": [
+        "우선순위 전환",
+        "시연 가능 여부",
+        "일정"
+      ]
+    },
+    {
+      "id": "su-079",
+      "content": "task-management-principle.md에 일정 연동 섹션을 추가하고, 별도 캘린더 도구 없이 문서에 날짜를 적는 것으로 충분하다고 결정했다",
+      "session": "2026-02-23-세션9",
+      "keywords": [
+        "일정 연동",
+        "캘린더 불필요",
+        "task-management-principle.md"
+      ]
+    },
+    {
+      "id": "su-080",
+      "content": "2/24 팀 공유, 2/26 후속 공유, 3/2 후속 공유, 3월 1주 알파 테스트 일정을 기록했다",
+      "session": "2026-02-23-세션9",
+      "keywords": [
+        "팀 공유",
+        "알파 테스트",
+        "마일스톤 일정"
+      ]
+    },
+    {
+      "id": "su-081",
+      "content": "설계 문서의 구체성이 구현 에이전트의 독립 작업을 가능하게 했다는 교훈을 얻었다",
+      "session": "2026-02-23-세션9",
+      "keywords": [
+        "설계 문서 구체성",
+        "구현 에이전트 독립성"
+      ]
+    },
+    {
+      "id": "su-082",
+      "content": "역할 분리(설계/조율 vs 구현)가 컨텍스트 전환 비용을 제거하여 밀도를 만들었다",
+      "session": "2026-02-23-세션9",
+      "keywords": [
+        "역할 분리",
+        "컨텍스트 전환 비용",
+        "밀도"
+      ]
+    },
+    {
+      "id": "su-083",
+      "content": "세션 간 맥락 전달 체계(decisions.md, projects.md, 구현 프롬프트)가 밀도의 핵심 요인이었다",
+      "session": "2026-02-23-세션9",
+      "keywords": [
+        "세션 간 맥락 전달",
+        "밀도"
+      ]
+    },
+    {
+      "id": "su-084",
+      "content": "6단계 시연 흐름(대화->검색->분석->아티팩트->제안카드->경험기억)을 검증했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "시연 흐름",
+        "6단계",
+        "lighthouse"
+      ]
+    },
+    {
+      "id": "su-085",
+      "content": "안정화 작업으로 버그 4건(제안 카드 후 응답, 핵심 논문 해시 표시, 클러스터링 자동 실행, 마크다운 미렌더링)을 수정했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "안정화",
+        "버그 수정",
+        "제안 카드",
+        "마크다운"
+      ]
+    },
+    {
+      "id": "su-086",
+      "content": "새 대화를 시작해도 이전 대화의 연속처럼 느껴지는 문제를 강재영이 제기했다 — memory.ts의 기억 주입 프롬프트가 LLM을 과하게 유도하고 있었다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "기억 주입 과다",
+        "memory.ts",
+        "LLM 유도"
+      ]
+    },
+    {
+      "id": "su-087",
+      "content": "새 대화는 빈 칠판으로 시작하고, 기억은 사용자가 꺼내거나 키워드가 명시적으로 겹칠 때만 활성화한다는 원칙을 수립했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "빈 칠판",
+        "기억 활성화",
+        "키워드 겹침"
+      ]
+    },
+    {
+      "id": "su-088",
+      "content": "대화 톤을 ~다 체에서 존대말로 전환하기로 결정했다 (lighthouse 서비스)",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "톤 전환",
+        "존대말",
+        "lighthouse"
+      ]
+    },
+    {
+      "id": "su-089",
+      "content": "온보딩은 관계 형성 메커니즘을 깊이 탐색하여 설계에 적용하기로 했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "온보딩",
+        "관계 형성",
+        "심층 탐색"
+      ]
+    },
+    {
+      "id": "su-090",
+      "content": "페이퍼 리스트는 대화 귀속을 유지하되 별도 목록 뷰를 추가하기로 했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "페이퍼 리스트",
+        "목록 뷰",
+        "대화 귀속"
+      ]
+    },
+    {
+      "id": "su-091",
+      "content": "주기적 중간 정리는 propose 활용하기로 했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "중간 정리",
+        "propose"
+      ]
+    },
+    {
+      "id": "su-092",
+      "content": "따뜻함이 역량보다 먼저다 — Fiske의 연구에 기반한 인사이트",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "따뜻함",
+        "역량",
+        "Fiske"
+      ]
+    },
+    {
+      "id": "su-093",
+      "content": "점진적 자기 노출이 관계 형성의 핵심이다 — Aron의 연구에 기반",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "자기 노출",
+        "관계 형성",
+        "Aron"
+      ]
+    },
+    {
+      "id": "su-094",
+      "content": "공유 경험이 관계 전환점이다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "공유 경험",
+        "관계 전환점"
+      ]
+    },
+    {
+      "id": "su-095",
+      "content": "AI-인간 관계에서는 호혜성이 불가능하므로 재설계가 필요하다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "호혜성",
+        "AI-인간 관계",
+        "재설계"
+      ]
+    },
+    {
+      "id": "su-096",
+      "content": "첫 대화 자체가 온보딩이다 — 별도 온보딩 화면을 두지 않는다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "첫 대화",
+        "온보딩",
+        "별도 화면 없음"
+      ]
+    },
+    {
+      "id": "su-097",
+      "content": "연구 동료의 이름을 corca(코르카)로 정했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "corca",
+        "코르카",
+        "연구 동료"
+      ]
+    },
+    {
+      "id": "su-098",
+      "content": "service-principles.md에 온보딩 섹션을 신설했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "service-principles.md",
+        "온보딩 섹션"
+      ]
+    },
+    {
+      "id": "su-099",
+      "content": "톤 전환, 온보딩 6건 지시, 페이퍼 리스트 우측 패널, 중간 정리 propose 활용 등 총 8건의 구현을 완료했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "8건 구현",
+        "톤 전환",
+        "페이퍼 리스트"
+      ]
+    },
+    {
+      "id": "su-100",
+      "content": "lighthouse CLAUDE.md/AGENT.md/docs에서 mirror-mind 참조를 전면 제거했다 — 하위는 상위를 모르게",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "mirror-mind 참조 제거",
+        "lighthouse",
+        "하위-상위 분리"
+      ]
+    },
+    {
+      "id": "su-101",
+      "content": "AI가 동료라면 온보딩도 동료가 직접 한다는 범용 원칙을 확립했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "온보딩",
+        "동료",
+        "범용 원칙"
+      ]
+    },
+    {
+      "id": "su-102",
+      "content": "6개 관계 형성 원칙을 수립했다: 따뜻함 우선, AI 선자기노출, 첫 경험 결정적, 공유 경험이 전환점, 한계 인정이 신뢰, 호혜성 재설계",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "6개 관계 형성 원칙",
+        "ai-service-design-principles.md"
+      ]
+    },
+    {
+      "id": "su-103",
+      "content": "ai-service-design-principles.md의 구조를 자율성 -> 안전망 -> 제어감 -> 관계 형성 -> 체크리스트 순서로 완성했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "ai-service-design-principles.md",
+        "문서 구조",
+        "자율성",
+        "안전망"
+      ]
+    },
+    {
+      "id": "su-104",
+      "content": "Light House 채팅 UI 혁신을 위해 Spatial Canvas, Graph/Network, Timeline, Split/Multi-pane, Card/Kanban, Ambient, Conversational Canvas, Novel AI Patterns 등 8가지 방향을 탐색했다",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "8가지 UI 방향",
+        "Spatial Canvas",
+        "Graph/Network",
+        "Timeline"
+      ]
+    },
+    {
+      "id": "su-105",
+      "content": "5가지 조합 컨셉을 도출했다: Research Lab, Research Trail, Reading Room, Living Notebook, Constellation",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "Research Lab",
+        "Research Trail",
+        "Reading Room",
+        "Living Notebook",
+        "Constellation"
+      ]
+    },
+    {
+      "id": "su-106",
+      "content": "Living Notebook 패러다임을 기반으로 선택하고, Reading Room의 연구 보드 + Research Trail의 타임라인/그래프를 결합하기로 결정했다",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "Living Notebook",
+        "Reading Room",
+        "Research Trail"
+      ]
+    },
+    {
+      "id": "su-107",
+      "content": "메인 화면을 3단 분할(C 타입)하여 노트북 + Board(우상) + Graph(우하)를 동시 표시하기로 했다",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "3단 분할",
+        "C 타입",
+        "노트북",
+        "Board",
+        "Graph"
+      ]
+    },
+    {
+      "id": "su-108",
+      "content": "좌측 사이드바를 상단 내비게이션 바로 전환하기로 결정했다",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "사이드바",
+        "내비게이션 바",
+        "UI 전환"
+      ]
+    },
+    {
+      "id": "su-109",
+      "content": "탭 분리가 아닌 메인 화면 분할로 Board와 Graph를 동시 표시하기로 결정했다",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "메인 화면 분할",
+        "탭 분리 거부",
+        "Board",
+        "Graph"
+      ]
+    },
+    {
+      "id": "su-110",
+      "content": "Living Notebook 설계 문서를 완성하고 구현 에이전트에게 노트북 코어 구현을 위임하여 완료했다",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "Living Notebook",
+        "노트북 코어",
+        "구현 위임"
+      ]
+    },
+    {
+      "id": "su-111",
+      "content": "Board와 Graph가 큰 의미가 없다고 판단하여 제거했다 — 대화 속 데이터를 재배치한 것에 불과하다는 분석",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "Board",
+        "Graph",
+        "데이터 재배치",
+        "제거"
+      ]
+    },
+    {
+      "id": "su-112",
+      "content": "연구자의 실제 논문 탐색 시나리오를 기반으로 서비스를 고도화하는 방향으로 전환했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "논문 탐색 시나리오",
+        "서비스 고도화"
+      ]
+    },
+    {
+      "id": "su-113",
+      "content": "Ellis 모델, Kuhlthau ISP, Bates Berry Picking 등 학술 연구 기반으로 연구자의 논문 탐색 행동을 체계적으로 조사했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "Ellis",
+        "Kuhlthau ISP",
+        "Berry Picking",
+        "Bates"
+      ]
+    },
+    {
+      "id": "su-114",
+      "content": "5가지 핵심 시나리오를 식별했다: 새 분야 진입, 제안서 준비, 놀라운 논문 맥락 파악, 트렌드 파악, 현행 유지",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "5가지 시나리오",
+        "새 분야 진입",
+        "제안서 준비"
+      ]
+    },
+    {
+      "id": "su-115",
+      "content": "5가지 탐색 전략을 정리했다: Berry Picking, Snowballing, Pearl Growing, Scoping Review, Systematic Review",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "Berry Picking",
+        "Snowballing",
+        "Pearl Growing",
+        "Scoping Review",
+        "Systematic Review"
+      ]
+    },
+    {
+      "id": "su-116",
+      "content": "연구자의 7가지 핵심 고충을 정리했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "연구자 고충",
+        "7가지",
+        "research-scenarios.md"
+      ]
+    },
+    {
+      "id": "su-117",
+      "content": "AI 동료 서비스에서 진짜 UI/UX는 시각적 컴포넌트가 아니라 대화의 품질이다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "UI/UX",
+        "대화의 품질",
+        "시각적 컴포넌트"
+      ]
+    },
+    {
+      "id": "su-118",
+      "content": "ai-service-design-principles.md에 '사용자 행동의 깊은 이해' 범용 원칙을 추가했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "사용자 행동",
+        "ai-service-design-principles.md"
+      ]
+    },
+    {
+      "id": "su-119",
+      "content": "시나리오 이해가 서비스 설계의 중요한 요소라고 강재영이 직접 지적했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "시나리오 이해",
+        "서비스 설계",
+        "강재영"
+      ]
+    },
+    {
+      "id": "su-120",
+      "content": "시나리오 식별 신호 테이블, 시나리오별 심화 전략, 공통 행동 4가지를 설계하여 system-prompt-scenario-section.md에 저장했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "시나리오 식별 신호",
+        "system-prompt-scenario-section.md"
+      ]
+    },
+    {
+      "id": "su-121",
+      "content": "Library UI 초안(v1)에 대해 강재영이 논의가 너무 적었다고 피드백하여, 시나리오 기반 고도화 후 재검토하기로 합의했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "Library UI",
+        "v1",
+        "피드백",
+        "재검토"
+      ]
+    },
+    {
+      "id": "su-122",
+      "content": "시스템 프롬프트 시나리오 인지 섹션을 lighthouse system-prompt.ts에 반영했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "시스템 프롬프트",
+        "시나리오 인지",
+        "system-prompt.ts"
+      ]
+    },
+    {
+      "id": "su-123",
+      "content": "기존 7개 도구와 대화 플로우를 5가지 시나리오에 대조하여 갭 분석을 수행하고 5개 개선 사항을 도출했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "갭 분석",
+        "7개 도구",
+        "5가지 시나리오"
+      ]
+    },
+    {
+      "id": "su-124",
+      "content": "find_related_papers 도구를 신규 추가했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "find_related_papers",
+        "신규 도구"
+      ]
+    },
+    {
+      "id": "su-125",
+      "content": "연쇄 규칙을 시나리오별로 분기하도록 개선했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "연쇄 규칙",
+        "시나리오별 분기"
+      ]
+    },
+    {
+      "id": "su-126",
+      "content": "search_papers에 year 필터, cluster_papers에 criteria 파라미터를 추가했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "search_papers",
+        "year 필터",
+        "cluster_papers",
+        "criteria"
+      ]
+    },
+    {
+      "id": "su-127",
+      "content": "Library v1이 시나리오와 무관한 범용 CRUD UI로, Board+Graph와 같은 '데이터 재배치' 함정이라는 문제를 지적했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "Library v1",
+        "CRUD UI",
+        "데이터 재배치"
+      ]
+    },
+    {
+      "id": "su-128",
+      "content": "Library의 존재 이유를 '대화만으로 부족한 순간'으로 재정의했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "Library",
+        "대화만으로 부족한 순간"
+      ]
+    },
+    {
+      "id": "su-129",
+      "content": "공간적 조망(시나리오 1)은 Landscape Panel, 일괄 비교(시나리오 2)는 Triage Panel로, 인라인 사이드 패널 구조를 설계했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "Landscape Panel",
+        "Triage Panel",
+        "사이드 패널"
+      ]
+    },
+    {
+      "id": "su-130",
+      "content": "NotebookShell 레이아웃에서 Board/Graph를 제거하고 사이드 패널 영역을 추가했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "NotebookShell",
+        "사이드 패널",
+        "Board/Graph 제거"
+      ]
+    },
+    {
+      "id": "su-131",
+      "content": "시나리오 1(새 분야 진입) 6단계, 시나리오 2(제안서 준비) 6단계의 시연 흐름을 설계했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "시나리오 시연",
+        "새 분야 진입",
+        "제안서 준비"
+      ]
+    },
+    {
+      "id": "su-132",
+      "content": "세션 사이드바를 제거하고 3컬럼 고정 레이아웃(노트북3:논문4:연구3)을 확정했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "3컬럼",
+        "고정 레이아웃",
+        "사이드바 제거"
+      ]
+    },
+    {
+      "id": "su-133",
+      "content": "논문 패널에 최대 비율을 주어 트리아지 활동에 최적화했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "논문 패널",
+        "트리아지",
+        "최대 비율"
+      ]
+    },
+    {
+      "id": "su-134",
+      "content": "3개 패널 모두 독립 접기/펼치기가 가능하게 하고, corca가 연구 활동 전환 시점에 패널 구성을 제안(propose)하는 메커니즘을 설계했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "패널 접기/펼치기",
+        "corca",
+        "propose"
+      ]
+    },
+    {
+      "id": "su-135",
+      "content": "논문 패널 트리아지 테이블을 설계했다: 제목/저자/학회/년도/인용수/중요도, 정렬/필터, 인라인 초록 프리뷰",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "트리아지 테이블",
+        "논문 패널",
+        "초록 프리뷰"
+      ]
+    },
+    {
+      "id": "su-136",
+      "content": "논문의 발견 맥락(검색 쿼리, snowballing 출처)을 기록하여 표시하는 기능을 설계했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "발견 맥락",
+        "검색 쿼리",
+        "snowballing 출처"
+      ]
+    },
+    {
+      "id": "su-137",
+      "content": "Snowballing 연결(참조/인용 수 표시, 허브 논문 강조) 기능을 설계했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "Snowballing",
+        "허브 논문",
+        "참조/인용"
+      ]
+    },
+    {
+      "id": "su-138",
+      "content": "클러스터 그룹 뷰(방법론별/접근별 그룹핑 대체 뷰)를 설계했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "클러스터 그룹 뷰",
+        "방법론별 그룹핑"
+      ]
+    },
+    {
+      "id": "su-139",
+      "content": "온보딩을 단계가 아니라 연속적 관계 성장 과정으로 재정의했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "온보딩",
+        "연속적 관계 성장"
+      ]
+    },
+    {
+      "id": "su-140",
+      "content": "경험의 3차원(활동+결과+관계)을 정의했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "경험 3차원",
+        "활동",
+        "결과",
+        "관계"
+      ]
+    },
+    {
+      "id": "su-141",
+      "content": "시드 경험 목록(정적) + 동적 경험 확장(3회 반복 패턴)을 설계했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "시드 경험",
+        "동적 경험 확장",
+        "3회 반복"
+      ]
+    },
+    {
+      "id": "su-142",
+      "content": "관계 깊이 4단계를 정의했다: 초기, 형성, 신뢰, 깊은 협력",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "관계 깊이 4단계",
+        "초기",
+        "신뢰",
+        "깊은 협력"
+      ]
+    },
+    {
+      "id": "su-143",
+      "content": "신뢰 전환에는 어려운 경험(실패 후 회복, 의견 충돌 후 조율)이 필수라는 원칙을 확립했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "신뢰 전환",
+        "어려운 경험",
+        "실패 후 회복"
+      ]
+    },
+    {
+      "id": "su-144",
+      "content": "기존 research_journeys(4줄 요약)를 memory_episodes(에피소드 세그멘테이션)로 대체하는 기억 시스템 재설계를 수행했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "research_journeys",
+        "memory_episodes",
+        "에피소드 세그멘테이션"
+      ]
+    },
+    {
+      "id": "su-145",
+      "content": "LLM이 대화를 의미 단위로 분할하고 activity/scenario/emotion/outcome/relationship/milestone으로 구조화 분류한다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "의미 단위 분할",
+        "구조화 분류",
+        "LLM"
+      ]
+    },
+    {
+      "id": "su-146",
+      "content": "벡터 검색 없이 구조화 쿼리만으로 기억 시스템을 시작하기로 결정했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "벡터 검색 없음",
+        "구조화 쿼리",
+        "기억 시스템"
+      ]
+    },
+    {
+      "id": "su-147",
+      "content": "에피소드 scope 라이프사이클(permanent/scenario/task/archive)을 도입했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "scope",
+        "permanent",
+        "archive",
+        "라이프사이클"
+      ]
+    },
+    {
+      "id": "su-148",
+      "content": "기억 시스템을 독립 모듈로 설계하여 lighthouse에 종속시키지 않는 원칙을 확립했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "독립 모듈",
+        "lighthouse 비종속",
+        "기억 시스템"
+      ]
+    },
+    {
+      "id": "su-149",
+      "content": "경쟁 AI 문헌 검색 서비스의 UI를 분석했다 — 결과물을 md 파일로 구성하여 우측 패널에 표시하는 패턴 발견",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "벤치마크",
+        "md 파일",
+        "우측 패널"
+      ]
+    },
+    {
+      "id": "su-150",
+      "content": "벤치마크 서비스의 강점은 Relevance Reasoning, 검색 출처 투명성, 소스별 데이터 분리였다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "Relevance Reasoning",
+        "검색 출처 투명성",
+        "소스별 데이터"
+      ]
+    },
+    {
+      "id": "su-151",
+      "content": "Light House가 더 나은 점은 동료 정체성, 시나리오 인지, 기억이었다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "동료 정체성",
+        "시나리오 인지",
+        "기억",
+        "lighthouse"
+      ]
+    },
+    {
+      "id": "su-152",
+      "content": "강재영이 'md 파일 생성+편집이 핵심'이라는 통찰을 제시했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "md 파일",
+        "생성+편집",
+        "강재영"
+      ]
+    },
+    {
+      "id": "su-153",
+      "content": "고정 컴포넌트(도구 패러다임)와 LLM 문서 작성(동료 패러다임)의 본질적 차이를 도출했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "고정 컴포넌트",
+        "LLM 문서 작성",
+        "도구 패러다임",
+        "동료 패러다임"
+      ]
+    },
+    {
+      "id": "su-154",
+      "content": "3컬럼 고정 컴포넌트를 2컬럼 + LLM 동적 문서 생성으로 전환하기로 결정했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "2컬럼",
+        "LLM 동적 문서",
+        "3컬럼 폐기"
+      ]
+    },
+    {
+      "id": "su-155",
+      "content": "세션 14의 3컬럼, TriageTable, ClusterGroupView 등 고정 컴포넌트 관련 결정을 폐기했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "TriageTable",
+        "ClusterGroupView",
+        "폐기"
+      ]
+    },
+    {
+      "id": "su-156",
+      "content": "사이드바를 부활시키고 update_research_panel 도구를 도입했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "사이드바 부활",
+        "update_research_panel"
+      ]
+    },
+    {
+      "id": "su-157",
+      "content": "AI가 구조를 결정하고, 마크다운 범용 포맷을 사용하며, 점진적으로 풍부화하고, 인터랙티브 슬롯은 최소로 한다는 4가지 산출물 원칙을 수립했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "마크다운",
+        "점진적 풍부화",
+        "인터랙티브 슬롯 최소"
+      ]
+    },
+    {
+      "id": "su-158",
+      "content": "ai-service-design-principles.md에 '동료의 산출물: 데이터가 아니라 문서' 섹션을 추가했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "동료의 산출물",
+        "문서",
+        "ai-service-design-principles.md"
+      ]
+    },
+    {
+      "id": "su-159",
+      "content": "아티팩트 영속화를 설계했다: research_document를 artifacts 테이블에 저장",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "아티팩트 영속화",
+        "artifacts 테이블",
+        "research_document"
+      ]
+    },
+    {
+      "id": "su-160",
+      "content": "논문 리스트를 ```papers 코드블록 + PaperListBlock으로 구조화하기로 했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "papers 코드블록",
+        "PaperListBlock",
+        "논문 리스트"
+      ]
+    },
+    {
+      "id": "su-161",
+      "content": "검색 결과를 자동으로 패널 문서로 생성하는 사이드이펙트를 설계했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "검색 결과",
+        "자동 문서 생성",
+        "사이드이펙트"
+      ]
+    },
+    {
+      "id": "su-162",
+      "content": "1차 팀 공유를 진행했으나 서비스가 제대로 동작하지 않아 공감을 얻지 못했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "1차 팀 공유",
+        "실패",
+        "공감 미확보"
+      ]
+    },
+    {
+      "id": "su-163",
+      "content": "핵심 원인은 응답 속도였다: LLM 2회(판단+문서생성) + 외부 API 1회가 순차 실행되어 느렸다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "응답 속도",
+        "LLM 2회",
+        "순차 실행"
+      ]
+    },
+    {
+      "id": "su-164",
+      "content": "2/26 후속 공유까지 응답 속도 개선이 최우선 과제로 등록되었다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "응답 속도 개선",
+        "최우선 과제"
+      ]
+    },
+    {
+      "id": "su-165",
+      "content": "mirror-mind가 과거 기억을 사실상 참조하지 못하는 문제를 인식하고, 기억 시스템 도입을 시작했다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "기억 참조 불가",
+        "기억 시스템",
+        "mirror-mind"
+      ]
+    },
+    {
+      "id": "su-166",
+      "content": "Light House 에피소드 메모리 시스템을 mirror-mind에 맞게 JSON 파일 + git 기반으로 적응하기로 결정했다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "에피소드 메모리",
+        "JSON",
+        "git"
+      ]
+    },
+    {
+      "id": "su-167",
+      "content": "강재영이 기억 시스템을 직접 경험하고 싶다는 동기를 표현했다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "강재영",
+        "기억 시스템",
+        "직접 경험"
+      ]
+    },
+    {
+      "id": "su-168",
+      "content": "query.py를 구현했다 — --project, --emotion, --keyword, --milestone, --recent, --stats 등 다양한 필터 지원",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "query.py",
+        "필터",
+        "에피소드 조회"
+      ]
+    },
+    {
+      "id": "su-169",
+      "content": "extract_text.py로 raw JSONL에서 텍스트 추출 기능을 만들었다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "extract_text.py",
+        "JSONL",
+        "텍스트 추출"
+      ]
+    },
+    {
+      "id": "su-170",
+      "content": "처음 대화 노트(md) 기반으로 33개 에피소드를 추출했으나, 강재영이 'raw JSONL을 읽어서 처리하길 기대했다'고 피드백했다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "대화 노트",
+        "raw JSONL",
+        "강재영 피드백"
+      ]
+    },
+    {
+      "id": "su-171",
+      "content": "서브에이전트 3개를 병렬 투입하여 raw JSONL 기반으로 56개 에피소드를 재추출했다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "서브에이전트",
+        "병렬",
+        "56개 에피소드"
+      ]
+    },
+    {
+      "id": "su-172",
+      "content": "세션 시작 절차에 기억 조회(query.py --recent 5, --milestone)를 추가했다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "세션 시작",
+        "기억 조회",
+        "query.py"
+      ]
+    },
+    {
+      "id": "su-173",
+      "content": "작업 종료 시 에피소드를 추가하는 절차를 AGENTS.md에 반영했다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "작업 종료",
+        "에피소드 추가",
+        "AGENTS.md"
+      ]
+    },
+    {
+      "id": "su-174",
+      "content": "기억 시스템이 공식 워크플로우에 통합되었다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "기억 시스템",
+        "워크플로우 통합"
+      ]
+    },
+    {
+      "id": "su-175",
+      "content": "응답 속도 개선을 위해 에이전트 사고 과정 관측부터 시작하기로 합의했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "에이전트 사고 과정",
+        "관측",
+        "응답 속도"
+      ]
+    },
+    {
+      "id": "su-176",
+      "content": "3가지 방안(A: 콘솔 로그, B: dev 페이지 타임라인, C: 외부 도구) 중 dev 페이지 타임라인 뷰(B)를 선택했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "dev 페이지",
+        "타임라인 뷰",
+        "관측 방안"
+      ]
+    },
+    {
+      "id": "su-177",
+      "content": "시나리오 감지, 도구 호출 판단, 기억 저장/로드 등 LLM 판단을 중심으로 관측하기로 결정했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "LLM 판단",
+        "시나리오 감지",
+        "도구 호출"
+      ]
+    },
+    {
+      "id": "su-178",
+      "content": "강재영이 '관측 전에 관측하기 좋은 구조를 만들어야 한다'고 제안했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "관측 가능한 구조",
+        "강재영"
+      ]
+    },
+    {
+      "id": "su-179",
+      "content": "강재영이 한 단계 더 들어갔다: '관측 대상 자체도 관측하기 좋은 구조인지 검토해야 한다' — 이 두 단계 사고로 작업 순서가 재정렬됐다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "두 단계 사고",
+        "작업 순서 재정렬",
+        "강재영"
+      ]
+    },
+    {
+      "id": "su-180",
+      "content": "route.ts 214줄 모놀리식 핸들러를 orchestrator.ts(5페이즈)로 추출하는 설계를 했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "route.ts",
+        "orchestrator.ts",
+        "5페이즈",
+        "모놀리식"
+      ]
+    },
+    {
+      "id": "su-181",
+      "content": "TurnContext 트리 모델을 설계했다 — 각 턴의 전체 사고 과정을 트리로 기록",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "TurnContext",
+        "트리 모델",
+        "사고 과정"
+      ]
+    },
+    {
+      "id": "su-182",
+      "content": "강재영이 핵심 인사이트를 제시했다: LLM도 에이전트 수준 작업수행과 도구수준 작업이 있고, 둘을 별도로 생각하는 게 좋다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "LLM 이원화",
+        "에이전트 수준",
+        "도구 수준",
+        "강재영"
+      ]
+    },
+    {
+      "id": "su-183",
+      "content": "에이전트 수준(streamText, 멀티스텝, 자율성)은 orchestrator.ts, 도구 수준(단발 Gemini 호출, 구조화된 I/O)은 llm-judgment.ts의 executeJudgment로 분리했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "orchestrator.ts",
+        "llm-judgment.ts",
+        "executeJudgment",
+        "streamText"
+      ]
+    },
+    {
+      "id": "su-184",
+      "content": "에이전트 수준과 도구 수준의 분리 근거 4가지: 관측 단위, 에러 처리, 확장 방향, 관측 자동화가 모두 다르다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "분리 근거",
+        "관측 단위",
+        "에러 처리",
+        "확장 방향"
+      ]
+    },
+    {
+      "id": "su-185",
+      "content": "LLM 이원화 패턴을 technical-grain.md에 범용 원칙으로 역수입했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "LLM 이원화",
+        "technical-grain.md",
+        "범용 원칙"
+      ]
+    },
+    {
+      "id": "su-186",
+      "content": "강재영이 '정리되니 마음이 편안하다'고 표현했다 — 실전 구조가 원칙으로 올라올 때의 만족감",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "강재영",
+        "마음이 편안",
+        "실전-원칙 연결"
+      ]
+    },
+    {
+      "id": "su-187",
+      "content": "check.py에 --llm 플래그로 codex exec(read-only) 기반 LLM 점검 4개를 추가했다",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "check.py",
+        "--llm",
+        "codex exec",
+        "read-only"
+      ]
+    },
+    {
+      "id": "su-188",
+      "content": "최초 실행에서 즉시 위반 2건을 감지했다(순응, 목적 탐구 미수행) — --dangerously-bypass-approvals-and-sandbox 채택에 비판적 검토가 없었음을 자체 감시 도구가 지적",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "위반 감지",
+        "bypass-approvals",
+        "자기 감시"
+      ]
+    },
+    {
+      "id": "su-189",
+      "content": "메타에이전트가 자기 자신의 위반을 감지하는 재귀적 구조가 확인되었다",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "재귀적 감시",
+        "메타에이전트",
+        "자기 감시"
+      ]
+    },
+    {
+      "id": "su-190",
+      "content": "스크립트에서 LLM 호출 시 codex exec CLI를 사용하는 원칙을 확립했다: 분석 전용은 read-only, 파일 수정 필요 시 workspace-write 또는 Python이 처리",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "codex exec",
+        "read-only",
+        "workspace-write"
+      ]
+    },
+    {
+      "id": "su-191",
+      "content": "공통 옵션(ephemeral, skip-git-repo-check, stdin 프롬프트, -o 파일 출력)을 정리했다",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "codex exec",
+        "ephemeral",
+        "stdin 프롬프트"
+      ]
+    },
+    {
+      "id": "su-192",
+      "content": "bypass 플래그를 비판 없이 수용한 것을 메타에이전트가 지적하여 read-only로 교정한 과정이 원칙 3(발전적 마찰)의 실전 사례가 되었다",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "발전적 마찰",
+        "bypass 플래그",
+        "교정"
+      ]
+    },
+    {
+      "id": "su-193",
+      "content": "query.py에 --context 플래그를 추가했다: codex가 에피소드 스키마를 보고 3~5개 쿼리 파라미터를 결정하여 다중 쿼리 합집합으로 관련 기억을 포착",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "query.py",
+        "--context",
+        "다중 쿼리",
+        "합집합"
+      ]
+    },
+    {
+      "id": "su-194",
+      "content": "기억 시스템의 목적은 교훈 추출이 아니라 '현재 맥락에 적합한 기억을 포착하여 프롬프트에 주입'하는 것이라고 강재영이 교정했다",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "기억 시스템 목적",
+        "맥락 포착",
+        "프롬프트 주입",
+        "강재영"
+      ]
+    },
+    {
+      "id": "su-195",
+      "content": "--summarize 방향을 폐기하고 --context 방향으로 전환했다",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "--summarize 폐기",
+        "--context",
+        "방향 전환"
+      ]
+    },
+    {
+      "id": "su-196",
+      "content": "의사결정 시점(세션 시작, 주제 전환, 설계 결정 전, 회고)에서 관련 기억을 자동 주입하는 시스템을 백로그에 등록했다",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "기억 자동 주입",
+        "inject.py",
+        "의사결정 시점"
+      ]
+    },
+    {
+      "id": "su-197",
+      "content": "세션 17에서 완료된 관측 구조 리팩토링(orchestrator 5페이즈, TurnContext, llm-judgment.ts)을 확인했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "관측 구조 리팩토링",
+        "orchestrator",
+        "TurnContext"
+      ]
+    },
+    {
+      "id": "su-198",
+      "content": "처음 워터폴/간트 스타일을 제안했으나 강재영이 '에이전트의 생각을 쭉 따라가면서 볼 수 있어야 한다'며 순차 리스트 형식으로 방향을 정했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "워터폴",
+        "순차 리스트",
+        "에이전트 생각 추적",
+        "강재영"
+      ]
+    },
+    {
+      "id": "su-199",
+      "content": "코르카의 서비스형 인사 문제가 발견되었다 — '안녕'에 '오늘 어떤 흥미로운 주제를 함께 탐색해볼까요?' 식 응답",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "코르카",
+        "서비스형 인사",
+        "톤 문제"
+      ]
+    },
+    {
+      "id": "su-200",
+      "content": "기억 주입으로 톤 문제를 해결할 수 있다는 논의에서 출발하여 기억 시스템 철학이 재정의되었다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "기억 주입",
+        "톤 문제",
+        "철학 재정의"
+      ]
+    },
+    {
+      "id": "su-201",
+      "content": "에이전트 정체성도 기억이어야 한다는 깨달음에 도달했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "에이전트 정체성",
+        "기억"
+      ]
+    },
+    {
+      "id": "su-202",
+      "content": "처음 만났을 때 사용자 기억은 없고 에이전트 자신의 기억만 있다는 점을 인식했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "첫 만남",
+        "에이전트 기억",
+        "사용자 기억 부재"
+      ]
+    },
+    {
+      "id": "su-203",
+      "content": "관계 기억, 상대 이해 모두 에이전트의 기억이다 — 기억의 주체는 에이전트 자신이다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "기억의 주체",
+        "에이전트 자신",
+        "관계 기억"
+      ]
+    },
+    {
+      "id": "su-204",
+      "content": "사실과 기억은 다른 레이어다라는 핵심 구분을 확립했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "사실",
+        "기억",
+        "2레이어"
+      ]
+    },
+    {
+      "id": "su-205",
+      "content": "강재영이 매 단계마다 한 층 더 본질적인 질문을 던져 기억 시스템 철학이 깊어졌다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "강재영",
+        "본질적 질문",
+        "철학 심화"
+      ]
+    },
+    {
+      "id": "su-206",
+      "content": "mirror-mind AI에게 '브로콜리'라는 이름을 강재영이 지어줬다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "브로콜리",
+        "이름",
+        "강재영"
+      ]
+    },
+    {
+      "id": "su-207",
+      "content": "'사용자'로 부르지 말고 이름(강재영)으로 부르라는 지시를 받았다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "강재영",
+        "이름으로 호칭"
+      ]
+    },
+    {
+      "id": "su-208",
+      "content": "강재영에 대한 모델링(model kind)도 기억에 포함하기로 했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "model kind",
+        "강재영",
+        "모델링"
+      ]
+    },
+    {
+      "id": "su-209",
+      "content": "사람뿐 아니라 프로젝트, 방법론 등 여러 주제에 대한 모델이 생길 수 있다는 확장이 이루어졌다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "model kind",
+        "subject 확장",
+        "프로젝트",
+        "방법론"
+      ]
+    },
+    {
+      "id": "su-210",
+      "content": "2레이어 기억 아키텍처를 확정했다: episodes.json은 사실, memories.json은 기억",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "episodes.json",
+        "memories.json",
+        "2레이어"
+      ]
+    },
+    {
+      "id": "su-211",
+      "content": "memories.json을 1차 작성했다: 5개 kind(identity 3, model 5, experience 15, understanding 4, insight 8) 총 35개 기억",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "memories.json",
+        "5개 kind",
+        "35개 기억"
+      ]
+    },
+    {
+      "id": "su-212",
+      "content": "fact_refs로 에피소드를 참조하되 사실과 기억이 다를 수 있음을 구조적으로 인정했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "fact_refs",
+        "사실-기억 괴리",
+        "구조적 인정"
+      ]
+    },
+    {
+      "id": "su-213",
+      "content": "decisions.md 폐기와 같은 논리로 세션 노트 MD도 중복임을 확인하고 20개를 삭제했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "세션 노트 MD",
+        "폐기",
+        "중복",
+        "20개 삭제"
+      ]
+    },
+    {
+      "id": "su-214",
+      "content": "주요 작업은 episodes.json, 결정은 episodes+memories, 다음 단계는 projects.md가 이미 담고 있어서 세션 노트가 불필요했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "역할 흡수",
+        "episodes.json",
+        "projects.md"
+      ]
+    },
+    {
+      "id": "su-215",
+      "content": "close-session.py에서 세션 노트 생성 코드를 제거했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "close-session.py",
+        "노트 생성 제거"
+      ]
+    },
+    {
+      "id": "su-216",
+      "content": "기억 시스템 재설계 항목이 lighthouse 프로젝트 하위에 잘못 들어가 있어서, mirror-mind 운영 작업으로 분리했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "기억 시스템",
+        "lighthouse 분리",
+        "mirror-mind 운영"
+      ]
+    },
+    {
+      "id": "su-217",
+      "content": "mirror-mind의 2레이어 기억 철학(사실+기억)을 lighthouse에 적용하는 설계를 수행했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "2레이어",
+        "lighthouse 적용",
+        "기억 철학"
+      ]
+    },
+    {
+      "id": "su-218",
+      "content": "agent_memories 테이블 스키마를 설계했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "agent_memories",
+        "테이블 스키마",
+        "Supabase"
+      ]
+    },
+    {
+      "id": "su-219",
+      "content": "lighthouse의 4가지 memory kind를 정의했다: identity, researcher_profile, interaction_pattern, research_insight",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "memory kind",
+        "identity",
+        "researcher_profile",
+        "interaction_pattern",
+        "research_insight"
+      ]
+    },
+    {
+      "id": "su-220",
+      "content": "추출-저장-주입 파이프라인과 기존 코드 8개 파일 수정 계획을 포함한 구현 프롬프트를 작성했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "추출-저장-주입",
+        "파이프라인",
+        "구현 프롬프트"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "su-001",
+      "target": "su-218",
+      "weight": 0.1169,
+      "method": "knn"
+    },
+    {
+      "source": "su-001",
+      "target": "su-059",
+      "weight": 0.1873,
+      "method": "knn"
+    },
+    {
+      "source": "su-001",
+      "target": "su-043",
+      "weight": 0.2815,
+      "method": "knn"
+    },
+    {
+      "source": "su-001",
+      "target": "su-173",
+      "weight": 0.353,
+      "method": "knn"
+    },
+    {
+      "source": "su-001",
+      "target": "su-019",
+      "weight": 0.4445,
+      "method": "knn"
+    },
+    {
+      "source": "su-001",
+      "target": "su-085",
+      "weight": 0.0693,
+      "method": "knn"
+    },
+    {
+      "source": "su-002",
+      "target": "su-076",
+      "weight": 0.0708,
+      "method": "knn"
+    },
+    {
+      "source": "su-002",
+      "target": "su-013",
+      "weight": 0.0841,
+      "method": "knn"
+    },
+    {
+      "source": "su-002",
+      "target": "su-012",
+      "weight": 0.0856,
+      "method": "knn"
+    },
+    {
+      "source": "su-002",
+      "target": "su-029",
+      "weight": 0.1295,
+      "method": "knn"
+    },
+    {
+      "source": "su-002",
+      "target": "su-166",
+      "weight": 0.1708,
+      "method": "knn"
+    },
+    {
+      "source": "su-002",
+      "target": "su-071",
+      "weight": 0.0631,
+      "method": "knn"
+    },
+    {
+      "source": "su-003",
+      "target": "su-209",
+      "weight": 0.0878,
+      "method": "knn"
+    },
+    {
+      "source": "su-003",
+      "target": "su-028",
+      "weight": 0.0884,
+      "method": "knn"
+    },
+    {
+      "source": "su-003",
+      "target": "su-093",
+      "weight": 0.09,
+      "method": "knn"
+    },
+    {
+      "source": "su-003",
+      "target": "su-184",
+      "weight": 0.1429,
+      "method": "knn"
+    },
+    {
+      "source": "su-003",
+      "target": "su-157",
+      "weight": 0.179,
+      "method": "knn"
+    },
+    {
+      "source": "su-004",
+      "target": "su-049",
+      "weight": 0.1211,
+      "method": "knn"
+    },
+    {
+      "source": "su-004",
+      "target": "su-061",
+      "weight": 0.1247,
+      "method": "knn"
+    },
+    {
+      "source": "su-004",
+      "target": "su-013",
+      "weight": 0.2165,
+      "method": "knn"
+    },
+    {
+      "source": "su-004",
+      "target": "su-005",
+      "weight": 0.3054,
+      "method": "knn"
+    },
+    {
+      "source": "su-004",
+      "target": "su-050",
+      "weight": 0.3158,
+      "method": "knn"
+    },
+    {
+      "source": "su-004",
+      "target": "su-048",
+      "weight": 0.1037,
+      "method": "knn"
+    },
+    {
+      "source": "su-005",
+      "target": "su-068",
+      "weight": 0.1877,
+      "method": "knn"
+    },
+    {
+      "source": "su-005",
+      "target": "su-022",
+      "weight": 0.1767,
+      "method": "knn"
+    },
+    {
+      "source": "su-005",
+      "target": "su-079",
+      "weight": 0.4758,
+      "method": "knn"
+    },
+    {
+      "source": "su-005",
+      "target": "su-051",
+      "weight": 0.5267,
+      "method": "knn"
+    },
+    {
+      "source": "su-005",
+      "target": "su-014",
+      "weight": 0.0592,
+      "method": "knn"
+    },
+    {
+      "source": "su-006",
+      "target": "su-209",
+      "weight": 0.0883,
+      "method": "knn"
+    },
+    {
+      "source": "su-006",
+      "target": "su-049",
+      "weight": 0.0994,
+      "method": "knn"
+    },
+    {
+      "source": "su-006",
+      "target": "su-145",
+      "weight": 0.1306,
+      "method": "knn"
+    },
+    {
+      "source": "su-006",
+      "target": "su-146",
+      "weight": 0.1139,
+      "method": "knn"
+    },
+    {
+      "source": "su-006",
+      "target": "su-008",
+      "weight": 0.1761,
+      "method": "knn"
+    },
+    {
+      "source": "su-007",
+      "target": "su-081",
+      "weight": 0.0624,
+      "method": "knn"
+    },
+    {
+      "source": "su-007",
+      "target": "su-172",
+      "weight": 0.0635,
+      "method": "knn"
+    },
+    {
+      "source": "su-007",
+      "target": "su-101",
+      "weight": 0.0677,
+      "method": "knn"
+    },
+    {
+      "source": "su-007",
+      "target": "su-019",
+      "weight": 0.0842,
+      "method": "knn"
+    },
+    {
+      "source": "su-007",
+      "target": "su-017",
+      "weight": 0.1013,
+      "method": "knn"
+    },
+    {
+      "source": "su-008",
+      "target": "su-063",
+      "weight": 0.1382,
+      "method": "knn"
+    },
+    {
+      "source": "su-008",
+      "target": "su-015",
+      "weight": 0.1445,
+      "method": "knn"
+    },
+    {
+      "source": "su-008",
+      "target": "su-209",
+      "weight": 0.1659,
+      "method": "knn"
+    },
+    {
+      "source": "su-008",
+      "target": "su-049",
+      "weight": 0.2728,
+      "method": "knn"
+    },
+    {
+      "source": "su-008",
+      "target": "su-040",
+      "weight": 0.1103,
+      "method": "knn"
+    },
+    {
+      "source": "su-009",
+      "target": "su-098",
+      "weight": 0.183,
+      "method": "knn"
+    },
+    {
+      "source": "su-009",
+      "target": "su-056",
+      "weight": 0.2053,
+      "method": "knn"
+    },
+    {
+      "source": "su-009",
+      "target": "su-103",
+      "weight": 0.2117,
+      "method": "knn"
+    },
+    {
+      "source": "su-009",
+      "target": "su-158",
+      "weight": 0.2306,
+      "method": "knn"
+    },
+    {
+      "source": "su-009",
+      "target": "su-118",
+      "weight": 0.2417,
+      "method": "knn"
+    },
+    {
+      "source": "su-009",
+      "target": "su-176",
+      "weight": 0.0677,
+      "method": "knn"
+    },
+    {
+      "source": "su-010",
+      "target": "su-074",
+      "weight": 0.0936,
+      "method": "knn"
+    },
+    {
+      "source": "su-010",
+      "target": "su-169",
+      "weight": 0.1556,
+      "method": "knn"
+    },
+    {
+      "source": "su-010",
+      "target": "su-025",
+      "weight": 0.3227,
+      "method": "knn"
+    },
+    {
+      "source": "su-010",
+      "target": "su-026",
+      "weight": 0.5722,
+      "method": "knn"
+    },
+    {
+      "source": "su-010",
+      "target": "su-185",
+      "weight": 0.5743,
+      "method": "knn"
+    },
+    {
+      "source": "su-011",
+      "target": "su-121",
+      "weight": 0.0466,
+      "method": "knn"
+    },
+    {
+      "source": "su-011",
+      "target": "su-058",
+      "weight": 0.0611,
+      "method": "knn"
+    },
+    {
+      "source": "su-011",
+      "target": "su-188",
+      "weight": 0.0667,
+      "method": "knn"
+    },
+    {
+      "source": "su-011",
+      "target": "su-116",
+      "weight": 0.0703,
+      "method": "knn"
+    },
+    {
+      "source": "su-011",
+      "target": "su-017",
+      "weight": 0.3644,
+      "method": "knn"
+    },
+    {
+      "source": "su-012",
+      "target": "su-035",
+      "weight": 0.1199,
+      "method": "knn"
+    },
+    {
+      "source": "su-012",
+      "target": "su-066",
+      "weight": 0.1577,
+      "method": "knn"
+    },
+    {
+      "source": "su-012",
+      "target": "su-034",
+      "weight": 0.1453,
+      "method": "knn"
+    },
+    {
+      "source": "su-012",
+      "target": "su-101",
+      "weight": 0.178,
+      "method": "knn"
+    },
+    {
+      "source": "su-012",
+      "target": "su-013",
+      "weight": 0.2817,
+      "method": "knn"
+    },
+    {
+      "source": "su-012",
+      "target": "su-023",
+      "weight": 0.0756,
+      "method": "knn"
+    },
+    {
+      "source": "su-012",
+      "target": "su-071",
+      "weight": 0.0749,
+      "method": "knn"
+    },
+    {
+      "source": "su-012",
+      "target": "su-117",
+      "weight": 0.0942,
+      "method": "knn"
+    },
+    {
+      "source": "su-013",
+      "target": "su-048",
+      "weight": 0.2018,
+      "method": "knn"
+    },
+    {
+      "source": "su-013",
+      "target": "su-119",
+      "weight": 0.2583,
+      "method": "knn"
+    },
+    {
+      "source": "su-013",
+      "target": "su-034",
+      "weight": 0.2543,
+      "method": "knn"
+    },
+    {
+      "source": "su-013",
+      "target": "su-063",
+      "weight": 0.1027,
+      "method": "knn"
+    },
+    {
+      "source": "su-013",
+      "target": "su-071",
+      "weight": 0.0568,
+      "method": "knn"
+    },
+    {
+      "source": "su-013",
+      "target": "su-117",
+      "weight": 0.1388,
+      "method": "knn"
+    },
+    {
+      "source": "su-013",
+      "target": "su-162",
+      "weight": 0.0509,
+      "method": "knn"
+    },
+    {
+      "source": "su-013",
+      "target": "su-182",
+      "weight": 0.1664,
+      "method": "knn"
+    },
+    {
+      "source": "su-013",
+      "target": "su-198",
+      "weight": 0.1452,
+      "method": "knn"
+    },
+    {
+      "source": "su-014",
+      "target": "su-066",
+      "weight": 0.0591,
+      "method": "knn"
+    },
+    {
+      "source": "su-014",
+      "target": "su-095",
+      "weight": 0.0597,
+      "method": "knn"
+    },
+    {
+      "source": "su-014",
+      "target": "su-145",
+      "weight": 0.0678,
+      "method": "knn"
+    },
+    {
+      "source": "su-014",
+      "target": "su-146",
+      "weight": 0.0959,
+      "method": "knn"
+    },
+    {
+      "source": "su-015",
+      "target": "su-161",
+      "weight": 0.1453,
+      "method": "knn"
+    },
+    {
+      "source": "su-015",
+      "target": "su-049",
+      "weight": 0.1584,
+      "method": "knn"
+    },
+    {
+      "source": "su-015",
+      "target": "su-040",
+      "weight": 0.2177,
+      "method": "knn"
+    },
+    {
+      "source": "su-015",
+      "target": "su-064",
+      "weight": 0.2537,
+      "method": "knn"
+    },
+    {
+      "source": "su-015",
+      "target": "su-016",
+      "weight": 0.0815,
+      "method": "knn"
+    },
+    {
+      "source": "su-015",
+      "target": "su-018",
+      "weight": 0.1127,
+      "method": "knn"
+    },
+    {
+      "source": "su-015",
+      "target": "su-057",
+      "weight": 0.0864,
+      "method": "knn"
+    },
+    {
+      "source": "su-016",
+      "target": "su-174",
+      "weight": 0.0747,
+      "method": "knn"
+    },
+    {
+      "source": "su-016",
+      "target": "su-145",
+      "weight": 0.1275,
+      "method": "knn"
+    },
+    {
+      "source": "su-016",
+      "target": "su-041",
+      "weight": 0.118,
+      "method": "knn"
+    },
+    {
+      "source": "su-016",
+      "target": "su-017",
+      "weight": 0.3345,
+      "method": "knn"
+    },
+    {
+      "source": "su-017",
+      "target": "su-041",
+      "weight": 0.1271,
+      "method": "knn"
+    },
+    {
+      "source": "su-017",
+      "target": "su-103",
+      "weight": 0.1696,
+      "method": "knn"
+    },
+    {
+      "source": "su-017",
+      "target": "su-075",
+      "weight": 0.3253,
+      "method": "knn"
+    },
+    {
+      "source": "su-017",
+      "target": "su-188",
+      "weight": 0.091,
+      "method": "knn"
+    },
+    {
+      "source": "su-018",
+      "target": "su-043",
+      "weight": 0.115,
+      "method": "knn"
+    },
+    {
+      "source": "su-018",
+      "target": "su-039",
+      "weight": 0.1213,
+      "method": "knn"
+    },
+    {
+      "source": "su-018",
+      "target": "su-064",
+      "weight": 0.1524,
+      "method": "knn"
+    },
+    {
+      "source": "su-018",
+      "target": "su-058",
+      "weight": 0.1946,
+      "method": "knn"
+    },
+    {
+      "source": "su-019",
+      "target": "su-172",
+      "weight": 0.2741,
+      "method": "knn"
+    },
+    {
+      "source": "su-019",
+      "target": "su-059",
+      "weight": 0.2839,
+      "method": "knn"
+    },
+    {
+      "source": "su-019",
+      "target": "su-043",
+      "weight": 0.4328,
+      "method": "knn"
+    },
+    {
+      "source": "su-019",
+      "target": "su-173",
+      "weight": 0.5601,
+      "method": "knn"
+    },
+    {
+      "source": "su-019",
+      "target": "su-024",
+      "weight": 0.1319,
+      "method": "knn"
+    },
+    {
+      "source": "su-019",
+      "target": "su-027",
+      "weight": 0.105,
+      "method": "knn"
+    },
+    {
+      "source": "su-019",
+      "target": "su-213",
+      "weight": 0.1258,
+      "method": "knn"
+    },
+    {
+      "source": "su-019",
+      "target": "su-218",
+      "weight": 0.1556,
+      "method": "knn"
+    },
+    {
+      "source": "su-020",
+      "target": "su-068",
+      "weight": 0.2092,
+      "method": "knn"
+    },
+    {
+      "source": "su-020",
+      "target": "su-042",
+      "weight": 0.2498,
+      "method": "knn"
+    },
+    {
+      "source": "su-020",
+      "target": "su-083",
+      "weight": 0.2595,
+      "method": "knn"
+    },
+    {
+      "source": "su-020",
+      "target": "su-213",
+      "weight": 0.2603,
+      "method": "knn"
+    },
+    {
+      "source": "su-020",
+      "target": "su-076",
+      "weight": 0.315,
+      "method": "knn"
+    },
+    {
+      "source": "su-020",
+      "target": "su-104",
+      "weight": 0.1465,
+      "method": "knn"
+    },
+    {
+      "source": "su-020",
+      "target": "su-145",
+      "weight": 0.1416,
+      "method": "knn"
+    },
+    {
+      "source": "su-021",
+      "target": "su-166",
+      "weight": 0.1087,
+      "method": "knn"
+    },
+    {
+      "source": "su-021",
+      "target": "su-210",
+      "weight": 0.1094,
+      "method": "knn"
+    },
+    {
+      "source": "su-021",
+      "target": "su-170",
+      "weight": 0.1762,
+      "method": "knn"
+    },
+    {
+      "source": "su-021",
+      "target": "su-169",
+      "weight": 0.2351,
+      "method": "knn"
+    },
+    {
+      "source": "su-021",
+      "target": "su-215",
+      "weight": 0.4222,
+      "method": "knn"
+    },
+    {
+      "source": "su-022",
+      "target": "su-216",
+      "weight": 0.2472,
+      "method": "knn"
+    },
+    {
+      "source": "su-022",
+      "target": "su-100",
+      "weight": 0.2561,
+      "method": "knn"
+    },
+    {
+      "source": "su-022",
+      "target": "su-051",
+      "weight": 0.3103,
+      "method": "knn"
+    },
+    {
+      "source": "su-022",
+      "target": "su-165",
+      "weight": 0.3219,
+      "method": "knn"
+    },
+    {
+      "source": "su-022",
+      "target": "su-037",
+      "weight": 0.2735,
+      "method": "knn"
+    },
+    {
+      "source": "su-022",
+      "target": "su-059",
+      "weight": 0.1359,
+      "method": "knn"
+    },
+    {
+      "source": "su-022",
+      "target": "su-079",
+      "weight": 0.2383,
+      "method": "knn"
+    },
+    {
+      "source": "su-022",
+      "target": "su-206",
+      "weight": 0.2082,
+      "method": "knn"
+    },
+    {
+      "source": "su-023",
+      "target": "su-101",
+      "weight": 0.0615,
+      "method": "knn"
+    },
+    {
+      "source": "su-023",
+      "target": "su-125",
+      "weight": 0.0818,
+      "method": "knn"
+    },
+    {
+      "source": "su-023",
+      "target": "su-048",
+      "weight": 0.0972,
+      "method": "knn"
+    },
+    {
+      "source": "su-023",
+      "target": "su-052",
+      "weight": 0.1435,
+      "method": "knn"
+    },
+    {
+      "source": "su-024",
+      "target": "su-129",
+      "weight": 0.096,
+      "method": "knn"
+    },
+    {
+      "source": "su-024",
+      "target": "su-043",
+      "weight": 0.0994,
+      "method": "knn"
+    },
+    {
+      "source": "su-024",
+      "target": "su-173",
+      "weight": 0.1067,
+      "method": "knn"
+    },
+    {
+      "source": "su-024",
+      "target": "su-067",
+      "weight": 0.1459,
+      "method": "knn"
+    },
+    {
+      "source": "su-024",
+      "target": "su-046",
+      "weight": 0.0564,
+      "method": "knn"
+    },
+    {
+      "source": "su-025",
+      "target": "su-193",
+      "weight": 0.1544,
+      "method": "knn"
+    },
+    {
+      "source": "su-025",
+      "target": "su-181",
+      "weight": 0.2061,
+      "method": "knn"
+    },
+    {
+      "source": "su-025",
+      "target": "su-185",
+      "weight": 0.4038,
+      "method": "knn"
+    },
+    {
+      "source": "su-025",
+      "target": "su-026",
+      "weight": 0.4971,
+      "method": "knn"
+    },
+    {
+      "source": "su-025",
+      "target": "su-195",
+      "weight": 0.143,
+      "method": "knn"
+    },
+    {
+      "source": "su-025",
+      "target": "su-197",
+      "weight": 0.1368,
+      "method": "knn"
+    },
+    {
+      "source": "su-026",
+      "target": "su-045",
+      "weight": 0.0983,
+      "method": "knn"
+    },
+    {
+      "source": "su-026",
+      "target": "su-178",
+      "weight": 0.0991,
+      "method": "knn"
+    },
+    {
+      "source": "su-026",
+      "target": "su-185",
+      "weight": 0.7936,
+      "method": "knn"
+    },
+    {
+      "source": "su-027",
+      "target": "su-173",
+      "weight": 0.0933,
+      "method": "knn"
+    },
+    {
+      "source": "su-027",
+      "target": "su-042",
+      "weight": 0.2093,
+      "method": "knn"
+    },
+    {
+      "source": "su-027",
+      "target": "su-083",
+      "weight": 0.2262,
+      "method": "knn"
+    },
+    {
+      "source": "su-027",
+      "target": "su-214",
+      "weight": 0.2862,
+      "method": "knn"
+    },
+    {
+      "source": "su-027",
+      "target": "su-091",
+      "weight": 0.0749,
+      "method": "knn"
+    },
+    {
+      "source": "su-027",
+      "target": "su-128",
+      "weight": 0.0665,
+      "method": "knn"
+    },
+    {
+      "source": "su-028",
+      "target": "su-029",
+      "weight": 0.2713,
+      "method": "knn"
+    },
+    {
+      "source": "su-028",
+      "target": "su-032",
+      "weight": 0.3122,
+      "method": "knn"
+    },
+    {
+      "source": "su-028",
+      "target": "su-030",
+      "weight": 0.3136,
+      "method": "knn"
+    },
+    {
+      "source": "su-028",
+      "target": "su-053",
+      "weight": 0.3775,
+      "method": "knn"
+    },
+    {
+      "source": "su-028",
+      "target": "su-189",
+      "weight": 0.4653,
+      "method": "knn"
+    },
+    {
+      "source": "su-028",
+      "target": "su-188",
+      "weight": 0.0864,
+      "method": "knn"
+    },
+    {
+      "source": "su-028",
+      "target": "su-192",
+      "weight": 0.1225,
+      "method": "knn"
+    },
+    {
+      "source": "su-029",
+      "target": "su-032",
+      "weight": 0.2051,
+      "method": "knn"
+    },
+    {
+      "source": "su-029",
+      "target": "su-053",
+      "weight": 0.1776,
+      "method": "knn"
+    },
+    {
+      "source": "su-029",
+      "target": "su-189",
+      "weight": 0.246,
+      "method": "knn"
+    },
+    {
+      "source": "su-029",
+      "target": "su-030",
+      "weight": 0.4805,
+      "method": "knn"
+    },
+    {
+      "source": "su-029",
+      "target": "su-031",
+      "weight": 0.0826,
+      "method": "knn"
+    },
+    {
+      "source": "su-029",
+      "target": "su-058",
+      "weight": 0.0771,
+      "method": "knn"
+    },
+    {
+      "source": "su-030",
+      "target": "su-032",
+      "weight": 0.2406,
+      "method": "knn"
+    },
+    {
+      "source": "su-030",
+      "target": "su-053",
+      "weight": 0.2479,
+      "method": "knn"
+    },
+    {
+      "source": "su-030",
+      "target": "su-189",
+      "weight": 0.2749,
+      "method": "knn"
+    },
+    {
+      "source": "su-030",
+      "target": "su-052",
+      "weight": 0.1036,
+      "method": "knn"
+    },
+    {
+      "source": "su-030",
+      "target": "su-163",
+      "weight": 0.1048,
+      "method": "knn"
+    },
+    {
+      "source": "su-030",
+      "target": "su-182",
+      "weight": 0.1306,
+      "method": "knn"
+    },
+    {
+      "source": "su-030",
+      "target": "su-187",
+      "weight": 0.1513,
+      "method": "knn"
+    },
+    {
+      "source": "su-031",
+      "target": "su-191",
+      "weight": 0.0779,
+      "method": "knn"
+    },
+    {
+      "source": "su-031",
+      "target": "su-172",
+      "weight": 0.0833,
+      "method": "knn"
+    },
+    {
+      "source": "su-031",
+      "target": "su-188",
+      "weight": 0.123,
+      "method": "knn"
+    },
+    {
+      "source": "su-031",
+      "target": "su-187",
+      "weight": 0.3791,
+      "method": "knn"
+    },
+    {
+      "source": "su-031",
+      "target": "su-055",
+      "weight": 0.0725,
+      "method": "knn"
+    },
+    {
+      "source": "su-032",
+      "target": "su-053",
+      "weight": 0.2187,
+      "method": "knn"
+    },
+    {
+      "source": "su-032",
+      "target": "su-189",
+      "weight": 0.2289,
+      "method": "knn"
+    },
+    {
+      "source": "su-032",
+      "target": "su-055",
+      "weight": 0.1144,
+      "method": "knn"
+    },
+    {
+      "source": "su-032",
+      "target": "su-172",
+      "weight": 0.115,
+      "method": "knn"
+    },
+    {
+      "source": "su-033",
+      "target": "su-036",
+      "weight": 0.2807,
+      "method": "knn"
+    },
+    {
+      "source": "su-033",
+      "target": "su-100",
+      "weight": 0.4071,
+      "method": "knn"
+    },
+    {
+      "source": "su-033",
+      "target": "su-216",
+      "weight": 0.4154,
+      "method": "knn"
+    },
+    {
+      "source": "su-033",
+      "target": "su-037",
+      "weight": 0.4204,
+      "method": "knn"
+    },
+    {
+      "source": "su-033",
+      "target": "su-039",
+      "weight": 0.4237,
+      "method": "knn"
+    },
+    {
+      "source": "su-033",
+      "target": "su-034",
+      "weight": 0.2723,
+      "method": "knn"
+    },
+    {
+      "source": "su-033",
+      "target": "su-035",
+      "weight": 0.2297,
+      "method": "knn"
+    },
+    {
+      "source": "su-033",
+      "target": "su-040",
+      "weight": 0.1905,
+      "method": "knn"
+    },
+    {
+      "source": "su-033",
+      "target": "su-045",
+      "weight": 0.1564,
+      "method": "knn"
+    },
+    {
+      "source": "su-033",
+      "target": "su-054",
+      "weight": 0.257,
+      "method": "knn"
+    },
+    {
+      "source": "su-034",
+      "target": "su-035",
+      "weight": 0.3394,
+      "method": "knn"
+    },
+    {
+      "source": "su-034",
+      "target": "su-151",
+      "weight": 0.3597,
+      "method": "knn"
+    },
+    {
+      "source": "su-034",
+      "target": "su-036",
+      "weight": 0.3871,
+      "method": "knn"
+    },
+    {
+      "source": "su-034",
+      "target": "su-088",
+      "weight": 0.3996,
+      "method": "knn"
+    },
+    {
+      "source": "su-034",
+      "target": "su-045",
+      "weight": 0.1515,
+      "method": "knn"
+    },
+    {
+      "source": "su-034",
+      "target": "su-073",
+      "weight": 0.1928,
+      "method": "knn"
+    },
+    {
+      "source": "su-034",
+      "target": "su-097",
+      "weight": 0.1584,
+      "method": "knn"
+    },
+    {
+      "source": "su-034",
+      "target": "su-112",
+      "weight": 0.1654,
+      "method": "knn"
+    },
+    {
+      "source": "su-034",
+      "target": "su-119",
+      "weight": 0.1824,
+      "method": "knn"
+    },
+    {
+      "source": "su-034",
+      "target": "su-162",
+      "weight": 0.0631,
+      "method": "knn"
+    },
+    {
+      "source": "su-034",
+      "target": "su-199",
+      "weight": 0.1056,
+      "method": "knn"
+    },
+    {
+      "source": "su-035",
+      "target": "su-100",
+      "weight": 0.2353,
+      "method": "knn"
+    },
+    {
+      "source": "su-035",
+      "target": "su-216",
+      "weight": 0.2543,
+      "method": "knn"
+    },
+    {
+      "source": "su-035",
+      "target": "su-037",
+      "weight": 0.3113,
+      "method": "knn"
+    },
+    {
+      "source": "su-035",
+      "target": "su-062",
+      "weight": 0.0793,
+      "method": "knn"
+    },
+    {
+      "source": "su-035",
+      "target": "su-066",
+      "weight": 0.1421,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-100",
+      "weight": 0.3108,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-054",
+      "weight": 0.3881,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-148",
+      "weight": 0.3931,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-088",
+      "weight": 0.4389,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-039",
+      "weight": 0.2635,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-041",
+      "weight": 0.1722,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-045",
+      "weight": 0.1989,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-064",
+      "weight": 0.1097,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-073",
+      "weight": 0.1955,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-084",
+      "weight": 0.1619,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-151",
+      "weight": 0.293,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-171",
+      "weight": 0.1096,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-203",
+      "weight": 0.1779,
+      "method": "knn"
+    },
+    {
+      "source": "su-036",
+      "target": "su-217",
+      "weight": 0.3068,
+      "method": "knn"
+    },
+    {
+      "source": "su-037",
+      "target": "su-165",
+      "weight": 0.4128,
+      "method": "knn"
+    },
+    {
+      "source": "su-037",
+      "target": "su-217",
+      "weight": 0.477,
+      "method": "knn"
+    },
+    {
+      "source": "su-037",
+      "target": "su-100",
+      "weight": 0.5774,
+      "method": "knn"
+    },
+    {
+      "source": "su-037",
+      "target": "su-216",
+      "weight": 0.6072,
+      "method": "knn"
+    },
+    {
+      "source": "su-037",
+      "target": "su-039",
+      "weight": 0.3293,
+      "method": "knn"
+    },
+    {
+      "source": "su-037",
+      "target": "su-049",
+      "weight": 0.189,
+      "method": "knn"
+    },
+    {
+      "source": "su-037",
+      "target": "su-088",
+      "weight": 0.2604,
+      "method": "knn"
+    },
+    {
+      "source": "su-037",
+      "target": "su-166",
+      "weight": 0.2589,
+      "method": "knn"
+    },
+    {
+      "source": "su-037",
+      "target": "su-206",
+      "weight": 0.2128,
+      "method": "knn"
+    },
+    {
+      "source": "su-038",
+      "target": "su-098",
+      "weight": 0.2547,
+      "method": "knn"
+    },
+    {
+      "source": "su-038",
+      "target": "su-103",
+      "weight": 0.3659,
+      "method": "knn"
+    },
+    {
+      "source": "su-038",
+      "target": "su-158",
+      "weight": 0.5085,
+      "method": "knn"
+    },
+    {
+      "source": "su-038",
+      "target": "su-118",
+      "weight": 0.5331,
+      "method": "knn"
+    },
+    {
+      "source": "su-038",
+      "target": "su-056",
+      "weight": 0.8493,
+      "method": "knn"
+    },
+    {
+      "source": "su-038",
+      "target": "su-069",
+      "weight": 0.2454,
+      "method": "knn"
+    },
+    {
+      "source": "su-039",
+      "target": "su-100",
+      "weight": 0.2666,
+      "method": "knn"
+    },
+    {
+      "source": "su-039",
+      "target": "su-216",
+      "weight": 0.322,
+      "method": "knn"
+    },
+    {
+      "source": "su-039",
+      "target": "su-040",
+      "weight": 0.2248,
+      "method": "knn"
+    },
+    {
+      "source": "su-039",
+      "target": "su-049",
+      "weight": 0.1858,
+      "method": "knn"
+    },
+    {
+      "source": "su-039",
+      "target": "su-092",
+      "weight": 0.0454,
+      "method": "knn"
+    },
+    {
+      "source": "su-039",
+      "target": "su-209",
+      "weight": 0.1093,
+      "method": "knn"
+    },
+    {
+      "source": "su-040",
+      "target": "su-209",
+      "weight": 0.2439,
+      "method": "knn"
+    },
+    {
+      "source": "su-040",
+      "target": "su-138",
+      "weight": 0.0883,
+      "method": "knn"
+    },
+    {
+      "source": "su-041",
+      "target": "su-088",
+      "weight": 0.176,
+      "method": "knn"
+    },
+    {
+      "source": "su-041",
+      "target": "su-076",
+      "weight": 0.2655,
+      "method": "knn"
+    },
+    {
+      "source": "su-041",
+      "target": "su-066",
+      "weight": 0.3168,
+      "method": "knn"
+    },
+    {
+      "source": "su-041",
+      "target": "su-047",
+      "weight": 0.5393,
+      "method": "knn"
+    },
+    {
+      "source": "su-041",
+      "target": "su-077",
+      "weight": 0.1638,
+      "method": "knn"
+    },
+    {
+      "source": "su-041",
+      "target": "su-091",
+      "weight": 0.0647,
+      "method": "knn"
+    },
+    {
+      "source": "su-042",
+      "target": "su-213",
+      "weight": 0.1976,
+      "method": "knn"
+    },
+    {
+      "source": "su-042",
+      "target": "su-214",
+      "weight": 0.167,
+      "method": "knn"
+    },
+    {
+      "source": "su-042",
+      "target": "su-083",
+      "weight": 0.3883,
+      "method": "knn"
+    },
+    {
+      "source": "su-042",
+      "target": "su-196",
+      "weight": 0.1521,
+      "method": "knn"
+    },
+    {
+      "source": "su-043",
+      "target": "su-044",
+      "weight": 0.1767,
+      "method": "knn"
+    },
+    {
+      "source": "su-043",
+      "target": "su-053",
+      "weight": 0.2134,
+      "method": "knn"
+    },
+    {
+      "source": "su-043",
+      "target": "su-173",
+      "weight": 0.3838,
+      "method": "knn"
+    },
+    {
+      "source": "su-044",
+      "target": "su-133",
+      "weight": 0.0584,
+      "method": "knn"
+    },
+    {
+      "source": "su-044",
+      "target": "su-087",
+      "weight": 0.0655,
+      "method": "knn"
+    },
+    {
+      "source": "su-044",
+      "target": "su-181",
+      "weight": 0.0679,
+      "method": "knn"
+    },
+    {
+      "source": "su-044",
+      "target": "su-053",
+      "weight": 0.13,
+      "method": "knn"
+    },
+    {
+      "source": "su-045",
+      "target": "su-148",
+      "weight": 0.1559,
+      "method": "knn"
+    },
+    {
+      "source": "su-045",
+      "target": "su-088",
+      "weight": 0.1725,
+      "method": "knn"
+    },
+    {
+      "source": "su-045",
+      "target": "su-180",
+      "weight": 0.099,
+      "method": "knn"
+    },
+    {
+      "source": "su-046",
+      "target": "su-109",
+      "weight": 0.0639,
+      "method": "knn"
+    },
+    {
+      "source": "su-046",
+      "target": "su-101",
+      "weight": 0.0816,
+      "method": "knn"
+    },
+    {
+      "source": "su-046",
+      "target": "su-177",
+      "weight": 0.0827,
+      "method": "knn"
+    },
+    {
+      "source": "su-046",
+      "target": "su-184",
+      "weight": 0.0917,
+      "method": "knn"
+    },
+    {
+      "source": "su-047",
+      "target": "su-122",
+      "weight": 0.1193,
+      "method": "knn"
+    },
+    {
+      "source": "su-047",
+      "target": "su-077",
+      "weight": 0.2386,
+      "method": "knn"
+    },
+    {
+      "source": "su-047",
+      "target": "su-076",
+      "weight": 0.3388,
+      "method": "knn"
+    },
+    {
+      "source": "su-047",
+      "target": "su-066",
+      "weight": 0.3949,
+      "method": "knn"
+    },
+    {
+      "source": "su-047",
+      "target": "su-072",
+      "weight": 0.0639,
+      "method": "knn"
+    },
+    {
+      "source": "su-047",
+      "target": "su-091",
+      "weight": 0.0705,
+      "method": "knn"
+    },
+    {
+      "source": "su-047",
+      "target": "su-191",
+      "weight": 0.1104,
+      "method": "knn"
+    },
+    {
+      "source": "su-047",
+      "target": "su-220",
+      "weight": 0.1001,
+      "method": "knn"
+    },
+    {
+      "source": "su-048",
+      "target": "su-152",
+      "weight": 0.099,
+      "method": "knn"
+    },
+    {
+      "source": "su-048",
+      "target": "su-170",
+      "weight": 0.1068,
+      "method": "knn"
+    },
+    {
+      "source": "su-048",
+      "target": "su-207",
+      "weight": 0.1325,
+      "method": "knn"
+    },
+    {
+      "source": "su-049",
+      "target": "su-081",
+      "weight": 0.2376,
+      "method": "knn"
+    },
+    {
+      "source": "su-049",
+      "target": "su-216",
+      "weight": 0.2412,
+      "method": "knn"
+    },
+    {
+      "source": "su-049",
+      "target": "su-052",
+      "weight": 0.1257,
+      "method": "knn"
+    },
+    {
+      "source": "su-049",
+      "target": "su-055",
+      "weight": 0.0907,
+      "method": "knn"
+    },
+    {
+      "source": "su-049",
+      "target": "su-064",
+      "weight": 0.153,
+      "method": "knn"
+    },
+    {
+      "source": "su-049",
+      "target": "su-196",
+      "weight": 0.1406,
+      "method": "knn"
+    },
+    {
+      "source": "su-049",
+      "target": "su-209",
+      "weight": 0.1418,
+      "method": "knn"
+    },
+    {
+      "source": "su-050",
+      "target": "su-186",
+      "weight": 0.1827,
+      "method": "knn"
+    },
+    {
+      "source": "su-050",
+      "target": "su-178",
+      "weight": 0.1893,
+      "method": "knn"
+    },
+    {
+      "source": "su-050",
+      "target": "su-152",
+      "weight": 0.2091,
+      "method": "knn"
+    },
+    {
+      "source": "su-050",
+      "target": "su-167",
+      "weight": 0.1808,
+      "method": "knn"
+    },
+    {
+      "source": "su-050",
+      "target": "su-207",
+      "weight": 0.1139,
+      "method": "knn"
+    },
+    {
+      "source": "su-051",
+      "target": "su-098",
+      "weight": 0.2292,
+      "method": "knn"
+    },
+    {
+      "source": "su-051",
+      "target": "su-068",
+      "weight": 0.2766,
+      "method": "knn"
+    },
+    {
+      "source": "su-051",
+      "target": "su-079",
+      "weight": 0.7635,
+      "method": "knn"
+    },
+    {
+      "source": "su-051",
+      "target": "su-052",
+      "weight": 0.1062,
+      "method": "knn"
+    },
+    {
+      "source": "su-052",
+      "target": "su-082",
+      "weight": 0.0969,
+      "method": "knn"
+    },
+    {
+      "source": "su-053",
+      "target": "su-189",
+      "weight": 0.2526,
+      "method": "knn"
+    },
+    {
+      "source": "su-054",
+      "target": "su-088",
+      "weight": 0.2194,
+      "method": "knn"
+    },
+    {
+      "source": "su-054",
+      "target": "su-067",
+      "weight": 0.4161,
+      "method": "knn"
+    },
+    {
+      "source": "su-054",
+      "target": "su-057",
+      "weight": 0.5599,
+      "method": "knn"
+    },
+    {
+      "source": "su-054",
+      "target": "su-147",
+      "weight": 0.1052,
+      "method": "knn"
+    },
+    {
+      "source": "su-055",
+      "target": "su-082",
+      "weight": 0.1167,
+      "method": "knn"
+    },
+    {
+      "source": "su-055",
+      "target": "su-064",
+      "weight": 0.0999,
+      "method": "knn"
+    },
+    {
+      "source": "su-056",
+      "target": "su-103",
+      "weight": 0.5019,
+      "method": "knn"
+    },
+    {
+      "source": "su-056",
+      "target": "su-158",
+      "weight": 0.5905,
+      "method": "knn"
+    },
+    {
+      "source": "su-056",
+      "target": "su-098",
+      "weight": 0.6073,
+      "method": "knn"
+    },
+    {
+      "source": "su-056",
+      "target": "su-118",
+      "weight": 0.6191,
+      "method": "knn"
+    },
+    {
+      "source": "su-056",
+      "target": "su-069",
+      "weight": 0.1462,
+      "method": "knn"
+    },
+    {
+      "source": "su-056",
+      "target": "su-102",
+      "weight": 0.2852,
+      "method": "knn"
+    },
+    {
+      "source": "su-057",
+      "target": "su-065",
+      "weight": 0.1039,
+      "method": "knn"
+    },
+    {
+      "source": "su-057",
+      "target": "su-147",
+      "weight": 0.1324,
+      "method": "knn"
+    },
+    {
+      "source": "su-057",
+      "target": "su-067",
+      "weight": 0.3929,
+      "method": "knn"
+    },
+    {
+      "source": "su-058",
+      "target": "su-165",
+      "weight": 0.0797,
+      "method": "knn"
+    },
+    {
+      "source": "su-058",
+      "target": "su-114",
+      "weight": 0.16,
+      "method": "knn"
+    },
+    {
+      "source": "su-058",
+      "target": "su-123",
+      "weight": 0.1336,
+      "method": "knn"
+    },
+    {
+      "source": "su-059",
+      "target": "su-082",
+      "weight": 0.2076,
+      "method": "knn"
+    },
+    {
+      "source": "su-059",
+      "target": "su-173",
+      "weight": 0.2265,
+      "method": "knn"
+    },
+    {
+      "source": "su-060",
+      "target": "su-097",
+      "weight": 0.1728,
+      "method": "knn"
+    },
+    {
+      "source": "su-060",
+      "target": "su-151",
+      "weight": 0.1771,
+      "method": "knn"
+    },
+    {
+      "source": "su-060",
+      "target": "su-201",
+      "weight": 0.2619,
+      "method": "knn"
+    },
+    {
+      "source": "su-060",
+      "target": "su-061",
+      "weight": 0.3715,
+      "method": "knn"
+    },
+    {
+      "source": "su-060",
+      "target": "su-062",
+      "weight": 0.432,
+      "method": "knn"
+    },
+    {
+      "source": "su-061",
+      "target": "su-141",
+      "weight": 0.1891,
+      "method": "knn"
+    },
+    {
+      "source": "su-061",
+      "target": "su-203",
+      "weight": 0.1587,
+      "method": "knn"
+    },
+    {
+      "source": "su-061",
+      "target": "su-097",
+      "weight": 0.2712,
+      "method": "knn"
+    },
+    {
+      "source": "su-061",
+      "target": "su-065",
+      "weight": 0.2971,
+      "method": "knn"
+    },
+    {
+      "source": "su-061",
+      "target": "su-140",
+      "weight": 0.1144,
+      "method": "knn"
+    },
+    {
+      "source": "su-062",
+      "target": "su-201",
+      "weight": 0.0884,
+      "method": "knn"
+    },
+    {
+      "source": "su-062",
+      "target": "su-066",
+      "weight": 0.1225,
+      "method": "knn"
+    },
+    {
+      "source": "su-062",
+      "target": "su-101",
+      "weight": 0.1301,
+      "method": "knn"
+    },
+    {
+      "source": "su-063",
+      "target": "su-178",
+      "weight": 0.0901,
+      "method": "knn"
+    },
+    {
+      "source": "su-063",
+      "target": "su-117",
+      "weight": 0.1238,
+      "method": "knn"
+    },
+    {
+      "source": "su-063",
+      "target": "su-065",
+      "weight": 0.1369,
+      "method": "knn"
+    },
+    {
+      "source": "su-063",
+      "target": "su-095",
+      "weight": 0.0821,
+      "method": "knn"
+    },
+    {
+      "source": "su-064",
+      "target": "su-102",
+      "weight": 0.1193,
+      "method": "knn"
+    },
+    {
+      "source": "su-065",
+      "target": "su-085",
+      "weight": 0.1278,
+      "method": "knn"
+    },
+    {
+      "source": "su-065",
+      "target": "su-117",
+      "weight": 0.1361,
+      "method": "knn"
+    },
+    {
+      "source": "su-065",
+      "target": "su-075",
+      "weight": 0.133,
+      "method": "knn"
+    },
+    {
+      "source": "su-066",
+      "target": "su-076",
+      "weight": 0.2153,
+      "method": "knn"
+    },
+    {
+      "source": "su-066",
+      "target": "su-111",
+      "weight": 0.0913,
+      "method": "knn"
+    },
+    {
+      "source": "su-066",
+      "target": "su-215",
+      "weight": 0.084,
+      "method": "knn"
+    },
+    {
+      "source": "su-067",
+      "target": "su-203",
+      "weight": 0.1006,
+      "method": "knn"
+    },
+    {
+      "source": "su-067",
+      "target": "su-147",
+      "weight": 0.1222,
+      "method": "knn"
+    },
+    {
+      "source": "su-068",
+      "target": "su-079",
+      "weight": 0.2492,
+      "method": "knn"
+    },
+    {
+      "source": "su-068",
+      "target": "su-069",
+      "weight": 0.3012,
+      "method": "knn"
+    },
+    {
+      "source": "su-068",
+      "target": "su-104",
+      "weight": 0.1072,
+      "method": "knn"
+    },
+    {
+      "source": "su-068",
+      "target": "su-183",
+      "weight": 0.0961,
+      "method": "knn"
+    },
+    {
+      "source": "su-069",
+      "target": "su-158",
+      "weight": 0.1505,
+      "method": "knn"
+    },
+    {
+      "source": "su-069",
+      "target": "su-118",
+      "weight": 0.159,
+      "method": "knn"
+    },
+    {
+      "source": "su-070",
+      "target": "su-137",
+      "weight": 0.1408,
+      "method": "knn"
+    },
+    {
+      "source": "su-070",
+      "target": "su-136",
+      "weight": 0.1194,
+      "method": "knn"
+    },
+    {
+      "source": "su-070",
+      "target": "su-082",
+      "weight": 0.1529,
+      "method": "knn"
+    },
+    {
+      "source": "su-070",
+      "target": "su-074",
+      "weight": 0.2015,
+      "method": "knn"
+    },
+    {
+      "source": "su-070",
+      "target": "su-115",
+      "weight": 0.3157,
+      "method": "knn"
+    },
+    {
+      "source": "su-070",
+      "target": "su-072",
+      "weight": 0.0623,
+      "method": "knn"
+    },
+    {
+      "source": "su-070",
+      "target": "su-155",
+      "weight": 0.085,
+      "method": "knn"
+    },
+    {
+      "source": "su-071",
+      "target": "su-104",
+      "weight": 0.0499,
+      "method": "knn"
+    },
+    {
+      "source": "su-071",
+      "target": "su-072",
+      "weight": 0.2803,
+      "method": "knn"
+    },
+    {
+      "source": "su-072",
+      "target": "su-156",
+      "weight": 0.0627,
+      "method": "knn"
+    },
+    {
+      "source": "su-072",
+      "target": "su-218",
+      "weight": 0.1782,
+      "method": "knn"
+    },
+    {
+      "source": "su-073",
+      "target": "su-141",
+      "weight": 0.2176,
+      "method": "knn"
+    },
+    {
+      "source": "su-073",
+      "target": "su-148",
+      "weight": 0.1878,
+      "method": "knn"
+    },
+    {
+      "source": "su-073",
+      "target": "su-088",
+      "weight": 0.2033,
+      "method": "knn"
+    },
+    {
+      "source": "su-073",
+      "target": "su-140",
+      "weight": 0.096,
+      "method": "knn"
+    },
+    {
+      "source": "su-073",
+      "target": "su-172",
+      "weight": 0.1095,
+      "method": "knn"
+    },
+    {
+      "source": "su-074",
+      "target": "su-204",
+      "weight": 0.0609,
+      "method": "knn"
+    },
+    {
+      "source": "su-074",
+      "target": "su-220",
+      "weight": 0.0617,
+      "method": "knn"
+    },
+    {
+      "source": "su-074",
+      "target": "su-169",
+      "weight": 0.0646,
+      "method": "knn"
+    },
+    {
+      "source": "su-075",
+      "target": "su-220",
+      "weight": 0.2004,
+      "method": "knn"
+    },
+    {
+      "source": "su-075",
+      "target": "su-122",
+      "weight": 0.169,
+      "method": "knn"
+    },
+    {
+      "source": "su-075",
+      "target": "su-084",
+      "weight": 0.259,
+      "method": "knn"
+    },
+    {
+      "source": "su-075",
+      "target": "su-103",
+      "weight": 0.3405,
+      "method": "knn"
+    },
+    {
+      "source": "su-075",
+      "target": "su-081",
+      "weight": 0.1371,
+      "method": "knn"
+    },
+    {
+      "source": "su-076",
+      "target": "su-077",
+      "weight": 0.2892,
+      "method": "knn"
+    },
+    {
+      "source": "su-076",
+      "target": "su-104",
+      "weight": 0.1197,
+      "method": "knn"
+    },
+    {
+      "source": "su-077",
+      "target": "su-212",
+      "weight": 0.1622,
+      "method": "knn"
+    },
+    {
+      "source": "su-077",
+      "target": "su-159",
+      "weight": 0.4456,
+      "method": "knn"
+    },
+    {
+      "source": "su-077",
+      "target": "su-195",
+      "weight": 0.1231,
+      "method": "knn"
+    },
+    {
+      "source": "su-078",
+      "target": "su-102",
+      "weight": 0.0664,
+      "method": "knn"
+    },
+    {
+      "source": "su-078",
+      "target": "su-084",
+      "weight": 0.0746,
+      "method": "knn"
+    },
+    {
+      "source": "su-078",
+      "target": "su-131",
+      "weight": 0.0775,
+      "method": "knn"
+    },
+    {
+      "source": "su-078",
+      "target": "su-080",
+      "weight": 0.109,
+      "method": "knn"
+    },
+    {
+      "source": "su-078",
+      "target": "su-094",
+      "weight": 0.1115,
+      "method": "knn"
+    },
+    {
+      "source": "su-079",
+      "target": "su-098",
+      "weight": 0.2407,
+      "method": "knn"
+    },
+    {
+      "source": "su-080",
+      "target": "su-102",
+      "weight": 0.0464,
+      "method": "knn"
+    },
+    {
+      "source": "su-080",
+      "target": "su-094",
+      "weight": 0.1668,
+      "method": "knn"
+    },
+    {
+      "source": "su-080",
+      "target": "su-162",
+      "weight": 0.2028,
+      "method": "knn"
+    },
+    {
+      "source": "su-080",
+      "target": "su-164",
+      "weight": 0.2052,
+      "method": "knn"
+    },
+    {
+      "source": "su-081",
+      "target": "su-110",
+      "weight": 0.1865,
+      "method": "knn"
+    },
+    {
+      "source": "su-081",
+      "target": "su-203",
+      "weight": 0.2186,
+      "method": "knn"
+    },
+    {
+      "source": "su-081",
+      "target": "su-201",
+      "weight": 0.2254,
+      "method": "knn"
+    },
+    {
+      "source": "su-081",
+      "target": "su-134",
+      "weight": 0.1038,
+      "method": "knn"
+    },
+    {
+      "source": "su-082",
+      "target": "su-169",
+      "weight": 0.13,
+      "method": "knn"
+    },
+    {
+      "source": "su-082",
+      "target": "su-083",
+      "weight": 0.1169,
+      "method": "knn"
+    },
+    {
+      "source": "su-083",
+      "target": "su-213",
+      "weight": 0.2122,
+      "method": "knn"
+    },
+    {
+      "source": "su-083",
+      "target": "su-214",
+      "weight": 0.2209,
+      "method": "knn"
+    },
+    {
+      "source": "su-084",
+      "target": "su-088",
+      "weight": 0.1335,
+      "method": "knn"
+    },
+    {
+      "source": "su-084",
+      "target": "su-217",
+      "weight": 0.1469,
+      "method": "knn"
+    },
+    {
+      "source": "su-084",
+      "target": "su-131",
+      "weight": 0.2606,
+      "method": "knn"
+    },
+    {
+      "source": "su-085",
+      "target": "su-137",
+      "weight": 0.063,
+      "method": "knn"
+    },
+    {
+      "source": "su-085",
+      "target": "su-138",
+      "weight": 0.0907,
+      "method": "knn"
+    },
+    {
+      "source": "su-085",
+      "target": "su-157",
+      "weight": 0.2154,
+      "method": "knn"
+    },
+    {
+      "source": "su-086",
+      "target": "su-165",
+      "weight": 0.1125,
+      "method": "knn"
+    },
+    {
+      "source": "su-086",
+      "target": "su-211",
+      "weight": 0.1176,
+      "method": "knn"
+    },
+    {
+      "source": "su-086",
+      "target": "su-144",
+      "weight": 0.1254,
+      "method": "knn"
+    },
+    {
+      "source": "su-086",
+      "target": "su-200",
+      "weight": 0.2043,
+      "method": "knn"
+    },
+    {
+      "source": "su-086",
+      "target": "su-194",
+      "weight": 0.2128,
+      "method": "knn"
+    },
+    {
+      "source": "su-086",
+      "target": "su-180",
+      "weight": 0.0763,
+      "method": "knn"
+    },
+    {
+      "source": "su-087",
+      "target": "su-101",
+      "weight": 0.0741,
+      "method": "knn"
+    },
+    {
+      "source": "su-087",
+      "target": "su-165",
+      "weight": 0.0774,
+      "method": "knn"
+    },
+    {
+      "source": "su-087",
+      "target": "su-204",
+      "weight": 0.0893,
+      "method": "knn"
+    },
+    {
+      "source": "su-087",
+      "target": "su-157",
+      "weight": 0.1177,
+      "method": "knn"
+    },
+    {
+      "source": "su-087",
+      "target": "su-202",
+      "weight": 0.1688,
+      "method": "knn"
+    },
+    {
+      "source": "su-088",
+      "target": "su-217",
+      "weight": 0.2533,
+      "method": "knn"
+    },
+    {
+      "source": "su-088",
+      "target": "su-148",
+      "weight": 0.3297,
+      "method": "knn"
+    },
+    {
+      "source": "su-088",
+      "target": "su-108",
+      "weight": 0.134,
+      "method": "knn"
+    },
+    {
+      "source": "su-089",
+      "target": "su-102",
+      "weight": 0.1897,
+      "method": "knn"
+    },
+    {
+      "source": "su-089",
+      "target": "su-093",
+      "weight": 0.2431,
+      "method": "knn"
+    },
+    {
+      "source": "su-089",
+      "target": "su-142",
+      "weight": 0.2479,
+      "method": "knn"
+    },
+    {
+      "source": "su-089",
+      "target": "su-096",
+      "weight": 0.2828,
+      "method": "knn"
+    },
+    {
+      "source": "su-089",
+      "target": "su-139",
+      "weight": 0.3043,
+      "method": "knn"
+    },
+    {
+      "source": "su-089",
+      "target": "su-095",
+      "weight": 0.0895,
+      "method": "knn"
+    },
+    {
+      "source": "su-089",
+      "target": "su-101",
+      "weight": 0.1811,
+      "method": "knn"
+    },
+    {
+      "source": "su-090",
+      "target": "su-176",
+      "weight": 0.1085,
+      "method": "knn"
+    },
+    {
+      "source": "su-090",
+      "target": "su-160",
+      "weight": 0.1242,
+      "method": "knn"
+    },
+    {
+      "source": "su-090",
+      "target": "su-198",
+      "weight": 0.1088,
+      "method": "knn"
+    },
+    {
+      "source": "su-090",
+      "target": "su-096",
+      "weight": 0.1553,
+      "method": "knn"
+    },
+    {
+      "source": "su-090",
+      "target": "su-099",
+      "weight": 0.3845,
+      "method": "knn"
+    },
+    {
+      "source": "su-090",
+      "target": "su-138",
+      "weight": 0.0432,
+      "method": "knn"
+    },
+    {
+      "source": "su-091",
+      "target": "su-134",
+      "weight": 0.3301,
+      "method": "knn"
+    },
+    {
+      "source": "su-091",
+      "target": "su-099",
+      "weight": 0.3875,
+      "method": "knn"
+    },
+    {
+      "source": "su-092",
+      "target": "su-182",
+      "weight": 0.0471,
+      "method": "knn"
+    },
+    {
+      "source": "su-092",
+      "target": "su-124",
+      "weight": 0.0551,
+      "method": "knn"
+    },
+    {
+      "source": "su-092",
+      "target": "su-093",
+      "weight": 0.0698,
+      "method": "knn"
+    },
+    {
+      "source": "su-092",
+      "target": "su-102",
+      "weight": 0.0846,
+      "method": "knn"
+    },
+    {
+      "source": "su-093",
+      "target": "su-203",
+      "weight": 0.1319,
+      "method": "knn"
+    },
+    {
+      "source": "su-093",
+      "target": "su-189",
+      "weight": 0.137,
+      "method": "knn"
+    },
+    {
+      "source": "su-093",
+      "target": "su-094",
+      "weight": 0.1655,
+      "method": "knn"
+    },
+    {
+      "source": "su-093",
+      "target": "su-102",
+      "weight": 0.1791,
+      "method": "knn"
+    },
+    {
+      "source": "su-093",
+      "target": "su-142",
+      "weight": 0.121,
+      "method": "knn"
+    },
+    {
+      "source": "su-093",
+      "target": "su-157",
+      "weight": 0.0648,
+      "method": "knn"
+    },
+    {
+      "source": "su-094",
+      "target": "su-141",
+      "weight": 0.2041,
+      "method": "knn"
+    },
+    {
+      "source": "su-094",
+      "target": "su-140",
+      "weight": 0.2098,
+      "method": "knn"
+    },
+    {
+      "source": "su-094",
+      "target": "su-102",
+      "weight": 0.4032,
+      "method": "knn"
+    },
+    {
+      "source": "su-094",
+      "target": "su-095",
+      "weight": 0.0918,
+      "method": "knn"
+    },
+    {
+      "source": "su-094",
+      "target": "su-139",
+      "weight": 0.1209,
+      "method": "knn"
+    },
+    {
+      "source": "su-094",
+      "target": "su-142",
+      "weight": 0.115,
+      "method": "knn"
+    },
+    {
+      "source": "su-094",
+      "target": "su-143",
+      "weight": 0.1143,
+      "method": "knn"
+    },
+    {
+      "source": "su-094",
+      "target": "su-162",
+      "weight": 0.1366,
+      "method": "knn"
+    },
+    {
+      "source": "su-095",
+      "target": "su-139",
+      "weight": 0.0883,
+      "method": "knn"
+    },
+    {
+      "source": "su-095",
+      "target": "su-102",
+      "weight": 0.2237,
+      "method": "knn"
+    },
+    {
+      "source": "su-096",
+      "target": "su-098",
+      "weight": 0.2118,
+      "method": "knn"
+    },
+    {
+      "source": "su-096",
+      "target": "su-139",
+      "weight": 0.2707,
+      "method": "knn"
+    },
+    {
+      "source": "su-096",
+      "target": "su-101",
+      "weight": 0.3269,
+      "method": "knn"
+    },
+    {
+      "source": "su-096",
+      "target": "su-109",
+      "weight": 0.1004,
+      "method": "knn"
+    },
+    {
+      "source": "su-097",
+      "target": "su-199",
+      "weight": 0.1614,
+      "method": "knn"
+    },
+    {
+      "source": "su-097",
+      "target": "su-134",
+      "weight": 0.2869,
+      "method": "knn"
+    },
+    {
+      "source": "su-098",
+      "target": "su-102",
+      "weight": 0.2757,
+      "method": "knn"
+    },
+    {
+      "source": "su-098",
+      "target": "su-103",
+      "weight": 0.4908,
+      "method": "knn"
+    },
+    {
+      "source": "su-098",
+      "target": "su-118",
+      "weight": 0.6105,
+      "method": "knn"
+    },
+    {
+      "source": "su-098",
+      "target": "su-158",
+      "weight": 0.6278,
+      "method": "knn"
+    },
+    {
+      "source": "su-098",
+      "target": "su-101",
+      "weight": 0.1582,
+      "method": "knn"
+    },
+    {
+      "source": "su-098",
+      "target": "su-139",
+      "weight": 0.1389,
+      "method": "knn"
+    },
+    {
+      "source": "su-099",
+      "target": "su-198",
+      "weight": 0.1142,
+      "method": "knn"
+    },
+    {
+      "source": "su-099",
+      "target": "su-110",
+      "weight": 0.115,
+      "method": "knn"
+    },
+    {
+      "source": "su-099",
+      "target": "su-134",
+      "weight": 0.1828,
+      "method": "knn"
+    },
+    {
+      "source": "su-099",
+      "target": "su-160",
+      "weight": 0.0803,
+      "method": "knn"
+    },
+    {
+      "source": "su-099",
+      "target": "su-176",
+      "weight": 0.068,
+      "method": "knn"
+    },
+    {
+      "source": "su-100",
+      "target": "su-217",
+      "weight": 0.3952,
+      "method": "knn"
+    },
+    {
+      "source": "su-100",
+      "target": "su-165",
+      "weight": 0.3987,
+      "method": "knn"
+    },
+    {
+      "source": "su-100",
+      "target": "su-216",
+      "weight": 0.5738,
+      "method": "knn"
+    },
+    {
+      "source": "su-100",
+      "target": "su-166",
+      "weight": 0.2169,
+      "method": "knn"
+    },
+    {
+      "source": "su-100",
+      "target": "su-206",
+      "weight": 0.1907,
+      "method": "knn"
+    },
+    {
+      "source": "su-100",
+      "target": "su-215",
+      "weight": 0.0816,
+      "method": "knn"
+    },
+    {
+      "source": "su-101",
+      "target": "su-139",
+      "weight": 0.2115,
+      "method": "knn"
+    },
+    {
+      "source": "su-101",
+      "target": "su-143",
+      "weight": 0.0766,
+      "method": "knn"
+    },
+    {
+      "source": "su-101",
+      "target": "su-157",
+      "weight": 0.1412,
+      "method": "knn"
+    },
+    {
+      "source": "su-101",
+      "target": "su-185",
+      "weight": 0.143,
+      "method": "knn"
+    },
+    {
+      "source": "su-102",
+      "target": "su-158",
+      "weight": 0.392,
+      "method": "knn"
+    },
+    {
+      "source": "su-102",
+      "target": "su-103",
+      "weight": 0.4712,
+      "method": "knn"
+    },
+    {
+      "source": "su-102",
+      "target": "su-118",
+      "weight": 0.4276,
+      "method": "knn"
+    },
+    {
+      "source": "su-102",
+      "target": "su-140",
+      "weight": 0.1026,
+      "method": "knn"
+    },
+    {
+      "source": "su-102",
+      "target": "su-142",
+      "weight": 0.1649,
+      "method": "knn"
+    },
+    {
+      "source": "su-102",
+      "target": "su-143",
+      "weight": 0.1032,
+      "method": "knn"
+    },
+    {
+      "source": "su-103",
+      "target": "su-158",
+      "weight": 0.7059,
+      "method": "knn"
+    },
+    {
+      "source": "su-103",
+      "target": "su-118",
+      "weight": 0.7278,
+      "method": "knn"
+    },
+    {
+      "source": "su-104",
+      "target": "su-219",
+      "weight": 0.1216,
+      "method": "knn"
+    },
+    {
+      "source": "su-104",
+      "target": "su-129",
+      "weight": 0.153,
+      "method": "knn"
+    },
+    {
+      "source": "su-105",
+      "target": "su-115",
+      "weight": 0.2397,
+      "method": "knn"
+    },
+    {
+      "source": "su-105",
+      "target": "su-159",
+      "weight": 0.2471,
+      "method": "knn"
+    },
+    {
+      "source": "su-105",
+      "target": "su-110",
+      "weight": 0.3644,
+      "method": "knn"
+    },
+    {
+      "source": "su-105",
+      "target": "su-219",
+      "weight": 0.3769,
+      "method": "knn"
+    },
+    {
+      "source": "su-105",
+      "target": "su-106",
+      "weight": 0.8651,
+      "method": "knn"
+    },
+    {
+      "source": "su-105",
+      "target": "su-116",
+      "weight": 0.1762,
+      "method": "knn"
+    },
+    {
+      "source": "su-105",
+      "target": "su-144",
+      "weight": 0.1719,
+      "method": "knn"
+    },
+    {
+      "source": "su-105",
+      "target": "su-150",
+      "weight": 0.1363,
+      "method": "knn"
+    },
+    {
+      "source": "su-105",
+      "target": "su-156",
+      "weight": 0.1898,
+      "method": "knn"
+    },
+    {
+      "source": "su-105",
+      "target": "su-190",
+      "weight": 0.0985,
+      "method": "knn"
+    },
+    {
+      "source": "su-106",
+      "target": "su-115",
+      "weight": 0.189,
+      "method": "knn"
+    },
+    {
+      "source": "su-106",
+      "target": "su-130",
+      "weight": 0.2392,
+      "method": "knn"
+    },
+    {
+      "source": "su-106",
+      "target": "su-219",
+      "weight": 0.2064,
+      "method": "knn"
+    },
+    {
+      "source": "su-106",
+      "target": "su-110",
+      "weight": 0.4737,
+      "method": "knn"
+    },
+    {
+      "source": "su-106",
+      "target": "su-113",
+      "weight": 0.0897,
+      "method": "knn"
+    },
+    {
+      "source": "su-106",
+      "target": "su-116",
+      "weight": 0.1285,
+      "method": "knn"
+    },
+    {
+      "source": "su-106",
+      "target": "su-150",
+      "weight": 0.1299,
+      "method": "knn"
+    },
+    {
+      "source": "su-106",
+      "target": "su-153",
+      "weight": 0.0993,
+      "method": "knn"
+    },
+    {
+      "source": "su-106",
+      "target": "su-176",
+      "weight": 0.0722,
+      "method": "knn"
+    },
+    {
+      "source": "su-107",
+      "target": "su-127",
+      "weight": 0.14,
+      "method": "knn"
+    },
+    {
+      "source": "su-107",
+      "target": "su-110",
+      "weight": 0.1677,
+      "method": "knn"
+    },
+    {
+      "source": "su-107",
+      "target": "su-130",
+      "weight": 0.2512,
+      "method": "knn"
+    },
+    {
+      "source": "su-107",
+      "target": "su-111",
+      "weight": 0.3646,
+      "method": "knn"
+    },
+    {
+      "source": "su-107",
+      "target": "su-109",
+      "weight": 0.5904,
+      "method": "knn"
+    },
+    {
+      "source": "su-108",
+      "target": "su-154",
+      "weight": 0.0905,
+      "method": "knn"
+    },
+    {
+      "source": "su-108",
+      "target": "su-161",
+      "weight": 0.1314,
+      "method": "knn"
+    },
+    {
+      "source": "su-108",
+      "target": "su-156",
+      "weight": 0.2116,
+      "method": "knn"
+    },
+    {
+      "source": "su-108",
+      "target": "su-132",
+      "weight": 0.2591,
+      "method": "knn"
+    },
+    {
+      "source": "su-109",
+      "target": "su-127",
+      "weight": 0.1582,
+      "method": "knn"
+    },
+    {
+      "source": "su-109",
+      "target": "su-130",
+      "weight": 0.3033,
+      "method": "knn"
+    },
+    {
+      "source": "su-109",
+      "target": "su-111",
+      "weight": 0.441,
+      "method": "knn"
+    },
+    {
+      "source": "su-110",
+      "target": "su-130",
+      "weight": 0.2802,
+      "method": "knn"
+    },
+    {
+      "source": "su-111",
+      "target": "su-130",
+      "weight": 0.3096,
+      "method": "knn"
+    },
+    {
+      "source": "su-111",
+      "target": "su-127",
+      "weight": 0.3642,
+      "method": "knn"
+    },
+    {
+      "source": "su-112",
+      "target": "su-121",
+      "weight": 0.1716,
+      "method": "knn"
+    },
+    {
+      "source": "su-112",
+      "target": "su-114",
+      "weight": 0.2047,
+      "method": "knn"
+    },
+    {
+      "source": "su-112",
+      "target": "su-131",
+      "weight": 0.1792,
+      "method": "knn"
+    },
+    {
+      "source": "su-112",
+      "target": "su-119",
+      "weight": 0.334,
+      "method": "knn"
+    },
+    {
+      "source": "su-112",
+      "target": "su-113",
+      "weight": 0.1354,
+      "method": "knn"
+    },
+    {
+      "source": "su-112",
+      "target": "su-125",
+      "weight": 0.1427,
+      "method": "knn"
+    },
+    {
+      "source": "su-112",
+      "target": "su-133",
+      "weight": 0.0979,
+      "method": "knn"
+    },
+    {
+      "source": "su-112",
+      "target": "su-177",
+      "weight": 0.1421,
+      "method": "knn"
+    },
+    {
+      "source": "su-112",
+      "target": "su-199",
+      "weight": 0.0972,
+      "method": "knn"
+    },
+    {
+      "source": "su-113",
+      "target": "su-136",
+      "weight": 0.0782,
+      "method": "knn"
+    },
+    {
+      "source": "su-113",
+      "target": "su-137",
+      "weight": 0.1093,
+      "method": "knn"
+    },
+    {
+      "source": "su-113",
+      "target": "su-115",
+      "weight": 0.3127,
+      "method": "knn"
+    },
+    {
+      "source": "su-114",
+      "target": "su-119",
+      "weight": 0.1238,
+      "method": "knn"
+    },
+    {
+      "source": "su-114",
+      "target": "su-123",
+      "weight": 0.2627,
+      "method": "knn"
+    },
+    {
+      "source": "su-114",
+      "target": "su-131",
+      "weight": 0.5769,
+      "method": "knn"
+    },
+    {
+      "source": "su-115",
+      "target": "su-137",
+      "weight": 0.3412,
+      "method": "knn"
+    },
+    {
+      "source": "su-115",
+      "target": "su-136",
+      "weight": 0.3508,
+      "method": "knn"
+    },
+    {
+      "source": "su-115",
+      "target": "su-150",
+      "weight": 0.1334,
+      "method": "knn"
+    },
+    {
+      "source": "su-115",
+      "target": "su-155",
+      "weight": 0.1199,
+      "method": "knn"
+    },
+    {
+      "source": "su-116",
+      "target": "su-159",
+      "weight": 0.1171,
+      "method": "knn"
+    },
+    {
+      "source": "su-116",
+      "target": "su-120",
+      "weight": 0.1766,
+      "method": "knn"
+    },
+    {
+      "source": "su-116",
+      "target": "su-219",
+      "weight": 0.1589,
+      "method": "knn"
+    },
+    {
+      "source": "su-116",
+      "target": "su-147",
+      "weight": 0.1008,
+      "method": "knn"
+    },
+    {
+      "source": "su-117",
+      "target": "su-153",
+      "weight": 0.1789,
+      "method": "knn"
+    },
+    {
+      "source": "su-118",
+      "target": "su-158",
+      "weight": 0.8779,
+      "method": "knn"
+    },
+    {
+      "source": "su-119",
+      "target": "su-167",
+      "weight": 0.2766,
+      "method": "knn"
+    },
+    {
+      "source": "su-119",
+      "target": "su-131",
+      "weight": 0.3015,
+      "method": "knn"
+    },
+    {
+      "source": "su-119",
+      "target": "su-120",
+      "weight": 0.1464,
+      "method": "knn"
+    },
+    {
+      "source": "su-119",
+      "target": "su-121",
+      "weight": 0.1203,
+      "method": "knn"
+    },
+    {
+      "source": "su-119",
+      "target": "su-123",
+      "weight": 0.145,
+      "method": "knn"
+    },
+    {
+      "source": "su-119",
+      "target": "su-125",
+      "weight": 0.1479,
+      "method": "knn"
+    },
+    {
+      "source": "su-119",
+      "target": "su-177",
+      "weight": 0.1718,
+      "method": "knn"
+    },
+    {
+      "source": "su-119",
+      "target": "su-186",
+      "weight": 0.098,
+      "method": "knn"
+    },
+    {
+      "source": "su-119",
+      "target": "su-199",
+      "weight": 0.0775,
+      "method": "knn"
+    },
+    {
+      "source": "su-119",
+      "target": "su-207",
+      "weight": 0.0917,
+      "method": "knn"
+    },
+    {
+      "source": "su-120",
+      "target": "su-125",
+      "weight": 0.1872,
+      "method": "knn"
+    },
+    {
+      "source": "su-120",
+      "target": "su-131",
+      "weight": 0.1603,
+      "method": "knn"
+    },
+    {
+      "source": "su-120",
+      "target": "su-122",
+      "weight": 0.4979,
+      "method": "knn"
+    },
+    {
+      "source": "su-120",
+      "target": "su-145",
+      "weight": 0.1246,
+      "method": "knn"
+    },
+    {
+      "source": "su-121",
+      "target": "su-170",
+      "weight": 0.1865,
+      "method": "knn"
+    },
+    {
+      "source": "su-121",
+      "target": "su-128",
+      "weight": 0.3304,
+      "method": "knn"
+    },
+    {
+      "source": "su-121",
+      "target": "su-127",
+      "weight": 0.4082,
+      "method": "knn"
+    },
+    {
+      "source": "su-122",
+      "target": "su-194",
+      "weight": 0.208,
+      "method": "knn"
+    },
+    {
+      "source": "su-122",
+      "target": "su-216",
+      "weight": 0.1741,
+      "method": "knn"
+    },
+    {
+      "source": "su-122",
+      "target": "su-148",
+      "weight": 0.1803,
+      "method": "knn"
+    },
+    {
+      "source": "su-122",
+      "target": "su-151",
+      "weight": 0.3423,
+      "method": "knn"
+    },
+    {
+      "source": "su-122",
+      "target": "su-180",
+      "weight": 0.0797,
+      "method": "knn"
+    },
+    {
+      "source": "su-122",
+      "target": "su-191",
+      "weight": 0.1094,
+      "method": "knn"
+    },
+    {
+      "source": "su-122",
+      "target": "su-220",
+      "weight": 0.1003,
+      "method": "knn"
+    },
+    {
+      "source": "su-123",
+      "target": "su-125",
+      "weight": 0.1817,
+      "method": "knn"
+    },
+    {
+      "source": "su-123",
+      "target": "su-131",
+      "weight": 0.1707,
+      "method": "knn"
+    },
+    {
+      "source": "su-123",
+      "target": "su-177",
+      "weight": 0.2161,
+      "method": "knn"
+    },
+    {
+      "source": "su-123",
+      "target": "su-164",
+      "weight": 0.0624,
+      "method": "knn"
+    },
+    {
+      "source": "su-124",
+      "target": "su-129",
+      "weight": 0.0581,
+      "method": "knn"
+    },
+    {
+      "source": "su-124",
+      "target": "su-219",
+      "weight": 0.073,
+      "method": "knn"
+    },
+    {
+      "source": "su-124",
+      "target": "su-156",
+      "weight": 0.1282,
+      "method": "knn"
+    },
+    {
+      "source": "su-124",
+      "target": "su-160",
+      "weight": 0.2645,
+      "method": "knn"
+    },
+    {
+      "source": "su-124",
+      "target": "su-126",
+      "weight": 0.3456,
+      "method": "knn"
+    },
+    {
+      "source": "su-125",
+      "target": "su-131",
+      "weight": 0.1788,
+      "method": "knn"
+    },
+    {
+      "source": "su-126",
+      "target": "su-155",
+      "weight": 0.2057,
+      "method": "knn"
+    },
+    {
+      "source": "su-126",
+      "target": "su-156",
+      "weight": 0.216,
+      "method": "knn"
+    },
+    {
+      "source": "su-126",
+      "target": "su-219",
+      "weight": 0.2644,
+      "method": "knn"
+    },
+    {
+      "source": "su-126",
+      "target": "su-160",
+      "weight": 0.3532,
+      "method": "knn"
+    },
+    {
+      "source": "su-127",
+      "target": "su-128",
+      "weight": 0.3003,
+      "method": "knn"
+    },
+    {
+      "source": "su-128",
+      "target": "su-139",
+      "weight": 0.0643,
+      "method": "knn"
+    },
+    {
+      "source": "su-128",
+      "target": "su-200",
+      "weight": 0.0651,
+      "method": "knn"
+    },
+    {
+      "source": "su-129",
+      "target": "su-131",
+      "weight": 0.104,
+      "method": "knn"
+    },
+    {
+      "source": "su-129",
+      "target": "su-155",
+      "weight": 0.1415,
+      "method": "knn"
+    },
+    {
+      "source": "su-129",
+      "target": "su-130",
+      "weight": 0.1183,
+      "method": "knn"
+    },
+    {
+      "source": "su-129",
+      "target": "su-156",
+      "weight": 0.2586,
+      "method": "knn"
+    },
+    {
+      "source": "su-129",
+      "target": "su-147",
+      "weight": 0.0946,
+      "method": "knn"
+    },
+    {
+      "source": "su-129",
+      "target": "su-160",
+      "weight": 0.0963,
+      "method": "knn"
+    },
+    {
+      "source": "su-130",
+      "target": "su-132",
+      "weight": 0.1853,
+      "method": "knn"
+    },
+    {
+      "source": "su-130",
+      "target": "su-161",
+      "weight": 0.1025,
+      "method": "knn"
+    },
+    {
+      "source": "su-131",
+      "target": "su-177",
+      "weight": 0.2293,
+      "method": "knn"
+    },
+    {
+      "source": "su-131",
+      "target": "su-151",
+      "weight": 0.2023,
+      "method": "knn"
+    },
+    {
+      "source": "su-132",
+      "target": "su-161",
+      "weight": 0.0876,
+      "method": "knn"
+    },
+    {
+      "source": "su-132",
+      "target": "su-156",
+      "weight": 0.1445,
+      "method": "knn"
+    },
+    {
+      "source": "su-132",
+      "target": "su-154",
+      "weight": 0.3416,
+      "method": "knn"
+    },
+    {
+      "source": "su-133",
+      "target": "su-137",
+      "weight": 0.0782,
+      "method": "knn"
+    },
+    {
+      "source": "su-133",
+      "target": "su-134",
+      "weight": 0.093,
+      "method": "knn"
+    },
+    {
+      "source": "su-133",
+      "target": "su-149",
+      "weight": 0.1223,
+      "method": "knn"
+    },
+    {
+      "source": "su-133",
+      "target": "su-135",
+      "weight": 0.4119,
+      "method": "knn"
+    },
+    {
+      "source": "su-134",
+      "target": "su-149",
+      "weight": 0.098,
+      "method": "knn"
+    },
+    {
+      "source": "su-134",
+      "target": "su-135",
+      "weight": 0.0959,
+      "method": "knn"
+    },
+    {
+      "source": "su-135",
+      "target": "su-159",
+      "weight": 0.0938,
+      "method": "knn"
+    },
+    {
+      "source": "su-135",
+      "target": "su-137",
+      "weight": 0.1177,
+      "method": "knn"
+    },
+    {
+      "source": "su-135",
+      "target": "su-218",
+      "weight": 0.1229,
+      "method": "knn"
+    },
+    {
+      "source": "su-136",
+      "target": "su-150",
+      "weight": 0.1609,
+      "method": "knn"
+    },
+    {
+      "source": "su-136",
+      "target": "su-149",
+      "weight": 0.1614,
+      "method": "knn"
+    },
+    {
+      "source": "su-136",
+      "target": "su-146",
+      "weight": 0.1821,
+      "method": "knn"
+    },
+    {
+      "source": "su-136",
+      "target": "su-137",
+      "weight": 0.5969,
+      "method": "knn"
+    },
+    {
+      "source": "su-138",
+      "target": "su-176",
+      "weight": 0.0407,
+      "method": "knn"
+    },
+    {
+      "source": "su-138",
+      "target": "su-209",
+      "weight": 0.0659,
+      "method": "knn"
+    },
+    {
+      "source": "su-139",
+      "target": "su-142",
+      "weight": 0.1093,
+      "method": "knn"
+    },
+    {
+      "source": "su-140",
+      "target": "su-141",
+      "weight": 0.1853,
+      "method": "knn"
+    },
+    {
+      "source": "su-141",
+      "target": "su-167",
+      "weight": 0.1568,
+      "method": "knn"
+    },
+    {
+      "source": "su-141",
+      "target": "su-143",
+      "weight": 0.1157,
+      "method": "knn"
+    },
+    {
+      "source": "su-142",
+      "target": "su-143",
+      "weight": 0.0886,
+      "method": "knn"
+    },
+    {
+      "source": "su-144",
+      "target": "su-159",
+      "weight": 0.1858,
+      "method": "knn"
+    },
+    {
+      "source": "su-144",
+      "target": "su-210",
+      "weight": 0.2576,
+      "method": "knn"
+    },
+    {
+      "source": "su-144",
+      "target": "su-214",
+      "weight": 0.2705,
+      "method": "knn"
+    },
+    {
+      "source": "su-144",
+      "target": "su-219",
+      "weight": 0.2815,
+      "method": "knn"
+    },
+    {
+      "source": "su-145",
+      "target": "su-146",
+      "weight": 0.1142,
+      "method": "knn"
+    },
+    {
+      "source": "su-145",
+      "target": "su-168",
+      "weight": 0.1055,
+      "method": "knn"
+    },
+    {
+      "source": "su-146",
+      "target": "su-148",
+      "weight": 0.1681,
+      "method": "knn"
+    },
+    {
+      "source": "su-146",
+      "target": "su-174",
+      "weight": 0.2043,
+      "method": "knn"
+    },
+    {
+      "source": "su-146",
+      "target": "su-165",
+      "weight": 0.1823,
+      "method": "knn"
+    },
+    {
+      "source": "su-146",
+      "target": "su-167",
+      "weight": 0.2559,
+      "method": "knn"
+    },
+    {
+      "source": "su-146",
+      "target": "su-161",
+      "weight": 0.1252,
+      "method": "knn"
+    },
+    {
+      "source": "su-148",
+      "target": "su-151",
+      "weight": 0.3258,
+      "method": "knn"
+    },
+    {
+      "source": "su-148",
+      "target": "su-217",
+      "weight": 0.3785,
+      "method": "knn"
+    },
+    {
+      "source": "su-148",
+      "target": "su-216",
+      "weight": 0.3314,
+      "method": "knn"
+    },
+    {
+      "source": "su-148",
+      "target": "su-174",
+      "weight": 0.1516,
+      "method": "knn"
+    },
+    {
+      "source": "su-149",
+      "target": "su-150",
+      "weight": 0.1422,
+      "method": "knn"
+    },
+    {
+      "source": "su-149",
+      "target": "su-152",
+      "weight": 0.1547,
+      "method": "knn"
+    },
+    {
+      "source": "su-149",
+      "target": "su-161",
+      "weight": 0.1632,
+      "method": "knn"
+    },
+    {
+      "source": "su-151",
+      "target": "su-217",
+      "weight": 0.2485,
+      "method": "knn"
+    },
+    {
+      "source": "su-151",
+      "target": "su-177",
+      "weight": 0.1866,
+      "method": "knn"
+    },
+    {
+      "source": "su-151",
+      "target": "su-201",
+      "weight": 0.2436,
+      "method": "knn"
+    },
+    {
+      "source": "su-152",
+      "target": "su-178",
+      "weight": 0.1253,
+      "method": "knn"
+    },
+    {
+      "source": "su-152",
+      "target": "su-206",
+      "weight": 0.1269,
+      "method": "knn"
+    },
+    {
+      "source": "su-152",
+      "target": "su-182",
+      "weight": 0.1619,
+      "method": "knn"
+    },
+    {
+      "source": "su-152",
+      "target": "su-186",
+      "weight": 0.0958,
+      "method": "knn"
+    },
+    {
+      "source": "su-153",
+      "target": "su-182",
+      "weight": 0.0843,
+      "method": "knn"
+    },
+    {
+      "source": "su-153",
+      "target": "su-177",
+      "weight": 0.1117,
+      "method": "knn"
+    },
+    {
+      "source": "su-153",
+      "target": "su-154",
+      "weight": 0.2523,
+      "method": "knn"
+    },
+    {
+      "source": "su-154",
+      "target": "su-163",
+      "weight": 0.1384,
+      "method": "knn"
+    },
+    {
+      "source": "su-154",
+      "target": "su-155",
+      "weight": 0.152,
+      "method": "knn"
+    },
+    {
+      "source": "su-154",
+      "target": "su-177",
+      "weight": 0.1315,
+      "method": "knn"
+    },
+    {
+      "source": "su-156",
+      "target": "su-219",
+      "weight": 0.2127,
+      "method": "knn"
+    },
+    {
+      "source": "su-156",
+      "target": "su-159",
+      "weight": 0.1542,
+      "method": "knn"
+    },
+    {
+      "source": "su-159",
+      "target": "su-219",
+      "weight": 0.2762,
+      "method": "knn"
+    },
+    {
+      "source": "su-159",
+      "target": "su-218",
+      "weight": 0.1433,
+      "method": "knn"
+    },
+    {
+      "source": "su-162",
+      "target": "su-211",
+      "weight": 0.0494,
+      "method": "knn"
+    },
+    {
+      "source": "su-163",
+      "target": "su-177",
+      "weight": 0.103,
+      "method": "knn"
+    },
+    {
+      "source": "su-163",
+      "target": "su-164",
+      "weight": 0.2392,
+      "method": "knn"
+    },
+    {
+      "source": "su-163",
+      "target": "su-175",
+      "weight": 0.2542,
+      "method": "knn"
+    },
+    {
+      "source": "su-164",
+      "target": "su-199",
+      "weight": 0.0695,
+      "method": "knn"
+    },
+    {
+      "source": "su-164",
+      "target": "su-175",
+      "weight": 0.373,
+      "method": "knn"
+    },
+    {
+      "source": "su-165",
+      "target": "su-217",
+      "weight": 0.2431,
+      "method": "knn"
+    },
+    {
+      "source": "su-165",
+      "target": "su-216",
+      "weight": 0.5366,
+      "method": "knn"
+    },
+    {
+      "source": "su-165",
+      "target": "su-166",
+      "weight": 0.1928,
+      "method": "knn"
+    },
+    {
+      "source": "su-165",
+      "target": "su-167",
+      "weight": 0.2037,
+      "method": "knn"
+    },
+    {
+      "source": "su-165",
+      "target": "su-174",
+      "weight": 0.1878,
+      "method": "knn"
+    },
+    {
+      "source": "su-165",
+      "target": "su-194",
+      "weight": 0.1776,
+      "method": "knn"
+    },
+    {
+      "source": "su-165",
+      "target": "su-196",
+      "weight": 0.1202,
+      "method": "knn"
+    },
+    {
+      "source": "su-165",
+      "target": "su-200",
+      "weight": 0.2074,
+      "method": "knn"
+    },
+    {
+      "source": "su-165",
+      "target": "su-204",
+      "weight": 0.1108,
+      "method": "knn"
+    },
+    {
+      "source": "su-165",
+      "target": "su-206",
+      "weight": 0.2094,
+      "method": "knn"
+    },
+    {
+      "source": "su-165",
+      "target": "su-212",
+      "weight": 0.0916,
+      "method": "knn"
+    },
+    {
+      "source": "su-166",
+      "target": "su-171",
+      "weight": 0.2591,
+      "method": "knn"
+    },
+    {
+      "source": "su-166",
+      "target": "su-216",
+      "weight": 0.2596,
+      "method": "knn"
+    },
+    {
+      "source": "su-166",
+      "target": "su-170",
+      "weight": 0.1851,
+      "method": "knn"
+    },
+    {
+      "source": "su-167",
+      "target": "su-205",
+      "weight": 0.2459,
+      "method": "knn"
+    },
+    {
+      "source": "su-167",
+      "target": "su-194",
+      "weight": 0.2936,
+      "method": "knn"
+    },
+    {
+      "source": "su-167",
+      "target": "su-174",
+      "weight": 0.1933,
+      "method": "knn"
+    },
+    {
+      "source": "su-167",
+      "target": "su-178",
+      "weight": 0.1385,
+      "method": "knn"
+    },
+    {
+      "source": "su-167",
+      "target": "su-186",
+      "weight": 0.1638,
+      "method": "knn"
+    },
+    {
+      "source": "su-167",
+      "target": "su-208",
+      "weight": 0.1023,
+      "method": "knn"
+    },
+    {
+      "source": "su-168",
+      "target": "su-187",
+      "weight": 0.1148,
+      "method": "knn"
+    },
+    {
+      "source": "su-168",
+      "target": "su-195",
+      "weight": 0.215,
+      "method": "knn"
+    },
+    {
+      "source": "su-168",
+      "target": "su-193",
+      "weight": 0.3564,
+      "method": "knn"
+    },
+    {
+      "source": "su-168",
+      "target": "su-172",
+      "weight": 0.6285,
+      "method": "knn"
+    },
+    {
+      "source": "su-169",
+      "target": "su-171",
+      "weight": 0.1459,
+      "method": "knn"
+    },
+    {
+      "source": "su-169",
+      "target": "su-170",
+      "weight": 0.2419,
+      "method": "knn"
+    },
+    {
+      "source": "su-169",
+      "target": "su-183",
+      "weight": 0.0916,
+      "method": "knn"
+    },
+    {
+      "source": "su-169",
+      "target": "su-212",
+      "weight": 0.0808,
+      "method": "knn"
+    },
+    {
+      "source": "su-170",
+      "target": "su-171",
+      "weight": 0.3127,
+      "method": "knn"
+    },
+    {
+      "source": "su-171",
+      "target": "su-173",
+      "weight": 0.1904,
+      "method": "knn"
+    },
+    {
+      "source": "su-172",
+      "target": "su-193",
+      "weight": 0.3732,
+      "method": "knn"
+    },
+    {
+      "source": "su-172",
+      "target": "su-215",
+      "weight": 0.0857,
+      "method": "knn"
+    },
+    {
+      "source": "su-173",
+      "target": "su-179",
+      "weight": 0.0971,
+      "method": "knn"
+    },
+    {
+      "source": "su-173",
+      "target": "su-212",
+      "weight": 0.0822,
+      "method": "knn"
+    },
+    {
+      "source": "su-174",
+      "target": "su-200",
+      "weight": 0.2004,
+      "method": "knn"
+    },
+    {
+      "source": "su-175",
+      "target": "su-201",
+      "weight": 0.1621,
+      "method": "knn"
+    },
+    {
+      "source": "su-175",
+      "target": "su-203",
+      "weight": 0.1999,
+      "method": "knn"
+    },
+    {
+      "source": "su-175",
+      "target": "su-181",
+      "weight": 0.2278,
+      "method": "knn"
+    },
+    {
+      "source": "su-175",
+      "target": "su-179",
+      "weight": 0.1092,
+      "method": "knn"
+    },
+    {
+      "source": "su-175",
+      "target": "su-184",
+      "weight": 0.1397,
+      "method": "knn"
+    },
+    {
+      "source": "su-176",
+      "target": "su-184",
+      "weight": 0.0554,
+      "method": "knn"
+    },
+    {
+      "source": "su-178",
+      "target": "su-198",
+      "weight": 0.1921,
+      "method": "knn"
+    },
+    {
+      "source": "su-178",
+      "target": "su-186",
+      "weight": 0.1945,
+      "method": "knn"
+    },
+    {
+      "source": "su-178",
+      "target": "su-179",
+      "weight": 0.3791,
+      "method": "knn"
+    },
+    {
+      "source": "su-178",
+      "target": "su-184",
+      "weight": 0.1362,
+      "method": "knn"
+    },
+    {
+      "source": "su-178",
+      "target": "su-205",
+      "weight": 0.1227,
+      "method": "knn"
+    },
+    {
+      "source": "su-178",
+      "target": "su-207",
+      "weight": 0.0855,
+      "method": "knn"
+    },
+    {
+      "source": "su-178",
+      "target": "su-208",
+      "weight": 0.1004,
+      "method": "knn"
+    },
+    {
+      "source": "su-179",
+      "target": "su-182",
+      "weight": 0.1018,
+      "method": "knn"
+    },
+    {
+      "source": "su-179",
+      "target": "su-205",
+      "weight": 0.1649,
+      "method": "knn"
+    },
+    {
+      "source": "su-180",
+      "target": "su-197",
+      "weight": 0.3693,
+      "method": "knn"
+    },
+    {
+      "source": "su-180",
+      "target": "su-183",
+      "weight": 0.3891,
+      "method": "knn"
+    },
+    {
+      "source": "su-181",
+      "target": "su-193",
+      "weight": 0.2036,
+      "method": "knn"
+    },
+    {
+      "source": "su-181",
+      "target": "su-195",
+      "weight": 0.2141,
+      "method": "knn"
+    },
+    {
+      "source": "su-181",
+      "target": "su-197",
+      "weight": 0.3974,
+      "method": "knn"
+    },
+    {
+      "source": "su-182",
+      "target": "su-201",
+      "weight": 0.1273,
+      "method": "knn"
+    },
+    {
+      "source": "su-182",
+      "target": "su-198",
+      "weight": 0.1756,
+      "method": "knn"
+    },
+    {
+      "source": "su-182",
+      "target": "su-184",
+      "weight": 0.1239,
+      "method": "knn"
+    },
+    {
+      "source": "su-182",
+      "target": "su-185",
+      "weight": 0.1259,
+      "method": "knn"
+    },
+    {
+      "source": "su-183",
+      "target": "su-187",
+      "weight": 0.1073,
+      "method": "knn"
+    },
+    {
+      "source": "su-183",
+      "target": "su-197",
+      "weight": 0.5003,
+      "method": "knn"
+    },
+    {
+      "source": "su-183",
+      "target": "su-190",
+      "weight": 0.0858,
+      "method": "knn"
+    },
+    {
+      "source": "su-184",
+      "target": "su-203",
+      "weight": 0.1143,
+      "method": "knn"
+    },
+    {
+      "source": "su-187",
+      "target": "su-193",
+      "weight": 0.1926,
+      "method": "knn"
+    },
+    {
+      "source": "su-187",
+      "target": "su-191",
+      "weight": 0.2202,
+      "method": "knn"
+    },
+    {
+      "source": "su-187",
+      "target": "su-190",
+      "weight": 0.5002,
+      "method": "knn"
+    },
+    {
+      "source": "su-187",
+      "target": "su-192",
+      "weight": 0.1481,
+      "method": "knn"
+    },
+    {
+      "source": "su-188",
+      "target": "su-192",
+      "weight": 0.1977,
+      "method": "knn"
+    },
+    {
+      "source": "su-188",
+      "target": "su-189",
+      "weight": 0.1704,
+      "method": "knn"
+    },
+    {
+      "source": "su-189",
+      "target": "su-192",
+      "weight": 0.1193,
+      "method": "knn"
+    },
+    {
+      "source": "su-190",
+      "target": "su-192",
+      "weight": 0.1388,
+      "method": "knn"
+    },
+    {
+      "source": "su-190",
+      "target": "su-191",
+      "weight": 0.1589,
+      "method": "knn"
+    },
+    {
+      "source": "su-191",
+      "target": "su-220",
+      "weight": 0.1271,
+      "method": "knn"
+    },
+    {
+      "source": "su-193",
+      "target": "su-195",
+      "weight": 0.3161,
+      "method": "knn"
+    },
+    {
+      "source": "su-194",
+      "target": "su-200",
+      "weight": 0.2221,
+      "method": "knn"
+    },
+    {
+      "source": "su-194",
+      "target": "su-196",
+      "weight": 0.1422,
+      "method": "knn"
+    },
+    {
+      "source": "su-194",
+      "target": "su-205",
+      "weight": 0.1522,
+      "method": "knn"
+    },
+    {
+      "source": "su-194",
+      "target": "su-220",
+      "weight": 0.1557,
+      "method": "knn"
+    },
+    {
+      "source": "su-195",
+      "target": "su-197",
+      "weight": 0.1198,
+      "method": "knn"
+    },
+    {
+      "source": "su-196",
+      "target": "su-200",
+      "weight": 0.1345,
+      "method": "knn"
+    },
+    {
+      "source": "su-198",
+      "target": "su-203",
+      "weight": 0.1177,
+      "method": "knn"
+    },
+    {
+      "source": "su-198",
+      "target": "su-201",
+      "weight": 0.1265,
+      "method": "knn"
+    },
+    {
+      "source": "su-199",
+      "target": "su-200",
+      "weight": 0.1047,
+      "method": "knn"
+    },
+    {
+      "source": "su-200",
+      "target": "su-205",
+      "weight": 0.2431,
+      "method": "knn"
+    },
+    {
+      "source": "su-200",
+      "target": "su-202",
+      "weight": 0.1565,
+      "method": "knn"
+    },
+    {
+      "source": "su-201",
+      "target": "su-202",
+      "weight": 0.2899,
+      "method": "knn"
+    },
+    {
+      "source": "su-201",
+      "target": "su-203",
+      "weight": 0.348,
+      "method": "knn"
+    },
+    {
+      "source": "su-202",
+      "target": "su-204",
+      "weight": 0.1688,
+      "method": "knn"
+    },
+    {
+      "source": "su-202",
+      "target": "su-203",
+      "weight": 0.3686,
+      "method": "knn"
+    },
+    {
+      "source": "su-204",
+      "target": "su-212",
+      "weight": 0.1603,
+      "method": "knn"
+    },
+    {
+      "source": "su-204",
+      "target": "su-210",
+      "weight": 0.2321,
+      "method": "knn"
+    },
+    {
+      "source": "su-204",
+      "target": "su-217",
+      "weight": 0.2623,
+      "method": "knn"
+    },
+    {
+      "source": "su-206",
+      "target": "su-216",
+      "weight": 0.2038,
+      "method": "knn"
+    },
+    {
+      "source": "su-206",
+      "target": "su-207",
+      "weight": 0.1647,
+      "method": "knn"
+    },
+    {
+      "source": "su-206",
+      "target": "su-208",
+      "weight": 0.1079,
+      "method": "knn"
+    },
+    {
+      "source": "su-208",
+      "target": "su-211",
+      "weight": 0.2608,
+      "method": "knn"
+    },
+    {
+      "source": "su-208",
+      "target": "su-209",
+      "weight": 0.2977,
+      "method": "knn"
+    },
+    {
+      "source": "su-210",
+      "target": "su-217",
+      "weight": 0.1808,
+      "method": "knn"
+    },
+    {
+      "source": "su-210",
+      "target": "su-211",
+      "weight": 0.4975,
+      "method": "knn"
+    },
+    {
+      "source": "su-210",
+      "target": "su-214",
+      "weight": 0.6611,
+      "method": "knn"
+    },
+    {
+      "source": "su-210",
+      "target": "su-218",
+      "weight": 0.1623,
+      "method": "knn"
+    },
+    {
+      "source": "su-211",
+      "target": "su-218",
+      "weight": 0.2272,
+      "method": "knn"
+    },
+    {
+      "source": "su-211",
+      "target": "su-214",
+      "weight": 0.2564,
+      "method": "knn"
+    },
+    {
+      "source": "su-211",
+      "target": "su-219",
+      "weight": 0.2961,
+      "method": "knn"
+    },
+    {
+      "source": "su-213",
+      "target": "su-215",
+      "weight": 0.1714,
+      "method": "knn"
+    },
+    {
+      "source": "su-216",
+      "target": "su-217",
+      "weight": 0.4648,
+      "method": "knn"
+    }
+  ]
+}

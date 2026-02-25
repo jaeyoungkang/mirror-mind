@@ -1,0 +1,776 @@
+[
+  {
+    "nodeset": "entity-event",
+    "method": "knn",
+    "k_label": "k3",
+    "k": 3,
+    "num_nodes": 177,
+    "num_edges": 374,
+    "avg_degree": 4.23,
+    "num_components": 2,
+    "giant_ratio": 0.9435,
+    "avg_hop1_ratio": 0.029,
+    "avg_path_length": 5.2,
+    "clustering_coeff": 0.4592,
+    "density": 0.024,
+    "hub_nodes": [
+      {
+        "id": "ent-045",
+        "degree": 12,
+        "content": "구현 에이전트"
+      },
+      {
+        "id": "evt-060",
+        "degree": 11,
+        "content": "온보딩 관계 형성 원칙을 ai-service-design-principles.md에 범용 원칙 6개로 역수입"
+      },
+      {
+        "id": "ent-003",
+        "degree": 10,
+        "content": "코르카 (corca)"
+      },
+      {
+        "id": "evt-072",
+        "degree": 10,
+        "content": "ai-service-design-principles.md에 '사용자 행동의 깊은 이해' 범용 원칙을 추가했다"
+      },
+      {
+        "id": "ent-042",
+        "degree": 9,
+        "content": "에피소드 기억 시스템"
+      }
+    ],
+    "gate_pass": true
+  },
+  {
+    "nodeset": "entity-event",
+    "method": "knn",
+    "k_label": "k5",
+    "k": 5,
+    "num_nodes": 177,
+    "num_edges": 614,
+    "avg_degree": 6.94,
+    "num_components": 1,
+    "giant_ratio": 1.0,
+    "avg_hop1_ratio": 0.0483,
+    "avg_path_length": 3.54,
+    "clustering_coeff": 0.4076,
+    "density": 0.0394,
+    "hub_nodes": [
+      {
+        "id": "ent-010",
+        "degree": 19,
+        "content": "mirror-mind-principle.md"
+      },
+      {
+        "id": "evt-130",
+        "degree": 17,
+        "content": "mirror-mind 2레이어 기억 철학을 lighthouse에 적용하는 설계를 수행했다"
+      },
+      {
+        "id": "ent-045",
+        "degree": 16,
+        "content": "구현 에이전트"
+      },
+      {
+        "id": "evt-060",
+        "degree": 16,
+        "content": "온보딩 관계 형성 원칙을 ai-service-design-principles.md에 범용 원칙 6개로 역수입"
+      },
+      {
+        "id": "ent-003",
+        "degree": 13,
+        "content": "코르카 (corca)"
+      }
+    ],
+    "gate_pass": true
+  },
+  {
+    "nodeset": "entity-event",
+    "method": "knn",
+    "k_label": "k8",
+    "k": 8,
+    "num_nodes": 177,
+    "num_edges": 966,
+    "avg_degree": 10.92,
+    "num_components": 1,
+    "giant_ratio": 1.0,
+    "avg_hop1_ratio": 0.0744,
+    "avg_path_length": 2.75,
+    "clustering_coeff": 0.4014,
+    "density": 0.062,
+    "hub_nodes": [
+      {
+        "id": "ent-010",
+        "degree": 31,
+        "content": "mirror-mind-principle.md"
+      },
+      {
+        "id": "evt-129",
+        "degree": 25,
+        "content": "기억 시스템 재설계 항목이 lighthouse 하위에 잘못 들어가 있어 mirror-mind 운영 작업으로 "
+      },
+      {
+        "id": "evt-130",
+        "degree": 25,
+        "content": "mirror-mind 2레이어 기억 철학을 lighthouse에 적용하는 설계를 수행했다"
+      },
+      {
+        "id": "evt-025",
+        "degree": 24,
+        "content": "lighthouse 구현 에이전트에게 대원칙 기반 코드 재설계를 지시하되, Phase A만 진행하기로 결정했"
+      },
+      {
+        "id": "ent-045",
+        "degree": 23,
+        "content": "구현 에이전트"
+      }
+    ],
+    "gate_pass": false
+  },
+  {
+    "nodeset": "entity-event",
+    "method": "cooccurrence",
+    "k_label": "k3",
+    "k": 3,
+    "num_nodes": 177,
+    "num_edges": 243,
+    "avg_degree": 2.75,
+    "num_components": 65,
+    "giant_ratio": 0.0678,
+    "avg_hop1_ratio": 0.0,
+    "avg_path_length": -1,
+    "clustering_coeff": 0.6181,
+    "density": 0.0156,
+    "hub_nodes": [
+      {
+        "id": "evt-057",
+        "degree": 6,
+        "content": "인간 관계 형성 메커니즘을 심리학 관점에서 탐색하여 3가지 핵심 인사이트를 도출했다"
+      },
+      {
+        "id": "evt-112",
+        "degree": 6,
+        "content": "codex exec 활용 원칙을 수립했다: 분석 전용은 read-only, 파일 수정 필요 시 workspa"
+      },
+      {
+        "id": "evt-004",
+        "degree": 5,
+        "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다"
+      },
+      {
+        "id": "evt-009",
+        "degree": 5,
+        "content": "AI 서비스 설계 핵심 전제 2축을 확립: '자율성은 디자인 선택' + 'AI는 동료 수준의 주체'"
+      },
+      {
+        "id": "evt-015",
+        "degree": 5,
+        "content": "technical-grain.md에 Agent Plane 안전장치, Context7 MCP 지식 공급, 5계"
+      }
+    ],
+    "gate_pass": false
+  },
+  {
+    "nodeset": "entity-event",
+    "method": "cooccurrence",
+    "k_label": "k5",
+    "k": 5,
+    "num_nodes": 177,
+    "num_edges": 276,
+    "avg_degree": 3.12,
+    "num_components": 65,
+    "giant_ratio": 0.0678,
+    "avg_hop1_ratio": 0.0,
+    "avg_path_length": -1,
+    "clustering_coeff": 0.6153,
+    "density": 0.0177,
+    "hub_nodes": [
+      {
+        "id": "evt-004",
+        "degree": 6,
+        "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다"
+      },
+      {
+        "id": "evt-005",
+        "degree": 6,
+        "content": "수집/구조화/진행/대화/회고 5개 축을 순차 합의하여 task-management-principle.md를 "
+      },
+      {
+        "id": "evt-006",
+        "degree": 6,
+        "content": "'불확실성이 클 때 단순하게 시작' 운영 원칙을 채택했다"
+      },
+      {
+        "id": "evt-007",
+        "degree": 6,
+        "content": "agentic-engineering의 collaboration/development/service-desig"
+      },
+      {
+        "id": "evt-008",
+        "degree": 6,
+        "content": "기존 Next.js 가이드에서 범용 원칙만 추출하여 기술적 결을 정리했다"
+      }
+    ],
+    "gate_pass": false
+  },
+  {
+    "nodeset": "entity-event",
+    "method": "cooccurrence",
+    "k_label": "k8",
+    "k": 8,
+    "num_nodes": 177,
+    "num_edges": 276,
+    "avg_degree": 3.12,
+    "num_components": 65,
+    "giant_ratio": 0.0678,
+    "avg_hop1_ratio": 0.0,
+    "avg_path_length": -1,
+    "clustering_coeff": 0.6153,
+    "density": 0.0177,
+    "hub_nodes": [
+      {
+        "id": "evt-004",
+        "degree": 6,
+        "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다"
+      },
+      {
+        "id": "evt-005",
+        "degree": 6,
+        "content": "수집/구조화/진행/대화/회고 5개 축을 순차 합의하여 task-management-principle.md를 "
+      },
+      {
+        "id": "evt-006",
+        "degree": 6,
+        "content": "'불확실성이 클 때 단순하게 시작' 운영 원칙을 채택했다"
+      },
+      {
+        "id": "evt-007",
+        "degree": 6,
+        "content": "agentic-engineering의 collaboration/development/service-desig"
+      },
+      {
+        "id": "evt-008",
+        "degree": 6,
+        "content": "기존 Next.js 가이드에서 범용 원칙만 추출하여 기술적 결을 정리했다"
+      }
+    ],
+    "gate_pass": false
+  },
+  {
+    "nodeset": "proposition",
+    "method": "knn",
+    "k_label": "k3",
+    "k": 3,
+    "num_nodes": 218,
+    "num_edges": 457,
+    "avg_degree": 4.19,
+    "num_components": 1,
+    "giant_ratio": 1.0,
+    "avg_hop1_ratio": 0.0189,
+    "avg_path_length": 4.75,
+    "clustering_coeff": 0.3161,
+    "density": 0.0193,
+    "hub_nodes": [
+      {
+        "id": "prop-035",
+        "degree": 13,
+        "content": "강재영이 'lighthouse는 연구 동료 서비스가 방향이다'라고 지시했다"
+      },
+      {
+        "id": "prop-043",
+        "degree": 11,
+        "content": "lighthouse 구현 에이전트에게 대원칙 기반 코드 재설계를 지시했다"
+      },
+      {
+        "id": "prop-166",
+        "degree": 11,
+        "content": "mirror-mind에 JSON 파일 + git 기반으로 기억 시스템을 적용하기로 결정했다"
+      },
+      {
+        "id": "prop-037",
+        "degree": 9,
+        "content": "lighthouse 에이전트 계층(상위 2개 + 하위 6개)을 확정했다"
+      },
+      {
+        "id": "prop-013",
+        "degree": 8,
+        "content": "AI 서비스 설계 핵심 전제 2축을 확립했다: '자율성은 디자인 선택' + 'AI는 동료 수준의 주체'"
+      }
+    ],
+    "gate_pass": true
+  },
+  {
+    "nodeset": "proposition",
+    "method": "knn",
+    "k_label": "k5",
+    "k": 5,
+    "num_nodes": 218,
+    "num_edges": 757,
+    "avg_degree": 6.94,
+    "num_components": 1,
+    "giant_ratio": 1.0,
+    "avg_hop1_ratio": 0.0323,
+    "avg_path_length": 3.36,
+    "clustering_coeff": 0.2944,
+    "density": 0.032,
+    "hub_nodes": [
+      {
+        "id": "prop-043",
+        "degree": 23,
+        "content": "lighthouse 구현 에이전트에게 대원칙 기반 코드 재설계를 지시했다"
+      },
+      {
+        "id": "prop-037",
+        "degree": 20,
+        "content": "lighthouse 에이전트 계층(상위 2개 + 하위 6개)을 확정했다"
+      },
+      {
+        "id": "prop-036",
+        "degree": 16,
+        "content": "mirror-mind 4대 원칙을 lighthouse 서비스 맥락으로 번역했다"
+      },
+      {
+        "id": "prop-001",
+        "degree": 14,
+        "content": "AGENTS.md와 mirror-mind-principle.md를 검토했다"
+      },
+      {
+        "id": "prop-035",
+        "degree": 14,
+        "content": "강재영이 'lighthouse는 연구 동료 서비스가 방향이다'라고 지시했다"
+      }
+    ],
+    "gate_pass": true
+  },
+  {
+    "nodeset": "proposition",
+    "method": "knn",
+    "k_label": "k8",
+    "k": 8,
+    "num_nodes": 218,
+    "num_edges": 1183,
+    "avg_degree": 10.85,
+    "num_components": 1,
+    "giant_ratio": 1.0,
+    "avg_hop1_ratio": 0.0486,
+    "avg_path_length": 2.69,
+    "clustering_coeff": 0.2826,
+    "density": 0.05,
+    "hub_nodes": [
+      {
+        "id": "prop-043",
+        "degree": 36,
+        "content": "lighthouse 구현 에이전트에게 대원칙 기반 코드 재설계를 지시했다"
+      },
+      {
+        "id": "prop-037",
+        "degree": 31,
+        "content": "lighthouse 에이전트 계층(상위 2개 + 하위 6개)을 확정했다"
+      },
+      {
+        "id": "prop-036",
+        "degree": 25,
+        "content": "mirror-mind 4대 원칙을 lighthouse 서비스 맥락으로 번역했다"
+      },
+      {
+        "id": "prop-014",
+        "degree": 22,
+        "content": "강재영이 '앞으로 AI 서비스에는 동료 레벨의 에이전트가 존재해야 한다'는 비전을 제시했다"
+      },
+      {
+        "id": "prop-035",
+        "degree": 22,
+        "content": "강재영이 'lighthouse는 연구 동료 서비스가 방향이다'라고 지시했다"
+      }
+    ],
+    "gate_pass": false
+  },
+  {
+    "nodeset": "proposition",
+    "method": "cooccurrence",
+    "k_label": "k3",
+    "k": 3,
+    "num_nodes": 218,
+    "num_edges": 416,
+    "avg_degree": 3.82,
+    "num_components": 20,
+    "giant_ratio": 0.0963,
+    "avg_hop1_ratio": 0.0182,
+    "avg_path_length": -1,
+    "clustering_coeff": 0.7125,
+    "density": 0.0176,
+    "hub_nodes": [
+      {
+        "id": "prop-065",
+        "degree": 6,
+        "content": "강재영이 '처음부터 다시 만든다, 레거시 고려 불필요, AI 관계 재설정 UI/UX에 창의적 접근 필요'라고"
+      },
+      {
+        "id": "prop-168",
+        "degree": 6,
+        "content": "extract_text.py로 raw JSONL에서 텍스트 추출 기능을 만들었다"
+      },
+      {
+        "id": "prop-004",
+        "degree": 5,
+        "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다"
+      },
+      {
+        "id": "prop-018",
+        "degree": 5,
+        "content": "비판적 검토 -> 추상화 -> 통합 흐름을 운영 원칙으로 채택했다"
+      },
+      {
+        "id": "prop-025",
+        "degree": 5,
+        "content": "technical-grain.md에 Agent Plane 안전장치(코드 레벨: 샌드박싱, 린트/SAST 필수"
+      }
+    ],
+    "gate_pass": false
+  },
+  {
+    "nodeset": "proposition",
+    "method": "cooccurrence",
+    "k_label": "k5",
+    "k": 5,
+    "num_nodes": 218,
+    "num_edges": 534,
+    "avg_degree": 4.9,
+    "num_components": 20,
+    "giant_ratio": 0.0963,
+    "avg_hop1_ratio": 0.0256,
+    "avg_path_length": -1,
+    "clustering_coeff": 0.7346,
+    "density": 0.0226,
+    "hub_nodes": [
+      {
+        "id": "prop-004",
+        "degree": 6,
+        "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다"
+      },
+      {
+        "id": "prop-005",
+        "degree": 6,
+        "content": "수집, 구조화, 진행, 대화, 회고 5개 축을 순차 합의했다"
+      },
+      {
+        "id": "prop-006",
+        "degree": 6,
+        "content": "도메인+프로젝트 2축 분류, 플랫 구조로 시작하기로 했다"
+      },
+      {
+        "id": "prop-007",
+        "degree": 6,
+        "content": "'불확실성이 클 때 단순하게 시작' 운영 원칙을 채택했다"
+      },
+      {
+        "id": "prop-008",
+        "degree": 6,
+        "content": "하위 프로젝트는 별도 저장소이나 같은 PC에서 접근 가능한 구조로 설계했다"
+      }
+    ],
+    "gate_pass": false
+  },
+  {
+    "nodeset": "proposition",
+    "method": "cooccurrence",
+    "k_label": "k8",
+    "k": 8,
+    "num_nodes": 218,
+    "num_edges": 534,
+    "avg_degree": 4.9,
+    "num_components": 20,
+    "giant_ratio": 0.0963,
+    "avg_hop1_ratio": 0.0256,
+    "avg_path_length": -1,
+    "clustering_coeff": 0.7346,
+    "density": 0.0226,
+    "hub_nodes": [
+      {
+        "id": "prop-004",
+        "degree": 6,
+        "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다"
+      },
+      {
+        "id": "prop-005",
+        "degree": 6,
+        "content": "수집, 구조화, 진행, 대화, 회고 5개 축을 순차 합의했다"
+      },
+      {
+        "id": "prop-006",
+        "degree": 6,
+        "content": "도메인+프로젝트 2축 분류, 플랫 구조로 시작하기로 했다"
+      },
+      {
+        "id": "prop-007",
+        "degree": 6,
+        "content": "'불확실성이 클 때 단순하게 시작' 운영 원칙을 채택했다"
+      },
+      {
+        "id": "prop-008",
+        "degree": 6,
+        "content": "하위 프로젝트는 별도 저장소이나 같은 PC에서 접근 가능한 구조로 설계했다"
+      }
+    ],
+    "gate_pass": false
+  },
+  {
+    "nodeset": "semantic-unit",
+    "method": "knn",
+    "k_label": "k3",
+    "k": 3,
+    "num_nodes": 220,
+    "num_edges": 471,
+    "avg_degree": 4.28,
+    "num_components": 1,
+    "giant_ratio": 1.0,
+    "avg_hop1_ratio": 0.0185,
+    "avg_path_length": 4.7,
+    "clustering_coeff": 0.2746,
+    "density": 0.0196,
+    "hub_nodes": [
+      {
+        "id": "su-034",
+        "degree": 10,
+        "content": "lighthouse의 방향을 '연구 동료 서비스'로 정했다 — 서비스 목적에 협업 원칙이 적용되어야 한다"
+      },
+      {
+        "id": "su-037",
+        "degree": 10,
+        "content": "원칙 원본은 mirror-mind에서 관리하고, lighthouse에는 복사본을 두는 구조로 했다"
+      },
+      {
+        "id": "su-165",
+        "degree": 10,
+        "content": "mirror-mind가 과거 기억을 사실상 참조하지 못하는 문제를 인식하고, 기억 시스템 도입을 시작했다"
+      },
+      {
+        "id": "su-216",
+        "degree": 10,
+        "content": "기억 시스템 재설계 항목이 lighthouse 프로젝트 하위에 잘못 들어가 있어서, mirror-mind 운"
+      },
+      {
+        "id": "su-094",
+        "degree": 9,
+        "content": "공유 경험이 관계 전환점이다"
+      }
+    ],
+    "gate_pass": true
+  },
+  {
+    "nodeset": "semantic-unit",
+    "method": "knn",
+    "k_label": "k5",
+    "k": 5,
+    "num_nodes": 220,
+    "num_edges": 767,
+    "avg_degree": 6.97,
+    "num_components": 1,
+    "giant_ratio": 1.0,
+    "avg_hop1_ratio": 0.0295,
+    "avg_path_length": 3.32,
+    "clustering_coeff": 0.2605,
+    "density": 0.0318,
+    "hub_nodes": [
+      {
+        "id": "su-165",
+        "degree": 18,
+        "content": "mirror-mind가 과거 기억을 사실상 참조하지 못하는 문제를 인식하고, 기억 시스템 도입을 시작했다"
+      },
+      {
+        "id": "su-036",
+        "degree": 16,
+        "content": "lighthouse 에이전트 계층을 상위 2개 + 하위 6개로 확정했다"
+      },
+      {
+        "id": "su-102",
+        "degree": 16,
+        "content": "6개 관계 형성 원칙을 수립했다: 따뜻함 우선, AI 선자기노출, 첫 경험 결정적, 공유 경험이 전환점, 한"
+      },
+      {
+        "id": "su-034",
+        "degree": 14,
+        "content": "lighthouse의 방향을 '연구 동료 서비스'로 정했다 — 서비스 목적에 협업 원칙이 적용되어야 한다"
+      },
+      {
+        "id": "su-119",
+        "degree": 14,
+        "content": "시나리오 이해가 서비스 설계의 중요한 요소라고 강재영이 직접 지적했다"
+      }
+    ],
+    "gate_pass": true
+  },
+  {
+    "nodeset": "semantic-unit",
+    "method": "knn",
+    "k_label": "k8",
+    "k": 8,
+    "num_nodes": 220,
+    "num_edges": 1200,
+    "avg_degree": 10.91,
+    "num_components": 1,
+    "giant_ratio": 1.0,
+    "avg_hop1_ratio": 0.0473,
+    "avg_path_length": 2.69,
+    "clustering_coeff": 0.275,
+    "density": 0.0498,
+    "hub_nodes": [
+      {
+        "id": "su-036",
+        "degree": 24,
+        "content": "lighthouse 에이전트 계층을 상위 2개 + 하위 6개로 확정했다"
+      },
+      {
+        "id": "su-119",
+        "degree": 24,
+        "content": "시나리오 이해가 서비스 설계의 중요한 요소라고 강재영이 직접 지적했다"
+      },
+      {
+        "id": "su-049",
+        "degree": 23,
+        "content": "mirror-mind 세션은 설계 문서 작성, 업무 관리, 의사결정 수렴을 담당하고, 코드 구현은 하위 프로"
+      },
+      {
+        "id": "su-034",
+        "degree": 22,
+        "content": "lighthouse의 방향을 '연구 동료 서비스'로 정했다 — 서비스 목적에 협업 원칙이 적용되어야 한다"
+      },
+      {
+        "id": "su-148",
+        "degree": 22,
+        "content": "기억 시스템을 독립 모듈로 설계하여 lighthouse에 종속시키지 않는 원칙을 확립했다"
+      }
+    ],
+    "gate_pass": false
+  },
+  {
+    "nodeset": "semantic-unit",
+    "method": "cooccurrence",
+    "k_label": "k3",
+    "k": 3,
+    "num_nodes": 220,
+    "num_edges": 420,
+    "avg_degree": 3.82,
+    "num_components": 20,
+    "giant_ratio": 0.0909,
+    "avg_hop1_ratio": 0.0178,
+    "avg_path_length": -1,
+    "clustering_coeff": 0.7105,
+    "density": 0.0174,
+    "hub_nodes": [
+      {
+        "id": "su-044",
+        "degree": 6,
+        "content": "암묵적 행동을 명시적 트리거로 정의하여 일관성을 보장하는 패턴을 확립했다"
+      },
+      {
+        "id": "su-063",
+        "degree": 6,
+        "content": "강재영이 선언했다: 처음부터 다시 만든다, 레거시 고려 불필요, 기존 문서는 재료 수준, AI 관계 재설정 "
+      },
+      {
+        "id": "su-107",
+        "degree": 6,
+        "content": "메인 화면을 3단 분할(C 타입)하여 노트북 + Board(우상) + Graph(우하)를 동시 표시하기로 했"
+      },
+      {
+        "id": "su-004",
+        "degree": 5,
+        "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다"
+      },
+      {
+        "id": "su-017",
+        "degree": 5,
+        "content": "비판적 검토 -> 추상화 -> 통합 흐름을 운영 원칙으로 채택했다"
+      }
+    ],
+    "gate_pass": false
+  },
+  {
+    "nodeset": "semantic-unit",
+    "method": "cooccurrence",
+    "k_label": "k5",
+    "k": 5,
+    "num_nodes": 220,
+    "num_edges": 540,
+    "avg_degree": 4.91,
+    "num_components": 20,
+    "giant_ratio": 0.0909,
+    "avg_hop1_ratio": 0.0247,
+    "avg_path_length": -1,
+    "clustering_coeff": 0.7333,
+    "density": 0.0224,
+    "hub_nodes": [
+      {
+        "id": "su-004",
+        "degree": 6,
+        "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다"
+      },
+      {
+        "id": "su-005",
+        "degree": 6,
+        "content": "수집, 구조화, 진행, 대화, 회고 5개 축을 업무 관리 체계로 순차 합의했다"
+      },
+      {
+        "id": "su-006",
+        "degree": 6,
+        "content": "도메인과 프로젝트 2축 분류, 플랫 구조로 시작하기로 했다"
+      },
+      {
+        "id": "su-007",
+        "degree": 6,
+        "content": "불확실성이 클 때 단순하게 시작한다는 운영 원칙을 채택했다"
+      },
+      {
+        "id": "su-008",
+        "degree": 6,
+        "content": "하위 프로젝트는 별도 저장소이나 같은 PC에서 접근 가능한 구조로 설계했다"
+      }
+    ],
+    "gate_pass": false
+  },
+  {
+    "nodeset": "semantic-unit",
+    "method": "cooccurrence",
+    "k_label": "k8",
+    "k": 8,
+    "num_nodes": 220,
+    "num_edges": 540,
+    "avg_degree": 4.91,
+    "num_components": 20,
+    "giant_ratio": 0.0909,
+    "avg_hop1_ratio": 0.0247,
+    "avg_path_length": -1,
+    "clustering_coeff": 0.7333,
+    "density": 0.0224,
+    "hub_nodes": [
+      {
+        "id": "su-004",
+        "degree": 6,
+        "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다"
+      },
+      {
+        "id": "su-005",
+        "degree": 6,
+        "content": "수집, 구조화, 진행, 대화, 회고 5개 축을 업무 관리 체계로 순차 합의했다"
+      },
+      {
+        "id": "su-006",
+        "degree": 6,
+        "content": "도메인과 프로젝트 2축 분류, 플랫 구조로 시작하기로 했다"
+      },
+      {
+        "id": "su-007",
+        "degree": 6,
+        "content": "불확실성이 클 때 단순하게 시작한다는 운영 원칙을 채택했다"
+      },
+      {
+        "id": "su-008",
+        "degree": 6,
+        "content": "하위 프로젝트는 별도 저장소이나 같은 PC에서 접근 가능한 구조로 설계했다"
+      }
+    ],
+    "gate_pass": false
+  }
+]

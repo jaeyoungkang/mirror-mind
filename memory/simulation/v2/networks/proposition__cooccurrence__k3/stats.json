@@ -1,0 +1,43 @@
+{
+  "nodeset": "proposition",
+  "method": "cooccurrence",
+  "k_label": "k3",
+  "k": 3,
+  "num_nodes": 218,
+  "num_edges": 416,
+  "avg_degree": 3.82,
+  "num_components": 20,
+  "giant_ratio": 0.0963,
+  "avg_hop1_ratio": 0.0182,
+  "avg_path_length": -1,
+  "clustering_coeff": 0.7125,
+  "density": 0.0176,
+  "hub_nodes": [
+    {
+      "id": "prop-065",
+      "degree": 6,
+      "content": "강재영이 '처음부터 다시 만든다, 레거시 고려 불필요, AI 관계 재설정 UI/UX에 창의적 접근 필요'라고"
+    },
+    {
+      "id": "prop-168",
+      "degree": 6,
+      "content": "extract_text.py로 raw JSONL에서 텍스트 추출 기능을 만들었다"
+    },
+    {
+      "id": "prop-004",
+      "degree": 5,
+      "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다"
+    },
+    {
+      "id": "prop-018",
+      "degree": 5,
+      "content": "비판적 검토 -> 추상화 -> 통합 흐름을 운영 원칙으로 채택했다"
+    },
+    {
+      "id": "prop-025",
+      "degree": 5,
+      "content": "technical-grain.md에 Agent Plane 안전장치(코드 레벨: 샌드박싱, 린트/SAST 필수"
+    }
+  ],
+  "gate_pass": false
+}

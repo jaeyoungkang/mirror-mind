@@ -1,0 +1,182 @@
+[
+  {
+    "combination": "fusion-weighted/proposition__k3",
+    "scenario_id": "scenario-1",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 5,
+    "total": 18,
+    "notes": "핵심 사실 모두 포착: LLM 2회+API 순차 실행 병목(prop-163), orchestrator 리팩토링(prop-196), 관측 구조 설계(prop-047,051), 속도 개선 우선과제(prop-164,172). 잡음은 일부 존재(prop-126 find_related_papers, prop-217 memory kind 등 직접 무관한 항목)하나, 상위 6개가 모두 핵심을 정확히 짚고 있어 답변 생성에 충분."
+  },
+  {
+    "combination": "fusion-weighted/proposition__k3",
+    "scenario_id": "scenario-2",
+    "relevance": 4,
+    "coverage": 4,
+    "noise": 3,
+    "specificity": 4,
+    "total": 15,
+    "notes": "AGENTS.md 트리거(prop-046), 역할 정의(prop-053), 점진적 확장(prop-007), 핵심 문서 수정 합의는 간접적으로만 포착. task-management 5개 축 명시 노드 없음. 잡음으로 lighthouse observability(prop-047), 기억 모듈 독립(prop-150) 등 프로젝트 시작과 직접 관련 없는 항목 포함."
+  },
+  {
+    "combination": "fusion-weighted/proposition__k3",
+    "scenario_id": "scenario-3",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 5,
+    "total": 18,
+    "notes": "온보딩 핵심 전부 포착: 첫 대화가 온보딩(prop-096), 코르카 이름(prop-097), Fiske/Aron 심리학(prop-094), 관계 깊이 4단계(prop-144), 따뜻함 우선/점진적 자기노출/공유경험(prop-103), 연속적 관계 성장(prop-141). 잡음으로 model kind subject(prop-209), 패널 propose(prop-136) 등 온보딩 직접 관련도 낮은 항목 일부 포함."
+  },
+  {
+    "combination": "fusion-weighted/proposition__k3",
+    "scenario_id": "scenario-4",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 5,
+    "total": 18,
+    "notes": "핵심 모두 포착: 서비스형 인사 문제(prop-198), 기억 주입 과다→빈 칠판 원칙(prop-091,092 via 관련), 기억 시스템 철학 재정의(prop-199), 에이전트 자신의 기억(prop-199). 잡음으로 2레이어 아키텍처(prop-207), 시연 흐름(prop-089) 등 톤 문제와 직접 무관한 기억 시스템 세부사항 포함."
+  },
+  {
+    "combination": "fusion-weighted/proposition__k3",
+    "scenario_id": "scenario-5",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 5,
+    "total": 18,
+    "notes": "핵심 전부 포착: check.py 프로토타입(prop-031), 톤 위반 감지(prop-031), --llm codex exec 연동(prop-185), 자기감시 재귀 구조(prop-187), --dangerously 비판 부재→read-only 교정은 prop-187에서 암시. 메타에이전트 구성(prop-030), watch 모드(prop-032)도 포함. 잡음으로 codex 다중쿼리(prop-192), 관측 UI 계획(prop-050) 등 간접 관련 항목 존재."
+  },
+  {
+    "combination": "fusion-weighted/proposition__k3",
+    "scenario_id": "scenario-6",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 2,
+    "specificity": 5,
+    "total": 17,
+    "notes": "기억 시스템 핵심 전부 포착: 2레이어(prop-207,202), episodes=사실/memories=기억, 에이전트가 기억 주체(prop-199), model kind(prop-208에서 5개 kind 언급), 맥락 기반 조회 query.py(prop-192 관련). fact_refs(prop-210)도 포함. 잡음으로 구현 위임 6건(prop-160), lighthouse 적용(prop-215) 등 발전 방향과는 관련 있으나 핵심 답변에는 부차적인 항목 다수 포함."
+  },
+  {
+    "combination": "single/proposition__knn__k5",
+    "scenario_id": "scenario-1",
+    "relevance": 4,
+    "coverage": 4,
+    "noise": 2,
+    "specificity": 4,
+    "total": 14,
+    "notes": "핵심인 LLM 2회+API 순차 병목(prop-163), orchestrator 리팩토링(prop-196), 관측 설계(prop-047,051), 속도 개선 합의(prop-172)를 포착. 그러나 LLM 이원화(에이전트 수준 vs 도구 수준)에 대한 직접적 노드 없음. 잡음이 상당: lighthouse docs 대조(prop-033), 갭 식별(prop-034), 연구 동료 방향(prop-035), 4대 원칙 번역(prop-036), 에이전트 계층(prop-037) 등 응답 속도와 직접 무관한 lighthouse 일반 설계 노드가 하위 절반을 차지."
+  },
+  {
+    "combination": "single/proposition__knn__k5",
+    "scenario_id": "scenario-2",
+    "relevance": 4,
+    "coverage": 4,
+    "noise": 3,
+    "specificity": 4,
+    "total": 15,
+    "notes": "AGENTS.md 트리거(prop-046), 역할 정의(prop-053), 점진적 확장(prop-007), 핵심 문서 수정 합의(prop-002), 비서실장 역할(prop-004)을 포착. fusion-weighted와 비교해 prop-002(핵심 문서 합의)와 prop-004(비서실장 역할)가 추가되어 coverage 면에서 미세하게 나음. 잡음은 비슷한 수준."
+  },
+  {
+    "combination": "single/proposition__knn__k5",
+    "scenario_id": "scenario-3",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 5,
+    "total": 18,
+    "notes": "fusion-weighted와 거의 동일한 핵심 포착: 첫 대화=온보딩(prop-096), 코르카(prop-097), Fiske/Aron(prop-094), 관계 4단계(prop-144), 6개 원칙(prop-103), 연속적 관계 성장(prop-141). 추가로 ai-service-design-principles.md 사용자 행동 이해(prop-121), 동료 산출물(prop-158), 호혜성 불가(prop-095) 등 온보딩 주변 맥락도 풍부. 잡음도 비슷."
+  },
+  {
+    "combination": "single/proposition__knn__k5",
+    "scenario_id": "scenario-4",
+    "relevance": 4,
+    "coverage": 4,
+    "noise": 2,
+    "specificity": 4,
+    "total": 14,
+    "notes": "서비스형 인사(prop-198), 기억 주입 과다(prop-091,090), 기억 시스템 목적 교정(prop-193)은 포착. 그러나 '빈 칠판 원칙'이 직접 노드로 없고(prop-092는 미포함), 기억 시스템 철학 재정의(prop-199)도 없음. 잡음이 상당: 톤 존댓말(prop-023), SPEC.md 재작성(prop-067), architecture.md(prop-069), 구현 프롬프트 6단계(prop-079), 일정(prop-085), 시연 흐름(prop-089) 등 톤 문제 해결과 직접 무관한 항목 다수."
+  },
+  {
+    "combination": "single/proposition__knn__k5",
+    "scenario_id": "scenario-5",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 5,
+    "total": 18,
+    "notes": "fusion-weighted와 동일한 핵심 포착: check.py(prop-029), --llm codex exec(prop-185), 톤 위반 15건(prop-031), 최초 실행 위반 2건(prop-186), 재귀적 상황(prop-187), 점검 구성(prop-030). watch 모드(prop-032), 역할 분리(prop-057)도 포함. 잡음 수준도 유사."
+  },
+  {
+    "combination": "single/proposition__knn__k5",
+    "scenario_id": "scenario-6",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 2,
+    "specificity": 5,
+    "total": 17,
+    "notes": "fusion-weighted와 거의 동일: 2레이어(prop-207), 에이전트 자신의 기억(prop-199), 사실과 기억 구분(prop-202), memories.json kind(prop-208), fact_refs(prop-210), 맥락 기반 조회(prop-192), 기억 목적 교정(prop-193). lighthouse 적용(prop-215)도 발전 방향으로 관련. 잡음으로 대화형 연구 동료 역할(prop-063)은 기억 시스템과 간접 관련."
+  },
+  {
+    "combination": "fusion-weighted/entity-event__k3",
+    "scenario_id": "scenario-1",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 2,
+    "specificity": 5,
+    "total": 17,
+    "notes": "핵심 모두 포착: LLM 2회+API 순차 병목(evt-095), orchestrator 리팩토링(evt-103,105 — 5페이즈+LLM 이원화 명시), 관측 구조(evt-028,ent-027), 팀 공유 실패 맥락(evt-094). LLM 이원화(에이전트 수준 vs 도구 수준)를 evt-105에서 명시적으로 포착한 점이 proposition 방식보다 우수. 잡음으로 UI 패러다임 위임(evt-093), 조합 컨셉(evt-062) 포함."
+  },
+  {
+    "combination": "fusion-weighted/entity-event__k3",
+    "scenario_id": "scenario-2",
+    "relevance": 4,
+    "coverage": 4,
+    "noise": 2,
+    "specificity": 4,
+    "total": 14,
+    "notes": "세션 시작 절차(evt-012), 트리거(evt-027), 기억 조회 절차(evt-100), 빈 칠판(evt-055), 점진적 확장(evt-003,006)을 포착. 역할 정의(비서실장)와 task-management 5개 축은 직접 포착 못함. 잡음 상당: 감지/방지 분리(evt-029), observability(evt-028), 세션 원시 데이터(evt-013), 메타에이전트(evt-018,ent-007) 등 새 프로젝트 시작과 직접 무관한 항목 다수."
+  },
+  {
+    "combination": "fusion-weighted/entity-event__k3",
+    "scenario_id": "scenario-3",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 4,
+    "total": 17,
+    "notes": "핵심 포착: 첫 대화=온보딩+코르카 도입(evt-058), 구현 위임 완료(evt-059), 관계 형성 원칙 역수입(evt-060), 연속적 관계 성장(evt-083), 관계 깊이 4단계(evt-084), 심리학 3인사이트(evt-057). entity-event 방식은 이벤트 단위로 압축되어 있어 Fiske/Aron 구체적 이론명이나 6개 원칙 상세가 proposition보다 덜 명시적. 잡음으로 패널 propose(evt-081), 기억 철학 재정의(evt-118) 등 간접 관련."
+  },
+  {
+    "combination": "fusion-weighted/entity-event__k3",
+    "scenario_id": "scenario-4",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 5,
+    "total": 18,
+    "notes": "핵심 모두 포착: 빈 칠판 원칙(evt-055), 서비스형 인사→기억 철학 재정의(evt-118), 톤 전환 구현(evt-059), 기억 주입 자동화 백로그(evt-115), 사실과 기억 다른 레이어(evt-119). proposition 방식에서 빠졌던 빈 칠판(evt-055)과 철학 재정의(evt-118)를 명시적으로 포착한 점이 우수. 잡음은 lighthouse 기억 적용(evt-130), 독립 모듈(evt-087) 등 있으나 적절한 수준."
+  },
+  {
+    "combination": "fusion-weighted/entity-event__k3",
+    "scenario_id": "scenario-5",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 3,
+    "specificity": 5,
+    "total": 18,
+    "notes": "핵심 전부 포착: check.py(ent-023,evt-017), 톤 위반 15건(evt-017), --llm codex exec(evt-109), 자기감시 재귀(evt-110), --dangerously→read-only 교정(evt-111), 점검 구성(evt-018), watch 모드(evt-018). entity 노드(ent-023 check.py, ent-007 meta-agent)가 핵심 개체를 직접 가리켜 정확도 높음. 잡음으로 query.py --context(evt-113), codex exec 원칙(evt-112) 등 간접 관련 항목."
+  },
+  {
+    "combination": "fusion-weighted/entity-event__k3",
+    "scenario_id": "scenario-6",
+    "relevance": 5,
+    "coverage": 5,
+    "noise": 2,
+    "specificity": 5,
+    "total": 17,
+    "notes": "기억 시스템 핵심 전부 포착: 2레이어(evt-124), lighthouse 적용(evt-130), memories.json 1차 작성+kind(evt-125), 에이전트 자신의 기억(evt-119), query.py --context(evt-113), 독립 모듈(evt-087), 기억 목적 교정(evt-114), episodes.json(ent-019), 에피소드 시스템(ent-042). 사실과 기억의 레이어 구분, 기억 주체성까지 풍부. 잡음은 패널 propose(evt-081 미포함), lighthouse 적용(evt-130)이 발전 방향이므로 적절."
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "nodeset": "entity-event",
+  "method": "knn",
+  "k_label": "k5",
+  "k": 5,
+  "num_nodes": 177,
+  "num_edges": 614,
+  "avg_degree": 6.94,
+  "num_components": 1,
+  "giant_ratio": 1.0,
+  "avg_hop1_ratio": 0.0483,
+  "avg_path_length": 3.54,
+  "clustering_coeff": 0.4076,
+  "density": 0.0394,
+  "hub_nodes": [
+    {
+      "id": "ent-010",
+      "degree": 19,
+      "content": "mirror-mind-principle.md"
+    },
+    {
+      "id": "evt-130",
+      "degree": 17,
+      "content": "mirror-mind 2레이어 기억 철학을 lighthouse에 적용하는 설계를 수행했다"
+    },
+    {
+      "id": "ent-045",
+      "degree": 16,
+      "content": "구현 에이전트"
+    },
+    {
+      "id": "evt-060",
+      "degree": 16,
+      "content": "온보딩 관계 형성 원칙을 ai-service-design-principles.md에 범용 원칙 6개로 역수입"
+    },
+    {
+      "id": "ent-003",
+      "degree": 13,
+      "content": "코르카 (corca)"
+    }
+  ],
+  "gate_pass": true
+}

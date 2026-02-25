@@ -1,0 +1,43 @@
+{
+  "nodeset": "semantic-unit",
+  "method": "knn",
+  "k_label": "k3",
+  "k": 3,
+  "num_nodes": 220,
+  "num_edges": 471,
+  "avg_degree": 4.28,
+  "num_components": 1,
+  "giant_ratio": 1.0,
+  "avg_hop1_ratio": 0.0185,
+  "avg_path_length": 4.7,
+  "clustering_coeff": 0.2746,
+  "density": 0.0196,
+  "hub_nodes": [
+    {
+      "id": "su-034",
+      "degree": 10,
+      "content": "lighthouse의 방향을 '연구 동료 서비스'로 정했다 — 서비스 목적에 협업 원칙이 적용되어야 한다"
+    },
+    {
+      "id": "su-037",
+      "degree": 10,
+      "content": "원칙 원본은 mirror-mind에서 관리하고, lighthouse에는 복사본을 두는 구조로 했다"
+    },
+    {
+      "id": "su-165",
+      "degree": 10,
+      "content": "mirror-mind가 과거 기억을 사실상 참조하지 못하는 문제를 인식하고, 기억 시스템 도입을 시작했다"
+    },
+    {
+      "id": "su-216",
+      "degree": 10,
+      "content": "기억 시스템 재설계 항목이 lighthouse 프로젝트 하위에 잘못 들어가 있어서, mirror-mind 운"
+    },
+    {
+      "id": "su-094",
+      "degree": 9,
+      "content": "공유 경험이 관계 전환점이다"
+    }
+  ],
+  "gate_pass": true
+}

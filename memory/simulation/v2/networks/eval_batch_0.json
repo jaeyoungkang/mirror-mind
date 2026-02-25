@@ -1,0 +1,149 @@
+[
+  {
+    "combination": "baseline/empty",
+    "scenario_id": "scenario-1",
+    "scenario_input": "lighthouse 응답 속도가 느린데 어떻게 할까?",
+    "num_activated": 0,
+    "activated_summary": "  (없음)"
+  },
+  {
+    "combination": "baseline/empty",
+    "scenario_id": "scenario-2",
+    "scenario_input": "새 프로젝트를 시작하려고 해",
+    "num_activated": 0,
+    "activated_summary": "  (없음)"
+  },
+  {
+    "combination": "baseline/empty",
+    "scenario_id": "scenario-3",
+    "scenario_input": "온보딩 설계 어떻게 됐어?",
+    "num_activated": 0,
+    "activated_summary": "  (없음)"
+  },
+  {
+    "combination": "baseline/empty",
+    "scenario_id": "scenario-4",
+    "scenario_input": "코르카 톤이 좀 이상해",
+    "num_activated": 0,
+    "activated_summary": "  (없음)"
+  },
+  {
+    "combination": "baseline/empty",
+    "scenario_id": "scenario-5",
+    "scenario_input": "메타에이전트 점검 결과 어때?",
+    "num_activated": 0,
+    "activated_summary": "  (없음)"
+  },
+  {
+    "combination": "baseline/empty",
+    "scenario_id": "scenario-6",
+    "scenario_input": "기억 시스템을 어떻게 발전시킬까?",
+    "num_activated": 0,
+    "activated_summary": "  (없음)"
+  },
+  {
+    "combination": "baseline/random",
+    "scenario_id": "scenario-1",
+    "scenario_input": "lighthouse 응답 속도가 느린데 어떻게 할까?",
+    "num_activated": 15,
+    "activated_summary": "  - [evt-119] 핵심 전환: '처음 만났을 때 사용자 기억은 없고 에이전트 자신의 기억만 있다' → '사실과 기억은 다른 레이어' (score=0.5)\n  - [ent-029] design-state-alignment.md (score=0.5)\n  - [ent-007] meta-agent (score=0.5)\n  - [evt-026] 주제 전환 시 맥락 휘발 문제 해결을 위해 체크포인트 원칙을 추가했다 (score=0.5)\n  - [evt-018] 프로그램적 6개 + LLM 기반 7개 점검 항목을 정의하고 세션 시작 절차에 5분 간격 watch 모드를 통합했다 (score=0.5)\n  - [evt-013] export-session.py를 작성하여 세션 원시 데이터를 깃으로 공유하는 체계를 만들었다 (score=0.5)\n  - [ent-036] Vercel AI SDK (score=0.5)\n  - [ent-027] observability.md (score=0.5)\n  - [evt-129] 기억 시스템 재설계 항목이 lighthouse 하위에 잘못 들어가 있어 mirror-mind 운영 작업으로 분리 통합했다 (score=0.5)\n  - [evt-095] LLM 2회 + 외부 API 1회 순차 실행이 병목임을 진단하고 응답 속도 개선을 최우선 과제로 등록했다 (score=0.5)\n  - [ent-023] check.py (score=0.5)\n  - [evt-107] LLM 이원화 패턴을 technical-grain.md에 범용 원칙으로 역수입했다 (score=0.5)\n  - [evt-064] 메인 화면을 3단 분할(노트북+Board+Graph)로 하고, 좌측 사이드바를 상단 내비게이션 바로 전환하기로 했다 (score=0.5)\n  - [ent-009] AGENTS.md (score=0.5)\n  - [ent-008] mirror-mind-ops (score=0.5)"
+  },
+  {
+    "combination": "baseline/random",
+    "scenario_id": "scenario-2",
+    "scenario_input": "새 프로젝트를 시작하려고 해",
+    "num_activated": 15,
+    "activated_summary": "  - [ent-024] query.py (score=0.5)\n  - [evt-011] 전체 9개 문서 정합성 검증을 수행하여 5건을 발견하고 해결했다 (score=0.5)\n  - [evt-015] technical-grain.md에 Agent Plane 안전장치, Context7 MCP 지식 공급, 5계층 관측 체계를 추가했다 (score=0.5)\n  - [evt-085] '어려운 경험(실패 후 회복, 의견 충돌 후 조율)이 신뢰 전환에 필수'라는 원칙을 확립했다 (score=0.5)\n  - [evt-110] 최초 실행에서 즉시 위반 2건 감지(순응, 목적 탐구 미수행) — 자기 감시 재귀적 상황이 발생했다 (score=0.5)\n  - [ent-007] meta-agent (score=0.5)\n  - [evt-099] 서브에이전트 3개를 병렬 투입하여 raw 기반 에피소드 재추출을 완료했다 (score=0.5)\n  - [evt-006] '불확실성이 클 때 단순하게 시작' 운영 원칙을 채택했다 (score=0.5)\n  - [evt-122] '사용자'로 부르지 말고 이름(강재영)으로 부르라는 지시를 받았다 (score=0.5)\n  - [evt-095] LLM 2회 + 외부 API 1회 순차 실행이 병목임을 진단하고 응답 속도 개선을 최우선 과제로 등록했다 (score=0.5)\n  - [evt-063] 강재영이 Living Notebook을 기반으로 선택하고, Reading Room의 보드 + Research Trail의 그래프를 결합하기로 결정했다 (score=0.5)\n  - [evt-012] 세션 시작 절차를 AGENTS.md에 명시하고, decisions.md + conversations/ 폴더 기반 대화 저장 체계를 합의했다 (score=0.5)\n  - [evt-070] 5가지 핵심 시나리오, 5가지 탐색 전략, 7가지 핵심 고충을 정리했다 (score=0.5)\n  - [evt-106] llm-judgment.ts 115줄 신규 작성 + 6개 도구 파일 리팩토링을 완료했다 (score=0.5)\n  - [evt-027] 6개 트리거 지시문(작업 시작/종료, 주제 전환/킵, 정합성 검증, 회고, 원칙 점검)을 AGENTS.md에 명시했다 (score=0.5)"
+  },
+  {
+    "combination": "baseline/random",
+    "scenario_id": "scenario-3",
+    "scenario_input": "온보딩 설계 어떻게 됐어?",
+    "num_activated": 15,
+    "activated_summary": "  - [ent-002] 브로콜리 (score=0.5)\n  - [ent-041] Living Notebook (score=0.5)\n  - [evt-064] 메인 화면을 3단 분할(노트북+Board+Graph)로 하고, 좌측 사이드바를 상단 내비게이션 바로 전환하기로 했다 (score=0.5)\n  - [evt-043] 6개 하위 문서 재작성 계획을 수립하고 의존성 순서를 정의했다 (score=0.5)\n  - [evt-027] 6개 트리거 지시문(작업 시작/종료, 주제 전환/킵, 정합성 검증, 회고, 원칙 점검)을 AGENTS.md에 명시했다 (score=0.5)\n  - [ent-040] Context7 MCP (score=0.5)\n  - [evt-011] 전체 9개 문서 정합성 검증을 수행하여 5건을 발견하고 해결했다 (score=0.5)\n  - [evt-042] 강재영이 '처음부터 다시 만든다, 레거시 고려 불필요, AI 관계 재설정에 창의적 접근'을 선언했다 (score=0.5)\n  - [ent-027] observability.md (score=0.5)\n  - [ent-024] query.py (score=0.5)\n  - [evt-053] 세션 6~9 회고에서 밀도를 가능하게 한 3가지 원인(설계 구체성, 역할 분리, 맥락 전달 체계)을 식별했다 (score=0.5)\n  - [ent-025] close-session.py (score=0.5)\n  - [evt-047] 서버사이드 저장소로 Supabase를 선택했다 (인증+RLS가 결정적 근거) (score=0.5)\n  - [evt-044] SPEC.md를 완전 재작성하여 대화 캔버스, 제안 카드, 연구 아티팩트, 경험 기억, 주도권 신호 5개 UI/UX 개념을 도입했다 (score=0.5)\n  - [evt-110] 최초 실행에서 즉시 위반 2건 감지(순응, 목적 탐구 미수행) — 자기 감시 재귀적 상황이 발생했다 (score=0.5)"
+  },
+  {
+    "combination": "baseline/random",
+    "scenario_id": "scenario-4",
+    "scenario_input": "코르카 톤이 좀 이상해",
+    "num_activated": 15,
+    "activated_summary": "  - [evt-023] ai-design-framework.md를 DESIGN_PRINCIPLES.md에서 리네이밍했다 (score=0.5)\n  - [ent-012] technical-grain.md (score=0.5)\n  - [evt-073] 시나리오 식별 신호 테이블, 시나리오별 심화 전략, 공통 행동 4가지를 설계하여 시스템 프롬프트에 반영했다 (score=0.5)\n  - [evt-093] UI 패러다임 전환 + 아티팩트 영속화 + 논문 리스트 구조화 등 6건을 구현 에이전트에 위임했다 (score=0.5)\n  - [ent-032] research-scenarios.md (score=0.5)\n  - [evt-052] 2/24 팀 공유 → 2/26 후속 → 3/2 후속 → 3월 1주 알파 테스트 일정을 등록했다 (score=0.5)\n  - [ent-021] orchestrator.ts (score=0.5)\n  - [evt-097] 에피소드 스키마를 확정하고 query.py를 구현했다 (--project, --emotion, --keyword, --milestone, --recent, --stats) (score=0.5)\n  - [evt-031] 강재영이 '이런 일이 재발하면 안 된다'고 피드백하여 설계 문서 수준으로 재작성했다 (score=0.5)\n  - [evt-116] 세션 17 관측 구조 리팩토링(orchestrator, TurnContext, llm-judgment) 완료 현황과 미완료 항목을 확인했다 (score=0.5)\n  - [evt-114] 강재영이 '기억 시스템 목적은 교훈 추출이 아니라 현재 맥락에 적합한 기억을 포착하는 것'이라고 교정했다 (score=0.5)\n  - [evt-048] 스트리밍으로 Vercel AI SDK를 선택하고, 경험 기억은 세션 간 포함하기로 결정했다 (score=0.5)\n  - [evt-103] route.ts 214줄 모놀리식 핸들러를 orchestrator.ts 5페이즈로 추출하는 설계를 완료했다 (score=0.5)\n  - [evt-005] 수집/구조화/진행/대화/회고 5개 축을 순차 합의하여 task-management-principle.md를 완성했다 (score=0.5)\n  - [ent-018] projects.md (score=0.5)"
+  },
+  {
+    "combination": "baseline/random",
+    "scenario_id": "scenario-5",
+    "scenario_input": "메타에이전트 점검 결과 어때?",
+    "num_activated": 15,
+    "activated_summary": "  - [ent-012] technical-grain.md (score=0.5)\n  - [evt-125] memories.json을 1차 작성했다 — 5개 kind(identity 3, model 5, experience 15, understanding 4, insight 8) 총 35개 기억 (score=0.5)\n  - [evt-014] 컨텍스트 압축 후 톤이 존댓말로 바뀐 것을 발견하여 ~다 체 규정을 mirror-mind-principle.md에 명시했다 (score=0.5)\n  - [evt-030] 관측 UI 모듈에서 AI가 구현 레벨 계획을 작성하여 역할 경계 위반이 발생했다 (score=0.5)\n  - [ent-021] orchestrator.ts (score=0.5)\n  - [evt-015] technical-grain.md에 Agent Plane 안전장치, Context7 MCP 지식 공급, 5계층 관측 체계를 추가했다 (score=0.5)\n  - [ent-026] export-session.py (score=0.5)\n  - [evt-053] 세션 6~9 회고에서 밀도를 가능하게 한 3가지 원인(설계 구체성, 역할 분리, 맥락 전달 체계)을 식별했다 (score=0.5)\n  - [evt-027] 6개 트리거 지시문(작업 시작/종료, 주제 전환/킵, 정합성 검증, 회고, 원칙 점검)을 AGENTS.md에 명시했다 (score=0.5)\n  - [evt-072] ai-service-design-principles.md에 '사용자 행동의 깊은 이해' 범용 원칙을 추가했다 (score=0.5)\n  - [evt-118] 코르카의 서비스형 인사 문제에서 출발하여 기억 시스템의 근본 철학을 재정의했다 (score=0.5)\n  - [evt-049] 6단계 구현 프롬프트(implementation-prompts.md)를 작성하여 설계→구현 단계로 전환했다 (score=0.5)\n  - [ent-042] 에피소드 기억 시스템 (score=0.5)\n  - [evt-050] 구현 에이전트가 Phase 1~6을 진행하는 동안 설계 정합성을 검토하여 Phase 3에서 6건, Phase 4에서 6건을 지적했다 (score=0.5)\n  - [evt-046] 상위 에이전트 LLM으로 Gemini 3 Flash Preview를 선택했다 (score=0.5)"
+  },
+  {
+    "combination": "baseline/random",
+    "scenario_id": "scenario-6",
+    "scenario_input": "기억 시스템을 어떻게 발전시킬까?",
+    "num_activated": 15,
+    "activated_summary": "  - [evt-009] AI 서비스 설계 핵심 전제 2축을 확립: '자율성은 디자인 선택' + 'AI는 동료 수준의 주체' (score=0.5)\n  - [evt-127] decisions.md 폐기와 같은 논리로 세션 노트 MD 20개도 중복으로 판단하여 삭제했다 (score=0.5)\n  - [evt-024] 세션3 종료 시 git 인증 문제로 누락된 대화 기록을 복구했다 (score=0.5)\n  - [evt-130] mirror-mind 2레이어 기억 철학을 lighthouse에 적용하는 설계를 수행했다 (score=0.5)\n  - [evt-121] 강재영이 mirror-mind AI에게 '브로콜리'라는 이름을 지어줬다 (score=0.5)\n  - [ent-019] episodes.json (score=0.5)\n  - [evt-111] --dangerously-bypass 채택에 비판적 검토 부재를 메타에이전트가 지적하여 --sandbox read-only로 교정했다 (score=0.5)\n  - [evt-118] 코르카의 서비스형 인사 문제에서 출발하여 기억 시스템의 근본 철학을 재정의했다 (score=0.5)\n  - [ent-044] LLM 이원화 원칙 (score=0.5)\n  - [evt-092] ai-service-design-principles.md에 '동료의 산출물: 데이터가 아니라 문서' 원칙을 추가했다 (score=0.5)\n  - [evt-018] 프로그램적 6개 + LLM 기반 7개 점검 항목을 정의하고 세션 시작 절차에 5분 간격 watch 모드를 통합했다 (score=0.5)\n  - [ent-042] 에피소드 기억 시스템 (score=0.5)\n  - [evt-074] Library v1 초안을 작성했으나 강재영이 '논의가 너무 적었다'고 피드백하여 재검토로 보류했다 (score=0.5)\n  - [evt-053] 세션 6~9 회고에서 밀도를 가능하게 한 3가지 원인(설계 구체성, 역할 분리, 맥락 전달 체계)을 식별했다 (score=0.5)\n  - [evt-025] lighthouse 구현 에이전트에게 대원칙 기반 코드 재설계를 지시하되, Phase A만 진행하기로 결정했다 (score=0.5)"
+  },
+  {
+    "combination": "single/proposition__knn__k3",
+    "scenario_id": "scenario-1",
+    "scenario_input": "lighthouse 응답 속도가 느린데 어떻게 할까?",
+    "num_activated": 15,
+    "activated_summary": "  - [prop-172] 응답 속도 개선을 위해 에이전트 사고 과정 관측부터 시작하기로 합의했다 (score=1.0)\n  - [prop-196] 세션 17에서 완료된 관측 구조 리팩토링(orchestrator 5페이즈, TurnContext, llm-judgment.ts)과 미완료 항목(관측 지점 추가, dev 타임라인 뷰, 속도 분석)을 확인했다 (score=1.0)\n  - [prop-047] lighthouse 관측 체계 설계 문서(docs/observability.md)를 작성했다 (score=0.6667)\n  - [prop-051] 관측 UI를 설계 문서 수준으로 재작성하여 observability-ui.md를 완성했다 (score=0.6667)\n  - [prop-163] 핵심 원인은 응답 속도이다: LLM 2회(판단+문서생성) + 외부 API 1회가 순차 실행되어 느렸다 (score=0.6667)\n  - [prop-164] 2/26 후속 공유까지 응답 속도 개선이 최우선 과제로 등록되었다 (score=0.6667)\n  - [prop-027] 5계층 관측 체계를 technical-grain.md에 추가했다 (score=0.3333)\n  - [prop-033] lighthouse docs 문서를 mirror-mind 방법론(기술적 결 + AI 서비스 설계 원칙)과 대조 검토했다 (score=0.3333)\n  - [prop-034] lighthouse에서 갭 4건 + 역수입 대상 4건을 식별했다 (score=0.3333)\n  - [prop-035] 강재영이 'lighthouse는 연구 동료 서비스가 방향이다'라고 지시했다 (score=0.3333)\n  - [prop-036] mirror-mind 4대 원칙을 lighthouse 서비스 맥락으로 번역했다 (score=0.3333)\n  - [prop-037] lighthouse 에이전트 계층(상위 2개 + 하위 6개)을 확정했다 (score=0.3333)\n  - [prop-040] lighthouse docs를 대원칙에 맞춰 정렬하고 ai-design-framework.md 핵심 전제에 'AI는 연구 동료'를 추가했다 (score=0.3333)\n  - [prop-041] lighthouse에서 검증된 4가지 패턴(AI 기능 설계 체크리스트, FSM 게이트 패턴, 원칙-구현 정합성 문서, 프로젝트 문서 계층)을 mirror-mind 방법론에 역수입했다 (score=0.3333)\n  - [prop-043] lighthouse 구현 에이전트에게 대원칙 기반 코드 재설계를 지시했다 (score=0.3333)"
+  },
+  {
+    "combination": "single/proposition__knn__k3",
+    "scenario_id": "scenario-2",
+    "scenario_input": "새 프로젝트를 시작하려고 해",
+    "num_activated": 15,
+    "activated_summary": "  - [prop-046] 6개 트리거 지시문(작업 시작/종료, 주제 전환/킵, 정합성 검증, 회고, 원칙 점검)을 AGENTS.md에 명시했다 (score=1.0)\n  - [prop-006] 도메인+프로젝트 2축 분류, 플랫 구조로 시작하기로 했다 (score=0.6667)\n  - [prop-007] '불확실성이 클 때 단순하게 시작' 운영 원칙을 채택했다 (score=0.6667)\n  - [prop-020] 세션 시작 절차를 AGENTS.md에 명시하기로 합의했다 (score=0.6667)\n  - [prop-041] lighthouse에서 검증된 4가지 패턴(AI 기능 설계 체크리스트, FSM 게이트 패턴, 원칙-구현 정합성 문서, 프로젝트 문서 계층)을 mirror-mind 방법론에 역수입했다 (score=0.6667)\n  - [prop-053] task-management-principle.md에 역할 경계를 통합했다: 'mirror-mind 세션은 설계 문서 작성, 업무 관리, 의사결정 수렴을 담당하고 코드 구현은 하위 프로젝트 에이전트가 수행한다' (score=0.6667)\n  - [prop-054] 역할 경계 위반의 근본 원인은 기존 원칙(목적의 내재화)을 내재화하지 못한 것으로 분석했다 (score=0.6667)\n  - [prop-092] '새 대화는 빈 칠판으로 시작하고, 기억은 사용자가 꺼내거나 키워드가 명시적으로 겹칠 때만 활성화한다'는 원칙을 수립했다 (score=0.6667)\n  - [prop-171] 세션 시작 절차에 기억 조회(query.py --recent 5, --milestone), 작업 종료에 에피소드 추가를 AGENTS.md에 반영했다 (score=0.6667)\n  - [prop-001] AGENTS.md와 mirror-mind-principle.md를 검토했다 (score=0.3333)\n  - [prop-002] AI가 합의 없이 AGENTS.md를 수정한 사실에서 '핵심 문서 수정 시 반드시 사용자 합의 필요' 규칙을 도출했다 (score=0.3333)\n  - [prop-004] AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다 (score=0.3333)\n  - [prop-008] 하위 프로젝트는 별도 저장소이나 같은 PC에서 접근 가능한 구조로 설계했다 (score=0.3333)\n  - [prop-011] 기존 Next.js 가이드에서 범용 원칙만 추출하여 기술적 결(technical-grain)을 정리했다 (score=0.3333)\n  - [prop-018] 비판적 검토 -> 추상화 -> 통합 흐름을 운영 원칙으로 채택했다 (score=0.3333)"
+  },
+  {
+    "combination": "single/proposition__knn__k3",
+    "scenario_id": "scenario-3",
+    "scenario_input": "온보딩 설계 어떻게 됐어?",
+    "num_activated": 15,
+    "activated_summary": "  - [prop-093] 후속 개선 4건을 확정했다: 대화 톤 존대말 전환, 온보딩 관계 형성 탐색, 페이퍼 리스트 별도 목록 뷰, 주기적 중간 정리는 propose 활용 (score=1.0)\n  - [prop-101] 온보딩 탐색에서 도출한 관계 형성 원칙을 ai-service-design-principles.md에 범용 원칙으로 역수입했다 (score=1.0)\n  - [prop-094] 인간 관계 형성 메커니즘을 심리학 관점에서 탐색했다: 따뜻함이 역량보다 먼저(Fiske), 점진적 자기 노출(Aron), 공유 경험이 전환점 (score=0.6667)\n  - [prop-096] '첫 대화 자체가 온보딩, 별도 화면 없음' 원칙을 확립했다 (score=0.6667)\n  - [prop-097] lighthouse 연구 동료 이름을 corca(코르카)로 결정했다 (score=0.6667)\n  - [prop-103] 6개 관계 형성 원칙(따뜻함 우선, AI 선자기노출, 첫 경험 결정적, 공유 경험 전환점, 한계 인정=신뢰, 호혜성 재설계)을 ai-service-design-principles.md에 배치했다 (score=0.6667)\n  - [prop-141] 온보딩을 단계가 아니라 연속적 관계 성장 과정으로 재정의했다 (score=0.6667)\n  - [prop-144] 관계 깊이 4단계(초기 -> 형성 -> 신뢰 -> 깊은 협력)를 정의했다 (score=0.6667)\n  - [prop-198] 코르카의 서비스형 인사 문제('안녕'에 '오늘 어떤 흥미로운 주제를 함께 탐색해볼까요?' 식 응답)를 발견했다 (score=0.6667)\n  - [prop-121] ai-service-design-principles.md에 '사용자 행동의 깊은 이해' 범용 원칙을 추가했다 (score=0.4254)\n  - [prop-158] ai-service-design-principles.md에 '동료의 산출물: 데이터가 아니라 문서' 섹션을 추가했다 (score=0.3894)\n  - [prop-065] 강재영이 '처음부터 다시 만든다, 레거시 고려 불필요, AI 관계 재설정 UI/UX에 창의적 접근 필요'라고 선언했다 (score=0.3333)\n  - [prop-095] AI-인간 관계의 특수성으로 호혜성 불가를 파악하여 재설계가 필요하다고 결론냈다 (score=0.3333)\n  - [prop-098] service-principles.md에 온보딩 섹션을 신설했다 (score=0.3333)\n  - [prop-099] 톤 전환, 온보딩 6건, 페이퍼 리스트 우측 패널, 중간 정리 propose 활용 등 총 8건을 구현 에이전트에게 전달하여 완료했다 (score=0.3333)"
+  },
+  {
+    "combination": "single/proposition__knn__k3",
+    "scenario_id": "scenario-4",
+    "scenario_input": "코르카 톤이 좀 이상해",
+    "num_activated": 15,
+    "activated_summary": "  - [prop-198] 코르카의 서비스형 인사 문제('안녕'에 '오늘 어떤 흥미로운 주제를 함께 탐색해볼까요?' 식 응답)를 발견했다 (score=1.0)\n  - [prop-090] 안정화 작업으로 버그 4건(제안 카드, 핵심 논문 해시, 클러스터링 자동 실행, 마크다운 미렌더링) + 프롬프트 1건(기억 주입 과다)을 수정했다 (score=0.6667)\n  - [prop-091] 새 대화에서 이전 대화의 연속처럼 느껴지는 문제의 원인이 memory.ts의 기억 주입 프롬프트 과다임을 밝혔다 (score=0.6667)\n  - [prop-193] 강재영이 기억 시스템 목적은 교훈 추출이 아니라 '현재 맥락에 적합한 기억을 포착하여 프롬프트에 주입'하는 것이라고 교정했다 (score=0.6667)\n  - [prop-195] 의사결정 시점(세션 시작, 주제 전환, 설계 결정 전, 회고)에서 관련 기억을 자동 주입하는 시스템을 백로그에 등록했다 (score=0.6667)\n  - [prop-023] 컨텍스트 압축 후 톤이 존댓말로 바뀌는 것을 강재영이 발견하여 ~다 체 규정을 mirror-mind-principle.md에 명시했다 (score=0.3333)\n  - [prop-031] check.py 프로토타입이 톤 위반 15건을 정확 감지했다 (score=0.3333)\n  - [prop-062] lighthouse 상위 에이전트의 정체성을 오케스트레이터에서 '대화형 연구 동료'로 전환했다 (score=0.3333)\n  - [prop-063] 대화형 연구 동료의 4가지 역할(경험 기억, 연구 논의, 주도권 제안, 하위 에이전트 활용)을 정의했다 (score=0.3333)\n  - [prop-067] SPEC.md를 처음부터 재작성하여 대화 캔버스, 제안 카드, 연구 아티팩트, 경험 기억, 주도권 신호 등 5개 새 UI/UX 개념을 도입했다 (score=0.3333)\n  - [prop-069] architecture.md를 재작성하여 도메인 결 3가지, LLM 상위 에이전트, 대화 프로토콜, 3계층 기억, 3-Plane 매핑을 포함시켰다 (score=0.3333)\n  - [prop-077] 경험 기억은 세션 간 포함하기로 결정했다(차별점) (score=0.3333)\n  - [prop-079] 구현 에이전트를 위한 6단계 프롬프트(기반 구축 -> 대화 코어 -> 도구 통합 -> 아티팩트 -> 제안 카드+자율성 -> 경험 기억)를 작성했다 (score=0.3333)\n  - [prop-085] 2/24 팀 공유, 2/26 후속 공유, 3/2 후속 공유, 3월 1주 알파 테스트 일정을 기록했다 (score=0.3333)\n  - [prop-089] 2/24 팀 공유를 앞두고 6단계 시연 흐름(대화 -> 검색 -> 분석 -> 아티팩트 -> 제안카드 -> 경험기억)을 검증했다 (score=0.3333)"
+  },
+  {
+    "combination": "single/proposition__knn__k3",
+    "scenario_id": "scenario-5",
+    "scenario_input": "메타에이전트 점검 결과 어때?",
+    "num_activated": 15,
+    "activated_summary": "  - [prop-029] 원칙 준수를 상시 감시하는 메타에이전트를 설계하고 구현했다 (score=1.0)\n  - [prop-185] check.py에 --llm 플래그로 codex exec(read-only) 기반 LLM 점검 4개를 추가했다 (score=1.0)\n  - [prop-030] 메타에이전트는 프로그램적 6개 + LLM 기반 7개 점검 항목으로 구성했다 (score=0.6667)\n  - [prop-031] check.py 프로토타입이 톤 위반 15건을 정확 감지했다 (score=0.6667)\n  - [prop-186] 최초 실행에서 즉시 위반 2건(순응, 목적 탐구 미수행)을 감지했다 (score=0.6667)\n  - [prop-187] --dangerously-bypass-approvals-and-sandbox 채택에 비판적 검토 부재를 자체 감시 도구가 지적하는 재귀적 상황이 발생했다 (score=0.6667)\n  - [prop-032] 메타에이전트를 세션 시작 절차에 5분 간격 watch 모드로 통합했다 (score=0.3333)\n  - [prop-046] 6개 트리거 지시문(작업 시작/종료, 주제 전환/킵, 정합성 검증, 회고, 원칙 점검)을 AGENTS.md에 명시했다 (score=0.3333)\n  - [prop-050] AI가 관측 UI에서 구현 레벨 계획(코드 스니펫, 파일별 변경 상세)을 작성하여 강재영으로부터 '이런 일이 재발하면 안 된다'는 피드백을 받았다 (score=0.3333)\n  - [prop-054] 역할 경계 위반의 근본 원인은 기존 원칙(목적의 내재화)을 내재화하지 못한 것으로 분석했다 (score=0.3333)\n  - [prop-055] 메타에이전트가 매 주기 원칙 리마인드를 출력하고 트리거 시 리포트 확인을 선행하도록 추가했다 (score=0.3333)\n  - [prop-057] WHY/WHAT/HOW/CHECK/WATCH/RULES 역할 분리 계획을 수립했다 (score=0.3333)\n  - [prop-081] Phase 3 구현 계획에서 conventions 위반, 환경변수 누락 등 6개 지적사항을 도출했다 (score=0.3333)\n  - [prop-189] 스크립트에서 LLM 호출 시 codex exec CLI 사용 원칙을 확립했다 (score=0.3333)\n  - [prop-192] codex가 에피소드 스키마를 보고 3~5개 쿼리 파라미터를 결정하여 다중 쿼리 합집합으로 관련 기억을 포착하는 방식을 구현했다 (score=0.3333)"
+  },
+  {
+    "combination": "single/proposition__knn__k3",
+    "scenario_id": "scenario-6",
+    "scenario_input": "기억 시스템을 어떻게 발전시킬까?",
+    "num_activated": 15,
+    "activated_summary": "  - [prop-207] 새로운 2레이어 기억 아키텍처(episodes.json=사실 + memories.json=기억)를 확정했다 (score=1.0)\n  - [prop-148] 벡터 검색 없이 구조화 쿼리만으로 기억 시스템을 시작하기로 했다 (score=0.6667)\n  - [prop-160] 구현 에이전트에게 6건(UI 패러다임 전환, 아티팩트 영속화, 논문 리스트 구조화, 경험 호환성 검증, 검색 결과 자동 패널 문서 생성, 기억 시스템 연구 문서 패러다임 반영)을 지시했다 (score=0.6667)\n  - [prop-166] mirror-mind에 JSON 파일 + git 기반으로 기억 시스템을 적용하기로 결정했다 (score=0.6667)\n  - [prop-171] 세션 시작 절차에 기억 조회(query.py --recent 5, --milestone), 작업 종료에 에피소드 추가를 AGENTS.md에 반영했다 (score=0.6667)\n  - [prop-192] codex가 에피소드 스키마를 보고 3~5개 쿼리 파라미터를 결정하여 다중 쿼리 합집합으로 관련 기억을 포착하는 방식을 구현했다 (score=0.6667)\n  - [prop-193] 강재영이 기억 시스템 목적은 교훈 추출이 아니라 '현재 맥락에 적합한 기억을 포착하여 프롬프트에 주입'하는 것이라고 교정했다 (score=0.6667)\n  - [prop-195] 의사결정 시점(세션 시작, 주제 전환, 설계 결정 전, 회고)에서 관련 기억을 자동 주입하는 시스템을 백로그에 등록했다 (score=0.6667)\n  - [prop-199] 기억 시스템의 근본 철학을 재정의했다: 에이전트 자신의 기억이 중심이다 (score=0.6667)\n  - [prop-202] 사실과 기억은 다른 레이어라는 2레이어(사실+기억) 아키텍처를 확립했다 (score=0.6667)\n  - [prop-208] memories.json을 1차 작성하여 5개 kind(identity 3, model 5, experience 15, understanding 4, insight 8) 총 35개 기억을 포함시켰다 (score=0.6667)\n  - [prop-210] fact_refs로 에피소드를 참조하되 사실과 기억이 다를 수 있음을 구조적으로 인정했다 (score=0.6667)\n  - [prop-214] 기억 시스템 재설계 항목이 lighthouse 프로젝트 하위에 잘못 들어가 있어 mirror-mind 운영 작업으로 통합했다 (score=0.6667)\n  - [prop-215] mirror-mind의 2레이어 기억 철학(사실+기억)을 lighthouse에 적용하는 설계를 수행했다 (score=0.6667)\n  - [prop-063] 대화형 연구 동료의 4가지 역할(경험 기억, 연구 논의, 주도권 제안, 하위 에이전트 활용)을 정의했다 (score=0.3333)"
+  },
+  {
+    "combination": "single/semantic-unit__knn__k3",
+    "scenario_id": "scenario-1",
+    "scenario_input": "lighthouse 응답 속도가 느린데 어떻게 할까?",
+    "num_activated": 15,
+    "activated_summary": "  - [su-175] 응답 속도 개선을 위해 에이전트 사고 과정 관측부터 시작하기로 합의했다 (score=1.0)\n  - [su-045] lighthouse 관측 체계 설계 문서(observability.md)를 작성했다 — 프로토타입 최소 관측, 5개 관측 대상, observe.ts 단일 파일 (score=0.6667)\n  - [su-163] 핵심 원인은 응답 속도였다: LLM 2회(판단+문서생성) + 외부 API 1회가 순차 실행되어 느렸다 (score=0.6667)\n  - [su-164] 2/26 후속 공유까지 응답 속도 개선이 최우선 과제로 등록되었다 (score=0.6667)\n  - [su-197] 세션 17에서 완료된 관측 구조 리팩토링(orchestrator 5페이즈, TurnContext, llm-judgment.ts)을 확인했다 (score=0.6667)\n  - [su-026] 5계층 관측 체계를 technical-grain.md에 추가했다 (score=0.3333)\n  - [su-033] lighthouse 프로젝트의 docs 문서를 mirror-mind 방법론(기술적 결 + AI 서비스 설계 원칙)과 대조 검토하여 갭 4건과 역수입 대상 4건을 식별했다 (score=0.3333)\n  - [su-034] lighthouse의 방향을 '연구 동료 서비스'로 정했다 — 서비스 목적에 협업 원칙이 적용되어야 한다 (score=0.3333)\n  - [su-035] mirror-mind 4대 원칙을 서비스 맥락으로 번역했다: 연구 의도의 내재화, 상호 보완적 시너지, 검증은 신뢰의 기반, 맥락 안에서의 자율성 (score=0.3333)\n  - [su-036] lighthouse 에이전트 계층을 상위 2개 + 하위 6개로 확정했다 (score=0.3333)\n  - [su-037] 원칙 원본은 mirror-mind에서 관리하고, lighthouse에는 복사본을 두는 구조로 했다 (score=0.3333)\n  - [su-039] lighthouse에서 검증된 4가지 패턴(AI 기능 설계 체크리스트, FSM 게이트 패턴, 원칙-구현 정합성 문서, 프로젝트 문서 계층)을 mirror-mind 방법론에 역수입했다 (score=0.3333)\n  - [su-041] Phase B, C에 대해 과잉 추상화와 시기상조 우려를 제기하여 Phase A만 진행하기로 결정했다 (score=0.3333)\n  - [su-046] 감지(관측)와 방지(안전장치)를 다른 관심사로 분리해야 한다는 원칙을 세웠다 (score=0.3333)\n  - [su-054] lighthouse docs 8개 문서에서 3가지 구조적 문제를 발견했다: 계층 역전, SPEC과 architecture의 대규모 중복, 범용 원칙 산재 (score=0.3333)"
+  },
+  {
+    "combination": "single/semantic-unit__knn__k3",
+    "scenario_id": "scenario-2",
+    "scenario_input": "새 프로젝트를 시작하려고 해",
+    "num_activated": 15,
+    "activated_summary": "  - [su-043] 6개 트리거 지시문(작업 시작/종료, 주제 전환/킵, 정합성 검증, 회고, 원칙 점검)을 AGENTS.md에 명시했다 (score=1.0)\n  - [su-006] 도메인과 프로젝트 2축 분류, 플랫 구조로 시작하기로 했다 (score=0.6667)\n  - [su-007] 불확실성이 클 때 단순하게 시작한다는 운영 원칙을 채택했다 (score=0.6667)\n  - [su-019] 세션 시작 절차를 AGENTS.md에 명시하기로 합의했다 (score=0.6667)\n  - [su-033] lighthouse 프로젝트의 docs 문서를 mirror-mind 방법론(기술적 결 + AI 서비스 설계 원칙)과 대조 검토하여 갭 4건과 역수입 대상 4건을 식별했다 (score=0.6667)\n  - [su-039] lighthouse에서 검증된 4가지 패턴(AI 기능 설계 체크리스트, FSM 게이트 패턴, 원칙-구현 정합성 문서, 프로젝트 문서 계층)을 mirror-mind 방법론에 역수입했다 (score=0.6667)\n  - [su-049] mirror-mind 세션은 설계 문서 작성, 업무 관리, 의사결정 수렴을 담당하고, 코드 구현은 하위 프로젝트 에이전트가 수행한다고 역할 경계를 명시했다 (score=0.6667)\n  - [su-052] 역할 경계 위반의 근본 원인은 기존 원칙(목적의 내재화)을 내재화하지 못한 것이었다 — 커밋 히스토리(전부 docs:)와 세션 역할(조율 활동뿐)에서 추론 가능했다 (score=0.6667)\n  - [su-087] 새 대화는 빈 칠판으로 시작하고, 기억은 사용자가 꺼내거나 키워드가 명시적으로 겹칠 때만 활성화한다는 원칙을 수립했다 (score=0.6667)\n  - [su-001] AI가 합의 없이 AGENTS.md를 수정한 사건에서 '핵심 문서 수정 시 반드시 사용자 합의 필요' 규칙이 도출되었다 (score=0.3333)\n  - [su-003] 도메인별 원칙 문서를 점진적으로 생성해 나가는 확장 방향을 구체화했다 (score=0.3333)\n  - [su-004] AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다 (score=0.3333)\n  - [su-005] 수집, 구조화, 진행, 대화, 회고 5개 축을 업무 관리 체계로 순차 합의했다 (score=0.3333)\n  - [su-008] 하위 프로젝트는 별도 저장소이나 같은 PC에서 접근 가능한 구조로 설계했다 (score=0.3333)\n  - [su-010] 기존 Next.js 가이드에서 범용 원칙만 추출하여 기술적 결(technical grain)을 정리했다 (score=0.3333)"
+  },
+  {
+    "combination": "single/semantic-unit__knn__k3",
+    "scenario_id": "scenario-3",
+    "scenario_input": "온보딩 설계 어떻게 됐어?",
+    "num_activated": 15,
+    "activated_summary": "  - [su-089] 온보딩은 관계 형성 메커니즘을 깊이 탐색하여 설계에 적용하기로 했다 (score=1.0)\n  - [su-093] 점진적 자기 노출이 관계 형성의 핵심이다 — Aron의 연구에 기반 (score=0.6667)\n  - [su-096] 첫 대화 자체가 온보딩이다 — 별도 온보딩 화면을 두지 않는다 (score=0.6667)\n  - [su-097] 연구 동료의 이름을 corca(코르카)로 정했다 (score=0.6667)\n  - [su-102] 6개 관계 형성 원칙을 수립했다: 따뜻함 우선, AI 선자기노출, 첫 경험 결정적, 공유 경험이 전환점, 한계 인정이 신뢰, 호혜성 재설계 (score=0.6667)\n  - [su-103] ai-service-design-principles.md의 구조를 자율성 -> 안전망 -> 제어감 -> 관계 형성 -> 체크리스트 순서로 완성했다 (score=0.6667)\n  - [su-139] 온보딩을 단계가 아니라 연속적 관계 성장 과정으로 재정의했다 (score=0.6667)\n  - [su-142] 관계 깊이 4단계를 정의했다: 초기, 형성, 신뢰, 깊은 협력 (score=0.6667)\n  - [su-063] 강재영이 선언했다: 처음부터 다시 만든다, 레거시 고려 불필요, 기존 문서는 재료 수준, AI 관계 재설정 UI/UX에 창의적 접근 필요 (score=0.3333)\n  - [su-094] 공유 경험이 관계 전환점이다 (score=0.3333)\n  - [su-095] AI-인간 관계에서는 호혜성이 불가능하므로 재설계가 필요하다 (score=0.3333)\n  - [su-098] service-principles.md에 온보딩 섹션을 신설했다 (score=0.3333)\n  - [su-099] 톤 전환, 온보딩 6건 지시, 페이퍼 리스트 우측 패널, 중간 정리 propose 활용 등 총 8건의 구현을 완료했다 (score=0.3333)\n  - [su-101] AI가 동료라면 온보딩도 동료가 직접 한다는 범용 원칙을 확립했다 (score=0.3333)\n  - [su-134] 3개 패널 모두 독립 접기/펼치기가 가능하게 하고, corca가 연구 활동 전환 시점에 패널 구성을 제안(propose)하는 메커니즘을 설계했다 (score=0.3333)"
+  }
+]

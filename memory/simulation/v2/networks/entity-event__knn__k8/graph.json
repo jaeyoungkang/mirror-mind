@@ -1,0 +1,7896 @@
+{
+  "nodes": [
+    {
+      "id": "ent-001",
+      "content": "강재영",
+      "session": null,
+      "keywords": [
+        "파트너",
+        "의사결정자",
+        "mirror-mind",
+        "lighthouse",
+        "코르카"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-002",
+      "content": "브로콜리",
+      "session": null,
+      "keywords": [
+        "AI 동료",
+        "비서실장",
+        "mirror-mind",
+        "설계",
+        "조율"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-003",
+      "content": "코르카 (corca)",
+      "session": null,
+      "keywords": [
+        "연구 동료 에이전트",
+        "lighthouse",
+        "대화형 AI",
+        "서비스 이름"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-004",
+      "content": "mirror-mind",
+      "session": null,
+      "keywords": [
+        "상위 프로젝트",
+        "협력 원칙",
+        "기억 시스템",
+        "업무 관리"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-005",
+      "content": "lighthouse",
+      "session": null,
+      "keywords": [
+        "연구 동료 서비스",
+        "하위 프로젝트",
+        "논문 탐색",
+        "웹 서비스"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-006",
+      "content": "agentic-engineering",
+      "session": null,
+      "keywords": [
+        "방법론",
+        "기술적 결",
+        "AI 서비스 설계",
+        "범용 원칙"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-007",
+      "content": "meta-agent",
+      "session": null,
+      "keywords": [
+        "원칙 준수 감시",
+        "check.py",
+        "자기 감시",
+        "프로젝트"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-008",
+      "content": "mirror-mind-ops",
+      "session": null,
+      "keywords": [
+        "운영",
+        "세션 관리",
+        "업무 관리",
+        "기억 시스템"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-009",
+      "content": "AGENTS.md",
+      "session": null,
+      "keywords": [
+        "협력 규칙",
+        "세션 절차",
+        "트리거 지시문",
+        "mirror-mind"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-010",
+      "content": "mirror-mind-principle.md",
+      "session": null,
+      "keywords": [
+        "단일 원본",
+        "협업 원칙",
+        "톤 규정",
+        "mirror-mind"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-011",
+      "content": "task-management-principle.md",
+      "session": null,
+      "keywords": [
+        "업무 관리",
+        "5개 축",
+        "역할 경계",
+        "일정 연동"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-012",
+      "content": "technical-grain.md",
+      "session": null,
+      "keywords": [
+        "기술적 결",
+        "안전장치",
+        "관측 체계",
+        "LLM 이원화"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-013",
+      "content": "ai-service-design-principles.md",
+      "session": null,
+      "keywords": [
+        "AI 서비스 설계",
+        "자율성",
+        "관계 형성",
+        "동료의 산출물"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-014",
+      "content": "service-principles.md",
+      "session": null,
+      "keywords": [
+        "lighthouse 대원칙",
+        "연구 동료",
+        "온보딩",
+        "시나리오"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-015",
+      "content": "SPEC.md",
+      "session": null,
+      "keywords": [
+        "lighthouse",
+        "서비스 명세",
+        "UI/UX",
+        "대화 캔버스"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-016",
+      "content": "architecture.md",
+      "session": null,
+      "keywords": [
+        "lighthouse",
+        "기술 구조",
+        "도메인 결",
+        "3-Plane"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-017",
+      "content": "decisions.md",
+      "session": null,
+      "keywords": [
+        "의사결정 인덱스",
+        "mirror-mind-ops",
+        "폐기됨"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-018",
+      "content": "projects.md",
+      "session": null,
+      "keywords": [
+        "미래 지향 인덱스",
+        "업무 관리",
+        "일정",
+        "상태 추적"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-019",
+      "content": "episodes.json",
+      "session": null,
+      "keywords": [
+        "에피소드 저장소",
+        "사실 레이어",
+        "기억 시스템",
+        "구조화"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-020",
+      "content": "memories.json",
+      "session": null,
+      "keywords": [
+        "기억 레이어",
+        "5가지 kind",
+        "model",
+        "insight"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-021",
+      "content": "orchestrator.ts",
+      "session": null,
+      "keywords": [
+        "lighthouse",
+        "5페이즈",
+        "에이전트 수준",
+        "리팩토링"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-022",
+      "content": "llm-judgment.ts",
+      "session": null,
+      "keywords": [
+        "도구 수준 LLM",
+        "executeJudgment",
+        "구조화된 I/O",
+        "lighthouse"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-023",
+      "content": "check.py",
+      "session": null,
+      "keywords": [
+        "메타에이전트",
+        "톤 점검",
+        "LLM 점검",
+        "원칙 감시"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-024",
+      "content": "query.py",
+      "session": null,
+      "keywords": [
+        "에피소드 조회",
+        "필터",
+        "context",
+        "기억 시스템"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-025",
+      "content": "close-session.py",
+      "session": null,
+      "keywords": [
+        "세션 종료",
+        "에피소드 추출",
+        "자동화",
+        "mirror-mind-ops"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-026",
+      "content": "export-session.py",
+      "session": null,
+      "keywords": [
+        "원시 데이터",
+        "JSONL 변환",
+        "git 공유",
+        "mirror-mind-ops"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-027",
+      "content": "observability.md",
+      "session": null,
+      "keywords": [
+        "관측 체계",
+        "lighthouse",
+        "프로토타입 관측",
+        "에이전트 관측"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-028",
+      "content": "conventions.md",
+      "session": null,
+      "keywords": [
+        "lighthouse",
+        "서버사이드 규칙",
+        "대화 프로토콜",
+        "아티팩트 타입"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-029",
+      "content": "design-state-alignment.md",
+      "session": null,
+      "keywords": [
+        "lighthouse",
+        "설계-상태 정렬",
+        "핵심 명제",
+        "실패 사례"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-030",
+      "content": "state-management.md",
+      "session": null,
+      "keywords": [
+        "lighthouse",
+        "Conversation SSOT",
+        "Zustand",
+        "FSM"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-031",
+      "content": "ai-design-framework.md",
+      "session": null,
+      "keywords": [
+        "lighthouse",
+        "폐기됨",
+        "service-principles에 흡수",
+        "계층 역전 해소"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-032",
+      "content": "research-scenarios.md",
+      "session": null,
+      "keywords": [
+        "연구자 행동",
+        "5가지 시나리오",
+        "탐색 전략",
+        "lighthouse"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-033",
+      "content": "implementation-prompts.md",
+      "session": null,
+      "keywords": [
+        "6단계 구현",
+        "구현 에이전트 지시",
+        "lighthouse",
+        "Phase"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-034",
+      "content": "system-prompt.ts",
+      "session": null,
+      "keywords": [
+        "lighthouse",
+        "시스템 프롬프트",
+        "시나리오 인지",
+        "코르카"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-035",
+      "content": "Supabase",
+      "session": null,
+      "keywords": [
+        "서버사이드 저장소",
+        "인증",
+        "RLS",
+        "lighthouse"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-036",
+      "content": "Vercel AI SDK",
+      "session": null,
+      "keywords": [
+        "스트리밍",
+        "streamText",
+        "보일러플레이트 최소화",
+        "lighthouse"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-037",
+      "content": "Gemini 3 Flash Preview",
+      "session": null,
+      "keywords": [
+        "LLM",
+        "tool calling",
+        "대용량 컨텍스트",
+        "상위 에이전트"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-038",
+      "content": "Semantic Scholar",
+      "session": null,
+      "keywords": [
+        "논문 검색 API",
+        "외부 서비스",
+        "출처 표시",
+        "lighthouse"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-039",
+      "content": "codex exec",
+      "session": null,
+      "keywords": [
+        "CLI",
+        "read-only 샌드박스",
+        "LLM 호출",
+        "스크립트 연동"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-040",
+      "content": "Context7 MCP",
+      "session": null,
+      "keywords": [
+        "지식 공급",
+        "MCP",
+        "기술적 결",
+        "agentic-engineering"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-041",
+      "content": "Living Notebook",
+      "session": null,
+      "keywords": [
+        "UI 패러다임",
+        "노트북 코어",
+        "lighthouse",
+        "메인 화면"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-042",
+      "content": "에피소드 기억 시스템",
+      "session": null,
+      "keywords": [
+        "2레이어 아키텍처",
+        "사실+기억",
+        "episodes.json",
+        "memories.json"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-043",
+      "content": "역수입 패턴",
+      "session": null,
+      "keywords": [
+        "하위→상위",
+        "lighthouse→mirror-mind",
+        "검증된 패턴 승격",
+        "방법론"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-044",
+      "content": "LLM 이원화 원칙",
+      "session": null,
+      "keywords": [
+        "에이전트 수준",
+        "도구 수준",
+        "orchestrator.ts",
+        "llm-judgment.ts"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "ent-045",
+      "content": "구현 에이전트",
+      "session": null,
+      "keywords": [
+        "코드 구현",
+        "하위 에이전트",
+        "위임",
+        "lighthouse"
+      ],
+      "node_type": "entity"
+    },
+    {
+      "id": "evt-001",
+      "content": "AGENTS.md와 mirror-mind-principle.md를 검토하여 '핵심 문서 수정 시 반드시 사용자 합의 필요' 규칙을 도출했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "AGENTS.md",
+        "mirror-mind-principle.md",
+        "강재영",
+        "합의 규칙"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-002",
+      "content": "AI 메모리는 환경 정보만 보관하는 정책을 확정했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "mirror-mind-principle.md",
+        "메모리 정책",
+        "브로콜리"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-003",
+      "content": "점진적 확장 TODO를 도메인별 원칙 문서 생성 방향으로 구체화했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "AGENTS.md",
+        "mirror-mind",
+        "도메인 원칙"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-004",
+      "content": "AI의 역할을 비서실장(동료 레벨, 업무 관리 담당)으로 정의했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "브로콜리",
+        "강재영",
+        "역할 정의",
+        "task-management-principle.md"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-005",
+      "content": "수집/구조화/진행/대화/회고 5개 축을 순차 합의하여 task-management-principle.md를 완성했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "task-management-principle.md",
+        "강재영",
+        "mirror-mind-ops",
+        "5개 축"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-006",
+      "content": "'불확실성이 클 때 단순하게 시작' 운영 원칙을 채택했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "mirror-mind-ops",
+        "운영 원칙",
+        "강재영"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-007",
+      "content": "agentic-engineering의 collaboration/development/service-design 3축 구조를 세팅했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "agentic-engineering",
+        "3축 구조",
+        "방법론"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-008",
+      "content": "기존 Next.js 가이드에서 범용 원칙만 추출하여 기술적 결을 정리했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "technical-grain.md",
+        "agentic-engineering",
+        "범용 원칙"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-009",
+      "content": "AI 서비스 설계 핵심 전제 2축을 확립: '자율성은 디자인 선택' + 'AI는 동료 수준의 주체'",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "ai-service-design-principles.md",
+        "강재영",
+        "자율성",
+        "AI 동료 비전"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-010",
+      "content": "inbox를 한 번도 사용하지 않음을 발견하여 제거하고, 비판적 검토→추상화→통합 흐름을 운영 원칙으로 채택했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "mirror-mind-ops",
+        "회고",
+        "운영 원칙",
+        "통합 패턴"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-011",
+      "content": "전체 9개 문서 정합성 검증을 수행하여 5건을 발견하고 해결했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "mirror-mind",
+        "정합성 검증",
+        "브로콜리"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-012",
+      "content": "세션 시작 절차를 AGENTS.md에 명시하고, decisions.md + conversations/ 폴더 기반 대화 저장 체계를 합의했다",
+      "session": "2026-02-22-세션1",
+      "keywords": [
+        "AGENTS.md",
+        "decisions.md",
+        "세션 관리",
+        "강재영"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-013",
+      "content": "export-session.py를 작성하여 세션 원시 데이터를 깃으로 공유하는 체계를 만들었다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "export-session.py",
+        "mirror-mind-ops",
+        "JSONL",
+        "git"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-014",
+      "content": "컨텍스트 압축 후 톤이 존댓말로 바뀐 것을 발견하여 ~다 체 규정을 mirror-mind-principle.md에 명시했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "mirror-mind-principle.md",
+        "강재영",
+        "톤 규정",
+        "브로콜리"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-015",
+      "content": "technical-grain.md에 Agent Plane 안전장치, Context7 MCP 지식 공급, 5계층 관측 체계를 추가했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "technical-grain.md",
+        "agentic-engineering",
+        "안전장치",
+        "Context7 MCP"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-016",
+      "content": "projects.md의 존재 이유를 '지금 뭘 해야 하는가를 판단하는 미래 지향 인덱스'로 명확화했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "projects.md",
+        "mirror-mind-ops",
+        "역할 정의"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-017",
+      "content": "메타에이전트를 설계하고 check.py 프로토타입을 구현하여 톤 위반 15건을 정확 감지했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "meta-agent",
+        "check.py",
+        "톤 위반",
+        "프로그램적 감시"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-018",
+      "content": "프로그램적 6개 + LLM 기반 7개 점검 항목을 정의하고 세션 시작 절차에 5분 간격 watch 모드를 통합했다",
+      "session": "2026-02-22-세션2",
+      "keywords": [
+        "meta-agent",
+        "check.py",
+        "AGENTS.md",
+        "watch 모드"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-019",
+      "content": "lighthouse docs를 mirror-mind 방법론과 대조하여 갭 4건 + 역수입 대상 4건을 식별했다",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "lighthouse",
+        "mirror-mind",
+        "agentic-engineering",
+        "갭 분석"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-020",
+      "content": "lighthouse의 대원칙을 '연구 동료 에이전트 서비스'로 수립하고 에이전트 계층(상위 2개 + 하위 6개)을 확정했다",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "lighthouse",
+        "service-principles.md",
+        "강재영",
+        "연구 동료"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-021",
+      "content": "mirror-mind 4대 원칙을 lighthouse 서비스 맥락으로 번역하여 적용했다",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "mirror-mind",
+        "lighthouse",
+        "service-principles.md",
+        "원칙 번역"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-022",
+      "content": "lighthouse에서 검증된 4가지 패턴을 mirror-mind 방법론에 역수입했다",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "역수입 패턴",
+        "lighthouse",
+        "agentic-engineering",
+        "FSM 게이트"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-023",
+      "content": "ai-design-framework.md를 DESIGN_PRINCIPLES.md에서 리네이밍했다",
+      "session": "2026-02-22-세션3",
+      "keywords": [
+        "ai-design-framework.md",
+        "lighthouse",
+        "리네이밍"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-024",
+      "content": "세션3 종료 시 git 인증 문제로 누락된 대화 기록을 복구했다",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "mirror-mind-ops",
+        "git",
+        "기록 복구"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-025",
+      "content": "lighthouse 구현 에이전트에게 대원칙 기반 코드 재설계를 지시하되, Phase A만 진행하기로 결정했다",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "lighthouse",
+        "구현 에이전트",
+        "Phase A",
+        "강재영"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-026",
+      "content": "주제 전환 시 맥락 휘발 문제 해결을 위해 체크포인트 원칙을 추가했다",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "mirror-mind-ops",
+        "projects.md",
+        "decisions.md",
+        "체크포인트"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-027",
+      "content": "6개 트리거 지시문(작업 시작/종료, 주제 전환/킵, 정합성 검증, 회고, 원칙 점검)을 AGENTS.md에 명시했다",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "AGENTS.md",
+        "트리거 지시문",
+        "mirror-mind-ops"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-028",
+      "content": "lighthouse 관측 체계 설계 문서(observability.md)를 작성했다",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "observability.md",
+        "lighthouse",
+        "관측 체계"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-029",
+      "content": "감지(관측)와 방지(안전장치)를 다른 관심사로 분리하는 원칙을 세웠다",
+      "session": "2026-02-22-세션4",
+      "keywords": [
+        "lighthouse",
+        "관측 체계",
+        "안전장치",
+        "관심사 분리"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-030",
+      "content": "관측 UI 모듈에서 AI가 구현 레벨 계획을 작성하여 역할 경계 위반이 발생했다",
+      "session": "2026-02-22-세션5",
+      "keywords": [
+        "lighthouse",
+        "브로콜리",
+        "강재영",
+        "역할 경계 위반"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-031",
+      "content": "강재영이 '이런 일이 재발하면 안 된다'고 피드백하여 설계 문서 수준으로 재작성했다",
+      "session": "2026-02-22-세션5",
+      "keywords": [
+        "강재영",
+        "브로콜리",
+        "역할 경계",
+        "피드백"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-032",
+      "content": "역할 경계를 task-management-principle.md에 통합: 'mirror-mind 세션은 설계/조율/의사결정만, 코드 구현은 하위 에이전트'",
+      "session": "2026-02-22-세션5",
+      "keywords": [
+        "task-management-principle.md",
+        "역할 경계",
+        "강재영",
+        "구현 에이전트"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-033",
+      "content": "역할 경계 위반 회고 — 기존 원칙에서 추론 가능했으나 내재화하지 못했음을 인정했다",
+      "session": "2026-02-22-세션5",
+      "keywords": [
+        "브로콜리",
+        "회고",
+        "역할 경계",
+        "meta-agent"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-034",
+      "content": "메타에이전트 매 주기 원칙 리마인드 출력을 추가하기로 결정했다",
+      "session": "2026-02-22-세션5",
+      "keywords": [
+        "meta-agent",
+        "check.py",
+        "원칙 리마인드"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-035",
+      "content": "lighthouse docs 8개 문서를 전체 탐색하여 3가지 구조적 문제(계층 역전, 중복, 산재)를 발견했다",
+      "session": "2026-02-23-세션6",
+      "keywords": [
+        "lighthouse",
+        "문서 구조",
+        "계층 역전",
+        "브로콜리"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-036",
+      "content": "ai-design-framework.md를 service-principles.md에 흡수 후 삭제하여 계층 역전을 해소했다",
+      "session": "2026-02-23-세션6",
+      "keywords": [
+        "ai-design-framework.md",
+        "service-principles.md",
+        "lighthouse",
+        "흡수 삭제"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-037",
+      "content": "SPEC.md에서 기술 구현 내용을 architecture.md로 이관하여 역할 분리했다",
+      "session": "2026-02-23-세션6",
+      "keywords": [
+        "SPEC.md",
+        "architecture.md",
+        "lighthouse",
+        "역할 분리"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-038",
+      "content": "511줄 삭제, 343줄 추가로 문서 6개 역할을 재정의하고 5가지 기준으로 정합성을 검증했다",
+      "session": "2026-02-23-세션6",
+      "keywords": [
+        "lighthouse",
+        "문서 재구성",
+        "정합성 검증"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-039",
+      "content": "AGENTS.md에 '10분마다 주요 문서 재읽기' 절차를 추가했다",
+      "session": "2026-02-23-세션6",
+      "keywords": [
+        "AGENTS.md",
+        "mirror-mind-ops",
+        "컨텍스트 유지"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-040",
+      "content": "상위 에이전트의 정체성을 오케스트레이터에서 '대화형 연구 동료'로 전환했다",
+      "session": "2026-02-23-세션7",
+      "keywords": [
+        "lighthouse",
+        "코르카 (corca)",
+        "강재영",
+        "정체성 전환"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-041",
+      "content": "경험 기억, 연구 논의, 주도권 제안, 하위 에이전트 활용의 4가지 역할을 정의했다",
+      "session": "2026-02-23-세션7",
+      "keywords": [
+        "lighthouse",
+        "코르카 (corca)",
+        "service-principles.md"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-042",
+      "content": "강재영이 '처음부터 다시 만든다, 레거시 고려 불필요, AI 관계 재설정에 창의적 접근'을 선언했다",
+      "session": "2026-02-23-세션7",
+      "keywords": [
+        "강재영",
+        "lighthouse",
+        "서비스 재설계"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-043",
+      "content": "6개 하위 문서 재작성 계획을 수립하고 의존성 순서를 정의했다",
+      "session": "2026-02-23-세션7",
+      "keywords": [
+        "lighthouse",
+        "문서 재작성",
+        "SPEC.md"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-044",
+      "content": "SPEC.md를 완전 재작성하여 대화 캔버스, 제안 카드, 연구 아티팩트, 경험 기억, 주도권 신호 5개 UI/UX 개념을 도입했다",
+      "session": "2026-02-23-세션7",
+      "keywords": [
+        "SPEC.md",
+        "lighthouse",
+        "UI/UX",
+        "대화 캔버스",
+        "제안 카드"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-045",
+      "content": "architecture.md, state-management.md, design-state-alignment.md, observability.md, conventions.md를 완전 재작성했다",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "lighthouse",
+        "architecture.md",
+        "state-management.md",
+        "conventions.md"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-046",
+      "content": "상위 에이전트 LLM으로 Gemini 3 Flash Preview를 선택했다",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "Gemini 3 Flash Preview",
+        "lighthouse",
+        "강재영",
+        "LLM 선택"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-047",
+      "content": "서버사이드 저장소로 Supabase를 선택했다 (인증+RLS가 결정적 근거)",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "Supabase",
+        "lighthouse",
+        "강재영",
+        "서버사이드"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-048",
+      "content": "스트리밍으로 Vercel AI SDK를 선택하고, 경험 기억은 세션 간 포함하기로 결정했다",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "Vercel AI SDK",
+        "lighthouse",
+        "경험 기억"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-049",
+      "content": "6단계 구현 프롬프트(implementation-prompts.md)를 작성하여 설계→구현 단계로 전환했다",
+      "session": "2026-02-23-세션8",
+      "keywords": [
+        "implementation-prompts.md",
+        "lighthouse",
+        "구현 에이전트",
+        "Phase"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-050",
+      "content": "구현 에이전트가 Phase 1~6을 진행하는 동안 설계 정합성을 검토하여 Phase 3에서 6건, Phase 4에서 6건을 지적했다",
+      "session": "2026-02-23-세션9",
+      "keywords": [
+        "lighthouse",
+        "구현 에이전트",
+        "브로콜리",
+        "정합성 검토"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-051",
+      "content": "일정 관리 체계를 도입 — 별도 캘린더 없이 문서에 날짜를 적는 최소 방식으로 결정했다",
+      "session": "2026-02-23-세션9",
+      "keywords": [
+        "task-management-principle.md",
+        "mirror-mind-ops",
+        "강재영",
+        "일정 연동"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-052",
+      "content": "2/24 팀 공유 → 2/26 후속 → 3/2 후속 → 3월 1주 알파 테스트 일정을 등록했다",
+      "session": "2026-02-23-세션9",
+      "keywords": [
+        "lighthouse",
+        "일정",
+        "팀 공유",
+        "알파 테스트"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-053",
+      "content": "세션 6~9 회고에서 밀도를 가능하게 한 3가지 원인(설계 구체성, 역할 분리, 맥락 전달 체계)을 식별했다",
+      "session": "2026-02-23-세션9",
+      "keywords": [
+        "회고",
+        "브로콜리",
+        "구현 에이전트",
+        "밀도"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-054",
+      "content": "6단계 시연 흐름(대화→검색→분석→아티팩트→제안카드→경험기억)을 검증하고 버그 4건 + 프롬프트 1건을 수정했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "lighthouse",
+        "시연 검증",
+        "버그 수정",
+        "안정화"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-055",
+      "content": "'새 대화는 빈 칠판으로 시작한다' 원칙을 수립하여 기억 주입 과다 문제를 해결했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "lighthouse",
+        "기억 주입",
+        "강재영",
+        "코르카 (corca)"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-056",
+      "content": "후속 개선 4건 아젠다를 확정했다: 톤, 온보딩, 페이퍼 리스트, 중간 정리",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "lighthouse",
+        "강재영",
+        "톤 전환",
+        "온보딩"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-057",
+      "content": "인간 관계 형성 메커니즘을 심리학 관점에서 탐색하여 3가지 핵심 인사이트를 도출했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "lighthouse",
+        "관계 형성",
+        "Fiske",
+        "Aron"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-058",
+      "content": "'첫 대화 자체가 온보딩, 별도 화면 없음' 원칙을 확립하고 연구 동료 이름 코르카(corca)를 도입했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "코르카 (corca)",
+        "lighthouse",
+        "강재영",
+        "온보딩",
+        "service-principles.md"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-059",
+      "content": "톤 전환, 온보딩, 페이퍼 리스트, 중간 정리 등 총 8건의 구현을 구현 에이전트에 위임하여 완료했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "lighthouse",
+        "구현 에이전트",
+        "코르카 (corca)",
+        "Semantic Scholar"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-060",
+      "content": "온보딩 관계 형성 원칙을 ai-service-design-principles.md에 범용 원칙 6개로 역수입했다",
+      "session": "2026-02-23-세션10",
+      "keywords": [
+        "ai-service-design-principles.md",
+        "역수입 패턴",
+        "관계 형성",
+        "agentic-engineering"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-061",
+      "content": "Light House 채팅 UI를 혁신하기 위해 8가지 방향(Spatial Canvas, Graph, Timeline 등)을 탐색했다",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "lighthouse",
+        "UI 탐색",
+        "브로콜리"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-062",
+      "content": "5가지 조합 컨셉(Research Lab, Research Trail, Reading Room, Living Notebook, Constellation)을 도출했다",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "lighthouse",
+        "Living Notebook",
+        "UI 컨셉"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-063",
+      "content": "강재영이 Living Notebook을 기반으로 선택하고, Reading Room의 보드 + Research Trail의 그래프를 결합하기로 결정했다",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "Living Notebook",
+        "강재영",
+        "lighthouse",
+        "3단 분할"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-064",
+      "content": "메인 화면을 3단 분할(노트북+Board+Graph)로 하고, 좌측 사이드바를 상단 내비게이션 바로 전환하기로 했다",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "lighthouse",
+        "레이아웃",
+        "Living Notebook",
+        "강재영"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-065",
+      "content": "Board와 Graph 부분 설계가 얇다는 지적이 나와 상세 설계를 보강했다",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "lighthouse",
+        "Board",
+        "Graph",
+        "강재영"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-066",
+      "content": "구현 에이전트에게 노트북 코어 구현을 위임하여 완료했다",
+      "session": "2026-02-23-세션11",
+      "keywords": [
+        "Living Notebook",
+        "구현 에이전트",
+        "lighthouse"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-067",
+      "content": "강재영이 Board와 Graph가 큰 의미가 없다고 판단하여 제거를 결정했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "강재영",
+        "lighthouse",
+        "Board",
+        "Graph",
+        "폐기"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-068",
+      "content": "연구자의 실제 논문 탐색 시나리오를 기반으로 서비스를 고도화하는 방향으로 전환했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "lighthouse",
+        "강재영",
+        "시나리오 기반",
+        "연구자 행동"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-069",
+      "content": "Ellis 모델, Kuhlthau ISP, Bates Berry Picking 등으로 연구자 논문 탐색 행동을 체계적으로 조사했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "research-scenarios.md",
+        "lighthouse",
+        "Berry Picking",
+        "Snowballing"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-070",
+      "content": "5가지 핵심 시나리오, 5가지 탐색 전략, 7가지 핵심 고충을 정리했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "research-scenarios.md",
+        "lighthouse",
+        "연구자 행동",
+        "시나리오"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-071",
+      "content": "'AI 동료 서비스에서 진짜 UI/UX는 시각적 컴포넌트가 아니라 대화의 품질이다' 인사이트를 도출했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "ai-service-design-principles.md",
+        "강재영",
+        "agentic-engineering",
+        "대화 품질"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-072",
+      "content": "ai-service-design-principles.md에 '사용자 행동의 깊은 이해' 범용 원칙을 추가했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "ai-service-design-principles.md",
+        "agentic-engineering",
+        "역수입 패턴"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-073",
+      "content": "시나리오 식별 신호 테이블, 시나리오별 심화 전략, 공통 행동 4가지를 설계하여 시스템 프롬프트에 반영했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "system-prompt.ts",
+        "lighthouse",
+        "시나리오 인지",
+        "research-scenarios.md"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-074",
+      "content": "Library v1 초안을 작성했으나 강재영이 '논의가 너무 적었다'고 피드백하여 재검토로 보류했다",
+      "session": "2026-02-24-세션12",
+      "keywords": [
+        "lighthouse",
+        "강재영",
+        "Library",
+        "피드백"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-075",
+      "content": "기존 7개 도구와 대화 플로우를 5가지 시나리오에 대조하여 5개 개선 사항을 도출하고 구현했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "lighthouse",
+        "구현 에이전트",
+        "find_related_papers",
+        "갭 분석"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-076",
+      "content": "find_related_papers 도구를 신규 추가하고 연쇄 규칙 시나리오별 분기를 구현했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "lighthouse",
+        "find_related_papers",
+        "Semantic Scholar",
+        "시나리오"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-077",
+      "content": "Library v1이 '데이터 재배치' 함정이라는 문제를 비판적으로 지적하고, '대화만으로 부족한 순간'으로 존재 이유를 재정의했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "lighthouse",
+        "Library",
+        "Landscape Panel",
+        "Triage Panel"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-078",
+      "content": "인라인 사이드 패널 구조(Landscape + Triage)로 Library v2를 설계했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "lighthouse",
+        "Library v2",
+        "사이드 패널",
+        "시나리오 기반"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-079",
+      "content": "사이드 패널 UI 구현을 완료하고 시연 검증 시나리오 2개(각 6단계)를 설계했다",
+      "session": "2026-02-24-세션13",
+      "keywords": [
+        "lighthouse",
+        "구현 에이전트",
+        "시연 검증"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-080",
+      "content": "세션 사이드바를 제거하고 3컬럼 고정 레이아웃(노트북3|논문4|연구3)을 확정했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "lighthouse",
+        "레이아웃",
+        "강재영",
+        "3컬럼"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-081",
+      "content": "코르카가 연구 활동 전환 시점에 패널 구성을 '제안(propose)'하는 메커니즘을 설계했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "코르카 (corca)",
+        "lighthouse",
+        "propose",
+        "패널 전환"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-082",
+      "content": "논문 패널 4가지 고도화(트리아지 테이블, 발견 맥락 표시, Snowballing, 클러스터 그룹 뷰)를 설계했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "lighthouse",
+        "논문 패널",
+        "트리아지",
+        "Snowballing"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-083",
+      "content": "온보딩을 단계가 아니라 연속적 관계 성장 과정으로 재정의했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "lighthouse",
+        "관계 형성",
+        "ai-service-design-principles.md"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-084",
+      "content": "경험의 3차원(활동+결과+관계)과 관계 깊이 4단계를 정의했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "lighthouse",
+        "관계 형성",
+        "경험 3차원",
+        "ai-service-design-principles.md"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-085",
+      "content": "'어려운 경험(실패 후 회복, 의견 충돌 후 조율)이 신뢰 전환에 필수'라는 원칙을 확립했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "ai-service-design-principles.md",
+        "관계 형성",
+        "신뢰",
+        "agentic-engineering"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-086",
+      "content": "기존 research_journeys(4줄 요약)를 memory_episodes(에피소드 세그멘테이션)로 대체하는 재설계를 수행했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "lighthouse",
+        "에피소드 기억 시스템",
+        "memory_episodes"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-087",
+      "content": "기억 시스템을 독립 모듈로 설계하여 lighthouse에 종속시키지 않는 원칙을 확립했다",
+      "session": "2026-02-24-세션14",
+      "keywords": [
+        "에피소드 기억 시스템",
+        "모듈화",
+        "lighthouse"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-088",
+      "content": "경쟁 AI 문헌 검색 서비스 UI 스크린샷을 분석하여 문서 기반 결과물 아이디어를 수확했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "lighthouse",
+        "강재영",
+        "벤치마크",
+        "md 파일"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-089",
+      "content": "강재영이 'md 파일 생성+편집이 핵심'이라는 통찰을 제시했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "강재영",
+        "lighthouse",
+        "LLM 문서 생성",
+        "패러다임 전환"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-090",
+      "content": "고정 컴포넌트(도구 패러다임) vs LLM 문서 작성(동료 패러다임)의 본질적 차이를 도출했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "lighthouse",
+        "브로콜리",
+        "UI 패러다임",
+        "동료 패러다임"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-091",
+      "content": "3컬럼 고정 컴포넌트를 2컬럼 + LLM 동적 문서 생성으로 전환하고, 세션 14의 3컬럼 관련 결정을 폐기했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "lighthouse",
+        "강재영",
+        "2컬럼",
+        "update_research_panel"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-092",
+      "content": "ai-service-design-principles.md에 '동료의 산출물: 데이터가 아니라 문서' 원칙을 추가했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "ai-service-design-principles.md",
+        "agentic-engineering",
+        "문서 기반 산출물",
+        "역수입 패턴"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-093",
+      "content": "UI 패러다임 전환 + 아티팩트 영속화 + 논문 리스트 구조화 등 6건을 구현 에이전트에 위임했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "lighthouse",
+        "구현 에이전트",
+        "Supabase",
+        "artifacts"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-094",
+      "content": "1차 팀 공유에서 서비스가 제대로 동작하지 않아 공감을 얻지 못했다 — 응답 속도가 핵심 병목",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "lighthouse",
+        "강재영",
+        "팀 공유",
+        "실패",
+        "응답 속도"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-095",
+      "content": "LLM 2회 + 외부 API 1회 순차 실행이 병목임을 진단하고 응답 속도 개선을 최우선 과제로 등록했다",
+      "session": "2026-02-24-세션15",
+      "keywords": [
+        "lighthouse",
+        "응답 속도",
+        "Gemini 3 Flash Preview",
+        "Semantic Scholar"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-096",
+      "content": "mirror-mind가 과거 기억을 참조하지 못하는 문제를 인식하고 에피소드 기억 시스템을 도입하기로 결정했다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "mirror-mind-ops",
+        "에피소드 기억 시스템",
+        "강재영"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-097",
+      "content": "에피소드 스키마를 확정하고 query.py를 구현했다 (--project, --emotion, --keyword, --milestone, --recent, --stats)",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "query.py",
+        "에피소드 기억 시스템",
+        "episodes.json"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-098",
+      "content": "처음 md 기반으로 33개 에피소드를 추출했으나, 강재영 피드백으로 raw JSONL 기반으로 56개를 재추출했다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "episodes.json",
+        "강재영",
+        "raw JSONL",
+        "백필"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-099",
+      "content": "서브에이전트 3개를 병렬 투입하여 raw 기반 에피소드 재추출을 완료했다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "episodes.json",
+        "서브에이전트",
+        "병렬 처리"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-100",
+      "content": "세션 시작 절차에 기억 조회, 작업 종료에 에피소드 추가를 AGENTS.md에 반영했다",
+      "session": "2026-02-24-세션16",
+      "keywords": [
+        "AGENTS.md",
+        "에피소드 기억 시스템",
+        "query.py",
+        "mirror-mind-ops"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-101",
+      "content": "에이전트 관측을 위해 dev 페이지 타임라인 뷰(B안)를 선택하고, LLM 판단을 중심으로 관측하기로 합의했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "lighthouse",
+        "관측 체계",
+        "강재영",
+        "타임라인 뷰"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-102",
+      "content": "강재영이 '관측 전에 관측하기 좋은 구조를 만들어야 한다'고 제안하고, '관측 대상 자체도 검토해야 한다'로 한 단계 더 들어갔다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "강재영",
+        "lighthouse",
+        "관측 구조",
+        "두 단계 사고"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-103",
+      "content": "route.ts 214줄 모놀리식 핸들러를 orchestrator.ts 5페이즈로 추출하는 설계를 완료했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "orchestrator.ts",
+        "lighthouse",
+        "리팩토링",
+        "TurnContext"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-104",
+      "content": "강재영이 'LLM도 에이전트 수준과 도구 수준이 있다, 둘을 별도로 생각해야 한다'는 핵심 인사이트를 제시했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "강재영",
+        "LLM 이원화 원칙",
+        "lighthouse"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-105",
+      "content": "에이전트 수준은 orchestrator.ts, 도구 수준은 llm-judgment.ts의 executeJudgment로 분리하여 구현했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "orchestrator.ts",
+        "llm-judgment.ts",
+        "LLM 이원화 원칙",
+        "lighthouse"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-106",
+      "content": "llm-judgment.ts 115줄 신규 작성 + 6개 도구 파일 리팩토링을 완료했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "llm-judgment.ts",
+        "lighthouse",
+        "구현 에이전트",
+        "리팩토링"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-107",
+      "content": "LLM 이원화 패턴을 technical-grain.md에 범용 원칙으로 역수입했다",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "technical-grain.md",
+        "LLM 이원화 원칙",
+        "agentic-engineering",
+        "역수입 패턴"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-108",
+      "content": "강재영이 '정리되니 마음이 편안하다'고 표현 — 실전 구조가 원칙으로 올라올 때의 만족감",
+      "session": "2026-02-25-세션17",
+      "keywords": [
+        "강재영",
+        "technical-grain.md",
+        "만족감"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-109",
+      "content": "check.py에 --llm 플래그로 codex exec 기반 LLM 점검 4개를 추가했다",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "check.py",
+        "codex exec",
+        "meta-agent",
+        "LLM 점검"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-110",
+      "content": "최초 실행에서 즉시 위반 2건 감지(순응, 목적 탐구 미수행) — 자기 감시 재귀적 상황이 발생했다",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "meta-agent",
+        "check.py",
+        "codex exec",
+        "자기 감시"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-111",
+      "content": "--dangerously-bypass 채택에 비판적 검토 부재를 메타에이전트가 지적하여 --sandbox read-only로 교정했다",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "meta-agent",
+        "codex exec",
+        "안전장치",
+        "비판적 검토"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-112",
+      "content": "codex exec 활용 원칙을 수립했다: 분석 전용은 read-only, 파일 수정 필요 시 workspace-write 또는 Python 처리",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "codex exec",
+        "mirror-mind-ops",
+        "샌드박스 정책"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-113",
+      "content": "query.py에 --context 플래그를 추가하여 맥락 기반 기억 조회를 구현했다",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "query.py",
+        "codex exec",
+        "에피소드 기억 시스템",
+        "맥락 기반"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-114",
+      "content": "강재영이 '기억 시스템 목적은 교훈 추출이 아니라 현재 맥락에 적합한 기억을 포착하는 것'이라고 교정했다",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "강재영",
+        "에피소드 기억 시스템",
+        "맥락 포착",
+        "--summarize 폐기"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-115",
+      "content": "기억 주입 자동화를 백로그에 등록했다 — 세션 시작, 주제 전환, 설계 결정 전, 회고 시점에서 자동 주입",
+      "session": "2026-02-25-세션18",
+      "keywords": [
+        "projects.md",
+        "에피소드 기억 시스템",
+        "inject.py",
+        "자동화"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-116",
+      "content": "세션 17 관측 구조 리팩토링(orchestrator, TurnContext, llm-judgment) 완료 현황과 미완료 항목을 확인했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "lighthouse",
+        "orchestrator.ts",
+        "관측 체계",
+        "브로콜리"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-117",
+      "content": "dev 타임라인 뷰를 설계했으나, 강재영이 '에이전트 생각을 순차적으로 따라가면서 봐야 한다'며 순차 리스트로 방향을 정했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "lighthouse",
+        "강재영",
+        "타임라인 뷰",
+        "순차 리스트"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-118",
+      "content": "코르카의 서비스형 인사 문제에서 출발하여 기억 시스템의 근본 철학을 재정의했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "코르카 (corca)",
+        "에피소드 기억 시스템",
+        "강재영",
+        "철학 재정의"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-119",
+      "content": "핵심 전환: '처음 만났을 때 사용자 기억은 없고 에이전트 자신의 기억만 있다' → '사실과 기억은 다른 레이어'",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "에피소드 기억 시스템",
+        "강재영",
+        "2레이어",
+        "에이전트 중심"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-120",
+      "content": "강재영이 매 단계마다 한 층 더 본질적인 질문을 던져 기억 시스템 철학이 깊어졌다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "강재영",
+        "브로콜리",
+        "기억 시스템",
+        "사고 심화"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-121",
+      "content": "강재영이 mirror-mind AI에게 '브로콜리'라는 이름을 지어줬다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "강재영",
+        "브로콜리",
+        "이름 부여",
+        "정체성"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-122",
+      "content": "'사용자'로 부르지 말고 이름(강재영)으로 부르라는 지시를 받았다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "강재영",
+        "브로콜리",
+        "호칭",
+        "mirror-mind-principle.md"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-123",
+      "content": "강재영에 대한 모델링(model kind)도 기억에 포함하기로 하고, 프로젝트/방법론 등 다양한 주제로 확장했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "memories.json",
+        "model kind",
+        "강재영",
+        "확장"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-124",
+      "content": "2레이어 기억 아키텍처(episodes.json=사실 + memories.json=기억)를 확정했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "episodes.json",
+        "memories.json",
+        "에피소드 기억 시스템",
+        "2레이어"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-125",
+      "content": "memories.json을 1차 작성했다 — 5개 kind(identity 3, model 5, experience 15, understanding 4, insight 8) 총 35개 기억",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "memories.json",
+        "에피소드 기억 시스템",
+        "브로콜리"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-126",
+      "content": "fact_refs로 에피소드를 참조하되 사실과 기억이 다를 수 있음을 구조적으로 인정했다",
+      "session": "2026-02-25-세션19",
+      "keywords": [
+        "memories.json",
+        "episodes.json",
+        "fact_refs",
+        "구조적 인정"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-127",
+      "content": "decisions.md 폐기와 같은 논리로 세션 노트 MD 20개도 중복으로 판단하여 삭제했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "mirror-mind-ops",
+        "세션 노트",
+        "episodes.json",
+        "projects.md"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-128",
+      "content": "close-session.py에서 노트 생성 코드를 제거했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "close-session.py",
+        "mirror-mind-ops",
+        "세션 노트 폐기"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-129",
+      "content": "기억 시스템 재설계 항목이 lighthouse 하위에 잘못 들어가 있어 mirror-mind 운영 작업으로 분리 통합했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "projects.md",
+        "에피소드 기억 시스템",
+        "mirror-mind-ops"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-130",
+      "content": "mirror-mind 2레이어 기억 철학을 lighthouse에 적용하는 설계를 수행했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "lighthouse",
+        "에피소드 기억 시스템",
+        "mirror-mind",
+        "memories 레이어"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-131",
+      "content": "agent_memories 테이블 스키마와 4가지 memory kind(identity/researcher_profile/interaction_pattern/research_insight)를 설계했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "lighthouse",
+        "Supabase",
+        "memories 레이어",
+        "memory kind"
+      ],
+      "node_type": "event"
+    },
+    {
+      "id": "evt-132",
+      "content": "추출-저장-주입 파이프라인과 기존 코드 8개 파일 수정 계획을 포함한 구현 프롬프트를 작성했다",
+      "session": "2026-02-25-세션20",
+      "keywords": [
+        "lighthouse",
+        "구현 에이전트",
+        "memories 레이어",
+        "구현 프롬프트"
+      ],
+      "node_type": "event"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ent-001",
+      "target": "ent-002",
+      "weight": 0.2049,
+      "method": "knn"
+    },
+    {
+      "source": "ent-001",
+      "target": "evt-096",
+      "weight": 0.2137,
+      "method": "knn"
+    },
+    {
+      "source": "ent-001",
+      "target": "evt-129",
+      "weight": 0.2398,
+      "method": "knn"
+    },
+    {
+      "source": "ent-001",
+      "target": "evt-019",
+      "weight": 0.3334,
+      "method": "knn"
+    },
+    {
+      "source": "ent-001",
+      "target": "ent-010",
+      "weight": 0.2852,
+      "method": "knn"
+    },
+    {
+      "source": "ent-001",
+      "target": "evt-130",
+      "weight": 0.3054,
+      "method": "knn"
+    },
+    {
+      "source": "ent-001",
+      "target": "evt-021",
+      "weight": 0.3705,
+      "method": "knn"
+    },
+    {
+      "source": "ent-001",
+      "target": "ent-017",
+      "weight": 0.3743,
+      "method": "knn"
+    },
+    {
+      "source": "ent-001",
+      "target": "ent-034",
+      "weight": 0.1516,
+      "method": "knn"
+    },
+    {
+      "source": "ent-001",
+      "target": "ent-043",
+      "weight": 0.1807,
+      "method": "knn"
+    },
+    {
+      "source": "ent-001",
+      "target": "evt-067",
+      "weight": 0.0931,
+      "method": "knn"
+    },
+    {
+      "source": "ent-001",
+      "target": "evt-121",
+      "weight": 0.1757,
+      "method": "knn"
+    },
+    {
+      "source": "ent-002",
+      "target": "evt-002",
+      "weight": 0.2653,
+      "method": "knn"
+    },
+    {
+      "source": "ent-002",
+      "target": "evt-129",
+      "weight": 0.2276,
+      "method": "knn"
+    },
+    {
+      "source": "ent-002",
+      "target": "evt-014",
+      "weight": 0.2297,
+      "method": "knn"
+    },
+    {
+      "source": "ent-002",
+      "target": "evt-004",
+      "weight": 0.2823,
+      "method": "knn"
+    },
+    {
+      "source": "ent-002",
+      "target": "evt-021",
+      "weight": 0.2375,
+      "method": "knn"
+    },
+    {
+      "source": "ent-002",
+      "target": "evt-130",
+      "weight": 0.2536,
+      "method": "knn"
+    },
+    {
+      "source": "ent-002",
+      "target": "evt-121",
+      "weight": 0.3157,
+      "method": "knn"
+    },
+    {
+      "source": "ent-002",
+      "target": "ent-010",
+      "weight": 0.2975,
+      "method": "knn"
+    },
+    {
+      "source": "ent-002",
+      "target": "ent-004",
+      "weight": 0.2133,
+      "method": "knn"
+    },
+    {
+      "source": "ent-002",
+      "target": "evt-011",
+      "weight": 0.2058,
+      "method": "knn"
+    },
+    {
+      "source": "ent-002",
+      "target": "evt-090",
+      "weight": 0.1023,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "evt-055",
+      "weight": 0.3244,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "evt-118",
+      "weight": 0.3323,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "evt-059",
+      "weight": 0.3482,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "evt-020",
+      "weight": 0.3721,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "evt-041",
+      "weight": 0.4169,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "ent-005",
+      "weight": 0.4379,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "evt-040",
+      "weight": 0.4876,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "evt-058",
+      "weight": 0.554,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "ent-015",
+      "weight": 0.1864,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "ent-021",
+      "weight": 0.1392,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "ent-036",
+      "weight": 0.0863,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "ent-038",
+      "weight": 0.1378,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "evt-042",
+      "weight": 0.1162,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "evt-081",
+      "weight": 0.2687,
+      "method": "knn"
+    },
+    {
+      "source": "ent-003",
+      "target": "evt-088",
+      "weight": 0.1298,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "evt-021",
+      "weight": 0.269,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "evt-096",
+      "weight": 0.3695,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "ent-009",
+      "weight": 0.3843,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "evt-130",
+      "weight": 0.3895,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "evt-129",
+      "weight": 0.3973,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "ent-010",
+      "weight": 0.4143,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "ent-008",
+      "weight": 0.6682,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "ent-005",
+      "weight": 0.201,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "ent-007",
+      "weight": 0.2052,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "ent-018",
+      "weight": 0.177,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "ent-043",
+      "weight": 0.169,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "evt-003",
+      "weight": 0.1833,
+      "method": "knn"
+    },
+    {
+      "source": "ent-004",
+      "target": "evt-006",
+      "weight": 0.1679,
+      "method": "knn"
+    },
+    {
+      "source": "ent-005",
+      "target": "evt-021",
+      "weight": 0.1802,
+      "method": "knn"
+    },
+    {
+      "source": "ent-005",
+      "target": "ent-014",
+      "weight": 0.185,
+      "method": "knn"
+    },
+    {
+      "source": "ent-005",
+      "target": "evt-068",
+      "weight": 0.2856,
+      "method": "knn"
+    },
+    {
+      "source": "ent-005",
+      "target": "ent-015",
+      "weight": 0.2971,
+      "method": "knn"
+    },
+    {
+      "source": "ent-005",
+      "target": "ent-038",
+      "weight": 0.3305,
+      "method": "knn"
+    },
+    {
+      "source": "ent-005",
+      "target": "evt-020",
+      "weight": 0.3686,
+      "method": "knn"
+    },
+    {
+      "source": "ent-005",
+      "target": "evt-042",
+      "weight": 0.1369,
+      "method": "knn"
+    },
+    {
+      "source": "ent-005",
+      "target": "evt-061",
+      "weight": 0.1201,
+      "method": "knn"
+    },
+    {
+      "source": "ent-005",
+      "target": "evt-082",
+      "weight": 0.0965,
+      "method": "knn"
+    },
+    {
+      "source": "ent-005",
+      "target": "evt-088",
+      "weight": 0.1554,
+      "method": "knn"
+    },
+    {
+      "source": "ent-005",
+      "target": "evt-094",
+      "weight": 0.096,
+      "method": "knn"
+    },
+    {
+      "source": "ent-006",
+      "target": "evt-071",
+      "weight": 0.2899,
+      "method": "knn"
+    },
+    {
+      "source": "ent-006",
+      "target": "evt-019",
+      "weight": 0.3616,
+      "method": "knn"
+    },
+    {
+      "source": "ent-006",
+      "target": "evt-072",
+      "weight": 0.3038,
+      "method": "knn"
+    },
+    {
+      "source": "ent-006",
+      "target": "evt-060",
+      "weight": 0.312,
+      "method": "knn"
+    },
+    {
+      "source": "ent-006",
+      "target": "evt-022",
+      "weight": 0.4026,
+      "method": "knn"
+    },
+    {
+      "source": "ent-006",
+      "target": "ent-040",
+      "weight": 0.5407,
+      "method": "knn"
+    },
+    {
+      "source": "ent-006",
+      "target": "evt-007",
+      "weight": 0.5627,
+      "method": "knn"
+    },
+    {
+      "source": "ent-006",
+      "target": "evt-008",
+      "weight": 0.5747,
+      "method": "knn"
+    },
+    {
+      "source": "ent-006",
+      "target": "ent-012",
+      "weight": 0.1565,
+      "method": "knn"
+    },
+    {
+      "source": "ent-006",
+      "target": "evt-015",
+      "weight": 0.2131,
+      "method": "knn"
+    },
+    {
+      "source": "ent-006",
+      "target": "evt-107",
+      "weight": 0.2831,
+      "method": "knn"
+    },
+    {
+      "source": "ent-007",
+      "target": "evt-033",
+      "weight": 0.1803,
+      "method": "knn"
+    },
+    {
+      "source": "ent-007",
+      "target": "evt-018",
+      "weight": 0.3136,
+      "method": "knn"
+    },
+    {
+      "source": "ent-007",
+      "target": "evt-109",
+      "weight": 0.3897,
+      "method": "knn"
+    },
+    {
+      "source": "ent-007",
+      "target": "evt-034",
+      "weight": 0.4047,
+      "method": "knn"
+    },
+    {
+      "source": "ent-007",
+      "target": "ent-023",
+      "weight": 0.4778,
+      "method": "knn"
+    },
+    {
+      "source": "ent-007",
+      "target": "evt-017",
+      "weight": 0.5694,
+      "method": "knn"
+    },
+    {
+      "source": "ent-007",
+      "target": "evt-110",
+      "weight": 0.6096,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "ent-025",
+      "weight": 0.3381,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "ent-010",
+      "weight": 0.2849,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "evt-100",
+      "weight": 0.2876,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "evt-130",
+      "weight": 0.3015,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "evt-006",
+      "weight": 0.4134,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "evt-096",
+      "weight": 0.4519,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "evt-129",
+      "weight": 0.5297,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "ent-011",
+      "weight": 0.2105,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "ent-017",
+      "weight": 0.2616,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "ent-018",
+      "weight": 0.2278,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "ent-026",
+      "weight": 0.2108,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "evt-010",
+      "weight": 0.2463,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "evt-013",
+      "weight": 0.1573,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "evt-024",
+      "weight": 0.2038,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "evt-051",
+      "weight": 0.2437,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "evt-112",
+      "weight": 0.1475,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "evt-120",
+      "weight": 0.1536,
+      "method": "knn"
+    },
+    {
+      "source": "ent-008",
+      "target": "evt-128",
+      "weight": 0.17,
+      "method": "knn"
+    },
+    {
+      "source": "ent-009",
+      "target": "evt-021",
+      "weight": 0.2354,
+      "method": "knn"
+    },
+    {
+      "source": "ent-009",
+      "target": "evt-012",
+      "weight": 0.2897,
+      "method": "knn"
+    },
+    {
+      "source": "ent-009",
+      "target": "ent-010",
+      "weight": 0.3717,
+      "method": "knn"
+    },
+    {
+      "source": "ent-009",
+      "target": "evt-100",
+      "weight": 0.3855,
+      "method": "knn"
+    },
+    {
+      "source": "ent-009",
+      "target": "evt-039",
+      "weight": 0.3925,
+      "method": "knn"
+    },
+    {
+      "source": "ent-009",
+      "target": "evt-001",
+      "weight": 0.4307,
+      "method": "knn"
+    },
+    {
+      "source": "ent-009",
+      "target": "evt-027",
+      "weight": 0.6261,
+      "method": "knn"
+    },
+    {
+      "source": "ent-009",
+      "target": "evt-003",
+      "weight": 0.2266,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-002",
+      "weight": 0.3784,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-129",
+      "weight": 0.3802,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-130",
+      "weight": 0.4024,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-021",
+      "weight": 0.5347,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-001",
+      "weight": 0.5757,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-014",
+      "weight": 0.6936,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "ent-017",
+      "weight": 0.2731,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "ent-026",
+      "weight": 0.2067,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "ent-043",
+      "weight": 0.1938,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-003",
+      "weight": 0.2381,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-005",
+      "weight": 0.2751,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-006",
+      "weight": 0.2405,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-010",
+      "weight": 0.1715,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-011",
+      "weight": 0.1819,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-013",
+      "weight": 0.1297,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-019",
+      "weight": 0.3052,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-024",
+      "weight": 0.1672,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-026",
+      "weight": 0.1825,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-027",
+      "weight": 0.1693,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-032",
+      "weight": 0.2574,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-051",
+      "weight": 0.2651,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-096",
+      "weight": 0.2907,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-112",
+      "weight": 0.1434,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-121",
+      "weight": 0.1857,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-122",
+      "weight": 0.3027,
+      "method": "knn"
+    },
+    {
+      "source": "ent-010",
+      "target": "evt-128",
+      "weight": 0.1329,
+      "method": "knn"
+    },
+    {
+      "source": "ent-011",
+      "target": "evt-014",
+      "weight": 0.2063,
+      "method": "knn"
+    },
+    {
+      "source": "ent-011",
+      "target": "ent-018",
+      "weight": 0.2551,
+      "method": "knn"
+    },
+    {
+      "source": "ent-011",
+      "target": "evt-001",
+      "weight": 0.2138,
+      "method": "knn"
+    },
+    {
+      "source": "ent-011",
+      "target": "evt-051",
+      "weight": 0.6382,
+      "method": "knn"
+    },
+    {
+      "source": "ent-011",
+      "target": "evt-004",
+      "weight": 0.6464,
+      "method": "knn"
+    },
+    {
+      "source": "ent-011",
+      "target": "evt-032",
+      "weight": 0.7543,
+      "method": "knn"
+    },
+    {
+      "source": "ent-011",
+      "target": "evt-005",
+      "weight": 0.7729,
+      "method": "knn"
+    },
+    {
+      "source": "ent-011",
+      "target": "ent-030",
+      "weight": 0.1785,
+      "method": "knn"
+    },
+    {
+      "source": "ent-011",
+      "target": "evt-030",
+      "weight": 0.168,
+      "method": "knn"
+    },
+    {
+      "source": "ent-011",
+      "target": "evt-033",
+      "weight": 0.1674,
+      "method": "knn"
+    },
+    {
+      "source": "ent-011",
+      "target": "evt-037",
+      "weight": 0.0978,
+      "method": "knn"
+    },
+    {
+      "source": "ent-011",
+      "target": "evt-052",
+      "weight": 0.0534,
+      "method": "knn"
+    },
+    {
+      "source": "ent-012",
+      "target": "ent-044",
+      "weight": 0.1493,
+      "method": "knn"
+    },
+    {
+      "source": "ent-012",
+      "target": "ent-027",
+      "weight": 0.2249,
+      "method": "knn"
+    },
+    {
+      "source": "ent-012",
+      "target": "evt-029",
+      "weight": 0.269,
+      "method": "knn"
+    },
+    {
+      "source": "ent-012",
+      "target": "evt-108",
+      "weight": 0.3607,
+      "method": "knn"
+    },
+    {
+      "source": "ent-012",
+      "target": "evt-008",
+      "weight": 0.4721,
+      "method": "knn"
+    },
+    {
+      "source": "ent-012",
+      "target": "evt-015",
+      "weight": 0.6811,
+      "method": "knn"
+    },
+    {
+      "source": "ent-012",
+      "target": "evt-107",
+      "weight": 0.7855,
+      "method": "knn"
+    },
+    {
+      "source": "ent-012",
+      "target": "ent-016",
+      "weight": 0.0937,
+      "method": "knn"
+    },
+    {
+      "source": "ent-012",
+      "target": "evt-028",
+      "weight": 0.1326,
+      "method": "knn"
+    },
+    {
+      "source": "ent-012",
+      "target": "evt-101",
+      "weight": 0.121,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "evt-085",
+      "weight": 0.4259,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "evt-036",
+      "weight": 0.4339,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "evt-084",
+      "weight": 0.5033,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "evt-083",
+      "weight": 0.5906,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "evt-009",
+      "weight": 0.6431,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "evt-072",
+      "weight": 0.6498,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "evt-060",
+      "weight": 0.7523,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "evt-092",
+      "weight": 0.7609,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "ent-031",
+      "weight": 0.3054,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "evt-023",
+      "weight": 0.2575,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "evt-042",
+      "weight": 0.121,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "evt-057",
+      "weight": 0.1651,
+      "method": "knn"
+    },
+    {
+      "source": "ent-013",
+      "target": "evt-071",
+      "weight": 0.3434,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-083",
+      "weight": 0.4049,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-072",
+      "weight": 0.3486,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-041",
+      "weight": 0.4301,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-021",
+      "weight": 0.4319,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-036",
+      "weight": 0.4389,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-060",
+      "weight": 0.4014,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-058",
+      "weight": 0.5286,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-020",
+      "weight": 0.5844,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "ent-031",
+      "weight": 0.3234,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "ent-032",
+      "weight": 0.228,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "ent-034",
+      "weight": 0.1898,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-009",
+      "weight": 0.2534,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-028",
+      "weight": 0.1199,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-056",
+      "weight": 0.1894,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-068",
+      "weight": 0.2149,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-070",
+      "weight": 0.2084,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-073",
+      "weight": 0.233,
+      "method": "knn"
+    },
+    {
+      "source": "ent-014",
+      "target": "evt-076",
+      "weight": 0.1432,
+      "method": "knn"
+    },
+    {
+      "source": "ent-015",
+      "target": "ent-038",
+      "weight": 0.172,
+      "method": "knn"
+    },
+    {
+      "source": "ent-015",
+      "target": "evt-021",
+      "weight": 0.1511,
+      "method": "knn"
+    },
+    {
+      "source": "ent-015",
+      "target": "evt-071",
+      "weight": 0.1794,
+      "method": "knn"
+    },
+    {
+      "source": "ent-015",
+      "target": "evt-043",
+      "weight": 0.2486,
+      "method": "knn"
+    },
+    {
+      "source": "ent-015",
+      "target": "evt-037",
+      "weight": 0.3122,
+      "method": "knn"
+    },
+    {
+      "source": "ent-015",
+      "target": "evt-044",
+      "weight": 0.739,
+      "method": "knn"
+    },
+    {
+      "source": "ent-015",
+      "target": "evt-088",
+      "weight": 0.1239,
+      "method": "knn"
+    },
+    {
+      "source": "ent-016",
+      "target": "evt-116",
+      "weight": 0.0902,
+      "method": "knn"
+    },
+    {
+      "source": "ent-016",
+      "target": "evt-015",
+      "weight": 0.0927,
+      "method": "knn"
+    },
+    {
+      "source": "ent-016",
+      "target": "ent-032",
+      "weight": 0.1053,
+      "method": "knn"
+    },
+    {
+      "source": "ent-016",
+      "target": "evt-035",
+      "weight": 0.115,
+      "method": "knn"
+    },
+    {
+      "source": "ent-016",
+      "target": "evt-003",
+      "weight": 0.1687,
+      "method": "knn"
+    },
+    {
+      "source": "ent-016",
+      "target": "evt-045",
+      "weight": 0.384,
+      "method": "knn"
+    },
+    {
+      "source": "ent-016",
+      "target": "evt-037",
+      "weight": 0.6228,
+      "method": "knn"
+    },
+    {
+      "source": "ent-017",
+      "target": "evt-129",
+      "weight": 0.2417,
+      "method": "knn"
+    },
+    {
+      "source": "ent-017",
+      "target": "ent-025",
+      "weight": 0.2926,
+      "method": "knn"
+    },
+    {
+      "source": "ent-017",
+      "target": "evt-026",
+      "weight": 0.41,
+      "method": "knn"
+    },
+    {
+      "source": "ent-017",
+      "target": "evt-012",
+      "weight": 0.4398,
+      "method": "knn"
+    },
+    {
+      "source": "ent-017",
+      "target": "evt-127",
+      "weight": 0.4451,
+      "method": "knn"
+    },
+    {
+      "source": "ent-017",
+      "target": "ent-018",
+      "weight": 0.1745,
+      "method": "knn"
+    },
+    {
+      "source": "ent-017",
+      "target": "ent-026",
+      "weight": 0.2225,
+      "method": "knn"
+    },
+    {
+      "source": "ent-017",
+      "target": "evt-006",
+      "weight": 0.1746,
+      "method": "knn"
+    },
+    {
+      "source": "ent-017",
+      "target": "evt-013",
+      "weight": 0.1611,
+      "method": "knn"
+    },
+    {
+      "source": "ent-017",
+      "target": "evt-016",
+      "weight": 0.2135,
+      "method": "knn"
+    },
+    {
+      "source": "ent-017",
+      "target": "evt-024",
+      "weight": 0.159,
+      "method": "knn"
+    },
+    {
+      "source": "ent-017",
+      "target": "evt-128",
+      "weight": 0.191,
+      "method": "knn"
+    },
+    {
+      "source": "ent-018",
+      "target": "evt-115",
+      "weight": 0.207,
+      "method": "knn"
+    },
+    {
+      "source": "ent-018",
+      "target": "evt-127",
+      "weight": 0.1748,
+      "method": "knn"
+    },
+    {
+      "source": "ent-018",
+      "target": "evt-026",
+      "weight": 0.177,
+      "method": "knn"
+    },
+    {
+      "source": "ent-018",
+      "target": "evt-016",
+      "weight": 0.5397,
+      "method": "knn"
+    },
+    {
+      "source": "ent-018",
+      "target": "evt-052",
+      "weight": 0.0586,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "evt-097",
+      "weight": 0.2982,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "evt-086",
+      "weight": 0.3167,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "evt-098",
+      "weight": 0.3177,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "evt-099",
+      "weight": 0.3218,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "ent-020",
+      "weight": 0.3556,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "evt-126",
+      "weight": 0.3789,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "evt-124",
+      "weight": 0.6805,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "ent-042",
+      "weight": 0.7227,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "ent-024",
+      "weight": 0.1854,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "ent-035",
+      "weight": 0.1554,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "evt-087",
+      "weight": 0.1728,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "evt-119",
+      "weight": 0.2087,
+      "method": "knn"
+    },
+    {
+      "source": "ent-019",
+      "target": "evt-125",
+      "weight": 0.2304,
+      "method": "knn"
+    },
+    {
+      "source": "ent-020",
+      "target": "evt-126",
+      "weight": 0.284,
+      "method": "knn"
+    },
+    {
+      "source": "ent-020",
+      "target": "evt-130",
+      "weight": 0.3885,
+      "method": "knn"
+    },
+    {
+      "source": "ent-020",
+      "target": "evt-131",
+      "weight": 0.4423,
+      "method": "knn"
+    },
+    {
+      "source": "ent-020",
+      "target": "ent-042",
+      "weight": 0.5414,
+      "method": "knn"
+    },
+    {
+      "source": "ent-020",
+      "target": "evt-123",
+      "weight": 0.5415,
+      "method": "knn"
+    },
+    {
+      "source": "ent-020",
+      "target": "evt-124",
+      "weight": 0.5738,
+      "method": "knn"
+    },
+    {
+      "source": "ent-020",
+      "target": "evt-125",
+      "weight": 0.6501,
+      "method": "knn"
+    },
+    {
+      "source": "ent-021",
+      "target": "evt-020",
+      "weight": 0.1375,
+      "method": "knn"
+    },
+    {
+      "source": "ent-021",
+      "target": "ent-045",
+      "weight": 0.2011,
+      "method": "knn"
+    },
+    {
+      "source": "ent-021",
+      "target": "evt-106",
+      "weight": 0.3255,
+      "method": "knn"
+    },
+    {
+      "source": "ent-021",
+      "target": "evt-105",
+      "weight": 0.5286,
+      "method": "knn"
+    },
+    {
+      "source": "ent-021",
+      "target": "evt-116",
+      "weight": 0.5504,
+      "method": "knn"
+    },
+    {
+      "source": "ent-021",
+      "target": "ent-044",
+      "weight": 0.6594,
+      "method": "knn"
+    },
+    {
+      "source": "ent-021",
+      "target": "evt-103",
+      "weight": 0.77,
+      "method": "knn"
+    },
+    {
+      "source": "ent-021",
+      "target": "ent-022",
+      "weight": 0.1247,
+      "method": "knn"
+    },
+    {
+      "source": "ent-021",
+      "target": "ent-036",
+      "weight": 0.0698,
+      "method": "knn"
+    },
+    {
+      "source": "ent-022",
+      "target": "ent-039",
+      "weight": 0.1301,
+      "method": "knn"
+    },
+    {
+      "source": "ent-022",
+      "target": "evt-104",
+      "weight": 0.1686,
+      "method": "knn"
+    },
+    {
+      "source": "ent-022",
+      "target": "evt-109",
+      "weight": 0.1767,
+      "method": "knn"
+    },
+    {
+      "source": "ent-022",
+      "target": "evt-116",
+      "weight": 0.2916,
+      "method": "knn"
+    },
+    {
+      "source": "ent-022",
+      "target": "ent-044",
+      "weight": 0.6651,
+      "method": "knn"
+    },
+    {
+      "source": "ent-022",
+      "target": "evt-106",
+      "weight": 0.6784,
+      "method": "knn"
+    },
+    {
+      "source": "ent-022",
+      "target": "evt-105",
+      "weight": 0.7725,
+      "method": "knn"
+    },
+    {
+      "source": "ent-022",
+      "target": "evt-103",
+      "weight": 0.0898,
+      "method": "knn"
+    },
+    {
+      "source": "ent-023",
+      "target": "ent-045",
+      "weight": 0.1095,
+      "method": "knn"
+    },
+    {
+      "source": "ent-023",
+      "target": "ent-044",
+      "weight": 0.1506,
+      "method": "knn"
+    },
+    {
+      "source": "ent-023",
+      "target": "evt-110",
+      "weight": 0.2758,
+      "method": "knn"
+    },
+    {
+      "source": "ent-023",
+      "target": "evt-018",
+      "weight": 0.3016,
+      "method": "knn"
+    },
+    {
+      "source": "ent-023",
+      "target": "evt-034",
+      "weight": 0.3794,
+      "method": "knn"
+    },
+    {
+      "source": "ent-023",
+      "target": "evt-017",
+      "weight": 0.5204,
+      "method": "knn"
+    },
+    {
+      "source": "ent-023",
+      "target": "evt-109",
+      "weight": 0.6046,
+      "method": "knn"
+    },
+    {
+      "source": "ent-024",
+      "target": "evt-118",
+      "weight": 0.1584,
+      "method": "knn"
+    },
+    {
+      "source": "ent-024",
+      "target": "evt-129",
+      "weight": 0.1659,
+      "method": "knn"
+    },
+    {
+      "source": "ent-024",
+      "target": "evt-087",
+      "weight": 0.2117,
+      "method": "knn"
+    },
+    {
+      "source": "ent-024",
+      "target": "evt-096",
+      "weight": 0.212,
+      "method": "knn"
+    },
+    {
+      "source": "ent-024",
+      "target": "evt-097",
+      "weight": 0.4162,
+      "method": "knn"
+    },
+    {
+      "source": "ent-024",
+      "target": "evt-100",
+      "weight": 0.494,
+      "method": "knn"
+    },
+    {
+      "source": "ent-024",
+      "target": "evt-113",
+      "weight": 0.7235,
+      "method": "knn"
+    },
+    {
+      "source": "ent-024",
+      "target": "ent-036",
+      "weight": 0.0805,
+      "method": "knn"
+    },
+    {
+      "source": "ent-024",
+      "target": "evt-103",
+      "weight": 0.0935,
+      "method": "knn"
+    },
+    {
+      "source": "ent-024",
+      "target": "evt-114",
+      "weight": 0.1454,
+      "method": "knn"
+    },
+    {
+      "source": "ent-025",
+      "target": "evt-129",
+      "weight": 0.2403,
+      "method": "knn"
+    },
+    {
+      "source": "ent-025",
+      "target": "evt-096",
+      "weight": 0.333,
+      "method": "knn"
+    },
+    {
+      "source": "ent-025",
+      "target": "evt-100",
+      "weight": 0.3484,
+      "method": "knn"
+    },
+    {
+      "source": "ent-025",
+      "target": "evt-013",
+      "weight": 0.4623,
+      "method": "knn"
+    },
+    {
+      "source": "ent-025",
+      "target": "ent-026",
+      "weight": 0.4637,
+      "method": "knn"
+    },
+    {
+      "source": "ent-025",
+      "target": "evt-128",
+      "weight": 0.8163,
+      "method": "knn"
+    },
+    {
+      "source": "ent-025",
+      "target": "evt-024",
+      "weight": 0.209,
+      "method": "knn"
+    },
+    {
+      "source": "ent-025",
+      "target": "evt-115",
+      "weight": 0.2195,
+      "method": "knn"
+    },
+    {
+      "source": "ent-026",
+      "target": "evt-129",
+      "weight": 0.1787,
+      "method": "knn"
+    },
+    {
+      "source": "ent-026",
+      "target": "evt-024",
+      "weight": 0.3015,
+      "method": "knn"
+    },
+    {
+      "source": "ent-026",
+      "target": "evt-128",
+      "weight": 0.4302,
+      "method": "knn"
+    },
+    {
+      "source": "ent-026",
+      "target": "evt-013",
+      "weight": 0.9237,
+      "method": "knn"
+    },
+    {
+      "source": "ent-026",
+      "target": "evt-052",
+      "weight": 0.0689,
+      "method": "knn"
+    },
+    {
+      "source": "ent-026",
+      "target": "evt-098",
+      "weight": 0.1704,
+      "method": "knn"
+    },
+    {
+      "source": "ent-026",
+      "target": "evt-112",
+      "weight": 0.1503,
+      "method": "knn"
+    },
+    {
+      "source": "ent-027",
+      "target": "ent-045",
+      "weight": 0.1713,
+      "method": "knn"
+    },
+    {
+      "source": "ent-027",
+      "target": "evt-029",
+      "weight": 0.2105,
+      "method": "knn"
+    },
+    {
+      "source": "ent-027",
+      "target": "evt-045",
+      "weight": 0.1846,
+      "method": "knn"
+    },
+    {
+      "source": "ent-027",
+      "target": "evt-116",
+      "weight": 0.2246,
+      "method": "knn"
+    },
+    {
+      "source": "ent-027",
+      "target": "evt-102",
+      "weight": 0.2486,
+      "method": "knn"
+    },
+    {
+      "source": "ent-027",
+      "target": "evt-101",
+      "weight": 0.2844,
+      "method": "knn"
+    },
+    {
+      "source": "ent-027",
+      "target": "evt-028",
+      "weight": 0.9009,
+      "method": "knn"
+    },
+    {
+      "source": "ent-027",
+      "target": "ent-028",
+      "weight": 0.1448,
+      "method": "knn"
+    },
+    {
+      "source": "ent-027",
+      "target": "evt-030",
+      "weight": 0.1394,
+      "method": "knn"
+    },
+    {
+      "source": "ent-028",
+      "target": "evt-044",
+      "weight": 0.1575,
+      "method": "knn"
+    },
+    {
+      "source": "ent-028",
+      "target": "evt-093",
+      "weight": 0.1405,
+      "method": "knn"
+    },
+    {
+      "source": "ent-028",
+      "target": "ent-030",
+      "weight": 0.2146,
+      "method": "knn"
+    },
+    {
+      "source": "ent-028",
+      "target": "evt-047",
+      "weight": 0.2781,
+      "method": "knn"
+    },
+    {
+      "source": "ent-028",
+      "target": "ent-035",
+      "weight": 0.2901,
+      "method": "knn"
+    },
+    {
+      "source": "ent-028",
+      "target": "evt-045",
+      "weight": 0.3006,
+      "method": "knn"
+    },
+    {
+      "source": "ent-028",
+      "target": "evt-012",
+      "weight": 0.312,
+      "method": "knn"
+    },
+    {
+      "source": "ent-028",
+      "target": "evt-054",
+      "weight": 0.0772,
+      "method": "knn"
+    },
+    {
+      "source": "ent-029",
+      "target": "evt-083",
+      "weight": 0.1172,
+      "method": "knn"
+    },
+    {
+      "source": "ent-029",
+      "target": "evt-060",
+      "weight": 0.1181,
+      "method": "knn"
+    },
+    {
+      "source": "ent-029",
+      "target": "evt-072",
+      "weight": 0.1242,
+      "method": "knn"
+    },
+    {
+      "source": "ent-029",
+      "target": "ent-031",
+      "weight": 0.1263,
+      "method": "knn"
+    },
+    {
+      "source": "ent-029",
+      "target": "evt-036",
+      "weight": 0.1277,
+      "method": "knn"
+    },
+    {
+      "source": "ent-029",
+      "target": "evt-023",
+      "weight": 0.1719,
+      "method": "knn"
+    },
+    {
+      "source": "ent-029",
+      "target": "ent-030",
+      "weight": 0.2528,
+      "method": "knn"
+    },
+    {
+      "source": "ent-029",
+      "target": "evt-045",
+      "weight": 0.4266,
+      "method": "knn"
+    },
+    {
+      "source": "ent-029",
+      "target": "evt-094",
+      "weight": 0.1005,
+      "method": "knn"
+    },
+    {
+      "source": "ent-030",
+      "target": "ent-033",
+      "weight": 0.1532,
+      "method": "knn"
+    },
+    {
+      "source": "ent-030",
+      "target": "evt-032",
+      "weight": 0.177,
+      "method": "knn"
+    },
+    {
+      "source": "ent-030",
+      "target": "evt-005",
+      "weight": 0.1789,
+      "method": "knn"
+    },
+    {
+      "source": "ent-030",
+      "target": "evt-012",
+      "weight": 0.208,
+      "method": "knn"
+    },
+    {
+      "source": "ent-030",
+      "target": "evt-045",
+      "weight": 0.5511,
+      "method": "knn"
+    },
+    {
+      "source": "ent-030",
+      "target": "ent-036",
+      "weight": 0.0877,
+      "method": "knn"
+    },
+    {
+      "source": "ent-031",
+      "target": "evt-083",
+      "weight": 0.2721,
+      "method": "knn"
+    },
+    {
+      "source": "ent-031",
+      "target": "evt-092",
+      "weight": 0.3307,
+      "method": "knn"
+    },
+    {
+      "source": "ent-031",
+      "target": "evt-060",
+      "weight": 0.3442,
+      "method": "knn"
+    },
+    {
+      "source": "ent-031",
+      "target": "evt-072",
+      "weight": 0.3595,
+      "method": "knn"
+    },
+    {
+      "source": "ent-031",
+      "target": "evt-023",
+      "weight": 0.7094,
+      "method": "knn"
+    },
+    {
+      "source": "ent-031",
+      "target": "evt-036",
+      "weight": 0.9598,
+      "method": "knn"
+    },
+    {
+      "source": "ent-031",
+      "target": "evt-035",
+      "weight": 0.1684,
+      "method": "knn"
+    },
+    {
+      "source": "ent-032",
+      "target": "evt-131",
+      "weight": 0.1422,
+      "method": "knn"
+    },
+    {
+      "source": "ent-032",
+      "target": "ent-034",
+      "weight": 0.148,
+      "method": "knn"
+    },
+    {
+      "source": "ent-032",
+      "target": "evt-062",
+      "weight": 0.2501,
+      "method": "knn"
+    },
+    {
+      "source": "ent-032",
+      "target": "evt-069",
+      "weight": 0.4054,
+      "method": "knn"
+    },
+    {
+      "source": "ent-032",
+      "target": "evt-068",
+      "weight": 0.4162,
+      "method": "knn"
+    },
+    {
+      "source": "ent-032",
+      "target": "evt-073",
+      "weight": 0.607,
+      "method": "knn"
+    },
+    {
+      "source": "ent-032",
+      "target": "evt-070",
+      "weight": 0.9003,
+      "method": "knn"
+    },
+    {
+      "source": "ent-032",
+      "target": "evt-061",
+      "weight": 0.1144,
+      "method": "knn"
+    },
+    {
+      "source": "ent-032",
+      "target": "evt-063",
+      "weight": 0.1225,
+      "method": "knn"
+    },
+    {
+      "source": "ent-032",
+      "target": "evt-091",
+      "weight": 0.0942,
+      "method": "knn"
+    },
+    {
+      "source": "ent-033",
+      "target": "evt-059",
+      "weight": 0.1874,
+      "method": "knn"
+    },
+    {
+      "source": "ent-033",
+      "target": "ent-034",
+      "weight": 0.2332,
+      "method": "knn"
+    },
+    {
+      "source": "ent-033",
+      "target": "evt-093",
+      "weight": 0.2061,
+      "method": "knn"
+    },
+    {
+      "source": "ent-033",
+      "target": "evt-066",
+      "weight": 0.2332,
+      "method": "knn"
+    },
+    {
+      "source": "ent-033",
+      "target": "evt-050",
+      "weight": 0.4044,
+      "method": "knn"
+    },
+    {
+      "source": "ent-033",
+      "target": "ent-045",
+      "weight": 0.4094,
+      "method": "knn"
+    },
+    {
+      "source": "ent-033",
+      "target": "evt-025",
+      "weight": 0.4631,
+      "method": "knn"
+    },
+    {
+      "source": "ent-033",
+      "target": "evt-049",
+      "weight": 0.992,
+      "method": "knn"
+    },
+    {
+      "source": "ent-033",
+      "target": "evt-079",
+      "weight": 0.1804,
+      "method": "knn"
+    },
+    {
+      "source": "ent-033",
+      "target": "evt-132",
+      "weight": 0.1811,
+      "method": "knn"
+    },
+    {
+      "source": "ent-034",
+      "target": "evt-070",
+      "weight": 0.1869,
+      "method": "knn"
+    },
+    {
+      "source": "ent-034",
+      "target": "evt-068",
+      "weight": 0.1908,
+      "method": "knn"
+    },
+    {
+      "source": "ent-034",
+      "target": "evt-132",
+      "weight": 0.218,
+      "method": "knn"
+    },
+    {
+      "source": "ent-034",
+      "target": "evt-049",
+      "weight": 0.2835,
+      "method": "knn"
+    },
+    {
+      "source": "ent-034",
+      "target": "evt-073",
+      "weight": 0.6998,
+      "method": "knn"
+    },
+    {
+      "source": "ent-034",
+      "target": "evt-054",
+      "weight": 0.104,
+      "method": "knn"
+    },
+    {
+      "source": "ent-034",
+      "target": "evt-103",
+      "weight": 0.104,
+      "method": "knn"
+    },
+    {
+      "source": "ent-035",
+      "target": "evt-079",
+      "weight": 0.1072,
+      "method": "knn"
+    },
+    {
+      "source": "ent-035",
+      "target": "evt-078",
+      "weight": 0.1388,
+      "method": "knn"
+    },
+    {
+      "source": "ent-035",
+      "target": "evt-025",
+      "weight": 0.1323,
+      "method": "knn"
+    },
+    {
+      "source": "ent-035",
+      "target": "evt-131",
+      "weight": 0.1427,
+      "method": "knn"
+    },
+    {
+      "source": "ent-035",
+      "target": "evt-093",
+      "weight": 0.2642,
+      "method": "knn"
+    },
+    {
+      "source": "ent-035",
+      "target": "evt-047",
+      "weight": 0.8141,
+      "method": "knn"
+    },
+    {
+      "source": "ent-036",
+      "target": "evt-116",
+      "weight": 0.0692,
+      "method": "knn"
+    },
+    {
+      "source": "ent-036",
+      "target": "evt-022",
+      "weight": 0.0735,
+      "method": "knn"
+    },
+    {
+      "source": "ent-036",
+      "target": "evt-103",
+      "weight": 0.0828,
+      "method": "knn"
+    },
+    {
+      "source": "ent-036",
+      "target": "evt-048",
+      "weight": 0.5341,
+      "method": "knn"
+    },
+    {
+      "source": "ent-037",
+      "target": "evt-066",
+      "weight": 0.0988,
+      "method": "knn"
+    },
+    {
+      "source": "ent-037",
+      "target": "evt-082",
+      "weight": 0.123,
+      "method": "knn"
+    },
+    {
+      "source": "ent-037",
+      "target": "ent-044",
+      "weight": 0.104,
+      "method": "knn"
+    },
+    {
+      "source": "ent-037",
+      "target": "evt-107",
+      "weight": 0.1044,
+      "method": "knn"
+    },
+    {
+      "source": "ent-037",
+      "target": "evt-039",
+      "weight": 0.1053,
+      "method": "knn"
+    },
+    {
+      "source": "ent-037",
+      "target": "ent-045",
+      "weight": 0.1278,
+      "method": "knn"
+    },
+    {
+      "source": "ent-037",
+      "target": "evt-095",
+      "weight": 0.3784,
+      "method": "knn"
+    },
+    {
+      "source": "ent-037",
+      "target": "evt-046",
+      "weight": 0.7882,
+      "method": "knn"
+    },
+    {
+      "source": "ent-038",
+      "target": "evt-021",
+      "weight": 0.1276,
+      "method": "knn"
+    },
+    {
+      "source": "ent-038",
+      "target": "evt-088",
+      "weight": 0.1737,
+      "method": "knn"
+    },
+    {
+      "source": "ent-038",
+      "target": "evt-076",
+      "weight": 0.2786,
+      "method": "knn"
+    },
+    {
+      "source": "ent-038",
+      "target": "evt-059",
+      "weight": 0.359,
+      "method": "knn"
+    },
+    {
+      "source": "ent-038",
+      "target": "evt-095",
+      "weight": 0.4345,
+      "method": "knn"
+    },
+    {
+      "source": "ent-038",
+      "target": "evt-082",
+      "weight": 0.1133,
+      "method": "knn"
+    },
+    {
+      "source": "ent-039",
+      "target": "evt-105",
+      "weight": 0.0724,
+      "method": "knn"
+    },
+    {
+      "source": "ent-039",
+      "target": "evt-062",
+      "weight": 0.0767,
+      "method": "knn"
+    },
+    {
+      "source": "ent-039",
+      "target": "evt-110",
+      "weight": 0.1374,
+      "method": "knn"
+    },
+    {
+      "source": "ent-039",
+      "target": "evt-113",
+      "weight": 0.174,
+      "method": "knn"
+    },
+    {
+      "source": "ent-039",
+      "target": "evt-111",
+      "weight": 0.284,
+      "method": "knn"
+    },
+    {
+      "source": "ent-039",
+      "target": "evt-109",
+      "weight": 0.3895,
+      "method": "knn"
+    },
+    {
+      "source": "ent-039",
+      "target": "evt-112",
+      "weight": 0.5273,
+      "method": "knn"
+    },
+    {
+      "source": "ent-040",
+      "target": "evt-072",
+      "weight": 0.1829,
+      "method": "knn"
+    },
+    {
+      "source": "ent-040",
+      "target": "evt-071",
+      "weight": 0.1867,
+      "method": "knn"
+    },
+    {
+      "source": "ent-040",
+      "target": "evt-019",
+      "weight": 0.2021,
+      "method": "knn"
+    },
+    {
+      "source": "ent-040",
+      "target": "evt-022",
+      "weight": 0.2214,
+      "method": "knn"
+    },
+    {
+      "source": "ent-040",
+      "target": "evt-008",
+      "weight": 0.3352,
+      "method": "knn"
+    },
+    {
+      "source": "ent-040",
+      "target": "evt-007",
+      "weight": 0.3905,
+      "method": "knn"
+    },
+    {
+      "source": "ent-040",
+      "target": "evt-015",
+      "weight": 0.6768,
+      "method": "knn"
+    },
+    {
+      "source": "ent-041",
+      "target": "evt-022",
+      "weight": 0.1063,
+      "method": "knn"
+    },
+    {
+      "source": "ent-041",
+      "target": "evt-089",
+      "weight": 0.1869,
+      "method": "knn"
+    },
+    {
+      "source": "ent-041",
+      "target": "evt-093",
+      "weight": 0.1644,
+      "method": "knn"
+    },
+    {
+      "source": "ent-041",
+      "target": "evt-090",
+      "weight": 0.3804,
+      "method": "knn"
+    },
+    {
+      "source": "ent-041",
+      "target": "evt-064",
+      "weight": 0.4263,
+      "method": "knn"
+    },
+    {
+      "source": "ent-041",
+      "target": "evt-062",
+      "weight": 0.5023,
+      "method": "knn"
+    },
+    {
+      "source": "ent-041",
+      "target": "evt-063",
+      "weight": 0.5197,
+      "method": "knn"
+    },
+    {
+      "source": "ent-041",
+      "target": "evt-066",
+      "weight": 0.6412,
+      "method": "knn"
+    },
+    {
+      "source": "ent-041",
+      "target": "evt-061",
+      "weight": 0.1034,
+      "method": "knn"
+    },
+    {
+      "source": "ent-042",
+      "target": "evt-086",
+      "weight": 0.327,
+      "method": "knn"
+    },
+    {
+      "source": "ent-042",
+      "target": "evt-098",
+      "weight": 0.3432,
+      "method": "knn"
+    },
+    {
+      "source": "ent-042",
+      "target": "evt-130",
+      "weight": 0.3721,
+      "method": "knn"
+    },
+    {
+      "source": "ent-042",
+      "target": "evt-126",
+      "weight": 0.4602,
+      "method": "knn"
+    },
+    {
+      "source": "ent-042",
+      "target": "evt-125",
+      "weight": 0.4792,
+      "method": "knn"
+    },
+    {
+      "source": "ent-042",
+      "target": "evt-124",
+      "weight": 0.9653,
+      "method": "knn"
+    },
+    {
+      "source": "ent-042",
+      "target": "evt-097",
+      "weight": 0.2434,
+      "method": "knn"
+    },
+    {
+      "source": "ent-042",
+      "target": "evt-099",
+      "weight": 0.2655,
+      "method": "knn"
+    },
+    {
+      "source": "ent-042",
+      "target": "evt-119",
+      "weight": 0.1882,
+      "method": "knn"
+    },
+    {
+      "source": "ent-042",
+      "target": "evt-123",
+      "weight": 0.2154,
+      "method": "knn"
+    },
+    {
+      "source": "ent-042",
+      "target": "evt-127",
+      "weight": 0.239,
+      "method": "knn"
+    },
+    {
+      "source": "ent-042",
+      "target": "evt-131",
+      "weight": 0.1663,
+      "method": "knn"
+    },
+    {
+      "source": "ent-043",
+      "target": "evt-129",
+      "weight": 0.1774,
+      "method": "knn"
+    },
+    {
+      "source": "ent-043",
+      "target": "evt-130",
+      "weight": 0.2085,
+      "method": "knn"
+    },
+    {
+      "source": "ent-043",
+      "target": "evt-021",
+      "weight": 0.2097,
+      "method": "knn"
+    },
+    {
+      "source": "ent-043",
+      "target": "evt-019",
+      "weight": 0.3307,
+      "method": "knn"
+    },
+    {
+      "source": "ent-043",
+      "target": "evt-022",
+      "weight": 0.5503,
+      "method": "knn"
+    },
+    {
+      "source": "ent-044",
+      "target": "evt-107",
+      "weight": 0.1792,
+      "method": "knn"
+    },
+    {
+      "source": "ent-044",
+      "target": "evt-104",
+      "weight": 0.3062,
+      "method": "knn"
+    },
+    {
+      "source": "ent-044",
+      "target": "evt-103",
+      "weight": 0.5023,
+      "method": "knn"
+    },
+    {
+      "source": "ent-044",
+      "target": "evt-116",
+      "weight": 0.5393,
+      "method": "knn"
+    },
+    {
+      "source": "ent-044",
+      "target": "evt-106",
+      "weight": 0.6028,
+      "method": "knn"
+    },
+    {
+      "source": "ent-044",
+      "target": "evt-105",
+      "weight": 0.9472,
+      "method": "knn"
+    },
+    {
+      "source": "ent-044",
+      "target": "evt-046",
+      "weight": 0.0894,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-050",
+      "weight": 0.3131,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-020",
+      "weight": 0.3682,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-132",
+      "weight": 0.4162,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-059",
+      "weight": 0.4403,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-093",
+      "weight": 0.4559,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-025",
+      "weight": 0.5122,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-066",
+      "weight": 0.5709,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-030",
+      "weight": 0.1331,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-032",
+      "weight": 0.2454,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-046",
+      "weight": 0.115,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-049",
+      "weight": 0.2117,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-053",
+      "weight": 0.154,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-075",
+      "weight": 0.2061,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-079",
+      "weight": 0.2485,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-099",
+      "weight": 0.138,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-101",
+      "weight": 0.1256,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-106",
+      "weight": 0.167,
+      "method": "knn"
+    },
+    {
+      "source": "ent-045",
+      "target": "evt-119",
+      "weight": 0.1678,
+      "method": "knn"
+    },
+    {
+      "source": "evt-001",
+      "target": "evt-100",
+      "weight": 0.2809,
+      "method": "knn"
+    },
+    {
+      "source": "evt-001",
+      "target": "evt-122",
+      "weight": 0.3518,
+      "method": "knn"
+    },
+    {
+      "source": "evt-001",
+      "target": "evt-021",
+      "weight": 0.3584,
+      "method": "knn"
+    },
+    {
+      "source": "evt-001",
+      "target": "evt-005",
+      "weight": 0.3898,
+      "method": "knn"
+    },
+    {
+      "source": "evt-001",
+      "target": "evt-039",
+      "weight": 0.394,
+      "method": "knn"
+    },
+    {
+      "source": "evt-001",
+      "target": "evt-014",
+      "weight": 0.5436,
+      "method": "knn"
+    },
+    {
+      "source": "evt-001",
+      "target": "evt-002",
+      "weight": 0.2772,
+      "method": "knn"
+    },
+    {
+      "source": "evt-001",
+      "target": "evt-003",
+      "weight": 0.2272,
+      "method": "knn"
+    },
+    {
+      "source": "evt-001",
+      "target": "evt-016",
+      "weight": 0.1647,
+      "method": "knn"
+    },
+    {
+      "source": "evt-001",
+      "target": "evt-027",
+      "weight": 0.2369,
+      "method": "knn"
+    },
+    {
+      "source": "evt-001",
+      "target": "evt-032",
+      "weight": 0.2668,
+      "method": "knn"
+    },
+    {
+      "source": "evt-001",
+      "target": "evt-051",
+      "weight": 0.2551,
+      "method": "knn"
+    },
+    {
+      "source": "evt-002",
+      "target": "evt-121",
+      "weight": 0.1986,
+      "method": "knn"
+    },
+    {
+      "source": "evt-002",
+      "target": "evt-005",
+      "weight": 0.1735,
+      "method": "knn"
+    },
+    {
+      "source": "evt-002",
+      "target": "evt-021",
+      "weight": 0.1904,
+      "method": "knn"
+    },
+    {
+      "source": "evt-002",
+      "target": "evt-122",
+      "weight": 0.2693,
+      "method": "knn"
+    },
+    {
+      "source": "evt-002",
+      "target": "evt-014",
+      "weight": 0.3878,
+      "method": "knn"
+    },
+    {
+      "source": "evt-003",
+      "target": "evt-100",
+      "weight": 0.1807,
+      "method": "knn"
+    },
+    {
+      "source": "evt-003",
+      "target": "evt-027",
+      "weight": 0.2251,
+      "method": "knn"
+    },
+    {
+      "source": "evt-003",
+      "target": "evt-021",
+      "weight": 0.2127,
+      "method": "knn"
+    },
+    {
+      "source": "evt-003",
+      "target": "evt-039",
+      "weight": 0.2712,
+      "method": "knn"
+    },
+    {
+      "source": "evt-004",
+      "target": "evt-122",
+      "weight": 0.2142,
+      "method": "knn"
+    },
+    {
+      "source": "evt-004",
+      "target": "evt-014",
+      "weight": 0.1889,
+      "method": "knn"
+    },
+    {
+      "source": "evt-004",
+      "target": "evt-041",
+      "weight": 0.1982,
+      "method": "knn"
+    },
+    {
+      "source": "evt-004",
+      "target": "evt-051",
+      "weight": 0.3784,
+      "method": "knn"
+    },
+    {
+      "source": "evt-004",
+      "target": "evt-005",
+      "weight": 0.5026,
+      "method": "knn"
+    },
+    {
+      "source": "evt-004",
+      "target": "evt-032",
+      "weight": 0.5438,
+      "method": "knn"
+    },
+    {
+      "source": "evt-004",
+      "target": "evt-030",
+      "weight": 0.169,
+      "method": "knn"
+    },
+    {
+      "source": "evt-005",
+      "target": "evt-045",
+      "weight": 0.2385,
+      "method": "knn"
+    },
+    {
+      "source": "evt-005",
+      "target": "evt-014",
+      "weight": 0.3409,
+      "method": "knn"
+    },
+    {
+      "source": "evt-005",
+      "target": "evt-051",
+      "weight": 0.5351,
+      "method": "knn"
+    },
+    {
+      "source": "evt-005",
+      "target": "evt-032",
+      "weight": 0.6925,
+      "method": "knn"
+    },
+    {
+      "source": "evt-005",
+      "target": "evt-122",
+      "weight": 0.1808,
+      "method": "knn"
+    },
+    {
+      "source": "evt-006",
+      "target": "evt-096",
+      "weight": 0.1947,
+      "method": "knn"
+    },
+    {
+      "source": "evt-006",
+      "target": "evt-021",
+      "weight": 0.202,
+      "method": "knn"
+    },
+    {
+      "source": "evt-006",
+      "target": "evt-129",
+      "weight": 0.2518,
+      "method": "knn"
+    },
+    {
+      "source": "evt-006",
+      "target": "evt-010",
+      "weight": 0.4014,
+      "method": "knn"
+    },
+    {
+      "source": "evt-007",
+      "target": "evt-085",
+      "weight": 0.3481,
+      "method": "knn"
+    },
+    {
+      "source": "evt-007",
+      "target": "evt-071",
+      "weight": 0.3547,
+      "method": "knn"
+    },
+    {
+      "source": "evt-007",
+      "target": "evt-022",
+      "weight": 0.3557,
+      "method": "knn"
+    },
+    {
+      "source": "evt-007",
+      "target": "evt-092",
+      "weight": 0.3238,
+      "method": "knn"
+    },
+    {
+      "source": "evt-007",
+      "target": "evt-060",
+      "weight": 0.3331,
+      "method": "knn"
+    },
+    {
+      "source": "evt-007",
+      "target": "evt-072",
+      "weight": 0.352,
+      "method": "knn"
+    },
+    {
+      "source": "evt-007",
+      "target": "evt-008",
+      "weight": 0.2576,
+      "method": "knn"
+    },
+    {
+      "source": "evt-007",
+      "target": "evt-015",
+      "weight": 0.2151,
+      "method": "knn"
+    },
+    {
+      "source": "evt-007",
+      "target": "evt-019",
+      "weight": 0.2679,
+      "method": "knn"
+    },
+    {
+      "source": "evt-008",
+      "target": "evt-072",
+      "weight": 0.2245,
+      "method": "knn"
+    },
+    {
+      "source": "evt-008",
+      "target": "evt-060",
+      "weight": 0.2266,
+      "method": "knn"
+    },
+    {
+      "source": "evt-008",
+      "target": "evt-015",
+      "weight": 0.5079,
+      "method": "knn"
+    },
+    {
+      "source": "evt-008",
+      "target": "evt-107",
+      "weight": 0.6416,
+      "method": "knn"
+    },
+    {
+      "source": "evt-008",
+      "target": "evt-108",
+      "weight": 0.2172,
+      "method": "knn"
+    },
+    {
+      "source": "evt-009",
+      "target": "evt-036",
+      "weight": 0.2483,
+      "method": "knn"
+    },
+    {
+      "source": "evt-009",
+      "target": "evt-083",
+      "weight": 0.2571,
+      "method": "knn"
+    },
+    {
+      "source": "evt-009",
+      "target": "evt-071",
+      "weight": 0.3669,
+      "method": "knn"
+    },
+    {
+      "source": "evt-009",
+      "target": "evt-092",
+      "weight": 0.4224,
+      "method": "knn"
+    },
+    {
+      "source": "evt-009",
+      "target": "evt-060",
+      "weight": 0.353,
+      "method": "knn"
+    },
+    {
+      "source": "evt-009",
+      "target": "evt-072",
+      "weight": 0.4524,
+      "method": "knn"
+    },
+    {
+      "source": "evt-009",
+      "target": "evt-020",
+      "weight": 0.2371,
+      "method": "knn"
+    },
+    {
+      "source": "evt-009",
+      "target": "evt-042",
+      "weight": 0.101,
+      "method": "knn"
+    },
+    {
+      "source": "evt-010",
+      "target": "evt-111",
+      "weight": 0.1546,
+      "method": "knn"
+    },
+    {
+      "source": "evt-010",
+      "target": "evt-014",
+      "weight": 0.1476,
+      "method": "knn"
+    },
+    {
+      "source": "evt-010",
+      "target": "evt-096",
+      "weight": 0.1479,
+      "method": "knn"
+    },
+    {
+      "source": "evt-010",
+      "target": "evt-021",
+      "weight": 0.1577,
+      "method": "knn"
+    },
+    {
+      "source": "evt-010",
+      "target": "evt-129",
+      "weight": 0.2025,
+      "method": "knn"
+    },
+    {
+      "source": "evt-011",
+      "target": "evt-130",
+      "weight": 0.1684,
+      "method": "knn"
+    },
+    {
+      "source": "evt-011",
+      "target": "evt-121",
+      "weight": 0.2082,
+      "method": "knn"
+    },
+    {
+      "source": "evt-011",
+      "target": "evt-027",
+      "weight": 0.2101,
+      "method": "knn"
+    },
+    {
+      "source": "evt-011",
+      "target": "evt-014",
+      "weight": 0.1921,
+      "method": "knn"
+    },
+    {
+      "source": "evt-011",
+      "target": "evt-050",
+      "weight": 0.2552,
+      "method": "knn"
+    },
+    {
+      "source": "evt-011",
+      "target": "evt-038",
+      "weight": 0.3922,
+      "method": "knn"
+    },
+    {
+      "source": "evt-011",
+      "target": "evt-035",
+      "weight": 0.1428,
+      "method": "knn"
+    },
+    {
+      "source": "evt-011",
+      "target": "evt-054",
+      "weight": 0.09,
+      "method": "knn"
+    },
+    {
+      "source": "evt-012",
+      "target": "evt-045",
+      "weight": 0.2803,
+      "method": "knn"
+    },
+    {
+      "source": "evt-012",
+      "target": "evt-026",
+      "weight": 0.3225,
+      "method": "knn"
+    },
+    {
+      "source": "evt-012",
+      "target": "evt-039",
+      "weight": 0.3383,
+      "method": "knn"
+    },
+    {
+      "source": "evt-012",
+      "target": "evt-100",
+      "weight": 0.2833,
+      "method": "knn"
+    },
+    {
+      "source": "evt-012",
+      "target": "evt-127",
+      "weight": 0.3975,
+      "method": "knn"
+    },
+    {
+      "source": "evt-012",
+      "target": "evt-018",
+      "weight": 0.189,
+      "method": "knn"
+    },
+    {
+      "source": "evt-012",
+      "target": "evt-027",
+      "weight": 0.2054,
+      "method": "knn"
+    },
+    {
+      "source": "evt-013",
+      "target": "evt-127",
+      "weight": 0.1531,
+      "method": "knn"
+    },
+    {
+      "source": "evt-013",
+      "target": "evt-024",
+      "weight": 0.1974,
+      "method": "knn"
+    },
+    {
+      "source": "evt-013",
+      "target": "evt-128",
+      "weight": 0.4655,
+      "method": "knn"
+    },
+    {
+      "source": "evt-014",
+      "target": "evt-051",
+      "weight": 0.3016,
+      "method": "knn"
+    },
+    {
+      "source": "evt-014",
+      "target": "evt-032",
+      "weight": 0.3176,
+      "method": "knn"
+    },
+    {
+      "source": "evt-014",
+      "target": "evt-021",
+      "weight": 0.3586,
+      "method": "knn"
+    },
+    {
+      "source": "evt-014",
+      "target": "evt-122",
+      "weight": 0.3888,
+      "method": "knn"
+    },
+    {
+      "source": "evt-014",
+      "target": "evt-039",
+      "weight": 0.2141,
+      "method": "knn"
+    },
+    {
+      "source": "evt-014",
+      "target": "evt-121",
+      "weight": 0.1905,
+      "method": "knn"
+    },
+    {
+      "source": "evt-015",
+      "target": "evt-072",
+      "weight": 0.1643,
+      "method": "knn"
+    },
+    {
+      "source": "evt-015",
+      "target": "evt-108",
+      "weight": 0.3152,
+      "method": "knn"
+    },
+    {
+      "source": "evt-015",
+      "target": "evt-107",
+      "weight": 0.6558,
+      "method": "knn"
+    },
+    {
+      "source": "evt-015",
+      "target": "evt-029",
+      "weight": 0.143,
+      "method": "knn"
+    },
+    {
+      "source": "evt-016",
+      "target": "evt-039",
+      "weight": 0.167,
+      "method": "knn"
+    },
+    {
+      "source": "evt-016",
+      "target": "evt-115",
+      "weight": 0.2314,
+      "method": "knn"
+    },
+    {
+      "source": "evt-016",
+      "target": "evt-026",
+      "weight": 0.3268,
+      "method": "knn"
+    },
+    {
+      "source": "evt-016",
+      "target": "evt-127",
+      "weight": 0.3589,
+      "method": "knn"
+    },
+    {
+      "source": "evt-016",
+      "target": "evt-129",
+      "weight": 0.3731,
+      "method": "knn"
+    },
+    {
+      "source": "evt-016",
+      "target": "evt-077",
+      "weight": 0.0814,
+      "method": "knn"
+    },
+    {
+      "source": "evt-017",
+      "target": "evt-111",
+      "weight": 0.1423,
+      "method": "knn"
+    },
+    {
+      "source": "evt-017",
+      "target": "evt-033",
+      "weight": 0.1731,
+      "method": "knn"
+    },
+    {
+      "source": "evt-017",
+      "target": "evt-018",
+      "weight": 0.367,
+      "method": "knn"
+    },
+    {
+      "source": "evt-017",
+      "target": "evt-034",
+      "weight": 0.3744,
+      "method": "knn"
+    },
+    {
+      "source": "evt-017",
+      "target": "evt-109",
+      "weight": 0.3935,
+      "method": "knn"
+    },
+    {
+      "source": "evt-017",
+      "target": "evt-110",
+      "weight": 0.4044,
+      "method": "knn"
+    },
+    {
+      "source": "evt-018",
+      "target": "evt-110",
+      "weight": 0.1864,
+      "method": "knn"
+    },
+    {
+      "source": "evt-018",
+      "target": "evt-034",
+      "weight": 0.2204,
+      "method": "knn"
+    },
+    {
+      "source": "evt-018",
+      "target": "evt-100",
+      "weight": 0.2235,
+      "method": "knn"
+    },
+    {
+      "source": "evt-018",
+      "target": "evt-109",
+      "weight": 0.3673,
+      "method": "knn"
+    },
+    {
+      "source": "evt-019",
+      "target": "evt-130",
+      "weight": 0.3879,
+      "method": "knn"
+    },
+    {
+      "source": "evt-019",
+      "target": "evt-021",
+      "weight": 0.4142,
+      "method": "knn"
+    },
+    {
+      "source": "evt-019",
+      "target": "evt-022",
+      "weight": 0.5605,
+      "method": "knn"
+    },
+    {
+      "source": "evt-019",
+      "target": "evt-035",
+      "weight": 0.1444,
+      "method": "knn"
+    },
+    {
+      "source": "evt-019",
+      "target": "evt-054",
+      "weight": 0.0932,
+      "method": "knn"
+    },
+    {
+      "source": "evt-019",
+      "target": "evt-056",
+      "weight": 0.1008,
+      "method": "knn"
+    },
+    {
+      "source": "evt-019",
+      "target": "evt-075",
+      "weight": 0.1811,
+      "method": "knn"
+    },
+    {
+      "source": "evt-020",
+      "target": "evt-021",
+      "weight": 0.2781,
+      "method": "knn"
+    },
+    {
+      "source": "evt-020",
+      "target": "evt-058",
+      "weight": 0.3422,
+      "method": "knn"
+    },
+    {
+      "source": "evt-020",
+      "target": "evt-041",
+      "weight": 0.3934,
+      "method": "knn"
+    },
+    {
+      "source": "evt-020",
+      "target": "evt-025",
+      "weight": 0.2201,
+      "method": "knn"
+    },
+    {
+      "source": "evt-020",
+      "target": "evt-040",
+      "weight": 0.1837,
+      "method": "knn"
+    },
+    {
+      "source": "evt-020",
+      "target": "evt-043",
+      "weight": 0.1882,
+      "method": "knn"
+    },
+    {
+      "source": "evt-020",
+      "target": "evt-046",
+      "weight": 0.1065,
+      "method": "knn"
+    },
+    {
+      "source": "evt-020",
+      "target": "evt-056",
+      "weight": 0.0988,
+      "method": "knn"
+    },
+    {
+      "source": "evt-020",
+      "target": "evt-080",
+      "weight": 0.1092,
+      "method": "knn"
+    },
+    {
+      "source": "evt-020",
+      "target": "evt-090",
+      "weight": 0.0889,
+      "method": "knn"
+    },
+    {
+      "source": "evt-020",
+      "target": "evt-094",
+      "weight": 0.0749,
+      "method": "knn"
+    },
+    {
+      "source": "evt-020",
+      "target": "evt-095",
+      "weight": 0.0678,
+      "method": "knn"
+    },
+    {
+      "source": "evt-021",
+      "target": "evt-129",
+      "weight": 0.3538,
+      "method": "knn"
+    },
+    {
+      "source": "evt-021",
+      "target": "evt-130",
+      "weight": 0.4572,
+      "method": "knn"
+    },
+    {
+      "source": "evt-021",
+      "target": "evt-026",
+      "weight": 0.1805,
+      "method": "knn"
+    },
+    {
+      "source": "evt-021",
+      "target": "evt-041",
+      "weight": 0.2344,
+      "method": "knn"
+    },
+    {
+      "source": "evt-021",
+      "target": "evt-122",
+      "weight": 0.1886,
+      "method": "knn"
+    },
+    {
+      "source": "evt-022",
+      "target": "evt-130",
+      "weight": 0.2498,
+      "method": "knn"
+    },
+    {
+      "source": "evt-022",
+      "target": "evt-072",
+      "weight": 0.2535,
+      "method": "knn"
+    },
+    {
+      "source": "evt-022",
+      "target": "evt-060",
+      "weight": 0.3106,
+      "method": "knn"
+    },
+    {
+      "source": "evt-022",
+      "target": "evt-107",
+      "weight": 0.4246,
+      "method": "knn"
+    },
+    {
+      "source": "evt-022",
+      "target": "evt-082",
+      "weight": 0.0992,
+      "method": "knn"
+    },
+    {
+      "source": "evt-023",
+      "target": "evt-084",
+      "weight": 0.185,
+      "method": "knn"
+    },
+    {
+      "source": "evt-023",
+      "target": "evt-083",
+      "weight": 0.2211,
+      "method": "knn"
+    },
+    {
+      "source": "evt-023",
+      "target": "evt-092",
+      "weight": 0.2762,
+      "method": "knn"
+    },
+    {
+      "source": "evt-023",
+      "target": "evt-060",
+      "weight": 0.2843,
+      "method": "knn"
+    },
+    {
+      "source": "evt-023",
+      "target": "evt-072",
+      "weight": 0.299,
+      "method": "knn"
+    },
+    {
+      "source": "evt-023",
+      "target": "evt-036",
+      "weight": 0.8087,
+      "method": "knn"
+    },
+    {
+      "source": "evt-024",
+      "target": "evt-129",
+      "weight": 0.1619,
+      "method": "knn"
+    },
+    {
+      "source": "evt-024",
+      "target": "evt-096",
+      "weight": 0.1806,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-049",
+      "weight": 0.2627,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-059",
+      "weight": 0.2201,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-093",
+      "weight": 0.2935,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-066",
+      "weight": 0.3926,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-050",
+      "weight": 0.5761,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-042",
+      "weight": 0.1195,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-046",
+      "weight": 0.1074,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-047",
+      "weight": 0.1129,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-048",
+      "weight": 0.1053,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-053",
+      "weight": 0.0878,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-061",
+      "weight": 0.101,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-063",
+      "weight": 0.1158,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-065",
+      "weight": 0.0997,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-067",
+      "weight": 0.1181,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-075",
+      "weight": 0.1351,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-079",
+      "weight": 0.1567,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-080",
+      "weight": 0.0669,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-101",
+      "weight": 0.1182,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-117",
+      "weight": 0.0932,
+      "method": "knn"
+    },
+    {
+      "source": "evt-025",
+      "target": "evt-132",
+      "weight": 0.2016,
+      "method": "knn"
+    },
+    {
+      "source": "evt-026",
+      "target": "evt-039",
+      "weight": 0.247,
+      "method": "knn"
+    },
+    {
+      "source": "evt-026",
+      "target": "evt-129",
+      "weight": 0.2429,
+      "method": "knn"
+    },
+    {
+      "source": "evt-026",
+      "target": "evt-127",
+      "weight": 0.3799,
+      "method": "knn"
+    },
+    {
+      "source": "evt-026",
+      "target": "evt-115",
+      "weight": 0.1629,
+      "method": "knn"
+    },
+    {
+      "source": "evt-027",
+      "target": "evt-039",
+      "weight": 0.3649,
+      "method": "knn"
+    },
+    {
+      "source": "evt-027",
+      "target": "evt-100",
+      "weight": 0.3685,
+      "method": "knn"
+    },
+    {
+      "source": "evt-027",
+      "target": "evt-038",
+      "weight": 0.1163,
+      "method": "knn"
+    },
+    {
+      "source": "evt-028",
+      "target": "evt-102",
+      "weight": 0.1448,
+      "method": "knn"
+    },
+    {
+      "source": "evt-028",
+      "target": "evt-116",
+      "weight": 0.1585,
+      "method": "knn"
+    },
+    {
+      "source": "evt-028",
+      "target": "evt-029",
+      "weight": 0.1648,
+      "method": "knn"
+    },
+    {
+      "source": "evt-028",
+      "target": "evt-101",
+      "weight": 0.1807,
+      "method": "knn"
+    },
+    {
+      "source": "evt-028",
+      "target": "evt-045",
+      "weight": 0.2986,
+      "method": "knn"
+    },
+    {
+      "source": "evt-029",
+      "target": "evt-111",
+      "weight": 0.078,
+      "method": "knn"
+    },
+    {
+      "source": "evt-029",
+      "target": "evt-116",
+      "weight": 0.0849,
+      "method": "knn"
+    },
+    {
+      "source": "evt-029",
+      "target": "evt-102",
+      "weight": 0.0863,
+      "method": "knn"
+    },
+    {
+      "source": "evt-029",
+      "target": "evt-101",
+      "weight": 0.1353,
+      "method": "knn"
+    },
+    {
+      "source": "evt-030",
+      "target": "evt-132",
+      "weight": 0.142,
+      "method": "knn"
+    },
+    {
+      "source": "evt-030",
+      "target": "evt-032",
+      "weight": 0.1656,
+      "method": "knn"
+    },
+    {
+      "source": "evt-030",
+      "target": "evt-031",
+      "weight": 0.2613,
+      "method": "knn"
+    },
+    {
+      "source": "evt-030",
+      "target": "evt-033",
+      "weight": 0.3963,
+      "method": "knn"
+    },
+    {
+      "source": "evt-030",
+      "target": "evt-035",
+      "weight": 0.1189,
+      "method": "knn"
+    },
+    {
+      "source": "evt-030",
+      "target": "evt-037",
+      "weight": 0.1314,
+      "method": "knn"
+    },
+    {
+      "source": "evt-030",
+      "target": "evt-053",
+      "weight": 0.1215,
+      "method": "knn"
+    },
+    {
+      "source": "evt-030",
+      "target": "evt-061",
+      "weight": 0.1179,
+      "method": "knn"
+    },
+    {
+      "source": "evt-030",
+      "target": "evt-088",
+      "weight": 0.1049,
+      "method": "knn"
+    },
+    {
+      "source": "evt-030",
+      "target": "evt-102",
+      "weight": 0.1047,
+      "method": "knn"
+    },
+    {
+      "source": "evt-031",
+      "target": "evt-089",
+      "weight": 0.1445,
+      "method": "knn"
+    },
+    {
+      "source": "evt-031",
+      "target": "evt-098",
+      "weight": 0.1238,
+      "method": "knn"
+    },
+    {
+      "source": "evt-031",
+      "target": "evt-120",
+      "weight": 0.1239,
+      "method": "knn"
+    },
+    {
+      "source": "evt-031",
+      "target": "evt-043",
+      "weight": 0.167,
+      "method": "knn"
+    },
+    {
+      "source": "evt-031",
+      "target": "evt-121",
+      "weight": 0.1524,
+      "method": "knn"
+    },
+    {
+      "source": "evt-031",
+      "target": "evt-033",
+      "weight": 0.1927,
+      "method": "knn"
+    },
+    {
+      "source": "evt-031",
+      "target": "evt-074",
+      "weight": 0.3861,
+      "method": "knn"
+    },
+    {
+      "source": "evt-031",
+      "target": "evt-108",
+      "weight": 0.1031,
+      "method": "knn"
+    },
+    {
+      "source": "evt-032",
+      "target": "evt-051",
+      "weight": 0.4937,
+      "method": "knn"
+    },
+    {
+      "source": "evt-032",
+      "target": "evt-033",
+      "weight": 0.1421,
+      "method": "knn"
+    },
+    {
+      "source": "evt-032",
+      "target": "evt-037",
+      "weight": 0.1091,
+      "method": "knn"
+    },
+    {
+      "source": "evt-033",
+      "target": "evt-034",
+      "weight": 0.156,
+      "method": "knn"
+    },
+    {
+      "source": "evt-033",
+      "target": "evt-053",
+      "weight": 0.2409,
+      "method": "knn"
+    },
+    {
+      "source": "evt-034",
+      "target": "evt-111",
+      "weight": 0.1655,
+      "method": "knn"
+    },
+    {
+      "source": "evt-034",
+      "target": "evt-110",
+      "weight": 0.2158,
+      "method": "knn"
+    },
+    {
+      "source": "evt-034",
+      "target": "evt-109",
+      "weight": 0.2457,
+      "method": "knn"
+    },
+    {
+      "source": "evt-035",
+      "target": "evt-038",
+      "weight": 0.1441,
+      "method": "knn"
+    },
+    {
+      "source": "evt-035",
+      "target": "evt-061",
+      "weight": 0.169,
+      "method": "knn"
+    },
+    {
+      "source": "evt-035",
+      "target": "evt-043",
+      "weight": 0.175,
+      "method": "knn"
+    },
+    {
+      "source": "evt-035",
+      "target": "evt-057",
+      "weight": 0.1841,
+      "method": "knn"
+    },
+    {
+      "source": "evt-035",
+      "target": "evt-053",
+      "weight": 0.0973,
+      "method": "knn"
+    },
+    {
+      "source": "evt-035",
+      "target": "evt-090",
+      "weight": 0.0859,
+      "method": "knn"
+    },
+    {
+      "source": "evt-036",
+      "target": "evt-083",
+      "weight": 0.3678,
+      "method": "knn"
+    },
+    {
+      "source": "evt-036",
+      "target": "evt-092",
+      "weight": 0.4787,
+      "method": "knn"
+    },
+    {
+      "source": "evt-036",
+      "target": "evt-060",
+      "weight": 0.4962,
+      "method": "knn"
+    },
+    {
+      "source": "evt-036",
+      "target": "evt-072",
+      "weight": 0.5203,
+      "method": "knn"
+    },
+    {
+      "source": "evt-036",
+      "target": "evt-041",
+      "weight": 0.245,
+      "method": "knn"
+    },
+    {
+      "source": "evt-036",
+      "target": "evt-084",
+      "weight": 0.2556,
+      "method": "knn"
+    },
+    {
+      "source": "evt-037",
+      "target": "evt-043",
+      "weight": 0.2275,
+      "method": "knn"
+    },
+    {
+      "source": "evt-037",
+      "target": "evt-044",
+      "weight": 0.257,
+      "method": "knn"
+    },
+    {
+      "source": "evt-037",
+      "target": "evt-045",
+      "weight": 0.4248,
+      "method": "knn"
+    },
+    {
+      "source": "evt-038",
+      "target": "evt-041",
+      "weight": 0.0994,
+      "method": "knn"
+    },
+    {
+      "source": "evt-038",
+      "target": "evt-070",
+      "weight": 0.1153,
+      "method": "knn"
+    },
+    {
+      "source": "evt-038",
+      "target": "evt-079",
+      "weight": 0.1289,
+      "method": "knn"
+    },
+    {
+      "source": "evt-038",
+      "target": "evt-050",
+      "weight": 0.2222,
+      "method": "knn"
+    },
+    {
+      "source": "evt-038",
+      "target": "evt-043",
+      "weight": 0.2361,
+      "method": "knn"
+    },
+    {
+      "source": "evt-038",
+      "target": "evt-054",
+      "weight": 0.083,
+      "method": "knn"
+    },
+    {
+      "source": "evt-039",
+      "target": "evt-100",
+      "weight": 0.4657,
+      "method": "knn"
+    },
+    {
+      "source": "evt-040",
+      "target": "evt-055",
+      "weight": 0.2154,
+      "method": "knn"
+    },
+    {
+      "source": "evt-040",
+      "target": "evt-118",
+      "weight": 0.2187,
+      "method": "knn"
+    },
+    {
+      "source": "evt-040",
+      "target": "evt-059",
+      "weight": 0.2031,
+      "method": "knn"
+    },
+    {
+      "source": "evt-040",
+      "target": "evt-041",
+      "weight": 0.222,
+      "method": "knn"
+    },
+    {
+      "source": "evt-040",
+      "target": "evt-081",
+      "weight": 0.2849,
+      "method": "knn"
+    },
+    {
+      "source": "evt-040",
+      "target": "evt-058",
+      "weight": 0.2998,
+      "method": "knn"
+    },
+    {
+      "source": "evt-041",
+      "target": "evt-072",
+      "weight": 0.2334,
+      "method": "knn"
+    },
+    {
+      "source": "evt-041",
+      "target": "evt-084",
+      "weight": 0.2947,
+      "method": "knn"
+    },
+    {
+      "source": "evt-041",
+      "target": "evt-058",
+      "weight": 0.4613,
+      "method": "knn"
+    },
+    {
+      "source": "evt-041",
+      "target": "evt-043",
+      "weight": 0.1291,
+      "method": "knn"
+    },
+    {
+      "source": "evt-041",
+      "target": "evt-044",
+      "weight": 0.1958,
+      "method": "knn"
+    },
+    {
+      "source": "evt-041",
+      "target": "evt-048",
+      "weight": 0.1193,
+      "method": "knn"
+    },
+    {
+      "source": "evt-041",
+      "target": "evt-055",
+      "weight": 0.1897,
+      "method": "knn"
+    },
+    {
+      "source": "evt-041",
+      "target": "evt-059",
+      "weight": 0.2218,
+      "method": "knn"
+    },
+    {
+      "source": "evt-041",
+      "target": "evt-081",
+      "weight": 0.1922,
+      "method": "knn"
+    },
+    {
+      "source": "evt-041",
+      "target": "evt-118",
+      "weight": 0.207,
+      "method": "knn"
+    },
+    {
+      "source": "evt-042",
+      "target": "evt-088",
+      "weight": 0.1225,
+      "method": "knn"
+    },
+    {
+      "source": "evt-042",
+      "target": "evt-089",
+      "weight": 0.103,
+      "method": "knn"
+    },
+    {
+      "source": "evt-042",
+      "target": "evt-104",
+      "weight": 0.1078,
+      "method": "knn"
+    },
+    {
+      "source": "evt-043",
+      "target": "evt-044",
+      "weight": 0.2571,
+      "method": "knn"
+    },
+    {
+      "source": "evt-044",
+      "target": "evt-075",
+      "weight": 0.0906,
+      "method": "knn"
+    },
+    {
+      "source": "evt-044",
+      "target": "evt-058",
+      "weight": 0.1032,
+      "method": "knn"
+    },
+    {
+      "source": "evt-044",
+      "target": "evt-071",
+      "weight": 0.1344,
+      "method": "knn"
+    },
+    {
+      "source": "evt-046",
+      "target": "evt-104",
+      "weight": 0.1056,
+      "method": "knn"
+    },
+    {
+      "source": "evt-046",
+      "target": "evt-101",
+      "weight": 0.1087,
+      "method": "knn"
+    },
+    {
+      "source": "evt-046",
+      "target": "evt-095",
+      "weight": 0.499,
+      "method": "knn"
+    },
+    {
+      "source": "evt-046",
+      "target": "evt-047",
+      "weight": 0.089,
+      "method": "knn"
+    },
+    {
+      "source": "evt-047",
+      "target": "evt-079",
+      "weight": 0.0762,
+      "method": "knn"
+    },
+    {
+      "source": "evt-047",
+      "target": "evt-078",
+      "weight": 0.1017,
+      "method": "knn"
+    },
+    {
+      "source": "evt-047",
+      "target": "evt-131",
+      "weight": 0.133,
+      "method": "knn"
+    },
+    {
+      "source": "evt-047",
+      "target": "evt-093",
+      "weight": 0.2509,
+      "method": "knn"
+    },
+    {
+      "source": "evt-048",
+      "target": "evt-101",
+      "weight": 0.1042,
+      "method": "knn"
+    },
+    {
+      "source": "evt-048",
+      "target": "evt-119",
+      "weight": 0.1069,
+      "method": "knn"
+    },
+    {
+      "source": "evt-048",
+      "target": "evt-084",
+      "weight": 0.1131,
+      "method": "knn"
+    },
+    {
+      "source": "evt-048",
+      "target": "evt-063",
+      "weight": 0.1489,
+      "method": "knn"
+    },
+    {
+      "source": "evt-048",
+      "target": "evt-123",
+      "weight": 0.1498,
+      "method": "knn"
+    },
+    {
+      "source": "evt-048",
+      "target": "evt-077",
+      "weight": 0.0806,
+      "method": "knn"
+    },
+    {
+      "source": "evt-049",
+      "target": "evt-066",
+      "weight": 0.1521,
+      "method": "knn"
+    },
+    {
+      "source": "evt-049",
+      "target": "evt-073",
+      "weight": 0.185,
+      "method": "knn"
+    },
+    {
+      "source": "evt-049",
+      "target": "evt-132",
+      "weight": 0.2276,
+      "method": "knn"
+    },
+    {
+      "source": "evt-049",
+      "target": "evt-050",
+      "weight": 0.2414,
+      "method": "knn"
+    },
+    {
+      "source": "evt-050",
+      "target": "evt-066",
+      "weight": 0.1847,
+      "method": "knn"
+    },
+    {
+      "source": "evt-050",
+      "target": "evt-093",
+      "weight": 0.2653,
+      "method": "knn"
+    },
+    {
+      "source": "evt-050",
+      "target": "evt-053",
+      "weight": 0.1142,
+      "method": "knn"
+    },
+    {
+      "source": "evt-050",
+      "target": "evt-065",
+      "weight": 0.0656,
+      "method": "knn"
+    },
+    {
+      "source": "evt-051",
+      "target": "evt-052",
+      "weight": 0.0717,
+      "method": "knn"
+    },
+    {
+      "source": "evt-052",
+      "target": "evt-119",
+      "weight": 0.0534,
+      "method": "knn"
+    },
+    {
+      "source": "evt-052",
+      "target": "evt-095",
+      "weight": 0.0595,
+      "method": "knn"
+    },
+    {
+      "source": "evt-052",
+      "target": "evt-056",
+      "weight": 0.1164,
+      "method": "knn"
+    },
+    {
+      "source": "evt-052",
+      "target": "evt-094",
+      "weight": 0.1908,
+      "method": "knn"
+    },
+    {
+      "source": "evt-053",
+      "target": "evt-059",
+      "weight": 0.0933,
+      "method": "knn"
+    },
+    {
+      "source": "evt-053",
+      "target": "evt-066",
+      "weight": 0.1106,
+      "method": "knn"
+    },
+    {
+      "source": "evt-054",
+      "target": "evt-093",
+      "weight": 0.0836,
+      "method": "knn"
+    },
+    {
+      "source": "evt-054",
+      "target": "evt-132",
+      "weight": 0.131,
+      "method": "knn"
+    },
+    {
+      "source": "evt-054",
+      "target": "evt-079",
+      "weight": 0.3239,
+      "method": "knn"
+    },
+    {
+      "source": "evt-055",
+      "target": "evt-081",
+      "weight": 0.188,
+      "method": "knn"
+    },
+    {
+      "source": "evt-055",
+      "target": "evt-087",
+      "weight": 0.1583,
+      "method": "knn"
+    },
+    {
+      "source": "evt-055",
+      "target": "evt-115",
+      "weight": 0.2341,
+      "method": "knn"
+    },
+    {
+      "source": "evt-055",
+      "target": "evt-118",
+      "weight": 0.2857,
+      "method": "knn"
+    },
+    {
+      "source": "evt-055",
+      "target": "evt-058",
+      "weight": 0.3154,
+      "method": "knn"
+    },
+    {
+      "source": "evt-055",
+      "target": "evt-077",
+      "weight": 0.0813,
+      "method": "knn"
+    },
+    {
+      "source": "evt-056",
+      "target": "evt-117",
+      "weight": 0.1294,
+      "method": "knn"
+    },
+    {
+      "source": "evt-056",
+      "target": "evt-083",
+      "weight": 0.1084,
+      "method": "knn"
+    },
+    {
+      "source": "evt-056",
+      "target": "evt-058",
+      "weight": 0.2131,
+      "method": "knn"
+    },
+    {
+      "source": "evt-056",
+      "target": "evt-059",
+      "weight": 0.4516,
+      "method": "knn"
+    },
+    {
+      "source": "evt-056",
+      "target": "evt-080",
+      "weight": 0.0759,
+      "method": "knn"
+    },
+    {
+      "source": "evt-057",
+      "target": "evt-070",
+      "weight": 0.1209,
+      "method": "knn"
+    },
+    {
+      "source": "evt-057",
+      "target": "evt-071",
+      "weight": 0.1226,
+      "method": "knn"
+    },
+    {
+      "source": "evt-057",
+      "target": "evt-104",
+      "weight": 0.1721,
+      "method": "knn"
+    },
+    {
+      "source": "evt-057",
+      "target": "evt-060",
+      "weight": 0.17,
+      "method": "knn"
+    },
+    {
+      "source": "evt-057",
+      "target": "evt-084",
+      "weight": 0.1856,
+      "method": "knn"
+    },
+    {
+      "source": "evt-057",
+      "target": "evt-083",
+      "weight": 0.2055,
+      "method": "knn"
+    },
+    {
+      "source": "evt-058",
+      "target": "evt-060",
+      "weight": 0.255,
+      "method": "knn"
+    },
+    {
+      "source": "evt-058",
+      "target": "evt-059",
+      "weight": 0.3259,
+      "method": "knn"
+    },
+    {
+      "source": "evt-058",
+      "target": "evt-081",
+      "weight": 0.2245,
+      "method": "knn"
+    },
+    {
+      "source": "evt-058",
+      "target": "evt-118",
+      "weight": 0.2198,
+      "method": "knn"
+    },
+    {
+      "source": "evt-059",
+      "target": "evt-093",
+      "weight": 0.3396,
+      "method": "knn"
+    },
+    {
+      "source": "evt-059",
+      "target": "evt-066",
+      "weight": 0.5026,
+      "method": "knn"
+    },
+    {
+      "source": "evt-059",
+      "target": "evt-076",
+      "weight": 0.1637,
+      "method": "knn"
+    },
+    {
+      "source": "evt-059",
+      "target": "evt-079",
+      "weight": 0.1796,
+      "method": "knn"
+    },
+    {
+      "source": "evt-059",
+      "target": "evt-081",
+      "weight": 0.1552,
+      "method": "knn"
+    },
+    {
+      "source": "evt-059",
+      "target": "evt-095",
+      "weight": 0.1767,
+      "method": "knn"
+    },
+    {
+      "source": "evt-059",
+      "target": "evt-117",
+      "weight": 0.0939,
+      "method": "knn"
+    },
+    {
+      "source": "evt-059",
+      "target": "evt-132",
+      "weight": 0.1722,
+      "method": "knn"
+    },
+    {
+      "source": "evt-060",
+      "target": "evt-071",
+      "weight": 0.5202,
+      "method": "knn"
+    },
+    {
+      "source": "evt-060",
+      "target": "evt-084",
+      "weight": 0.5447,
+      "method": "knn"
+    },
+    {
+      "source": "evt-060",
+      "target": "evt-085",
+      "weight": 0.6139,
+      "method": "knn"
+    },
+    {
+      "source": "evt-060",
+      "target": "evt-083",
+      "weight": 0.6761,
+      "method": "knn"
+    },
+    {
+      "source": "evt-060",
+      "target": "evt-092",
+      "weight": 0.8638,
+      "method": "knn"
+    },
+    {
+      "source": "evt-060",
+      "target": "evt-072",
+      "weight": 0.9619,
+      "method": "knn"
+    },
+    {
+      "source": "evt-060",
+      "target": "evt-107",
+      "weight": 0.2926,
+      "method": "knn"
+    },
+    {
+      "source": "evt-061",
+      "target": "evt-065",
+      "weight": 0.1621,
+      "method": "knn"
+    },
+    {
+      "source": "evt-061",
+      "target": "evt-067",
+      "weight": 0.171,
+      "method": "knn"
+    },
+    {
+      "source": "evt-062",
+      "target": "evt-131",
+      "weight": 0.142,
+      "method": "knn"
+    },
+    {
+      "source": "evt-062",
+      "target": "evt-069",
+      "weight": 0.1949,
+      "method": "knn"
+    },
+    {
+      "source": "evt-062",
+      "target": "evt-070",
+      "weight": 0.2166,
+      "method": "knn"
+    },
+    {
+      "source": "evt-062",
+      "target": "evt-064",
+      "weight": 0.2946,
+      "method": "knn"
+    },
+    {
+      "source": "evt-062",
+      "target": "evt-066",
+      "weight": 0.395,
+      "method": "knn"
+    },
+    {
+      "source": "evt-062",
+      "target": "evt-063",
+      "weight": 0.7355,
+      "method": "knn"
+    },
+    {
+      "source": "evt-062",
+      "target": "evt-091",
+      "weight": 0.0937,
+      "method": "knn"
+    },
+    {
+      "source": "evt-063",
+      "target": "evt-069",
+      "weight": 0.1645,
+      "method": "knn"
+    },
+    {
+      "source": "evt-063",
+      "target": "evt-064",
+      "weight": 0.4201,
+      "method": "knn"
+    },
+    {
+      "source": "evt-063",
+      "target": "evt-066",
+      "weight": 0.4316,
+      "method": "knn"
+    },
+    {
+      "source": "evt-063",
+      "target": "evt-065",
+      "weight": 0.0647,
+      "method": "knn"
+    },
+    {
+      "source": "evt-063",
+      "target": "evt-067",
+      "weight": 0.1111,
+      "method": "knn"
+    },
+    {
+      "source": "evt-063",
+      "target": "evt-091",
+      "weight": 0.1059,
+      "method": "knn"
+    },
+    {
+      "source": "evt-064",
+      "target": "evt-078",
+      "weight": 0.0902,
+      "method": "knn"
+    },
+    {
+      "source": "evt-064",
+      "target": "evt-065",
+      "weight": 0.2296,
+      "method": "knn"
+    },
+    {
+      "source": "evt-064",
+      "target": "evt-067",
+      "weight": 0.2402,
+      "method": "knn"
+    },
+    {
+      "source": "evt-064",
+      "target": "evt-066",
+      "weight": 0.288,
+      "method": "knn"
+    },
+    {
+      "source": "evt-064",
+      "target": "evt-080",
+      "weight": 0.297,
+      "method": "knn"
+    },
+    {
+      "source": "evt-065",
+      "target": "evt-074",
+      "weight": 0.0643,
+      "method": "knn"
+    },
+    {
+      "source": "evt-065",
+      "target": "evt-130",
+      "weight": 0.0841,
+      "method": "knn"
+    },
+    {
+      "source": "evt-065",
+      "target": "evt-067",
+      "weight": 0.7323,
+      "method": "knn"
+    },
+    {
+      "source": "evt-066",
+      "target": "evt-093",
+      "weight": 0.3225,
+      "method": "knn"
+    },
+    {
+      "source": "evt-066",
+      "target": "evt-075",
+      "weight": 0.1552,
+      "method": "knn"
+    },
+    {
+      "source": "evt-066",
+      "target": "evt-079",
+      "weight": 0.2329,
+      "method": "knn"
+    },
+    {
+      "source": "evt-066",
+      "target": "evt-106",
+      "weight": 0.1602,
+      "method": "knn"
+    },
+    {
+      "source": "evt-066",
+      "target": "evt-132",
+      "weight": 0.2179,
+      "method": "knn"
+    },
+    {
+      "source": "evt-067",
+      "target": "evt-074",
+      "weight": 0.1205,
+      "method": "knn"
+    },
+    {
+      "source": "evt-067",
+      "target": "evt-089",
+      "weight": 0.1014,
+      "method": "knn"
+    },
+    {
+      "source": "evt-067",
+      "target": "evt-080",
+      "weight": 0.0658,
+      "method": "knn"
+    },
+    {
+      "source": "evt-067",
+      "target": "evt-108",
+      "weight": 0.0811,
+      "method": "knn"
+    },
+    {
+      "source": "evt-068",
+      "target": "evt-069",
+      "weight": 0.1587,
+      "method": "knn"
+    },
+    {
+      "source": "evt-068",
+      "target": "evt-098",
+      "weight": 0.1762,
+      "method": "knn"
+    },
+    {
+      "source": "evt-068",
+      "target": "evt-073",
+      "weight": 0.2873,
+      "method": "knn"
+    },
+    {
+      "source": "evt-068",
+      "target": "evt-070",
+      "weight": 0.3701,
+      "method": "knn"
+    },
+    {
+      "source": "evt-068",
+      "target": "evt-076",
+      "weight": 0.1296,
+      "method": "knn"
+    },
+    {
+      "source": "evt-068",
+      "target": "evt-078",
+      "weight": 0.1241,
+      "method": "knn"
+    },
+    {
+      "source": "evt-068",
+      "target": "evt-088",
+      "weight": 0.1021,
+      "method": "knn"
+    },
+    {
+      "source": "evt-069",
+      "target": "evt-131",
+      "weight": 0.1266,
+      "method": "knn"
+    },
+    {
+      "source": "evt-069",
+      "target": "evt-073",
+      "weight": 0.1914,
+      "method": "knn"
+    },
+    {
+      "source": "evt-069",
+      "target": "evt-070",
+      "weight": 0.2807,
+      "method": "knn"
+    },
+    {
+      "source": "evt-069",
+      "target": "evt-082",
+      "weight": 0.2917,
+      "method": "knn"
+    },
+    {
+      "source": "evt-070",
+      "target": "evt-075",
+      "weight": 0.2027,
+      "method": "knn"
+    },
+    {
+      "source": "evt-070",
+      "target": "evt-073",
+      "weight": 0.5533,
+      "method": "knn"
+    },
+    {
+      "source": "evt-070",
+      "target": "evt-076",
+      "weight": 0.1247,
+      "method": "knn"
+    },
+    {
+      "source": "evt-070",
+      "target": "evt-094",
+      "weight": 0.0806,
+      "method": "knn"
+    },
+    {
+      "source": "evt-071",
+      "target": "evt-083",
+      "weight": 0.2917,
+      "method": "knn"
+    },
+    {
+      "source": "evt-071",
+      "target": "evt-085",
+      "weight": 0.3673,
+      "method": "knn"
+    },
+    {
+      "source": "evt-071",
+      "target": "evt-092",
+      "weight": 0.5535,
+      "method": "knn"
+    },
+    {
+      "source": "evt-071",
+      "target": "evt-072",
+      "weight": 0.554,
+      "method": "knn"
+    },
+    {
+      "source": "evt-071",
+      "target": "evt-090",
+      "weight": 0.1041,
+      "method": "knn"
+    },
+    {
+      "source": "evt-072",
+      "target": "evt-083",
+      "weight": 0.5208,
+      "method": "knn"
+    },
+    {
+      "source": "evt-072",
+      "target": "evt-085",
+      "weight": 0.5608,
+      "method": "knn"
+    },
+    {
+      "source": "evt-072",
+      "target": "evt-092",
+      "weight": 0.9201,
+      "method": "knn"
+    },
+    {
+      "source": "evt-072",
+      "target": "evt-084",
+      "weight": 0.3678,
+      "method": "knn"
+    },
+    {
+      "source": "evt-072",
+      "target": "evt-107",
+      "weight": 0.2456,
+      "method": "knn"
+    },
+    {
+      "source": "evt-073",
+      "target": "evt-076",
+      "weight": 0.2204,
+      "method": "knn"
+    },
+    {
+      "source": "evt-073",
+      "target": "evt-078",
+      "weight": 0.1204,
+      "method": "knn"
+    },
+    {
+      "source": "evt-074",
+      "target": "evt-104",
+      "weight": 0.0881,
+      "method": "knn"
+    },
+    {
+      "source": "evt-074",
+      "target": "evt-102",
+      "weight": 0.0914,
+      "method": "knn"
+    },
+    {
+      "source": "evt-074",
+      "target": "evt-089",
+      "weight": 0.0953,
+      "method": "knn"
+    },
+    {
+      "source": "evt-074",
+      "target": "evt-098",
+      "weight": 0.1059,
+      "method": "knn"
+    },
+    {
+      "source": "evt-074",
+      "target": "evt-077",
+      "weight": 0.3462,
+      "method": "knn"
+    },
+    {
+      "source": "evt-074",
+      "target": "evt-078",
+      "weight": 0.3948,
+      "method": "knn"
+    },
+    {
+      "source": "evt-074",
+      "target": "evt-108",
+      "weight": 0.0813,
+      "method": "knn"
+    },
+    {
+      "source": "evt-075",
+      "target": "evt-132",
+      "weight": 0.1339,
+      "method": "knn"
+    },
+    {
+      "source": "evt-075",
+      "target": "evt-079",
+      "weight": 0.1375,
+      "method": "knn"
+    },
+    {
+      "source": "evt-075",
+      "target": "evt-076",
+      "weight": 0.6531,
+      "method": "knn"
+    },
+    {
+      "source": "evt-076",
+      "target": "evt-095",
+      "weight": 0.1793,
+      "method": "knn"
+    },
+    {
+      "source": "evt-077",
+      "target": "evt-111",
+      "weight": 0.0848,
+      "method": "knn"
+    },
+    {
+      "source": "evt-077",
+      "target": "evt-083",
+      "weight": 0.0852,
+      "method": "knn"
+    },
+    {
+      "source": "evt-077",
+      "target": "evt-091",
+      "weight": 0.1332,
+      "method": "knn"
+    },
+    {
+      "source": "evt-077",
+      "target": "evt-078",
+      "weight": 0.471,
+      "method": "knn"
+    },
+    {
+      "source": "evt-078",
+      "target": "evt-082",
+      "weight": 0.1457,
+      "method": "knn"
+    },
+    {
+      "source": "evt-078",
+      "target": "evt-081",
+      "weight": 0.1816,
+      "method": "knn"
+    },
+    {
+      "source": "evt-078",
+      "target": "evt-079",
+      "weight": 0.2953,
+      "method": "knn"
+    },
+    {
+      "source": "evt-078",
+      "target": "evt-080",
+      "weight": 0.0668,
+      "method": "knn"
+    },
+    {
+      "source": "evt-079",
+      "target": "evt-093",
+      "weight": 0.1622,
+      "method": "knn"
+    },
+    {
+      "source": "evt-079",
+      "target": "evt-082",
+      "weight": 0.1079,
+      "method": "knn"
+    },
+    {
+      "source": "evt-080",
+      "target": "evt-130",
+      "weight": 0.073,
+      "method": "knn"
+    },
+    {
+      "source": "evt-080",
+      "target": "evt-091",
+      "weight": 0.3661,
+      "method": "knn"
+    },
+    {
+      "source": "evt-081",
+      "target": "evt-118",
+      "weight": 0.1581,
+      "method": "knn"
+    },
+    {
+      "source": "evt-081",
+      "target": "evt-082",
+      "weight": 0.1193,
+      "method": "knn"
+    },
+    {
+      "source": "evt-083",
+      "target": "evt-085",
+      "weight": 0.3651,
+      "method": "knn"
+    },
+    {
+      "source": "evt-083",
+      "target": "evt-084",
+      "weight": 0.5225,
+      "method": "knn"
+    },
+    {
+      "source": "evt-083",
+      "target": "evt-092",
+      "weight": 0.531,
+      "method": "knn"
+    },
+    {
+      "source": "evt-084",
+      "target": "evt-085",
+      "weight": 0.3364,
+      "method": "knn"
+    },
+    {
+      "source": "evt-084",
+      "target": "evt-092",
+      "weight": 0.3341,
+      "method": "knn"
+    },
+    {
+      "source": "evt-085",
+      "target": "evt-092",
+      "weight": 0.5159,
+      "method": "knn"
+    },
+    {
+      "source": "evt-086",
+      "target": "evt-126",
+      "weight": 0.1517,
+      "method": "knn"
+    },
+    {
+      "source": "evt-086",
+      "target": "evt-097",
+      "weight": 0.1859,
+      "method": "knn"
+    },
+    {
+      "source": "evt-086",
+      "target": "evt-125",
+      "weight": 0.1594,
+      "method": "knn"
+    },
+    {
+      "source": "evt-086",
+      "target": "evt-131",
+      "weight": 0.2909,
+      "method": "knn"
+    },
+    {
+      "source": "evt-086",
+      "target": "evt-130",
+      "weight": 0.2526,
+      "method": "knn"
+    },
+    {
+      "source": "evt-086",
+      "target": "evt-124",
+      "weight": 0.3261,
+      "method": "knn"
+    },
+    {
+      "source": "evt-086",
+      "target": "evt-099",
+      "weight": 0.1401,
+      "method": "knn"
+    },
+    {
+      "source": "evt-087",
+      "target": "evt-120",
+      "weight": 0.1931,
+      "method": "knn"
+    },
+    {
+      "source": "evt-087",
+      "target": "evt-118",
+      "weight": 0.1711,
+      "method": "knn"
+    },
+    {
+      "source": "evt-087",
+      "target": "evt-100",
+      "weight": 0.1831,
+      "method": "knn"
+    },
+    {
+      "source": "evt-087",
+      "target": "evt-129",
+      "weight": 0.2188,
+      "method": "knn"
+    },
+    {
+      "source": "evt-087",
+      "target": "evt-096",
+      "weight": 0.306,
+      "method": "knn"
+    },
+    {
+      "source": "evt-087",
+      "target": "evt-130",
+      "weight": 0.2857,
+      "method": "knn"
+    },
+    {
+      "source": "evt-087",
+      "target": "evt-114",
+      "weight": 0.1553,
+      "method": "knn"
+    },
+    {
+      "source": "evt-088",
+      "target": "evt-089",
+      "weight": 0.1529,
+      "method": "knn"
+    },
+    {
+      "source": "evt-089",
+      "target": "evt-121",
+      "weight": 0.1139,
+      "method": "knn"
+    },
+    {
+      "source": "evt-089",
+      "target": "evt-091",
+      "weight": 0.1412,
+      "method": "knn"
+    },
+    {
+      "source": "evt-089",
+      "target": "evt-093",
+      "weight": 0.1326,
+      "method": "knn"
+    },
+    {
+      "source": "evt-089",
+      "target": "evt-104",
+      "weight": 0.2951,
+      "method": "knn"
+    },
+    {
+      "source": "evt-089",
+      "target": "evt-090",
+      "weight": 0.3211,
+      "method": "knn"
+    },
+    {
+      "source": "evt-089",
+      "target": "evt-094",
+      "weight": 0.0697,
+      "method": "knn"
+    },
+    {
+      "source": "evt-089",
+      "target": "evt-117",
+      "weight": 0.0937,
+      "method": "knn"
+    },
+    {
+      "source": "evt-090",
+      "target": "evt-091",
+      "weight": 0.1214,
+      "method": "knn"
+    },
+    {
+      "source": "evt-090",
+      "target": "evt-093",
+      "weight": 0.2557,
+      "method": "knn"
+    },
+    {
+      "source": "evt-091",
+      "target": "evt-131",
+      "weight": 0.0934,
+      "method": "knn"
+    },
+    {
+      "source": "evt-093",
+      "target": "evt-117",
+      "weight": 0.1069,
+      "method": "knn"
+    },
+    {
+      "source": "evt-094",
+      "target": "evt-104",
+      "weight": 0.0764,
+      "method": "knn"
+    },
+    {
+      "source": "evt-094",
+      "target": "evt-095",
+      "weight": 0.3094,
+      "method": "knn"
+    },
+    {
+      "source": "evt-095",
+      "target": "evt-117",
+      "weight": 0.0801,
+      "method": "knn"
+    },
+    {
+      "source": "evt-096",
+      "target": "evt-100",
+      "weight": 0.4238,
+      "method": "knn"
+    },
+    {
+      "source": "evt-096",
+      "target": "evt-130",
+      "weight": 0.4736,
+      "method": "knn"
+    },
+    {
+      "source": "evt-096",
+      "target": "evt-129",
+      "weight": 0.5101,
+      "method": "knn"
+    },
+    {
+      "source": "evt-096",
+      "target": "evt-113",
+      "weight": 0.1472,
+      "method": "knn"
+    },
+    {
+      "source": "evt-096",
+      "target": "evt-114",
+      "weight": 0.2307,
+      "method": "knn"
+    },
+    {
+      "source": "evt-096",
+      "target": "evt-115",
+      "weight": 0.1531,
+      "method": "knn"
+    },
+    {
+      "source": "evt-096",
+      "target": "evt-118",
+      "weight": 0.211,
+      "method": "knn"
+    },
+    {
+      "source": "evt-096",
+      "target": "evt-119",
+      "weight": 0.1756,
+      "method": "knn"
+    },
+    {
+      "source": "evt-096",
+      "target": "evt-120",
+      "weight": 0.1747,
+      "method": "knn"
+    },
+    {
+      "source": "evt-097",
+      "target": "evt-125",
+      "weight": 0.1503,
+      "method": "knn"
+    },
+    {
+      "source": "evt-097",
+      "target": "evt-124",
+      "weight": 0.2295,
+      "method": "knn"
+    },
+    {
+      "source": "evt-097",
+      "target": "evt-100",
+      "weight": 0.2668,
+      "method": "knn"
+    },
+    {
+      "source": "evt-097",
+      "target": "evt-113",
+      "weight": 0.4625,
+      "method": "knn"
+    },
+    {
+      "source": "evt-098",
+      "target": "evt-127",
+      "weight": 0.1736,
+      "method": "knn"
+    },
+    {
+      "source": "evt-098",
+      "target": "evt-126",
+      "weight": 0.2566,
+      "method": "knn"
+    },
+    {
+      "source": "evt-098",
+      "target": "evt-124",
+      "weight": 0.3574,
+      "method": "knn"
+    },
+    {
+      "source": "evt-098",
+      "target": "evt-099",
+      "weight": 0.3653,
+      "method": "knn"
+    },
+    {
+      "source": "evt-098",
+      "target": "evt-123",
+      "weight": 0.1211,
+      "method": "knn"
+    },
+    {
+      "source": "evt-099",
+      "target": "evt-127",
+      "weight": 0.1428,
+      "method": "knn"
+    },
+    {
+      "source": "evt-099",
+      "target": "evt-126",
+      "weight": 0.1965,
+      "method": "knn"
+    },
+    {
+      "source": "evt-099",
+      "target": "evt-124",
+      "weight": 0.2626,
+      "method": "knn"
+    },
+    {
+      "source": "evt-100",
+      "target": "evt-113",
+      "weight": 0.4197,
+      "method": "knn"
+    },
+    {
+      "source": "evt-100",
+      "target": "evt-129",
+      "weight": 0.4205,
+      "method": "knn"
+    },
+    {
+      "source": "evt-100",
+      "target": "evt-114",
+      "weight": 0.1433,
+      "method": "knn"
+    },
+    {
+      "source": "evt-100",
+      "target": "evt-115",
+      "weight": 0.2009,
+      "method": "knn"
+    },
+    {
+      "source": "evt-100",
+      "target": "evt-119",
+      "weight": 0.1331,
+      "method": "knn"
+    },
+    {
+      "source": "evt-101",
+      "target": "evt-102",
+      "weight": 0.1981,
+      "method": "knn"
+    },
+    {
+      "source": "evt-101",
+      "target": "evt-117",
+      "weight": 0.4227,
+      "method": "knn"
+    },
+    {
+      "source": "evt-102",
+      "target": "evt-117",
+      "weight": 0.1321,
+      "method": "knn"
+    },
+    {
+      "source": "evt-102",
+      "target": "evt-116",
+      "weight": 0.1108,
+      "method": "knn"
+    },
+    {
+      "source": "evt-102",
+      "target": "evt-120",
+      "weight": 0.1827,
+      "method": "knn"
+    },
+    {
+      "source": "evt-102",
+      "target": "evt-104",
+      "weight": 0.1908,
+      "method": "knn"
+    },
+    {
+      "source": "evt-102",
+      "target": "evt-108",
+      "weight": 0.101,
+      "method": "knn"
+    },
+    {
+      "source": "evt-103",
+      "target": "evt-106",
+      "weight": 0.2466,
+      "method": "knn"
+    },
+    {
+      "source": "evt-103",
+      "target": "evt-105",
+      "weight": 0.5001,
+      "method": "knn"
+    },
+    {
+      "source": "evt-103",
+      "target": "evt-116",
+      "weight": 0.6198,
+      "method": "knn"
+    },
+    {
+      "source": "evt-104",
+      "target": "evt-107",
+      "weight": 0.1361,
+      "method": "knn"
+    },
+    {
+      "source": "evt-104",
+      "target": "evt-117",
+      "weight": 0.1669,
+      "method": "knn"
+    },
+    {
+      "source": "evt-104",
+      "target": "evt-105",
+      "weight": 0.191,
+      "method": "knn"
+    },
+    {
+      "source": "evt-105",
+      "target": "evt-109",
+      "weight": 0.1317,
+      "method": "knn"
+    },
+    {
+      "source": "evt-105",
+      "target": "evt-116",
+      "weight": 0.5872,
+      "method": "knn"
+    },
+    {
+      "source": "evt-105",
+      "target": "evt-106",
+      "weight": 0.6499,
+      "method": "knn"
+    },
+    {
+      "source": "evt-106",
+      "target": "evt-116",
+      "weight": 0.3692,
+      "method": "knn"
+    },
+    {
+      "source": "evt-107",
+      "target": "evt-108",
+      "weight": 0.4224,
+      "method": "knn"
+    },
+    {
+      "source": "evt-109",
+      "target": "evt-112",
+      "weight": 0.3479,
+      "method": "knn"
+    },
+    {
+      "source": "evt-109",
+      "target": "evt-113",
+      "weight": 0.3779,
+      "method": "knn"
+    },
+    {
+      "source": "evt-109",
+      "target": "evt-110",
+      "weight": 0.4223,
+      "method": "knn"
+    },
+    {
+      "source": "evt-109",
+      "target": "evt-111",
+      "weight": 0.2257,
+      "method": "knn"
+    },
+    {
+      "source": "evt-110",
+      "target": "evt-111",
+      "weight": 0.1759,
+      "method": "knn"
+    },
+    {
+      "source": "evt-110",
+      "target": "evt-112",
+      "weight": 0.194,
+      "method": "knn"
+    },
+    {
+      "source": "evt-111",
+      "target": "evt-113",
+      "weight": 0.115,
+      "method": "knn"
+    },
+    {
+      "source": "evt-111",
+      "target": "evt-112",
+      "weight": 0.2567,
+      "method": "knn"
+    },
+    {
+      "source": "evt-112",
+      "target": "evt-113",
+      "weight": 0.2033,
+      "method": "knn"
+    },
+    {
+      "source": "evt-113",
+      "target": "evt-114",
+      "weight": 0.2205,
+      "method": "knn"
+    },
+    {
+      "source": "evt-114",
+      "target": "evt-129",
+      "weight": 0.1492,
+      "method": "knn"
+    },
+    {
+      "source": "evt-114",
+      "target": "evt-118",
+      "weight": 0.1494,
+      "method": "knn"
+    },
+    {
+      "source": "evt-114",
+      "target": "evt-120",
+      "weight": 0.2419,
+      "method": "knn"
+    },
+    {
+      "source": "evt-114",
+      "target": "evt-119",
+      "weight": 0.1379,
+      "method": "knn"
+    },
+    {
+      "source": "evt-115",
+      "target": "evt-129",
+      "weight": 0.2268,
+      "method": "knn"
+    },
+    {
+      "source": "evt-118",
+      "target": "evt-120",
+      "weight": 0.2419,
+      "method": "knn"
+    },
+    {
+      "source": "evt-118",
+      "target": "evt-130",
+      "weight": 0.2032,
+      "method": "knn"
+    },
+    {
+      "source": "evt-119",
+      "target": "evt-124",
+      "weight": 0.1622,
+      "method": "knn"
+    },
+    {
+      "source": "evt-119",
+      "target": "evt-130",
+      "weight": 0.2209,
+      "method": "knn"
+    },
+    {
+      "source": "evt-120",
+      "target": "evt-121",
+      "weight": 0.1499,
+      "method": "knn"
+    },
+    {
+      "source": "evt-120",
+      "target": "evt-129",
+      "weight": 0.1602,
+      "method": "knn"
+    },
+    {
+      "source": "evt-121",
+      "target": "evt-130",
+      "weight": 0.154,
+      "method": "knn"
+    },
+    {
+      "source": "evt-121",
+      "target": "evt-122",
+      "weight": 0.293,
+      "method": "knn"
+    },
+    {
+      "source": "evt-123",
+      "target": "evt-126",
+      "weight": 0.1409,
+      "method": "knn"
+    },
+    {
+      "source": "evt-123",
+      "target": "evt-131",
+      "weight": 0.2334,
+      "method": "knn"
+    },
+    {
+      "source": "evt-123",
+      "target": "evt-124",
+      "weight": 0.2367,
+      "method": "knn"
+    },
+    {
+      "source": "evt-123",
+      "target": "evt-125",
+      "weight": 0.3572,
+      "method": "knn"
+    },
+    {
+      "source": "evt-124",
+      "target": "evt-130",
+      "weight": 0.2999,
+      "method": "knn"
+    },
+    {
+      "source": "evt-124",
+      "target": "evt-126",
+      "weight": 0.4685,
+      "method": "knn"
+    },
+    {
+      "source": "evt-124",
+      "target": "evt-125",
+      "weight": 0.488,
+      "method": "knn"
+    },
+    {
+      "source": "evt-124",
+      "target": "evt-127",
+      "weight": 0.2527,
+      "method": "knn"
+    },
+    {
+      "source": "evt-124",
+      "target": "evt-131",
+      "weight": 0.1929,
+      "method": "knn"
+    },
+    {
+      "source": "evt-125",
+      "target": "evt-130",
+      "weight": 0.2181,
+      "method": "knn"
+    },
+    {
+      "source": "evt-125",
+      "target": "evt-126",
+      "weight": 0.2641,
+      "method": "knn"
+    },
+    {
+      "source": "evt-125",
+      "target": "evt-131",
+      "weight": 0.3809,
+      "method": "knn"
+    },
+    {
+      "source": "evt-126",
+      "target": "evt-127",
+      "weight": 0.1607,
+      "method": "knn"
+    },
+    {
+      "source": "evt-127",
+      "target": "evt-128",
+      "weight": 0.2954,
+      "method": "knn"
+    },
+    {
+      "source": "evt-127",
+      "target": "evt-129",
+      "weight": 0.2471,
+      "method": "knn"
+    },
+    {
+      "source": "evt-128",
+      "target": "evt-129",
+      "weight": 0.1223,
+      "method": "knn"
+    },
+    {
+      "source": "evt-129",
+      "target": "evt-130",
+      "weight": 0.5021,
+      "method": "knn"
+    },
+    {
+      "source": "evt-130",
+      "target": "evt-131",
+      "weight": 0.2485,
+      "method": "knn"
+    },
+    {
+      "source": "evt-130",
+      "target": "evt-132",
+      "weight": 0.193,
+      "method": "knn"
+    },
+    {
+      "source": "evt-131",
+      "target": "evt-132",
+      "weight": 0.1605,
+      "method": "knn"
+    }
+  ]
+}

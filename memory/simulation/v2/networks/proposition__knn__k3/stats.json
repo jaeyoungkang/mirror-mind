@@ -1,0 +1,43 @@
+{
+  "nodeset": "proposition",
+  "method": "knn",
+  "k_label": "k3",
+  "k": 3,
+  "num_nodes": 218,
+  "num_edges": 457,
+  "avg_degree": 4.19,
+  "num_components": 1,
+  "giant_ratio": 1.0,
+  "avg_hop1_ratio": 0.0189,
+  "avg_path_length": 4.75,
+  "clustering_coeff": 0.3161,
+  "density": 0.0193,
+  "hub_nodes": [
+    {
+      "id": "prop-035",
+      "degree": 13,
+      "content": "강재영이 'lighthouse는 연구 동료 서비스가 방향이다'라고 지시했다"
+    },
+    {
+      "id": "prop-043",
+      "degree": 11,
+      "content": "lighthouse 구현 에이전트에게 대원칙 기반 코드 재설계를 지시했다"
+    },
+    {
+      "id": "prop-166",
+      "degree": 11,
+      "content": "mirror-mind에 JSON 파일 + git 기반으로 기억 시스템을 적용하기로 결정했다"
+    },
+    {
+      "id": "prop-037",
+      "degree": 9,
+      "content": "lighthouse 에이전트 계층(상위 2개 + 하위 6개)을 확정했다"
+    },
+    {
+      "id": "prop-013",
+      "degree": 8,
+      "content": "AI 서비스 설계 핵심 전제 2축을 확립했다: '자율성은 디자인 선택' + 'AI는 동료 수준의 주체'"
+    }
+  ],
+  "gate_pass": true
+}

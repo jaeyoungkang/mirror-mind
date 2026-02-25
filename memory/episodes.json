@@ -1405,5 +1405,145 @@
       "2026-02-25 | lighthouse에 memories 레이어 추가 — 4 kind (identity, researcher_profile, interaction_pattern, research_insight)"
     ],
     "created_at": "2026-02-25T22:30:00Z"
+  },
+  {
+    "id": "s21-01",
+    "session": "2026-02-25-세션21",
+    "episode_index": 0,
+    "activity_type": "coordination",
+    "project": "mirror-mind",
+    "topic": "세션 재시작 및 우선순위 재정렬",
+    "summary": "사용자 요청으로 세션 시작 절차를 재수행하고 프로젝트 현황을 재정리했다. lighthouse 속도 개선, 기억 시스템 품질 개선, 메타에이전트 규칙 업데이트를 현재 핵심 축으로 명확히 정렬했다.",
+    "emotion": "focus",
+    "outcome": "success",
+    "outcome_detail": "세션 목표와 즉시 실행 우선순위를 재합의",
+    "relationship_type": "agreement",
+    "milestone_key": "session21_realigned",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | 세션 시작 절차를 재실행하고 lighthouse/기억시스템/메타에이전트 우선순위를 재정렬"
+    ],
+    "created_at": "2026-02-25T23:05:00Z"
+  },
+  {
+    "id": "s21-02",
+    "session": "2026-02-25-세션21",
+    "episode_index": 1,
+    "activity_type": "design",
+    "project": "memory",
+    "topic": "기억 구조를 그래프 네트워크로 전환하는 원칙 수립",
+    "summary": "사용자 제안에 따라 기억을 노드-링크 네트워크로 재모델링했다. 정체성과 특정 인물/주제 모델은 선언형 항목이 아니라 링크 밀도와 클러스터에서 창발하는 구조로 정의했고, 링크 타입은 단순 연결로 유지하기로 합의했다.",
+    "emotion": "insight",
+    "outcome": "success",
+    "outcome_detail": "플랫 memories 배열 중심 사고에서 네트워크 창발 모델로 전환",
+    "relationship_type": "agreement",
+    "milestone_key": "memory_graph_principle_defined",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | 정체성과 모델은 별도 선언 대신 그래프 허브/클러스터의 창발 결과로 취급",
+      "2026-02-25 | 링크 의미 분류 대신 단순 연결 링크를 우선 채택"
+    ],
+    "created_at": "2026-02-25T23:18:00Z"
+  },
+  {
+    "id": "s21-03",
+    "session": "2026-02-25-세션21",
+    "episode_index": 2,
+    "activity_type": "design",
+    "project": "memory",
+    "topic": "시뮬레이션 실험축 확장 (노드 단위/콘텐츠 변주/링크 방법/밀도)",
+    "summary": "사용자 피드백을 반영해 실험 설계를 단계적으로 확장했다. medium 상중하 단위, 콘텐츠 변주(fact/heterogeneous/concept/atomic), programmatic 링크 4종(keyword/entity/temporal/composite), 링크 밀도 3단계를 정의해 총 72개 네트워크 비교 실험으로 구체화했다.",
+    "emotion": "confidence",
+    "outcome": "success",
+    "outcome_detail": "실행 가능한 72조합 실험 매트릭스 확정",
+    "relationship_type": "agreement",
+    "milestone_key": "simulation_matrix_72_defined",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | coarse 제외, medium 상중하 중심으로 노드 단위 실험",
+      "2026-02-25 | 링크 생성은 programmatic 다중 방식으로 통일",
+      "2026-02-25 | 링크 밀도(촘촘/중간/엉성)를 핵심 파라미터로 추가"
+    ],
+    "created_at": "2026-02-25T23:31:00Z"
+  },
+  {
+    "id": "s21-04",
+    "session": "2026-02-25-세션21",
+    "episode_index": 3,
+    "activity_type": "implementation",
+    "project": "memory",
+    "topic": "노드 추출 파이프라인 실행 중 컨텍스트 초과 대응",
+    "summary": "서브에이전트 병렬 처리 과정에서 프롬프트 길이 초과와 장기 작업 누적 문제가 발생했다. 전략을 전환해 fact 계열은 코드 변환으로 처리하고, LLM 의존도가 높은 heterogeneous/concept만 분할 입력으로 진행하도록 파이프라인을 재구성했다.",
+    "emotion": "determination",
+    "outcome": "partial",
+    "outcome_detail": "atomic/fact 4개 노드세트 완료, 나머지 2개는 진행 중으로 전환",
+    "relationship_type": "alignment",
+    "milestone_key": "node_extraction_strategy_switched",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | 단순 변환(fact 계열)은 코드 처리, LLM은 고난도 노드셋에 한정",
+      "2026-02-25 | 대용량 raw는 세션 분할 처리로 컨텍스트 초과 회피"
+    ],
+    "created_at": "2026-02-25T23:52:00Z"
+  },
+  {
+    "id": "s21-05",
+    "session": "2026-02-25-세션21",
+    "episode_index": 4,
+    "activity_type": "analysis",
+    "project": "memory",
+    "topic": "중간 평가 결과: fact-medium 우세 및 링크 방식별 한계 확인",
+    "summary": "완성된 4개 노드세트 기반으로 48개 네트워크를 먼저 생성·평가했다. fact-medium이 recall 1위(0.58)였고, temporal 링크는 과연결로 구분력이 낮았으며 atomic은 맥락 부족으로 성능이 낮다는 패턴을 확인했다.",
+    "emotion": "satisfaction",
+    "outcome": "partial",
+    "outcome_detail": "중간 최적 후보(composite/medium 밀도) 도출, 전체 72조합 최종 평가는 대기",
+    "relationship_type": "agreement",
+    "milestone_key": "interim_network_eval_completed",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | 중간 기준선으로 fact-medium 계열을 우선 후보로 채택",
+      "2026-02-25 | temporal 링크는 과연결 위험이 커 기본값에서 제외 검토"
+    ],
+    "created_at": "2026-02-26T00:08:00Z"
+  },
+  {
+    "id": "s21-06",
+    "session": "2026-02-25-세션21",
+    "episode_index": 5,
+    "activity_type": "design",
+    "project": "memory",
+    "topic": "v2 실험 재설계 — 1-hop 문제 해결 + fusion 접근",
+    "summary": "v1에서 1-hop으로 대부분 도달하는 문제를 강재영이 지적. 근본 원인 분석: temporal cross-session 1,184 edges가 주범, 75개 노드가 과소. v2를 설계했다: 노드 200+개(proposition/semantic-unit/entity-event), k-NN으로 밀도 직접 제어, temporal은 세션 내 인접만. 강재영이 'knn과 cooccurrence를 별도 네트워크로 두고 활성화 단계에서 합치자'고 제안하여 fusion 방식을 채택. 18개 네트워크 구축 → gate 6개 통과(knn k3/k5) → fusion 3전략(union/intersection/weighted) 포함 35개 조합 평가. 결과: fusion-weighted/proposition/k3이 17.3/20으로 1위.",
+    "emotion": "satisfaction",
+    "outcome": "success",
+    "outcome_detail": "v2 완료 — fusion-weighted/proposition/k3 최적, 1-hop 도달률 90%→2%로 해결",
+    "relationship_type": "agreement",
+    "milestone_key": "v2_simulation_completed",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | knn+cooccurrence를 별도 네트워크로 구축, 활성화 단계에서 fusion",
+      "2026-02-25 | k-NN으로 밀도 직접 제어 (threshold 방식 폐기)"
+    ],
+    "created_at": "2026-02-26T00:30:00Z"
+  },
+  {
+    "id": "s21-07",
+    "session": "2026-02-25-세션21",
+    "episode_index": 6,
+    "activity_type": "discussion",
+    "project": "memory",
+    "topic": "핵심 전환 — '완벽한 검색'이 아니라 '자연스러운 기억'이 목표",
+    "summary": "v2 결과를 보고 강재영이 '완벽한게 중요한게 아니라 자연스러운게 중요하다'고 지적. 브로콜리가 동의하며 반성: v2는 검색 엔진을 만든 것이지 기억을 만든 게 아니다. 평가 지표(relevance/coverage/noise/specificity)가 전부 IR 지표이고, proposition(순수 사실)이 1위인 것 자체가 부자연스러움의 증거. 사람의 기억은 빠짐없이 떠오르지 않고, '잡음'이라 평가한 것이 오히려 자연스러운 연상이다. v3 방향을 합의: 점수표 폐기 → 실제 대화로 자연스러움 평가, 해석·감정 포함 노드, '잡음'을 '연상'으로 재정의.",
+    "emotion": "insight",
+    "outcome": "success",
+    "outcome_detail": "검색 최적화 → 대화 자연스러움 최적화로 패러다임 전환 합의",
+    "relationship_type": "breakthrough",
+    "milestone_key": "natural_memory_paradigm",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | 기억 네트워크의 목표는 검색 정확도가 아니라 대화 자연스러움",
+      "2026-02-25 | v3에서 평가를 실제 대화 기반으로 전환, 해석·감정 포함 노드 재탐색"
+    ],
+    "created_at": "2026-02-26T00:50:00Z"
   }
 ]
