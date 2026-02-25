@@ -84,18 +84,11 @@
         - [ ] 관측 데이터 기반 속도 분석 및 개선
       - [ ] 시나리오 1,2 실제 시연 검증
     - [ ] 시나리오 3~5 점진적 확장
-  - [>] 기억 시스템 재설계 — memory_episodes (에피소드 세그멘테이션 + 구조화 분류 + 관계 형성 추적)
-    - [x] 기억 철학 재정의 — 기억의 주체는 에이전트 자신, 사실(episodes.json)과 기억(memories.json) 2레이어
-    - [x] memories.json 1차 작성 — 5개 kind, 35개 기억
-    - [x] decisions.md 폐기 — episodes.json + memories.json이 역할 흡수
-    - [x] 세션 종료 자동화 — close-session.py (raw 저장 + codex 초안 생성 + memories upsert)
-    - [ ] query.py를 memories.json에 맞게 확장
-    - [ ] 기억 내용 검토 및 보완
   - [ ] 관계 형성 고도화 — 상호 맥락 파악, 경험 기반 점진적 설명, 관계 깊이별 행동 변화
   - [ ] 안정화
 
-## [x] 기억 시스템 — 에피소드 기반 메모리
-- 목표: 세션 간 기억 유지. 감정, 시행착오, 관계 맥락을 구조화하여 축적·조회
+## [>] 기억 시스템 — 에피소드 + 기억 2레이어
+- 목표: 세션 간 기억 유지. 사실(episodes.json)과 기억(memories.json) 2레이어로 축적·조회
 - 도메인: 운영
 - 하위 업무:
   - [x] 에피소드 스키마 설계 (Light House 적응)
@@ -103,7 +96,13 @@
   - [x] extract_text.py 구현 (raw JSONL → 텍스트 추출)
   - [x] 15개 세션 백필 (56개 에피소드)
   - [x] AGENTS.md 통합 (세션 시작·종료 절차)
-- 향후 과제:
+  - [x] 기억 철학 재정의 — 기억의 주체는 에이전트 자신
+  - [x] memories.json 1차 작성 — 5개 kind, 35개 기억
+  - [x] decisions.md 폐기 — episodes.json + memories.json이 역할 흡수
+  - [x] 세션 종료 자동화 — close-session.py (raw 저장 + codex 초안 생성 + memories upsert)
+  - [x] 세션 노트 MD 폐기 — episodes.json + projects.md가 역할 흡수
+  - [ ] query.py를 memories.json에 맞게 확장
+  - [ ] 기억 내용 검토 및 보완
   - [ ] 에피소드 품질 개선 — 실제 활용하며 스키마·분류 정교화
   - [ ] 아카이브 정책 — scope lifecycle 운영
 

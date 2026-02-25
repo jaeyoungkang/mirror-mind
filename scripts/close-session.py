@@ -6,7 +6,7 @@ AGENTS.md '작업 종료' 트리거 절차를 스크립트로 수행한다.
 사용법:
   python3 scripts/close-session.py                     # 전체 (raw 저장 + 초안 생성)
   python3 scripts/close-session.py --raw-only           # raw 저장만
-  python3 scripts/close-session.py --no-llm             # codex 없이 raw 저장 + 빈 템플릿
+  python3 scripts/close-session.py --no-llm             # codex 없이 raw 저장만
   python3 scripts/close-session.py --name 세션20        # 세션 이름 직접 지정
   python3 scripts/close-session.py --dry-run            # 파일 미수정, stdout 출력만
   python3 scripts/close-session.py --commit             # 완료 후 자동 커밋
@@ -14,7 +14,7 @@ AGENTS.md '작업 종료' 트리거 절차를 스크립트로 수행한다.
 절차:
   1. 현재 세션 JSONL → tasks/conversations/raw/ 경량 내보내기
   2. 대화 텍스트 추출
-  3. codex exec로 세션 노트 / episodes / memories 초안 생성
+  3. codex exec로 episodes / memories 초안 생성
   4. 파일 작성
   5. (--commit) git add + commit
 
@@ -282,7 +282,7 @@ def get_last_episode_id() -> str:
 # ── 초안 생성 ──
 
 GENERATE_PROMPT = """너는 mirror-mind 프로젝트의 세션 종료 기록 담당이다.
-아래 대화를 읽고 2가지 산출물을 생성하라.
+아래 대화를 읽고 episodes.json 추가분을 생성하라.
 
 ## 세션 정보
 - 세션: {date_session}
@@ -291,12 +291,7 @@ GENERATE_PROMPT = """너는 mirror-mind 프로젝트의 세션 종료 기록 담
 ## 대화 내용
 {conversation}
 
-## 산출물 1: 세션 노트 (마크다운)
-- 제목: # {date_session}
-- 주요 논의 주제, 결정 사항, 다음 단계를 간결하게 정리
-- ~다 체 사용
-
-## 산출물 2: episodes.json 추가분
+## episodes.json 추가분
 기존 포맷 참고:
 ```json
 {episodes_example}
@@ -308,10 +303,6 @@ GENERATE_PROMPT = """너는 mirror-mind 프로젝트의 세션 종료 기록 담
 
 ## 출력 형식
 정확히 아래 구분자를 사용하라. 구분자 외의 텍스트는 없어야 한다.
-
-===NOTES_START===
-(세션 노트 마크다운)
-===NOTES_END===
 
 ===EPISODES_START===
 (JSON 배열)
@@ -337,14 +328,9 @@ def generate_drafts(conversation: str, session_name: str) -> dict:
 
     raw = call_codex(prompt, timeout=180)
     if not raw:
-        return {"notes": "", "episodes": []}
+        return {"episodes": []}
 
     result = {}
-
-    notes_match = re.search(
-        r'===NOTES_START===\n?(.*?)\n?===NOTES_END===', raw, re.DOTALL
-    )
-    result["notes"] = notes_match.group(1).strip() if notes_match else ""
 
     ep_match = re.search(
         r'===EPISODES_START===\n?(.*?)\n?===EPISODES_END===', raw, re.DOTALL
@@ -449,13 +435,6 @@ def apply_memory_updates(ops: list[dict]) -> dict:
 
 # ── 파일 쓰기 ──
 
-def write_notes(notes: str, session_name: str) -> Path:
-    today = date.today().isoformat()
-    dest = CONV_DIR / f"{today}-{session_name}.md"
-    dest.write_text(notes, encoding="utf-8")
-    return dest
-
-
 def append_episodes(new_episodes: list[dict]):
     if not new_episodes:
         return
@@ -484,7 +463,6 @@ def git_commit(session_name: str):
     today = date.today().isoformat()
     candidates = [
         f"tasks/conversations/raw/{today}-{session_name}.jsonl",
-        f"tasks/conversations/{today}-{session_name}.md",
         "memory/episodes.json",
         "memory/memories.json",
     ]
@@ -506,7 +484,7 @@ def main():
     parser = argparse.ArgumentParser(description="세션 종료 자동화")
     parser.add_argument("--name", help="세션 이름 (예: 세션20). 미지정 시 자동 결정")
     parser.add_argument("--raw-only", action="store_true", help="raw 저장만")
-    parser.add_argument("--no-llm", action="store_true", help="codex 없이 raw 저장 + 빈 템플릿")
+    parser.add_argument("--no-llm", action="store_true", help="codex 없이 raw 저장만")
     parser.add_argument("--commit", action="store_true", help="완료 후 자동 커밋")
     parser.add_argument("--dry-run", action="store_true", help="파일 미수정, stdout 출력만")
     parser.add_argument("--force", action="store_true", help="이미 종료된 세션도 강제 재실행")
@@ -567,14 +545,11 @@ def main():
 
     # 5. 초안 생성
     if args.no_llm:
-        print("no-llm 모드. 빈 템플릿 생성.")
-        drafts = {
-            "notes": f"# {date_session}\n\n(TODO: 세션 노트 작성)\n",
-            "episodes": [],
-        }
+        print("no-llm 모드.")
+        drafts = {"episodes": []}
         memory_ops = []
     else:
-        print("codex로 초안 생성 중... (노트+에피소드, 최대 3분)")
+        print("codex로 에피소드 초안 생성 중... (최대 3분)")
         drafts = generate_drafts(conversation, session_name)
         print("codex로 기억 업데이트 생성 중... (최대 3분)")
         memory_ops = generate_memory_updates(conversation, session_name)
@@ -582,10 +557,7 @@ def main():
     # 6. 결과 출력
     sep = "=" * 50
     print(f"\n{sep}")
-    print("=== 세션 노트 ===")
-    print(drafts["notes"] or "(없음)")
-
-    print(f"\n=== episodes.json 추가분 ({len(drafts['episodes'])}건) ===")
+    print(f"=== episodes.json 추가분 ({len(drafts['episodes'])}건) ===")
     if drafts["episodes"]:
         print(json.dumps(drafts["episodes"], ensure_ascii=False, indent=2))
     else:
@@ -608,10 +580,6 @@ def main():
     if args.dry_run:
         print("\n[dry-run] 파일 미수정. 위 내용을 확인 후 --dry-run 없이 재실행.")
         return
-
-    if drafts["notes"]:
-        notes_dest = write_notes(drafts["notes"], session_name)
-        print(f"\n[완료] 세션 노트 → {notes_dest.relative_to(PROJECT_ROOT)}")
 
     if drafts["episodes"]:
         if session_exists_in_episodes(date_session):
