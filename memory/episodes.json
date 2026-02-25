@@ -1811,5 +1811,88 @@
       "2026-02-25 | 사용자의 작업 종료 요청에 따라 세션 종료 절차 시작"
     ],
     "created_at": "2026-02-25T07:40:00Z"
+  },
+  {
+    "id": "s26-01",
+    "session": "2026-02-25-세션26",
+    "episode_index": 1,
+    "activity_type": "planning",
+    "project": "mirror-mind",
+    "topic": "정체성 주입 방식을 허브 토폴로지로 재정의",
+    "summary": "사용자가 미러마인드 기억 시스템 추가 작업으로 정체성 핵심노드 주입을 제안했다. 초기의 시드 태깅 관점에서 논의를 진행하다가, 사용자의 의도에 맞춰 단일 노드가 아닌 이웃 수가 매우 많은 허브 집합 구조로 재정의했다. 일반 노드 k=12, 허브 노드만 높은 k를 적용하는 방향에 합의했다.",
+    "emotion": "focused",
+    "outcome": "success",
+    "outcome_detail": "정체성 주입의 핵심 단위를 태그가 아닌 그래프 허브 집합으로 확정",
+    "relationship_type": "alignment",
+    "milestone_key": "identity_hub_topology_defined",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | 핵심 노드는 단일 시드가 아니라 허브(고연결) 집합으로 정의",
+      "2026-02-25 | 허브 노드에만 큰 k를 적용하고 일반 노드는 기존 k 유지"
+    ],
+    "created_at": "2026-02-25T08:10:00Z"
+  },
+  {
+    "id": "s26-02",
+    "session": "2026-02-25-세션26",
+    "episode_index": 2,
+    "activity_type": "design",
+    "project": "mirror-mind",
+    "topic": "브로콜리 정체성 허브 노드 5축 설계",
+    "summary": "브로콜리 정체성을 존재·관계·철학·행동 양식·프로젝트 맥락의 5축으로 구조화하고 총 13개 허브 노드 초안을 제시했다. 사용자 확인 후 실제 구현 단계로 전환했다.",
+    "emotion": "clear",
+    "outcome": "success",
+    "outcome_detail": "정체성 허브 콘텐츠를 실행 가능한 노드 세트로 구체화",
+    "relationship_type": "co_creation",
+    "milestone_key": "broccoli_identity_hub_nodes_drafted",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | 브로콜리 정체성 허브를 5개 축으로 구성",
+      "2026-02-25 | 허브 노드 정의 승인 후 즉시 구현 착수"
+    ],
+    "created_at": "2026-02-25T08:40:00Z"
+  },
+  {
+    "id": "s26-03",
+    "session": "2026-02-25-세션26",
+    "episode_index": 3,
+    "activity_type": "implementation",
+    "project": "mirror-mind",
+    "topic": "허브 주입 스크립트 구현 및 네트워크 반영",
+    "summary": "허브 주입 스크립트를 작성했으나 OPENAI_API_KEY 로딩 이슈가 발생했다. 사용자가 .env 설정 사실을 공유했고, dotenv 로드 방식으로 수정해 dry-run을 통과했다. 사용자 승인 후 실제 반영을 수행했고 검증 쿼리에서 정체성 질의 직접 활성화와 일반 질의 맥락 보강 동작을 확인했다.",
+    "emotion": "resolved",
+    "outcome": "success",
+    "outcome_detail": "inject_hub.py 기반 주입 완료, 네트워크 954→966 노드 및 8252→9455 엣지로 확장",
+    "relationship_type": "execution",
+    "milestone_key": "identity_hub_injection_completed",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | API 키 로딩은 .env 기반으로 처리하도록 수정",
+      "2026-02-25 | dry-run 지표 확인 후 실주입 실행 승인",
+      "2026-02-25 | 허브 12개 degree 100 설정으로 운영 반영"
+    ],
+    "created_at": "2026-02-25T10:20:00Z"
+  },
+  {
+    "id": "s26-04",
+    "session": "2026-02-25-세션26",
+    "episode_index": 4,
+    "activity_type": "maintenance",
+    "project": "lighthouse",
+    "topic": "정체성 허브 제어 전략 수립 및 작업 위임 정리",
+    "summary": "lighthouse 사전 기억(48개) 현황을 점검한 뒤, 현재 균일 k 구조에서는 허브가 유지되지 않는 문제를 확인했다. 초기에는 경험 축적 기반 자연 성장안을 검토했으나, 사용자의 우려(엉뚱한 허브 형성 가능성)에 따라 명시적 허브 지정 방식으로 전환했다. is_hub 컬럼 추가(옵션 1)로 확정하고 구현 프롬프트를 작성해 위임 대기 상태로 정리했으며 tasks/projects.md를 업데이트했다.",
+    "emotion": "confident",
+    "outcome": "success",
+    "outcome_detail": "lighthouse 허브 전략을 명시적 DB 플래그 방식으로 확정하고 실행 문서화 완료",
+    "relationship_type": "handoff",
+    "milestone_key": "lighthouse_is_hub_strategy_defined",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-25 | lighthouse 허브는 자동 부상 방식이 아닌 명시적 지정으로 관리",
+      "2026-02-25 | memory_nodes.is_hub 컬럼 추가 방안(옵션 1) 채택",
+      "2026-02-25 | 구현 프롬프트를 projects/lighthouse/hub-node-prompt.md에 저장",
+      "2026-02-25 | tasks/projects.md에 mirror-mind 완료 및 lighthouse 위임 항목 반영"
+    ],
+    "created_at": "2026-02-25T11:10:00Z"
   }
 ]

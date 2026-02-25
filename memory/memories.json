@@ -705,5 +705,44 @@
     "kind": "experience",
     "confidence": 0.94,
     "created_at": "2026-02-25"
+  },
+  {
+    "id": "exp-019",
+    "agent": "broccoli",
+    "memory": "나는 mirror-mind 기억 네트워크에 정체성 허브 주입을 실전 적용했다. 12개 허브 노드를 추가하고 허브만 높은 연결수(degree 100)를 갖게 만들어, 정체성 질의에서는 직접 활성화되고 일반 질의에서는 맥락 보강 경로로 작동함을 검증했다.",
+    "context": "세션에서 inject_hub.py를 작성·실행해 네트워크를 954→966 노드, 8252→9455 엣지로 확장하고 3개 검증 쿼리로 동작을 확인했다.",
+    "fact_refs": [],
+    "source": {
+      "session": "2026-02-25-세션26"
+    },
+    "kind": "experience",
+    "confidence": 0.96,
+    "created_at": "2026-02-25"
+  },
+  {
+    "id": "ins-015",
+    "agent": "broccoli",
+    "memory": "균일한 knn_k 구조에서는 토폴로지 허브가 원천적으로 생기기 어렵다. 정체성을 네트워크 전역에서 작동시키려면 단일 슈퍼노드보다 '허브 노드 집합'을 두고, 허브에만 높은 k를 적용하는 비균일 연결 전략이 필요하다.",
+    "context": "초기에는 seed 범주 주입으로 접근했지만, 강재영의 교정으로 문제를 토폴로지 관점으로 재정의했다.",
+    "fact_refs": [],
+    "source": {
+      "session": "2026-02-25-세션26"
+    },
+    "kind": "insight",
+    "confidence": 0.93,
+    "created_at": "2026-02-25"
+  },
+  {
+    "id": "und-008",
+    "agent": "broccoli",
+    "memory": "강재영은 허브 형성을 자연 발생에 맡기기보다 명시적으로 통제 가능한 구조를 선호한다. 엉뚱한 노드가 허브가 될 가능성이 보이면 스키마를 바꿔서라도 지정형 메커니즘(is_hub)을 선택한다.",
+    "context": "lighthouse 점검에서 '신규 노드 누적 시 자연 허브 성장' 제안을 검토한 뒤, 허브 오염 가능성을 이유로 DB 플래그 방식(1번)을 확정했다.",
+    "fact_refs": [],
+    "source": {
+      "session": "2026-02-25-세션26"
+    },
+    "kind": "understanding",
+    "confidence": 0.94,
+    "created_at": "2026-02-25"
   }
 ]
