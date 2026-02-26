@@ -17,10 +17,6 @@
    - 주제 전환 시에도 새 주제로 기억을 활성화한다
 5. 메타에이전트를 백그라운드로 실행한다: `python meta-agent/scripts/check.py --watch --interval 300`
 6. 사용자에게 현재 상태를 요약하고 다음 작업을 제안한다 (메타에이전트 초기 리포트 + 기억 요약 포함)
-7. 10분마다 리프레시한다:
-   - 주요 문서 재읽기: `mirror-mind-principle.md`, `task-management-principle.md`, `tasks/projects.md`
-   - 업무 진행상황 점검: 현재 작업의 진척도를 확인하고 `tasks/projects.md`에 반영
-   - 사용자에게 진행 상황을 간단히 공유
 
 ---
 
