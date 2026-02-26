@@ -1894,5 +1894,90 @@
       "2026-02-25 | tasks/projects.md에 mirror-mind 완료 및 lighthouse 위임 항목 반영"
     ],
     "created_at": "2026-02-25T11:10:00Z"
+  },
+  {
+    "id": "s27-01",
+    "session": "2026-02-26-세션27",
+    "episode_index": 1,
+    "activity_type": "verification",
+    "project": "lighthouse",
+    "topic": "허브 노드 구현 상태 재검증 및 실제 완료 판정",
+    "summary": "세션 시작 후 lighthouse 허브 노드 작업을 재점검한 결과, 마이그레이션/도메인 타입/repository/network/seed/rebuild 단계가 이미 구현 완료되어 있음을 확인했다. 사용자 확인 요청에 맞춰 남은 검증 항목을 3번(degree 비교)으로 좁혀 후속 검증으로 전환했다.",
+    "emotion": "surprised",
+    "outcome": "success",
+    "outcome_detail": "허브 노드 구현이 이미 코드 레벨에서 완료된 상태임을 확정",
+    "relationship_type": "alignment",
+    "milestone_key": "lighthouse_hub_implementation_verified",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-26 | hub-node-prompt 기준 6단계 구현이 이미 존재한다고 판정",
+      "2026-02-26 | 남은 완료 기준은 degree 우위 검증(3번)으로 한정"
+    ],
+    "created_at": "2026-02-26T08:15:00Z"
+  },
+  {
+    "id": "s27-02",
+    "session": "2026-02-26-세션27",
+    "episode_index": 2,
+    "activity_type": "validation",
+    "project": "lighthouse",
+    "topic": "허브 노드 degree 우위 검증 및 작업 완료 처리",
+    "summary": "사용자 요청으로 허브/일반 노드 degree를 직접 비교해 허브 14개 평균 약 35.5, 일반 34개 평균 약 22(약 1.6배) 결과를 확인했다. 설계 의도(규모 증가 시 차이 확대)와 함께 완료 기준 충족을 보고했고 tasks/projects.md 완료 체크를 반영했다.",
+    "emotion": "confident",
+    "outcome": "success",
+    "outcome_detail": "허브 노드 완료 기준 3개 모두 충족으로 lighthouse 허브 작업 종료",
+    "relationship_type": "handoff",
+    "milestone_key": "lighthouse_hub_degree_criteria_passed",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-26 | 허브 degree가 일반 노드 대비 우위(약 1.6배)임을 확인",
+      "2026-02-26 | lighthouse 허브 노드 작업을 완료 상태로 처리",
+      "2026-02-26 | tasks/projects.md에 완료 체크 반영"
+    ],
+    "created_at": "2026-02-26T08:40:00Z"
+  },
+  {
+    "id": "s27-03",
+    "session": "2026-02-26-세션27",
+    "episode_index": 3,
+    "activity_type": "planning",
+    "project": "mirror-mind",
+    "topic": "라이브 시연 시나리오(시나리오1 중심)와 구현 위임 프롬프트 분리",
+    "summary": "사용자가 응답 속도와 시연 구성을 함께 추진하기로 하면서, 시나리오1(첫 만남+재방문)을 중심으로 경험 설계를 구체화했다. 사용자 피드백에 따라 재방문 톤(빠른 재방문 이유 질문), 첫 만남 자기설명, AI scientist 사전 시드 지식(방법 A) 방향을 확정했고 관련 프롬프트를 분리 작성했다.",
+    "emotion": "focused",
+    "outcome": "success",
+    "outcome_detail": "속도 개선 전달 완료 + 재방문/첫만남/AI scientist 시드용 개별 프롬프트 3종 준비",
+    "relationship_type": "collaboration",
+    "milestone_key": "demo_flow_prompts_prepared",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-26 | 시연은 시나리오1 중심으로 1막도 라이브 진행",
+      "2026-02-26 | 재방문은 비서형 브리핑 대신 자연스러운 동료 톤으로 설계",
+      "2026-02-26 | AI scientist 사전 경험은 시드 노드 주입 방식(A) 채택",
+      "2026-02-26 | revisit-flow/first-visit-explanation/ai-scientist-seed 프롬프트를 각각 분리 작성"
+    ],
+    "created_at": "2026-02-26T10:05:00Z"
+  },
+  {
+    "id": "s27-04",
+    "session": "2026-02-26-세션27",
+    "episode_index": 4,
+    "activity_type": "ux-design",
+    "project": "lighthouse",
+    "topic": "도구 선택·전환 UX 개선 과제 정의 및 우선순위 등록",
+    "summary": "사용자가 '핵심 논문 찾아보기' 경험의 자동 연쇄 문제를 지적함에 따라, 검색→분석→문서 생성의 무중단 자동 흐름을 단계 선택형 상호작용으로 전환하는 구현 프롬프트를 즉시 제시했다. 이후 사용자 합의로 해당 영역을 '중요 할일'로 등록해 지속 개선 트랙으로 올렸다.",
+    "emotion": "determined",
+    "outcome": "success",
+    "outcome_detail": "도구 흐름 개선안 제시 및 '에이전트 행동 UX 고도화'를 핵심 과제로 등록",
+    "relationship_type": "alignment",
+    "milestone_key": "agent_toolflow_ux_priority_registered",
+    "scope": "permanent",
+    "decision_refs": [
+      "2026-02-26 | analyze_papers 자율 실행 축소(L5→L3) 방향 합의",
+      "2026-02-26 | search 이후 자동 analyze 연쇄 금지 및 사용자 선택 단계 도입",
+      "2026-02-26 | 문서 생성 안내 의무화와 분석 후 대화 연결 규칙 추가",
+      "2026-02-26 | '에이전트 행동 UX 고도화'를 중요한 할일로 등록"
+    ],
+    "created_at": "2026-02-26T11:20:00Z"
   }
 ]
