@@ -8391,5 +8391,579 @@
     "session": "2026-02-26-세션28",
     "context_hint": "교훈: 사실 검증 필수",
     "id": "n1198"
+  },
+  {
+    "content": "나는 세션 시작 절차를 수행해 원칙·업무 현황을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "세션 시작",
+    "id": "n1199"
+  },
+  {
+    "content": "나는 기억 활성화와 메타에이전트 실행을 세션 시작 단계에서 진행했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "세션 시작",
+    "id": "n1200"
+  },
+  {
+    "content": "나는 Lighthouse의 후속 공유 준비를 현재 핵심 과제로 인식했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "후속 공유",
+    "id": "n1201"
+  },
+  {
+    "content": "나는 1차 팀 공유 실패 원인이 속도 병목이었다고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "후속 공유",
+    "id": "n1202"
+  },
+  {
+    "content": "나는 후속 공유의 1순위 목표를 실제 동작 증명으로 판단했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "후속 공유",
+    "id": "n1203"
+  },
+  {
+    "content": "나는 후속 공유의 핵심 프레이밍을 기술 데모가 아닌 경험 시연으로 설정했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "시연 전략",
+    "id": "n1204"
+  },
+  {
+    "content": "나는 Lighthouse 핵심이 메모리 기반 동료 UX와 리서치 시나리오 고도화라는 사용자 의견을 수용했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "UX 방향",
+    "id": "n1205"
+  },
+  {
+    "content": "나는 후속 공유 형식이 라이브 시연이라는 점을 재확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "시연 형식",
+    "id": "n1206"
+  },
+  {
+    "content": "나는 세션 27 원문 확인 필요성을 느껴 raw 기록 확인을 시도했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 검증",
+    "id": "n1207"
+  },
+  {
+    "content": "나는 initially 세션 27 raw를 찾지 못해 기억 네트워크 기반으로만 시나리오를 복원했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 검증",
+    "id": "n1208"
+  },
+  {
+    "content": "나는 사용자 안내 후 tasks/conversations/raw 경로에서 세션 27 구체 시나리오를 복원했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "시나리오 복원",
+    "id": "n1209"
+  },
+  {
+    "content": "나는 시연 1막을 첫 만남 5분 흐름으로 구조화했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "시연 구성",
+    "id": "n1210"
+  },
+  {
+    "content": "나는 시연 2막을 재방문 기반 기억 연속성 시연으로 구조화했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "시연 구성",
+    "id": "n1211"
+  },
+  {
+    "content": "나는 2막 핵심 메시지를 일반 AI의 리셋 대비로 정의했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "시연 메시지",
+    "id": "n1212"
+  },
+  {
+    "content": "나는 주제 전환 요청에 따라 후속 공유 준비의 중간 상태를 기록하고 Moonlight 업무로 전환했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "주제 전환",
+    "id": "n1213"
+  },
+  {
+    "content": "나는 Moonlight 대학 이벤트 맥락을 신규 업무로 인식했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "문라이트",
+    "id": "n1214"
+  },
+  {
+    "content": "나는 Moonlight 대학 이벤트 업무 범위가 기획·운영·개발·마케팅 전체라는 정보를 받았다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "문라이트",
+    "id": "n1215"
+  },
+  {
+    "content": "나는 이벤트 현황 수치와 채널별 홍보 성과를 문서화했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "문라이트 문서화",
+    "id": "n1216"
+  },
+  {
+    "content": "나는 projects/moonlight/university-event.md와 tasks/projects.md에 내용을 저장했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "문서 업데이트",
+    "id": "n1217"
+  },
+  {
+    "content": "나는 퍼널 병목 확인이 우선이라는 의견을 제시했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "문라이트 전략",
+    "id": "n1218"
+  },
+  {
+    "content": "나는 사용자 피드백을 반영해 소셜 채널을 즉시 포기하지 않는 방향으로 판단을 수정했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "문라이트 전략 수정",
+    "id": "n1219"
+  },
+  {
+    "content": "나는 참여자 컨택이 핵심 업무라는 사용자 우선순위를 수용했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "문라이트 우선순위",
+    "id": "n1220"
+  },
+  {
+    "content": "나는 논의된 수정 의견도 문서에 반영했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "문서 업데이트",
+    "id": "n1221"
+  },
+  {
+    "content": "나는 요청에 따라 후속 공유 준비 주제로 다시 복귀했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "주제 복귀",
+    "id": "n1222"
+  },
+  {
+    "content": "나는 시연 프롬프트 4건이 정상 동작 확인 상태라는 점을 복귀 체크포인트로 정리했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "후속 공유",
+    "id": "n1223"
+  },
+  {
+    "content": "나는 초기 대화-새 세션 흐름 문서의 핵심 결함을 케이스 4와 5로 진단했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 시스템 설계",
+    "id": "n1224"
+  },
+  {
+    "content": "나는 케이스 4 원인을 메시지 기반 활성화 실패로 판단했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 활성화",
+    "id": "n1225"
+  },
+  {
+    "content": "나는 케이스 5 원인을 노드 추출 지연으로 인한 첫 방문 오판으로 판단했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 활성화",
+    "id": "n1226"
+  },
+  {
+    "content": "나는 재방문 시 REVISIT_SECTION을 hasMemory와 분리해 항상 주입하는 해결안을 제시했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "프롬프트 개선",
+    "id": "n1227"
+  },
+  {
+    "content": "나는 isFirstVisit 판단 기준을 experienceNodes 존재가 아닌 conversations 수로 바꾸는 해결안을 제시했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "판단 로직",
+    "id": "n1228"
+  },
+  {
+    "content": "나는 다음 단계로 도구 사용 구조 고도화를 이어서 추진하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "도구 구조",
+    "id": "n1229"
+  },
+  {
+    "content": "나는 매 턴 기억 네트워크 업데이트 제안을 케이스 5 근본 해결 방향으로 평가했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 업데이트",
+    "id": "n1230"
+  },
+  {
+    "content": "나는 대화 종료·스위칭 조건을 명시적으로 정의해야 한다고 합의했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "종료 조건",
+    "id": "n1231"
+  },
+  {
+    "content": "나는 v3 기억 시스템이 fact와 intention 두 타입 중심이라는 점을 재확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 모델",
+    "id": "n1232"
+  },
+  {
+    "content": "나는 fact와 intention은 발화 시점 기반이라 턴 단위 추출과 궁합이 맞다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 모델",
+    "id": "n1233"
+  },
+  {
+    "content": "나는 매 턴 비동기 노드 추출과 중복 유사도 처리 방향을 유효한 구현안으로 정리했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "실시간 추출",
+    "id": "n1234"
+  },
+  {
+    "content": "나는 초기/재방문 시나리오 시뮬레이션에서 케이스 5는 해결되고 케이스 4는 미해결임을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "시뮬레이션",
+    "id": "n1235"
+  },
+  {
+    "content": "나는 메시지 기반 활성화만으로는 짧은 인사에서 재방문 맥락을 복원하기 어렵다고 결론냈다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "활성화 한계",
+    "id": "n1236"
+  },
+  {
+    "content": "나는 재방문 시 user_id 기반 사용자 기억 로드를 추가하면 케이스 4가 해결된다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "사용자 기억",
+    "id": "n1237"
+  },
+  {
+    "content": "나는 기억 활성화 경로를 메시지 기반과 사용자 기반의 이중 경로로 설계하는 방향을 제안했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 아키텍처",
+    "id": "n1238"
+  },
+  {
+    "content": "나는 사용자 기억형성 탐구를 위해 심리학·AI 메모리 패턴 리서치를 수행했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "리서치",
+    "id": "n1239"
+  },
+  {
+    "content": "나는 fact/intention 체계에 사용자 특성 표상을 추가하는 확장 가능성을 제기했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 확장",
+    "id": "n1240"
+  },
+  {
+    "content": "나는 세션 시작 절차에 따라 원칙 문서와 업무 현황을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "세션 시작",
+    "id": "n1241"
+  },
+  {
+    "content": "나는 기억 활성화와 메타에이전트 실행까지 완료한 상태를 보고했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "세션 시작",
+    "id": "n1242"
+  },
+  {
+    "content": "나는 Lighthouse 후속 공유 준비를 현재 핵심 과제로 인식했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "후속 공유",
+    "id": "n1243"
+  },
+  {
+    "content": "나는 1차 팀 공유 실패 원인이 속도 병목이었다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "후속 공유",
+    "id": "n1244"
+  },
+  {
+    "content": "나는 후속 공유의 1순위 메시지를 실제 동작 증명으로 잡아야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "후속 공유 메시지",
+    "id": "n1245"
+  },
+  {
+    "content": "나는 응답 속도 개선을 후속 공유의 핵심 검증 포인트로 보았다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "속도 개선",
+    "id": "n1246"
+  },
+  {
+    "content": "나는 시연 프롬프트 4건이 준비되었지만 실동작 확인 여부가 중요하다고 봤다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "시연 준비",
+    "id": "n1247"
+  },
+  {
+    "content": "나는 사용자가 시연 프롬프트 4건이 정상 동작한다고 확인해줬음을 반영했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "시연 검증",
+    "id": "n1248"
+  },
+  {
+    "content": "나는 Lighthouse 핵심을 기술 데모가 아닌 UX 경험 시연으로 재프레이밍했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "UX 프레이밍",
+    "id": "n1249"
+  },
+  {
+    "content": "나는 메모리 기반 동료 경험과 리서치 시나리오 경험 고도화를 공유 중심축으로 잡았다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "공유 전략",
+    "id": "n1250"
+  },
+  {
+    "content": "나는 라이브 시연 형식을 전제로 시연 설계를 이어갔다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "공유 형식",
+    "id": "n1251"
+  },
+  {
+    "content": "나는 세션 27의 구체 시나리오 기억이 불확실해 원문 확인이 필요하다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 검증",
+    "id": "n1252"
+  },
+  {
+    "content": "나는 raw 경로를 확인한 뒤 세션 27 시연 시나리오를 복원했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "시나리오 복원",
+    "id": "n1253"
+  },
+  {
+    "content": "나는 1막을 첫 만남 기반의 맥락 파악과 구조화 시연으로 정의했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "1막 설계",
+    "id": "n1254"
+  },
+  {
+    "content": "나는 2막을 재방문 기반의 기억 연계와 deeper search 시연으로 정의했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "2막 설계",
+    "id": "n1255"
+  },
+  {
+    "content": "나는 재방문에서 사용자 맥락을 먼저 과시하지 않는 동료형 행동 원칙을 유지했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "행동 UX",
+    "id": "n1256"
+  },
+  {
+    "content": "나는 주제 전환 요청을 받아 후속 공유 준비 상태를 체크포인트로 기록하고 전환했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "주제 전환",
+    "id": "n1257"
+  },
+  {
+    "content": "나는 문라이트 대학 이벤트를 새로운 업무로 인식했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "문라이트 전환",
+    "id": "n1258"
+  },
+  {
+    "content": "나는 문라이트 이벤트 범위를 기획·운영·개발·마케팅 전영역으로 파악했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "업무 범위",
+    "id": "n1259"
+  },
+  {
+    "content": "나는 사용자가 제공한 수치와 인사이트, 할 일을 문서로 정리해 저장했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "문서화",
+    "id": "n1260"
+  },
+  {
+    "content": "나는 moonlight 이벤트 현황과 실행 과제를 projects와 tasks 문서에 반영했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "프로젝트 기록",
+    "id": "n1261"
+  },
+  {
+    "content": "나는 퍼널 이탈 분석이 우선이라는 의견을 제시했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "의견 제시",
+    "id": "n1262"
+  },
+  {
+    "content": "나는 사용자 피드백을 받고 소셜 채널 판단을 성급했다고 수정했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "판단 수정",
+    "id": "n1263"
+  },
+  {
+    "content": "나는 논의된 보정 내용까지 문서에 추가 반영했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "문서 업데이트",
+    "id": "n1264"
+  },
+  {
+    "content": "나는 다시 후속 공유 준비 주제로 복귀했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "주제 복귀",
+    "id": "n1265"
+  },
+  {
+    "content": "나는 초기 대화에서 새 세션 생성 흐름 문서의 핵심 구멍을 케이스 4와 5로 진단했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 흐름 이슈",
+    "id": "n1266"
+  },
+  {
+    "content": "나는 케이스 4 원인을 재방문 지시 주입 조건이 hasMemory에 종속된 구조로 봤다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "케이스 4 원인",
+    "id": "n1267"
+  },
+  {
+    "content": "나는 케이스 5 원인을 노드 추출 지연에 의존한 첫 방문 판정 구조로 봤다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "케이스 5 원인",
+    "id": "n1268"
+  },
+  {
+    "content": "나는 재방문이면 REVISIT_SECTION을 항상 주입하는 방향을 제안했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "해결 방향",
+    "id": "n1269"
+  },
+  {
+    "content": "나는 isFirstVisit 판단을 experienceNodes 대신 conversation 존재 기준으로 바꾸자고 제안했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "판정 기준",
+    "id": "n1270"
+  },
+  {
+    "content": "나는 다음 고도화 축이 도구 사용 구조라는 사용자 우선순위를 수용했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "다음 과제",
+    "id": "n1271"
+  },
+  {
+    "content": "나는 매 턴 기억 네트워크 업데이트 아이디어가 케이스 5를 근본 완화한다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "실시간 기억",
+    "id": "n1272"
+  },
+  {
+    "content": "나는 매 턴 추출 시 응답 지연을 줄이기 위해 비동기 fire-and-forget 운영을 전제로 봤다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "운영 방식",
+    "id": "n1273"
+  },
+  {
+    "content": "나는 Lighthouse의 대화 종료·스위칭 트리거를 명시적으로 정리할 필요가 있다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "종료 조건",
+    "id": "n1274"
+  },
+  {
+    "content": "나는 v3 기억 시스템이 fact와 intention 중심이라는 구조를 재확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 모델",
+    "id": "n1275"
+  },
+  {
+    "content": "나는 fact와 intention은 발화 시점 추출이 가능하므로 턴 단위 추출이 타당하다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "추출 단위",
+    "id": "n1276"
+  },
+  {
+    "content": "나는 초기/재방문 시뮬레이션에서 매 턴 추출만으로는 케이스 4가 남는다고 결론냈다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "시뮬레이션 결과",
+    "id": "n1277"
+  },
+  {
+    "content": "나는 재방문 안정화를 위해 메시지 기반 활성화 외에 user_id 기반 기억 로드 경로를 제안했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "활성화 이중화",
+    "id": "n1278"
+  },
+  {
+    "content": "나는 사용자에 대한 기억 형성 탐구를 위해 심리학과 AI 메모리 설계 관점을 조사했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션29",
+    "context_hint": "리서치",
+    "id": "n1279"
+  },
+  {
+    "content": "나는 코르카 v3에 fact/intention에서 승격되는 사용자 특성 표상 계층이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션29",
+    "context_hint": "기억 확장 설계",
+    "id": "n1280"
   }
 ]
