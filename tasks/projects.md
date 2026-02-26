@@ -188,13 +188,13 @@
   - [ ] 아카이브 정책 — scope lifecycle 운영
 
 ## [>] 메타에이전트 — 원칙 준수 감시
-- 목표: 대화 중 mirror-mind-principle.md, task-management-principle.md 등의 원칙이 지켜지고 있는지 상시 점검
+- 목표: 대화 중 원칙이 지켜지고 있는지 상시 점검
 - 도메인: 운영
 - 하위 업무:
   - [x] 프로토타입 구현 (세션 중 JSONL 실시간 읽기 + 원칙 위반 감지)
-  - [x] 세션 시작 절차에 통합 (AGENTS.md, 5분 간격)
+  - [x] 세션 시작 절차에 통합 (5분 간격)
   - [x] codex exec 기반 LLM 점검 추가 (순응/목적/선제성/역할 경계, --llm 플래그)
-  - [ ] memory_policy 점검 규칙을 새 기억 시스템(memories.json)에 맞게 업데이트
+  - [ ] memory_policy 점검 규칙을 v3 네트워크에 맞게 업데이트
   - [ ] 실전 운영 후 점검 항목 개선
 
 ## [>] 문라이트 대학 이벤트 — 새학기 응원 챌린지
@@ -219,3 +219,14 @@
   - [x] activate.py 실전화 — memory/scripts/activate.py, memory/network/ 데이터 배치
   - [x] AGENTS.md 절차 통합 — 대화 중/주제 전환 시 activate.py 호출 추가
   - [x] 주입 품질 검증 — 3개 쿼리 테스트 완료 (lighthouse 속도, 원칙 회고, 기억 주입 자동화)
+
+## [x] 1주차 회고 + 문서 정리 (세션 31)
+- 도메인: 운영
+- 회고 기록: `tasks/retrospectives/2026-02-27-week1.md`
+- 하위 업무:
+  - [x] 회고 방법론 수립 (4단계: 사건 나열 → 선별 → 이유 공유 → 교훈·액션)
+  - [x] 교훈 5건 원칙 문서 반영 (operations.md, agentic-engineering-principles.md)
+  - [x] 원칙 문서 통합 — 5개 → 3개 (agentic-engineering-principles.md, operations.md) + AGENTS.md 네비게이션화
+  - [x] 구 시스템 잔재 삭제 — memories.json, episodes.json, query.py, 프롬프트 문서 10개
+  - [x] 폴더 구조 정리 — 스크립트 scripts/ 통합, 빈 폴더 삭제
+  - [x] activate.py graph.json 포맷 버그 수정

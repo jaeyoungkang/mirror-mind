@@ -9287,5 +9287,614 @@
     "session": "2026-02-26-세션30",
     "context_hint": "세션 교훈",
     "id": "n1326"
+  },
+  {
+    "content": "세션 시작 절차를 수행했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "세션 운영",
+    "id": "n1327"
+  },
+  {
+    "content": "원칙과 업무 상태를 먼저 파악했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "세션 운영",
+    "id": "n1328"
+  },
+  {
+    "content": "세션 시작 시 기억 활성화와 메타에이전트 실행이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "시작 루틴",
+    "id": "n1329"
+  },
+  {
+    "content": "기억 활성화 스크립트 오류의 원인이 graph.json 포맷 불일치라고 발견했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "기억 시스템",
+    "id": "n1330"
+  },
+  {
+    "content": "스크립트가 data[\"edges\"]를 기대하지만 실제 graph.json은 배열 루트라는 사실을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "버그 원인",
+    "id": "n1331"
+  },
+  {
+    "content": "포맷 불일치를 수정해 기억 활성화를 복구했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "버그 수정",
+    "id": "n1332"
+  },
+  {
+    "content": "메타에이전트를 시작 절차에 포함해 실행했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "메타에이전트",
+    "id": "n1333"
+  },
+  {
+    "content": "메타에이전트 점검 결과 memory_policy 관련 info 3건 외 실질 위반이 없음을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "정합성 점검",
+    "id": "n1334"
+  },
+  {
+    "content": "Lighthouse 결과물 품질 차별화가 현재 가장 임팩트 큰 미해결 과제라고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "우선순위",
+    "id": "n1335"
+  },
+  {
+    "content": "백그라운드 메타에이전트 명령이 정상 종료됐음을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "운영 상태",
+    "id": "n1336"
+  },
+  {
+    "content": "주간 회고를 위해 세션 기록과 커밋 히스토리를 기반으로 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고",
+    "id": "n1337"
+  },
+  {
+    "content": "이번 주가 mirror-mind와 lighthouse의 사실상 첫 주라고 평가했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 판단",
+    "id": "n1338"
+  },
+  {
+    "content": "회고 방법론을 주요 사건 나열→중요도 선별→이유 공유→교훈/액션으로 진행하기로 합의했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 프로세스",
+    "id": "n1339"
+  },
+  {
+    "content": "사건 선별에서 mirror-mind 시작, Living Notebook 전환, 기억 v3 완주, 결과물 차별화 방향을 핵심으로 골랐다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 선별",
+    "id": "n1340"
+  },
+  {
+    "content": "사용자 관점의 핵심 패턴이 집중력 유지와 Co-actor 화두로 수렴한다고 해석했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 해석",
+    "id": "n1341"
+  },
+  {
+    "content": "회고 교훈을 액션 아이템으로 전환해 운영에 반영하려고 했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "실행 전환",
+    "id": "n1342"
+  },
+  {
+    "content": "교훈 6번은 제외하고 1~5만 적용하라는 사용자 결정을 반영했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "의사결정 반영",
+    "id": "n1343"
+  },
+  {
+    "content": "교훈 반영 대상으로 task-management-principle.md와 ai-service-design-principles.md를 지정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 반영",
+    "id": "n1344"
+  },
+  {
+    "content": "문서 구조 검토에서 구 기억 시스템 잔재 파일을 삭제 대상으로 식별했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 정리",
+    "id": "n1345"
+  },
+  {
+    "content": "memories.json, episodes.json, query.py를 삭제 대상으로 확정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "정리 실행",
+    "id": "n1346"
+  },
+  {
+    "content": "ai-scientist seed 관련 2개 문서를 하나로 통합해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 통합",
+    "id": "n1347"
+  },
+  {
+    "content": "사용자 지시에 따라 구 기억 시스템 파일 3개와 seed 구버전 프롬프트를 삭제 완료했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "정리 완료",
+    "id": "n1348"
+  },
+  {
+    "content": "문서 재구성 방향으로 A안 3층 구조를 추천했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "정보구조 설계",
+    "id": "n1349"
+  },
+  {
+    "content": "사용자 결정에 따라 A안을 채택하고 AGENTS.md를 네비게이션 전용으로 두기로 했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "구조 개편",
+    "id": "n1350"
+  },
+  {
+    "content": "프롬프트 문서들을 우선 삭제하라는 요청을 받아 선행 처리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "정리 우선순위",
+    "id": "n1351"
+  },
+  {
+    "content": "프롬프트 문서 10개 삭제를 완료했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "프롬프트 정리",
+    "id": "n1352"
+  },
+  {
+    "content": "최종 문서 체계를 mirror-mind-principle, agentic-engineering-principles, operations, AGENTS 네 축으로 재편했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 아키텍처",
+    "id": "n1353"
+  },
+  {
+    "content": "통합 과정에서 기억 시스템 설계 원칙이 누락됐다는 문제를 인정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "누락 발견",
+    "id": "n1354"
+  },
+  {
+    "content": "agentic-engineering-principles.md에 기억 시스템 설계 섹션을 추가했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "원칙 보완",
+    "id": "n1355"
+  },
+  {
+    "content": "operations 시작 절차에 읽어야 할 문서 단계를 추가했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "절차 보완",
+    "id": "n1356"
+  },
+  {
+    "content": "프로젝트별 문서가 아니라 agentic-engineering-principles.md를 우선 읽도록 절차를 수정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "지시 반영",
+    "id": "n1357"
+  },
+  {
+    "content": "폴더 구조 문제로 빈 agentic-engineering 폴더와 스크립트 분산 상태를 식별했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "구조 진단",
+    "id": "n1358"
+  },
+  {
+    "content": "모든 실행 스크립트를 scripts/로 통합하는 재배치를 제안했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "구조 개선",
+    "id": "n1359"
+  },
+  {
+    "content": "사용자 승인 후 폴더 구조 조정을 실행했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "구조 변경",
+    "id": "n1360"
+  },
+  {
+    "content": "스크립트 이동 후 문서 참조 경로를 함께 갱신해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "변경 영향",
+    "id": "n1361"
+  },
+  {
+    "content": "activate.py와 inject_hub.py의 network 경로를 memory/network 기준으로 수정 필요하다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "경로 수정",
+    "id": "n1362"
+  },
+  {
+    "content": "check.py의 상위 경로 계산을 새 위치 기준으로 조정해야 함을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "경로 수정",
+    "id": "n1363"
+  },
+  {
+    "content": "경로 수정 후 스크립트 동작을 점검해 정상 작동을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "검증",
+    "id": "n1364"
+  },
+  {
+    "content": "오늘 회고를 기록으로 남겨야 한다는 요구를 수용했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "기록 관리",
+    "id": "n1365"
+  },
+  {
+    "content": "회고 방법론은 operations.md에, 회고 결과는 tasks/retrospectives에 분리 기록했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 기록",
+    "id": "n1366"
+  },
+  {
+    "content": "교훈은 항상 원칙 문서가 아니라 상황에 맞는 문서에 반영해야 한다는 운영 원칙을 수용했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "반영 정책",
+    "id": "n1367"
+  },
+  {
+    "content": "작업 종료 요청에 따라 종료 절차를 시작했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "세션 종료",
+    "id": "n1368"
+  },
+  {
+    "content": "종료 점검에서 메타에이전트 실질 위반이 없음을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "종료 점검",
+    "id": "n1369"
+  },
+  {
+    "content": "종료 단계에서 close-session.py 경로를 우선 확인해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "종료 안정성",
+    "id": "n1370"
+  },
+  {
+    "content": "세션 시작 절차를 수행했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "세션 운영",
+    "id": "n1371"
+  },
+  {
+    "content": "원칙과 업무 상태를 먼저 파악한 뒤 기억 활성화와 메타에이전트를 실행했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "세션 운영",
+    "id": "n1372"
+  },
+  {
+    "content": "기억 활성화 스크립트 오류의 원인이 graph.json 포맷 불일치라고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "기억 시스템",
+    "id": "n1373"
+  },
+  {
+    "content": "graph.json 실제 구조가 객체의 edges 필드가 아니라 최상위 배열임을 발견했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "기억 시스템",
+    "id": "n1374"
+  },
+  {
+    "content": "스크립트가 data[\"edges\"]를 기대하던 로직을 실제 데이터 구조에 맞게 수정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "기억 시스템",
+    "id": "n1375"
+  },
+  {
+    "content": "세션 시작 완료 시 메타에이전트 info 3건 외 실질 위반이 없음을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "메타에이전트",
+    "id": "n1376"
+  },
+  {
+    "content": "Lighthouse 결과물 품질 차별화가 가장 임팩트 큰 미해결 과제라고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "우선순위 판단",
+    "id": "n1377"
+  },
+  {
+    "content": "백그라운드 메타에이전트 점검 작업이 정상 종료됐음을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "메타에이전트",
+    "id": "n1378"
+  },
+  {
+    "content": "이번 주 회고를 위해 세션 기록과 커밋 히스토리를 함께 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 준비",
+    "id": "n1379"
+  },
+  {
+    "content": "2/22~2/27 기간이 mirror-mind와 lighthouse의 사실상 첫 주였다고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "주간 회고",
+    "id": "n1380"
+  },
+  {
+    "content": "회고 방법론으로 주요 사건 나열부터 시작하는 흐름을 채택했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 방법론",
+    "id": "n1381"
+  },
+  {
+    "content": "시간순 주요 사건 A~L 목록을 작성해 회고의 공통 기반을 만들었다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 방법론",
+    "id": "n1382"
+  },
+  {
+    "content": "내가 중요하다고 본 사건으로 A, C, F, L을 선별했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 선별",
+    "id": "n1383"
+  },
+  {
+    "content": "결과물 차별화 방향은 의미 있었지만 실행이 미착수 상태라고 평가했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 평가",
+    "id": "n1384"
+  },
+  {
+    "content": "사용자 피드백을 듣고 이번 주 핵심 패턴이 집중력 유지와 Co-actor 화두로 수렴한다고 해석했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 해석",
+    "id": "n1385"
+  },
+  {
+    "content": "교훈을 액션 아이템으로 전환하는 4단계 회고 구조를 유지했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 방법론",
+    "id": "n1386"
+  },
+  {
+    "content": "교훈 6은 제외하고 1~5만 반영하라는 사용자 결정을 수용했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 반영",
+    "id": "n1387"
+  },
+  {
+    "content": "교훈 1,2,5를 task-management-principle.md에 반영하겠다고 제안했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 반영",
+    "id": "n1388"
+  },
+  {
+    "content": "교훈 3,4를 ai-service-design-principles.md에 반영하겠다고 제안했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 반영",
+    "id": "n1389"
+  },
+  {
+    "content": "원칙 문서 검토 결과 구 기억 시스템 잔재 파일 3개를 삭제 대상으로 분류했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 정리",
+    "id": "n1390"
+  },
+  {
+    "content": "ai-scientist seed 관련 문서 2개는 하나로 통합하는 것이 맞다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 정리",
+    "id": "n1391"
+  },
+  {
+    "content": "lighthouse 구현 프롬프트를 별도 분리하거나 제거해 설계 문서 가독성을 높여야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 구조",
+    "id": "n1392"
+  },
+  {
+    "content": "문서 중복 문제의 근본 원인을 설계·운영·철학 경계의 모호성으로 진단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "정보 구조",
+    "id": "n1393"
+  },
+  {
+    "content": "재구성안으로 3층 구조 A안을 제시했고 이를 더 적합하다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 재구성",
+    "id": "n1394"
+  },
+  {
+    "content": "사용자 요청에 따라 memories.json, episodes.json, query.py를 삭제했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "파일 정리",
+    "id": "n1395"
+  },
+  {
+    "content": "fix 버전이 최종본이라는 판단으로 ai-scientist-seed-nodes-prompt.md를 삭제했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "파일 정리",
+    "id": "n1396"
+  },
+  {
+    "content": "A안을 채택하되 AGENTS.md는 네비게이션 전용으로 두는 방향을 확정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 재구성",
+    "id": "n1397"
+  },
+  {
+    "content": "프롬프트 문서 10개를 우선 삭제하라는 요청을 실행했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "파일 정리",
+    "id": "n1398"
+  },
+  {
+    "content": "최종 문서 체계를 철학 1개, 통합 문서 2개, 네비게이션 1개로 재편했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 구조",
+    "id": "n1399"
+  },
+  {
+    "content": "기억 시스템 설계 원칙이 누락됐다는 지적을 받아 설계 문서에 보강했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "누락 수정",
+    "id": "n1400"
+  },
+  {
+    "content": "operations 시작 절차에 제품 개발 전 읽을 문서를 명시해야 한다고 반영했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "운영 절차",
+    "id": "n1401"
+  },
+  {
+    "content": "프로젝트별 설계 문서가 아니라 agentic-engineering-principles.md를 읽도록 절차를 수정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "운영 절차",
+    "id": "n1402"
+  },
+  {
+    "content": "폴더 구조 정리를 위해 빈 agentic-engineering 디렉터리와 분산 스크립트 구조를 문제로 식별했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "리포 구조",
+    "id": "n1403"
+  },
+  {
+    "content": "모든 스크립트를 루트 scripts/로 통합하는 구조 개편안을 제시했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션31",
+    "context_hint": "리포 구조",
+    "id": "n1404"
+  },
+  {
+    "content": "스크립트 이동 후 문서 내 경로 참조를 함께 업데이트했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "경로 정합성",
+    "id": "n1405"
+  },
+  {
+    "content": "activate.py와 inject_hub.py의 network 경로를 memory/network 기준으로 수정해야 함을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "스크립트 수정",
+    "id": "n1406"
+  },
+  {
+    "content": "check.py의 상위 경로 계산이 이동 전 기준이라 3단계에서 2단계로 조정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "스크립트 수정",
+    "id": "n1407"
+  },
+  {
+    "content": "경로 수정 후 관련 스크립트 동작이 정상임을 검증했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "검증",
+    "id": "n1408"
+  },
+  {
+    "content": "당일 회고를 기록으로 남기기 위해 retrospectives 문서를 생성했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "회고 기록",
+    "id": "n1409"
+  },
+  {
+    "content": "operations.md에 회고 방법론을 운영 절차로 추가했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "운영 문서",
+    "id": "n1410"
+  },
+  {
+    "content": "교훈은 원칙 문서에 일괄 반영하지 않고 상황에 맞는 문서에 배치해야 한다는 피드백을 수용했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "문서 반영 원칙",
+    "id": "n1411"
+  },
+  {
+    "content": "작업 종료 요청에 따라 종료 절차를 수행했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "세션 운영",
+    "id": "n1412"
+  },
+  {
+    "content": "종료 시 메타에이전트 점검에서 톤 위반 0건과 실질 위반 없음 상태를 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션31",
+    "context_hint": "메타에이전트",
+    "id": "n1413"
   }
 ]
