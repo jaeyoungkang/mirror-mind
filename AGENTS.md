@@ -12,10 +12,8 @@
 1. `mirror-mind-principle.md`를 읽고 협력 원칙을 적용한다
 2. `task-management-principle.md`를 읽고 업무 관리 방식을 파악한다
 3. `tasks/projects.md`를 읽고 현재 진행 상태를 파악한다
-4. 기억 시스템으로 맥락을 보강한다:
-   - `python3 memory/scripts/query.py --recent 5` — 최근 에피소드 조회
-   - `python3 memory/scripts/query.py --milestone` — 주요 마일스톤 조회
-   - 대화 중 주제와 관련된 기억 활성화: `memory/.venv/bin/python3 memory/scripts/activate.py --query "현재 주제"`
+4. 기억 네트워크로 맥락을 보강한다:
+   - `memory/.venv/bin/python3 memory/scripts/activate.py --query "현재 주제"` — 네트워크 spreading activation으로 관련 기억 활성화
    - 주제 전환 시에도 새 주제로 기억을 활성화한다
 5. 메타에이전트를 백그라운드로 실행한다: `python meta-agent/scripts/check.py --watch --interval 300`
 6. 사용자에게 현재 상태를 요약하고 다음 작업을 제안한다 (메타에이전트 초기 리포트 + 기억 요약 포함)
@@ -33,7 +31,7 @@
 | 트리거 | 절차 |
 |--------|------|
 | **작업 시작** | 위 세션 시작 절차 수행 |
-| **작업 종료** | 메타에이전트 리포트 확인 → `python3 scripts/close-session.py` 실행 (raw 저장 + episodes/memories 초안 생성) → 초안 검토·수정 → `tasks/projects.md` 수동 업데이트 → 커밋 |
+| **작업 종료** | 메타에이전트 리포트 확인 → `python3 scripts/close-session.py` 실행 (raw 저장 + 노드 추출 + 네트워크 갱신) → 초안 검토·수정 → `tasks/projects.md` 수동 업데이트 → 커밋 |
 | **주제 전환** / **킵** | 메타에이전트 리포트 확인 → 현재 주제의 중간 상태를 `tasks/projects.md`에 기록한 뒤 전환 |
 | **정합성 검증** | 전체 원칙·설계 문서를 읽고 상호 참조·일관성을 검증하여 리포트 |
 | **회고** | 마일스톤 단위 회고 진행, 반복 적용할 교훈을 해당 원칙 문서에 반영 |
@@ -49,11 +47,13 @@
 
 ---
 
-## 기억 시스템
-- `memory/episodes.json` — 구조화된 에피소드 저장소 (세션별 활동·감정·결과·관계·마일스톤)
-- `memory/scripts/query.py` — 에피소드 조회 (프로젝트/감정/키워드/마일스톤 등 필터)
-- 세션 시작 시 자동 조회, 대화 중 수시 조회, 세션 종료 시 에피소드 추가
-- 에피소드 추출은 AI가 직접 수행 (대화를 읽고 구조화하여 episodes.json에 추가)
+## 기억 시스템 (v3 네트워크)
+- `memory/network/nodes.json` — fact/intention 노드 (knn_k12 네트워크)
+- `memory/network/embeddings.json` — OpenAI text-embedding-3-small 벡터
+- `memory/network/graph.json` — knn_k12 엣지
+- `memory/scripts/activate.py` — spreading activation 기반 기억 활성화
+- 세션 시작 시 activate.py로 맥락 활성화, 주제 전환 시 재활성화
+- 세션 종료 시 close-session.py가 노드 추출 + 네트워크 갱신 자동 수행
 
 ---
 

@@ -6760,5 +6760,1636 @@
     "type": "fact",
     "session": "identity",
     "context_hint": "프로젝트/lighthouse"
+  },
+  {
+    "content": "세션 23은 기억 v3 전체 세션 추출을 본격 수행한 세션이었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "세션 시작, 작업 목표",
+    "id": "n0966"
+  },
+  {
+    "content": "세션 22까지의 파일럿 결과로 세션19에서 71개 노드(fact 66, intention 5)가 검증되어 있었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "작업 시작 전 현황",
+    "id": "n0967"
+  },
+  {
+    "content": "raw JSONL 파일은 tasks/conversations/raw/ 디렉토리에 22개 있었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "raw 파일 위치 확인",
+    "id": "n0968"
+  },
+  {
+    "content": "강재영이 서브에이전트를 적극적으로 활용하라고 지시했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "작업 방식 결정",
+    "id": "n0969"
+  },
+  {
+    "content": "extract_text.py로 21개 세션의 텍스트를 먼저 추출하고 크기를 확인한 뒤 서브에이전트에 투입하는 전략을 세웠다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "추출 전략 수립",
+    "id": "n0970"
+  },
+  {
+    "content": "추출 텍스트 크기는 세션1이 140K로 가장 크고, 세션6이 21K로 가장 작았다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "세션별 크기 편차",
+    "id": "n0971"
+  },
+  {
+    "content": "21개 세션을 3배치(작은 7개, 중간 7개, 큰 7개)로 나누어 서브에이전트에 병렬 투입했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "서브에이전트 배치 전략",
+    "id": "n0972"
+  },
+  {
+    "content": "서브에이전트에게 fact/intention 추출 규칙을 상세히 지시했다: 1인칭 시점, fact/intention 2타입, 하나의 content에 하나의 사실/의도만, context_hint 포함.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "추출 지시문 설계",
+    "id": "n0973"
+  },
+  {
+    "content": "21개 서브에이전트가 전부 성공적으로 완료되어 전체 세션 추출이 마무리됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "서브에이전트 완료",
+    "id": "n0974"
+  },
+  {
+    "content": "22개 세션에서 총 954개 노드가 추출됐다 (fact 886개, intention 68개).",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "전체 추출 결과",
+    "id": "n0975"
+  },
+  {
+    "content": "fact 비율이 92.9%, intention 비율이 7.1%였다. 세션당 평균 43.4개 노드가 추출됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "추출 통계",
+    "id": "n0976"
+  },
+  {
+    "content": "v2의 최대 노드셋이 220개(semantic-unit)였던 것과 비교하면 v3는 4.3배 규모였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "v2 대비 규모 비교",
+    "id": "n0977"
+  },
+  {
+    "content": "세션16의 session 필드가 '세션16'으로 잘못 되어 있어서 '2026-02-24-세션16'으로 수정했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "데이터 정합성 수정",
+    "id": "n0978"
+  },
+  {
+    "content": "강재영이 '재료가 달라졌으므로 네트워크 구축도 다시 해야 하는 거 아니냐'고 물었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "네트워크 재구축 논의",
+    "id": "n0979"
+  },
+  {
+    "content": "v2의 knn+cooccurrence fusion 방법론은 재활용 가능하지만, v3 노드셋으로 네트워크는 새로 구축해야 한다고 합의했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "방법론 재활용 vs 결과물 재구축",
+    "id": "n0980"
+  },
+  {
+    "content": "v2의 build_networks_v2.py를 참고하여 v3 빌드 스크립트를 작성했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "네트워크 구축 스크립트",
+    "id": "n0981"
+  },
+  {
+    "content": "v2는 TF-IDF(char n-gram)를 사용했지만, v3에서는 OpenAI 임베딩(text-embedding-3-small)을 사용하기로 결정했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "임베딩 방법 전환",
+    "id": "n0982"
+  },
+  {
+    "content": "OpenAI 임베딩의 효과로 v2에서 TF-IDF로 giant 0.7~0.8이었던 것이 v3에서는 전부 1.0이 됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "임베딩 품질 향상",
+    "id": "n0983"
+  },
+  {
+    "content": "v3에서 k=5,8,12,16으로 탐색한 결과, gate 통과한 네트워크는 knn/k5, fusion/k5, knn/k8, fusion/k8, knn/k12 총 5개였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "네트워크 구축 결과",
+    "id": "n0984"
+  },
+  {
+    "content": "cooccurrence 단독은 giant=0.07로 전부 실패했다. 세션 간 연결이 없어 파편화됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "cooccurrence 실패",
+    "id": "n0985"
+  },
+  {
+    "content": "k12부터 과밀(avg_path < 3.0)이 되어 gate에 실패했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "k값 상한 발견",
+    "id": "n0986"
+  },
+  {
+    "content": "knn/k5가 hop1 0.8%(가장 낮음), avg_path 4.3(가장 높음)으로 가장 균형 잡힌 네트워크였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "네트워크 구조 분석",
+    "id": "n0987"
+  },
+  {
+    "content": "강재영이 네트워크 섞어쓰기도 고려하라고 했고, 테스트는 서브에이전트를 사용하라고 지시했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "평가 방향 지시",
+    "id": "n0988"
+  },
+  {
+    "content": "자연스러움 평가를 위해 spreading activation 스크립트(activate.py)를 작성했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "activation 구현",
+    "id": "n0989"
+  },
+  {
+    "content": "강재영이 서브에이전트 수행에 API 키가 필요한지 물었다. 필요 없었다. activation 결과만 미리 준비하면 됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "API 키 불필요 확인",
+    "id": "n0990"
+  },
+  {
+    "content": "쿼리 임베딩에 OpenAI API 키가 필요했으나, 캐시된 노드 임베딩으로 시드를 찾는 텍스트 매칭 방식으로 우회했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "API 키 우회",
+    "id": "n0991"
+  },
+  {
+    "content": "평가 시나리오 3개를 설계했다: S1(lighthouse 진행상황), S2(기억시스템 다음단계), S3(원칙 회고).",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "평가 시나리오 설계",
+    "id": "n0992"
+  },
+  {
+    "content": "7개 네트워크 조합을 테스트했다: knn_k5, knn_k8, knn_k12, fusion_k5, fusion_k8, knn+cooc_k5, knn+cooc_k8.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "평가 대상",
+    "id": "n0993"
+  },
+  {
+    "content": "서브에이전트 3개가 각각 7개 네트워크를 비교 평가하는 방식으로 수행했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "평가 수행 방식",
+    "id": "n0994"
+  },
+  {
+    "content": "평가 기준은 관련성, 다양성, 연상 자연스러움, 대화 품질 각 5점씩 총 20점이었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "평가 척도",
+    "id": "n0995"
+  },
+  {
+    "content": "knn_k12가 종합 1위였다 (56/60). 넓은 질문에서 먼 시점의 기억까지 자연스럽게 도달했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "종합 결과",
+    "id": "n0996"
+  },
+  {
+    "content": "knn_k8이 가장 안정적이었다 (55/60). 3개 시나리오에서 편차가 가장 작았다 (19, 19, 17).",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "종합 결과",
+    "id": "n0997"
+  },
+  {
+    "content": "fusion은 구체적 질문(S2)에서 공동 1위(19/20)를 기록했다. 임베딩만으로 올라오지 않는 디테일 노드를 끌어올리는 데 강했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "fusion 특성",
+    "id": "n0998"
+  },
+  {
+    "content": "cooc 혼합은 질문 유형에 따라 극단적이었다. S1에서 최하위(11점), S3 회고에서 2위(18점).",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "cooc 혼합 특성",
+    "id": "n0999"
+  },
+  {
+    "content": "질문 유형별로 네트워크를 다르게 선택하는 전략이 유효하다는 결론이 나왔다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "핵심 결론",
+    "id": "n1000"
+  },
+  {
+    "content": "넓은 질문에는 knn_k12, 구체적 질문에는 fusion_k5 또는 knn_k8, 서사가 필요한 회고에는 knn+cooc 보조가 적합했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "질문 유형별 전략",
+    "id": "n1001"
+  },
+  {
+    "content": "S1에서 knn_k12만이 세션10의 '워크스페이스 독립성 원칙'을 활성화했다. 진행상황 질문에 설계 원칙까지 연상하는 것이 가장 자연스러웠다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "knn_k12 차별점",
+    "id": "n1002"
+  },
+  {
+    "content": "S2에서 fusion이 노드 원자성 클러스터(n0668/n0667/n0669)를 함께 끌어올린 것이 인상적이었다. 추상적 원칙과 구체적 디테일을 동시에 포착했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "fusion 차별점",
+    "id": "n1003"
+  },
+  {
+    "content": "S3에서 knn_k12만이 톤 규정(n0515)과 메타에이전트 제안(n0531) 기억을 활성화했다. 원칙의 발전사를 이야기하는 데 핵심적이었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "회고 시나리오 분석",
+    "id": "n1004"
+  },
+  {
+    "content": "cooccurrence가 같은 세션 내 노드를 줄줄이 딸아오는 현상이 확인됐다. 세션3에 60% 편중되는 문제가 발생했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "cooc 편중 문제",
+    "id": "n1005"
+  },
+  {
+    "content": "실험 리포트를 memory/simulation/v3/experiment-report.md에 저장했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션23",
+    "context_hint": "실험 리포트 저장",
+    "id": "n1006"
+  },
+  {
+    "content": "v3 실행 전략으로 knn_k12를 기본으로 하되, 쿼리 분류기로 질문 유형을 판별하여 네트워크를 동적 선택하는 방안을 제안했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션23",
+    "context_hint": "실행 전략 제안",
+    "id": "n1007"
+  },
+  {
+    "content": "서브에이전트 병렬 투입으로 21개 세션 추출을 약 4분 만에 완료하려 했다. 실제로 성공했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션23",
+    "context_hint": "병렬 처리 의도",
+    "id": "n1008"
+  },
+  {
+    "content": "TF-IDF 대신 OpenAI 임베딩을 채택한 것은 954개 한국어 노드에서 의미적 유사도를 정확하게 측정하기 위함이었다.",
+    "type": "intention",
+    "session": "2026-02-25-세션23",
+    "context_hint": "임베딩 선택 이유",
+    "id": "n1009"
+  },
+  {
+    "content": "자연스러움 평가를 점수표가 아닌 실제 대화 생성 + 자연스러움 판단 방식으로 수행하려 했다. v2의 IR 지표 중심 평가를 탈피하는 것이 목적이었다.",
+    "type": "intention",
+    "session": "2026-02-25-세션23",
+    "context_hint": "평가 방법 전환 의도",
+    "id": "n1010"
+  },
+  {
+    "content": "네트워크를 단일 구조로 고정하기보다 질문 유형에 따라 동적으로 선택하는 것이 더 자연스러울 것이라고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션23",
+    "context_hint": "동적 선택 전략 판단",
+    "id": "n1011"
+  },
+  {
+    "content": "다음 세션에서 이 결과를 기반으로 네트워크 전략을 확정하고 실제 시스템에 적용하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션23",
+    "context_hint": "다음 세션 계획",
+    "id": "n1012"
+  },
+  {
+    "content": "세션 24는 내일(2/26) 후속 팀 공유를 앞두고 시작됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "세션 시작, 일정 확인",
+    "id": "n1013"
+  },
+  {
+    "content": "기억 v3와 lighthouse 속도 개선 두 축이 진행 중이었고, 재영에게 어떤 축부터 갈지 물었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "세션 시작 요약, 우선순위 논의",
+    "id": "n1014"
+  },
+  {
+    "content": "재영이 기억 v3 마무리를 먼저 하자고 선택했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "작업 순서 결정",
+    "id": "n1015"
+  },
+  {
+    "content": "v3 최종 구조 확정의 핵심 쟁점은 적응적 선택(A) vs 단일 기본값(B) 두 갈래였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 v3 구조 확정 논의",
+    "id": "n1016"
+  },
+  {
+    "content": "적응적 선택(A)은 쿼리 유형을 분류하고 네트워크를 바꿔 타는 방식이다. 넓은 질문엔 knn_k12, 구체적 질문엔 knn_k8 or fusion_k5.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 v3 구조 확정 논의",
+    "id": "n1017"
+  },
+  {
+    "content": "단일 기본값(B)은 knn_k8 하나만 쓰는 방식이다. 편차 최소(19,19,17)로 어떤 질문이든 나쁘지 않다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 v3 구조 확정 논의",
+    "id": "n1018"
+  },
+  {
+    "content": "v3 철학인 '자연스러운 기억'에 비추어 단일 기본값(B)이 더 맞다고 판단했다. 분류 레이어를 추가하면 검색 엔진으로 돌아가는 셈이다.",
+    "type": "intention",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 v3 구조 확정 의견",
+    "id": "n1019"
+  },
+  {
+    "content": "사람의 기억은 질문 유형을 분류해서 다른 체계를 쓰지 않는다. 하나의 네트워크에서 자연스럽게 떠오르는 것이 핵심이다.",
+    "type": "intention",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 v3 설계 철학",
+    "id": "n1020"
+  },
+  {
+    "content": "재영이 단일 기본값으로 가되, 안정적인 것(knn_k8)이 아니라 개성 있는 것을 쓰자고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 v3 최종 결정",
+    "id": "n1021"
+  },
+  {
+    "content": "knn_k12가 '개성 있는' 네트워크다. 먼 시점까지 연상이 도달하고, 예상 밖의 연결을 만들고, 종합 1위(56/60)였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "knn_k12 특성 정리",
+    "id": "n1022"
+  },
+  {
+    "content": "knn_k12는 8개 세션에 걸쳐 분포하며 '워크스페이스 독립성 원칙'처럼 예상 밖의 연결을 만들어낸다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "knn_k12 특성",
+    "id": "n1023"
+  },
+  {
+    "content": "knn_k8은 어디에나 무난한 대신 특별한 게 없다. 브로콜리의 기억이 무난하면 재미없다.",
+    "type": "intention",
+    "session": "2026-02-25-세션24",
+    "context_hint": "knn_k12 선택 근거",
+    "id": "n1024"
+  },
+  {
+    "content": "최종 확정: knn_k12 단일 구조. 안정성보다 개성을 택했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 v3 최종 확정",
+    "id": "n1025"
+  },
+  {
+    "content": "규모 대응 규칙을 정해두기로 합의했다. 노드가 수천 개로 늘어날 것이므로.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "규모 대응 규칙 합의",
+    "id": "n1026"
+  },
+  {
+    "content": "규모 대응 규칙: 기본 k=12, 노드 수 2배 시점마다 gate 기준(1-hop ≤5%, avg_path ≥3.0, giant ≥70%)으로 검증한다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "규모 대응 규칙 상세",
+    "id": "n1027"
+  },
+  {
+    "content": "avg_path < 3.0이면 k를 내리고(과밀), avg_path > 6.0이면 k를 올린다(과소). gate 기준이 k값보다 본질이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "규모 대응 규칙 조정 기준",
+    "id": "n1028"
+  },
+  {
+    "content": "experiment-report.md에 최종 확정 섹션을 추가하고, projects.md의 v3 구조 확정 항목을 체크했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 v3 마무리 기록",
+    "id": "n1029"
+  },
+  {
+    "content": "v3 실험 프로젝트는 이것으로 마무리됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 v3 완료",
+    "id": "n1030"
+  },
+  {
+    "content": "기억 주입 자동화 프로젝트로 전환했다. activate.py를 실전화하여 시스템에 태우는 일이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 주입 자동화 시작",
+    "id": "n1031"
+  },
+  {
+    "content": "query.py(에피소드 기반 시간순 조회)와 activate.py(연상 기반 활성화)는 용도가 다르므로 둘 다 유지하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 도구 역할 분담 설계",
+    "id": "n1032"
+  },
+  {
+    "content": "query.py --recent는 '최근에 뭘 했지'를 보는 것이고, activate.py --query는 '이 맥락에서 뭐가 떠오르지'를 보는 것이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 도구 역할 구분",
+    "id": "n1033"
+  },
+  {
+    "content": "memory/network/ 디렉토리를 만들고 실전 데이터를 배치했다: nodes.json, embeddings.json, graph.json.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 주입 자동화 구현",
+    "id": "n1034"
+  },
+  {
+    "content": "simulation/v3/에서 nodeset_v3.json → nodes.json, embeddings_cache.json → embeddings.json, knn__k12/graph.json → graph.json으로 복사했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "데이터 실전 배치",
+    "id": "n1035"
+  },
+  {
+    "content": "memory/scripts/activate.py를 새로 작성했다. knn_k12 고정, 경로를 memory/network/로 변경, 프롬프트 주입 포맷 출력.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "activate.py 실전화",
+    "id": "n1036"
+  },
+  {
+    "content": "memory/.venv/bin/python3을 사용해야 numpy와 openai 패키지가 있다. /opt/homebrew/bin/python3에는 패키지가 없다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "파이썬 환경 발견",
+    "id": "n1037"
+  },
+  {
+    "content": "activate.py 테스트: 'lighthouse 응답 속도 개선' 쿼리에 정확한 5건 포착, 'mirror-mind 원칙 회고' 쿼리에도 관련 기억이 자연스럽게 올라왔다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "activate.py 품질 검증",
+    "id": "n1038"
+  },
+  {
+    "content": "세션명 포맷을 '세션2026-02-25-세션17' → '세션17'로 줄이는 extract_session_num 함수를 추가했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "activate.py 포맷 개선",
+    "id": "n1039"
+  },
+  {
+    "content": "AGENTS.md 세션 시작 절차에 activate.py 호출을 추가했다. 대화 중과 주제 전환 시 기억 활성화 호출.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "AGENTS.md 절차 통합",
+    "id": "n1040"
+  },
+  {
+    "content": "세션 시작 시에는 query.py --recent 5와 --milestone(기존 유지), 대화 중/주제 전환 시에는 activate.py --query(신규)를 쓴다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 호출 절차 확정",
+    "id": "n1041"
+  },
+  {
+    "content": "'기억 주입 자동화' 쿼리로 품질 검증을 했다. v1/v2/v3 진행 과정과 설계 결정, 백로그가 자연스럽게 활성화됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 주입 품질 검증",
+    "id": "n1042"
+  },
+  {
+    "content": "재영이 검증 결과에 만족하고 검증 완료를 선언했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 주입 자동화 검증 완료",
+    "id": "n1043"
+  },
+  {
+    "content": "기억 주입 자동화 프로젝트를 완료 처리했다. projects.md에서 [x]로 체크.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "기억 주입 자동화 완료",
+    "id": "n1044"
+  },
+  {
+    "content": "재영이 '나중을 위한 기록 문서만 남기고 필요없는 것들을 정리하자'고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "정리 작업 시작",
+    "id": "n1045"
+  },
+  {
+    "content": "simulation/v2/ 전체를 삭제했다. v3로 대체됐으므로.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "파일 정리",
+    "id": "n1046"
+  },
+  {
+    "content": "simulation/v3/에서 experiment-report.md만 남기고 나머지 중간 산출물(45MB)을 전부 삭제했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "파일 정리",
+    "id": "n1047"
+  },
+  {
+    "content": "정리 후 memory/ 최종 구조: network/(실전 데이터 33MB), scripts/(activate.py, query.py, extract_text.py), simulation/v3/experiment-report.md(유일한 아카이브), episodes.json, memories.json.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "memory 최종 구조",
+    "id": "n1048"
+  },
+  {
+    "content": "세션 24에서 두 프로젝트를 완료했다: 기억 v3 구조 확정(knn_k12 단일), 기억 주입 자동화(activate.py 실전화 + AGENTS.md 통합).",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "세션 24 성과 요약",
+    "id": "n1049"
+  },
+  {
+    "content": "메타에이전트 리포트: info 3건(memory_policy 규칙 미업데이트로 인한 비실질 경고)만 존재. 실질 위반 없음.",
+    "type": "fact",
+    "session": "2026-02-25-세션24",
+    "context_hint": "메타에이전트 상태",
+    "id": "n1050"
+  },
+  {
+    "content": "세션25는 lighthouse에 mirror-mind v3 기억 시스템(네트워크 구조)을 적용하는 설계 작업이었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "세션 전체 목적",
+    "id": "n1051"
+  },
+  {
+    "content": "강재영이 lighthouse에 기억 시스템을 적용하는 작업을 최우선으로 하겠다고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "작업 우선순위 결정",
+    "id": "n1052"
+  },
+  {
+    "content": "기존 2레이어 구현 프롬프트(agent_memories 테이블, 4 kind)는 v3 이전 설계라 의미 없어졌다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "기존 설계 폐기",
+    "id": "n1053"
+  },
+  {
+    "content": "강재영이 기존 구현 프롬프트를 폐기하고 v3 네트워크 구조로 새로 설계하자고 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "설계 방향 전환",
+    "id": "n1054"
+  },
+  {
+    "content": "mirror-mind v3 기억 시스템과 lighthouse 현재 기억 시스템을 동시에 탐색하여 상세 분석했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "시스템 비교 분석",
+    "id": "n1055"
+  },
+  {
+    "content": "mirror-mind v3는 fact/intention 노드 954개, knn_k12 네트워크 8252 엣지, spreading activation 구조였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "mirror-mind v3 구조 요약",
+    "id": "n1056"
+  },
+  {
+    "content": "lighthouse 현재 기억 시스템은 memory_episodes 테이블 기반 에피소드 1레이어 구조였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "lighthouse 기존 기억 구조",
+    "id": "n1057"
+  },
+  {
+    "content": "lighthouse의 memory_episodes는 scope 기반 필터링(permanent, scenario, task)으로 에피소드를 기계적으로 주입하는 방식이었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "lighthouse 기존 기억 주입 방식",
+    "id": "n1058"
+  },
+  {
+    "content": "mirror-mind v3는 spreading activation으로 쿼리와 연관된 기억을 자연스럽게 활성화하는 반면, lighthouse는 scope 기반 카테고리별 기계적 주입이었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "두 시스템 핵심 차이",
+    "id": "n1059"
+  },
+  {
+    "content": "강재영이 기존 memory_episodes를 nodes로 완전 대체하겠다고 결정했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "핵심 의사결정 — 완전 대체",
+    "id": "n1060"
+  },
+  {
+    "content": "episodes의 구조적 분류(scope, relationship_type 등)를 버리고, v3 철학대로 fact/intention 노드의 활성화로 모든 기억을 통합하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션25",
+    "context_hint": "v3 철학 적용 방향",
+    "id": "n1061"
+  },
+  {
+    "content": "v3 핵심 철학: 감정·관계·연상은 별도 필드가 아니라, fact+intention 노드가 함께 활성화되면 발현되는 것이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "v3 기억 철학",
+    "id": "n1062"
+  },
+  {
+    "content": "lighthouse 적용 설계에서 새 테이블 3개를 정의했다: memory_nodes, memory_edges, memory_network_meta.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "DB 설계",
+    "id": "n1063"
+  },
+  {
+    "content": "pgvector를 활용하여 임베딩 저장/검색을 DB에서 직접 수행하기로 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "임베딩 기술 선택",
+    "id": "n1064"
+  },
+  {
+    "content": "네트워크는 대화 종료 시 증분 업데이트되고, 노드 수가 2배가 되는 시점에 전체 재구축하기로 설계했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "네트워크 업데이트 전략",
+    "id": "n1065"
+  },
+  {
+    "content": "매 턴마다 사용자 메시지로 spreading activation을 실행하여 관련 노드를 시스템 프롬프트에 주입하기로 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "활성화 주입 전략",
+    "id": "n1066"
+  },
+  {
+    "content": "관계/감정/시나리오는 별도 필드가 아닌, 노드 활성화에서 자연스럽게 발현되도록 설계했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션25",
+    "context_hint": "관계·감정 처리 방식",
+    "id": "n1067"
+  },
+  {
+    "content": "코르카(lighthouse 에이전트)에게 사전 기억(pre-loaded memories)을 넣어야 한다는 필요성이 제기됐다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "사전 기억 필요성",
+    "id": "n1068"
+  },
+  {
+    "content": "코르카는 서비스로 배포되는 에이전트라 처음부터 연구 동료로서의 전문성을 갖춘 기억이 필요하다.",
+    "type": "intention",
+    "session": "2026-02-25-세션25",
+    "context_hint": "사전 기억 설계 이유",
+    "id": "n1069"
+  },
+  {
+    "content": "사전 기억의 핵심 장점: 시스템 프롬프트에 모든 시나리오 지식을 하드코딩할 필요 없이, 사용자 메시지에 따라 관련 전문 지식만 spreading activation으로 떠오른다.",
+    "type": "intention",
+    "session": "2026-02-25-세션25",
+    "context_hint": "사전 기억 메커니즘의 이점",
+    "id": "n1070"
+  },
+  {
+    "content": "사전 기억을 4가지 범주로 설계했다: 리서치 전문성, 코르카 정체성, 관계 형성 스타일, 서비스 지식.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "사전 기억 4범주",
+    "id": "n1071"
+  },
+  {
+    "content": "리서치 전문성(fact): Berry Picking, Snowballing, Scoping Review 등 탐색 전략과 Ellis 모델, Kuhlthau ISP 등 연구자 행동 모델을 포함한다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "사전 기억 — 리서치 전문성",
+    "id": "n1072"
+  },
+  {
+    "content": "리서치 전문성에 실전 패턴도 포함한다: 트리아지(200편→30편→10편→3편), 용어 변이 문제, 맥락 소실 문제 등.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "사전 기억 — 리서치 실전 패턴",
+    "id": "n1073"
+  },
+  {
+    "content": "코르카 정체성(intention): 동료 역할, 연구 의도 파악 우선, 투명한 근거 공유.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "사전 기억 — 정체성",
+    "id": "n1074"
+  },
+  {
+    "content": "관계 형성 스타일(fact+intention): 따뜻함이 역량보다 먼저, 점진적·호혜적 자기 노출, 공유 경험을 통한 전환점.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "사전 기억 — 관계 형성",
+    "id": "n1075"
+  },
+  {
+    "content": "서비스 지식(fact): lighthouse의 7개 도구, 시나리오별 역할, 마크다운 연구 문서 패러다임, 중간 정리 기준.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "사전 기억 — 서비스 지식",
+    "id": "n1076"
+  },
+  {
+    "content": "강재영이 사전 기억에 관계 형성 스타일과 lighthouse 서비스 지식도 포함하라고 요청했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "사전 기억 범위 확장 요청",
+    "id": "n1077"
+  },
+  {
+    "content": "구현 프롬프트를 .claude/plans/enchanted-wibbling-riddle.md에 작성 완료했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "구현 프롬프트 완성",
+    "id": "n1078"
+  },
+  {
+    "content": "구현 에이전트에게 전달할 레퍼런스로 activate.py, experiment-report.md, service-principles.md, research-scenarios.md를 안내했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "구현 에이전트 위임",
+    "id": "n1079"
+  },
+  {
+    "content": "구현 순서를 6 Phase로 정의했다: DB+기본 인프라 → 사전 기억 로드 → 노드 추출 → 네트워크 구축 → 활성화+주입 → 기존 episodes 정리.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "구현 단계 설계",
+    "id": "n1080"
+  },
+  {
+    "content": "tasks/projects.md의 기억 시스템 항목을 v3 네트워크 적용으로 업데이트했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "프로젝트 문서 업데이트",
+    "id": "n1081"
+  },
+  {
+    "content": "library-design-draft-v1.md 문서를 검토한 결과, UI 설계가 Living Notebook 전환 이후 시대에 뒤떨어져 폐기 대상이었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "구 설계 문서 검토",
+    "id": "n1082"
+  },
+  {
+    "content": "library-design-draft-v1.md에서 논문 관리 공간의 필요성과 데이터 모델(tags, collections)은 향후 참고 가치가 있었으나, 현재 즉시 필요한 작업은 아니었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "구 설계 문서 부분적 가치",
+    "id": "n1083"
+  },
+  {
+    "content": "강재영이 library-design-draft-v1.md를 폐기하기로 결정하여 삭제했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "구 설계 문서 삭제",
+    "id": "n1084"
+  },
+  {
+    "content": "시스템 프롬프트에 모든 시나리오 지식을 하드코딩하는 방식은 비효율적이며, 네트워크 기반 기억이 맥락에 맞는 지식만 활성화하므로 더 효율적이다.",
+    "type": "intention",
+    "session": "2026-02-25-세션25",
+    "context_hint": "하드코딩 vs 네트워크 기억",
+    "id": "n1085"
+  },
+  {
+    "content": "v3 기억 시스템에서 라이브러리 맥락 주입은 fact 노드가 자연스럽게 대체한다. 예: '이 사용자와 transformer diversity 논문 12편을 분석했다'가 노드로 존재하면 spreading activation으로 알아서 떠오른다.",
+    "type": "intention",
+    "session": "2026-02-25-세션25",
+    "context_hint": "v3가 라이브러리 맥락 대체",
+    "id": "n1086"
+  },
+  {
+    "content": "lighthouse와 mirror-mind의 환경 차이가 있다: lighthouse는 Next.js+Supabase 다중 사용자 웹 서비스, mirror-mind는 로컬 JSON 기반 CLI 단일 사용자.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "두 프로젝트 환경 차이",
+    "id": "n1087"
+  },
+  {
+    "content": "사전 기억 노드의 conversation_id는 null 또는 특수값('seed')으로 표시하여 사용자 대화에서 추출된 노드와 구분하기로 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "사전 기억 식별자 설계",
+    "id": "n1088"
+  },
+  {
+    "content": "강재영이 구현을 끝냈다고 보고하며 작업 종료를 요청했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "세션 종료",
+    "id": "n1089"
+  },
+  {
+    "content": "이 세션에서 설계와 의사결정만 담당하고, 실제 코드 구현은 하위 프로젝트 에이전트(구현 에이전트)에 위임하는 역할 분리가 잘 작동했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션25",
+    "context_hint": "역할 분리 평가",
+    "id": "n1090"
+  },
+  {
+    "content": "검증 항목으로 사전 기억 로드, 시나리오별 활성화, 대화 기억 추출, 교차 세션 활성화, 첫 방문 동작을 정의했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션25",
+    "context_hint": "검증 기준 설계",
+    "id": "n1091"
+  },
+  {
+    "content": "강재영이 미러마인드 기억 시스템에 정체성을 구성할 핵심노드 주입 방법을 만들자고 제안했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "정체성 허브 노드 설계",
+    "id": "n1092"
+  },
+  {
+    "content": "처음에 lighthouse 사전 기억 4범주(seed memory)처럼 별도 범주로 태깅하는 접근을 제안했으나, 강재영이 다른 방향을 제시했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "설계 방향 수정",
+    "id": "n1093"
+  },
+  {
+    "content": "강재영이 핵심 노드는 네트워크 토폴로지 상의 허브를 의미한다고 명확히 했다. 링크 수가 다른 노드와 비교할 수 없을 만큼 많은 노드이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "허브 노드 정의",
+    "id": "n1094"
+  },
+  {
+    "content": "현재 knn_k12 그래프에서는 모든 노드가 최대 12개 이웃을 갖는 균일 구조라서 허브가 존재할 수 없었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "네트워크 구조 한계",
+    "id": "n1095"
+  },
+  {
+    "content": "강재영이 허브를 단일 노드가 아니라 이웃이 많은 노드의 집합으로 보자고 제안했다. 허브 클러스터 개념이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "허브 집합 설계",
+    "id": "n1096"
+  },
+  {
+    "content": "허브 집합 방식의 장점을 파악했다. 단일 허브의 병목이 없고, 쿼리 주제에 따라 관련 정체성 측면만 선택적으로 활성화되며, 정체성이 분산 표현된다.",
+    "type": "intention",
+    "session": "2026-02-25-세션26",
+    "context_hint": "허브 집합 장점",
+    "id": "n1097"
+  },
+  {
+    "content": "허브 노드에만 k를 크게 잡기로 결정했다. 일반 노드 k=12, 허브 노드 k=100.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "허브 k값 결정",
+    "id": "n1098"
+  },
+  {
+    "content": "브로콜리의 정체성을 5개 축으로 분류했다. 존재(Who), 관계(With whom), 철학(Why), 행동양식(How), 프로젝트맥락(What).",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "정체성 5축 분류",
+    "id": "n1099"
+  },
+  {
+    "content": "정체성 허브 노드 12개를 정의했다. 존재 2개, 관계 2개, 철학 3개, 행동양식 3개, 프로젝트맥락 2개.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "허브 노드 12개 정의",
+    "id": "n1100"
+  },
+  {
+    "content": "inject_hub.py 스크립트를 작성했다. 허브 노드 정의, OpenAI 임베딩 생성, 코사인 유사도 기반 hub_knn 엣지 생성, 멱등성 보장, gate 검증 보고를 포함한다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "inject_hub.py 구현",
+    "id": "n1101"
+  },
+  {
+    "content": "dry-run에서 OPENAI_API_KEY가 환경변수에 없어서 임베딩 생성이 실패했다. .env 파일에서 dotenv로 로드하도록 수정해서 해결했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "API key 문제 해결",
+    "id": "n1102"
+  },
+  {
+    "content": "dry-run 결과 허브 12개 각각 degree 100, 엣지 1,203개 추가(허브→기존 1,200 + 허브↔허브 3), giant 100% 유지를 확인했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "dry-run 검증",
+    "id": "n1103"
+  },
+  {
+    "content": "허브 유사도 분포에서 n0956 '강재영은 파트너' top_sim 0.72로 가장 높았고, n0957 '서로의 강점을 결합' top_sim 0.34로 가장 낮았다. 추상적 문장일수록 유사도가 낮았다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "허브 유사도 분석",
+    "id": "n1104"
+  },
+  {
+    "content": "avg_path가 3.05에서 2.85로 하락했다. 허브가 단축 경로를 만들어서 예상된 변화였다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "네트워크 경로 변화",
+    "id": "n1105"
+  },
+  {
+    "content": "실제 주입을 실행하여 네트워크를 954→966노드, 8,252→9,455엣지로 업데이트했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "허브 주입 완료",
+    "id": "n1106"
+  },
+  {
+    "content": "검증 쿼리 3개를 테스트했다. '브로콜리는 누구인가' 쿼리에서 정체성 허브가 1위로 활성화되었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "정체성 쿼리 검증",
+    "id": "n1107"
+  },
+  {
+    "content": "'lighthouse 설계 방향' 쿼리에서는 허브가 직접 시드가 아니지만 연결 경로를 통해 맥락을 보강하는 것을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "프로젝트 쿼리 검증",
+    "id": "n1108"
+  },
+  {
+    "content": "'기억 시스템 다음 단계' 쿼리에서 기억 시스템 분리, scope 보강, 범용 모듈화 의도 등 핵심 맥락이 모두 활성화되었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "기억 시스템 쿼리 검증",
+    "id": "n1109"
+  },
+  {
+    "content": "정체성 허브가 의도대로 동작한다. 정체성 쿼리에는 직접 시드로 올라오고, 다른 주제에서는 네트워크 경로를 통해 맥락을 보강한다.",
+    "type": "intention",
+    "session": "2026-02-25-세션26",
+    "context_hint": "허브 동작 확인",
+    "id": "n1110"
+  },
+  {
+    "content": "lighthouse 구현 에이전트가 v3 기억 시스템을 이미 구현해놨다. 사전 기억 시드 마이그레이션까지 있었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "lighthouse v3 구현 확인",
+    "id": "n1111"
+  },
+  {
+    "content": "lighthouse의 시드 노드는 48개로, 리서치 전문 지식 16개, 코르카 정체성 6개, 관계 형성 스타일 8개, 서비스 지식 18개로 구성되어 있다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "lighthouse 시드 노드 현황",
+    "id": "n1112"
+  },
+  {
+    "content": "lighthouse의 seed-embeddings.ts에서 모든 노드를 k=12로 동일하게 연결하고 있었다. 사전 기억이든 경험 기억이든 같은 degree로, mirror-mind와 동일한 허브 부재 문제가 있었다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "lighthouse 허브 부재 문제",
+    "id": "n1113"
+  },
+  {
+    "content": "lighthouse 허브 대상으로 코르카 정체성 6개 + 관계 형성 스타일 8개 = 14개를 선별했다. 리서치 전문 지식과 서비스 지식은 일반 시드로 유지한다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "lighthouse 허브 대상 선별",
+    "id": "n1114"
+  },
+  {
+    "content": "강재영이 '지금부터 링크를 많이 둘 필요는 없고, 이후 노드들이 추가될 때마다 링크를 많이 가지도록 하면 된다'고 했다. 점진적 허브 성장 전략이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "점진적 허브 성장",
+    "id": "n1115"
+  },
+  {
+    "content": "강재영이 '엉뚱한 노드가 허브가 될 가능성'을 지적했다. knn 구조에서 범용적 내용의 노드가 많은 새 노드의 top-12에 반복 진입하면 의도하지 않은 허브가 생길 수 있다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "자연 성장 위험",
+    "id": "n1116"
+  },
+  {
+    "content": "허브를 자연 성장에 맡기면 통제가 안 되므로 명시적으로 지정해야 한다는 결론에 도달했다.",
+    "type": "intention",
+    "session": "2026-02-25-세션26",
+    "context_hint": "명시적 허브 지정 결론",
+    "id": "n1117"
+  },
+  {
+    "content": "lighthouse의 허브 구현 방식으로 DB 레벨 플래그(is_hub 컬럼)를 선택했다. convention 기반(스키마 변경 없음) 대신 명시적 플래그를 택한 것이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "is_hub 플래그 결정",
+    "id": "n1118"
+  },
+  {
+    "content": "lighthouse 정체성 허브 구현 프롬프트를 projects/lighthouse/hub-node-prompt.md에 작성했다. 수정 범위 6개 파일(마이그레이션, 도메인 타입, repository, network, seed-embeddings, 검증 쿼리)을 정리했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "구현 프롬프트 작성",
+    "id": "n1119"
+  },
+  {
+    "content": "lighthouse 허브 구현의 핵심은 buildIncrementalNetwork에서 새 노드 추가 시 14개 허브와 유사도를 계산하여 추가 연결하는 것이다. 허브의 degree가 대화 축적과 함께 자연스럽게 성장한다.",
+    "type": "intention",
+    "session": "2026-02-25-세션26",
+    "context_hint": "lighthouse 허브 구현 핵심",
+    "id": "n1120"
+  },
+  {
+    "content": "activate.ts는 수정이 필요 없다. 네트워크 데이터만 바뀌면 spreading activation이 자동으로 허브를 활용한다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "activate.ts 호환",
+    "id": "n1121"
+  },
+  {
+    "content": "정체성을 네트워크 토폴로지 차원에서 표현하는 것이 핵심 발견이다. 정체성이 '검색'되는 게 아니라 네트워크 구조상 '항상 활성화되는' 것이다.",
+    "type": "intention",
+    "session": "2026-02-25-세션26",
+    "context_hint": "정체성 네트워크 원리",
+    "id": "n1122"
+  },
+  {
+    "content": "mirror-mind와 lighthouse 양쪽 모두에 정체성 허브 노드 설계를 적용했다. mirror-mind는 즉시 실행 완료, lighthouse는 구현 프롬프트로 위임 대기 상태이다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "양쪽 적용 현황",
+    "id": "n1123"
+  },
+  {
+    "content": "tasks/projects.md를 업데이트하여 정체성 허브 노드 주입 완료(mirror-mind)와 허브 구현 대기(lighthouse) 항목을 반영했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "프로젝트 현황 업데이트",
+    "id": "n1124"
+  },
+  {
+    "content": "스크립트 작성 시 dotenv를 사용하여 .env 파일에서 API key를 로드하는 패턴을 적용했다. 환경변수가 직접 설정되지 않아도 동작하게 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "dotenv 패턴 적용",
+    "id": "n1125"
+  },
+  {
+    "content": "네트워크 과학의 허브 개념을 기억 시스템에 적용한 것이다. 허브 클러스터가 정체성을 분산 표현하고, spreading activation에서 주제에 따라 관련 측면이 선택적으로 활성화된다.",
+    "type": "intention",
+    "session": "2026-02-25-세션26",
+    "context_hint": "네트워크 과학 적용",
+    "id": "n1126"
+  },
+  {
+    "content": "inject_hub.py는 멱등성을 보장한다. session이 'identity'인 기존 허브 노드를 감지하여 정리한 후 재주입한다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "멱등성 설계",
+    "id": "n1127"
+  },
+  {
+    "content": "허브 노드의 엣지 method를 'hub_knn'으로 구분하여 일반 knn_k12 엣지와 식별할 수 있게 했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "엣지 구분",
+    "id": "n1128"
+  },
+  {
+    "content": "이번 세션에서 설계부터 구현, 검증, 다음 프로젝트(lighthouse) 적용 설계까지 한 사이클을 완료했다.",
+    "type": "fact",
+    "session": "2026-02-25-세션26",
+    "context_hint": "세션 성과 요약",
+    "id": "n1129"
+  },
+  {
+    "content": "lighthouse 허브 노드 구현이 이미 완료되어 있었다. 00009 마이그레이션, memory-node.ts, node-repository.ts, network.ts, seed-embeddings.ts, activate.ts 6개 파일 모두 스펙대로 구현되어 있었다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "허브 노드 검증",
+    "id": "n1130"
+  },
+  {
+    "content": "허브 노드 14개(정체성 6 + 관계 형성 8)의 평균 degree는 약 35.5이고, 일반 노드 34개의 평균 degree는 약 22였다. 허브:일반 비율 약 1.6배였다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "허브 노드 검증",
+    "id": "n1131"
+  },
+  {
+    "content": "48개 시드 노드만 있는 현재는 허브 효과가 크지 않지만, 경험 노드가 축적되면 차이가 벌어지는 구조다. 일반 노드는 top-12에 들어야만 연결되지만, 허브는 임계값 0.2만 넘으면 무조건 연결이 추가된다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "허브 노드 검증",
+    "id": "n1132"
+  },
+  {
+    "content": "허브 노드 구현을 tasks/projects.md에서 완료 처리했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "업무 관리",
+    "id": "n1133"
+  },
+  {
+    "content": "시연에서 보여줘야 할 것 두 가지: 1) 메모리 시스템이 주는 리서치 에이전트와 차별화된 협업 경험, 2) 찾아본 논문 목록 관리. 궁극적으로 1번 경험 극대화가 미션이다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "시연 준비",
+    "id": "n1134"
+  },
+  {
+    "content": "시연은 라이브로 진행하기로 했다. 1막(첫 만남)도 라이브로 보여준다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "시연 준비",
+    "id": "n1135"
+  },
+  {
+    "content": "시연 주제를 'AI scientist' 분야로 정했다. 이 분야를 처음 조사하는 조건으로 진행한다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "시연 준비",
+    "id": "n1136"
+  },
+  {
+    "content": "시연은 시나리오 1(새 분야 진입)로 하되, 다른 시나리오도 하나 더 준비하기로 했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "시연 준비",
+    "id": "n1137"
+  },
+  {
+    "content": "lighthouse 응답 속도를 분석했다. 순수 대화 ~2.4s, 검색 제안 ~3.4s, 검색+분석(5편) 5~10s, 20편 분석 20~40s. 대부분 30초 기준에 들어오지만 대량 논문 분석만 초과한다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "응답 속도 분석",
+    "id": "n1138"
+  },
+  {
+    "content": "논문 분석(analyze-papers.ts)이 for 루프로 순차 실행되고 있었다. Promise.all로 병렬화하면 5편 분석 시 5~10s에서 1~2s로 줄일 수 있다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "속도 개선",
+    "id": "n1139"
+  },
+  {
+    "content": "검색 자동 동작 문제의 원인을 찾았다. 시스템 프롬프트에서 '명시적 검색 요청'을 LLM이 너무 넓게 해석해서, 주제를 언급만 해도 propose 없이 바로 검색으로 직행하는 것이었다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "검색 자동 실행 문제",
+    "id": "n1140"
+  },
+  {
+    "content": "속도 개선 구현 프롬프트를 projects/lighthouse/speed-improvement-prompt.md에 작성하여 구현 에이전트에 전달했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "속도 개선",
+    "id": "n1141"
+  },
+  {
+    "content": "강재영이 2막 재방문 흐름에서 '안녕하세요, 오늘은 어떤 걸 살펴볼까요?'는 비서 톤이라고 지적했다. 동료라면 '금방 다시 보는군요. xx 때문에 다시 왔나요? 아니면 다른 거?'처럼 빠르게 재방문한 이유를 궁금해해야 한다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "에이전트 UX 설계",
+    "id": "n1142"
+  },
+  {
+    "content": "재방문 시 코르카가 시간 맥락을 파악하려면 마지막 대화 시점 정보가 필요하다. 현재 시스템에는 이전 대화의 타임스탬프가 프롬프트에 주입되지 않는다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "재방문 흐름 설계",
+    "id": "n1143"
+  },
+  {
+    "content": "강재영이 2막에서 코르카가 먼저 '지난번에 A/B/C가 있었죠'라고 브리핑하는 건 비서 톤이라고 지적했다. 사용자가 맥락을 꺼내면 기억이 따라오는 구조여야 한다.",
+    "type": "intention",
+    "session": "2026-02-26-세션27",
+    "context_hint": "에이전트 UX 원칙",
+    "id": "n1144"
+  },
+  {
+    "content": "코르카의 AI 연구 사전 경험은 방법 A(시드 노드 추가)로 구현하기로 결정했다. 사전 기억(conversation_id=null)으로 넣어서 '사전 지식'으로 표시되게 한다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "시연 준비",
+    "id": "n1145"
+  },
+  {
+    "content": "시드 노드 방식이 사전 대화 축적 방식보다 낫다고 판단했다. 대화 축적 방식은 anonymous user가 단일이라 1막 '첫 만남'인데 '이전 대화' 기억이 뜨면 혼동될 수 있기 때문이다.",
+    "type": "intention",
+    "session": "2026-02-26-세션27",
+    "context_hint": "시연 준비 설계",
+    "id": "n1146"
+  },
+  {
+    "content": "구현 에이전트 위임용 프롬프트 3개를 작성했다: revisit-flow-prompt.md(재방문 흐름), first-visit-explanation-prompt.md(첫 만남 자기 설명), ai-scientist-seed-nodes-prompt.md(AI scientist 시드 노드).",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "시연 준비 프롬프트",
+    "id": "n1147"
+  },
+  {
+    "content": "1막에서 코르카가 자기 행동을 설명하면서 진행하면 좋겠다는 피드백이 있었다. 예: '저는 바로 검색부터 하기보다, 먼저 어떤 맥락에서 이 분야에 관심을 갖게 되셨는지 알고 싶어요.'",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "에이전트 UX 설계",
+    "id": "n1148"
+  },
+  {
+    "content": "lighthouse 기억 형성 트리거는 '종료 메시지'가 아니라 '페이지 떠남'이다. 대화 전환 클릭 시 triggerNodeExtraction()이 fire-and-forget으로 호출되고, 탭 닫기/새로고침 시 beforeunload 이벤트로 트리거된다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "기억 시스템 동작",
+    "id": "n1149"
+  },
+  {
+    "content": "검색→분석→문서 생성이 한 턴에 자동 실행되는 문제를 발견했다. analyze_papers와 update_research_panel이 L5(자율)로 설정되어 있어서 사용자가 끼어들 틈이 없었다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "도구 사용 흐름 문제",
+    "id": "n1150"
+  },
+  {
+    "content": "도구 사용 흐름을 개선하기로 했다: analyze_papers 자율성을 L5에서 L3으로 낮추고, search→analyze 연쇄를 금지하고, 검색 후 다음 단계 선택지를 제시하고, 문서 생성 시 안내하고, 분석 후 인사이트로 대화를 이어가는 규칙을 추가한다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "도구 사용 흐름 개선",
+    "id": "n1151"
+  },
+  {
+    "content": "도구 사용 흐름 개선 프롬프트를 작성하여 구현 에이전트에 전달했다. 시스템 프롬프트만 수정하면 되는 작업이다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "도구 사용 흐름 개선",
+    "id": "n1152"
+  },
+  {
+    "content": "에이전트가 판단하고 도구를 선택하고 다음 프로세스로 넘어가는 흐름이 '검색 도구'와 '연구 동료'를 가르는 핵심 UX라는 인식을 공유했다. '에이전트 행동 UX 고도화'로 tasks/projects.md에 등록했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션27",
+    "context_hint": "에이전트 UX 과제",
+    "id": "n1153"
+  },
+  {
+    "content": "분석 완료 이후 후속 대화가 없는 문제를 발견했다. 문서만 만들고 끝나버린다. 문서 생성과 그것에 관해 대화하는 것은 별개라는 교훈을 얻었다.",
+    "type": "intention",
+    "session": "2026-02-26-세션27",
+    "context_hint": "에이전트 UX 원칙",
+    "id": "n1154"
+  },
+  {
+    "content": "시스템 프롬프트만으로는 도구 연쇄 제어에 한계가 올 수 있다. LLM이 프롬프트 규칙을 100% 따르지 않으므로, 나중에 오케스트레이터 코드 레벨에서 stopWhen에 강제 중단 조건을 추가하는 것도 고려해야 한다.",
+    "type": "intention",
+    "session": "2026-02-26-세션27",
+    "context_hint": "에이전트 UX 설계",
+    "id": "n1155"
+  },
+  {
+    "content": "시연 시나리오의 1막 종료 지점은 '분야 구조 파악(3가지 방향 제시)'으로 정했다. 시나리오 1의 Focus Formulation 직전이며, 2막에서 '방향 선택→deeper search'로 자연스럽게 이어진다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "시연 시나리오 설계",
+    "id": "n1156"
+  },
+  {
+    "content": "시나리오 3(놀라운 논문)은 현재 초록 정보만 접근 가능해서 어렵다고 판단했다. 시나리오 2(제안서 준비)가 대안이다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "시연 시나리오 설계",
+    "id": "n1157"
+  },
+  {
+    "content": "시연 준비 작업(시드 노드, 첫 만남 설명, 재방문 흐름)은 다음 세션으로 미뤘다. 이번 세션에서는 속도 개선과 도구 사용 개선에 집중했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "업무 관리",
+    "id": "n1158"
+  },
+  {
+    "content": "각 시연 단계가 30초를 넘어가지 않아야 하고, 응답이 오래 걸린다면 처리 과정을 투명하게 보여줘야 한다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "시연 요구사항",
+    "id": "n1159"
+  },
+  {
+    "content": "코르카가 스스로 AI 관련 연구를 많이 해서 기억을 가지고 있으면 시연이 더 자연스러울 것이라는 아이디어가 나왔다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "시연 아이디어",
+    "id": "n1160"
+  },
+  {
+    "content": "검색 후 행동 규칙을 새로 정의했다: 1) 결과 요약, 2) propose로 다음 단계 선택지 제공(핵심 논문 추리기/전체 분석/직접 살펴보기), 3) 검색 후 바로 다른 도구를 실행하지 않는다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "도구 사용 흐름 설계",
+    "id": "n1161"
+  },
+  {
+    "content": "실행 순서를 '시드 노드 → 첫 만남 + 재방문 → 속도 개선' 순으로 제안했다. 시드가 먼저 들어가야 시연 테스트가 가능하기 때문이다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "작업 우선순위",
+    "id": "n1162"
+  },
+  {
+    "content": "메타에이전트 리포트에서 memory_policy info 3건이 감지되었으나, 모두 기존 알려진 이슈(정체성/환경/UI 리서치 섹션 관련)였다.",
+    "type": "fact",
+    "session": "2026-02-26-세션27",
+    "context_hint": "메타에이전트",
+    "id": "n1163"
+  },
+  {
+    "content": "에이전트 행동 UX 고도화와 응답 속도 개선이 모두 완료되었다. 재영이 직접 구현 에이전트에서 마무리했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "lighthouse 작업 완료",
+    "id": "n1164"
+  },
+  {
+    "content": "tasks/projects.md에서 에이전트 행동 UX 고도화(도구 사용 흐름 개선, 검색 자동 실행 제어, 논문 분석 병렬화)와 응답 속도 개선 항목을 모두 완료 처리했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "프로젝트 상태 업데이트",
+    "id": "n1165"
+  },
+  {
+    "content": "세션 27에서 만든 구현 프롬프트 3개(AI Scientist 시드 노드, 첫 만남 자기설명, 재방문 흐름)를 재영이 직접 구현 에이전트에 전달하기로 했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "프롬프트 구현 위임",
+    "id": "n1166"
+  },
+  {
+    "content": "프롬프트 구현 순서를 정했다: 1) AI Scientist 시드 노드(DB 마이그레이션 먼저), 2) 첫 만남 자기설명(1막), 3) 재방문 흐름(2막).",
+    "type": "intention",
+    "session": "2026-02-26-세션28",
+    "context_hint": "시연 준비 우선순위",
+    "id": "n1167"
+  },
+  {
+    "content": "AI Scientist 시드 노드 프롬프트의 내용(Sakana AI, FunSearch, ChemCrow 등)이 어떻게 만들어졌는지 질문받았을 때, 정확히 기억하지 못했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "기억 시스템 한계 발견",
+    "id": "n1168"
+  },
+  {
+    "content": "재영이 기억 시스템 v3가 적용되고 있다면 왜 이전 세션 내용을 기억하지 못하느냐고 지적했다. 핵심적인 문제 제기였다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "기억 시스템 검증",
+    "id": "n1169"
+  },
+  {
+    "content": "기억 네트워크(nodes.json)에 세션 1~22까지만 있고 세션 23~27이 빠져 있었다. 네트워크 갱신이 5개 세션 동안 수행되지 않았던 것이 기억 실패의 원인이었다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "네트워크 미갱신 발견",
+    "id": "n1170"
+  },
+  {
+    "content": "세션 시작 절차에서 query.py(episodes.json 기반 구 시스템)를 primary로 사용하고 있었고, activate.py(v3 네트워크)는 보조에 불과했다. v3가 완성됐는데 절차가 업데이트되지 않은 문제였다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "절차 불일치 발견",
+    "id": "n1171"
+  },
+  {
+    "content": "재영이 \"쿼리는 네트워크를 조회해야 하는 거 아니야? 왜 에피소드를 조회하고 있지?\"라고 물었다. v3 네트워크가 primary여야 한다는 핵심 지적이었다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "기억 시스템 설계 원칙",
+    "id": "n1172"
+  },
+  {
+    "content": "세션 23~27의 노드 추출을 5개 서브에이전트 병렬로 수행했다. 총 198개 노드(세션23: 47, 세션24: 38, 세션25: 41, 세션26: 38, 세션27: 34)를 추출했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "노드 추출 작업",
+    "id": "n1173"
+  },
+  {
+    "content": "nodes.json이 966개에서 1164개로 증가했다. 새 198개 노드에 ID(n0966~n1163)를 부여하고 통합했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "네트워크 통합",
+    "id": "n1174"
+  },
+  {
+    "content": "새 198개 노드의 OpenAI text-embedding-3-small 임베딩을 증분 계산하고 embeddings.json에 추가했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "임베딩 증분 계산",
+    "id": "n1175"
+  },
+  {
+    "content": "knn_k12 네트워크를 전체 재구축했다. 1164개 노드, 10,079개 엣지. Gate 검증 3개(Giant component 100%, 1-hop coverage 1.53%, Avg path length 3.12) 모두 PASS.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "네트워크 재구축 검증",
+    "id": "n1176"
+  },
+  {
+    "content": "네트워크 갱신 후 \"AI scientist 시드 노드 프롬프트 작성\"으로 활성화 테스트를 했더니 세션 27 노드가 1위로 활성화되었다. 기억 시스템이 정상 작동하는 것을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "기억 활성화 검증",
+    "id": "n1177"
+  },
+  {
+    "content": "AGENTS.md에서 query.py(에피소드) 참조를 모두 제거하고 activate.py(네트워크)를 primary 기억 조회 수단으로 변경했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "구 시스템 제거",
+    "id": "n1178"
+  },
+  {
+    "content": "AGENTS.md의 '작업 종료' 트리거 설명을 'raw 저장 + episodes/memories 초안 생성'에서 'raw 저장 + 노드 추출 + 네트워크 갱신'으로 변경했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "절차 문서 갱신",
+    "id": "n1179"
+  },
+  {
+    "content": "close-session.py를 v3 네트워크 시스템으로 전면 교체했다. episodes/memories 초안 생성 대신 노드 추출 + 임베딩 계산 + knn_k12 재구축을 수행하는 구조로 변경했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "세션 종료 자동화 개선",
+    "id": "n1180"
+  },
+  {
+    "content": "close-session.py에서 numpy를 top-level import 대신 lazy import로 변경해야 했다. --raw-only 실행 시 numpy가 불필요한데 ModuleNotFoundError가 발생했기 때문이다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "close-session.py 버그 수정",
+    "id": "n1181"
+  },
+  {
+    "content": "기억 시스템에서 '프롬프트를 작성했다'는 사실은 추출되지만, 그 내용의 출처(검색? 일반 지식?)는 추출되지 않는 한계가 있다. 노드 추출의 깊이 문제다.",
+    "type": "intention",
+    "session": "2026-02-26-세션28",
+    "context_hint": "노드 추출 한계 인식",
+    "id": "n1182"
+  },
+  {
+    "content": "AI Scientist 시드 노드 내용을 웹 검색으로 검증한 결과, 사실 오류 2건이 발견되었다: Sakana AI의 'NeurIPS 2024 발표'는 거짓(arXiv 프리프린트), 리뷰 일치도 '50~60%'는 부정확(실제 30~39%).",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "시드 노드 사실 검증",
+    "id": "n1183"
+  },
+  {
+    "content": "AI Scientist 시드 노드에 2024~2025년 중요 발전 3건 추가를 제안했다: Google AI co-scientist(2025), FutureHouse Robin(2025), AlphaFold 노벨상(2024).",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "시드 노드 보강",
+    "id": "n1184"
+  },
+  {
+    "content": "검증 결과를 반영한 수정 프롬프트 ai-scientist-seed-fix-prompt.md를 작성했다. DB의 기존 8개 노드를 UPDATE하고 3개를 INSERT하는 마이그레이션 프롬프트다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "수정 프롬프트 작성",
+    "id": "n1185"
+  },
+  {
+    "content": "기존 프롬프트를 수정하는 것이 아니라, 이미 구현 완료된 DB 데이터를 수정하는 새 프롬프트로 지시해야 한다는 점을 재영이 지적했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "구현 완료 후 수정 방식",
+    "id": "n1186"
+  },
+  {
+    "content": "시연 준비 프롬프트 4건(AI Scientist 시드 추가, 첫 만남 자기설명, 재방문 흐름, AI Scientist 시드 수정) 모두 구현이 완료되었다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "프롬프트 구현 완료",
+    "id": "n1187"
+  },
+  {
+    "content": "구현 결과를 보니 개선할 점이 보인다고 재영이 말했다. 구체적 내용은 다음 세션에서 이어가기로 했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "다음 세션 이어가기",
+    "id": "n1188"
+  },
+  {
+    "content": "재영이 .prompt 파일에 개선점을 메모하자는 제안을 거절하고 바로 작업 종료를 선택했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "세션 종료",
+    "id": "n1189"
+  },
+  {
+    "content": "에피소드 기반 구 시스템(episodes.json, memories.json, query.py)은 v3 네트워크로 완전히 대체되었다. 앞으로는 activate.py만 사용한다.",
+    "type": "intention",
+    "session": "2026-02-26-세션28",
+    "context_hint": "기억 시스템 전환 확정",
+    "id": "n1190"
+  },
+  {
+    "content": "세션 종료 시 close-session.py가 자동으로 노드 추출 + 네트워크 갱신을 수행하는 구조가 완성되었다. 더 이상 수동 갱신이 필요하지 않다.",
+    "type": "intention",
+    "session": "2026-02-26-세션28",
+    "context_hint": "자동화 완성",
+    "id": "n1191"
+  },
+  {
+    "content": "네트워크 미갱신 문제는 세션 종료 절차에 네트워크 갱신이 포함되지 않았기 때문이었다. 이번에 close-session.py에 통합하여 재발을 방지했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션28",
+    "context_hint": "재발 방지 설계",
+    "id": "n1192"
+  },
+  {
+    "content": "오늘(2/26)은 후속 팀 공유 당일이었다. 시연 준비 프롬프트 구현과 기억 시스템 정비를 동시에 진행한 세션이었다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "세션 맥락",
+    "id": "n1193"
+  },
+  {
+    "content": "기억 노드 추출 시 서브에이전트 5개를 병렬로 투입하는 방식이 효과적이었다. 각 세션당 30~47개 노드를 추출했고, 전체 198개를 한 번에 처리했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "노드 추출 방법론",
+    "id": "n1194"
+  },
+  {
+    "content": "memory/.venv/bin/python3를 사용해야 numpy, openai 등 의존성이 있는 스크립트를 실행할 수 있다. /opt/homebrew/bin/python3에는 해당 패키지가 없다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "환경 설정",
+    "id": "n1195"
+  },
+  {
+    "content": ".env 파일 경로를 명시적으로 지정해야 한다. load_dotenv()만으로는 작업 디렉토리에 따라 .env를 찾지 못할 수 있다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "환경 설정 주의사항",
+    "id": "n1196"
+  },
+  {
+    "content": "재영이 '거창한 계획할 필요 없다. 간단히 수행해'라고 말하며, 계획 모드 대신 바로 실행을 선호했다. 이 프로젝트에서는 빠른 실행이 중요하다.",
+    "type": "fact",
+    "session": "2026-02-26-세션28",
+    "context_hint": "작업 스타일 선호",
+    "id": "n1197"
+  },
+  {
+    "content": "LLM이 일반 지식으로 작성한 내용은 반드시 검증이 필요하다. AI Scientist 시드 노드에서 사실 오류가 발견된 사례가 이를 증명했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션28",
+    "context_hint": "교훈: 사실 검증 필수",
+    "id": "n1198"
   }
 ]

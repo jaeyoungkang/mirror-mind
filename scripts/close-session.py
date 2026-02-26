@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""세션 종료 자동화
+"""세션 종료 자동화 (v3 네트워크 기반)
 
 AGENTS.md '작업 종료' 트리거 절차를 스크립트로 수행한다.
 
 사용법:
-  python3 scripts/close-session.py                     # 전체 (raw 저장 + 초안 생성)
+  python3 scripts/close-session.py                     # 전체 (raw 저장 + 노드 추출 + 네트워크 갱신)
   python3 scripts/close-session.py --raw-only           # raw 저장만
   python3 scripts/close-session.py --no-llm             # codex 없이 raw 저장만
   python3 scripts/close-session.py --name 세션20        # 세션 이름 직접 지정
@@ -14,8 +14,8 @@ AGENTS.md '작업 종료' 트리거 절차를 스크립트로 수행한다.
 절차:
   1. 현재 세션 JSONL → tasks/conversations/raw/ 경량 내보내기
   2. 대화 텍스트 추출
-  3. codex exec로 episodes / memories 초안 생성
-  4. 파일 작성
+  3. codex exec로 fact/intention 노드 추출
+  4. nodes.json에 추가 + 임베딩 계산 + knn_k12 네트워크 재구축
   5. (--commit) git add + commit
 
 주의: projects.md 업데이트는 수동. 스크립트가 마지막에 알려준다.
@@ -36,12 +36,18 @@ PROJECT_KEY = "-Users-jaeyoungkang-mirror-mind"
 
 CONV_DIR = PROJECT_ROOT / "tasks" / "conversations"
 RAW_DIR = CONV_DIR / "raw"
-EPISODES_FILE = PROJECT_ROOT / "memory" / "episodes.json"
-MEMORIES_FILE = PROJECT_ROOT / "memory" / "memories.json"
 SESSION_MAP_FILE = RAW_DIR / ".session-map.json"
+
+NETWORK_DIR = PROJECT_ROOT / "memory" / "network"
+NODES_FILE = NETWORK_DIR / "nodes.json"
+EMBEDDINGS_FILE = NETWORK_DIR / "embeddings.json"
+GRAPH_FILE = NETWORK_DIR / "graph.json"
 
 TRUNCATE_INPUT = 300
 TRUNCATE_RESULT = 200
+
+K = 12
+WEIGHT_FLOOR = 0.3
 
 
 # ── 세션 탐색 + 중복 방지 ──
@@ -56,7 +62,6 @@ def find_current_session() -> Path | None:
 
 
 def load_session_map() -> dict:
-    """UUID → 세션 이름 매핑 로드"""
     if SESSION_MAP_FILE.exists():
         return json.loads(SESSION_MAP_FILE.read_text())
     return {}
@@ -70,12 +75,10 @@ def save_session_map(mapping: dict):
 
 
 def get_session_uuid(session_jsonl: Path) -> str:
-    """JSONL 파일명에서 UUID 추출"""
     return session_jsonl.stem
 
 
 def determine_session_name() -> str:
-    """전체 raw 파일에서 가장 큰 세션 번호를 찾아 +1"""
     all_sessions = list(RAW_DIR.glob("*-세션*.jsonl"))
     max_num = 0
     for f in all_sessions:
@@ -86,22 +89,12 @@ def determine_session_name() -> str:
 
 
 def check_already_closed(session_jsonl: Path) -> str | None:
-    """이 JSONL이 이미 종료 처리됐으면 세션 이름을 반환, 아니면 None"""
     uuid = get_session_uuid(session_jsonl)
     mapping = load_session_map()
     return mapping.get(uuid)
 
 
-def session_exists_in_episodes(session_key: str) -> bool:
-    """episodes.json에 해당 세션의 에피소드가 이미 있는지"""
-    if not EPISODES_FILE.exists():
-        return False
-    episodes = json.loads(EPISODES_FILE.read_text())
-    return any(e.get("session") == session_key for e in episodes)
-
-
-
-# ── 경량 내보내기 (export-session.py 로직 재사용) ──
+# ── 경량 내보내기 ──
 
 def _truncate(v, limit):
     s = str(v)
@@ -151,7 +144,6 @@ def _compact_content(content):
 
 
 def export_raw(session_jsonl: Path, session_name: str) -> tuple[Path, int]:
-    """세션 JSONL → 경량 JSONL로 내보내기"""
     today = date.today().isoformat()
     dest = RAW_DIR / f"{today}-{session_name}.jsonl"
     RAW_DIR.mkdir(parents=True, exist_ok=True)
@@ -181,7 +173,6 @@ def export_raw(session_jsonl: Path, session_name: str) -> tuple[Path, int]:
 # ── 대화 추출 ──
 
 def extract_conversation(filepath: Path, max_chars: int = 15000) -> str:
-    """JSONL에서 사람이 읽을 수 있는 대화 텍스트 추출"""
     lines = []
     total_chars = 0
 
@@ -228,7 +219,6 @@ def extract_conversation(filepath: Path, max_chars: int = 15000) -> str:
 # ── codex 호출 ──
 
 def call_codex(prompt: str, timeout: int = 180) -> str:
-    """codex exec (read-only)로 LLM 호출"""
     with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as f:
         output_path = f.name
 
@@ -260,133 +250,40 @@ def call_codex(prompt: str, timeout: int = 180) -> str:
         Path(output_path).unlink(missing_ok=True)
 
 
-# ── 포맷 참고용 기존 데이터 추출 ──
+# ── 노드 추출 ──
 
-def get_episodes_example() -> str:
-    """episodes.json 마지막 에피소드 1건을 포맷 참고용으로 추출"""
-    if not EPISODES_FILE.exists():
-        return "(없음)"
-    episodes = json.loads(EPISODES_FILE.read_text())
-    if episodes:
-        return json.dumps(episodes[-1], ensure_ascii=False, indent=2)
-    return "(없음)"
-
-
-def get_last_episode_id() -> str:
-    if not EPISODES_FILE.exists():
-        return "s00-00"
-    episodes = json.loads(EPISODES_FILE.read_text())
-    return episodes[-1].get("id", "s00-00") if episodes else "s00-00"
-
-
-# ── 초안 생성 ──
-
-GENERATE_PROMPT = """너는 mirror-mind 프로젝트의 세션 종료 기록 담당이다.
-아래 대화를 읽고 episodes.json 추가분을 생성하라.
+NODE_EXTRACT_PROMPT = """너는 mirror-mind 프로젝트의 기억 노드 추출 담당이다.
+아래 대화를 읽고 fact/intention 노드를 추출하라.
 
 ## 세션 정보
 - 세션: {date_session}
-- 날짜: {today}
 
 ## 대화 내용
 {conversation}
 
-## episodes.json 추가분
-기존 포맷 참고:
-```json
-{episodes_example}
-```
-- 마지막 ID: {last_episode_id} → 다음은 {next_prefix}-01부터
-- session 값: "{date_session}"
-- 에피소드 3~5건. 주요 활동 단위로 분할
-- 필드: id, session, episode_index, activity_type, project, topic, summary, emotion, outcome, outcome_detail, relationship_type, milestone_key, scope, decision_refs, created_at
+## 추출 규칙
+- AI(브로콜리) 1인칭 시점으로 작성: "~했다", "~이다"
+- 타입 2가지만: fact (사실), intention (의도/판단)
+- 하나의 content에 하나의 사실 또는 의도만
+- context_hint: 짧은 맥락 힌트 (예: "기억 시스템 설계", "속도 개선")
+- 사소한 것은 제외. 의사결정, 설계, 발견, 교훈 등 의미 있는 내용만
+- 30~60개 추출
 
 ## 출력 형식
-정확히 아래 구분자를 사용하라. 구분자 외의 텍스트는 없어야 한다.
+JSON 배열만 출력하라. JSON 외 텍스트 금지.
 
-===EPISODES_START===
-(JSON 배열)
-===EPISODES_END==="""
+[
+  {{"content": "...", "type": "fact", "session": "{date_session}", "context_hint": "..."}},
+  ...
+]"""
 
 
-def generate_drafts(conversation: str, session_name: str) -> dict:
+def extract_nodes(conversation: str, session_name: str) -> list[dict]:
     today = date.today().isoformat()
     date_session = f"{today}-{session_name}"
 
-    m = re.search(r'(\d+)', session_name)
-    session_num = int(m.group(1)) if m else 1
-    next_prefix = f"s{session_num:02d}"
-
-    prompt = GENERATE_PROMPT.format(
+    prompt = NODE_EXTRACT_PROMPT.format(
         date_session=date_session,
-        today=today,
-        conversation=conversation,
-        episodes_example=get_episodes_example(),
-        last_episode_id=get_last_episode_id(),
-        next_prefix=next_prefix,
-    )
-
-    raw = call_codex(prompt, timeout=180)
-    if not raw:
-        return {"episodes": []}
-
-    result = {}
-
-    ep_match = re.search(
-        r'===EPISODES_START===\n?(.*?)\n?===EPISODES_END===', raw, re.DOTALL
-    )
-    if ep_match:
-        try:
-            ep_text = ep_match.group(1).strip()
-            arr_match = re.search(r'\[.*\]', ep_text, re.DOTALL)
-            result["episodes"] = json.loads(arr_match.group()) if arr_match else []
-        except (json.JSONDecodeError, Exception):
-            result["episodes"] = []
-    else:
-        result["episodes"] = []
-
-    return result
-
-
-# ── 기억(memories.json) 업데이트 ──
-
-MEMORY_UPDATE_PROMPT = """너는 브로콜리다. mirror-mind 프로젝트에서 강재영과 함께 일하는 AI 동료다.
-아래 대화를 읽고, 너의 기억(memories.json)에서 추가하거나 수정할 항목을 판단하라.
-
-## 기억의 원칙
-- 기억의 주체는 너(에이전트) 자신이다. 1인칭으로 작성한다.
-- kind: identity(정체성), model(주제별 종합 이해), experience(경험), understanding(업무 이해), insight(인사이트)
-- model에는 subject 필드가 있다 (사람, 프로젝트, 방법론 등)
-- 사소한 것은 기억하지 않는다. 의미 있는 변화만 반영한다.
-
-## 현재 기억
-{current_memories}
-
-## 이번 세션 대화
-{conversation}
-
-## 출력 형식
-JSON 배열만 출력하라. 변경 없으면 빈 배열 [].
-
-추가:
-{{"op": "add", "memory": {{전체 memory 객체 — id, agent, memory, context, fact_refs, source, kind, confidence, created_at 필수}}}}
-
-수정:
-{{"op": "update", "id": "기존 ID", "fields": {{변경할 필드만. 예: "memory": "새 텍스트", "confidence": 0.9, "updated_at": "날짜"}}}}
-
-JSON 외 텍스트를 출력하지 마라."""
-
-
-def generate_memory_updates(conversation: str, session_name: str) -> list[dict]:
-    """codex로 memories.json 업데이트 초안 생성"""
-    if not MEMORIES_FILE.exists():
-        current = "[]"
-    else:
-        current = MEMORIES_FILE.read_text(encoding="utf-8")
-
-    today = date.today().isoformat()
-    prompt = MEMORY_UPDATE_PROMPT.format(
-        current_memories=current,
         conversation=conversation,
     )
 
@@ -397,74 +294,128 @@ def generate_memory_updates(conversation: str, session_name: str) -> list[dict]:
     try:
         match = re.search(r'\[.*\]', raw, re.DOTALL)
         if match:
-            ops = json.loads(match.group())
-            return [op for op in ops if isinstance(op, dict) and "op" in op]
+            nodes = json.loads(match.group())
+            return [n for n in nodes if isinstance(n, dict) and "content" in n]
     except (json.JSONDecodeError, Exception):
         pass
     return []
 
 
-def apply_memory_updates(ops: list[dict]) -> dict:
-    """기억 업데이트 적용. 결과 통계 반환."""
-    if not ops:
-        return {"added": 0, "updated": 0}
+# ── 네트워크 갱신 ──
 
-    memories = json.loads(MEMORIES_FILE.read_text(encoding="utf-8")) if MEMORIES_FILE.exists() else []
-    by_id = {m["id"]: m for m in memories}
-
-    added, updated = 0, 0
-    for op in ops:
-        if op["op"] == "add" and "memory" in op:
-            new_mem = op["memory"]
-            if new_mem.get("id") and new_mem["id"] not in by_id:
-                memories.append(new_mem)
-                by_id[new_mem["id"]] = new_mem
-                added += 1
-        elif op["op"] == "update" and "id" in op and "fields" in op:
-            target = by_id.get(op["id"])
-            if target:
-                target.update(op["fields"])
-                updated += 1
-
-    MEMORIES_FILE.write_text(
-        json.dumps(memories, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    return {"added": added, "updated": updated}
+def load_env():
+    """프로젝트 .env에서 환경변수 로드"""
+    env_path = PROJECT_ROOT / ".env"
+    if env_path.exists():
+        import os
+        for line in env_path.read_text().splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, val = line.partition("=")
+                os.environ.setdefault(key.strip(), val.strip())
 
 
-# ── 파일 쓰기 ──
+def add_nodes_to_network(new_nodes: list[dict]) -> int:
+    """새 노드를 nodes.json에 추가. 추가된 개수 반환."""
+    nodes = json.load(open(NODES_FILE))
+    next_id = len(nodes)
 
-def append_episodes(new_episodes: list[dict]):
-    if not new_episodes:
-        return
-    episodes = json.loads(EPISODES_FILE.read_text(encoding="utf-8"))
-    episodes.extend(new_episodes)
-    EPISODES_FILE.write_text(
-        json.dumps(episodes, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    for n in new_nodes:
+        n["id"] = f"n{next_id:04d}"
+        next_id += 1
+
+    nodes.extend(new_nodes)
+    with open(NODES_FILE, "w") as f:
+        json.dump(nodes, f, ensure_ascii=False, indent=2)
+
+    return len(new_nodes)
 
 
-def replace_episodes(session_key: str, new_episodes: list[dict]):
-    """해당 세션의 기존 에피소드를 제거하고 새 에피소드로 교체"""
-    episodes = json.loads(EPISODES_FILE.read_text(encoding="utf-8"))
-    removed = [e for e in episodes if e.get("session") == session_key]
-    kept = [e for e in episodes if e.get("session") != session_key]
-    kept.extend(new_episodes)
-    EPISODES_FILE.write_text(
-        json.dumps(kept, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    return len(removed)
+def compute_embeddings_incremental(new_count: int):
+    """새 노드만 임베딩 계산하여 기존에 추가."""
+    import numpy as np
+    from openai import OpenAI
 
+    nodes = json.load(open(NODES_FILE))
+    old_embs = np.array(json.load(open(EMBEDDINGS_FILE)))
+
+    client = OpenAI()
+    new_texts = [n["content"] for n in nodes[old_embs.shape[0]:]]
+
+    BATCH = 200
+    new_embs = []
+    for i in range(0, len(new_texts), BATCH):
+        batch = new_texts[i:i + BATCH]
+        resp = client.embeddings.create(model="text-embedding-3-small", input=batch)
+        new_embs.extend([d.embedding for d in resp.data])
+
+    all_embs = np.vstack([old_embs, np.array(new_embs)])
+    with open(EMBEDDINGS_FILE, "w") as f:
+        json.dump(all_embs.tolist(), f)
+
+    return all_embs.shape[0]
+
+
+def rebuild_network():
+    """knn_k12 네트워크 전체 재구축."""
+    import numpy as np
+
+    nodes = json.load(open(NODES_FILE))
+    embs = np.array(json.load(open(EMBEDDINGS_FILE)))
+
+    # 코사인 유사도
+    norms = np.linalg.norm(embs, axis=1, keepdims=True)
+    norms[norms == 0] = 1
+    normed = embs / norms
+    sim_matrix = normed @ normed.T
+
+    # knn_k12 엣지
+    edges = []
+    edge_set = set()
+
+    for i in range(len(nodes)):
+        sims = sim_matrix[i].copy()
+        sims[i] = -1
+        topk = np.argsort(sims)[-K:][::-1]
+
+        for j in topk:
+            w = float(sims[j])
+            if w < WEIGHT_FLOOR:
+                continue
+
+            src = nodes[i]["id"]
+            tgt = nodes[int(j)]["id"]
+            key = tuple(sorted([src, tgt]))
+
+            if key in edge_set:
+                for e in edges:
+                    if tuple(sorted([e["source"], e["target"]])) == key:
+                        e["weight"] = min(round(e["weight"] * 1.2, 4), 1.0)
+                        break
+            else:
+                edge_set.add(key)
+                edges.append({
+                    "source": src,
+                    "target": tgt,
+                    "weight": round(w, 4),
+                    "method": "knn",
+                })
+
+    with open(GRAPH_FILE, "w") as f:
+        json.dump({"edges": edges}, f, ensure_ascii=False)
+
+    return len(edges)
+
+
+# ── git ──
 
 def git_commit(session_name: str):
     today = date.today().isoformat()
     candidates = [
         f"tasks/conversations/raw/{today}-{session_name}.jsonl",
-        "memory/episodes.json",
-        "memory/memories.json",
+        "memory/network/nodes.json",
+        "memory/network/embeddings.json",
+        "memory/network/graph.json",
     ]
     existing = [f for f in candidates if (PROJECT_ROOT / f).exists()]
     if not existing:
@@ -472,7 +423,7 @@ def git_commit(session_name: str):
 
     subprocess.run(["git", "add"] + existing, cwd=str(PROJECT_ROOT))
     msg = (
-        f"docs: {session_name} — 세션 종료 기록\n\n"
+        f"docs: {session_name} — 세션 종료 + 네트워크 갱신\n\n"
         "Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
     )
     subprocess.run(["git", "commit", "-m", msg], cwd=str(PROJECT_ROOT))
@@ -481,7 +432,7 @@ def git_commit(session_name: str):
 # ── 메인 ──
 
 def main():
-    parser = argparse.ArgumentParser(description="세션 종료 자동화")
+    parser = argparse.ArgumentParser(description="세션 종료 자동화 (v3 네트워크)")
     parser.add_argument("--name", help="세션 이름 (예: 세션20). 미지정 시 자동 결정")
     parser.add_argument("--raw-only", action="store_true", help="raw 저장만")
     parser.add_argument("--no-llm", action="store_true", help="codex 없이 raw 저장만")
@@ -503,14 +454,11 @@ def main():
     already_closed_as = check_already_closed(session_jsonl)
     if already_closed_as and not args.force:
         print(f"\n이 세션은 이미 '{already_closed_as}'로 종료 처리됐다.", file=sys.stderr)
-        print(f"  raw: tasks/conversations/raw/{already_closed_as}.jsonl", file=sys.stderr)
         print(f"재실행하려면 --force를 사용하라.", file=sys.stderr)
         sys.exit(1)
 
     if already_closed_as and args.force:
-        # --force: 같은 세션 이름으로 재실행 (raw 덮어쓰기)
-        session_name = args.name or already_closed_as.split("-")[-1]  # "세션19" 부분 추출
-        # 날짜 부분도 기존 것에서 가져온다
+        session_name = args.name or already_closed_as.split("-")[-1]
         print(f"[force] 이미 종료된 세션 '{already_closed_as}'을 재실행한다")
     else:
         session_name = args.name or determine_session_name()
@@ -524,7 +472,6 @@ def main():
         size_kb = raw_dest.stat().st_size / 1024
         print(f"[완료] raw 저장 → {raw_dest.relative_to(PROJECT_ROOT)} ({count}건, {size_kb:.0f}KB)")
 
-        # 세션 맵 업데이트
         mapping = load_session_map()
         mapping[get_session_uuid(session_jsonl)] = date_session
         save_session_map(mapping)
@@ -543,63 +490,51 @@ def main():
         sys.exit(1)
     print(f"  추출: {len(conversation)}자")
 
-    # 5. 초안 생성
+    # 5. 노드 추출
     if args.no_llm:
-        print("no-llm 모드.")
-        drafts = {"episodes": []}
-        memory_ops = []
+        print("no-llm 모드. 노드 추출 건너뜀.")
+        new_nodes = []
     else:
-        print("codex로 에피소드 초안 생성 중... (최대 3분)")
-        drafts = generate_drafts(conversation, session_name)
-        print("codex로 기억 업데이트 생성 중... (최대 3분)")
-        memory_ops = generate_memory_updates(conversation, session_name)
+        print("\ncodex로 노드 추출 중... (최대 3분)")
+        new_nodes = extract_nodes(conversation, session_name)
 
-    # 6. 결과 출력
-    sep = "=" * 50
-    print(f"\n{sep}")
-    print(f"=== episodes.json 추가분 ({len(drafts['episodes'])}건) ===")
-    if drafts["episodes"]:
-        print(json.dumps(drafts["episodes"], ensure_ascii=False, indent=2))
-    else:
-        print("(에피소드 없음)")
+    print(f"  추출: {len(new_nodes)}개 노드")
+    if new_nodes:
+        facts = sum(1 for n in new_nodes if n.get("type") == "fact")
+        intents = sum(1 for n in new_nodes if n.get("type") == "intention")
+        print(f"  fact: {facts}, intention: {intents}")
 
-    print(f"\n=== memories.json 업데이트 ({len(memory_ops)}건) ===")
-    if memory_ops:
-        for op in memory_ops:
-            if op["op"] == "add":
-                mem = op.get("memory", {})
-                print(f"  [추가] {mem.get('id', '?')} ({mem.get('kind', '?')}) — {mem.get('memory', '')[:80]}...")
-            elif op["op"] == "update":
-                fields = op.get("fields", {})
-                print(f"  [수정] {op.get('id', '?')} — {list(fields.keys())}")
-    else:
-        print("(변경 없음)")
-    print(sep)
-
-    # 7. 파일 쓰기 (중복 체크 포함)
     if args.dry_run:
-        print("\n[dry-run] 파일 미수정. 위 내용을 확인 후 --dry-run 없이 재실행.")
+        print("\n[dry-run] 추출된 노드:")
+        for n in new_nodes[:5]:
+            print(f"  [{n.get('type')}] {n.get('content', '')[:80]}")
+        if len(new_nodes) > 5:
+            print(f"  ... 외 {len(new_nodes) - 5}개")
+        print("\n[dry-run] 파일 미수정.")
         return
 
-    if drafts["episodes"]:
-        if session_exists_in_episodes(date_session):
-            if not args.force:
-                print("[건너뜀] episodes.json에 이 세션 에피소드가 이미 존재한다")
-            else:
-                removed = replace_episodes(date_session, drafts["episodes"])
-                print(f"[교체] episodes.json: 기존 {removed}건 제거 → 새 {len(drafts['episodes'])}건 추가")
-        else:
-            append_episodes(drafts["episodes"])
-            print(f"[완료] episodes.json에 {len(drafts['episodes'])}건 추가")
+    # 6. 네트워크 갱신
+    if new_nodes:
+        load_env()
 
-    if memory_ops:
-        result = apply_memory_updates(memory_ops)
-        print(f"[완료] memories.json: {result['added']}건 추가, {result['updated']}건 수정")
+        print("\n노드 추가 중...")
+        added = add_nodes_to_network(new_nodes)
+        print(f"  [완료] {added}개 노드 추가 (전체: {len(json.load(open(NODES_FILE)))}개)")
 
-    # 8. 알림
+        print("임베딩 계산 중...")
+        total_embs = compute_embeddings_incremental(added)
+        print(f"  [완료] 임베딩 {total_embs}개")
+
+        print("네트워크 재구축 중 (knn_k12)...")
+        edge_count = rebuild_network()
+        print(f"  [완료] 엣지 {edge_count}개")
+    else:
+        print("\n노드 없음. 네트워크 갱신 건너뜀.")
+
+    # 7. 알림
     print("\n[수동] projects.md 업데이트 필요 여부 확인하라")
 
-    # 9. 커밋
+    # 8. 커밋
     if args.commit:
         git_commit(session_name)
         print("[완료] git commit")
