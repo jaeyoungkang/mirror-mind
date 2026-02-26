@@ -8965,5 +8965,327 @@
     "session": "2026-02-26-세션29",
     "context_hint": "기억 확장 설계",
     "id": "n1280"
+  },
+  {
+    "content": "세션 시작 시 메타에이전트 리포트에서 memory_policy info 3건이 있었고 실질 위반은 없다고 파악했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "세션 시작 점검",
+    "id": "n1281"
+  },
+  {
+    "content": "사용자 기억 시스템의 남은 작업이 매 턴 추출, profile 노드, 재방문 로드라고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "기억 시스템 상태",
+    "id": "n1282"
+  },
+  {
+    "content": "사용자가 사용자 기억 시스템 완료를 알렸고 이를 tasks/projects.md에 완료로 반영했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "작업 상태 갱신",
+    "id": "n1283"
+  },
+  {
+    "content": "연구 문서 작성 후 도구 호출이 끊기는 문제를 lighthouse 코드 기준으로 조사했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "도구 호출 장애 조사",
+    "id": "n1284"
+  },
+  {
+    "content": "현재 도구 호출이 streamText 단일 루프 구조로 처리된다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "아키텍처 분석",
+    "id": "n1285"
+  },
+  {
+    "content": "stopWhen 조건에 hasToolCall(\"propose\")와 stepCountIs(5)가 포함되어 있다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "실행 제약 분석",
+    "id": "n1286"
+  },
+  {
+    "content": "update_research_panel 이후 다음 행동 지시가 약해 LLM이 finishReason stop으로 턴을 종료할 수 있다고 진단했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "원인 분석",
+    "id": "n1287"
+  },
+  {
+    "content": "stepCountIs(5)가 복잡한 도구 연쇄에서 스텝 고갈을 유발할 수 있다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션30",
+    "context_hint": "제약 평가",
+    "id": "n1288"
+  },
+  {
+    "content": "hasToolCall(\"propose\") 기반 즉시 중단이 propose 이후 추가 도구 호출을 막는다고 파악했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "중단 조건 분석",
+    "id": "n1289"
+  },
+  {
+    "content": "도구 연쇄 규칙이 코드가 아닌 시스템 프롬프트 자연어에만 존재하는 것이 구조적 한계라고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션30",
+    "context_hint": "구조적 진단",
+    "id": "n1290"
+  },
+  {
+    "content": "프롬프트 보강안(A)과 오케스트레이션 레이어 도입안(B) 두 방향을 제시했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "해결 방향 제안",
+    "id": "n1291"
+  },
+  {
+    "content": "사용자 선택에 따라 근본 해결을 위해 B 방향으로 진행하기로 합의했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "의사결정",
+    "id": "n1292"
+  },
+  {
+    "content": "코드가 오케스트레이터이고 LLM은 실행자 역할로 전환해야 한다고 설계 원칙을 세웠다.",
+    "type": "intention",
+    "session": "2026-02-26-세션30",
+    "context_hint": "아키텍처 원칙",
+    "id": "n1293"
+  },
+  {
+    "content": "턴을 Intent, Chain, Respond, Propose 단계로 분해하는 Turn Pipeline 개념을 제안했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "파이프라인 설계",
+    "id": "n1294"
+  },
+  {
+    "content": "search/find/cluster 이후 update_research_panel을 코드가 강제 실행하도록 보장해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션30",
+    "context_hint": "후속 동작 강제",
+    "id": "n1295"
+  },
+  {
+    "content": "도구 실행 뒤에는 반드시 대화 응답을 생성해 문서 생성 후 대화 단절을 막아야 한다고 결정했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션30",
+    "context_hint": "대화 연속성 보장",
+    "id": "n1296"
+  },
+  {
+    "content": "사용자 요구에 맞춰 propose 호출 여부는 최종적으로 LLM 자율 판단으로 두기로 반영했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "요구 반영",
+    "id": "n1297"
+  },
+  {
+    "content": "시연 목적 기준으로 3-Phase 파이프라인(Execute, Post, Dialogue)으로 단순화해 재설계했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "시연 최적화",
+    "id": "n1298"
+  },
+  {
+    "content": "Phase 1에서 maxSteps를 1로 제한해 주요 도구 1회 실행만 허용하는 설계를 채택했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "실행 제어",
+    "id": "n1299"
+  },
+  {
+    "content": "Phase 2는 LLM 호출 없이 코드가 필수 후속 처리를 수행하도록 정의했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "Post 단계 설계",
+    "id": "n1300"
+  },
+  {
+    "content": "Phase 3는 propose만 도구로 허용하고 나머지 도구는 차단하는 대화 전용 단계로 정의했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "Dialogue 단계 설계",
+    "id": "n1301"
+  },
+  {
+    "content": "search_papers와 find_related_papers가 이미 searchResultsDoc을 반환해 Phase 2에서 직접 문서화 가능함을 발견했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "구현 가능성 확인",
+    "id": "n1302"
+  },
+  {
+    "content": "cluster_papers는 searchResultsDoc이 없어 코드 템플릿 생성이 필요하다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "예외 처리 발견",
+    "id": "n1303"
+  },
+  {
+    "content": "클라이언트 SearchPapersResult가 기본 패널 동기화를 수행해 update_research_panel 의존도를 줄일 수 있다고 파악했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "기존 기능 재평가",
+    "id": "n1304"
+  },
+  {
+    "content": "AI SDK v6의 createDataStreamResponse와 mergeIntoDataStream으로 다중 phase를 단일 스트림으로 합칠 수 있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "스트리밍 구현 기반",
+    "id": "n1305"
+  },
+  {
+    "content": "3-Phase 구현 프롬프트를 projects/lighthouse/turn-pipeline-prompt.md에 작성했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "설계 문서화",
+    "id": "n1306"
+  },
+  {
+    "content": "연구 문서가 세션에 종속되도록 하는 추가 프롬프트 요청을 받아 현 구조를 조사했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "세션 종속성 점검",
+    "id": "n1307"
+  },
+  {
+    "content": "DB 레벨에서는 artifacts.conversation_id로 이미 세션 종속이 걸려 있다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "데이터 모델 확인",
+    "id": "n1308"
+  },
+  {
+    "content": "핵심 문제는 Zustand 글로벌 스토어 리셋 누락으로 세션 전환 시 이전 문서가 잔존할 수 있는 점이라고 진단했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "버그 원인 진단",
+    "id": "n1309"
+  },
+  {
+    "content": "NotebookCanvas hydration에서 documents를 추가만 하고 초기화하지 않는 동작을 리스크로 확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "UI 상태 관리 분석",
+    "id": "n1310"
+  },
+  {
+    "content": "사용자 확인 결과 실제 이슈가 세션 전환 후 이전 문서가 남는 A 시나리오임을 확정했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "문제 재현 유형",
+    "id": "n1311"
+  },
+  {
+    "content": "clearDocuments 액션 추가와 hydration 전 초기화 수정을 담은 프롬프트를 작성했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "수정안 설계",
+    "id": "n1312"
+  },
+  {
+    "content": "해당 작업을 안정화 하위 항목으로 tasks에 등록했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "작업 분류",
+    "id": "n1313"
+  },
+  {
+    "content": "사용자가 구현 완료를 보고해 관련 두 건을 완료 처리했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "완료 반영",
+    "id": "n1314"
+  },
+  {
+    "content": "데모 참여자가 적었다는 상황을 기록하고 개선 피드백 수집으로 전환했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "데모 회고",
+    "id": "n1315"
+  },
+  {
+    "content": "핵심 피드백을 결과물이 타제품보다 좋아야 한다는 요구로 식별했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "핵심 피드백",
+    "id": "n1316"
+  },
+  {
+    "content": "직접 품질 경쟁보다 사용자 맥락 반영 결과물로 차별화해야 한다고 전략적으로 판단했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션30",
+    "context_hint": "경쟁 전략",
+    "id": "n1317"
+  },
+  {
+    "content": "결과물 품질을 분석 깊이와 사용자 맥락 반영도의 곱으로 보는 프레임을 제시했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션30",
+    "context_hint": "품질 프레임",
+    "id": "n1318"
+  },
+  {
+    "content": "Semantic Scholar openAccessPdf 필드로 원문 PDF 접근이 기술적으로 가능하다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "원문 접근 전략",
+    "id": "n1319"
+  },
+  {
+    "content": "PDF 텍스트 추출과 섹션 분리 기반 전문 분석으로 초록 기반 한계를 보완할 수 있다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션30",
+    "context_hint": "분석 고도화",
+    "id": "n1320"
+  },
+  {
+    "content": "모든 논문이 오픈액세스가 아니므로 초록 기반 폴백을 병행해야 한다고 정리했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션30",
+    "context_hint": "커버리지 대응",
+    "id": "n1321"
+  },
+  {
+    "content": "원문 접근 기반 품질 차별화 과제를 tasks에 등록했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "신규 과제 등록",
+    "id": "n1322"
+  },
+  {
+    "content": "골든 샘플을 먼저 만들고 이를 기준으로 lighthouse를 튜닝하는 방식이 가장 확실하다고 동의했다.",
+    "type": "intention",
+    "session": "2026-02-26-세션30",
+    "context_hint": "튜닝 방법론",
+    "id": "n1323"
+  },
+  {
+    "content": "직접 임팩트 있는 조사 수행 후 견본 문서를 여러 개 제작하는 작업을 tasks에 등록했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "견본 제작 계획",
+    "id": "n1324"
+  },
+  {
+    "content": "진행 순서를 골든 샘플 제작, 튜닝, 전문 접근으로 설정했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "실행 순서 결정",
+    "id": "n1325"
+  },
+  {
+    "content": "세션 종료 시점에 이번 교훈을 결과물 품질 차별화 방향으로 정리했다.",
+    "type": "fact",
+    "session": "2026-02-26-세션30",
+    "context_hint": "세션 교훈",
+    "id": "n1326"
   }
 ]

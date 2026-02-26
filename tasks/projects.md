@@ -88,7 +88,7 @@
         - [x] 재방문 흐름 (`revisit-flow-prompt.md`)
         - [x] AI Scientist 시드 노드 사실 검증 + 수정 (`ai-scientist-seed-fix-prompt.md`)
       - [>] 시연 결과 확인 후 개선 — 프롬프트 4건 정상 동작 확인 완료, 개선점 있음. 재방문 흐름 구조적 구멍(케이스 4,5) 논의 필요
-      - [>] 2/26 후속 공유 준비 — 1막(첫 만남)+2막(재방문) 시나리오 복원 완료, 구체적 시연 흐름 확정 상태. 공유 실행 대기 중
+      - [x] 2/26 후속 공유 완료 — 참여자 적었음. 3/2 후속 공유 예정
       - [ ] 시나리오 1,2 실제 시연 검증
     - [ ] 시나리오 3~5 점진적 확장
   - [x] 기억 시스템 v3 네트워크 적용 — memory_episodes를 fact/intention 네트워크로 완전 대체
@@ -111,15 +111,29 @@
     - [x] 논문 분석 병렬화 — analyze_papers 순차→병렬 (속도)
     - [x] 각 도구 단계의 투명한 설명 — 왜 이 도구를 선택했는지, 다음에 뭘 할 수 있는지
     - [x] 시나리오별 도구 연쇄 전략 세분화 — 시나리오 1은 천천히, 시나리오 2는 빠르게
-  - [>] 사용자 기억 시스템 — 코르카가 사용자를 기억하는 구조
+  - [x] 사용자 기억 시스템 — 코르카가 사용자를 기억하는 구조
     - [x] 개념 설계 — Person Memory 리서치 + v3 확장 방향 (`projects/lighthouse/user-memory-concept.md`)
     - [x] 구현 프롬프트 작성 (`projects/lighthouse/user-memory-prompt.md`)
     - [x] 온보딩 프롬프트 구현·테스트 완료 — 자기소개 + 자연스러운 대화로 사용자 파악
-    - [ ] 매 턴 비동기 노드 추출
-    - [ ] profile 노드 타입 + 재방문 시 프로파일 로드
-    - [ ] 특성 승격 (Promote) — fact → profile 자동화
+    - [x] 매 턴 비동기 노드 추출
+    - [x] profile 노드 타입 + 재방문 시 프로파일 로드
+    - [x] 특성 승격 (Promote) — fact → profile 자동화
+  - [x] 도구 호출 파이프라인 — 3-Phase Turn Pipeline 도입
+    - 배경: 단일 streamText 루프에서 LLM이 연쇄 규칙을 안 따르는 문제 (문서 생성 후 대화 끊김)
+    - 설계: 코드가 오케스트레이터, LLM은 실행자. Phase 1(Execute) → Phase 2(Post, 코드) → Phase 3(Dialogue)
+    - 구현 프롬프트: `projects/lighthouse/turn-pipeline-prompt.md`
+    - [x] 구현 완료
+  - [ ] 리서치 결과물 품질 차별화
+    - 배경: 2/26 데모 피드백 "리서치 결과물이 타제품보다 좋아야 한다". 초록만으로는 한계. 동료 경험 × 전문 분석 = lighthouse만의 결과물
+    - [ ] 골든 샘플 제작 — 브로콜리가 직접 논문 검색·전문 분석·연구 문서 작성. 임팩트 있는 견본 여러 개 생산
+    - [ ] lighthouse 튜닝 — 골든 샘플을 기준으로 프롬프트/도구 튜닝, 견본 수준에 근접할 때까지 반복
+    - [ ] 논문 전문 접근 — Semantic Scholar openAccessPdf → PDF 텍스트 추출 → 핵심 섹션 분리 → 전문 기반 분석
+      - open access가 아닌 논문은 초록 기반 폴백
+      - [ ] 기술 검증 — openAccessPdf 커버리지 조사, PDF 파싱 라이브러리 선정
+      - [ ] 설계·구현
   - [ ] 관계 형성 고도화 — 상호 맥락 파악, 경험 기반 점진적 설명, 관계 깊이별 행동 변화
   - [ ] 안정화
+    - [x] 세션 전환 시 연구 문서 패널 리셋 — Zustand store 초기화 누락 (`session-document-binding-prompt.md`)
 
 ## [>] 기억 시스템 — 네트워크 구조로 전환
 - 목표: 세션 간 기억 유지. 노드+링크 네트워크 구조로 spreading activation 기반 기억 활성화
