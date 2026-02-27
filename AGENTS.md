@@ -18,6 +18,7 @@
 | 프로젝트 | 문서 |
 |---------|------|
 | Light House | `projects/lighthouse/service-principles.md` — 서비스 원칙 |
+| | `projects/lighthouse/document-architecture.md` — 균일 인터페이스 재설계 |
 | | `projects/lighthouse/research-scenarios.md` — 연구자 행동 시나리오 |
 | | `projects/lighthouse/user-memory-concept.md` — 사용자 기억 설계 |
 | Moonlight | `projects/moonlight/university-event.md` — 대학 이벤트 |

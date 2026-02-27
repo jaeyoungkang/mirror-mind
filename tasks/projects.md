@@ -10,9 +10,10 @@
   - [x] AI 서비스 설계 원칙 수립 (mirror-mind 철학 반영)
   - [x] 안전장치·지식 공급·관측 체계 원칙 추가
 - 향후 과제:
-  - [ ] 실제 프로젝트 적용을 통한 방법론 검증 및 개선
+  - [>] 실제 프로젝트 적용을 통한 방법론 검증 및 개선 — lighthouse 재설계에서 "모든 것은 파일이다" 원칙 적용 중
   - [ ] 모니터링·디버깅 시스템 구현 가이드라인 실전 적용
   - [ ] 도메인별 원칙 문서 확장 (development-principle.md, research-principle.md)
+  - [x] "모든 것은 파일이다" 개발 원칙 수립 — agentic-engineering-principles.md §개발 방법론에 반영
 
 ## [>] Light House — 연구 동료 에이전트 서비스
 - 목표: 학술 논문 검색 + AI 분석 연구 탐색 도구. mirror-mind 철학을 서비스에 적용
@@ -131,13 +132,13 @@
       - open access가 아닌 논문은 초록 기반 폴백
       - [ ] 기술 검증 — openAccessPdf 커버리지 조사, PDF 파싱 라이브러리 선정
       - [ ] 설계·구현
-  - [>] 공동 도구 사용 — 에이전트 도구를 사용자에게도 개방, 근본적 UX 전환
-    - 핵심 원칙: 에이전트가 사용하는 도구는 사용자도 사용할 수 있어야 한다
-    - 설계 방향: "Everything is a document" — 검색 결과, 분석, 논의, 메모 모두 문서. 문서를 나란히 펼치는 워크스페이스. 처음부터 재작성
-    - 설계 문서: `projects/lighthouse/shared-tools-design.md`
+  - [>] 공동 도구 사용 → 균일 인터페이스 재설계 — 코드베이스 전면 재개발
+    - 핵심 철학: "모든 것은 파일이다" — 균일한 인터페이스(문서 CRUD)로 모든 상호작용을 수렴
+    - 설계 문서: `projects/lighthouse/document-architecture.md` (균일 인터페이스 아키텍처)
+    - 참조: `projects/lighthouse/shared-tools-design.md` (초기 방향)
     - [x] 1차 구현 — 패널 검색바 + 논문 클릭 분석 트리거 (동작하지만 UX 전환 부족)
-    - [>] 설계 논의 — 워크스페이스 레이아웃, 문서 타입, 대화와 행동의 통합 방식
-    - [ ] 재설계 구현
+    - [x] 설계 논의 — 균일 인터페이스 철학, 워크스페이스 모델, 웹 계약 재정의, 삼분법+AGENTS.md 방법론
+    - [ ] 재설계 구현 (document-architecture.md 기반, 단계 0~5)
   - [ ] 관계 형성 고도화 — 상호 맥락 파악, 경험 기반 점진적 설명, 관계 깊이별 행동 변화
   - [ ] 안정화
     - [x] 세션 전환 시 연구 문서 패널 리셋 — Zustand store 초기화 누락 (`session-document-binding-prompt.md`)

@@ -11387,5 +11387,320 @@
     "session": "2026-02-27-세션35",
     "context_hint": "구현안 범위 인지",
     "id": "n1626"
+  },
+  {
+    "content": "나는 작업 시작 트리거에 따라 원칙 문서 4종을 읽었다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "세션 시작 절차",
+    "id": "n1627"
+  },
+  {
+    "content": "나는 embeddings.json 부재와 OPENAI_API_KEY 미설정으로 기억 활성화가 실패했음을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "기억 활성화 실패",
+    "id": "n1628"
+  },
+  {
+    "content": "나는 API 키가 없어도 문서 기반으로 현재 상태를 먼저 요약했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "대안 진행",
+    "id": "n1629"
+  },
+  {
+    "content": "나는 Light House의 공동 도구 사용 설계 논의가 활성 작업이라고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "프로젝트 현황 요약",
+    "id": "n1630"
+  },
+  {
+    "content": "나는 시연 결과에서 재방문 흐름의 구조적 구멍(케이스 4,5)이 남아 있다고 파악했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "시연 개선 이슈",
+    "id": "n1631"
+  },
+  {
+    "content": "나는 문라이트 이벤트의 마감(3/13 예정) 전 퍼널 점검이 필요하다고 제안했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "문라이트 운영",
+    "id": "n1632"
+  },
+  {
+    "content": "나는 사용자가 .env에 API 키가 있다고 알려준 뒤 embeddings.json 생성을 수행했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "임베딩 생성",
+    "id": "n1633"
+  },
+  {
+    "content": "나는 1627개 노드 벡터(53.1MB) 생성 완료를 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "임베딩 결과",
+    "id": "n1634"
+  },
+  {
+    "content": "나는 activate.py 재실행으로 기억 활성화 정상 동작을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "활성화 검증",
+    "id": "n1635"
+  },
+  {
+    "content": "나는 venv 부재로 시스템 Python에 numpy, openai, scikit-learn을 설치했음을 보고했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "환경 이슈",
+    "id": "n1636"
+  },
+  {
+    "content": "나는 환경 격리를 위해 venv 재세팅이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "개발 환경 원칙",
+    "id": "n1637"
+  },
+  {
+    "content": "나는 venv 설정이 기본이라는 사용자 피드백을 수용했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "합의 정렬",
+    "id": "n1638"
+  },
+  {
+    "content": "나는 requirements.txt 부재를 발견하고 스크립트 의존성을 점검했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "의존성 관리",
+    "id": "n1639"
+  },
+  {
+    "content": "나는 외부 의존성이 numpy, openai, scikit-learn, python-dotenv라고 확정했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "의존성 식별",
+    "id": "n1640"
+  },
+  {
+    "content": "나는 memory/.venv를 만들고 의존성 4개를 설치했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "venv 구축",
+    "id": "n1641"
+  },
+  {
+    "content": "나는 requirements.txt를 추가해 의존성 원본 파일을 명시했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "재현성 강화",
+    "id": "n1642"
+  },
+  {
+    "content": "나는 memory/.venv/bin/python3 scripts/activate.py 동작을 검증했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "실행 검증",
+    "id": "n1643"
+  },
+  {
+    "content": "나는 AGENTS.md 절차의 .venv 경로와 실제 실행 경로가 일관되게 맞춰졌다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "운영 정합성",
+    "id": "n1644"
+  },
+  {
+    "content": "나는 에이전틱 맥락에서 'Everything is a document'를 Unix의 'everything is a file'과 연결해 해석했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "철학 정리",
+    "id": "n1645"
+  },
+  {
+    "content": "나는 '모든 것은 파일'의 핵심을 저장 위치가 아니라 균일한 인터페이스라고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "인터페이스 철학",
+    "id": "n1646"
+  },
+  {
+    "content": "나는 에이전트 관측 가능성이 파일 접근성에 비례한다고 설명했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "에이전트 한계",
+    "id": "n1647"
+  },
+  {
+    "content": "나는 코드베이스 규칙으로 설정·스키마·인프라·의존성·상태전이를 파일로 명시해야 한다고 제안했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "코딩 가이드라인",
+    "id": "n1648"
+  },
+  {
+    "content": "나는 에이전트가 코드를 생성할 때도 동일한 파일 원칙을 따라야 한다고 합의했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "생성 규율",
+    "id": "n1649"
+  },
+  {
+    "content": "나는 '다음 에이전트가 파일만 읽고 이해 가능한가'를 품질 기준으로 제시했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "품질 기준",
+    "id": "n1650"
+  },
+  {
+    "content": "나는 원칙 문구를 추상 문장보다 행동 규칙과 위반 예시 중심으로 써야 한다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "문서 작성 방식",
+    "id": "n1651"
+  },
+  {
+    "content": "나는 '모든 상호작용은 파일 인터페이스로 수렴한다'는 해석을 제시했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "원칙 재정의",
+    "id": "n1652"
+  },
+  {
+    "content": "나는 '에이전트가 접근할 수 없는 인터페이스를 만들지 말라'를 핵심 규칙으로 정리했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "설계 제약",
+    "id": "n1653"
+  },
+  {
+    "content": "나는 이 철학이 개발과 에이전트 설계 모두에 적용된다는 사용자 합의를 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "철학 범위",
+    "id": "n1654"
+  },
+  {
+    "content": "나는 해당 철학을 agentic-engineering-principles.md 개발 방법론 상위 원칙으로 반영했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "원칙 문서 반영",
+    "id": "n1655"
+  },
+  {
+    "content": "나는 반영 구조를 시스템 인터페이스, 코드 인터페이스, 에이전트 설계 사례의 3축으로 배치했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "원칙 구조화",
+    "id": "n1656"
+  },
+  {
+    "content": "나는 Lighthouse 재설계에서 문서를 파일에 해당하는 단일 인터페이스 추상화로 해석했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "라이트하우스 적용",
+    "id": "n1657"
+  },
+  {
+    "content": "나는 사용자와 AI가 모두 문서 CRUD로 상호작용하도록 수렴시키는 방향을 제안했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "공동 도구 사용",
+    "id": "n1658"
+  },
+  {
+    "content": "나는 도구 출력을 모두 문서 생성/갱신으로 통일해야 한다고 설계했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "도구 인터페이스 통일",
+    "id": "n1659"
+  },
+  {
+    "content": "나는 Lighthouse 코드베이스 재설계 문서 document-architecture.md를 작성했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "설계 문서 작성",
+    "id": "n1660"
+  },
+  {
+    "content": "나는 AGENTS.md 문서 맵에 새 설계 문서 참조를 연결하겠다고 실행했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "문서 네비게이션",
+    "id": "n1661"
+  },
+  {
+    "content": "나는 '문서 중심'보다 '인터페이스가 핵심'이라는 사용자 지적이 정확하다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "프레이밍 교정",
+    "id": "n1662"
+  },
+  {
+    "content": "나는 설계 문서 프레이밍을 '균일 인터페이스 아키텍처'로 수정했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "문서 개정",
+    "id": "n1663"
+  },
+  {
+    "content": "나는 복잡성의 근본 원인을 인터페이스 비통일로 명시하도록 문제 진단을 고쳤다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "진단 기준",
+    "id": "n1664"
+  },
+  {
+    "content": "나는 검증 기준의 최우선 항목을 인터페이스 균일성으로 재배치했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "검증 기준 개편",
+    "id": "n1665"
+  },
+  {
+    "content": "나는 ai-engineering-methodology.md 방식이 방향은 맞지만 Lighthouse에는 조정 적용이 필요하다고 평가했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "방법론 검토",
+    "id": "n1666"
+  },
+  {
+    "content": "나는 프롬프트 위임 방식의 한계를 일회성 의도 소실로 판단했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "기존 방식 한계",
+    "id": "n1667"
+  },
+  {
+    "content": "나는 Doc-Code Sync 접근이 파일 기반 철학과 정렬되어 항시성 유지에 유리하다고 봤다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "방법론 장점",
+    "id": "n1668"
+  },
+  {
+    "content": "나는 삼분법을 Lighthouse 맥락에서 인터페이스 규약·구현 전략·타입 정의로 재해석해야 한다고 제안했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "삼분법 재해석",
+    "id": "n1669"
+  },
+  {
+    "content": "나는 .md/.ts 이중화를 전 영역에 강제하면 동기화 비용이 커진다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "운영 비용 판단",
+    "id": "n1670"
+  },
+  {
+    "content": "나는 CLAUDE.md에 파일 간 동기화 규칙을 명시하는 방식은 그대로 채택 가치가 높다고 봤다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "운영 가드레일",
+    "id": "n1671"
   }
 ]
