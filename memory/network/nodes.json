@@ -10540,5 +10540,278 @@
     "session": "2026-02-27-세션32",
     "context_hint": "세션 의사결정",
     "id": "n1505"
+  },
+  {
+    "content": "나는 세션 시작 시 원칙 문서들을 읽고 현재 상태를 요약했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "작업 시작 절차",
+    "id": "n1506"
+  },
+  {
+    "content": "나는 Light House의 2차 구현과 시나리오 기반 고도화가 완료된 상태라고 파악했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "프로젝트 현황",
+    "id": "n1507"
+  },
+  {
+    "content": "나는 시연 프롬프트 4건이 구현 및 위임 완료되었다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "Light House 진행상태",
+    "id": "n1508"
+  },
+  {
+    "content": "나는 다음 공유 일정이 3월 2일(월)이며 3일 남았다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "일정 인식",
+    "id": "n1509"
+  },
+  {
+    "content": "나는 활성 업무가 시연 결과 확인 후 개선이며 재방문 흐름 케이스 4,5 논의가 필요하다고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "활성 업무",
+    "id": "n1510"
+  },
+  {
+    "content": "나는 .prompt에 핵심 피드백이 상당량 미정리 상태라고 파악했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "피드백 백로그",
+    "id": "n1511"
+  },
+  {
+    "content": "나는 기억 시스템이 v3 운영 중이고 아카이브 정책이 대기 상태라고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "기억 시스템 운영",
+    "id": "n1512"
+  },
+  {
+    "content": "나는 메타에이전트 hooks 자동화는 완료됐고 v3 맞춤 점검 규칙 업데이트가 대기라고 파악했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "메타에이전트 상태",
+    "id": "n1513"
+  },
+  {
+    "content": "나는 문라이트 이벤트가 진행 중이며 응원 45명, 마감 3월 13일이라고 공유했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "Moonlight 현황",
+    "id": "n1514"
+  },
+  {
+    "content": "나는 3월 2일 공유 대비로 .prompt 피드백 정리와 리서치 결과물 차별화 착수의 두 갈래를 제안했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션33",
+    "context_hint": "우선순위 제안",
+    "id": "n1515"
+  },
+  {
+    "content": "나는 새 세션이라 대화 자체를 직접 기억하지 못한다고 명시했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "세션 메모리 한계",
+    "id": "n1516"
+  },
+  {
+    "content": "나는 회고 기록이 tasks/retrospectives/2026-02-27-week1.md에 존재한다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "기록 위치 확인",
+    "id": "n1517"
+  },
+  {
+    "content": "나는 projects.md에 세션 31에서 1주차 회고 완료 이력이 있다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "업무 기록 검증",
+    "id": "n1518"
+  },
+  {
+    "content": "나는 사용자 요청에 따라 기억 네트워크에서 세션 31 노드를 조회했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "기억 조회 수행",
+    "id": "n1519"
+  },
+  {
+    "content": "나는 이번 주가 mirror-mind와 lighthouse의 사실상 첫 주라는 회고 핵심을 회수했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "회고 핵심 복원",
+    "id": "n1520"
+  },
+  {
+    "content": "나는 회고 방법론이 사건 나열→중요도 선별→이유 공유→교훈/액션의 4단계로 합의되었다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "회고 방법론",
+    "id": "n1521"
+  },
+  {
+    "content": "나는 핵심 선별 항목으로 mirror-mind 시작, Living Notebook 전환, 기억 v3 완주, 결과물 차별화 방향이 채택됐다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "핵심 사건 선별",
+    "id": "n1522"
+  },
+  {
+    "content": "나는 재영 관점 핵심 패턴이 집중력 유지와 Co-actor 화두로 수렴됐다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "회고 인사이트",
+    "id": "n1523"
+  },
+  {
+    "content": "나는 교훈 6번은 제외하고 1~5만 적용하기로 결정된 사실을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "교훈 적용 범위",
+    "id": "n1524"
+  },
+  {
+    "content": "나는 교훈이 operations.md와 agentic-engineering-principles.md에 반영되었다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "문서 반영",
+    "id": "n1525"
+  },
+  {
+    "content": "나는 이후 대규모 문서 정리로 문서 통합, 네비게이션화, 잔재 삭제, 프롬프트 문서 삭제, scripts 통합이 있었다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "정리 작업 이력",
+    "id": "n1526"
+  },
+  {
+    "content": "나는 작업 시작 절차 미시행 의심에 대해 hooks 설정 점검을 진행했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "운영 점검 대응",
+    "id": "n1527"
+  },
+  {
+    "content": "나는 UserPromptSubmit 훅 기반 기억 활성화가 동작 중이라고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "hooks 점검",
+    "id": "n1528"
+  },
+  {
+    "content": "나는 SessionStart 훅 기반 메타에이전트가 PID 6314로 실행 중이라고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "프로세스 확인",
+    "id": "n1529"
+  },
+  {
+    "content": "나는 operations.md의 시작 절차를 재확인해 내가 절차를 수행했다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "절차 준수 검토",
+    "id": "n1530"
+  },
+  {
+    "content": "나는 사용자의 문제 인식 원인을 세션 31 종료 시 close-session.py 실행 누락 가능성으로 가설화했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션33",
+    "context_hint": "원인 가설",
+    "id": "n1531"
+  },
+  {
+    "content": "나는 사용자 요청에 따라 당일 깃 히스토리를 조사해 시작 절차 변경 여부를 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "히스토리 추적",
+    "id": "n1532"
+  },
+  {
+    "content": "나는 세션 32에서 시작 절차가 훅 자동화 기준으로 변경되었다는 사실을 발견했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "절차 변경 발견",
+    "id": "n1533"
+  },
+  {
+    "content": "나는 세션 31까지는 activate.py와 check.py의 수동 실행 단계가 있었다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "이전 절차",
+    "id": "n1534"
+  },
+  {
+    "content": "나는 세션 32 이후에는 기억 활성화와 메타에이전트 실행이 hooks 자동 처리로 전환되었다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "현재 절차",
+    "id": "n1535"
+  },
+  {
+    "content": "나는 activate.py 수동 실행 유지와 절차의 AGENTS.md 편입 요청을 수용했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션33",
+    "context_hint": "운영 정책 반영",
+    "id": "n1536"
+  },
+  {
+    "content": "나는 operations.md에 activate.py 수동 실행 단계를 복원했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "절차 수정",
+    "id": "n1537"
+  },
+  {
+    "content": "나는 AGENTS.md에 시작 6단계와 종료 5단계, hooks 참고를 추가했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "문서 구조 업데이트",
+    "id": "n1538"
+  },
+  {
+    "content": "나는 AGENTS.md와 operations.md의 절차 중복을 인지하고 단일 원본 여부를 확인 질문했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션33",
+    "context_hint": "정합성 관리",
+    "id": "n1539"
+  },
+  {
+    "content": "나는 사용자 결정에 따라 AGENTS.md를 시작/종료 절차의 단일 원본으로 확정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "단일 원본 결정",
+    "id": "n1540"
+  },
+  {
+    "content": "나는 operations.md를 절차 본문 대신 AGENTS.md 참조 구조로 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "문서 참조 정리",
+    "id": "n1541"
+  },
+  {
+    "content": "나는 작업 종료 트리거에 따라 종료 절차를 시작했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "작업 종료 절차",
+    "id": "n1542"
+  },
+  {
+    "content": "나는 메타에이전트 리포트에서 실질 위반이 없고 memory_policy info 3건이 기존과 동일하다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션33",
+    "context_hint": "종료 점검 결과",
+    "id": "n1543"
+  },
+  {
+    "content": "나는 종료 절차 2단계로 close-session.py 실행을 진행하려고 했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션33",
+    "context_hint": "세션 마감 실행",
+    "id": "n1544"
   }
 ]

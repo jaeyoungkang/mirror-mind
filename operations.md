@@ -50,24 +50,8 @@
 
 ## 세션 운영
 
-### 시작 절차 (트리거: **작업 시작**)
-1. `mirror-mind-principle.md` 읽고 원칙 적용
-2. `agentic-engineering-principles.md` 읽고 설계·개발 원칙 파악
-3. `operations.md` 읽고 운영 방식 파악
-4. `tasks/projects.md` 읽고 현재 상태 파악
-5. 현재 상태 요약 + 다음 작업 제안
-
-> **자동화된 절차 (hooks):**
-> - 기억 활성화 — `UserPromptSubmit` 훅이 매 프롬프트마다 `activate.py` 자동 실행 (10자 미만 스킵, transcript 맥락 보강)
-> - 메타에이전트 — `SessionStart` 훅이 `check.py --watch --interval 300` 자동 실행 (중복 방지)
-> - 설정: `.claude/settings.local.json`, 스크립트: `.claude/hooks/`
-
-### 종료 절차 (트리거: **작업 종료**)
-1. 메타에이전트 리포트 확인
-2. `python3 scripts/close-session.py` (raw 저장 + 노드 추출 + 네트워크 갱신)
-3. 초안 검토·수정
-4. `tasks/projects.md` 업데이트
-5. 커밋
+### 시작·종료 절차
+→ `AGENTS.md` 세션 절차 참조 (단일 원본)
 
 ### 기타 트리거
 
