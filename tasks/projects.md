@@ -196,7 +196,8 @@
   - [x] 세션 시작 절차에 통합 (5분 간격)
   - [x] codex exec 기반 LLM 점검 추가 (순응/목적/선제성/역할 경계, --llm 플래그)
   - [x] hooks 자동화 — SessionStart 훅으로 자동 실행 (`.claude/hooks/meta-agent-start.sh`)
-  - [ ] memory_policy 점검 규칙을 v3 네트워크에 맞게 업데이트
+  - [x] memory_policy 점검 규칙을 v3 네트워크에 맞게 업데이트
+  - [x] LLM 점검 자동 활성화 — hook에 --llm 플래그, 7개 항목(교훈 자동 상기 포함)
   - [ ] 실전 운영 후 점검 항목 개선
 
 ## [>] 문라이트 대학 이벤트 — 새학기 응원 챌린지

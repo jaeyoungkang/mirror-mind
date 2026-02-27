@@ -10813,5 +10813,271 @@
     "session": "2026-02-27-세션33",
     "context_hint": "세션 마감 실행",
     "id": "n1544"
+  },
+  {
+    "content": "메타에이전트 LLM 점검 완성과 회고 교훈 자동 상기 작업을 구현 대상으로 확정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "작업 범위 확정",
+    "id": "n1545"
+  },
+  {
+    "content": "구현 전에 관련 파일들을 먼저 읽어 현재 상태를 파악하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션34",
+    "context_hint": "초기 분석",
+    "id": "n1546"
+  },
+  {
+    "content": "회고 파일과 projects 문서까지 확인해 전체 맥락을 점검했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "사전 조사",
+    "id": "n1547"
+  },
+  {
+    "content": "작업을 5개 스텝으로 나눠 순차 구현하기로 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션34",
+    "context_hint": "구현 계획",
+    "id": "n1548"
+  },
+  {
+    "content": "check.py에 교훈 파싱 함수 추가를 1단계 핵심 과제로 설정했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션34",
+    "context_hint": "교훈 파싱 설계",
+    "id": "n1549"
+  },
+  {
+    "content": "check.py에 LLM 프롬프트 7개 항목 확장을 2단계로 진행했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "프롬프트 확장",
+    "id": "n1550"
+  },
+  {
+    "content": "check_with_codex()에서 교훈 로드와 프롬프트 삽입 로직을 연결하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션34",
+    "context_hint": "LLM 연동",
+    "id": "n1551"
+  },
+  {
+    "content": "memory_policy 허용 섹션을 실제 MEMORY.md 기준으로 맞추는 수정을 진행했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "정책 정합성",
+    "id": "n1552"
+  },
+  {
+    "content": "meta-agent-start 훅에 --llm 플래그를 추가해 자동 실행을 활성화했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "훅 자동화",
+    "id": "n1553"
+  },
+  {
+    "content": "operations.md에서 LLM 점검을 향후 상태가 아닌 활성 상태로 반영했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "운영 문서 반영",
+    "id": "n1554"
+  },
+  {
+    "content": "operations.md 실행 커맨드에 --llm 반영까지 문서화했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "실행 절차 문서화",
+    "id": "n1555"
+  },
+  {
+    "content": "tasks/projects.md의 메타에이전트 하위 업무 상태를 완료로 업데이트했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "프로젝트 상태 갱신",
+    "id": "n1556"
+  },
+  {
+    "content": "검증 단계에서 교훈 파싱 단독 테스트 후 전체 점검을 수행하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션34",
+    "context_hint": "검증 계획",
+    "id": "n1557"
+  },
+  {
+    "content": "교훈 파싱이 정상 동작함을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "파싱 검증",
+    "id": "n1558"
+  },
+  {
+    "content": "memory_policy 위반이 0건으로 기존 거짓 양성 3건이 해소됐음을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "정책 검증",
+    "id": "n1559"
+  },
+  {
+    "content": "doc_references와 project_status 점검 결과가 모두 0건으로 정상임을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "정합성 검증",
+    "id": "n1560"
+  },
+  {
+    "content": "존댓말 감지 결과는 현재 세션 특성상 정상 동작으로 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "톤 점검 해석",
+    "id": "n1561"
+  },
+  {
+    "content": "변경 코드가 깔끔히 적용됐다고 최종 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "최종 점검",
+    "id": "n1562"
+  },
+  {
+    "content": "check.py에 load_retrospective_lessons()를 추가해 최근 회고 교훈 파싱을 구현했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "기능 구현",
+    "id": "n1563"
+  },
+  {
+    "content": "check.py에 format_lessons_for_prompt()를 추가해 교훈 텍스트 주입 포맷을 구현했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "프롬프트 포맷",
+    "id": "n1564"
+  },
+  {
+    "content": "LLM_CHECK_PROMPT_TEMPLATE를 4개에서 7개 항목으로 확장했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "점검 항목 확장",
+    "id": "n1565"
+  },
+  {
+    "content": "프롬프트 내 호칭을 사용자에서 파트너로 통일했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "표현 일관성",
+    "id": "n1566"
+  },
+  {
+    "content": "check_with_codex()에 교훈 섹션 주입을 연결해 회고 상기를 자동화했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "회고 상기 자동화",
+    "id": "n1567"
+  },
+  {
+    "content": "memory_policy 허용 섹션을 정체성·환경·UI 리서치 교훈으로 조정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "정책 기준 수정",
+    "id": "n1568"
+  },
+  {
+    "content": "LLM 점검 자동화를 위해 세션 시작 훅에서 --llm 실행이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션34",
+    "context_hint": "자동 실행 판단",
+    "id": "n1569"
+  },
+  {
+    "content": "변경 파일은 scripts/check.py, meta-agent-start.sh, operations.md, tasks/projects.md로 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "변경 범위 정리",
+    "id": "n1570"
+  },
+  {
+    "content": "교훈 파싱 결과가 5건 추출됨을 검증했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "검증 수치",
+    "id": "n1571"
+  },
+  {
+    "content": "codex 미설치 환경으로 LLM 실호출 검증은 제한되지만 주입 로직은 정상이라고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "환경 제약 판단",
+    "id": "n1572"
+  },
+  {
+    "content": "기억활성화 훅 테스트 요청에 대해 현재 프롬프트에서 이미 훅이 동작했다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "훅 동작 확인",
+    "id": "n1573"
+  },
+  {
+    "content": "memory-context에 10개 기억이 주입되었다는 점을 훅 정상 근거로 제시했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "주입 결과 해석",
+    "id": "n1574"
+  },
+  {
+    "content": "활성화된 기억이 메타에이전트 LLM 점검 직후 맥락과 일치한다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "맥락 적합성 평가",
+    "id": "n1575"
+  },
+  {
+    "content": "memory-context는 사용자 화면이 아니라 시스템 메시지 경로로 전달된다고 설명했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "시스템 동작 설명",
+    "id": "n1576"
+  },
+  {
+    "content": "훅 직접 검증을 위해 activate.py 수동 실행 명령을 안내했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "검증 방법 제시",
+    "id": "n1577"
+  },
+  {
+    "content": "세션 종료 요청에 맞춰 이번 세션 성과를 요약 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "종료 요약",
+    "id": "n1578"
+  },
+  {
+    "content": "커밋 시점을 현재 또는 다음 세션으로 선택할 수 있게 확인 질문을 던졌다.",
+    "type": "intention",
+    "session": "2026-02-27-세션34",
+    "context_hint": "마무리 의사결정",
+    "id": "n1579"
+  },
+  {
+    "content": "작업 종료 트리거 이후 종료 절차를 단계적으로 진행하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션34",
+    "context_hint": "종료 절차 실행",
+    "id": "n1580"
+  },
+  {
+    "content": "종료 1단계에서 메타에이전트 리포트를 확인해 tone_honorific 9건을 보고했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "종료 리포트",
+    "id": "n1581"
+  },
+  {
+    "content": "종료 리포트에서 memory_policy 거짓 양성 0건과 문서 정합성 정상 상태를 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션34",
+    "context_hint": "종료 검증",
+    "id": "n1582"
   }
 ]

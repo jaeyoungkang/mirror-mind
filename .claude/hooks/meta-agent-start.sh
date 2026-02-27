@@ -12,6 +12,6 @@ if pgrep -f "check.py --watch" > /dev/null 2>&1; then
 fi
 
 # 백그라운드 실행 (nohup으로 세션과 분리)
-nohup "$PYTHON" "$CHECK_SCRIPT" --watch --interval 300 > /dev/null 2>&1 &
+nohup "$PYTHON" "$CHECK_SCRIPT" --watch --interval 300 --llm > /dev/null 2>&1 &
 
 exit 0

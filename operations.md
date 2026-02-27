@@ -100,7 +100,7 @@
 일반 에이전트가 일을 하고, 메타에이전트가 **일하는 방식 자체를 감시**한다.
 
 ### 실행
-- 세션 시작 시 백그라운드: `python scripts/check.py --watch --interval 300`
+- 세션 시작 시 백그라운드: `python scripts/check.py --watch --interval 300 --llm`
 - 5분 간격 점검, 매 주기 위반 사항 + 원칙 리마인드 출력
 - 1회 점검: `python scripts/check.py`
 
@@ -111,15 +111,17 @@
 | 문서 참조 무결성 | AGENTS.md 내 경로 ↔ 실제 파일 | error |
 | 프로젝트 상태 정합성 | 하위 업무 ↔ 상위 상태 | warning |
 
-### 점검 항목 (LLM 기반 — 향후)
+### 점검 항목 (LLM 기반)
 
-| 항목 | 근거 원칙 |
-|---|---|
-| 순응(sycophancy) | 발전적 마찰 |
-| 목적 미탐구 | 목적의 내재화 |
-| 선제적 제안 부재 | 맥락적 자율성 |
-| 업무 등록 누락 | 업무 수집 규칙 |
-| 회고 시점 놓침 | 기록과 회고 규칙 |
+| # | 항목 | 근거 원칙 |
+|---|------|----------|
+| 1 | 순응(sycophancy) | 발전적 마찰 |
+| 2 | 목적 미탐구(purpose_not_explored) | 목적의 내재화 |
+| 3 | 선제적 제안 부재(no_proactive_suggestion) | 맥락적 자율성 |
+| 4 | 업무 등록 누락(task_registration_missed) | 업무 수집 규칙 |
+| 5 | 회고 시점 놓침(retrospective_timing_missed) | 기록과 회고 규칙 |
+| 6 | 역할 경계 위반(role_boundary_violation) | 역할 경계 |
+| 7 | 교훈 준수(lesson_adherence) | 회고 교훈 자동 상기 |
 
 ### 심각도 기준
 - **error** — 체계 깨짐, 즉시 수정
