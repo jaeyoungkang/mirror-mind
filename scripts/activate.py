@@ -8,6 +8,7 @@
 
 import json
 import argparse
+import sys
 import numpy as np
 from pathlib import Path
 
@@ -25,9 +26,22 @@ def load_nodes():
         return json.load(f)
 
 
-def load_embeddings():
-    with open(EMBEDDINGS_PATH) as f:
-        return np.array(json.load(f))
+def load_embeddings(node_count: int = 0):
+    """임베딩 로드. 파일 없거나 노드 수 불일치 시 자동 재생성."""
+    if EMBEDDINGS_PATH.exists() and node_count > 0:
+        embs = json.load(open(EMBEDDINGS_PATH))
+        if len(embs) == node_count:
+            return np.array(embs)
+        print(f"[임베딩 불일치] 노드 {node_count}, 임베딩 {len(embs)} → 재생성", file=sys.stderr)
+    elif not EMBEDDINGS_PATH.exists():
+        print(f"[임베딩 없음] 재생성", file=sys.stderr)
+    else:
+        return np.array(json.load(open(EMBEDDINGS_PATH)))
+
+    import subprocess
+    script = Path(__file__).parent / "rebuild-embeddings.py"
+    subprocess.run([sys.executable, str(script)], check=True)
+    return np.array(json.load(open(EMBEDDINGS_PATH)))
 
 
 def load_graph():
@@ -147,7 +161,7 @@ def main():
     args = parser.parse_args()
 
     nodes = load_nodes()
-    node_embs = load_embeddings()
+    node_embs = load_embeddings(node_count=len(nodes))
     adj = load_graph()
 
     results = activate(args.query, nodes, node_embs, adj,

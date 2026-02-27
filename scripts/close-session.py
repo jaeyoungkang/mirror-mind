@@ -414,7 +414,6 @@ def git_commit(session_name: str):
     candidates = [
         f"tasks/conversations/raw/{today}-{session_name}.jsonl",
         "memory/network/nodes.json",
-        "memory/network/embeddings.json",
         "memory/network/graph.json",
     ]
     existing = [f for f in candidates if (PROJECT_ROOT / f).exists()]
