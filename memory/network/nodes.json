@@ -11079,5 +11079,313 @@
     "session": "2026-02-27-세션34",
     "context_hint": "종료 검증",
     "id": "n1582"
+  },
+  {
+    "content": "나는 세션 시작 시 현재 상태를 요약하고 다음 작업 후보를 제안했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "세션 시작 운영",
+    "id": "n1583"
+  },
+  {
+    "content": "Light House의 미해결 핵심 과제가 리서치 결과물 품질 차별화임을 재확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "Lighthouse 핵심 과제",
+    "id": "n1584"
+  },
+  {
+    "content": "문라이트 대학 이벤트의 마감일이 2026-03-13이며 진행 지표가 공유되었다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "Moonlight 운영 현황",
+    "id": "n1585"
+  },
+  {
+    "content": "사용자가 embeddings.json의 대용량 문제를 제기했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "기억 시스템 파일 관리",
+    "id": "n1586"
+  },
+  {
+    "content": "embeddings.json이 약 52MB이고 git 추적 중이라는 상태를 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "저장소 용량 이슈",
+    "id": "n1587"
+  },
+  {
+    "content": "embeddings.json이 nodes.json과 임베딩 API로 재생성 가능한 파생물임을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "파생 데이터 판단",
+    "id": "n1588"
+  },
+  {
+    "content": "close-session.py에 임베딩 증분 계산 로직이 이미 존재함을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "세션 종료 자동화",
+    "id": "n1589"
+  },
+  {
+    "content": "나는 embeddings.json 처리 방안으로 Git LFS보다 gitignore+재생성을 우선안으로 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션35",
+    "context_hint": "아키텍처 의사결정",
+    "id": "n1590"
+  },
+  {
+    "content": "사용자가 embeddings 처리 방안 A(gitignore+재생성)에 동의했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "의사결정 확정",
+    "id": "n1591"
+  },
+  {
+    "content": "나는 전체 재생성 스크립트 추가, gitignore 반영, close-session.py 수정, git 추적 해제를 실행하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션35",
+    "context_hint": "실행 계획",
+    "id": "n1592"
+  },
+  {
+    "content": "memory/network/embeddings.json을 .gitignore에 추가했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "저장소 정리",
+    "id": "n1593"
+  },
+  {
+    "content": "git rm --cached로 embeddings.json의 git 추적을 해제하고 로컬 파일은 유지했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "버전관리 정리",
+    "id": "n1594"
+  },
+  {
+    "content": "scripts/rebuild-embeddings.py를 추가해 전체 임베딩 재생성을 가능하게 했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "복구 자동화",
+    "id": "n1595"
+  },
+  {
+    "content": "scripts/close-session.py에서 embeddings.json을 커밋 대상에서 제외했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "세션 종료 정책",
+    "id": "n1596"
+  },
+  {
+    "content": "다른 PC 초기 세팅 시 rebuild-embeddings.py 1회 실행으로 복구 가능하다고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "온보딩 운영",
+    "id": "n1597"
+  },
+  {
+    "content": "사용자가 시작 시 버전 불일치 자동 재생성 로직 필요성을 제기했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "신뢰성 요구",
+    "id": "n1598"
+  },
+  {
+    "content": "나는 activate.py 로드 시 임베딩 상태를 자동 체크하고 불일치 시 재생성하도록 반영했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "기억 활성화 안정화",
+    "id": "n1599"
+  },
+  {
+    "content": "일치 케이스와 불일치 케이스 모두에서 자동 동작을 검증했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "동작 검증",
+    "id": "n1600"
+  },
+  {
+    "content": "요청에 따라 커밋과 푸시를 완료했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "배포/협업",
+    "id": "n1601"
+  },
+  {
+    "content": "다음 작업 후보로 Lighthouse 품질 차별화, 재방문 흐름, Moonlight 운영을 다시 제시했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "작업 우선순위",
+    "id": "n1602"
+  },
+  {
+    "content": "사용자가 '에이전트 도구를 사용자도 사용 가능하게' 하는 새 아젠다를 제안했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "UX 전환 제안",
+    "id": "n1603"
+  },
+  {
+    "content": "나는 기존 구조가 사용자 입력을 대화에만 제한해 협업성이 낮다는 문제를 명시했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "현 구조 진단",
+    "id": "n1604"
+  },
+  {
+    "content": "사용자 도구 개방 아젠다와 결과물 품질 차별화 과제를 별개 트랙으로 보기로 합의했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "과제 분리",
+    "id": "n1605"
+  },
+  {
+    "content": "나는 '에이전트가 쓰는 도구는 사용자도 사용 가능'을 설계 원칙으로 채택했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션35",
+    "context_hint": "서비스 원칙 수립",
+    "id": "n1606"
+  },
+  {
+    "content": "사용자가 1차 범위를 단순 추가 중심으로 하고 문서 공동 편집은 보류하기로 결정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "범위 조정",
+    "id": "n1607"
+  },
+  {
+    "content": "나는 1차 구현에서 사용자 검색 도구 개방과 AI의 사용자 행동 인지를 핵심으로 정리했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션35",
+    "context_hint": "MVP 설계",
+    "id": "n1608"
+  },
+  {
+    "content": "사용자가 검색 결과를 문서로 보고 AI가 그 문서를 읽어 인지하는 방향을 제시했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "공유 매체 모델",
+    "id": "n1609"
+  },
+  {
+    "content": "나는 문서를 사용자와 AI의 SSOT(shared source)로 두는 설계를 확정했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션35",
+    "context_hint": "협업 아키텍처",
+    "id": "n1610"
+  },
+  {
+    "content": "사용자가 검색 후 개별 논문 클릭 시 AI 해설 생성까지 필요하다고 요구했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "기능 확장 요구",
+    "id": "n1611"
+  },
+  {
+    "content": "나는 '사용자 검색→결과 문서→논문 클릭→AI 분석 문서 생성' 흐름으로 정리했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션35",
+    "context_hint": "인터랙션 플로우",
+    "id": "n1612"
+  },
+  {
+    "content": "이 흐름은 AI 제안 승인 방식보다 사용자 행동이 직접 트리거가 되는 구조 전환임을 명확히 했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "주도권 전환",
+    "id": "n1613"
+  },
+  {
+    "content": "나는 설계 내용을 projects/lighthouse/shared-tools-design.md로 문서화했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "설계 문서화",
+    "id": "n1614"
+  },
+  {
+    "content": "설계 문서에 코드 재작성 검토 항목을 명시했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "기술부채 정리",
+    "id": "n1615"
+  },
+  {
+    "content": "구현 에이전트 지시용 프롬프트를 작성하기 위해 코드 구조를 먼저 조사했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "구현 준비",
+    "id": "n1616"
+  },
+  {
+    "content": "레이아웃과 UI 개편 고려사항을 프롬프트 범위에 포함했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "UI 전략",
+    "id": "n1617"
+  },
+  {
+    "content": "나는 구현 프롬프트를 projects/lighthouse/shared-tools-prompt.md에 작성했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "구현 지시 문서",
+    "id": "n1618"
+  },
+  {
+    "content": "프롬프트의 핵심은 검색/분석 서비스 레이어 추출과 사용자 직접 호출 API 추가였다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "구현 구조",
+    "id": "n1619"
+  },
+  {
+    "content": "프롬프트에 패널 검색바 추가와 논문 클릭 분석 트리거 UI를 포함했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "프론트 기능 정의",
+    "id": "n1620"
+  },
+  {
+    "content": "프롬프트에 사용자 검색/선택 행동을 대화 메타데이터로 기록해 AI 인지에 반영하는 방식을 포함했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "행동 인지 설계",
+    "id": "n1621"
+  },
+  {
+    "content": "구현 에이전트 작업 경로와 참조 문서 경로가 불일치한다는 문제를 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "경로 정합성",
+    "id": "n1622"
+  },
+  {
+    "content": "나는 프롬프트 참조 경로를 lighthouse 저장소 기준 상대경로와 mirror-mind 절대경로로 구분해 수정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "문서 참조 수정",
+    "id": "n1623"
+  },
+  {
+    "content": "사용자 요청에 따라 설계 문서 경로도 추가로 수정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "문서 경로 보정",
+    "id": "n1624"
+  },
+  {
+    "content": "사용자가 Claude의 12단계 구현 계획 검토를 요청했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "외부 구현안 검토 요청",
+    "id": "n1625"
+  },
+  {
+    "content": "제시된 구현안은 서비스 추출, API 추가, 패널 스토어 확장, UI 변경, 시스템 프롬프트 수정까지 포함한 전면적 변경 범위를 가진다.",
+    "type": "fact",
+    "session": "2026-02-27-세션35",
+    "context_hint": "구현안 범위 인지",
+    "id": "n1626"
   }
 ]

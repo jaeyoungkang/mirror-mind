@@ -438,13 +438,23 @@ def main():
     parser.add_argument("--commit", action="store_true", help="완료 후 자동 커밋")
     parser.add_argument("--dry-run", action="store_true", help="파일 미수정, stdout 출력만")
     parser.add_argument("--force", action="store_true", help="이미 종료된 세션도 강제 재실행")
+    parser.add_argument("--session-file", help="세션 JSONL 파일명 또는 경로 (동시 세션 시 명시 지정)")
     args = parser.parse_args()
 
     # 1. 세션 찾기
-    session_jsonl = find_current_session()
-    if not session_jsonl:
-        print("현재 세션 JSONL을 찾을 수 없다", file=sys.stderr)
-        sys.exit(1)
+    if args.session_file:
+        path = Path(args.session_file)
+        if not path.is_absolute():
+            path = CLAUDE_PROJECTS_DIR / PROJECT_KEY / path
+        if not path.exists():
+            print(f"지정된 세션 파일을 찾을 수 없다: {path}", file=sys.stderr)
+            sys.exit(1)
+        session_jsonl = path
+    else:
+        session_jsonl = find_current_session()
+        if not session_jsonl:
+            print("현재 세션 JSONL을 찾을 수 없다", file=sys.stderr)
+            sys.exit(1)
 
     today = date.today().isoformat()
     print(f"원본: {session_jsonl.name} ({session_jsonl.stat().st_size / 1024:.0f}KB)")
