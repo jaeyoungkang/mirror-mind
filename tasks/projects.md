@@ -185,6 +185,7 @@
     - [x] 네트워크 갱신 — 966→1199 노드, 10,392 엣지, gate PASS
     - [x] AGENTS.md — query.py/episodes 참조 제거, activate.py를 primary로
     - [x] close-session.py — episodes/memories → 노드 추출 + 네트워크 갱신으로 전면 교체
+  - [x] hooks 자동화 — UserPromptSubmit 훅으로 매 프롬프트 기억 활성화 (`.claude/hooks/memory-activate.sh`)
   - [ ] 아카이브 정책 — scope lifecycle 운영
 
 ## [>] 메타에이전트 — 원칙 준수 감시
@@ -194,6 +195,7 @@
   - [x] 프로토타입 구현 (세션 중 JSONL 실시간 읽기 + 원칙 위반 감지)
   - [x] 세션 시작 절차에 통합 (5분 간격)
   - [x] codex exec 기반 LLM 점검 추가 (순응/목적/선제성/역할 경계, --llm 플래그)
+  - [x] hooks 자동화 — SessionStart 훅으로 자동 실행 (`.claude/hooks/meta-agent-start.sh`)
   - [ ] memory_policy 점검 규칙을 v3 네트워크에 맞게 업데이트
   - [ ] 실전 운영 후 점검 항목 개선
 

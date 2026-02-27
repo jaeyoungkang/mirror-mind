@@ -55,9 +55,12 @@
 2. `agentic-engineering-principles.md` 읽고 설계·개발 원칙 파악
 3. `operations.md` 읽고 운영 방식 파악
 4. `tasks/projects.md` 읽고 현재 상태 파악
-5. 기억 활성화: `memory/.venv/bin/python3 scripts/activate.py --query "현재 주제"`
-6. 메타에이전트 백그라운드 실행: `python scripts/check.py --watch --interval 300`
-7. 현재 상태 요약 + 다음 작업 제안
+5. 현재 상태 요약 + 다음 작업 제안
+
+> **자동화된 절차 (hooks):**
+> - 기억 활성화 — `UserPromptSubmit` 훅이 매 프롬프트마다 `activate.py` 자동 실행 (10자 미만 스킵, transcript 맥락 보강)
+> - 메타에이전트 — `SessionStart` 훅이 `check.py --watch --interval 300` 자동 실행 (중복 방지)
+> - 설정: `.claude/settings.local.json`, 스크립트: `.claude/hooks/`
 
 ### 종료 절차 (트리거: **작업 종료**)
 1. 메타에이전트 리포트 확인

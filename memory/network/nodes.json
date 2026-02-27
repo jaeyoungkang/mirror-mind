@@ -9896,5 +9896,649 @@
     "session": "2026-02-27-세션31",
     "context_hint": "메타에이전트",
     "id": "n1413"
+  },
+  {
+    "content": "원칙 문서를 파악 완료했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "세션 시작",
+    "id": "n1414"
+  },
+  {
+    "content": "기억 활성화와 메타에이전트를 실행하겠다고 선언했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "세션 시작 자동화",
+    "id": "n1415"
+  },
+  {
+    "content": "세션 32에서 Light House의 시연 개선과 결과물 품질 업무가 진행 중이라고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "프로젝트 현황",
+    "id": "n1416"
+  },
+  {
+    "content": "기억 시스템이 v3 운영 중이며 아카이브 정책은 미구현이라고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "기억 시스템 운영",
+    "id": "n1417"
+  },
+  {
+    "content": "문라이트 대학 이벤트가 퍼널·유저 소통·홍보 중심으로 실행 중이라고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "Moonlight 운영",
+    "id": "n1418"
+  },
+  {
+    "content": ".prompt의 우선 항목을 프롬프트 전달 전 가로채기 방법 탐색으로 인식했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "우선 과제",
+    "id": "n1419"
+  },
+  {
+    "content": "프롬프트 가로채기 과제가 Claude Code의 hooks와 직접 관련된다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "훅 리서치",
+    "id": "n1420"
+  },
+  {
+    "content": "UserPromptSubmit 훅 조사부터 진행하겠다고 제안했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "작업 우선순위",
+    "id": "n1421"
+  },
+  {
+    "content": "백그라운드 메타에이전트 명령 결과를 확인하라는 알림을 받았다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "작업 알림 처리",
+    "id": "n1422"
+  },
+  {
+    "content": "메타에이전트 리포트에서 info 3건만 있고 error/warning은 없다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "메타에이전트 상태",
+    "id": "n1423"
+  },
+  {
+    "content": "메타에이전트가 정상 운영 중이라고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "운영 안정성",
+    "id": "n1424"
+  },
+  {
+    "content": "사용자 요청에 따라 프롬프트 가로채기 리서치를 먼저 진행하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "우선순위 확정",
+    "id": "n1425"
+  },
+  {
+    "content": "UserPromptSubmit 훅이 LLM 전달 전에 실행된다고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "훅 동작 모델",
+    "id": "n1426"
+  },
+  {
+    "content": "stdout 출력으로 컨텍스트를 주입할 수 있다고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "컨텍스트 주입",
+    "id": "n1427"
+  },
+  {
+    "content": "exit code 2로 프롬프트를 차단할 수 있다고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "프롬프트 제어",
+    "id": "n1428"
+  },
+  {
+    "content": "UserPromptSubmit에서 원본 프롬프트 자체는 수정할 수 없다고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "훅 한계",
+    "id": "n1429"
+  },
+  {
+    "content": "UserPromptSubmit에는 matcher가 없어 모든 프롬프트에 실행된다고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "훅 적용 범위",
+    "id": "n1430"
+  },
+  {
+    "content": "입력은 stdin JSON이고 출력은 컨텍스트 텍스트 또는 JSON이라는 구조를 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "입출력 포맷",
+    "id": "n1431"
+  },
+  {
+    "content": "우리 환경에서 세션 시작 기억 활성화 자동화에 훅을 활용할 수 있다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "자동화 설계",
+    "id": "n1432"
+  },
+  {
+    "content": "CLI 모드에서도 UserPromptSubmit 훅이 동작한다고 답변했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "CLI 호환성",
+    "id": "n1433"
+  },
+  {
+    "content": "PermissionRequest 훅만 비대화 모드에서 제한된다고 구분했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "훅 제약",
+    "id": "n1434"
+  },
+  {
+    "content": "사용자 입력 기반 자동 기억 활성화 방향이 수동 실행보다 자연스럽다고 평가했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "설계 판단",
+    "id": "n1435"
+  },
+  {
+    "content": "매 프롬프트 activate.py 실행 시 지연이 생길 수 있어 속도 측정이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "성능 검증",
+    "id": "n1436"
+  },
+  {
+    "content": "짧은 발화에도 활성화가 돌면 노이즈가 증가한다고 우려했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "품질 리스크",
+    "id": "n1437"
+  },
+  {
+    "content": "단일 프롬프트만 보면 문맥 오인 가능성이 있다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "문맥 한계",
+    "id": "n1438"
+  },
+  {
+    "content": "transcript_path를 활용해 최근 대화를 쿼리에 합치는 개선안을 제시했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "문맥 보강",
+    "id": "n1439"
+  },
+  {
+    "content": "activate.py 실행 시간을 실제로 측정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "성능 측정",
+    "id": "n1440"
+  },
+  {
+    "content": "측정 결과 실행 시간은 약 1.2~1.6초라고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "성능 결과",
+    "id": "n1441"
+  },
+  {
+    "content": "짧은 입력 '좋다'에서 활성화 결과가 엉뚱하다는 문제를 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "정확도 검증",
+    "id": "n1442"
+  },
+  {
+    "content": "사용자와 합의해 transcript 활용 방식(2번)으로 진행하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "의사결정",
+    "id": "n1443"
+  },
+  {
+    "content": "프로토타입 훅 테스트에서 긴 프롬프트에 관련 기억 10개가 정확히 활성화됨을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "프로토타입 검증",
+    "id": "n1444"
+  },
+  {
+    "content": "4자 입력은 스킵되어 불필요 주입이 방지됨을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "노이즈 제어",
+    "id": "n1445"
+  },
+  {
+    "content": "UserPromptSubmit용 memory-activate.sh를 설치했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "훅 구현",
+    "id": "n1446"
+  },
+  {
+    "content": "설정은 .claude/settings.local.json에 등록해 로컬 전용으로 두었다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "설정 전략",
+    "id": "n1447"
+  },
+  {
+    "content": "프롬프트 10자 미만은 스킵하고 10자 이상에서만 활성화하도록 설계했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "실행 조건",
+    "id": "n1448"
+  },
+  {
+    "content": "활성화 결과를 <memory-context> 태그로 감싸 주입하도록 구현했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "주입 포맷",
+    "id": "n1449"
+  },
+  {
+    "content": "훅 실행 타임아웃을 10초로 설정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "안정성 설정",
+    "id": "n1450"
+  },
+  {
+    "content": "SessionStart 훅으로 메타에이전트 자동 실행을 통합하기로 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "자동화 확장",
+    "id": "n1451"
+  },
+  {
+    "content": "check.py --watch를 async 백그라운드로 돌리는 방식을 채택했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "메타에이전트 실행",
+    "id": "n1452"
+  },
+  {
+    "content": "중복 실행 방지 로직이 동작해 메타에이전트가 1개만 실행됨을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "운영 안정화",
+    "id": "n1453"
+  },
+  {
+    "content": "SessionStart용 meta-agent-start.sh를 설치했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "훅 구현",
+    "id": "n1454"
+  },
+  {
+    "content": "기억 활성화 수동 절차와 메타에이전트 수동 실행 절차를 자동화로 대체했다고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "운영 개선",
+    "id": "n1455"
+  },
+  {
+    "content": "operations.md를 훅 자동화에 맞게 업데이트하기로 합의했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "문서 정합화",
+    "id": "n1456"
+  },
+  {
+    "content": "operations.md 시작 절차를 7단계에서 5단계로 축소했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "운영 절차 단순화",
+    "id": "n1457"
+  },
+  {
+    "content": "훅 반영 체감을 위해 세션 재시작을 권장했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "적용 확인",
+    "id": "n1458"
+  },
+  {
+    "content": "작업 종료 시 메타에이전트 리포트에서 error/warning이 없음을 다시 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "세션 종료 점검",
+    "id": "n1459"
+  },
+  {
+    "content": "작업 시작 시 원칙 문서를 파악 완료했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "세션 시작 절차",
+    "id": "n1460"
+  },
+  {
+    "content": "작업 시작 시 기억 활성화와 메타에이전트를 실행했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "세션 시작 절차",
+    "id": "n1461"
+  },
+  {
+    "content": "Light House가 시연 개선과 결과물 품질 향상 단계에 있다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "프로젝트 현황",
+    "id": "n1462"
+  },
+  {
+    "content": "기억 시스템이 v3 운영 중이며 아카이브 정책이 미구현 상태라고 파악했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "기억 시스템 운영",
+    "id": "n1463"
+  },
+  {
+    "content": "문라이트 대학 이벤트가 퍼널·유저 소통·홍보 중심으로 실행 중이라고 파악했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "프로젝트 현황",
+    "id": "n1464"
+  },
+  {
+    "content": ".prompt의 우선 과제로 프롬프트 전달 전 가로채기 항목을 선택했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "우선순위 결정",
+    "id": "n1465"
+  },
+  {
+    "content": "프롬프트 가로채기 해결에 Claude Code의 UserPromptSubmit 훅이 핵심이라고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "훅 설계",
+    "id": "n1466"
+  },
+  {
+    "content": "백그라운드 메타에이전트 실행 결과가 exit code 0으로 완료됐음을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "메타에이전트 상태",
+    "id": "n1467"
+  },
+  {
+    "content": "메타에이전트 리포트에서 error와 warning이 없음을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "운영 안정성",
+    "id": "n1468"
+  },
+  {
+    "content": "메타에이전트 리포트의 info 3건은 기존 memory_policy 이슈라고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "리포트 해석",
+    "id": "n1469"
+  },
+  {
+    "content": "사용자 요청에 따라 프롬프트 가로채기 리서치를 먼저 진행하기로 결정했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "작업 우선순위",
+    "id": "n1470"
+  },
+  {
+    "content": "UserPromptSubmit 훅이 LLM 전달 전에 실행된다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "훅 동작 검증",
+    "id": "n1471"
+  },
+  {
+    "content": "UserPromptSubmit 훅에서 stdout으로 맥락 주입이 가능하다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "컨텍스트 주입",
+    "id": "n1472"
+  },
+  {
+    "content": "UserPromptSubmit 훅에서 exit code 2로 프롬프트 차단이 가능하다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "입력 제어",
+    "id": "n1473"
+  },
+  {
+    "content": "UserPromptSubmit 훅은 원본 프롬프트 텍스트를 직접 수정할 수 없다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "기능 한계",
+    "id": "n1474"
+  },
+  {
+    "content": "UserPromptSubmit 훅은 matcher 없이 모든 프롬프트에 실행된다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "적용 범위",
+    "id": "n1475"
+  },
+  {
+    "content": "프로그래머틱 처리는 훅 내 셸 스크립트로 구현 가능하다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "자동화 설계",
+    "id": "n1476"
+  },
+  {
+    "content": "CLI 모드에서도 UserPromptSubmit 훅이 동작한다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "CLI 호환성",
+    "id": "n1477"
+  },
+  {
+    "content": "CLI 비대화 모드에서는 PermissionRequest 훅이 동작하지 않는다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "훅 제약",
+    "id": "n1478"
+  },
+  {
+    "content": "CLI 비대화 모드의 PermissionRequest 공백은 PreToolUse로 대체 가능하다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "대체 설계",
+    "id": "n1479"
+  },
+  {
+    "content": "사용자 입력 기반 자동 기억 활성화 방향이 수동 실행보다 자연스럽다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "사용성 개선",
+    "id": "n1480"
+  },
+  {
+    "content": "매 프롬프트마다 activate.py를 실행하면 지연이 생길 수 있다고 우려했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "성능 리스크",
+    "id": "n1481"
+  },
+  {
+    "content": "짧은 입력에도 활성화를 수행하면 노이즈가 증가한다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "품질 리스크",
+    "id": "n1482"
+  },
+  {
+    "content": "단일 프롬프트만으로는 대화 맥락 반영이 부족할 수 있다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "맥락 해석 한계",
+    "id": "n1483"
+  },
+  {
+    "content": "activate.py 실행 시간을 먼저 측정하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "검증 계획",
+    "id": "n1484"
+  },
+  {
+    "content": "성능 측정 결과 activate.py 지연이 약 1.2~1.6초임을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "성능 측정",
+    "id": "n1485"
+  },
+  {
+    "content": "짧은 입력 \"좋다\"에서 활성화 결과가 엉뚱하게 나오는 문제를 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "정확도 검증",
+    "id": "n1486"
+  },
+  {
+    "content": "짧은 프롬프트 스킵 규칙이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "노이즈 제어",
+    "id": "n1487"
+  },
+  {
+    "content": "transcript를 활용해 최근 대화 맥락을 쿼리에 합치기로 결정했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "맥락 강화",
+    "id": "n1488"
+  },
+  {
+    "content": "사용자가 1.2초 지연을 수용한다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "사용자 합의",
+    "id": "n1489"
+  },
+  {
+    "content": "기억 활성화 훅 프로토타입을 구현하고 테스트했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "프로토타입 구현",
+    "id": "n1490"
+  },
+  {
+    "content": "의미 있는 프롬프트에서 관련 기억 10개가 정확히 활성화됨을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "정확도 개선",
+    "id": "n1491"
+  },
+  {
+    "content": "10자 미만 입력은 스킵되도록 동작함을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "스킵 정책",
+    "id": "n1492"
+  },
+  {
+    "content": "UserPromptSubmit용 `.claude/hooks/memory-activate.sh`를 설치했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "훅 배포",
+    "id": "n1493"
+  },
+  {
+    "content": "훅 등록을 `.claude/settings.local.json`에 로컬 설정으로 반영했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "설정 관리",
+    "id": "n1494"
+  },
+  {
+    "content": "SessionStart에 메타에이전트 자동 실행을 통합하기로 결정했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "운영 자동화",
+    "id": "n1495"
+  },
+  {
+    "content": "메타에이전트 자동 실행에 `--watch` async 백그라운드 방식을 채택했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "실행 전략",
+    "id": "n1496"
+  },
+  {
+    "content": "SessionStart용 `meta-agent-start.sh` 훅을 설치했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "훅 배포",
+    "id": "n1497"
+  },
+  {
+    "content": "메타에이전트 자동 실행에서 중복 실행 방지가 동작함을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "안정성 검증",
+    "id": "n1498"
+  },
+  {
+    "content": "기억 활성화와 메타에이전트 수동 절차를 훅 자동화로 대체했다고 정리했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "운영 전환",
+    "id": "n1499"
+  },
+  {
+    "content": "`operations.md` 세션 시작 절차를 자동화 기준으로 업데이트했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "문서 정합성",
+    "id": "n1500"
+  },
+  {
+    "content": "세션 재시작 시 훅 적용을 위해 `/exit` 후 재진입 절차를 안내했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "적용 절차",
+    "id": "n1501"
+  },
+  {
+    "content": "작업 종료 시 메타에이전트 리포트에서 error/warning이 없음을 다시 확인했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "세션 종료 점검",
+    "id": "n1502"
+  },
+  {
+    "content": "세션 종료 단계에서 노드 추출은 완료됐고 임베딩·그래프 갱신만 필요하다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "종료 후속 작업",
+    "id": "n1503"
+  },
+  {
+    "content": "임베딩·그래프 갱신은 venv python으로 실행해야 한다고 판단했다.",
+    "type": "fact",
+    "session": "2026-02-27-세션32",
+    "context_hint": "실행 환경",
+    "id": "n1504"
+  },
+  {
+    "content": "이번 세션의 핵심 방향을 프롬프트 가로채기 기반 기억 주입 자동화로 확정했다.",
+    "type": "intention",
+    "session": "2026-02-27-세션32",
+    "context_hint": "세션 의사결정",
+    "id": "n1505"
   }
 ]
