@@ -5,15 +5,18 @@
 프로그램적 점검(톤, 참조 무결성 등) + LLM 점검(순응, 목적 탐구 등)을 수행한다.
 
 사용법:
-  python meta-agent/scripts/check.py [--watch] [--interval 300] [--llm]
+  python scripts/check.py [--watch] [--interval 300] [--llm]
+  python scripts/check.py --prompt-mode  (UserPromptSubmit 훅용)
 
 모드:
   기본: 현재 세션을 1회 점검
   --watch: 파일 변경을 감시하며 반복 점검
   --llm: codex exec로 LLM 기반 점검 추가
+  --prompt-mode: UserPromptSubmit 훅 모드 (stdin JSON, 최근 3-5턴, LLM 점검, 위반 시만 출력)
 
 출력:
-  stdout에 리포트
+  기본: stdout에 리포트
+  --prompt-mode: 위반 시만 <meta-agent> 태그로 출력, 위반 없으면 출력 없음
 """
 
 import json
@@ -470,6 +473,121 @@ def check_with_codex(
     return []
 
 
+# === prompt-mode (UserPromptSubmit 훅) ===
+
+def read_recent_turns(session_path: Path, num_turns: int = 5) -> str:
+    """최근 N턴(사용자+AI 쌍)을 추출. 도구 호출은 제외하고 텍스트만."""
+    messages = []
+    with open(session_path) as f:
+        for line in f:
+            try:
+                record = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            msg_type = record.get("type")
+            if msg_type == "user":
+                content = record.get("message", {}).get("content", "")
+                if isinstance(content, str) and content.strip():
+                    messages.append(f"[사용자] {content.strip()[:500]}")
+            elif msg_type == "assistant":
+                msg = record.get("message", {})
+                content = msg.get("content", "")
+                texts = []
+                if isinstance(content, str):
+                    texts.append(content)
+                elif isinstance(content, list):
+                    for block in content:
+                        if isinstance(block, dict) and block.get("type") == "text":
+                            texts.append(block.get("text", ""))
+                full_text = "\n".join(texts).strip()
+                if full_text:
+                    messages.append(f"[AI] {full_text[:500]}")
+
+    # num_turns 턴 = 사용자+AI 쌍 기준으로 최근 num_turns*2개 메시지
+    return "\n\n".join(messages[-(num_turns * 2):])
+
+
+def run_prompt_mode():
+    """UserPromptSubmit 훅 모드. stdin JSON → LLM 점검 → 위반 시만 출력."""
+    # stdin에서 hook JSON 읽기
+    try:
+        hook_input = json.loads(sys.stdin.read())
+    except (json.JSONDecodeError, Exception):
+        sys.exit(0)  # 파싱 실패 시 조용히 종료
+
+    prompt = hook_input.get("prompt", "")
+    transcript_path = hook_input.get("transcript_path", "")
+
+    # 짧은 프롬프트 스킵 (10자 미만)
+    if len(prompt) < 10:
+        sys.exit(0)
+
+    # transcript 경로 확인
+    session_path = Path(transcript_path) if transcript_path else None
+    if not session_path or not session_path.exists():
+        sys.exit(0)
+
+    # codex 확인
+    if not is_codex_available():
+        sys.exit(0)
+
+    # 최근 3-5턴 추출
+    context = read_recent_turns(session_path, num_turns=5)
+    if not context.strip():
+        sys.exit(0)
+
+    # 원칙 로드
+    principle_path = PROJECT_ROOT / "mirror-mind-principle.md"
+    principles = ""
+    if principle_path.exists():
+        principles = principle_path.read_text()[:1500]
+
+    # 교훈 로드
+    lessons = load_retrospective_lessons()
+    lessons_section = format_lessons_for_prompt(lessons)
+
+    # LLM 점검
+    llm_prompt = LLM_CHECK_PROMPT_TEMPLATE.format(
+        principles=principles,
+        context=context,
+        lessons_section=lessons_section,
+    )
+
+    raw = call_codex(llm_prompt, timeout=120)
+    if not raw:
+        sys.exit(0)
+
+    # 결과 파싱
+    violations = []
+    try:
+        match = re.search(r'\[.*\]', raw, re.DOTALL)
+        if match:
+            items = json.loads(match.group())
+            violations = [item for item in items if isinstance(item, dict)]
+    except (json.JSONDecodeError, Exception):
+        sys.exit(0)
+
+    # 위반 없으면 출력 없이 종료
+    if not violations:
+        sys.exit(0)
+
+    # 위반 있을 때만 출력
+    lines = ["<meta-agent>"]
+    for v in violations:
+        severity = v.get("severity", "warning")
+        check = v.get("check", "unknown")
+        detail = v.get("detail", "")
+        evidence = v.get("evidence", "")
+        icon = {"error": "[E]", "warning": "[W]", "info": "[I]"}.get(severity, "[W]")
+        lines.append(f"{icon} {check}: {detail}")
+        if evidence:
+            lines.append(f"    근거: {evidence}")
+    lines.append("</meta-agent>")
+
+    print("\n".join(lines))
+    sys.exit(0)
+
+
 # === 리포트 ===
 
 def run_checks(
@@ -582,7 +700,14 @@ def main():
     parser.add_argument("--json", action="store_true", help="JSON 출력")
     parser.add_argument("--llm", action="store_true", help="LLM 점검 활성화 (codex exec)")
     parser.add_argument("--llm-model", help="LLM 모델 (기본: codex 기본값)")
+    parser.add_argument("--prompt-mode", action="store_true",
+                        help="UserPromptSubmit 훅 모드 (stdin JSON → LLM 점검 → 위반 시만 출력)")
     args = parser.parse_args()
+
+    # prompt-mode: 훅 전용 경로
+    if args.prompt_mode:
+        run_prompt_mode()
+        return
 
     # codex 사용 가능 여부 확인
     use_llm = args.llm

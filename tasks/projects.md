@@ -138,7 +138,16 @@
     - 참조: `projects/lighthouse/shared-tools-design.md` (초기 방향)
     - [x] 1차 구현 — 패널 검색바 + 논문 클릭 분석 트리거 (동작하지만 UX 전환 부족)
     - [x] 설계 논의 — 균일 인터페이스 철학, 워크스페이스 모델, 웹 계약 재정의, 삼분법+AGENTS.md 방법론
-    - [ ] 재설계 구현 (document-architecture.md 기반, 단계 0~5)
+    - [x] 재설계 구현 (document-architecture.md 기반, 단계 0~5) — 전체 완료
+      - [x] 단계 0: 방법론 기반 세팅 — domain/document.ts + principles/ + strategies/ + AGENTS.md 재작성 + system-prompt.ts 원칙 추출 + workspace-store 통합
+      - [x] 단계 1: Document 모델 도입 — documentStore 구현 (균일 CRUD)
+      - [x] 단계 2: 도구 출력 통일 — 각 도구 출력을 Document로 래핑
+      - [x] 단계 3: 워크스페이스 UI — /workspace/[sessionId] + 사이드바 + 다중 패널
+      - [x] 단계 4: 상태 관리 단순화 — WorkspaceDocument→Document 통일, 자동 동기화, Memo DB 영속, Session 타입, Hydration 단순화
+      - [x] 단계 5: 사용자 행동 개방 — 사용자 검색/메모/편집/삭제 + 사이드바 네비게이션
+    - [x] 후속 개선 — 문서 패널 고도화 + 파이프라인 경량 정리
+      - 문서 패널: Overview 클러스터 카드, Search 분석 버튼, Analysis 원문+재분석, Synthesis 참조 색인
+      - 파이프라인: pipeline-rules.ts/post-actions.ts 삭제·인라인, Document[] 요약 개선
   - [ ] 관계 형성 고도화 — 상호 맥락 파악, 경험 기반 점진적 설명, 관계 깊이별 행동 변화
   - [ ] 안정화
     - [x] 세션 전환 시 연구 문서 패널 리셋 — Zustand store 초기화 누락 (`session-document-binding-prompt.md`)
@@ -206,6 +215,10 @@
   - [x] hooks 자동화 — SessionStart 훅으로 자동 실행 (`.claude/hooks/meta-agent-start.sh`)
   - [x] memory_policy 점검 규칙을 v3 네트워크에 맞게 업데이트
   - [x] LLM 점검 자동 활성화 — hook에 --llm 플래그, 7개 항목(교훈 자동 상기 포함)
+  - [x] UserPromptSubmit 전환 — 5분 백그라운드 → 매 프롬프트 LLM 점검
+    - check.py --prompt-mode 추가, meta-agent-prompt.sh 훅 생성, .claude/settings.json 등록
+    - 피드백은 사용자 + AI 양쪽에 표시, 교정 주체는 사용자
+    - 기존 SessionStart 백그라운드 방식(meta-agent-start.sh) 폐기
   - [ ] 실전 운영 후 점검 항목 개선
 
 ## [>] 문라이트 대학 이벤트 — 새학기 응원 챌린지

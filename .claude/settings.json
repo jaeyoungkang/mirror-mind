@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/memory-activate.sh"
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/meta-agent-prompt.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

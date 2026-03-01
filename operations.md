@@ -100,9 +100,13 @@
 일반 에이전트가 일을 하고, 메타에이전트가 **일하는 방식 자체를 감시**한다.
 
 ### 실행
-- 세션 시작 시 백그라운드: `python scripts/check.py --watch --interval 300 --llm`
-- 5분 간격 점검, 매 주기 위반 사항 + 원칙 리마인드 출력
+- **매 프롬프트 점검**: `UserPromptSubmit` 훅으로 `check.py --prompt-mode` 자동 실행
+  - stdin에서 hook JSON 수신 → 최근 3-5턴 추출 → codex exec LLM 점검
+  - 위반 시만 `<meta-agent>` 태그로 출력 (사용자 + AI 모두 확인)
+  - 위반 없으면 출력 없음 (노이즈 방지)
+  - 교정 주체는 **사용자** — 메타에이전트는 표시만, 사용자가 판단하고 개입
 - 1회 점검: `python scripts/check.py`
+- 1회 LLM 점검: `python scripts/check.py --llm`
 
 ### 점검 항목 (프로그램적)
 

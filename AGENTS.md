@@ -45,7 +45,7 @@
 
 > **hooks 자동화 (별도):**
 > - 기억 활성화 — `UserPromptSubmit` 훅이 매 프롬프트마다 `activate.py` 자동 실행
-> - 메타에이전트 — `SessionStart` 훅이 `check.py --watch --interval 300` 자동 실행
+> - 메타에이전트 — `UserPromptSubmit` 훅이 매 프롬프트마다 `check.py --prompt-mode` 실행 (최근 3-5턴 LLM 점검, 위반 시만 출력)
 
 ### 종료 (트리거: **작업 종료**)
 1. 메타에이전트 리포트 확인
