@@ -40,7 +40,7 @@
 2. `agentic-engineering-principles.md` 읽고 설계·개발 원칙 파악
 3. `operations.md` 읽고 운영 방식 파악
 4. `tasks/projects.md` 읽고 현재 상태 파악
-5. 기억 활성화: `memory/.venv/bin/python3 scripts/activate.py --query "현재 주제"`
+5. 기억 활성화: `.venv/bin/python3 scripts/activate.py --query "현재 주제"`
 6. 현재 상태 요약 + 다음 작업 제안
 
 > **hooks 자동화 (별도):**
