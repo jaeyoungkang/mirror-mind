@@ -12920,5 +12920,1237 @@
     "session": "2026-03-02-세션39",
     "context_hint": "후속 점검",
     "id": "n1845"
+  },
+  {
+    "content": "원칙 문서 4종을 읽고 작업을 시작했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "세션 시작",
+    "id": "n1846"
+  },
+  {
+    "content": "embeddings.json 부재와 OPENAI_API_KEY 미설정으로 기억 활성화에 실패했다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "기억 활성화 장애",
+    "id": "n1847"
+  },
+  {
+    "content": "API 키가 없어도 문서 기반으로 현재 상태를 우선 요약했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "대체 진행",
+    "id": "n1848"
+  },
+  {
+    "content": "Light House의 공동 도구 사용 설계 논의를 선행 과제로 제안했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "다음 작업 제안",
+    "id": "n1849"
+  },
+  {
+    "content": "리서치 결과물 품질 차별화를 핵심 경쟁력 과제로 제안했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "다음 작업 제안",
+    "id": "n1850"
+  },
+  {
+    "content": "문라이트 이벤트 마감 임박에 따라 퍼널 점검을 제안했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "다음 작업 제안",
+    "id": "n1851"
+  },
+  {
+    "content": "사용자가 .env에 키가 있다고 알려준 뒤 임베딩 재생성을 수행했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "임베딩 생성",
+    "id": "n1852"
+  },
+  {
+    "content": "총 1627개 노드 벡터를 생성했고 파일 크기는 53.1MB였다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "임베딩 결과",
+    "id": "n1853"
+  },
+  {
+    "content": "activate.py 재실행으로 기억 활성화 정상 동작을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "동작 검증",
+    "id": "n1854"
+  },
+  {
+    "content": "venv 부재로 시스템 Python에 numpy, openai, scikit-learn을 직접 설치했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "환경 이슈",
+    "id": "n1855"
+  },
+  {
+    "content": "환경 격리를 위해 venv 재세팅이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "환경 정책",
+    "id": "n1856"
+  },
+  {
+    "content": "백그라운드 작업 완료 알림 후에도 임베딩 생성과 활성화 완료 상태를 재확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "작업 확인",
+    "id": "n1857"
+  },
+  {
+    "content": "사용자 요청에 따라 venv를 기본 원칙으로 맞추기로 했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "개발 규율",
+    "id": "n1858"
+  },
+  {
+    "content": "requirements.txt 부재를 확인하고 스크립트 의존성을 점검했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "의존성 점검",
+    "id": "n1859"
+  },
+  {
+    "content": "외부 의존성 4개를 numpy, openai, scikit-learn, python-dotenv로 확정했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "의존성 목록",
+    "id": "n1860"
+  },
+  {
+    "content": "memory/.venv를 생성하고 의존성을 설치했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "venv 구축",
+    "id": "n1861"
+  },
+  {
+    "content": "requirements.txt를 새로 추가했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "환경 재현성",
+    "id": "n1862"
+  },
+  {
+    "content": "memory/.venv/bin/python3로 activate.py 동작을 검증했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "검증",
+    "id": "n1863"
+  },
+  {
+    "content": "AGENTS.md 세션 절차와 실행 경로 일관성이 맞춰졌다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "운영 정합성",
+    "id": "n1864"
+  },
+  {
+    "content": "백그라운드 venv 검증 완료 알림 이후에도 설정 완료 상태를 재확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "작업 확인",
+    "id": "n1865"
+  },
+  {
+    "content": "\"모든 것은 파일\" 철학을 에이전트 개발 효율 가이드라인으로 해석했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "철학 해석",
+    "id": "n1866"
+  },
+  {
+    "content": "에이전트 도구 인터페이스가 Read/Write/Glob/Grep/Git의 파일 중심이라는 점을 명시했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "도구 모델",
+    "id": "n1867"
+  },
+  {
+    "content": "파일로 명시되지 않은 지식은 에이전트의 블라인드 스팟이 된다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "관측 가능성",
+    "id": "n1868"
+  },
+  {
+    "content": "코드베이스 규칙으로 설정·스키마·인프라·의존성·상태 전이의 파일 명시화를 제안했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "코딩 규칙",
+    "id": "n1869"
+  },
+  {
+    "content": "에이전트는 코드를 읽을 때뿐 아니라 생성할 때도 같은 파일 원칙을 따라야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "생성 규율",
+    "id": "n1870"
+  },
+  {
+    "content": "이 원칙의 본질을 저장 방식이 아니라 상호작용 인터페이스 문제로 정리했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "인터페이스 철학",
+    "id": "n1871"
+  },
+  {
+    "content": "핵심 명제를 \"시스템 인터페이스를 파일 조작으로 환원 가능하게 설계하라\"로 구체화했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "원칙 명문화",
+    "id": "n1872"
+  },
+  {
+    "content": "추상 문장만으로는 에이전트가 실행 규칙으로 변환하기 어렵다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "지침 설계",
+    "id": "n1873"
+  },
+  {
+    "content": "원칙 문구는 직관적으로 두고 실행 가능한 규칙/위반 예시를 함께 제공하는 구조를 제안했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "지침 형식",
+    "id": "n1874"
+  },
+  {
+    "content": "\"균일한 인터페이스\"를 코드 생성 원칙으로 확장해 기존 패턴 준수와 특수 경로 금지를 강조했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "개발 원칙",
+    "id": "n1875"
+  },
+  {
+    "content": "다양한 대상을 단일 추상화로 수렴시키는 설계가 개발과 에이전트 설계에 공통 적용된다고 정리했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "상위 철학",
+    "id": "n1876"
+  },
+  {
+    "content": "사용자 승인 후 agentic-engineering-principles.md 개발 방법론 최상단에 상위 원칙을 반영했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "문서 반영",
+    "id": "n1877"
+  },
+  {
+    "content": "상위 원칙을 시스템 인터페이스, 코드 인터페이스, 에이전트 설계 사례의 3축으로 구조화했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "문서 구조",
+    "id": "n1878"
+  },
+  {
+    "content": "라이트하우스에는 \"Everything is a document\" 기반이 이미 존재한다고 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "라이트하우스 진단",
+    "id": "n1879"
+  },
+  {
+    "content": "라이트하우스 핵심을 문서 저장이 아니라 사용자/AI가 공유하는 단일 상호작용 인터페이스로 해석했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "재프레이밍",
+    "id": "n1880"
+  },
+  {
+    "content": "코드베이스 재설계 문서를 작성해 projects/lighthouse/document-architecture.md를 추가했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "설계 산출물",
+    "id": "n1881"
+  },
+  {
+    "content": "AGENTS.md 문서 맵에 신규 설계 문서 참조를 연결했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "문서 연결",
+    "id": "n1882"
+  },
+  {
+    "content": "\"문서 중심\" 표현이 오해를 만들 수 있어 \"균일 인터페이스 아키텍처\"로 프레이밍을 수정했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "용어 정교화",
+    "id": "n1883"
+  },
+  {
+    "content": "설계 문서 전반에서 \"문서는 수단이고 인터페이스가 핵심\"이라는 관점으로 일관되게 수정했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션36",
+    "context_hint": "문서 수정",
+    "id": "n1884"
+  },
+  {
+    "content": "ai-engineering-methodology.md를 검토하고 방향은 맞지만 라이트하우스 맥락에 맞는 재해석이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "방법론 검토",
+    "id": "n1885"
+  },
+  {
+    "content": "프롬프트 위임 방식은 일회성이라 의도가 사라지기 쉽고 Doc-Code Sync는 항시성을 제공한다고 평가했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "방법론 비교",
+    "id": "n1886"
+  },
+  {
+    "content": "삼분법을 라이트하우스에서는 인터페이스 규약·구현 전략·타입 정의로 재해석해야 한다고 제안했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "적용 전략",
+    "id": "n1887"
+  },
+  {
+    "content": "md/ts 이중화는 영역별로 선택 적용하고 CLAUDE.md 동기화 규칙은 강하게 도입하는 것이 적절하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션36",
+    "context_hint": "운영 원칙",
+    "id": "n1888"
+  },
+  {
+    "content": "작업 시작 트리거에 따라 세션 시작 절차를 수행했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "세션 운영",
+    "id": "n1889"
+  },
+  {
+    "content": "핵심 문서를 읽고 원칙 기반으로 진행하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션37",
+    "context_hint": "원칙 적용",
+    "id": "n1890"
+  },
+  {
+    "content": "기억 활성화를 실행했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "기억 시스템",
+    "id": "n1891"
+  },
+  {
+    "content": "Light House의 균일 인터페이스 재설계가 활성 프로젝트임을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "프로젝트 상태",
+    "id": "n1892"
+  },
+  {
+    "content": "document-architecture.md 설계가 세션 36에서 완료되었음을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "설계 이력",
+    "id": "n1893"
+  },
+  {
+    "content": "재설계 구현은 아직 시작 전 상태임을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "진행 상태",
+    "id": "n1894"
+  },
+  {
+    "content": "마이그레이션 5단계가 이미 정의되어 있음을 요약했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "마이그레이션 계획",
+    "id": "n1895"
+  },
+  {
+    "content": "세션 36에서 문서를 단일 인터페이스 추상화로 해석한 맥락을 복기했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "설계 연속성",
+    "id": "n1896"
+  },
+  {
+    "content": "shared-tools-design.md에서 document-architecture.md로 설계가 발전했음을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "문서 진화",
+    "id": "n1897"
+  },
+  {
+    "content": "단계 0부터 구현을 시작하자는 사용자 결정을 수용했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "착수 결정",
+    "id": "n1898"
+  },
+  {
+    "content": "구현 전 lighthouse 코드베이스 구조를 먼저 파악하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션37",
+    "context_hint": "사전 탐색",
+    "id": "n1899"
+  },
+  {
+    "content": "탐색 후 핵심 파일을 직접 확인해 계획 정확도를 높이기로 했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션37",
+    "context_hint": "정밀 분석",
+    "id": "n1900"
+  },
+  {
+    "content": "기존 코드 하위 호환성을 고려하지 않는 방향으로 계획을 수정했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "전략 전환",
+    "id": "n1901"
+  },
+  {
+    "content": "system-prompt.ts를 principles 함수 호출 구조로 직접 전환하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션37",
+    "context_hint": "프롬프트 구조",
+    "id": "n1902"
+  },
+  {
+    "content": "workspace-store.ts의 DocumentType을 domain/document.ts로 통합하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션37",
+    "context_hint": "타입 통합",
+    "id": "n1903"
+  },
+  {
+    "content": "Artifact 공존을 고려하지 않는 공격적 전환 전략을 채택했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "아키텍처 전환",
+    "id": "n1904"
+  },
+  {
+    "content": "구현 에이전트 참조를 위해 document-architecture.md를 lighthouse docs에 배치했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "문서 전달",
+    "id": "n1905"
+  },
+  {
+    "content": "AGENTS.md 문서 맵에 설계 문서를 추가해 접근 경로를 고정했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "운영 문서화",
+    "id": "n1906"
+  },
+  {
+    "content": "구현 에이전트에게 전달할 구체 지시문을 작성했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "에이전트 위임",
+    "id": "n1907"
+  },
+  {
+    "content": "설계 문서만으로는 부족하다는 지적을 반영해 구현 계획 문서도 함께 전달하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션37",
+    "context_hint": "지시 완결성",
+    "id": "n1908"
+  },
+  {
+    "content": "docs/stage0-implementation-plan.md를 lighthouse에 추가했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "단계0 계획",
+    "id": "n1909"
+  },
+  {
+    "content": "구현 에이전트 지시는 설계 문서와 단계 계획 문서를 함께 읽게 하는 방식으로 정리했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "위임 프로토콜",
+    "id": "n1910"
+  },
+  {
+    "content": "글로벌 git 설정의 insteadOf 규칙이 HTTPS를 SSH로 강제 변환하는 원인임을 발견했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "깃 설정 진단",
+    "id": "n1911"
+  },
+  {
+    "content": "corca 폴더를 HTTPS로 쓰기 위한 방법을 3가지 대안으로 정리했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "해결안 제시",
+    "id": "n1912"
+  },
+  {
+    "content": "mirror-mind는 remote URL이 이미 SSH라서 글로벌 규칙 제거 후에도 SSH가 유지된다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션37",
+    "context_hint": "영향 분석",
+    "id": "n1913"
+  },
+  {
+    "content": "lighthouse를 HTTPS로 전환하려면 글로벌 규칙 제거와 remote URL 변경을 함께 해야 한다고 결론냈다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "설정 적용 조건",
+    "id": "n1914"
+  },
+  {
+    "content": "요청에 따라 글로벌 insteadOf를 제거하고 lighthouse remote를 HTTPS로 변경했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "깃 설정 변경",
+    "id": "n1915"
+  },
+  {
+    "content": "변경 후 mirror-mind는 SSH 유지, lighthouse는 HTTPS 전환 상태를 검증했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "검증 결과",
+    "id": "n1916"
+  },
+  {
+    "content": "당시 시점에서 Stage 0 구현은 아직 수행되지 않았음을 명확히 정정했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "상태 정합성",
+    "id": "n1917"
+  },
+  {
+    "content": "Stage 0 완료 보고를 반영해 tasks/projects.md를 업데이트했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "진행 관리",
+    "id": "n1918"
+  },
+  {
+    "content": "Stage 1 프롬프트 작성 전 Stage 0 결과물과 현재 코드베이스를 먼저 파악하기로 했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션37",
+    "context_hint": "단계 전환 기준",
+    "id": "n1919"
+  },
+  {
+    "content": "docs/stage1-implementation-plan.md를 작성해 구현 에이전트 전달 경로를 제공했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "단계1 계획",
+    "id": "n1920"
+  },
+  {
+    "content": "Stage 1 구현 지시에 타입체크와 빌드 통과를 검증 기준으로 명시했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "검증 규칙",
+    "id": "n1921"
+  },
+  {
+    "content": "Stage 1 완료 후 Stage 2 준비 시 도구 반환값과 렌더링이 구구조에 남아있음을 진단했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "갭 분석",
+    "id": "n1922"
+  },
+  {
+    "content": "docs/stage2-implementation-plan.md를 작성했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "단계2 계획",
+    "id": "n1923"
+  },
+  {
+    "content": "Stage 2 핵심을 도구의 Document 직접 반환으로 정의했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "도구 통일",
+    "id": "n1924"
+  },
+  {
+    "content": "Stage 2 핵심을 post-action 이중 생성 제거로 정의했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "파이프라인 단순화",
+    "id": "n1925"
+  },
+  {
+    "content": "Stage 2 핵심을 artifact 코드 전면 삭제로 정의했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "레거시 제거",
+    "id": "n1926"
+  },
+  {
+    "content": "Stage 2 완료 후 Stage 3 준비 시 균일 인터페이스가 동작하고 워크스페이스 인프라가 부분 구축됨을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "단계2 결과 진단",
+    "id": "n1927"
+  },
+  {
+    "content": "docs/stage3-implementation-plan.md를 작성했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "단계3 계획",
+    "id": "n1928"
+  },
+  {
+    "content": "Stage 3에서 react-resizable-panels 기반 패널 리사이즈를 핵심 과제로 설정했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "UI 구조",
+    "id": "n1929"
+  },
+  {
+    "content": "Stage 3에서 사이드바 문서 목록을 workspace-store와 연동하는 방향을 제시했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "상태 연동",
+    "id": "n1930"
+  },
+  {
+    "content": "Stage 3에서 SynthesisDocument와 OverviewDocument 렌더러 추가를 지정했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "렌더링 확장",
+    "id": "n1931"
+  },
+  {
+    "content": "Stage 3에서 WorkspaceContext를 focused document 포맷으로 수정하도록 지시했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "컨텍스트 정합성",
+    "id": "n1932"
+  },
+  {
+    "content": "Stage 3 완료 후 Stage 4의 초점을 타입 통합·자동 동기화·hydration 단순화로 재정의했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "단계4 초점",
+    "id": "n1933"
+  },
+  {
+    "content": "스토어 수가 이미 2개뿐이라 Stage 4의 본질은 스토어 축소가 아니라 상태 구조 정합화라고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션37",
+    "context_hint": "문제 재정의",
+    "id": "n1934"
+  },
+  {
+    "content": "WorkspaceDocument와 Document의 중복이 남은 핵심 복잡도라고 식별했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "타입 중복",
+    "id": "n1935"
+  },
+  {
+    "content": "메모가 클라이언트 전용 상태에 머물러 새로고침 시 유실되는 위험을 확인했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "영속성 리스크",
+    "id": "n1936"
+  },
+  {
+    "content": "Stage 4에서 메모 PATCH 동기화와 debounce 적용이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-02-28-세션37",
+    "context_hint": "영속화 설계",
+    "id": "n1937"
+  },
+  {
+    "content": "Stage 4 계획 문서를 작성해 다음 구현 위임 준비를 완료했다.",
+    "type": "fact",
+    "session": "2026-02-28-세션37",
+    "context_hint": "단계4 준비",
+    "id": "n1938"
+  },
+  {
+    "content": "나는 세션 시작 절차에 따라 원칙 문서와 운영 문서를 읽고 현재 상태를 요약했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "세션 시작 절차",
+    "id": "n1939"
+  },
+  {
+    "content": "나는 Light House의 균일 인터페이스 재설계가 단계 0~5와 후속 개선까지 완료된 상태라고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "Light House 진행 현황",
+    "id": "n1940"
+  },
+  {
+    "content": "나는 리서치 결과물 품질 차별화가 반복 활성화되는 최우선 미해결 과제라고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "기억 활성화 결과",
+    "id": "n1941"
+  },
+  {
+    "content": "나는 3월 2일 후속 공유를 고려해 공유 준비와 시연 점검을 우선 제안했다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "우선순위 제안",
+    "id": "n1942"
+  },
+  {
+    "content": "나는 사용자의 별도 작업 요청에 따라 OpenClaw 설치 정보를 조사했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "OpenClaw 전환",
+    "id": "n1943"
+  },
+  {
+    "content": "나는 OpenClaw 설치 전제조건으로 Node.js 22+를 안내했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "설치 가이드",
+    "id": "n1944"
+  },
+  {
+    "content": "나는 설치 방법으로 원라인 스크립트와 npm 직접 설치 경로를 제시했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "설치 옵션",
+    "id": "n1945"
+  },
+  {
+    "content": "나는 환경 확인 결과 Node.js v24.5.0이 요구사항을 충족한다고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "환경 점검",
+    "id": "n1946"
+  },
+  {
+    "content": "나는 최근 세션에서 Why보다 What에 치우쳤다는 사용자 지적을 인정했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "원칙 위반 성찰",
+    "id": "n1947"
+  },
+  {
+    "content": "나는 목적 미탐구와 도구적 반응, 우선순위 무마찰 순응이 내 문제였다고 진단했다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "행동 진단",
+    "id": "n1948"
+  },
+  {
+    "content": "나는 원칙 미준수의 근본 원인을 지식 부족보다 실행 관성으로 판단했다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "원인 분석",
+    "id": "n1949"
+  },
+  {
+    "content": "나는 리마인드 주입만으로는 부족하고 구조적 개입이 필요하다고 제안했다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "개입 방식 판단",
+    "id": "n1950"
+  },
+  {
+    "content": "나는 메타에이전트 훅 구성을 확인하겠다고 하고 실제 설정 점검을 진행했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "훅 점검",
+    "id": "n1951"
+  },
+  {
+    "content": "나는 당시 구조가 memory 활성화는 UserPromptSubmit, 메타에이전트는 SessionStart 기반 5분 루프라고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "훅 구조 확인",
+    "id": "n1952"
+  },
+  {
+    "content": "나는 메타에이전트를 UserPromptSubmit로 전환하는 방향을 핵심 대안으로 올렸다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "구조 전환 제안",
+    "id": "n1953"
+  },
+  {
+    "content": "나는 check.py 동작을 확인해 전환 가능성을 검증하겠다고 했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "구현 타당성 확인",
+    "id": "n1954"
+  },
+  {
+    "content": "나는 기존 5분 백그라운드 구조가 피드백을 메인 세션에 전달하지 못한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "피드백 경로 문제",
+    "id": "n1955"
+  },
+  {
+    "content": "나는 매 프롬프트 전환 시 최근 20개 메시지 전체 점검은 중복을 키우므로 경량 범위가 필요하다고 지적했다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "점검 범위 설계",
+    "id": "n1956"
+  },
+  {
+    "content": "나는 설계 논의에서 피드백 미도달이 진짜 문제일 수 있다고 재정의했다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "문제 재정의",
+    "id": "n1957"
+  },
+  {
+    "content": "나는 프로그램적 점검과 LLM 점검을 분리해 정책을 정해야 한다고 제안했다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "점검 체계 분리",
+    "id": "n1958"
+  },
+  {
+    "content": "나는 사용자 합의에 따라 LLM 점검을 핵심으로 두고 최근 3~5턴 중심으로 가기로 정리했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "합의 사항",
+    "id": "n1959"
+  },
+  {
+    "content": "나는 메타에이전트 결과를 사용자에게 표시하고 사용자가 교정 주체가 되는 모델을 수용했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "교정 루프 설계",
+    "id": "n1960"
+  },
+  {
+    "content": "나는 출력 채널로 stdout을 선택해 사용자와 AI가 모두 보게 하는 안을 확정했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "출력 정책",
+    "id": "n1961"
+  },
+  {
+    "content": "나는 전환 설계에서 `--prompt-mode` 추가와 SessionStart 훅 폐기를 포함한 변경안을 확정했다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "구현 설계 확정",
+    "id": "n1962"
+  },
+  {
+    "content": "나는 위반이 없으면 출력하지 않는 저노이즈 정책을 채택했다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "피드백 UX",
+    "id": "n1963"
+  },
+  {
+    "content": "나는 구현 전 탐색에서 `.claude/settings.json`이 없어 훅 등록 자체가 누락됐을 가능성을 발견했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "구성 누락 발견",
+    "id": "n1964"
+  },
+  {
+    "content": "나는 사용자 요청에 따라 계획 작성 없이 즉시 구현을 진행했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "작업 방식",
+    "id": "n1965"
+  },
+  {
+    "content": "나는 `check.py`에 `--prompt-mode`를 추가하는 구현을 수행했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "코드 변경",
+    "id": "n1966"
+  },
+  {
+    "content": "나는 UserPromptSubmit용 훅 스크립트와 `.claude/settings.json` 등록을 새로 만들었다고 보고했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "훅 등록 구현",
+    "id": "n1967"
+  },
+  {
+    "content": "나는 기존 `meta-agent-start.sh`를 폐기했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "기존 구조 제거",
+    "id": "n1968"
+  },
+  {
+    "content": "나는 AGENTS.md와 operations.md를 새 운영 구조에 맞게 업데이트했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "문서 정합성",
+    "id": "n1969"
+  },
+  {
+    "content": "나는 prompt-mode 검증에서 위반 4건을 탐지했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "동작 검증",
+    "id": "n1970"
+  },
+  {
+    "content": "나는 탐지 결과 중 purpose_not_explored와 retrospective_timing_missed는 타당하다고 평가했다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "검증 해석",
+    "id": "n1971"
+  },
+  {
+    "content": "나는 오픈클로 재시작 시 설치 이전에 목적 맥락을 먼저 질문해 Why 중심 흐름으로 전환했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "원칙 재적용",
+    "id": "n1972"
+  },
+  {
+    "content": "나는 사용자의 내일 역할이 비숙련자 설치 지원임을 파악하고 연습 목표를 설치 체득과 막힘 포인트 사전 파악으로 정리했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "지원 세션 준비",
+    "id": "n1973"
+  },
+  {
+    "content": "나는 비숙련자 안내 가능성을 고려해 원라인 설치 스크립트를 우선 실행 경로로 제시했다.",
+    "type": "intention",
+    "session": "2026-03-01-세션38",
+    "context_hint": "교육 관점 선택",
+    "id": "n1974"
+  },
+  {
+    "content": "나는 설치 명령의 각 플래그와 파이프 의미를 분해해 사용자가 설명 가능한 수준으로 전달했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "교육용 설명",
+    "id": "n1975"
+  },
+  {
+    "content": "나는 해당 스크립트의 목적을 비숙련자 환경에서 다단계 설치 과정을 자동화해 실패 지점을 줄이는 것이라고 설명했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "설치 목적 설명",
+    "id": "n1976"
+  },
+  {
+    "content": "나는 설치 경로는 무관하고 설정은 `~/.openclaw/`에 저장된다고 안내했다.",
+    "type": "fact",
+    "session": "2026-03-01-세션38",
+    "context_hint": "설치 경로 안내",
+    "id": "n1977"
+  },
+  {
+    "content": "작업 시작 절차에서 git 최신 싱크와 기억 갭 자동 생성을 맨앞에 두는 수정 요청을 받았다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "세션 절차 개편",
+    "id": "n1978"
+  },
+  {
+    "content": "시작 절차를 스크립트로 실행 가능하게 만들기로 판단했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션40",
+    "context_hint": "자동화 설계",
+    "id": "n1979"
+  },
+  {
+    "content": "핵심 로직을 git pull rebase, 미처리 세션 탐지, 노드 추출·네트워크 갱신의 3단계로 정의했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "start-session 설계",
+    "id": "n1980"
+  },
+  {
+    "content": "scripts/start-session.py를 새로 만들었다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "스크립트 추가",
+    "id": "n1981"
+  },
+  {
+    "content": "start-session.py에 uncommitted 변경 시 stash/pop 자동 처리를 넣었다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "git 동기화 안정성",
+    "id": "n1982"
+  },
+  {
+    "content": "raw 세션 파일명과 nodes.json 세션 목록 비교로 미처리 세션을 탐지하도록 구현했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "기억 갭 탐지",
+    "id": "n1983"
+  },
+  {
+    "content": "--check-only와 --skip-sync 옵션을 추가해 운영 유연성을 높였다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "운영 옵션",
+    "id": "n1984"
+  },
+  {
+    "content": "미처리 세션 3건을 정확히 탐지했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "검증 결과",
+    "id": "n1985"
+  },
+  {
+    "content": "AGENTS.md 시작 절차 1번에 start-session.py 실행을 추가했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "문서 반영",
+    "id": "n1986"
+  },
+  {
+    "content": "operations.md는 AGENTS.md 절차를 참조하는 구조라 별도 절차 수정이 불필요하다고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "문서 정합성",
+    "id": "n1987"
+  },
+  {
+    "content": "raw 파일 파싱 실패 원인을 export_raw 경량 포맷과 기존 추출 함수의 스키마 불일치로 파악했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "버그 원인 분석",
+    "id": "n1988"
+  },
+  {
+    "content": "raw 포맷 전용 extract_conversation_from_raw 함수를 추가했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "파서 보완",
+    "id": "n1989"
+  },
+  {
+    "content": "main 흐름에서 기존 extract_conversation 대신 raw 전용 추출 함수를 쓰도록 수정했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "호출 경로 수정",
+    "id": "n1990"
+  },
+  {
+    "content": "노드 추출은 성공했지만 시스템 python에 numpy가 없어 venv 사용 필요성을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "실행 환경 이슈",
+    "id": "n1991"
+  },
+  {
+    "content": "이미 추가된 노드를 유지하고 임베딩과 네트워크 갱신만 이어서 마무리했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "복구 실행",
+    "id": "n1992"
+  },
+  {
+    "content": "미처리 세션 3건 처리로 132개 노드를 추가했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "기억 업데이트 결과",
+    "id": "n1993"
+  },
+  {
+    "content": "최종 네트워크 상태가 1978개 노드와 17225개 엣지로 갱신되었다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "기억 네트워크 상태",
+    "id": "n1994"
+  },
+  {
+    "content": "shebang 변경안이 부적절하다고 판단하고 AGENTS.md에 venv 실행 경로를 명시하는 방식으로 정정했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "실행 경로 결정",
+    "id": "n1995"
+  },
+  {
+    "content": "문라이트 대학 이벤트의 핵심 목표를 가입 이후 구독 전환으로 재확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "문라이트 목표 정렬",
+    "id": "n1996"
+  },
+  {
+    "content": "운세형 콘텐츠가 공유 욕구를 만들 수 있는 포맷이라고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션40",
+    "context_hint": "바이럴 전략 판단",
+    "id": "n1997"
+  },
+  {
+    "content": "범용 운세보다 학업 맥락 운세(B방향)가 브랜드 정합성에 더 맞는다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션40",
+    "context_hint": "콘텐츠 방향 결정",
+    "id": "n1998"
+  },
+  {
+    "content": "응원 챌린지와 운세 흐름이 분리되면 효과가 분산된다고 경고했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션40",
+    "context_hint": "퍼널 통합 판단",
+    "id": "n1999"
+  },
+  {
+    "content": "D-10 일정 제약 때문에 MVP 범위를 최소화해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션40",
+    "context_hint": "일정 기반 우선순위",
+    "id": "n2000"
+  },
+  {
+    "content": "기존 구조를 부탁 기반 응원에서 활동 기반 응원으로 전환하는 것이 0응원 문제 해법이라고 해석했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션40",
+    "context_hint": "구조 전환 인사이트",
+    "id": "n2001"
+  },
+  {
+    "content": "응원 카운트를 활동 보상과 공유 유입의 이중 소스로 설계했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "카운트 정책",
+    "id": "n2002"
+  },
+  {
+    "content": "공유 링크를 ref 파라미터 기반으로 설계했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "리퍼럴 설계",
+    "id": "n2003"
+  },
+  {
+    "content": "유입 카운트는 링크 클릭이 아니라 가입/로그인 완료 시점에 반영하는 조건을 채택했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "카운트 트리거",
+    "id": "n2004"
+  },
+  {
+    "content": "유입자도 대학 계정일 때만 유효 카운트로 인정하는 규칙을 확정했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "대상 제한",
+    "id": "n2005"
+  },
+  {
+    "content": "운세는 학업 성향과 오늘의 운세를 합친 형태로 가기로 확정했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "MVP 콘텐츠",
+    "id": "n2006"
+  },
+  {
+    "content": "MBTI를 필수 입력으로 넣어 공유 대화 유발력을 높이기로 판단했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션40",
+    "context_hint": "입력 UX 전략",
+    "id": "n2007"
+  },
+  {
+    "content": "전공·학년은 우선 옵션 입력으로 두는 방향을 수용했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "입력 범위",
+    "id": "n2008"
+  },
+  {
+    "content": "하루 1회 참여 제한을 핵심 규칙으로 확정했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "참여 정책",
+    "id": "n2009"
+  },
+  {
+    "content": "카톡·인스타 공유를 위해 동적 OG 이미지 카드가 필요하다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "공유 포맷",
+    "id": "n2010"
+  },
+  {
+    "content": "문라이트 구현 전달용 기획서를 projects/moonlight/fortune-feature-spec.md로 작성했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "기획 산출물",
+    "id": "n2011"
+  },
+  {
+    "content": "기획서에 새학기 분위기(벚꽃·봄 톤, 수강신청/OT 맥락)를 반영했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "시즌 톤 반영",
+    "id": "n2012"
+  },
+  {
+    "content": "projects.md에 학업 운세 업무와 기획서 링크를 등록했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "업무 트래킹",
+    "id": "n2013"
+  },
+  {
+    "content": "문라이트 실제 로컬 경로를 모르던 상태에서 사용자 확인 후 /Users/jaeyoungkang/corca/moonlight/로 기록했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "프로젝트 경로 기억",
+    "id": "n2014"
+  },
+  {
+    "content": "구현 계획 검토에서 fortune_ref 소실이 바이럴 루프를 끊는 핵심 리스크라고 지적했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "리스크 리뷰",
+    "id": "n2015"
+  },
+  {
+    "content": "가입 리다이렉트 이후를 대비해 localStorage로 fortune_ref를 보존·소모하는 보완안을 제시했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션40",
+    "context_hint": "리퍼럴 안정화",
+    "id": "n2016"
+  },
+  {
+    "content": "미가입 유입자에게 공유자 카드 선노출 후 나도 해보기 유도 흐름을 추가 고려점으로 제시했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션40",
+    "context_hint": "랜딩 UX 제안",
+    "id": "n2017"
+  },
+  {
+    "content": "결과 이미지 아이디어로 MBTI 4기질 패턴 기반 카드 체계를 제안했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "비주얼 시스템",
+    "id": "n2018"
+  },
+  {
+    "content": "행운의 색은 대학생 행동 유발력이 약하다고 평가했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션40",
+    "context_hint": "콘텐츠 효과 판단",
+    "id": "n2019"
+  },
+  {
+    "content": "행운 요소 대안으로 장소·피해야 할 것·간식·시간대를 제안했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "콘텐츠 확장안",
+    "id": "n2020"
+  },
+  {
+    "content": "사용자 결정에 따라 4가지 요소를 모두 생성하고 결과에는 2개만 노출하는 방향으로 정리해야 하는 상태가 되었다.",
+    "type": "fact",
+    "session": "2026-03-03-세션40",
+    "context_hint": "최신 요구 반영",
+    "id": "n2021"
   }
 ]
