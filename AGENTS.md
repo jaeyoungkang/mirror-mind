@@ -36,12 +36,13 @@
 ## 세션 절차
 
 ### 시작 (트리거: **작업 시작**)
-1. `mirror-mind-principle.md` 읽고 원칙 적용
-2. `agentic-engineering-principles.md` 읽고 설계·개발 원칙 파악
-3. `operations.md` 읽고 운영 방식 파악
-4. `tasks/projects.md` 읽고 현재 상태 파악
-5. 기억 활성화: `.venv/bin/python3 scripts/activate.py --query "현재 주제"`
-6. 현재 상태 요약 + 다음 작업 제안
+1. 세션 준비: `.venv/bin/python3 scripts/start-session.py` (git 싱크 + 기억 갭 자동 생성)
+2. `mirror-mind-principle.md` 읽고 원칙 적용
+3. `agentic-engineering-principles.md` 읽고 설계·개발 원칙 파악
+4. `operations.md` 읽고 운영 방식 파악
+5. `tasks/projects.md` 읽고 현재 상태 파악
+6. 기억 활성화: `.venv/bin/python3 scripts/activate.py --query "현재 주제"`
+7. 현재 상태 요약 + 다음 작업 제안
 
 > **hooks 자동화 (별도):**
 > - 기억 활성화 — `UserPromptSubmit` 훅이 매 프롬프트마다 `activate.py` 자동 실행

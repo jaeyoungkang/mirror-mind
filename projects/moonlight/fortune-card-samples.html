@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학업 운세 카드 샘플</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #1a1a2e;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .card-label {
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .card {
+    width: 360px;
+    height: 580px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── NT: 분석가 ── */
+  .card--nt {
+    background: linear-gradient(135deg, #1a1a3e 0%, #2d1b69 50%, #1a1a3e 100%);
+  }
+  .card--nt .card__pattern {
+    background-image:
+      linear-gradient(rgba(100, 100, 255, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(100, 100, 255, 0.08) 1px, transparent 1px),
+      radial-gradient(circle at 20% 30%, rgba(130, 100, 255, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(80, 120, 255, 0.1) 0%, transparent 40%);
+    background-size: 24px 24px, 24px 24px, 100% 100%, 100% 100%;
+  }
+  .card--nt .card__accent { background: linear-gradient(90deg, #7c5cfc, #5b8cff); }
+
+  /* ── NF: 외교관 ── */
+  .card--nf {
+    background: linear-gradient(135deg, #2d1b3e 0%, #4a2060 50%, #2d1b3e 100%);
+  }
+  .card--nf .card__pattern {
+    background-image:
+      radial-gradient(ellipse at 30% 20%, rgba(255, 150, 200, 0.15) 0%, transparent 60%),
+      radial-gradient(ellipse at 70% 80%, rgba(200, 150, 255, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, rgba(255, 180, 200, 0.08) 0%, transparent 70%);
+  }
+  .card--nf .card__accent { background: linear-gradient(90deg, #e07cbb, #c77dff); }
+
+  /* ── SJ: 관리자 ── */
+  .card--sj {
+    background: linear-gradient(135deg, #1a2e2a 0%, #1b4a40 50%, #1a2e2a 100%);
+  }
+  .card--sj .card__pattern {
+    background-image:
+      radial-gradient(circle, rgba(100, 220, 180, 0.06) 1px, transparent 1px),
+      radial-gradient(circle at 80% 20%, rgba(100, 200, 160, 0.1) 0%, transparent 40%);
+    background-size: 16px 16px, 100% 100%;
+  }
+  .card--sj .card__accent { background: linear-gradient(90deg, #4ecdc4, #44bd9e); }
+
+  /* ── SP: 탐험가 ── */
+  .card--sp {
+    background: linear-gradient(135deg, #2e1a0a 0%, #4a2a10 50%, #2e1a0a 100%);
+  }
+  .card--sp .card__pattern {
+    background-image:
+      radial-gradient(ellipse at 25% 25%, rgba(255, 180, 50, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse at 75% 60%, rgba(255, 120, 50, 0.1) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 90%, rgba(255, 200, 80, 0.08) 0%, transparent 40%);
+  }
+  .card--sp .card__accent { background: linear-gradient(90deg, #ff9a3c, #ff6b35); }
+
+  /* ── 공통 구조 ── */
+  .card__pattern {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .card__content {
+    position: relative;
+    z-index: 1;
+    padding: 24px 28px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+  }
+
+  .card__mbti {
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 16px;
+    letter-spacing: 4px;
+  }
+
+  .card__type {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 8px;
+    opacity: 0.85;
+    line-height: 1.5;
+  }
+
+  .card__accent {
+    height: 2px;
+    border-radius: 1px;
+    margin: 20px 0;
+    opacity: 0.6;
+  }
+
+  .card__fortune {
+    font-size: 14px;
+    line-height: 1.7;
+    opacity: 0.9;
+    flex: 1;
+  }
+
+  .card__lucky {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .card__lucky-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    background: rgba(255,255,255,0.07);
+    border-radius: 16px;
+    padding: 16px 10px;
+  }
+  .card__lucky-emoji {
+    font-size: 32px;
+  }
+  .card__lucky-label {
+    font-size: 10px;
+    opacity: 0.45;
+    letter-spacing: 0.5px;
+  }
+  .card__lucky-value {
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.95;
+  }
+
+  .card__footer {
+    position: relative;
+    z-index: 1;
+    padding: 20px 28px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .card__school {
+    font-size: 13px;
+    opacity: 0.5;
+  }
+  .card__brand {
+    font-size: 13px;
+    opacity: 0.45;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .card__brand-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.6;
+  }
+
+  /* ── 벚꽃 장식 ── */
+  .petal {
+    position: absolute;
+    font-size: 16px;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .card__reason {
+    font-size: 12px;
+    opacity: 0.5;
+    margin-top: 8px;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<!-- NT 분석가: INTJ -->
+<div class="card-wrapper">
+  <div class="card-label">NT 분석가 — INTJ</div>
+  <div class="card card--nt">
+    <div class="card__pattern"></div>
+    <span class="petal" style="top:12%;left:85%;font-size:20px;opacity:0.1">🌸</span>
+    <span class="petal" style="top:55%;left:8%;font-size:14px;opacity:0.12;transform:rotate(45deg)">🌸</span>
+    <div class="card__content">
+      <div class="card__header">🌸 새학기 학업 운세</div>
+      <div class="card__mbti">INTJ</div>
+      <div class="card__type">"계획은 완벽한데<br>실행은 내일부터 하는 타입"</div>
+      <div class="card__accent"></div>
+      <div class="card__fortune">
+        새학기 첫 주, 의외의 과목에서 영감을 받는 날.
+        수강신청 때 고민했던 그 과목이 정답일 수 있다.
+        도서관 자리 싸움은 피하고, 카페에서 집중해보자.
+      </div>
+      <div class="card__reason">"새로운 시작에는 차가운 각성이 필요한 법"</div>
+      <div class="card__lucky">
+        <div class="card__lucky-item">
+          <span class="card__lucky-emoji">📊</span>
+          <span class="card__lucky-label">행운의 과목</span>
+          <span class="card__lucky-value">통계학</span>
+        </div>
+        <div class="card__lucky-item">
+          <span class="card__lucky-emoji">⚠️</span>
+          <span class="card__lucky-label">오늘 피해야 할 것</span>
+          <span class="card__lucky-value">교수님 질문</span>
+        </div>
+      </div>
+    </div>
+    <div class="card__footer">
+      <span class="card__school">서울대 · 2026.03.03</span>
+      <span class="card__brand"><span class="card__brand-dot"></span> 문라이트 — 나도 해보기</span>
+    </div>
+  </div>
+</div>
+
+<!-- NF 외교관: ENFP -->
+<div class="card-wrapper">
+  <div class="card-label">NF 외교관 — ENFP</div>
+  <div class="card card--nf">
+    <div class="card__pattern"></div>
+    <span class="petal" style="top:8%;left:75%;font-size:22px;opacity:0.12">🌸</span>
+    <span class="petal" style="top:45%;left:90%;font-size:12px;opacity:0.15;transform:rotate(-30deg)">🌸</span>
+    <span class="petal" style="top:70%;left:5%;font-size:16px;opacity:0.1;transform:rotate(60deg)">🌸</span>
+    <div class="card__content">
+      <div class="card__header">🌸 새학기 학업 운세</div>
+      <div class="card__mbti">ENFP</div>
+      <div class="card__type">"수강신청 10분 만에 끝내고<br>시간표 3번 바꾸는 타입"</div>
+      <div class="card__accent"></div>
+      <div class="card__fortune">
+        OT에서 만난 사람이 이번 학기 최고의 팀원이 된다.
+        새 과목 실러버스를 읽다가 예상 못한 흥미를 발견할 수 있는 날.
+        첫 수업에 앞자리 앉아보자.
+      </div>
+      <div class="card__reason">"설레는 마음이 가장 좋은 필기 도구"</div>
+      <div class="card__lucky">
+        <div class="card__lucky-item">
+          <span class="card__lucky-emoji">🏫</span>
+          <span class="card__lucky-label">행운의 장소</span>
+          <span class="card__lucky-value">정문 카페</span>
+        </div>
+        <div class="card__lucky-item">
+          <span class="card__lucky-emoji">🍙</span>
+          <span class="card__lucky-label">행운의 간식</span>
+          <span class="card__lucky-value">삼각김밥</span>
+        </div>
+      </div>
+    </div>
+    <div class="card__footer">
+      <span class="card__school">연세대 · 2026.03.03</span>
+      <span class="card__brand"><span class="card__brand-dot"></span> 문라이트 — 나도 해보기</span>
+    </div>
+  </div>
+</div>
+
+<!-- SJ 관리자: ISTJ -->
+<div class="card-wrapper">
+  <div class="card-label">SJ 관리자 — ISTJ</div>
+  <div class="card card--sj">
+    <div class="card__pattern"></div>
+    <span class="petal" style="top:15%;left:10%;font-size:18px;opacity:0.1;transform:rotate(20deg)">🌸</span>
+    <span class="petal" style="top:80%;left:88%;font-size:14px;opacity:0.12">🌸</span>
+    <div class="card__content">
+      <div class="card__header">🌸 새학기 학업 운세</div>
+      <div class="card__mbti">ISTJ</div>
+      <div class="card__type">"첫 주에 학기 전체 계획표를<br>이미 완성해놓는 타입"</div>
+      <div class="card__accent"></div>
+      <div class="card__fortune">
+        새학기 루틴을 잡기 좋은 날.
+        도서관 좌석 예약, 시간표 정리, 필기 앱 세팅까지
+        오늘 끝내면 이번 학기 절반은 성공이다.
+      </div>
+      <div class="card__reason">"준비된 사람에게 학점은 따라온다"</div>
+      <div class="card__lucky">
+        <div class="card__lucky-item">
+          <span class="card__lucky-emoji">☕</span>
+          <span class="card__lucky-label">행운의 아이템</span>
+          <span class="card__lucky-value">텀블러</span>
+        </div>
+        <div class="card__lucky-item">
+          <span class="card__lucky-emoji">🕐</span>
+          <span class="card__lucky-label">행운의 시간대</span>
+          <span class="card__lucky-value">오전 9시</span>
+        </div>
+      </div>
+    </div>
+    <div class="card__footer">
+      <span class="card__school">KAIST · 2026.03.03</span>
+      <span class="card__brand"><span class="card__brand-dot"></span> 문라이트 — 나도 해보기</span>
+    </div>
+  </div>
+</div>
+
+<!-- SP 탐험가: ESTP -->
+<div class="card-wrapper">
+  <div class="card-label">SP 탐험가 — ESTP</div>
+  <div class="card card--sp">
+    <div class="card__pattern"></div>
+    <span class="petal" style="top:10%;left:80%;font-size:20px;opacity:0.1;transform:rotate(-15deg)">🌸</span>
+    <span class="petal" style="top:60%;left:12%;font-size:14px;opacity:0.12;transform:rotate(40deg)">🌸</span>
+    <div class="card__content">
+      <div class="card__header">🌸 새학기 학업 운세</div>
+      <div class="card__mbti">ESTP</div>
+      <div class="card__type">"시험 전날 벼락치기로<br>A+ 받아본 적 있는 타입"</div>
+      <div class="card__accent"></div>
+      <div class="card__fortune">
+        새 학기, 새 사람들 사이에서 에너지가 폭발하는 날.
+        동아리 부스 구경하다 인생 선배를 만날 수 있다.
+        오늘은 계획보다 직감을 믿어보자.
+      </div>
+      <div class="card__reason">"모험이 최고의 공부법인 날도 있다"</div>
+      <div class="card__lucky">
+        <div class="card__lucky-item">
+          <span class="card__lucky-emoji">⚠️</span>
+          <span class="card__lucky-label">오늘 피해야 할 것</span>
+          <span class="card__lucky-value">조별과제 톡방</span>
+        </div>
+        <div class="card__lucky-item">
+          <span class="card__lucky-emoji">🏫</span>
+          <span class="card__lucky-label">행운의 장소</span>
+          <span class="card__lucky-value">학생회관 옥상</span>
+        </div>
+      </div>
+    </div>
+    <div class="card__footer">
+      <span class="card__school">고려대 · 2026.03.03</span>
+      <span class="card__brand"><span class="card__brand-dot"></span> 문라이트 — 나도 해보기</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

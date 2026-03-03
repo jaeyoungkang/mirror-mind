@@ -82,6 +82,7 @@
 - 규모 대응: 노드 2배 시점마다 gate 검증 (1-hop ≤5%, avg_path ≥3.0, giant ≥70%)
 
 ### 스크립트
+- `scripts/start-session.py` — 세션 시작 준비 (git 싱크 + 기억 갭 탐지·생성)
 - `scripts/activate.py` — spreading activation 기반 기억 활성화
 - `scripts/inject_hub.py` — 정체성 허브 노드 주입 (멱등, dry-run 지원)
 - `scripts/extract_text.py` — raw JSONL → 텍스트 추출
