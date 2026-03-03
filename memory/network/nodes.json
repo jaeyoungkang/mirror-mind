@@ -14152,5 +14152,320 @@
     "session": "2026-03-03-세션40",
     "context_hint": "최신 요구 반영",
     "id": "n2021"
+  },
+  {
+    "content": "세션 41 시작 시 Light House의 균일 인터페이스 재설계와 후속 개선이 완료된 상태라고 파악했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "프로젝트 현황",
+    "id": "n2022"
+  },
+  {
+    "content": "세션 41 시작 시 Light House의 재방문 흐름 케이스 4,5에 구조적 구멍이 남아 있다고 파악했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "시연 개선",
+    "id": "n2023"
+  },
+  {
+    "content": "세션 41 시작 시 Moonlight의 학업 운세 1차 구현과 배포, 카드 비주얼이 완료됐다고 요약했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "프로젝트 현황",
+    "id": "n2024"
+  },
+  {
+    "content": "Moonlight의 남은 항목으로 fortune_ref localStorage 보존과 응원 챌린지 연결 강화를 인지했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "잔여 과제",
+    "id": "n2025"
+  },
+  {
+    "content": "작업 폴더의 커밋 히스토리를 읽어 학업 운세 안정화 진행사항을 파악했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "히스토리 분석",
+    "id": "n2026"
+  },
+  {
+    "content": "최신 커밋 3e19c0d7이 ESLint 자동 수정이라는 사실을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "커밋 검토",
+    "id": "n2027"
+  },
+  {
+    "content": "커밋 a0aa6ffd에서 unused export sendCheerToProfile 제거가 이뤄졌음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "정리 작업",
+    "id": "n2028"
+  },
+  {
+    "content": "커밋 e8c05c77에서 referral_cheers 테이블 제거 후 GAS 스프레드시트로 일원화됐음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "응원 시스템",
+    "id": "n2029"
+  },
+  {
+    "content": "커밋 e8c05c77에서 로그인 유저 이메일 기반 레퍼럴 응원 전송으로 바뀌었음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "응원 로직",
+    "id": "n2030"
+  },
+  {
+    "content": "커밋 e8c05c77에서 ensureProfile이 조회 후 미존재 시 자동 생성하도록 개선됐음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "프로파일 생성",
+    "id": "n2031"
+  },
+  {
+    "content": "커밋 e8c05c77에서 액티비티 생성 시 moonlight@corca.ai가 보상 응원을 주도록 변경됐음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "보상 플로우",
+    "id": "n2032"
+  },
+  {
+    "content": "커밋 e8c05c77에서 대학 페이지 로그인 후 리다이렉트 유지가 반영됐음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "인증 UX",
+    "id": "n2033"
+  },
+  {
+    "content": "커밋 8759b20c에서 PostgreSQL DATE와 JS Date 간 UTC 밀림 이슈를 수정했음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "타임존 이슈",
+    "id": "n2034"
+  },
+  {
+    "content": "커밋 8759b20c에서 OG Satori 호환을 위해 display flex를 명시했음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "OG 렌더링",
+    "id": "n2035"
+  },
+  {
+    "content": "커밋 8759b20c에서 카드 타이틀을 문라이트의 새학기 프로파일링으로 통일했음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "카피 정합성",
+    "id": "n2036"
+  },
+  {
+    "content": "커밋 1a713188이 캠퍼스 활동 운세 카드 전체 구현 기반 커밋임을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "기반 구현",
+    "id": "n2037"
+  },
+  {
+    "content": "작업 트리가 clean 상태라는 점을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "작업 상태",
+    "id": "n2038"
+  },
+  {
+    "content": "사용자 확인으로 fortune_ref localStorage 보존과 응원 챌린지 연결 강화가 해결된 항목임을 확정했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "요구사항 정리",
+    "id": "n2039"
+  },
+  {
+    "content": "서비스 용어를 운세 대신 프로파일로 쓰고 있다는 변경을 반영했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "용어 정책",
+    "id": "n2040"
+  },
+  {
+    "content": "프로파일 카드 추출 시 프로파일 미존재면 자동 생성되도록 구현됐고 해당 테스트가 남아 있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "미완료 검증",
+    "id": "n2041"
+  },
+  {
+    "content": "로컬 환경 테스트 전 디비 설정 변경을 고려해 마이그레이션 체인을 점검했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "사전 점검",
+    "id": "n2042"
+  },
+  {
+    "content": "20260303_120000, 130000, 140000 마이그레이션의 실행 순서 자체는 문제없다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션41",
+    "context_hint": "마이그레이션 판단",
+    "id": "n2043"
+  },
+  {
+    "content": "schema.sql의 campus_activity_results에 mbti, major, grade가 남아 있어 input JSONB 이관과 불일치 가능성을 발견했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "스키마 검증",
+    "id": "n2044"
+  },
+  {
+    "content": "구 컬럼 제거 가능성 판단을 위해 코드 참조 여부를 추가 확인하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션41",
+    "context_hint": "의존성 확인",
+    "id": "n2045"
+  },
+  {
+    "content": "router.ts에서 INSERT와 SELECT 모두 mbti, major, grade를 직접 사용 중임을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "코드 의존성",
+    "id": "n2046"
+  },
+  {
+    "content": "types.ts에도 mbti, major, grade 필드가 정의돼 있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "타입 의존성",
+    "id": "n2047"
+  },
+  {
+    "content": "현재 구조가 input JSONB와 구 컬럼 병행 사용 구조라고 결론냈다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "데이터 모델",
+    "id": "n2048"
+  },
+  {
+    "content": "현 시점에서는 mbti, major, grade 구 컬럼을 DROP하면 안 된다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션41",
+    "context_hint": "스키마 보존 판단",
+    "id": "n2049"
+  },
+  {
+    "content": "마이그레이션 체인 이상 없음으로 결론내고 로컬 테스트 진행 가능하다고 안내했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "점검 결과",
+    "id": "n2050"
+  },
+  {
+    "content": "같은 날 생성→리네임→DROP으로 이어진 3개 마이그레이션을 하나로 합치는 것이 더 낫다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션41",
+    "context_hint": "단순화 판단",
+    "id": "n2051"
+  },
+  {
+    "content": "마이그레이션 통합 전 프로덕션 적용 여부를 먼저 확인해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션41",
+    "context_hint": "배포 안전성",
+    "id": "n2052"
+  },
+  {
+    "content": "migrate up이 적용 이력 추적 없이 전체를 순서 실행하는 멱등성 방식이라는 가이드를 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "마이그레이션 러너",
+    "id": "n2053"
+  },
+  {
+    "content": "미적용이면 최종 상태 단일 마이그레이션으로 정리하고 적용됨이면 기존 테이블 정리까지 포함해야 한다고 기준을 세웠다.",
+    "type": "intention",
+    "session": "2026-03-03-세션41",
+    "context_hint": "분기 전략",
+    "id": "n2054"
+  },
+  {
+    "content": "해당 변경이 아직 프로덕션 미적용이며 별도 브랜치 PR 대기 상태라는 사실을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "배포 상태",
+    "id": "n2055"
+  },
+  {
+    "content": "프로덕션 미적용 조건에서 3개 마이그레이션을 1개로 통합하기로 결정했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션41",
+    "context_hint": "최종 의사결정",
+    "id": "n2056"
+  },
+  {
+    "content": "통합 마이그레이션의 목표 상태를 campus_activity_results(activity_type, input JSONB 포함)와 user_information.mbti 유지로 정의했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "최종 스키마",
+    "id": "n2057"
+  },
+  {
+    "content": "통합 마이그레이션에서 campus_activity_referral_cheers는 제거 상태를 유지하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션41",
+    "context_hint": "GAS 일원화",
+    "id": "n2058"
+  },
+  {
+    "content": "3개 파일을 삭제하고 1개 파일로 합치는 작업을 완료했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "마이그레이션 정리",
+    "id": "n2059"
+  },
+  {
+    "content": "통합 결과가 schema.sql과 정확히 일치한다고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "정합성 확인",
+    "id": "n2060"
+  },
+  {
+    "content": "불필요한 rename/drop 왕복 없이 최종 상태를 바로 생성하는 형태로 정리했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "체인 단순화",
+    "id": "n2061"
+  },
+  {
+    "content": "커밋 f760071e로 변경을 기록했고 pre-commit의 tsc, knip, lint를 통과했음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "검증 및 커밋",
+    "id": "n2062"
+  },
+  {
+    "content": "원격 푸시까지 완료했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "배포 준비",
+    "id": "n2063"
+  },
+  {
+    "content": "세션 종료 시 mirror-mind 세션에서 moonlight 코드 변경·커밋·푸시를 직접 수행한 점을 역할 경계 위반으로 인식했다.",
+    "type": "fact",
+    "session": "2026-03-03-세션41",
+    "context_hint": "메타에이전트 지적",
+    "id": "n2064"
+  },
+  {
+    "content": "SQL 통합이 단순 작업이더라도 구현은 하위 프로젝트 에이전트 몫이라는 원칙을 재확인했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션41",
+    "context_hint": "역할 경계 교훈",
+    "id": "n2065"
+  },
+  {
+    "content": "역할 경계 위반 사항을 세션 기록으로 남기기로 했다.",
+    "type": "intention",
+    "session": "2026-03-03-세션41",
+    "context_hint": "회고 기록",
+    "id": "n2066"
   }
 ]
