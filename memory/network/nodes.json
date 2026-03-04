@@ -15041,5 +15041,285 @@
     "session": "2026-03-04-세션43",
     "context_hint": "다음 세션 개선",
     "id": "n2148"
+  },
+  {
+    "content": "세션 시작 트리거로 작업을 진행했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "세션 운영",
+    "id": "n2149"
+  },
+  {
+    "content": "\"나의 학기 사용설명서\" FAQ 12~15는 이미 반영되어 있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "FAQ 상태 점검",
+    "id": "n2150"
+  },
+  {
+    "content": "FAQ 16번이 누락되어 있다고 판단해 추가했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "FAQ 수정",
+    "id": "n2151"
+  },
+  {
+    "content": "사용자 요청으로 FAQ 16번을 다시 삭제했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "FAQ 롤백",
+    "id": "n2152"
+  },
+  {
+    "content": "실제 구현 기준으로 코드가 정본이라는 판단을 수용했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션44",
+    "context_hint": "소스 오브 트루스",
+    "id": "n2153"
+  },
+  {
+    "content": "\"사용설명서를 하면\" 표현을 \"사용설명서를 만들면\"으로 바뀐 상태를 반영했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "카피 수정",
+    "id": "n2154"
+  },
+  {
+    "content": "13번 답변이 \"5일 연속 참여\"에서 \"5번 참여\"로 바뀐 상태를 반영했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "FAQ 문구 변경",
+    "id": "n2155"
+  },
+  {
+    "content": "14번 답변에 보너스 응원 +5와 공유 표현 구체화가 추가된 상태를 반영했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "FAQ 정책 반영",
+    "id": "n2156"
+  },
+  {
+    "content": "대상 사용자 범위를 학부생 중심에서 학부생·석사·박사 포함으로 확장했다고 파악했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "타깃 확장",
+    "id": "n2157"
+  },
+  {
+    "content": "특정 집단만 언급하지 않도록 메시지 편향을 줄이는 방향을 수용했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션44",
+    "context_hint": "메시지 원칙",
+    "id": "n2158"
+  },
+  {
+    "content": "챕터 카드 열기 전에 사전 인터랙션 단계를 두는 변경을 기억했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "UX 플로우",
+    "id": "n2159"
+  },
+  {
+    "content": "다음 작업 주제가 공유 기능 테스트와 전반적 안정화임을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "작업 목표",
+    "id": "n2160"
+  },
+  {
+    "content": "공유 흐름이 `handleShare()`에서 `fortune_ref={userId}` URL 생성 구조임을 파악했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "공유 URL 구조",
+    "id": "n2161"
+  },
+  {
+    "content": "OG 이미지 렌더러가 `/api/og/campus-activity` 기반 동적 생성임을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "OG 아키텍처",
+    "id": "n2162"
+  },
+  {
+    "content": "공개 카드 조회 API가 인증 없이 열려 있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "API 접근 정책",
+    "id": "n2163"
+  },
+  {
+    "content": "og:image가 실제 head에 주입되는지 검증이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션44",
+    "context_hint": "메타데이터 검증",
+    "id": "n2164"
+  },
+  {
+    "content": "OG 라우트에서 `ref` 파라미터를 받아도 실사용되지 않는 문제를 발견했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "파라미터 미사용",
+    "id": "n2165"
+  },
+  {
+    "content": "공유 유입 레퍼럴 처리 코드 존재 여부를 프론트까지 확인해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션44",
+    "context_hint": "레퍼럴 연동 점검",
+    "id": "n2166"
+  },
+  {
+    "content": "테스트용으로 챕터 언락이 강제로 `true` 처리된 상태를 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "테스트 플래그",
+    "id": "n2167"
+  },
+  {
+    "content": "테스트용으로 하루 1회 제한이 비활성화된 상태를 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "제한 로직 비활성화",
+    "id": "n2168"
+  },
+  {
+    "content": "기존 공유 URL이 userId만 담아 챕터/결과 식별 정보가 없다고 진단했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "식별자 설계 결함",
+    "id": "n2169"
+  },
+  {
+    "content": "`fortune_ref` 수신 시 메타 타이틀이 운세 문구로 고정되는 문제를 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "메타 카피 불일치",
+    "id": "n2170"
+  },
+  {
+    "content": "`fortune_ref` 수신 시 OG 이미지가 manual 카드가 아닌 fortune 기본 이미지로 폴백됨을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "OG 폴백 오류",
+    "id": "n2171"
+  },
+  {
+    "content": "ActivityReferralHandler가 `activityType=\"fortune\"` 하드코딩이라 manual 공유를 fortune으로 처리함을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "레퍼럴 타입 오류",
+    "id": "n2172"
+  },
+  {
+    "content": "manual 공유를 위해 전용 파라미터 체계가 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션44",
+    "context_hint": "URL 스키마 설계",
+    "id": "n2173"
+  },
+  {
+    "content": "사용자가 다양한 채널 공유 시 해당 챕터 카드가 보여야 한다는 요구를 핵심 목표로 확정했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "요구사항 확정",
+    "id": "n2174"
+  },
+  {
+    "content": "수정 범위를 ManualCard 공유 URL 생성과 page 메타데이터 생성 두 지점으로 축소했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션44",
+    "context_hint": "수정 범위 최소화",
+    "id": "n2175"
+  },
+  {
+    "content": "공유 URL에 `activity_type`과 `activity_id`를 추가하는 방향을 채택했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션44",
+    "context_hint": "공유 파라미터 확장",
+    "id": "n2176"
+  },
+  {
+    "content": "`fortune_ref` 분기에서 `activity_type`+`activity_id`가 있으면 챕터별 OG를 생성하도록 수정했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "메타 분기 로직",
+    "id": "n2177"
+  },
+  {
+    "content": "챕터별 OG 이미지 경로를 기존 렌더러(`/api/og/campus-activity?type=manual-chN&id=...`)와 연결했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "기존 인프라 재사용",
+    "id": "n2178"
+  },
+  {
+    "content": "`fortune_ref`만 있는 기존 fortune 공유 동작은 유지했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "하위 호환성",
+    "id": "n2179"
+  },
+  {
+    "content": "로컬에서 생성된 공유 URL이 `fortune_ref + activity_type + activity_id` 형태임을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "URL 검증",
+    "id": "n2180"
+  },
+  {
+    "content": "검증 방법으로 `view-source:` 또는 개발자도구 head 확인을 안내했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "디버깅 절차",
+    "id": "n2181"
+  },
+  {
+    "content": "제공된 HTML 소스에서 `og:title`이 \"나의 학기 사용설명서 — 교수님 궁합\"으로 설정된 것을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "메타 태그 검증",
+    "id": "n2182"
+  },
+  {
+    "content": "제공된 HTML 소스에서 `og:image`가 `manual-ch5`와 해당 `activity_id`를 포함한 URL로 설정된 것을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "OG 이미지 검증",
+    "id": "n2183"
+  },
+  {
+    "content": "제공된 HTML 소스에서 `twitter:image`도 동일한 manual-ch5 OG URL을 사용함을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "SNS 메타 일치성",
+    "id": "n2184"
+  },
+  {
+    "content": "로컬 페이지가 챕터별 공유 메타데이터를 정상 렌더링한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션44",
+    "context_hint": "수정 결과 판단",
+    "id": "n2185"
+  },
+  {
+    "content": "로컬 테스트에서도 OG 이미지 호스트는 프로덕션 도메인으로 노출될 수 있음을 인지했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "환경 차이",
+    "id": "n2186"
+  },
+  {
+    "content": "공유 기능 안정화의 핵심은 결과 식별자 전달과 메타데이터 생성 경로 정합성이라고 정리했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션44",
+    "context_hint": "안정화 기준",
+    "id": "n2187"
+  },
+  {
+    "content": "이 세션에서 공유 카드 미노출 원인을 URL 설계 결함으로 특정하고 해결했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션44",
+    "context_hint": "문제 원인/해결",
+    "id": "n2188"
   }
 ]
