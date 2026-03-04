@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나의 학기 사용설명서 — INTJ 대학원생 샘플</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: linear-gradient(180deg, #0f0b2e 0%, #1a1145 100%);
+    min-height: 100vh;
+    color: #fff;
+  }
+
+  .activity-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+  .page-title {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 4px;
+    background: linear-gradient(135deg, #c084fc, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .page-sub {
+    font-size: 14px;
+    opacity: 0.4;
+    margin-bottom: 40px;
+  }
+  .results-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.35);
+    margin: 0 0 24px;
+  }
+  .cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  /* ── 카드 공통 ── */
+  .card {
+    width: 360px;
+    min-height: 520px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .card__pattern { position: absolute; inset: 0; pointer-events: none; }
+  .card__content {
+    position: relative; z-index: 1;
+    padding: 28px 24px; flex: 1;
+    display: flex; flex-direction: column;
+  }
+  .card__top {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .card__ch-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; opacity: 0.45; }
+  .card__ch-title { font-size: 18px; font-weight: 900; margin-bottom: 16px; line-height: 1.4; }
+  .card__accent { height: 2px; border-radius: 1px; margin-bottom: 20px; opacity: 0.4; }
+  .card__footer {
+    position: relative; z-index: 1;
+    padding: 14px 24px 20px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .card__school { font-size: 12px; opacity: 0.35; }
+  .card__share-btn {
+    font-size: 12px; font-weight: 700;
+    background: linear-gradient(135deg, #ec4899, #8b5cf6);
+    border: none; color: #fff;
+    padding: 8px 20px; border-radius: 20px; cursor: pointer;
+  }
+  .petal { position: absolute; opacity: 0.1; pointer-events: none; z-index: 0; }
+
+  /* ── CH.1 ── */
+  .card--ch1 { background: linear-gradient(150deg, #0f0b2e 0%, #1a1145 50%, #0f0b2e 100%); }
+  .card--ch1 .card__pattern {
+    background-image:
+      radial-gradient(circle at 75% 25%, rgba(139,92,246,0.15) 0%, transparent 50%),
+      radial-gradient(circle at 25% 75%, rgba(192,132,252,0.08) 0%, transparent 50%);
+  }
+  .card--ch1 .card__accent { background: linear-gradient(90deg, #8b5cf6, #c084fc); }
+  .survival-big { text-align: center; margin: 4px 0 16px; }
+  .survival-big__num {
+    font-size: 80px; font-weight: 900; line-height: 1;
+    background: linear-gradient(135deg, #c084fc, #8b5cf6);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .survival-big__pct { font-size: 28px; font-weight: 700; opacity: 0.5; }
+  .survival-gauge {
+    width: 75%; height: 8px;
+    background: rgba(255,255,255,0.08); border-radius: 4px;
+    margin: 10px auto 0; overflow: hidden;
+  }
+  .survival-gauge__fill {
+    height: 100%; border-radius: 4px;
+    background: linear-gradient(90deg, #8b5cf6, #c084fc);
+  }
+  .info-row { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 10px; font-size: 13px; line-height: 1.5; }
+  .info-row__icon { flex-shrink: 0; font-size: 15px; }
+  .info-row__label { font-weight: 700; opacity: 0.5; min-width: 48px; flex-shrink: 0; }
+  .info-row__value { opacity: 0.85; }
+  .card__comment { margin-top: auto; font-size: 12px; opacity: 0.35; font-style: italic; line-height: 1.6; padding-top: 12px; }
+
+  /* ── CH.2 ── */
+  .card--ch2 { background: linear-gradient(150deg, #0b1a2e 0%, #112040 50%, #0b1a2e 100%); }
+  .card--ch2 .card__pattern {
+    background-image:
+      linear-gradient(rgba(96,93,236,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(96,93,236,0.04) 1px, transparent 1px),
+      radial-gradient(circle at 70% 30%, rgba(96,93,236,0.12) 0%, transparent 50%);
+    background-size: 20px 20px, 20px 20px, 100% 100%;
+  }
+  .card--ch2 .card__accent { background: linear-gradient(90deg, #605dec, #818cf8); }
+  .stat-row { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .stat-row__name { font-size: 11px; font-weight: 600; width: 72px; flex-shrink: 0; opacity: 0.6; }
+  .stat-row__bar-bg { flex: 1; height: 10px; background: rgba(255,255,255,0.07); border-radius: 5px; overflow: hidden; }
+  .stat-row__bar-fill { height: 100%; border-radius: 5px; background: linear-gradient(90deg, #605dec, #818cf8); }
+  .stat-row__val { font-size: 14px; font-weight: 900; width: 26px; text-align: right; opacity: 0.85; }
+  .badge-box { text-align: center; margin: 14px 0 8px; }
+  .badge-pill {
+    display: inline-block;
+    background: rgba(96,93,236,0.15); border: 1px solid rgba(96,93,236,0.3);
+    border-radius: 20px; padding: 6px 16px; font-size: 13px; font-weight: 700;
+  }
+  .stat-desc { text-align: center; font-size: 13px; opacity: 0.6; line-height: 1.6; margin-top: 10px; }
+  .hidden-stat { margin-top: auto; font-size: 12px; opacity: 0.3; padding-top: 12px; }
+
+  /* ── CH.3 ── */
+  .card--ch3 { background: linear-gradient(150deg, #1a0b1a 0%, #2d1228 50%, #1a0b1a 100%); }
+  .card--ch3 .card__pattern {
+    background-image:
+      radial-gradient(circle at 30% 30%, rgba(236,72,153,0.1) 0%, transparent 50%),
+      radial-gradient(circle at 70% 70%, rgba(244,114,182,0.07) 0%, transparent 50%);
+  }
+  .card--ch3 .card__accent { background: linear-gradient(90deg, #ec4899, #f472b6); }
+  .forbidden-item {
+    background: rgba(236,72,153,0.07);
+    border-left: 3px solid rgba(236,72,153,0.35);
+    border-radius: 0 12px 12px 0;
+    padding: 12px 14px; margin-bottom: 10px;
+  }
+  .forbidden-item__phrase { font-size: 13px; font-weight: 700; margin-bottom: 4px; line-height: 1.5; }
+  .forbidden-item__phrase::before { content: "❌ "; }
+  .forbidden-item__roast { font-size: 11px; opacity: 0.5; line-height: 1.5; }
+  .instead-box {
+    margin-top: auto;
+    background: rgba(139,92,246,0.08);
+    border-left: 3px solid rgba(139,92,246,0.35);
+    border-radius: 0 12px 12px 0;
+    padding: 12px 14px;
+  }
+  .instead-box__label { font-size: 11px; font-weight: 700; opacity: 0.4; margin-bottom: 4px; }
+  .instead-box__text { font-size: 13px; font-weight: 600; line-height: 1.5; }
+
+  /* ── CH.4 ── */
+  .card--ch4 { background: linear-gradient(150deg, #0b1a18 0%, #112e28 50%, #0b1a18 100%); }
+  .card--ch4 .card__pattern {
+    background-image:
+      radial-gradient(circle at 25% 40%, rgba(52,211,153,0.08) 0%, transparent 50%),
+      radial-gradient(circle at 75% 60%, rgba(45,212,191,0.06) 0%, transparent 50%);
+  }
+  .card--ch4 .card__accent { background: linear-gradient(90deg, #34d399, #2dd4bf); }
+  .episode { display: flex; gap: 14px; margin-bottom: 14px; }
+  .ep-left { display: flex; flex-direction: column; align-items: center; width: 40px; flex-shrink: 0; }
+  .ep-emoji { font-size: 20px; margin-bottom: 2px; }
+  .ep-month { font-size: 10px; font-weight: 700; opacity: 0.45; }
+  .ep-line { width: 2px; flex: 1; background: rgba(52,211,153,0.2); margin-top: 6px; border-radius: 1px; }
+  .ep-right { flex: 1; padding-top: 1px; }
+  .ep-title { font-size: 13px; font-weight: 700; margin-bottom: 3px; }
+  .ep-desc { font-size: 12px; opacity: 0.55; line-height: 1.5; }
+  .ending-box { text-align: center; margin-top: auto; padding-top: 12px; }
+  .ending-box__result { font-size: 14px; font-weight: 800; margin-bottom: 6px; }
+  .ending-box__moral { font-size: 12px; opacity: 0.4; font-style: italic; line-height: 1.5; }
+
+  /* ── CH.5 ── */
+  .card--ch5 { background: linear-gradient(150deg, #1a130b 0%, #2e2010 50%, #1a130b 100%); }
+  .card--ch5 .card__pattern {
+    background-image:
+      radial-gradient(circle at 60% 25%, rgba(251,146,60,0.1) 0%, transparent 50%),
+      radial-gradient(circle at 35% 70%, rgba(245,158,11,0.07) 0%, transparent 50%);
+  }
+  .card--ch5 .card__accent { background: linear-gradient(90deg, #fb923c, #f59e0b); }
+  .prof-box {
+    font-size: 14px; font-weight: 600; line-height: 1.6;
+    background: rgba(251,146,60,0.08); border-radius: 14px;
+    padding: 16px; text-align: center; margin-bottom: 16px;
+  }
+  .compat-area { text-align: center; margin-bottom: 16px; }
+  .compat-stars { font-size: 26px; letter-spacing: 4px; }
+  .compat-label { font-size: 13px; font-weight: 600; opacity: 0.6; margin-top: 4px; }
+  .prof-row { margin-bottom: 12px; font-size: 13px; line-height: 1.6; }
+  .prof-row__label { font-weight: 700; opacity: 0.45; font-size: 11px; margin-bottom: 2px; }
+  .prof-quote {
+    margin-top: auto; text-align: center;
+    font-size: 12px; opacity: 0.4; font-style: italic; line-height: 1.6;
+    padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.06);
+  }
+</style>
+</head>
+<body>
+
+<div class="activity-section">
+  <div class="page-title">나의 학기 사용설명서</div>
+  <div class="page-sub">INTJ · KAIST 전산학 석사 2년차 · 2026.03.04</div>
+
+  <div class="results-label">대학원생 버전 — 인앱 결과 카드</div>
+  <div class="cards-row">
+
+    <!-- CH.1 생존 확률 -->
+    <div class="card card--ch1">
+      <div class="card__pattern"></div>
+      <span class="petal" style="top:8%;left:82%;font-size:20px">🌸</span>
+      <span class="petal" style="top:62%;left:5%;font-size:14px;transform:rotate(40deg)">🌸</span>
+      <div class="card__content">
+        <div class="card__top">
+          <span class="card__ch-label">CH.1</span>
+          <span class="card__ch-label">학기 사용설명서</span>
+        </div>
+        <div class="card__ch-title">이번 학기 생존 확률</div>
+        <div class="card__accent"></div>
+        <div class="survival-big">
+          <span class="survival-big__num">82</span><span class="survival-big__pct">%</span>
+          <div class="survival-gauge">
+            <div class="survival-gauge__fill" style="width:82%"></div>
+          </div>
+        </div>
+        <div style="font-size:14px;font-weight:700;text-align:center;margin-bottom:16px;opacity:0.8;line-height:1.5">완벽한 졸업 계획과<br>그렇지 못한 서버 상태의 콜라보</div>
+        <div style="margin-bottom:auto">
+          <div class="info-row">
+            <span class="info-row__icon">⚡</span>
+            <span class="info-row__label">강점</span>
+            <span class="info-row__value">분 단위까지 쪼개놓은 졸업 논문 로드맵과 미친 효율성</span>
+          </div>
+          <div class="info-row">
+            <span class="info-row__icon">💀</span>
+            <span class="info-row__label">위험</span>
+            <span class="info-row__value">피드백 전에 '논리적 결함' 발견하고 스스로 갈아엎기</span>
+          </div>
+          <div class="info-row">
+            <span class="info-row__icon">🛟</span>
+            <span class="info-row__label">생존팁</span>
+            <span class="info-row__value">코드 디버깅 말고 인간관계 디버깅부터 할 것</span>
+          </div>
+        </div>
+        <div class="card__comment">"카이스트 거위도 너보다는 산책 자주 하겠다. 전산학동에서 나와서 햇볕 좀 봐."</div>
+      </div>
+      <div class="card__footer">
+        <span class="card__school">KAIST · 2026.03.04</span>
+        <button class="card__share-btn">공유하기</button>
+      </div>
+    </div>
+
+    <!-- CH.2 학기 스탯 -->
+    <div class="card card--ch2">
+      <div class="card__pattern"></div>
+      <span class="petal" style="top:10%;left:84%;font-size:18px">🌸</span>
+      <div class="card__content">
+        <div class="card__top">
+          <span class="card__ch-label">CH.2</span>
+          <span class="card__ch-label">학기 사용설명서</span>
+        </div>
+        <div class="card__ch-title">나의 학기 스탯</div>
+        <div class="card__accent"></div>
+        <div style="margin-bottom:8px">
+          <div class="stat-row">
+            <span class="stat-row__name">학점력</span>
+            <div class="stat-row__bar-bg"><div class="stat-row__bar-fill" style="width:89%"></div></div>
+            <span class="stat-row__val">89</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-row__name">인싸력</span>
+            <div class="stat-row__bar-bg"><div class="stat-row__bar-fill" style="width:12%"></div></div>
+            <span class="stat-row__val">12</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-row__name">논문력</span>
+            <div class="stat-row__bar-bg"><div class="stat-row__bar-fill" style="width:94%"></div></div>
+            <span class="stat-row__val">94</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-row__name" style="font-size:10px">데드라인<br>서바이벌</span>
+            <div class="stat-row__bar-bg"><div class="stat-row__bar-fill" style="width:82%"></div></div>
+            <span class="stat-row__val">82</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-row__name">멘탈</span>
+            <div class="stat-row__bar-bg"><div class="stat-row__bar-fill" style="width:31%"></div></div>
+            <span class="stat-row__val">31</span>
+          </div>
+        </div>
+        <div class="badge-box">
+          <span class="badge-pill">🏷️ 졸업이란 신기루를 쫓는 GPU 분쇄기</span>
+        </div>
+        <div class="stat-desc">세상은 0과 1로 명쾌한데,<br>왜 내 디펜스 일정만 Null 값인 걸까?</div>
+        <div class="hidden-stat">🔮 숨겨진 스탯: 교수님 슬랙 알림음 환청 지수 99</div>
+      </div>
+      <div class="card__footer">
+        <span class="card__school">KAIST · 2026.03.04</span>
+        <button class="card__share-btn">공유하기</button>
+      </div>
+    </div>
+
+    <!-- CH.3 새학기 금지어 -->
+    <div class="card card--ch3">
+      <div class="card__pattern"></div>
+      <span class="petal" style="top:6%;left:80%;font-size:20px">🌸</span>
+      <div class="card__content">
+        <div class="card__top">
+          <span class="card__ch-label">CH.3</span>
+          <span class="card__ch-label">학기 사용설명서</span>
+        </div>
+        <div class="card__ch-title">새학기 금지어</div>
+        <div class="card__accent"></div>
+        <div class="forbidden-item">
+          <div class="forbidden-item__phrase">"이번 달 안에 논문 초안 다 쓰고 투고까지 마무리한다"</div>
+          <div class="forbidden-item__roast">1년 전 입학할 때도 그 말 했어. 졸업은 지능 순이 아니라 타협 순이야</div>
+        </div>
+        <div class="forbidden-item">
+          <div class="forbidden-item__phrase">"딱 한 번만 더 리팩토링하고 실험 돌린다"</div>
+          <div class="forbidden-item__roast">알고리즘 최적화 전에 네 수면시간부터 최적화해라. 깃허브 잔디만 무성한 영구 수료생 된다</div>
+        </div>
+        <div class="forbidden-item">
+          <div class="forbidden-item__phrase">"교수님한테 메일 보냈으니 이번 주 안에 피드백 오겠지?"</div>
+          <div class="forbidden-item__roast">교수님 메일함은 블랙홀이야. 네 논문은 사건의 지평선을 넘어섰어</div>
+        </div>
+        <div class="instead-box">
+          <div class="instead-box__label">✅ 대신 이번 학기에 해야 할 말</div>
+          <div class="instead-box__text">"일단 돌아가게만 만들고 깃푸시한 다음, 오늘은 학식 먹고 퇴근한다."</div>
+        </div>
+      </div>
+      <div class="card__footer">
+        <span class="card__school">KAIST · 2026.03.04</span>
+        <button class="card__share-btn">공유하기</button>
+      </div>
+    </div>
+
+    <!-- CH.4 이번 학기 시나리오 -->
+    <div class="card card--ch4">
+      <div class="card__pattern"></div>
+      <span class="petal" style="top:8%;left:78%;font-size:18px">🌸</span>
+      <div class="card__content">
+        <div class="card__top">
+          <span class="card__ch-label">CH.4</span>
+          <span class="card__ch-label">학기 사용설명서</span>
+        </div>
+        <div class="card__ch-title">이번 학기 시나리오</div>
+        <div class="card__accent"></div>
+        <div>
+          <div class="episode">
+            <div class="ep-left">
+              <span class="ep-emoji">📐</span>
+              <span class="ep-month">3월</span>
+              <div class="ep-line"></div>
+            </div>
+            <div class="ep-right">
+              <div class="ep-title">완벽한 아키텍처 설계</div>
+              <div class="ep-desc">노션에 연구 로드맵 완벽 세팅. 이론상 이번 학기 탑티어 학회 억셉은 기정사실</div>
+            </div>
+          </div>
+          <div class="episode">
+            <div class="ep-left">
+              <span class="ep-emoji">💻</span>
+              <span class="ep-month">4월</span>
+              <div class="ep-line"></div>
+            </div>
+            <div class="ep-right">
+              <div class="ep-title">N1 지하의 고독한 디버깅</div>
+              <div class="ep-desc">설계는 완벽했으나 GPU가 내 논리를 거부. 오직 ChatGPT하고만 토론 중</div>
+            </div>
+          </div>
+          <div class="episode">
+            <div class="ep-left">
+              <span class="ep-emoji">☕</span>
+              <span class="ep-month">5월</span>
+              <div class="ep-line"></div>
+            </div>
+            <div class="ep-right">
+              <div class="ep-title">데드라인 72시간 전</div>
+              <div class="ep-desc">학회 마감 앞두고 카페인이 혈액량을 추월. 교수님의 "가능하겠어?"에 포커페이스</div>
+            </div>
+          </div>
+          <div class="episode">
+            <div class="ep-left">
+              <span class="ep-emoji">📊</span>
+              <span class="ep-month">6월</span>
+            </div>
+            <div class="ep-right">
+              <div class="ep-title">졸업 요건 시뮬레이션</div>
+              <div class="ep-desc">논문 실적과 학점을 엑셀로 돌리며 탈출 가능성 계산. 리젝 대비 플랜 B, C까지 완비</div>
+            </div>
+          </div>
+        </div>
+        <div class="ending-box">
+          <div class="ending-box__result">🎬 논문 제출 완료, 생존 확률 98.7% 확보</div>
+          <div class="ending-box__moral">"시스템은 거짓말을 안 한다. 다만 그걸 돌리는 GPU가 내 맘 같지 않을 뿐."</div>
+        </div>
+      </div>
+      <div class="card__footer">
+        <span class="card__school">KAIST · 2026.03.04</span>
+        <button class="card__share-btn">공유하기</button>
+      </div>
+    </div>
+
+    <!-- CH.5 교수님 궁합 -->
+    <div class="card card--ch5">
+      <div class="card__pattern"></div>
+      <span class="petal" style="top:10%;left:83%;font-size:20px">🌸</span>
+      <div class="card__content">
+        <div class="card__top">
+          <span class="card__ch-label">CH.5</span>
+          <span class="card__ch-label">학기 사용설명서</span>
+        </div>
+        <div class="card__ch-title">지도교수님 궁합</div>
+        <div class="card__accent"></div>
+        <div class="prof-box">
+          "새벽 3시에 'Interesting logic'이라며<br>슬랙 던지고 사라지는 아이디어 뱅크형"
+        </div>
+        <div class="compat-area">
+          <div class="compat-stars">★★★★☆</div>
+          <div class="compat-label">서로의 뇌 섹시함에 취해 몸이 망가지는 조합</div>
+        </div>
+        <div class="prof-row">
+          <div class="prof-row__label">😅 위험 포인트</div>
+          <div>교수님의 '간단한 수정'이 전체 아키텍처 재설계로 번질 확률 <b>99.8%</b></div>
+        </div>
+        <div class="prof-row">
+          <div class="prof-row__label">💡 생존 전략</div>
+          <div>슬랙은 예약 답장으로 페이스 조절. 완벽한 로직 설계안을 먼저 들이밀면 일주일의 자유를 얻는다</div>
+        </div>
+        <div class="prof-quote">
+          🎓 교수님 한마디: "말 안 해도 내 의중을 꿰뚫는 건 좋은데, 가끔 나보다 더 교수 같아서 무서워. 박사 갈 거지?"
+        </div>
+      </div>
+      <div class="card__footer">
+        <span class="card__school">KAIST · 2026.03.04</span>
+        <button class="card__share-btn">공유하기</button>
+      </div>
+    </div>
+
+  </div><!-- cards-row -->
+</div><!-- activity-section -->
+
+</body>
+</html>

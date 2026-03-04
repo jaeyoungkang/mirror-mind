@@ -14467,5 +14467,306 @@
     "session": "2026-03-03-세션41",
     "context_hint": "회고 기록",
     "id": "n2066"
+  },
+  {
+    "content": "세션 시작 절차를 진행해 작업 준비를 완료했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "세션 운영",
+    "id": "n2067"
+  },
+  {
+    "content": "기억 활성화를 수행해 현재 작업 맥락을 불러왔다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "기억 시스템",
+    "id": "n2068"
+  },
+  {
+    "content": "Light House는 균일 인터페이스 재설계가 완료되고 시나리오 고도화가 진행 중이라고 파악했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "프로젝트 현황",
+    "id": "n2069"
+  },
+  {
+    "content": "Moonlight는 새학기 프로파일 자동 생성 테스트가 대기 상태라고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "프로젝트 현황",
+    "id": "n2070"
+  },
+  {
+    "content": "Moonlight의 3월 13일 마감 대응이 높은 우선순위라고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "우선순위 결정",
+    "id": "n2071"
+  },
+  {
+    "content": "기억 시스템은 v3 운영은 안정적이지만 아카이브 정책은 미완이라고 파악했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "기억 시스템",
+    "id": "n2072"
+  },
+  {
+    "content": "메타에이전트는 hooks 자동화는 완료됐고 실전 점검 항목 개선은 남았다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "메타에이전트",
+    "id": "n2073"
+  },
+  {
+    "content": "문라이트 콘텐츠의 공유 동기가 약한지 점검하기 위해 현재 기획과 카드 샘플을 확인하려 했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션42",
+    "context_hint": "콘텐츠 진단",
+    "id": "n2074"
+  },
+  {
+    "content": "기존 MBTI+카드+바이럴 루프 구조 자체는 건실하다고 평가했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "콘텐츠 평가",
+    "id": "n2075"
+  },
+  {
+    "content": "현재 type 문구가 바이럴 수준의 찔림을 만들기에는 마일드하다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "카피 품질",
+    "id": "n2076"
+  },
+  {
+    "content": "현재 fortune 문구가 바넘 효과에 치우쳐 재미가 약하다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "카피 품질",
+    "id": "n2077"
+  },
+  {
+    "content": "행운 요소가 반응을 유도하는 장치가 아니라 장식에 머문다고 봤다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "콘텐츠 구조",
+    "id": "n2078"
+  },
+  {
+    "content": "콘텐츠 본질 경쟁 상대를 기존 대중 MBTI 테스트 생태계로 정의했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "시장 관점",
+    "id": "n2079"
+  },
+  {
+    "content": "차별점은 대학+새학기 맥락이므로 이를 더 강하게 살려야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션42",
+    "context_hint": "포지셔닝",
+    "id": "n2080"
+  },
+  {
+    "content": "해결 방향으로 콘텐츠 품질 강화와 포맷 재설계의 두 축을 제시했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "전략 분기",
+    "id": "n2081"
+  },
+  {
+    "content": "사용자가 포맷 재설계를 선택하자 5가지 변주안을 감정 트리거와 함께 설계했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "포맷 기획",
+    "id": "n2082"
+  },
+  {
+    "content": "변주안에서 숫자 비교, 스탯 비교, 서사 공감 같은 공유 유발 메커니즘을 의도적으로 배치했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션42",
+    "context_hint": "바이럴 설계",
+    "id": "n2083"
+  },
+  {
+    "content": "매일 1개씩 언락되는 구조가 리텐션을 자연스럽게 만든다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "리텐션 설계",
+    "id": "n2084"
+  },
+  {
+    "content": "잠긴 카드에 타이틀만 노출해 호기심을 유도하는 UX를 채택했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션42",
+    "context_hint": "잠금 UX",
+    "id": "n2085"
+  },
+  {
+    "content": "상위 브랜딩 후보 3개를 제시해 잠금 구조와 메시지를 함께 검토했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "브랜딩",
+    "id": "n2086"
+  },
+  {
+    "content": "최종 상위 브랜드를 '나의 학기 사용설명서'로 확정했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "브랜딩 결정",
+    "id": "n2087"
+  },
+  {
+    "content": "언락 기준을 전체 공통 날짜가 아닌 개인 시작일 기준 D+0~D+4로 설계했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "언락 규칙",
+    "id": "n2088"
+  },
+  {
+    "content": "이벤트 중간 유입자도 CH.1부터 순차 경험하도록 설계해 5일 리텐션을 보장하려 했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션42",
+    "context_hint": "리텐션 정책",
+    "id": "n2089"
+  },
+  {
+    "content": "응원 카운트는 챕터 참여당 +1, 하루 최대 +1로 정의해 기존 밸런스를 유지했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "보상 설계",
+    "id": "n2090"
+  },
+  {
+    "content": "챕터 순서를 임팩트-비교-유머-서사-보상 곡선으로 배치했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "경험 설계",
+    "id": "n2091"
+  },
+  {
+    "content": "기존 fortune 인프라는 재활용하고 콘텐츠 구조만 챕터 분기로 확장하기로 했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "아키텍처 재사용",
+    "id": "n2092"
+  },
+  {
+    "content": "Gemini 모델 사용 요청에 맞춰 모델 지정을 gemini-3-flash-preview로 정정했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "모델 선택",
+    "id": "n2093"
+  },
+  {
+    "content": "ENFP 샘플을 생성해 학교·전공 디테일과 MBTI 일관성을 중점 평가했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "샘플 검증",
+    "id": "n2094"
+  },
+  {
+    "content": "샘플 문장이 카드 UI에 비해 길고 일부 디스 톤이 과하다는 리스크를 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "품질 리스크",
+    "id": "n2095"
+  },
+  {
+    "content": "학교 특화 강도가 높은 출력은 일반 사용자 범용성 저하 가능성이 있다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "확장성",
+    "id": "n2096"
+  },
+  {
+    "content": "생성 결과를 즉시 검증할 수 있도록 HTML 카드 시각화를 구현했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "프로토타이핑",
+    "id": "n2097"
+  },
+  {
+    "content": "universities 페이지 적용을 위해 moonlight 디자인 시스템과 색상 체계를 먼저 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "디자인 정합",
+    "id": "n2098"
+  },
+  {
+    "content": "인앱 카드에서는 MBTI를 제거하고 공유 카드에서만 MBTI를 노출하기로 결정했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "표현 정책",
+    "id": "n2099"
+  },
+  {
+    "content": "ActivitySection 규격(360x580, rounded-2xl, 반투명 다크 톤)에 맞춰 카드 구조를 재정렬했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "UI 적용",
+    "id": "n2100"
+  },
+  {
+    "content": "학부생과 다른 대학원생 맥락이 필요하다고 보고 대학원 전용 샘플 생성을 진행했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션42",
+    "context_hint": "세그먼트 분리",
+    "id": "n2101"
+  },
+  {
+    "content": "대학원생 콘텐츠를 위해 랩미팅·논문·지도교수·학회 중심 맥락으로 가이드를 전면 보강했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "프롬프트 튜닝",
+    "id": "n2102"
+  },
+  {
+    "content": "학부 ENFP와 대학원 INTJ 샘플 비교에서 톤과 소재 분리가 유효함을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "A/B 비교",
+    "id": "n2103"
+  },
+  {
+    "content": "구현 에이전트 전달용 프롬프트는 실제 코드 구조를 확인한 뒤 작성해야 실효성이 높다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "구현 연계",
+    "id": "n2104"
+  },
+  {
+    "content": "대규모 참여를 고려해 입력 조합 기반 다양성 확보 전략을 프롬프트에 포함했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션42",
+    "context_hint": "스케일 설계",
+    "id": "n2105"
+  },
+  {
+    "content": "하루 1챕터 제한은 리텐션 유지와 응원 밸런스 유지를 동시에 달성하는 핵심 정책이라고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "운영 정책",
+    "id": "n2106"
+  },
+  {
+    "content": "기존 fortune 레지스트리·DB·응원·리퍼럴 인프라를 재사용하는 방향을 핵심 구현 원칙으로 확정했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "구현 원칙",
+    "id": "n2107"
+  },
+  {
+    "content": "학년 분기를 학부 저학년·고학년·석사·박사로 세분화해 출력 다양성의 중심 축으로 설정했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션42",
+    "context_hint": "콘텐츠 다양성",
+    "id": "n2108"
+  },
+  {
+    "content": "세션 종료 요청에 따라 tasks 업데이트와 종료 스크립트 실행 절차를 진행하려 했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션42",
+    "context_hint": "세션 종료",
+    "id": "n2109"
   }
 ]
