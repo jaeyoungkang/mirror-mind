@@ -149,7 +149,12 @@
       - 문서 패널: Overview 클러스터 카드, Search 분석 버튼, Analysis 원문+재분석, Synthesis 참조 색인
       - 파이프라인: pipeline-rules.ts/post-actions.ts 삭제·인라인, Document[] 요약 개선
   - [ ] 관계 형성 고도화 — 상호 맥락 파악, 경험 기반 점진적 설명, 관계 깊이별 행동 변화
-  - [ ] 안정화
+  - [>] 핵심 경험 1차 — 인간-AI 협업 검색 + 논문 검토 관리
+    - 목표: 인간과 AI가 같은 도구로 검색하고, 결과를 관리하며, AI가 요약해서 빠르게 검토
+    - [>] C. UI 2타일 고정 + 스크롤 — 구현 위임 완료, 다듬기 중
+    - [>] B. 검토한 논문 리스트 — 구현 위임 완료, 다듬기 중
+    - [>] A. 논문 개별 요약 + 원문 PDF — 구현 위임 완료, 다듬기 중. 검색 안 되는 이슈 디버깅 필요
+  - [x] 안정화 (기존)
     - [x] 세션 전환 시 연구 문서 패널 리셋 — Zustand store 초기화 누락 (`session-document-binding-prompt.md`)
 
 ## [>] 기억 시스템 — 네트워크 구조로 전환
@@ -203,6 +208,7 @@
     - [x] AGENTS.md — query.py/episodes 참조 제거, activate.py를 primary로
     - [x] close-session.py — episodes/memories → 노드 추출 + 네트워크 갱신으로 전면 교체
   - [x] hooks 자동화 — UserPromptSubmit 훅으로 매 프롬프트 기억 활성화 (`.claude/hooks/memory-activate.sh`)
+  - [x] 중간 정리 트리거 — close-session.py --checkpoint 모드 추가, AGENTS.md/operations.md 반영
   - [ ] 아카이브 정책 — scope lifecycle 운영
 
 ## [>] 메타에이전트 — 원칙 준수 감시

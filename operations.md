@@ -57,6 +57,7 @@
 
 | 트리거 | 절차 |
 |--------|------|
+| **중간 정리** | 체크포인트 파일 작성 → close-session.py --checkpoint (노드 추출 + 오프셋 기록) → 커밋 → /compact → 체크포인트 읽고 이어서 작업 |
 | **주제 전환** / **킵** | 메타에이전트 리포트 확인 → 중간 상태를 `tasks/projects.md`에 기록 → 전환 |
 | **정합성 검증** | 전체 원칙·설계 문서를 읽고 상호 참조·일관성 검증 리포트 |
 | **회고** | 마일스톤 단위 회고, 교훈을 원칙 문서에 반영 |
@@ -86,7 +87,7 @@
 - `scripts/activate.py` — spreading activation 기반 기억 활성화
 - `scripts/inject_hub.py` — 정체성 허브 노드 주입 (멱등, dry-run 지원)
 - `scripts/extract_text.py` — raw JSONL → 텍스트 추출
-- `scripts/close-session.py` — 세션 종료 자동화 (raw 저장 + 노드 추출 + 네트워크 갱신)
+- `scripts/close-session.py` — 세션 종료/체크포인트 자동화 (raw 저장 + 노드 추출 + 네트워크 갱신, `--checkpoint`로 중간 정리)
 
 ### 운영 규칙
 - 세션 시작 시 activate.py로 맥락 활성화, 주제 전환 시 재활성화

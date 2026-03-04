@@ -48,9 +48,16 @@
 > - 기억 활성화 — `UserPromptSubmit` 훅이 매 프롬프트마다 `activate.py` 자동 실행
 > - 메타에이전트 — `UserPromptSubmit` 훅이 매 프롬프트마다 `check.py --prompt-mode` 실행 (최근 3-5턴 LLM 점검, 위반 시만 출력)
 
+### 중간 정리 (트리거: **중간 정리**)
+1. `tasks/checkpoint.md` 작성 — 진행 상태, 핵심 맥락, 다음 할 일
+2. `tasks/projects.md` 업데이트 (필요 시)
+3. `.venv/bin/python3 scripts/close-session.py --checkpoint --commit` (노드 추출 + 네트워크 갱신 + 오프셋 기록)
+4. `/compact` 수행
+5. 컴팩트 후 → `tasks/checkpoint.md` 읽고 맥락 복원 + 이어서 작업
+
 ### 종료 (트리거: **작업 종료**)
 1. 메타에이전트 리포트 확인
-2. `python3 scripts/close-session.py` (raw 저장 + 노드 추출 + 네트워크 갱신)
+2. `.venv/bin/python3 scripts/close-session.py` (raw 저장 + 노드 추출 + 네트워크 갱신, 체크포인트 오프셋 이후만 처리)
 3. 초안 검토·수정
 4. `tasks/projects.md` 업데이트
 5. 커밋
@@ -60,6 +67,7 @@
 | 키워드 | 동작 |
 |--------|------|
 | **작업 시작** | 위 시작 절차 |
+| **중간 정리** | 위 중간 정리 절차 (체크포인트 + 컴팩트 + 이어서 작업) |
 | **작업 종료** | 위 종료 절차 |
 | **주제 전환** / **킵** | 중간 상태 기록 → 전환 |
 | **정합성 검증** | 전체 문서 상호 참조 검증 |

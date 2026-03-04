@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""세션 종료 자동화 (v3 네트워크 기반)
+"""세션 종료/체크포인트 자동화 (v3 네트워크 기반)
 
-AGENTS.md '작업 종료' 트리거 절차를 스크립트로 수행한다.
+AGENTS.md '작업 종료' 및 '중간 정리' 트리거 절차를 스크립트로 수행한다.
 
 사용법:
   python3 scripts/close-session.py                     # 전체 (raw 저장 + 노드 추출 + 네트워크 갱신)
+  python3 scripts/close-session.py --checkpoint         # 중간 정리 (노드 추출 + 오프셋 기록, 세션 계속)
   python3 scripts/close-session.py --raw-only           # raw 저장만
   python3 scripts/close-session.py --no-llm             # codex 없이 raw 저장만
   python3 scripts/close-session.py --name 세션20        # 세션 이름 직접 지정
@@ -13,7 +14,7 @@ AGENTS.md '작업 종료' 트리거 절차를 스크립트로 수행한다.
 
 절차:
   1. 현재 세션 JSONL → tasks/conversations/raw/ 경량 내보내기
-  2. 대화 텍스트 추출
+  2. 대화 텍스트 추출 (체크포인트 오프셋 이후부터)
   3. codex exec로 fact/intention 노드 추출
   4. nodes.json에 추가 + 임베딩 계산 + knn_k12 네트워크 재구축
   5. (--commit) git add + commit
@@ -88,10 +89,17 @@ def determine_session_name() -> str:
     return f"세션{max_num + 1}"
 
 
-def check_already_closed(session_jsonl: Path) -> str | None:
+def get_session_entry(session_jsonl: Path) -> dict | None:
+    """세션 상태 조회. 반환: {name, status, checkpoint_line} 또는 None.
+    하위 호환: 기존 문자열 값은 closed로 간주."""
     uuid = get_session_uuid(session_jsonl)
     mapping = load_session_map()
-    return mapping.get(uuid)
+    entry = mapping.get(uuid)
+    if entry is None:
+        return None
+    if isinstance(entry, str):
+        return {"name": entry, "status": "closed", "checkpoint_line": 0}
+    return entry
 
 
 # ── 경량 내보내기 ──
@@ -172,15 +180,24 @@ def export_raw(session_jsonl: Path, session_name: str) -> tuple[Path, int]:
 
 # ── 대화 추출 ──
 
-def extract_conversation(filepath: Path, max_chars: int = 15000) -> str:
+def extract_conversation(filepath: Path, max_chars: int = 15000,
+                         start_line: int = 0) -> tuple[str, int]:
+    """대화 텍스트 추출. (텍스트, 마지막 처리 라인+1) 반환."""
     lines = []
     total_chars = 0
+    line_index = 0
+    last_line = start_line
 
     with open(filepath, encoding="utf-8") as f:
         for raw_line in f:
+            if line_index < start_line:
+                line_index += 1
+                continue
+
             try:
                 record = json.loads(raw_line)
             except json.JSONDecodeError:
+                line_index += 1
                 continue
 
             msg_type = record.get("type")
@@ -210,10 +227,13 @@ def extract_conversation(filepath: Path, max_chars: int = 15000) -> str:
                     lines.append(block)
                     total_chars += len(block)
 
+            last_line = line_index + 1
+            line_index += 1
+
             if max_chars > 0 and total_chars >= max_chars:
                 break
 
-    return "\n".join(lines)
+    return "\n".join(lines), last_line
 
 
 # ── codex 호출 ──
@@ -409,20 +429,23 @@ def rebuild_network():
 
 # ── git ──
 
-def git_commit(session_name: str):
+def git_commit(session_name: str, is_checkpoint: bool = False):
     today = date.today().isoformat()
     candidates = [
         f"tasks/conversations/raw/{today}-{session_name}.jsonl",
+        "tasks/checkpoint.md",
         "memory/network/nodes.json",
         "memory/network/graph.json",
+        "memory/network/embeddings.json",
     ]
     existing = [f for f in candidates if (PROJECT_ROOT / f).exists()]
     if not existing:
         return
 
     subprocess.run(["git", "add"] + existing, cwd=str(PROJECT_ROOT))
+    action = "중간 정리 체크포인트" if is_checkpoint else "세션 종료"
     msg = (
-        f"docs: {session_name} — 세션 종료 + 네트워크 갱신\n\n"
+        f"docs: {session_name} — {action} + 네트워크 갱신\n\n"
         "Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
     )
     subprocess.run(["git", "commit", "-m", msg], cwd=str(PROJECT_ROOT))
@@ -431,8 +454,9 @@ def git_commit(session_name: str):
 # ── 메인 ──
 
 def main():
-    parser = argparse.ArgumentParser(description="세션 종료 자동화 (v3 네트워크)")
+    parser = argparse.ArgumentParser(description="세션 종료/체크포인트 자동화 (v3 네트워크)")
     parser.add_argument("--name", help="세션 이름 (예: 세션20). 미지정 시 자동 결정")
+    parser.add_argument("--checkpoint", action="store_true", help="중간 정리 (노드 추출 + 오프셋 기록, 세션 계속)")
     parser.add_argument("--raw-only", action="store_true", help="raw 저장만")
     parser.add_argument("--no-llm", action="store_true", help="codex 없이 raw 저장만")
     parser.add_argument("--commit", action="store_true", help="완료 후 자동 커밋")
@@ -459,16 +483,27 @@ def main():
     today = date.today().isoformat()
     print(f"원본: {session_jsonl.name} ({session_jsonl.stat().st_size / 1024:.0f}KB)")
 
-    # 2. 중복 체크
-    already_closed_as = check_already_closed(session_jsonl)
-    if already_closed_as and not args.force:
-        print(f"\n이 세션은 이미 '{already_closed_as}'로 종료 처리됐다.", file=sys.stderr)
-        print(f"재실행하려면 --force를 사용하라.", file=sys.stderr)
-        sys.exit(1)
+    # 2. 상태 체크
+    entry = get_session_entry(session_jsonl)
+    start_line = 0
 
-    if already_closed_as and args.force:
-        session_name = args.name or already_closed_as.split("-")[-1]
-        print(f"[force] 이미 종료된 세션 '{already_closed_as}'을 재실행한다")
+    if entry:
+        status = entry["status"]
+        if status == "closed" and not args.force:
+            print(f"\n이 세션은 이미 '{entry['name']}'으로 종료 처리됐다.", file=sys.stderr)
+            print(f"재실행하려면 --force를 사용하라.", file=sys.stderr)
+            sys.exit(1)
+        elif status == "closed" and args.force:
+            session_name = args.name or entry["name"].split("-")[-1]
+            print(f"[force] 이미 종료된 세션 '{entry['name']}'을 재실행한다")
+        elif status == "checkpoint":
+            start_line = entry.get("checkpoint_line", 0)
+            session_name = args.name or entry["name"].split("-")[-1]
+            cp_count = entry.get("checkpoint_count", 1)
+            mode = "체크포인트" if args.checkpoint else "종료"
+            print(f"[이전 체크포인트 {cp_count}회] 라인 {start_line}부터 {mode} 처리")
+        else:
+            session_name = args.name or determine_session_name()
     else:
         session_name = args.name or determine_session_name()
 
@@ -480,10 +515,6 @@ def main():
         raw_dest, count = export_raw(session_jsonl, session_name)
         size_kb = raw_dest.stat().st_size / 1024
         print(f"[완료] raw 저장 → {raw_dest.relative_to(PROJECT_ROOT)} ({count}건, {size_kb:.0f}KB)")
-
-        mapping = load_session_map()
-        mapping[get_session_uuid(session_jsonl)] = date_session
-        save_session_map(mapping)
     else:
         print(f"[dry-run] raw 저장 → tasks/conversations/raw/{date_session}.jsonl")
 
@@ -492,12 +523,17 @@ def main():
         return
 
     # 4. 대화 추출
-    print("\n대화 추출 중...")
-    conversation = extract_conversation(session_jsonl, max_chars=15000)
+    print(f"\n대화 추출 중... (라인 {start_line}부터)")
+    conversation, last_line = extract_conversation(
+        session_jsonl, max_chars=15000, start_line=start_line
+    )
     if not conversation.strip():
-        print("대화 내용이 비어있다", file=sys.stderr)
+        print("대화 내용이 비어있다 (새로운 대화 없음)", file=sys.stderr)
+        if args.checkpoint:
+            print("체크포인트 이후 새 대화가 없다. 건너뜀.", file=sys.stderr)
+            sys.exit(0)
         sys.exit(1)
-    print(f"  추출: {len(conversation)}자")
+    print(f"  추출: {len(conversation)}자 (라인 {start_line}→{last_line})")
 
     # 5. 노드 추출
     if args.no_llm:
@@ -540,12 +576,39 @@ def main():
     else:
         print("\n노드 없음. 네트워크 갱신 건너뜀.")
 
-    # 7. 알림
-    print("\n[수동] projects.md 업데이트 필요 여부 확인하라")
+    # 7. session_map 업데이트
+    if not args.dry_run:
+        mapping = load_session_map()
+        uuid = get_session_uuid(session_jsonl)
+        if args.checkpoint:
+            prev = mapping.get(uuid)
+            prev_count = 0
+            if isinstance(prev, dict):
+                prev_count = prev.get("checkpoint_count", 0)
+            mapping[uuid] = {
+                "name": date_session,
+                "status": "checkpoint",
+                "checkpoint_line": last_line,
+                "checkpoint_count": prev_count + 1,
+            }
+            print(f"\n[체크포인트] 오프셋 {last_line} 기록 (#{prev_count + 1})")
+        else:
+            mapping[uuid] = {
+                "name": date_session,
+                "status": "closed",
+                "checkpoint_line": last_line,
+            }
+        save_session_map(mapping)
 
-    # 8. 커밋
+    # 8. 알림
+    if args.checkpoint:
+        print("[수동] tasks/checkpoint.md 작성 + /compact 수행하라")
+    else:
+        print("\n[수동] projects.md 업데이트 필요 여부 확인하라")
+
+    # 9. 커밋
     if args.commit:
-        git_commit(session_name)
+        git_commit(session_name, is_checkpoint=args.checkpoint)
         print("[완료] git commit")
     else:
         print("[알림] --commit 플래그로 자동 커밋 가능")
