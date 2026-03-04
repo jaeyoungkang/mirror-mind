@@ -14768,5 +14768,278 @@
     "session": "2026-03-04-세션42",
     "context_hint": "세션 종료",
     "id": "n2109"
+  },
+  {
+    "content": "세션 시작 절차를 진행했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "세션 운영",
+    "id": "n2110"
+  },
+  {
+    "content": "문라이트 '나의 학기 사용설명서' 작업이 D-9(3월 13일 마감) 상태라고 파악했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "프로젝트 현황",
+    "id": "n2111"
+  },
+  {
+    "content": "문라이트 구현 위임을 최우선 과제로 제안했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션43",
+    "context_hint": "우선순위 결정",
+    "id": "n2112"
+  },
+  {
+    "content": ".prompt 피드백을 구조화해 tasks/projects.md에 등록하자고 제안했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션43",
+    "context_hint": "운영 정리",
+    "id": "n2113"
+  },
+  {
+    "content": "Light House 재방문 흐름의 케이스 4,5 구멍을 논의 과제로 올렸다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "서비스 개선",
+    "id": "n2114"
+  },
+  {
+    "content": "사용자가 새학기 콘텐츠 테스트·안정화 진행 의사를 밝혔다고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "사용자 의도",
+    "id": "n2115"
+  },
+  {
+    "content": "moonlight 저장소에서 manual 구현 상태를 먼저 확인하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션43",
+    "context_hint": "점검 계획",
+    "id": "n2116"
+  },
+  {
+    "content": "manual 관련 구현이 이미 진행되어 있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "구현 상태",
+    "id": "n2117"
+  },
+  {
+    "content": "서버 코드가 완성되어 있다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "코드 점검",
+    "id": "n2118"
+  },
+  {
+    "content": "프론트엔드와 라우터까지 포함해 전체 구현을 검토하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션43",
+    "context_hint": "검토 범위",
+    "id": "n2119"
+  },
+  {
+    "content": "빌드 확인과 ResultCard/OG 코드를 병렬 점검하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션43",
+    "context_hint": "검증 전략",
+    "id": "n2120"
+  },
+  {
+    "content": "서버 타입 체크가 통과했다고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "기술 검증",
+    "id": "n2121"
+  },
+  {
+    "content": "전체 코드 구조가 전반적으로 잘 갖춰져 있다고 평가했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "품질 판단",
+    "id": "n2122"
+  },
+  {
+    "content": "TRUNCATE 마이그레이션은 프로덕션 적용 시 기존 데이터를 전부 삭제할 위험이 있다고 발견했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "데이터 안전",
+    "id": "n2123"
+  },
+  {
+    "content": "generate 실패 시 사용자 피드백이 없어 UX 문제가 있다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "에러 UX",
+    "id": "n2124"
+  },
+  {
+    "content": "409/403 에러에도 조용히 넘어가는 현재 동작은 개선이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션43",
+    "context_hint": "예외 처리",
+    "id": "n2125"
+  },
+  {
+    "content": "OG 기본 렌더에 '학업 운세' 문구 잔재가 남아 있다고 발견했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "카피 정합성",
+    "id": "n2126"
+  },
+  {
+    "content": "공유 URL에 챕터 OG 파라미터(type,id)가 없어 기본 OG만 노출된다고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "공유 기능",
+    "id": "n2127"
+  },
+  {
+    "content": "savedMbti 조회가 fortune/today 경로에 의존하는 구조가 비직관적이라고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "API 설계",
+    "id": "n2128"
+  },
+  {
+    "content": "manual/progress에서 savedMbti를 직접 반환하는 구조로 정리하는 것이 낫다고 제안했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션43",
+    "context_hint": "API 개선",
+    "id": "n2129"
+  },
+  {
+    "content": "마이그레이션 의도 확인을 선행하고 2~4번 이슈는 즉시 수정 가능하다고 정리했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션43",
+    "context_hint": "작업 순서",
+    "id": "n2130"
+  },
+  {
+    "content": "사용자가 TRUNCATE 이슈를 배포 전 단계로 확인해 리스크가 현재는 제한적이라고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "릴리즈 상태",
+    "id": "n2131"
+  },
+  {
+    "content": "구현 에이전트 전달용 안정화 프롬프트 문서를 작성했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "위임 문서화",
+    "id": "n2132"
+  },
+  {
+    "content": "안정화 프롬프트에 에러 피드백, OG 텍스트, 공유 OG 연동, savedMbti 통합의 4개 개선을 담았다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "개선 범위",
+    "id": "n2133"
+  },
+  {
+    "content": "FAQ에 '나의 학기 사용설명서' 섹션을 추가하자는 사용자 요청을 반영하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션43",
+    "context_hint": "FAQ 확장",
+    "id": "n2134"
+  },
+  {
+    "content": "기존 FAQ 파일 구조를 먼저 확인하고 반영 작업을 진행했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "수정 절차",
+    "id": "n2135"
+  },
+  {
+    "content": "FAQ 5개 문항(개요, 하루 1개 규칙, 응원 상승, 결과 동일성, 전공/학년 입력)을 정의했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "콘텐츠 설계",
+    "id": "n2136"
+  },
+  {
+    "content": "FAQ 신규 카테고리를 '참여 관련'과 '혜택 관련' 사이에 삽입하도록 명시했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "정보 구조",
+    "id": "n2137"
+  },
+  {
+    "content": "사용자가 기존 프롬프트 문서 무용을 알리자 별도 전달용 텍스트 파일을 새로 만들었다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "전달 방식 전환",
+    "id": "n2138"
+  },
+  {
+    "content": "faq-manual-prompt.md를 구현 에이전트 전달용으로 작성했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "산출물 생성",
+    "id": "n2139"
+  },
+  {
+    "content": "사용자가 구현 완료와 미세조정을 마쳤다고 보고한 것을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "진행 상태",
+    "id": "n2140"
+  },
+  {
+    "content": "커밋 내용을 확인해 FAQ 포함 기능 개선이 반영되었다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "결과 검증",
+    "id": "n2141"
+  },
+  {
+    "content": "기존 프롬프트 파일 4개를 정리 대상으로 판단했다.",
+    "type": "intention",
+    "session": "2026-03-04-세션43",
+    "context_hint": "산출물 정리",
+    "id": "n2142"
+  },
+  {
+    "content": "fortune-card-update, manual-implementation, manual-stabilize, faq-manual 프롬프트 파일 4개를 삭제했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "파일 정리",
+    "id": "n2143"
+  },
+  {
+    "content": "작업 종료 트리거에 따라 세션 종료 절차를 시작했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "세션 운영",
+    "id": "n2144"
+  },
+  {
+    "content": "메타에이전트 경고로 구현 완료 마일스톤에서 회고 제안을 놓쳤음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "회고 누락",
+    "id": "n2145"
+  },
+  {
+    "content": "TypeScript 빌드 체크 실행 등으로 설계·조율 역할 경계를 넘었다고 인정했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "역할 경계",
+    "id": "n2146"
+  },
+  {
+    "content": "작업 수행 중심으로 흘러 구조적 점검 리듬이 약해졌다는 교훈을 도출했다.",
+    "type": "fact",
+    "session": "2026-03-04-세션43",
+    "context_hint": "프로세스 교훈",
+    "id": "n2147"
+  },
+  {
+    "content": "다음 세션에서는 역할 경계를 더 엄격히 지키겠다는 개선 의도를 밝혔다.",
+    "type": "intention",
+    "session": "2026-03-04-세션43",
+    "context_hint": "다음 세션 개선",
+    "id": "n2148"
   }
 ]
