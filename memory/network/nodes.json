@@ -15608,5 +15608,278 @@
     "session": "2026-03-04-세션45",
     "context_hint": "세션 종료",
     "id": "n2229"
+  },
+  {
+    "content": "세션 시작 절차를 진행했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "세션 운영",
+    "id": "n2230"
+  },
+  {
+    "content": "Lighthouse 핵심 경험 1차가 진행 중이며 검색 이슈 디버깅이 필요하다고 파악했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "프로젝트 현황",
+    "id": "n2231"
+  },
+  {
+    "content": "Moonlight는 구현·안정화가 완료되었고 테스트와 배포가 남아 있다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "프로젝트 현황",
+    "id": "n2232"
+  },
+  {
+    "content": "미반영 피드백이 누적되어 있어 구조화가 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "백로그 관리",
+    "id": "n2233"
+  },
+  {
+    "content": "사용자 질문에 답하기 전에 현재 UI 구조를 먼저 확인하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "문제 진단",
+    "id": "n2234"
+  },
+  {
+    "content": "현 구조에서 대화가 문서의 상위 컨테이너 역할을 하고 있다고 진단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "정보구조",
+    "id": "n2235"
+  },
+  {
+    "content": "현재 구조가 균일 인터페이스 철학과 충돌한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "아키텍처 원칙",
+    "id": "n2236"
+  },
+  {
+    "content": "계층 역전 문제로 문서가 1등 시민이 되지 못한다고 지적했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "정보구조",
+    "id": "n2237"
+  },
+  {
+    "content": "세션 중심 탐색 단위가 문서 중심 철학과 불일치한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "네비게이션 원칙",
+    "id": "n2238"
+  },
+  {
+    "content": "워크스페이스를 탭 하위에 둔 구조가 문서 중심성에 맞지 않는다고 봤다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "UI 구조",
+    "id": "n2239"
+  },
+  {
+    "content": "세션 맥락 그룹핑은 유지하되 문서의 필터/섹션으로 재해석할 수 있다고 제안했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "설계 대안",
+    "id": "n2240"
+  },
+  {
+    "content": "사용자의 디렉토리=파일 관점을 수용했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "개념 정렬",
+    "id": "n2241"
+  },
+  {
+    "content": "DocumentType에 collection을 추가하는 방향을 제안했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "도메인 모델",
+    "id": "n2242"
+  },
+  {
+    "content": "collection 문서를 다른 문서 목록을 담는 문서로 정의했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "도메인 모델",
+    "id": "n2243"
+  },
+  {
+    "content": "세션을 특별 개념이 아닌 collection 문서로 재해석했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "개념 통합",
+    "id": "n2244"
+  },
+  {
+    "content": "사이드바를 collection 타입 렌더링으로 환원할 수 있다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "UI 일관성",
+    "id": "n2245"
+  },
+  {
+    "content": "collection 중첩으로 사용자 분류 기능을 자연스럽게 처리할 수 있다고 봤다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "확장성",
+    "id": "n2246"
+  },
+  {
+    "content": "collection 도입 시 새 스토어나 별도 영속 경로가 필요 없다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "저장소 설계",
+    "id": "n2247"
+  },
+  {
+    "content": "방향 합의 시 document-architecture.md 반영과 구현 범위 정의를 진행하려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "문서화 계획",
+    "id": "n2248"
+  },
+  {
+    "content": "사용자 요청에 따라 구현 프롬프트 작성을 수행하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "실행 계획",
+    "id": "n2249"
+  },
+  {
+    "content": "Lighthouse 코드베이스를 탐색해 핵심 구조를 파악했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "코드 조사",
+    "id": "n2250"
+  },
+  {
+    "content": "기존 구현 프롬프트 패턴을 확인한 뒤 작성에 들어갔다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "프롬프트 작성",
+    "id": "n2251"
+  },
+  {
+    "content": "구현 프롬프트 파일 경로를 projects/lighthouse/collection-document-prompt.md로 제시했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "산출물 전달",
+    "id": "n2252"
+  },
+  {
+    "content": "프롬프트 전달 이후 tasks/projects.md 반영 여부를 사용자에게 확인했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "업무 추적",
+    "id": "n2253"
+  },
+  {
+    "content": "Lighthouse 문서를 유지·수정·제거로 분류하는 정리 작업을 수행했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "문서 정리",
+    "id": "n2254"
+  },
+  {
+    "content": "shared-tools-design.md를 document-architecture.md에 흡수된 문서로 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "문서 정합성",
+    "id": "n2255"
+  },
+  {
+    "content": "tile-workspace-prompt.md를 구현 완료된 일회성 문서로 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "문서 정리",
+    "id": "n2256"
+  },
+  {
+    "content": "scroll-strip-prompt.md를 구현 완료된 일회성 문서로 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "문서 정리",
+    "id": "n2257"
+  },
+  {
+    "content": "document-architecture.md에 collection 반영과 최신 구조 동기화가 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "아키텍처 문서",
+    "id": "n2258"
+  },
+  {
+    "content": "원본 프로젝트 문서와의 정합성 검토가 누락되었음을 인정했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "검토 범위",
+    "id": "n2259"
+  },
+  {
+    "content": "mirror-mind와 lighthouse 양쪽 저장소 문서를 모두 비교 검토했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "교차 검증",
+    "id": "n2260"
+  },
+  {
+    "content": "document-architecture 문서 간 불일치(sessionId vs conversationId, collection 미반영)를 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "스키마 정합성",
+    "id": "n2261"
+  },
+  {
+    "content": "lighthouse의 docs/document-architecture.md를 최신 기준으로 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "기준 문서 선정",
+    "id": "n2262"
+  },
+  {
+    "content": "mirror-mind의 document-architecture.md를 lighthouse 최신판으로 동기화하기로 결정했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "문서 동기화",
+    "id": "n2263"
+  },
+  {
+    "content": "mirror-mind 문서의 구식 참조와 마이그레이션 설명이 현행과 어긋난다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "문서 품질",
+    "id": "n2264"
+  },
+  {
+    "content": "동기화 시 상위 참조를 mirror-mind 경로에 맞게 조정하려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "경로 정합성",
+    "id": "n2265"
+  },
+  {
+    "content": "AGENTS.md 프로젝트 문서 맵은 삭제 대상 3건을 원래 포함하지 않아 정확하다고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "네비게이션 문서",
+    "id": "n2266"
+  },
+  {
+    "content": "문서 정리 결과를 제거 3건·수정 1건·유지 5건으로 확정해 보고했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "정리 결과",
+    "id": "n2267"
+  },
+  {
+    "content": "사용자 트리거에 따라 중간 정리 절차를 진행했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "세션 운영",
+    "id": "n2268"
   }
 ]
