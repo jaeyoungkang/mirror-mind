@@ -16469,5 +16469,313 @@
     "session": "2026-03-05-세션47",
     "context_hint": "정합성 검증",
     "id": "n2352"
+  },
+  {
+    "content": "AGENTS.md의 클리어 후 절차를 확인해 tasks/checkpoint.md를 읽어 맥락을 복원했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "세션 복원",
+    "id": "n2353"
+  },
+  {
+    "content": "세션48 체크포인트에서 에이전트 의사결정 모니터링 구현이 완료됐음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "모니터링",
+    "id": "n2354"
+  },
+  {
+    "content": "세션48 체크포인트에서 GitHub Issues 22건 체계로 전환됐음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "이슈 운영",
+    "id": "n2355"
+  },
+  {
+    "content": "완료된 항목을 GitHub Projects에 반영하기 위해 보드와 closed 이슈 현황을 먼저 확인하려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "프로젝트 정리",
+    "id": "n2356"
+  },
+  {
+    "content": "GitHub Projects API 접근에 read:project 스코프가 필요하다는 제약을 발견했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "권한 문제",
+    "id": "n2357"
+  },
+  {
+    "content": "projects.md 관련 변경이 푸시 미반영인지 커밋 미생성인지 구분해 확인하려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "상태 진단",
+    "id": "n2358"
+  },
+  {
+    "content": "로컬 브랜치가 origin보다 7커밋 앞서 있어 커밋은 됐지만 푸시가 안 된 상태임을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "git 상태",
+    "id": "n2359"
+  },
+  {
+    "content": "세션48 작업 일부는 커밋되지 않은 변경으로 남아있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "git 상태",
+    "id": "n2360"
+  },
+  {
+    "content": "완료 히스토리를 보드 Done에 남기기 위해 완료 마일스톤을 이슈로 생성 후 즉시 close하는 방식을 제안했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "이력 관리",
+    "id": "n2361"
+  },
+  {
+    "content": "당시 closed 이슈가 0개라 완료 항목들이 이슈로 등록되지 않았음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "이슈 현황",
+    "id": "n2362"
+  },
+  {
+    "content": "projects.md의 완료 덩어리를 이슈화해 Done으로 옮기는 방향을 선택했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "프로젝트 운영",
+    "id": "n2363"
+  },
+  {
+    "content": "완료 마일스톤 이슈 19개를 생성했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "이슈 생성",
+    "id": "n2364"
+  },
+  {
+    "content": "생성한 19개 이슈를 전부 close 처리했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "이슈 마감",
+    "id": "n2365"
+  },
+  {
+    "content": "CLI에서 Projects 보드 반영을 하려면 project 스코프 추가 인증이 필요하다고 안내했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "권한 안내",
+    "id": "n2366"
+  },
+  {
+    "content": "현재 착수 작업을 질문받았을 때 projects.md 기반 진행중 항목과 이슈 미등록 항목을 구분해 제시했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "진행 현황",
+    "id": "n2367"
+  },
+  {
+    "content": "사용자가 GitHub 기준 확인을 요구하자 projects.md가 아닌 GitHub Issues 기준으로 다시 검증하려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "정합성 검증",
+    "id": "n2368"
+  },
+  {
+    "content": "GitHub Issues만으로는 진행중/백로그 구분이 없고 보드 상태는 project 스코프 없이는 CLI 확인이 불가함을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "도구 한계",
+    "id": "n2369"
+  },
+  {
+    "content": "폴더별 gh 계정 분리를 위해 direnv와 GH_TOKEN 방식 사용을 권장했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "인증 전략",
+    "id": "n2370"
+  },
+  {
+    "content": "SSH 키는 git 전송용이며 gh API 인증에는 사용할 수 없다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "인증 모델",
+    "id": "n2371"
+  },
+  {
+    "content": "사용자 .env 토큰 적용 후 스코프와 계정 일치 여부를 반복 점검했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "권한 디버깅",
+    "id": "n2372"
+  },
+  {
+    "content": "중간에 jaeyoung2026 토큰으로 인식되어 저장소 소유자와 계정 불일치를 발견했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "계정 불일치",
+    "id": "n2373"
+  },
+  {
+    "content": "jaeyoungkang 토큰으로 전환 후에도 project 스코프 누락을 재확인하고 추가 권한 설정을 요구했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "스코프 보정",
+    "id": "n2374"
+  },
+  {
+    "content": "project 스코프 확인 후 Projects 보드 접근에 성공했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "권한 해결",
+    "id": "n2375"
+  },
+  {
+    "content": "보드 확인 결과 #1~#22는 Backlog, #23~#41은 Done, In Progress는 비어 있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "보드 상태",
+    "id": "n2376"
+  },
+  {
+    "content": "최신 상태 반영을 위해 체크포인트와 세션 raw 대화를 교차 검토하려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "최신화",
+    "id": "n2377"
+  },
+  {
+    "content": "세션48 raw는 아직 저장 전이라 세션46~47 raw를 확인 대상으로 삼았다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "로그 확인",
+    "id": "n2378"
+  },
+  {
+    "content": "체크포인트에서 위임 작업 7건이 전부 완료로 확인됐다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "완료 판정",
+    "id": "n2379"
+  },
+  {
+    "content": "완료 확인된 7건을 추가 완료 이슈로 생성하고 close해 히스토리를 맞추려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "이력 보강",
+    "id": "n2380"
+  },
+  {
+    "content": "최종 집계에서 Open 22건은 Backlog, Closed 26건은 Done으로 정리됐다고 보고했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "최종 현황",
+    "id": "n2381"
+  },
+  {
+    "content": "진행중 업데이트 요청에 따라 #1 이슈를 In Progress로 이동했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "보드 업데이트",
+    "id": "n2382"
+  },
+  {
+    "content": "#1 시연 대상이 Lighthouse의 골든 시나리오 2개임을 명확히 했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "시연 정의",
+    "id": "n2383"
+  },
+  {
+    "content": "AI Scientist 실제 수행 데이터에서 첫 세션이 7턴이고 두 번째 세션은 비어 있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "실행 데이터",
+    "id": "n2384"
+  },
+  {
+    "content": "세션 ec6ad993에 문서 38개와 turn별 agent_state_snapshot 기록이 존재함을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "로그 구조",
+    "id": "n2385"
+  },
+  {
+    "content": "모니터링 시스템이 관계수준·의도·전략 등을 턴별로 기록하며 정상 동작한다고 평가했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "모니터링 검증",
+    "id": "n2386"
+  },
+  {
+    "content": "시나리오1 상세 검토에서 관계수준 고정, 분석 중복, 후속 대화 약화 등을 개선점으로 도출했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "품질 평가",
+    "id": "n2387"
+  },
+  {
+    "content": "평가 체계를 문서와 실데이터로 대조해 전체 평가 프로세스를 정리하려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "평가 설계",
+    "id": "n2388"
+  },
+  {
+    "content": "turn_decisions 기반으로 Phase 1 데이터 확보는 사실상 완료이며 사용자 행동 이벤트만 미수집임을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "데이터 성숙도",
+    "id": "n2389"
+  },
+  {
+    "content": "수동 트리거(B방식)로 세션 단위 6계층 평가를 실행하는 운영 방식을 채택했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "운영 결정",
+    "id": "n2390"
+  },
+  {
+    "content": "평가 실행 절차를 projects/lighthouse/evaluation-process.md로 분리 문서화했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "문서화",
+    "id": "n2391"
+  },
+  {
+    "content": "prompt.md 계열 파일에 대해 구현 완료된 일회성 프롬프트인지 여부를 먼저 검증했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "파일 정리",
+    "id": "n2392"
+  },
+  {
+    "content": "라이트하우스 프롬프트 4개가 구현 에이전트 전달용 일회성 파일이라고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "아카이브 판단",
+    "id": "n2393"
+  },
+  {
+    "content": "골든 시나리오를 실제 검색 결과 기반으로 상세화해 projects/lighthouse/golden-scenarios.md를 작성했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션48",
+    "context_hint": "시나리오 고도화",
+    "id": "n2394"
+  },
+  {
+    "content": "완료된 프롬프트 파일은 제거하고, 대신 라이트하우스 특화 모니터링 명세를 별도 유지하는 방향에 동의했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "명세 전략",
+    "id": "n2395"
+  },
+  {
+    "content": "agent-monitoring-spec.md에 agent_state 구조, turn_decisions 스키마, 기록 항목, 생애주기를 담으려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션48",
+    "context_hint": "모니터링 명세",
+    "id": "n2396"
   }
 ]
