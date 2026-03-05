@@ -47,6 +47,20 @@ GRAPH_FILE = NETWORK_DIR / "graph.json"
 TRUNCATE_INPUT = 300
 TRUNCATE_RESULT = 200
 
+SECRET_PATTERNS = [
+    (re.compile(r'sk-proj-[A-Za-z0-9_-]{20,}'), '[MASKED_OPENAI_KEY]'),
+    (re.compile(r'sk-ant-[A-Za-z0-9_-]{20,}'), '[MASKED_ANTHROPIC_KEY]'),
+    (re.compile(r'sb_secret_[A-Za-z0-9_-]{20,}'), '[MASKED_SUPABASE_SECRET]'),
+    (re.compile(r'sb_publishable_[A-Za-z0-9_-]{20,}'), '[MASKED_SUPABASE_ANON]'),
+    (re.compile(r'eyJhbG[A-Za-z0-9_-]{50,}'), '[MASKED_JWT_TOKEN]'),
+]
+
+
+def mask_secrets(text: str) -> str:
+    for pat, repl in SECRET_PATTERNS:
+        text = pat.sub(repl, text)
+    return text
+
 K = 12
 WEIGHT_FLOOR = 0.3
 
@@ -172,7 +186,7 @@ def export_raw(session_jsonl: Path, session_name: str) -> tuple[Path, int]:
                 "role": msg.get("role", record.get("type")),
                 "content": _compact_content(msg.get("content", "")),
             }
-            fout.write(json.dumps(compacted, ensure_ascii=False) + "\n")
+            fout.write(mask_secrets(json.dumps(compacted, ensure_ascii=False)) + "\n")
             count += 1
 
     return dest, count
@@ -429,16 +443,29 @@ def rebuild_network():
 
 # ── git ──
 
-def git_commit(session_name: str, is_checkpoint: bool = False):
+def git_commit(session_name: str, is_checkpoint: bool = False, push: bool = True):
     today = date.today().isoformat()
+    # 세션 산출물
     candidates = [
         f"tasks/conversations/raw/{today}-{session_name}.jsonl",
+        "tasks/conversations/raw/.session-map.json",
         "tasks/checkpoint.md",
         "memory/network/nodes.json",
         "memory/network/graph.json",
         "memory/network/embeddings.json",
     ]
     existing = [f for f in candidates if (PROJECT_ROOT / f).exists()]
+
+    # 세션 중 변경된 tracked 파일도 포함
+    diff_result = subprocess.run(
+        ["git", "diff", "--name-only"],
+        capture_output=True, text=True, cwd=str(PROJECT_ROOT),
+    )
+    if diff_result.returncode == 0:
+        for f in diff_result.stdout.strip().splitlines():
+            if f and f not in existing:
+                existing.append(f)
+
     if not existing:
         return
 
@@ -449,6 +476,15 @@ def git_commit(session_name: str, is_checkpoint: bool = False):
         "Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
     )
     subprocess.run(["git", "commit", "-m", msg], cwd=str(PROJECT_ROOT))
+
+    if push:
+        result = subprocess.run(
+            ["git", "push"], capture_output=True, text=True, cwd=str(PROJECT_ROOT),
+        )
+        if result.returncode == 0:
+            print("[완료] git push")
+        else:
+            print(f"[경고] git push 실패: {result.stderr.strip()}", file=sys.stderr)
 
 
 # ── 메인 ──
