@@ -16777,5 +16777,271 @@
     "session": "2026-03-05-세션48",
     "context_hint": "모니터링 명세",
     "id": "n2396"
+  },
+  {
+    "content": "나는 세션 49 시작 시 Lighthouse와 Moonlight, 인프라의 오픈 이슈 현황을 정리했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "세션 시작 점검",
+    "id": "n2397"
+  },
+  {
+    "content": "나는 세션 46에서 Lighthouse 핵심 경험 마무리와 Moonlight 배포가 잔여 작업으로 정리되어 있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "기억 활성화",
+    "id": "n2398"
+  },
+  {
+    "content": "나는 다음 작업 우선순위로 Lighthouse #1을 먼저 제안했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "작업 우선순위",
+    "id": "n2399"
+  },
+  {
+    "content": "나는 로컬 브랜치가 origin/main보다 8개 커밋 앞서 있어 push되지 않은 커밋이 있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "git 상태 진단",
+    "id": "n2400"
+  },
+  {
+    "content": "나는 staged되지 않은 변경과 untracked 파일이 별도로 남아 있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "git 상태 진단",
+    "id": "n2401"
+  },
+  {
+    "content": "나는 push 실패의 1차 원인을 push 명령 미실행 가능성으로 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "원인 가설",
+    "id": "n2402"
+  },
+  {
+    "content": "나는 사용자 요청에 따라 커밋과 푸시를 먼저 진행하고 종료 스크립트를 점검하기로 결정했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "작업 순서 결정",
+    "id": "n2403"
+  },
+  {
+    "content": "나는 close-session.py의 git_commit 함수가 커밋 대상을 raw/checkpoint/memory 파일로 제한한다는 점을 발견했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "스크립트 결함 분석",
+    "id": "n2404"
+  },
+  {
+    "content": "나는 AGENTS.md, operations.md, projects 문서가 기존 git_commit 후보 목록에서 누락된다는 점을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "문서 누락 문제",
+    "id": "n2405"
+  },
+  {
+    "content": "나는 close-session.py에 git push 단계가 구현되어 있지 않음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "자동화 누락",
+    "id": "n2406"
+  },
+  {
+    "content": "나는 push 차단의 실제 원인이 GitHub Push Protection임을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "보안 차단 진단",
+    "id": "n2407"
+  },
+  {
+    "content": "나는 세션42.jsonl과 세션46.jsonl 내 시크릿 노출이 Push Protection 트리거라는 사실을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "시크릿 노출 원인",
+    "id": "n2408"
+  },
+  {
+    "content": "나는 raw 대화 텍스트에 키가 포함되면 기존 truncate 처리만으로는 누출을 막지 못한다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "보안 설계 한계",
+    "id": "n2409"
+  },
+  {
+    "content": "나는 해결책으로 히스토리 재작성 또는 GitHub unblock 두 가지 경로를 제시했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "대응안 제시",
+    "id": "n2410"
+  },
+  {
+    "content": "나는 재발 방지를 위해 close-session.py에 시크릿 패턴 필터링을 추가해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "재발 방지 설계",
+    "id": "n2411"
+  },
+  {
+    "content": "나는 사용자 선택에 따라 시크릿 마스킹 방식으로 진행하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "보안 대응 결정",
+    "id": "n2412"
+  },
+  {
+    "content": "나는 시크릿 패턴을 파악한 뒤 대상 JSONL 파일 마스킹을 수행했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "시크릿 정리",
+    "id": "n2413"
+  },
+  {
+    "content": "나는 문제 커밋이 ad1934d와 1e1b032임을 특정했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "커밋 추적",
+    "id": "n2414"
+  },
+  {
+    "content": "나는 리모트 미반영 커밋 구간을 대상으로 filter-branch로 히스토리를 재작성하기로 결정했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "히스토리 정리 전략",
+    "id": "n2415"
+  },
+  {
+    "content": "나는 9개 커밋 구간의 마스킹 재작성 후 push를 성공시켰다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "보안 복구 완료",
+    "id": "n2416"
+  },
+  {
+    "content": "나는 close-session.py에서 해결할 핵심 결함을 커밋 대상 누락, push 누락, raw 시크릿 노출의 3가지로 정리했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "문제 구조화",
+    "id": "n2417"
+  },
+  {
+    "content": "나는 raw 내보내기 단계에 mask_secrets를 추가해 시크릿 자동 마스킹을 구현했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "보안 자동화",
+    "id": "n2418"
+  },
+  {
+    "content": "나는 git_commit이 git diff --name-only 기반으로 tracked 변경 파일을 자동 포함하도록 수정했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "커밋 범위 개선",
+    "id": "n2419"
+  },
+  {
+    "content": "나는 close-session.py의 커밋 후 자동 git push를 추가했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "종료 자동화",
+    "id": "n2420"
+  },
+  {
+    "content": "나는 마스킹과 스크립트 수정 이후 작업 트리와 히스토리 상태가 정상임을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "수정 검증",
+    "id": "n2421"
+  },
+  {
+    "content": "나는 종료 스크립트가 설계 문서 누락 없이 커밋하고 push까지 수행하도록 동작 보장을 목표로 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "프로세스 신뢰성",
+    "id": "n2422"
+  },
+  {
+    "content": "나는 프롬프트 메모 내용이 이슈로 이관되었으므로 파일 정리를 진행해도 된다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "아카이브 정리",
+    "id": "n2423"
+  },
+  {
+    "content": "나는 .prompt 파일이 untracked 상태라 git rm 대상이 아님을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "파일 관리 판단",
+    "id": "n2424"
+  },
+  {
+    "content": "나는 .prompt 파일이 이미 사라져 있고 stash도 비어 있음을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "유실 여부 점검",
+    "id": "n2425"
+  },
+  {
+    "content": "나는 __pycache__ 경로를 .gitignore에 추가하는 정리 방향을 제안했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "저장소 위생",
+    "id": "n2426"
+  },
+  {
+    "content": "나는 사용자 의도에 맞춰 .prompt 파일을 빈 파일로 복원했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "요청 반영",
+    "id": "n2427"
+  },
+  {
+    "content": "나는 이슈 목록을 Lighthouse, Moonlight, 인프라로 분류해 구조적으로 재정리했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "이슈 현황 분석",
+    "id": "n2428"
+  },
+  {
+    "content": "나는 Lighthouse #1,#2,#3,#7이 강하게 결합되어 있어 에픽-하위이슈 구조가 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "백로그 구조화",
+    "id": "n2429"
+  },
+  {
+    "content": "나는 Lighthouse #4와 #3의 경계가 모호해 책임 분리가 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "이슈 경계 정리",
+    "id": "n2430"
+  },
+  {
+    "content": "나는 Lighthouse #6이 이질적 항목을 묶은 상태라 분할이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "운영 이슈 분해",
+    "id": "n2431"
+  },
+  {
+    "content": "나는 Moonlight 이슈는 담당자와 범위가 명확해 현재 구조가 적절하다고 평가했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "프로젝트 구조 평가",
+    "id": "n2432"
+  },
+  {
+    "content": "나는 작업 종료 트리거 이후 종료 절차를 실행하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션49",
+    "context_hint": "세션 종료 절차",
+    "id": "n2433"
+  },
+  {
+    "content": "나는 메타에이전트 점검 통과 후 close-session.py 실행 단계로 진행했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션49",
+    "context_hint": "종료 검증",
+    "id": "n2434"
   }
 ]
