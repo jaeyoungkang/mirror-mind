@@ -16140,5 +16140,334 @@
     "session": "2026-03-05-세션46",
     "context_hint": "진행 전략",
     "id": "n2305"
+  },
+  {
+    "content": "작업 시작 트리거에 따라 세션 시작 절차를 진행했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "세션 운영",
+    "id": "n2306"
+  },
+  {
+    "content": "도구 정리 작업이 완료되었다는 사용자 업데이트를 반영했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "프로젝트 상태",
+    "id": "n2307"
+  },
+  {
+    "content": "에이전트 의사결정 모니터링 구현 프롬프트 작성을 다음 우선 작업으로 잡았다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "모니터링 설계",
+    "id": "n2308"
+  },
+  {
+    "content": "모니터링 설계 문서를 먼저 읽어 맥락을 확보했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "문서 검토",
+    "id": "n2309"
+  },
+  {
+    "content": "정확한 프롬프트 작성을 위해 lighthouse 코드베이스 구조 파악이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "구현 준비",
+    "id": "n2310"
+  },
+  {
+    "content": "lighthouse의 관측/로깅 구조와 DB 스키마를 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "코드베이스 분석",
+    "id": "n2311"
+  },
+  {
+    "content": "초기 구현 범위를 Phase 1과 Phase 3 결합으로 제안했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "범위 결정",
+    "id": "n2312"
+  },
+  {
+    "content": "골든 시나리오는 평가 기준이므로 모니터링 구현 전에 정의해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "평가 체계",
+    "id": "n2313"
+  },
+  {
+    "content": "기존 모니터링 시스템을 버리고 새로 구축하는 방향으로 범위를 재정의했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "아키텍처 전환",
+    "id": "n2314"
+  },
+  {
+    "content": "AI Scientist와 Attention 주제로 골든 시나리오 2개를 만들기로 합의했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "골든 시나리오",
+    "id": "n2315"
+  },
+  {
+    "content": "골든 시나리오 초안을 먼저 공유해 합의한 뒤 구현 프롬프트로 넘기기로 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "협업 절차",
+    "id": "n2316"
+  },
+  {
+    "content": "사용자 제안을 '에이전트 내부 상태 명시화'라는 문제로 해석했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "상태 추적 설계",
+    "id": "n2317"
+  },
+  {
+    "content": "내부 상태를 기록하면 모니터링 가능성과 행동 품질 개선이 동시에 가능하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "설계 근거",
+    "id": "n2318"
+  },
+  {
+    "content": "상태를 세션 간 지속, 세션 내 지속, 턴 단위로 생애주기 분류했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "상태 모델링",
+    "id": "n2319"
+  },
+  {
+    "content": "관계 수준은 profile 노드보다 conversation 메타데이터에 두는 것이 맞다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "기억 통합",
+    "id": "n2320"
+  },
+  {
+    "content": "관계 수준은 사용자 특성이 아니라 사용자-에이전트 사이 상태라고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "개념 구분",
+    "id": "n2321"
+  },
+  {
+    "content": "기억 시스템에는 관계 수준 자체가 아니라 관계 근거 경험을 fact로 저장해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "기억 설계",
+    "id": "n2322"
+  },
+  {
+    "content": "관계 수준을 직전 세션에서 carry하는 방식에 사용자 동의를 받았다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "합의 사항",
+    "id": "n2323"
+  },
+  {
+    "content": "모니터링 구현 프롬프트와 tasks/projects.md를 함께 업데이트하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "작업 계획",
+    "id": "n2324"
+  },
+  {
+    "content": "projects/lighthouse/agent-monitoring-prompt.md를 6개 Phase 구조로 작성 완료했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "문서 산출물",
+    "id": "n2325"
+  },
+  {
+    "content": "Phase 0에 기존 인메모리 관측 시스템 제거를 명시했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "모니터링 재구축",
+    "id": "n2326"
+  },
+  {
+    "content": "Phase 1에 agent_state, turn_decisions, session_evaluations 스키마를 정의했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "DB 설계",
+    "id": "n2327"
+  },
+  {
+    "content": "Phase 2에 에이전트 상태 블록 출력/파싱/저장을 포함시켰다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "상태 추적",
+    "id": "n2328"
+  },
+  {
+    "content": "Phase 4에 LLM-as-Judge 다차원 평가와 이탈 감지를 포함시켰다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "자동 평가",
+    "id": "n2329"
+  },
+  {
+    "content": "Phase 5에 /dev UI를 의사결정 타임라인 중심으로 재구축하도록 설계했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "관측 UI",
+    "id": "n2330"
+  },
+  {
+    "content": "프로젝트 관리 파일을 백로그/진행중/완료 구조로 바꿔야 한다는 제안에 동의했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "프로젝트 운영",
+    "id": "n2331"
+  },
+  {
+    "content": "기존 플랫 마크다운 방식은 완료·진행·대기가 섞여 현재 우선순위 파악이 어렵다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "운영 진단",
+    "id": "n2332"
+  },
+  {
+    "content": "JSON 원본과 마크다운 뷰 자동 생성 구조를 제안했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "관리 구조 개선",
+    "id": "n2333"
+  },
+  {
+    "content": "프로젝트 상태 추적은 GitHub Issues/Projects 통합이 자체 JSON보다 낫다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "도구 선택",
+    "id": "n2334"
+  },
+  {
+    "content": "mirror-mind 저장소에서 Issues와 Projects 기능이 활성화된 것을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "GitHub 점검",
+    "id": "n2335"
+  },
+  {
+    "content": "현재 저장소에 기존 이슈와 프로젝트가 없는 깨끗한 상태임을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "GitHub 현황",
+    "id": "n2336"
+  },
+  {
+    "content": "권한 확장 전에 먼저 이슈 목록을 정리하기로 사용자와 합의했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "이관 준비",
+    "id": "n2337"
+  },
+  {
+    "content": "projects.md에서 완료 항목을 제외한 살아있는 항목만 추출해 초안을 만들었다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "백로그 정리",
+    "id": "n2338"
+  },
+  {
+    "content": "최신 상태 업데이트를 위해 과거 대화 기록과 소스 프로젝트를 교차 검토하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "상태 검증",
+    "id": "n2339"
+  },
+  {
+    "content": "서브에이전트 3개를 병렬 투입해 lighthouse, moonlight, 세션 기록을 분담 조사했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "병렬 조사",
+    "id": "n2340"
+  },
+  {
+    "content": "조사 결과 lighthouse 위임 작업들이 모두 완료된 상태임을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "완료 검증",
+    "id": "n2341"
+  },
+  {
+    "content": "에이전트 의사결정 모니터링도 구현 에이전트가 이미 완료했다고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "모니터링 구현 상태",
+    "id": "n2342"
+  },
+  {
+    "content": "moonlight 이벤트 마감일이 3/13이 아니라 3/27로 갱신되어야 함을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "일정 정정",
+    "id": "n2343"
+  },
+  {
+    "content": "사용설명서 상태가 배포 전이 아니라 프로덕션 배포 완료임을 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "문라이트 상태",
+    "id": "n2344"
+  },
+  {
+    "content": "projects.md를 350줄에서 100줄 수준으로 줄이기 위해 완료 상세를 접기 구조로 정리했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "문서 리팩토링",
+    "id": "n2345"
+  },
+  {
+    "content": "프로젝트별 진행중/백로그/완료 3단 구조를 projects.md에 도입했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "구조 개편",
+    "id": "n2346"
+  },
+  {
+    "content": "과거 일정 항목(2/24, 2/26, 3/2)을 의미 없는 정보로 판단해 제거했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "일정 정리",
+    "id": "n2347"
+  },
+  {
+    "content": ".prompt 메모장 87줄을 projects 백로그와 완료 항목에 전수 대조했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "누락 점검",
+    "id": "n2348"
+  },
+  {
+    "content": "메모장 대조 결과 완료 12건과 기존 백로그 17건을 식별했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "분류 결과",
+    "id": "n2349"
+  },
+  {
+    "content": "누락 과제로 '사용자 수준·연구 목적 초반 파악 강화'를 새로 추가했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "백로그 추가",
+    "id": "n2350"
+  },
+  {
+    "content": "누락 과제로 '과학에 대한 과학 및 학제간 기본지식 확장'을 새로 추가했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션47",
+    "context_hint": "백로그 추가",
+    "id": "n2351"
+  },
+  {
+    "content": "prompt 메모장 기반 누락 사항을 반영해 백로그 정합성을 맞췄다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션47",
+    "context_hint": "정합성 검증",
+    "id": "n2352"
   }
 ]
