@@ -135,7 +135,7 @@
   - [>] 공동 도구 사용 → 균일 인터페이스 재설계 — 코드베이스 전면 재개발
     - 핵심 철학: "모든 것은 파일이다" — 균일한 인터페이스(문서 CRUD)로 모든 상호작용을 수렴
     - 설계 문서: `projects/lighthouse/document-architecture.md` (균일 인터페이스 아키텍처)
-    - 참조: `projects/lighthouse/shared-tools-design.md` (초기 방향)
+    - 참조: ~~shared-tools-design.md~~ (제거됨, document-architecture.md에 흡수)
     - [x] 1차 구현 — 패널 검색바 + 논문 클릭 분석 트리거 (동작하지만 UX 전환 부족)
     - [x] 설계 논의 — 균일 인터페이스 철학, 워크스페이스 모델, 웹 계약 재정의, 삼분법+AGENTS.md 방법론
     - [x] 재설계 구현 (document-architecture.md 기반, 단계 0~5) — 전체 완료
@@ -148,12 +148,59 @@
     - [x] 후속 개선 — 문서 패널 고도화 + 파이프라인 경량 정리
       - 문서 패널: Overview 클러스터 카드, Search 분석 버튼, Analysis 원문+재분석, Synthesis 참조 색인
       - 파이프라인: pipeline-rules.ts/post-actions.ts 삭제·인라인, Document[] 요약 개선
+  - [ ] 대화 경험 개선
+    - [ ] 최초 대화 자연스러움 — 정해진 대사 탈피, "뭐하는 사람인지" 파악하는 기억 구성
+    - [ ] 재방문 흐름 보완 — 빠른 재방문 이유 궁금해하기, 케이스 4/5 구조적 구멍
+    - [ ] 세션 종료 시 소감 질문 — 종료 트리거에 소감 수렴 추가
+    - [ ] 분석 완료 후 대화 연결 — 문서 생성과 그에 관한 대화는 별개, 후속 대화 유도
+    - [ ] 문서 생성 설명 — 왜 이 문서를 만들었는지 투명하게 설명
   - [ ] 관계 형성 고도화 — 상호 맥락 파악, 경험 기반 점진적 설명, 관계 깊이별 행동 변화
   - [>] 핵심 경험 1차 — 인간-AI 협업 검색 + 논문 검토 관리
     - 목표: 인간과 AI가 같은 도구로 검색하고, 결과를 관리하며, AI가 요약해서 빠르게 검토
     - [>] C. UI 2타일 고정 + 스크롤 — 구현 위임 완료, 다듬기 중
     - [>] B. 검토한 논문 리스트 — 구현 위임 완료, 다듬기 중
     - [>] A. 논문 개별 요약 + 원문 PDF — 구현 위임 완료, 다듬기 중. 검색 안 되는 이슈 디버깅 필요
+  - [ ] 검색·분석 UX 개선
+    - [ ] 검색→분석 단계 세분화 — 검색 완료 후 뭘하는지 불명확, 핵심논문 선별 과정 가시화
+    - [ ] 논문 리스트 백그라운드 상세 채움 — 검색 결과 문서에 점진적으로 세부 정보 로딩
+    - [ ] 인간 검색 도구 직접 접근 — 현재 인간이 검색 도구에 접근할 방법 없음
+    - [ ] 패널 닫기 → 사이드바 리스트 관리 — x 클릭 시 바로 삭제 대신 사이드바에 보관
+    - [ ] 프롬프트 라우터 — 입력 전달 전 가로채서 처리하는 방법 (클라이언트 단)
+  - [>] Collection 문서 — "폴더도 문서다" 철학 구현
+    - 배경: 세션(Conversation)이 Document의 상위 컨테이너인 구조가 균일 인터페이스 철학과 충돌
+    - 설계: 세션 = collection 타입 Document (metadata.childIds에 하위 문서 ID)
+    - 구현 프롬프트: `projects/lighthouse/collection-document-prompt.md`
+    - [>] 구현 에이전트에 위임 완료 (Phase 0~5)
+  - [x] 설계 문서 정리 — mirror-mind/lighthouse 양쪽 교차 분석
+    - [x] 제거 3건: shared-tools-design.md, tile-workspace-prompt.md, scroll-strip-prompt.md
+    - [x] 수정 1건: document-architecture.md lighthouse 최신 동기화 + collection 반영
+    - [x] 유지 5건 확인: service-principles.md, research-scenarios.md, user-memory-concept.md, 초기대화흐름.md, collection-document-prompt.md
+  - [>] 에이전트 의사결정 모니터링 — LLM-as-Judge 기반 세션 자동 평가
+    - 설계 문서: `projects/agent-decision-monitoring.md`
+    - 평가 6계층: 도구 선택 / 대화 품질 / 협업 / lighthouse 특화 / 도구별 / 대화 단계별
+    - 핵심: 대화 단계 의존 관계 (관계 형성 → 의도 파악 → 이후 평가 기준 결정)
+    - [x] 리서치 — 학술/산업 평가 방법론 조사
+    - [x] 설계 문서 작성 — 6계층 평가 구조 + 3가지 평가 방법 + 적용 순서
+    - [x] 실제 세션으로 수동 평가 시험 — 3턴 세션 직접 평가
+    - [ ] 구현 프롬프트 작성 — lighthouse 내장 후처리 평가 시스템
+  - [>] 도구 정리 — 핵심 3개만 남기기
+    - 구현 프롬프트: `projects/lighthouse/tool-cleanup-prompt.md`
+    - 남기는 것: search_papers, analyze_papers, propose
+    - 제거: evaluate_importance, cluster_papers, synthesize_topic, translate_abstract, find_related_papers
+    - [ ] 구현 에이전트 위임
+  - [>] discussion 문서 동등화 — 채팅도 문서로서 동등한 시민권
+    - 구현 프롬프트: `projects/lighthouse/discussion-equality-prompt.md`
+    - [>] 구현 에이전트 위임 완료
+  - [ ] 운영 품질 — 코드·원칙·모니터링 정합성
+    - [ ] 대원칙 vs 구현 얼라인 검토 — 주요 문서들과 코드가 정합하는지 전수 검사
+    - [ ] 프로그래머틱 처리 전환 — 프롬프트로 처리 중인 것 중 코드로 대체 가능한 것 식별
+    - [ ] 보일러플래이트 코드 품질 검토 — 대규모 작업 후 불필요 중복·패턴 점검
+    - [ ] 어드민 페이지 리디자인 — 네트워크 접근 에이전트와 대화하는 방식 (별도 기억 저장)
+  - [ ] 시연 시나리오 실행
+    - [ ] 데모 시나리오 검토 — 시연 흐름 구체화, 종료 시점 결정
+    - [ ] attention/transformer 분야 리서치 시나리오
+    - [ ] AI scientist 분야 리서치 시나리오
+    - [ ] 로보틱스 분야 리서치 시나리오
   - [x] 안정화 (기존)
     - [x] 세션 전환 시 연구 문서 패널 리셋 — Zustand store 초기화 누락 (`session-document-binding-prompt.md`)
 
@@ -209,6 +256,9 @@
     - [x] close-session.py — episodes/memories → 노드 추출 + 네트워크 갱신으로 전면 교체
   - [x] hooks 자동화 — UserPromptSubmit 훅으로 매 프롬프트 기억 활성화 (`.claude/hooks/memory-activate.sh`)
   - [x] 중간 정리 트리거 — close-session.py --checkpoint 모드 추가, AGENTS.md/operations.md 반영
+  - [ ] 기억 aging — 노드에 aging 요소 추가, 시간에 따른 활성화 감쇠
+  - [ ] 기억 주입 시 재구성 — 새 노드 추가 시 허브 생성, 기존 링크 약화/강화, 링크 수 제약 재검토
+  - [ ] 고정 엣지 네트워크 리서치 — 엣지가 고정→확장 가능한 구조 학술 조사
   - [ ] 아카이브 정책 — scope lifecycle 운영
 
 ## [>] 메타에이전트 — 원칙 준수 감시

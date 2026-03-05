@@ -15881,5 +15881,264 @@
     "session": "2026-03-05-세션46",
     "context_hint": "세션 운영",
     "id": "n2268"
+  },
+  {
+    "content": "나는 체크포인트 복원을 시작했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "세션 재개",
+    "id": "n2269"
+  },
+  {
+    "content": "나는 체크포인트 복원을 완료했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "세션 재개",
+    "id": "n2270"
+  },
+  {
+    "content": "나는 중간 정리 시 projects.md 업데이트 항목이 이미 완료되었다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "작업 상태 점검",
+    "id": "n2271"
+  },
+  {
+    "content": "나는 다음 우선 작업을 .prompt 메모의 업무 구조화로 설정했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "업무 우선순위",
+    "id": "n2272"
+  },
+  {
+    "content": "나는 .prompt의 미등록 피드백을 분류해 projects.md에 반영하려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "백로그 정리",
+    "id": "n2273"
+  },
+  {
+    "content": "나는 .prompt 항목 중 이미 등록되었거나 완료된 항목들을 식별했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "중복 제거",
+    "id": "n2274"
+  },
+  {
+    "content": "나는 .prompt에서 새로 등록할 피드백 14건을 도출했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "피드백 추출",
+    "id": "n2275"
+  },
+  {
+    "content": "나는 기억 시스템 관련 피드백도 함께 등록했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "기억 시스템",
+    "id": "n2276"
+  },
+  {
+    "content": "나는 등록 완료 후 .prompt를 비워 정리하려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "문서 정리",
+    "id": "n2277"
+  },
+  {
+    "content": "나는 .prompt에서 projects.md로의 구조화 등록을 완료했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "백로그 반영",
+    "id": "n2278"
+  },
+  {
+    "content": "나는 Lighthouse 피드백을 검색·분석 UX, 대화 경험, 운영 품질/시연 시나리오로 분류했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "분류 체계",
+    "id": "n2279"
+  },
+  {
+    "content": "나는 기억 시스템 피드백 3건을 별도로 등록했다고 보고했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "기억 시스템 과제",
+    "id": "n2280"
+  },
+  {
+    "content": "나는 다음 우선 후보를 핵심 경험 1차 마무리와 Moonlight 배포로 제시했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "다음 작업 제안",
+    "id": "n2281"
+  },
+  {
+    "content": "나는 사용자의 요청에 따라 .prompt를 원복했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "사용자 피드백 반영",
+    "id": "n2282"
+  },
+  {
+    "content": "나는 .prompt가 사용자가 직접 관리하는 메모장이라 내가 비우면 안 된다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "운영 원칙",
+    "id": "n2283"
+  },
+  {
+    "content": "나는 .prompt 원복 이후 projects.md에 등록한 구조화 항목은 유지했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "변경 범위 통제",
+    "id": "n2284"
+  },
+  {
+    "content": "나는 중간 정리에서 /compact 대신 /clear가 실질적으로 동일한 복원 효과를 준다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "세션 절차 개선",
+    "id": "n2285"
+  },
+  {
+    "content": "나는 /clear 방식의 장점이 즉시 실행과 완전 초기화라고 설명했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "운영 효율",
+    "id": "n2286"
+  },
+  {
+    "content": "나는 운영 문서에 /clear 절차 반영 여부를 제안했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "프로세스 문서화",
+    "id": "n2287"
+  },
+  {
+    "content": "나는 /clear 이후 재실행 입력이 필요하며 \"계속\" 한 마디면 충분하다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "재개 트리거",
+    "id": "n2288"
+  },
+  {
+    "content": "나는 중간 정리 절차를 checkpoint 작성, close-session 실행, /clear, 계속 입력, checkpoint 복원 순서로 정리했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "운영 절차",
+    "id": "n2289"
+  },
+  {
+    "content": "나는 checkpoint.md 파일이 실제로 존재한다고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "파일 존재 확인",
+    "id": "n2290"
+  },
+  {
+    "content": "나는 AGENTS.md와 operations.md에 /compact 대신 /clear + 계속 절차를 반영했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "문서 동기화",
+    "id": "n2291"
+  },
+  {
+    "content": "나는 체크포인트 기준 잔여 작업을 Lighthouse 핵심 경험 마무리와 Moonlight 배포로 재정리했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "남은 과제",
+    "id": "n2292"
+  },
+  {
+    "content": "나는 핵심 경험 1차의 A/B/C 상태를 점검해 A는 검색 이슈 디버깅 필요, B/C는 다듬기 중이라고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "진행 상태",
+    "id": "n2293"
+  },
+  {
+    "content": "나는 검색 이슈 파악을 위해 증상 구분이 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "디버깅 접근",
+    "id": "n2294"
+  },
+  {
+    "content": "나는 사용자의 지시에 따라 콜렉션 문서 타입 도입 작업을 우선 재개했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "우선순위 전환",
+    "id": "n2295"
+  },
+  {
+    "content": "나는 구현 에이전트의 진행 상태를 먼저 확인하려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "협업 점검",
+    "id": "n2296"
+  },
+  {
+    "content": "나는 구현 에이전트가 커밋 없이 10개 파일 변경과 4개 파일 신규 생성까지 진행했다고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "구현 진행률",
+    "id": "n2297"
+  },
+  {
+    "content": "나는 현재 변경의 실제 완성도를 핵심 파일 검토로 파악하려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "품질 검증",
+    "id": "n2298"
+  },
+  {
+    "content": "나는 채팅도 문서라면 사이드바 문서 목록에 discussion이 동등하게 표시되어야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "균일 인터페이스",
+    "id": "n2299"
+  },
+  {
+    "content": "나는 discussion 문서도 다른 문서처럼 열고 닫을 수 있어야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "상호작용 일관성",
+    "id": "n2300"
+  },
+  {
+    "content": "나는 대화 내용을 문서 형식으로 읽을 수 있는 뷰가 필요하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "문서 표현 통일",
+    "id": "n2301"
+  },
+  {
+    "content": "나는 collection 구현 프롬프트에 discussion 동등 표시 요구가 반영되었는지 검증하려 했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "프롬프트 검증",
+    "id": "n2302"
+  },
+  {
+    "content": "나는 프롬프트가 discussion의 DB 저장은 다루지만 사이드바 동등 표시는 누락했다고 발견했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "설계 누락 발견",
+    "id": "n2303"
+  },
+  {
+    "content": "나는 프롬프트에 discussion 제외 지시가 있어 철학과 충돌한다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-05-세션46",
+    "context_hint": "철학 정합성",
+    "id": "n2304"
+  },
+  {
+    "content": "나는 커밋 전 상태이므로 피드백을 프롬프트에 반영해 구현 에이전트에 재전달할지 판단이 필요하다고 제안했다.",
+    "type": "intention",
+    "session": "2026-03-05-세션46",
+    "context_hint": "진행 전략",
+    "id": "n2305"
   }
 ]
