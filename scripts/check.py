@@ -256,7 +256,7 @@ def check_doc_references() -> list[dict]:
 
 
 def check_project_status() -> list[dict]:
-    """projects.md 상태 정합성"""
+    """projects.md 상태 정합성 (deprecated — GitHub Issues로 이관됨, 파일 없으면 skip)"""
     violations = []
     projects_md = PROJECT_ROOT / "tasks" / "projects.md"
     if not projects_md.exists():

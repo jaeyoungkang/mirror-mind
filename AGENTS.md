@@ -11,7 +11,7 @@
 | `mirror-mind-principle.md` | 최상위 철학 — Co-actor 4대 원칙, 소통 규범 |
 | `agentic-engineering-principles.md` | 설계 + 개발 원칙 — 자율성, 안전, 관계 형성, 기술적 결, 관측 |
 | `operations.md` | 운영 — 업무 관리, 세션 절차, 기억 시스템, 메타에이전트 |
-| `tasks/projects.md` | 프로젝트 현황 — 업무 목록, 진행 상태, 일정 |
+| GitHub Issues | 프로젝트 현황 — `gh issue list --repo jaeyoungkang/mirror-mind` |
 
 ## 프로젝트별 설계 문서
 
@@ -40,7 +40,7 @@
 2. `mirror-mind-principle.md` 읽고 원칙 적용
 3. `agentic-engineering-principles.md` 읽고 설계·개발 원칙 파악
 4. `operations.md` 읽고 운영 방식 파악
-5. `tasks/projects.md` 읽고 현재 상태 파악
+5. `gh issue list --repo jaeyoungkang/mirror-mind --state open` 으로 현재 업무 파악
 6. 기억 활성화: `.venv/bin/python3 scripts/activate.py --query "현재 주제"`
 7. 현재 상태 요약 + 다음 작업 제안
 
@@ -50,7 +50,7 @@
 
 ### 중간 정리 (트리거: **중간 정리**)
 1. `tasks/checkpoint.md` 작성 — 진행 상태, 핵심 맥락, 다음 할 일
-2. `tasks/projects.md` 업데이트 (필요 시)
+2. 관련 GitHub Issue 업데이트 (필요 시)
 3. `.venv/bin/python3 scripts/close-session.py --checkpoint --commit` (노드 추출 + 네트워크 갱신 + 오프셋 기록)
 4. 재영에게 `/clear` → `계속` 입력 안내
 5. 클리어 후 → `tasks/checkpoint.md` 읽고 맥락 복원 + 이어서 작업
@@ -59,7 +59,7 @@
 1. 메타에이전트 리포트 확인
 2. `.venv/bin/python3 scripts/close-session.py` (raw 저장 + 노드 추출 + 네트워크 갱신, 체크포인트 오프셋 이후만 처리)
 3. 초안 검토·수정
-4. `tasks/projects.md` 업데이트
+4. 관련 GitHub Issue 업데이트 + close
 5. 커밋
 
 ## 트리거 (빠른 참조)

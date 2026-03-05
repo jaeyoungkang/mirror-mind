@@ -36,5 +36,16 @@
     "name": "2026-03-05-세션46",
     "status": "closed",
     "checkpoint_line": 808
+  },
+  "e54efdc7-ae75-4a5d-9741-51557613c301": {
+    "name": "2026-03-05-세션47",
+    "status": "checkpoint",
+    "checkpoint_line": 483,
+    "checkpoint_count": 1
+  },
+  "e9171cd7-60bc-489c-b526-7f7353ebdd47": {
+    "name": "2026-03-05-세션48",
+    "status": "closed",
+    "checkpoint_line": 353
   }
 }
