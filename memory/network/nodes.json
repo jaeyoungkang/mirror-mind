@@ -17043,5 +17043,432 @@
     "session": "2026-03-05-세션49",
     "context_hint": "종료 검증",
     "id": "n2434"
+  },
+  {
+    "content": "세션 50 시작 시 오픈 이슈가 22개이며 lighthouse 7개, moonlight 6개, memory 4개, meta-agent 1개, agentic-engineering 2개로 파악했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "세션 시작 상태",
+    "id": "n2435"
+  },
+  {
+    "content": "세션 46에서 `.prompt`에 메모된 업무 구조화가 다음 우선 작업으로 설정되어 있었다고 기억에서 복원했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "기억 활성화",
+    "id": "n2436"
+  },
+  {
+    "content": "세션 46에서 균일 인터페이스 철학과 현재 구조의 충돌 이슈가 있었다고 기억에서 복원했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "기억 활성화",
+    "id": "n2437"
+  },
+  {
+    "content": "타일 워크스페이스 상세 설계가 세션 37 기준 Stage 2 완료 상태라고 파악했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "기억 활성화",
+    "id": "n2438"
+  },
+  {
+    "content": "오늘 작업 후보로 `.prompt` 확인, lighthouse #1 시연 결과 확인, moonlight 시간 민감 이슈 확인을 제안했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "세션 시작 제안",
+    "id": "n2439"
+  },
+  {
+    "content": "문라이트 대학 이벤트 문서는 2026-02-27 기준에서 멈춰 있었고 2026-03-06까지 약 7일간 업데이트가 없다고 판단했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "문라이트 현황 점검",
+    "id": "n2440"
+  },
+  {
+    "content": "문라이트 대학 이벤트 마감이 2026-03-13로 일주일 남았다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "문라이트 일정",
+    "id": "n2441"
+  },
+  {
+    "content": "문라이트 대학 이벤트의 오픈 이슈 6개를 담당자 기준으로 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "문라이트 이슈 현황",
+    "id": "n2442"
+  },
+  {
+    "content": "대학 이벤트 점검 항목으로 실측 데이터, 2월 27일 할 일 진행 여부, 마감 기한 변경 반영 여부, D-7 전략을 확인해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "문라이트 점검 기준",
+    "id": "n2443"
+  },
+  {
+    "content": "세션 40에서 `fortune-feature-spec.md` 학업 운세 기획서를 작성했다고 기억을 복원했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "사용설명서 전신",
+    "id": "n2444"
+  },
+  {
+    "content": "세션 41에서 `fortune_ref` localStorage 보존과 응원 챌린지 연결 강화를 해결했다고 기억을 복원했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "사용설명서 전신",
+    "id": "n2445"
+  },
+  {
+    "content": "세션 44에서 공유 흐름 디버깅으로 `fortune_ref` OG 이미지 폴백과 ActivityReferralHandler 분기를 수정했다고 기억을 복원했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "공유 흐름 디버깅",
+    "id": "n2446"
+  },
+  {
+    "content": "세션 47에서 나의 학기 사용설명서가 프로덕션 배포 완료 상태임을 확인했다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "배포 상태",
+    "id": "n2447"
+  },
+  {
+    "content": "배포 후에는 사용설명서 참여 수, 공유 유입, 응원 카운트 변화 같은 실제 사용 데이터를 확인해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "배포 후 점검",
+    "id": "n2448"
+  },
+  {
+    "content": "세션 42에서 기존 학업 운세보다 상위 브랜드인 '나의 학기 사용설명서'로 컨셉을 전환했다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "브랜드 전환",
+    "id": "n2449"
+  },
+  {
+    "content": "사용설명서 전환 시 기존 fortune 인프라와 DB, 응원, 리퍼럴은 유지하고 콘텐츠 구조만 챕터 분기로 확장했다고 파악했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "기능 재구성",
+    "id": "n2450"
+  },
+  {
+    "content": "세션 42에서 `scripts/sample_chapters.py`로 MBTI 기반 5챕터 샘플을 생성했다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "콘텐츠 생성",
+    "id": "n2451"
+  },
+  {
+    "content": "세션 43에서 moonlight 저장소에서 직접 사용설명서 구현을 진행했다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "구현 진행",
+    "id": "n2452"
+  },
+  {
+    "content": "세션 43의 구현에는 FAQ 사용설명서 카테고리 추가, 기존 프로파일 유지와 매일 갱신, 캠퍼스 활동 마이그레이션 통합이 포함되었다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "사용설명서 구현 상세",
+    "id": "n2453"
+  },
+  {
+    "content": "기존 `fortune-feature-spec.md`가 삭제되었으므로 `university-event.md`에 리브랜딩 내용을 반영해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "문서 정합성",
+    "id": "n2454"
+  },
+  {
+    "content": "문라이트 대학 이벤트 문서에 나의 학기 사용설명서 섹션과 리브랜딩 경과를 반영해 업데이트했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "문서 업데이트",
+    "id": "n2455"
+  },
+  {
+    "content": "문서 업데이트 시 재영의 할 일 중 인사이트 에이전트 이슈 이관과 사용설명서 구현 완료를 반영했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "문서 업데이트",
+    "id": "n2456"
+  },
+  {
+    "content": "2026-03-04부터 2026-03-06 사이에 사용설명서 기능이 추가로 다듬어졌다고 깃 로그를 통해 확인했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "배포 후 개선",
+    "id": "n2457"
+  },
+  {
+    "content": "배포 이후 개선 사항으로 MBTI 재료와 상황 풀 조합을 통한 콘텐츠 다양성 강화가 있었다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "배포 후 개선",
+    "id": "n2458"
+  },
+  {
+    "content": "배포 이후 개선 사항으로 OG 이미지 색상 동기화와 회원 보너스 반영이 있었다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "배포 후 개선",
+    "id": "n2459"
+  },
+  {
+    "content": "배포 이후 개선 사항으로 챕터 생성 시 +1, 5챕터 완주 시 +5의 자동 응원 복원이 있었다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "배포 후 개선",
+    "id": "n2460"
+  },
+  {
+    "content": "배포 이후 개선 사항으로 응원 중복 등록 버그 수정이 있었다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "배포 후 개선",
+    "id": "n2461"
+  },
+  {
+    "content": "배포 이후 개선 사항으로 CTA 스타일을 조정했고 공격적 카피는 되돌렸다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "배포 후 개선",
+    "id": "n2462"
+  },
+  {
+    "content": "배포 이후 개선 사항으로 날짜 타임존 버그를 수정했다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "배포 후 개선",
+    "id": "n2463"
+  },
+  {
+    "content": "응원 시스템의 현재 구조가 프론트와 서버에서 GAS 웹앱을 호출하고 Google Sheets에 기록하는 방식이라고 분석했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "응원 시스템 구조",
+    "id": "n2464"
+  },
+  {
+    "content": "현재 GAS 구현은 매 요청마다 `getDataRange().getValues()`로 전체 시트를 메모리에 로드하는 구조라고 분석했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "성능 병목",
+    "id": "n2465"
+  },
+  {
+    "content": "중복 체크, 프로필 조회, 리더보드, 대학별 통계가 모두 전체 순회 O(n) 구조라고 분석했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "성능 병목",
+    "id": "n2466"
+  },
+  {
+    "content": "서버 측 GAS 호출 타임아웃이 5초로 설정되어 있다고 파악했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "성능 제약",
+    "id": "n2467"
+  },
+  {
+    "content": "사용자 증가 시 읽기 지연, 쓰기 동시성 문제, GAS 실행 제한, 동시 실행 제한, 응답 속도 저하, cheerCount 유실, 무거운 리더보드 호출이 병목이 된다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "확장성 검토",
+    "id": "n2468"
+  },
+  {
+    "content": "핵심 위험으로 cheer 중복 체크와 기록 사이의 race condition을 식별했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "동시성 위험",
+    "id": "n2469"
+  },
+  {
+    "content": "핵심 위험으로 프로필 수 증가에 따른 리더보드와 대학별 통계의 5초 타임아웃 가능성을 식별했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "확장성 위험",
+    "id": "n2470"
+  },
+  {
+    "content": "핵심 위험으로 GAS 동시 실행 제한 30개 때문에 바이럴 트래픽 시 요청 드롭 가능성을 식별했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "확장성 위험",
+    "id": "n2471"
+  },
+  {
+    "content": "프로필 79명과 응원 96개 수준에서는 마감 전까지 현 구조가 버틸 가능성이 높다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "단기 운영 판단",
+    "id": "n2472"
+  },
+  {
+    "content": "수만 명 참여를 목표로 한다면 시트 기반 구조로는 부족하고 DB 사용을 고려해야 한다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "확장성 판단",
+    "id": "n2473"
+  },
+  {
+    "content": "moonlight에는 이미 PostgreSQL에 `campus_activity_results`, `short_links`, `users` 등이 있고 동시성 제어도 갖춰져 있다고 확인했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "기존 DB 자산",
+    "id": "n2474"
+  },
+  {
+    "content": "응원 챌린지의 `profiles`, `cheers`, `dashboard` 데이터만 여전히 GAS와 Google Sheets에 남아 있다고 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "기존 시트 자산",
+    "id": "n2475"
+  },
+  {
+    "content": "서버 `shared.ts`와 프론트 `challenge-api.ts`가 현재 GAS를 호출하는 주요 지점이라고 파악했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "호출 경로",
+    "id": "n2476"
+  },
+  {
+    "content": "응원 챌린지 마이그레이션은 moonlight의 기존 PostgreSQL과 `pg` 직접 쿼리 패턴을 따르는 것이 자연스럽다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "설계 방향",
+    "id": "n2477"
+  },
+  {
+    "content": "새 저장 구조로 `challenge_profiles`와 `challenge_cheers` 두 테이블을 두는 설계안을 제안했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "DB 마이그레이션 설계",
+    "id": "n2478"
+  },
+  {
+    "content": "DB와 시트에 동시에 쓰는 dual write는 실패 시 불일치와 진실 소스 모호성 때문에 더 복잡해질 수 있다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "전환 전략 판단",
+    "id": "n2479"
+  },
+  {
+    "content": "시트 데이터 규모가 작기 때문에 일회성 import 후 DB로 전환하고 시트는 롤백용 백업으로 남기는 방식이 더 단순하고 안전하다고 판단했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "전환 전략 판단",
+    "id": "n2480"
+  },
+  {
+    "content": "사용자가 읽기 병행 의도를 설명한 뒤, 쓰기는 DB만 사용하고 읽기는 당분간 시트를 유지하는 점진 전환 시나리오를 이해했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "전환 전략 조정",
+    "id": "n2481"
+  },
+  {
+    "content": "쓰기만 DB로 전환하고 읽기를 시트에 남기면 새 가입자가 리더보드에 보이지 않는 문제가 생긴다고 지적했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "전환 리스크",
+    "id": "n2482"
+  },
+  {
+    "content": "시트 데이터가 지금도 라이브로 계속 쌓이고 있다는 점을 반영해 전환 계획을 다시 조정했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "전환 전략 조정",
+    "id": "n2483"
+  },
+  {
+    "content": "초기 전환 단계에서는 DB와 시트 데이터를 동시에 읽어 합산해야 한다는 요구를 이해했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "전환 요구사항",
+    "id": "n2484"
+  },
+  {
+    "content": "초기 Phase 1에서는 쓰기는 DB로 전환하고 읽기는 서버가 DB와 GAS를 함께 읽어 cheerCount와 프로필을 병합하는 방식으로 정리했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "마이그레이션 단계 설계",
+    "id": "n2485"
+  },
+  {
+    "content": "Phase 2에서는 시트 데이터를 DB로 import한 뒤 읽기 API에서 GAS 호출을 제거하는 단계적 전환으로 정리했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "마이그레이션 단계 설계",
+    "id": "n2486"
+  },
+  {
+    "content": "이 전환 방향을 간단한 설계서로 작성해 `projects/moonlight/cheer-db-migration-spec.md`에 정리했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "설계 문서 작성",
+    "id": "n2487"
+  },
+  {
+    "content": "설계서의 핵심 포인트를 Phase 1의 DB 쓰기와 DB+GAS 합산 읽기, Phase 2의 시트 import 후 GAS 제거로 요약했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "설계 문서 요약",
+    "id": "n2488"
+  },
+  {
+    "content": "GAS 코드와 시트는 삭제하지 않고 남겨두는 것을 안전망으로 유지하기로 했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "롤백 안전망",
+    "id": "n2489"
+  },
+  {
+    "content": "moonlight 저장소의 별도 에이전트 세션에 직접 넘기지는 못하며 사용자가 설계서 경로를 참조해 전달해야 한다고 안내했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "작업 위임 한계",
+    "id": "n2490"
+  },
+  {
+    "content": "구현 에이전트 피드백에서 가장 중요한 보완점은 시트 쓰기 freeze 시점 명시, cheer INSERT와 count UPDATE의 트랜잭션화, import 시 이중 카운팅 방지라고 요약했다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "구현 피드백 핵심",
+    "id": "n2491"
+  },
+  {
+    "content": "첨부된 GAS 스크립트를 통해 현재 시스템이 실제로 1인 1응원 제약을 적용하고 있음을 확인할 수 있는 근거가 제공되었다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "기존 제약 확인",
+    "id": "n2492"
+  },
+  {
+    "content": "첨부된 GAS 스크립트는 응원 기록 append와 profile의 `cheerCount` 증가가 분리되어 있어 비원자적 갱신 위험이 있음을 보여준다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "정합성 위험",
+    "id": "n2493"
+  },
+  {
+    "content": "첨부된 GAS 스크립트는 리더보드와 대학별 통계가 프로필 시트의 `cheerCount` 합계를 기준으로 계산된다는 점을 보여준다.",
+    "type": "fact",
+    "session": "2026-03-06-세션50",
+    "context_hint": "기존 읽기 로직",
+    "id": "n2494"
+  },
+  {
+    "content": "초기 마이그레이션 단계에서는 현재 칭찬 수 표시 기능을 유지하기 위해 서버가 DB와 시트 양쪽 데이터를 합산해야 한다는 판단을 유지했다.",
+    "type": "intention",
+    "session": "2026-03-06-세션50",
+    "context_hint": "사용자 지표 유지",
+    "id": "n2495"
   }
 ]
